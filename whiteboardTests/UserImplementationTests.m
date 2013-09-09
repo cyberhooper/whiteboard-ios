@@ -7,14 +7,14 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "User.h"
+#import "WBUser.h"
 
 @interface UserTests : XCTestCase
 
 @end
 
 @implementation UserTests {
-  id <User> user;
+  id <WBUser> user;
 }
 
 - (void)setUp {

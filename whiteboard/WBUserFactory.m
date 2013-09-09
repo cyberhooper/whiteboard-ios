@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
-#import "UserFactory.h"
+#import "WBUserFactory.h"
 
-@implementation UserFactory
+@implementation WBUserFactory
 
 static Class UserClass = nil;
 
-+ (id<User>)createUser {
++ (id<WBUser>)createUser {
   return [[UserClass alloc] init];
 }
 

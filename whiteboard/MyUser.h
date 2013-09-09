@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
+#import "WBUser.h"
 
-@interface MyUser : NSObject<User>
+@interface MyUser : NSObject<WBUser>
 
 @end

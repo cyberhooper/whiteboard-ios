@@ -8,15 +8,18 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
-#import "UserFactory.h"
+#import "WBUserFactory.h"
 
 int main(int argc, char * argv[]) {
   @autoreleasepool {
     
+    // Inject <User> concrete class. 
     NSBundle *mainBundle = [NSBundle mainBundle];
     NSString *userImplementation = [mainBundle infoDictionary][@"UserImplementation"];
     Class userClass = NSClassFromString(userImplementation);
-    [UserFactory initWithUserClass:userClass];
+    [WBUserFactory initWithUserClass:userClass];
+    
+    
     return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
   }
 }

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol User <NSObject>
+@protocol WBUser <NSObject>
 
 @property (nonatomic, strong) NSString *userID;
 @property (nonatomic, strong) NSString *displayName;

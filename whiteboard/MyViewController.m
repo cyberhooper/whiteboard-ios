@@ -7,8 +7,8 @@
 //
 
 #import "MyViewController.h"
-#import "User.h"
-#import "UserFactory.h"
+#import "WBUser.h"
+#import "WBUserFactory.h"
 
 @interface MyViewController ()
 
@@ -18,7 +18,7 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  id<User> aUser = [UserFactory createUser];
+  id<WBUser> aUser = [WBUserFactory createUser];
   NSLog(@"user.firstname : %@", aUser.firstName);
 }
 

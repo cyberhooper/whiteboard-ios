@@ -7,11 +7,11 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
+#import "WBUser.h"
 
-@interface UserFactory : NSObject
+@interface WBUserFactory : NSObject
 
-+ (id<User>)createUser;
++ (id<WBUser>)createUser;
 + (void)initWithUserClass:(Class)userConcreteClass;
 
 @end
