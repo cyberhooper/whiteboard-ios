@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		991614C617DE58DC007FF6B5 /* ZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991614C517DE58DC007FF6B5 /* ZUser.m */; };
 		9919152217DA7B2A005DA25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152117DA7B2A005DA25C /* Foundation.framework */; };
 		9919152417DA7B2A005DA25C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152317DA7B2A005DA25C /* CoreGraphics.framework */; };
 		9919152617DA7B2A005DA25C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152517DA7B2A005DA25C /* UIKit.framework */; };
@@ -21,6 +22,8 @@
 		9919154B17DA7B2B005DA25C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919154917DA7B2B005DA25C /* InfoPlist.strings */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
 		99D80C7B17DE32ED00809322 /* MyUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7A17DE32ED00809322 /* MyUser.m */; };
+		99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7D17DE4FBF00809322 /* MyViewController.m */; };
+		99D80C8117DE51F900809322 /* UserFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C8017DE51F900809322 /* UserFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		991614C417DE58DC007FF6B5 /* ZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUser.h; sourceTree = "<group>"; };
+		991614C517DE58DC007FF6B5 /* ZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZUser.m; sourceTree = "<group>"; };
 		9919151E17DA7B2A005DA25C /* whiteboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whiteboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9919152117DA7B2A005DA25C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9919152317DA7B2A005DA25C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -54,6 +59,10 @@
 		99D80C7217DE0F9900809322 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		99D80C7917DE32ED00809322 /* MyUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUser.h; sourceTree = "<group>"; };
 		99D80C7A17DE32ED00809322 /* MyUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUser.m; sourceTree = "<group>"; };
+		99D80C7C17DE4FBF00809322 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		99D80C7D17DE4FBF00809322 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		99D80C7F17DE51F800809322 /* UserFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFactory.h; sourceTree = "<group>"; };
+		99D80C8017DE51F900809322 /* UserFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +128,12 @@
 				99D80C7A17DE32ED00809322 /* MyUser.m */,
 				9919153317DA7B2A005DA25C /* Main.storyboard */,
 				99D80C7217DE0F9900809322 /* User.h */,
+				991614C417DE58DC007FF6B5 /* ZUser.h */,
+				991614C517DE58DC007FF6B5 /* ZUser.m */,
+				99D80C7F17DE51F800809322 /* UserFactory.h */,
+				99D80C8017DE51F900809322 /* UserFactory.m */,
+				99D80C7C17DE4FBF00809322 /* MyViewController.h */,
+				99D80C7D17DE4FBF00809322 /* MyViewController.m */,
 				9919153917DA7B2A005DA25C /* Images.xcassets */,
 				9919152817DA7B2A005DA25C /* Supporting Files */,
 			);
@@ -253,6 +268,9 @@
 			files = (
 				99D80C7B17DE32ED00809322 /* MyUser.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
+				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
+				991614C617DE58DC007FF6B5 /* ZUser.m in Sources */,
+				99D80C8117DE51F900809322 /* UserFactory.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

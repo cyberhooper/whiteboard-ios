@@ -1,14 +1,14 @@
 //
-//  MyUser.m
+//  ZUser.m
 //  whiteboard
 //
 //  Created by Sacha Durand Saint Omer on 9/9/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
-#import "MyUser.h"
+#import "ZUser.h"
 
-@implementation MyUser
+@implementation ZUser
 
 @synthesize userID;
 @synthesize displayName;
@@ -23,9 +23,5 @@
 @synthesize updatedAt;
 @synthesize numberOfFollowers;
 @synthesize numberFollowing;
-
-- (NSString *)firstName {
-  return @"yeah baby";
-}
 
 @end
