@@ -48,13 +48,17 @@
   
   sectionHeaderView.displayName = [[self.photos objectAtIndex:section] valueForKey:@"username"];
   sectionHeaderView.date = [NSDate date];
-  sectionHeaderView.profilePictureImage = nil;
+  #warning Image should be asynchronous
+  sectionHeaderView.profilePictureImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[self.photos objectAtIndex:section] valueForKey:@"photoUrl"]]]];
+  sectionHeaderView.numberOfLikes = @2;
+  sectionHeaderView.numberOfComments = @3;
   
   return sectionHeaderView;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-  return 44.f;
+#warning MAGIC NUMBER. REPLACE ME
+  return 44.0f;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

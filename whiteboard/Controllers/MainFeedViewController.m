@@ -52,6 +52,16 @@
   return 240.f;
 }
 
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+#warning MAGIC NUMBER. REPLACE ME
+  return 44.0f;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForFooterrInSection:(NSInteger)section {
+#warning MAGIC NUMBER. REPLACE ME
+  return 30.0f;
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
