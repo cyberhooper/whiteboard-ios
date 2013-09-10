@@ -8,6 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		991614C617DE58DC007FF6B5 /* ZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991614C517DE58DC007FF6B5 /* ZUser.m */; };
+		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
+		991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CB17DE8161007FF6B5 /* CFNetwork.framework */; };
+		991614CE17DE8172007FF6B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CD17DE8172007FF6B5 /* CoreLocation.framework */; };
+		991614D017DE817F007FF6B5 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CF17DE817F007FF6B5 /* libz.1.1.3.dylib */; };
+		991614D217DE8188007FF6B5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D117DE8188007FF6B5 /* MobileCoreServices.framework */; };
+		991614D417DE818F007FF6B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D317DE818F007FF6B5 /* QuartzCore.framework */; };
+		991614D617DE8198007FF6B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D517DE8198007FF6B5 /* Security.framework */; };
+		991614D817DE81A1007FF6B5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D717DE81A1007FF6B5 /* StoreKit.framework */; };
+		991614DA17DE81AB007FF6B5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D917DE81AB007FF6B5 /* SystemConfiguration.framework */; };
+		991614DC17DE82B4007FF6B5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614DB17DE82B4007FF6B5 /* Parse.framework */; };
 		9919152217DA7B2A005DA25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152117DA7B2A005DA25C /* Foundation.framework */; };
 		9919152417DA7B2A005DA25C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152317DA7B2A005DA25C /* CoreGraphics.framework */; };
 		9919152617DA7B2A005DA25C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152517DA7B2A005DA25C /* UIKit.framework */; };
@@ -39,6 +49,16 @@
 /* Begin PBXFileReference section */
 		991614C417DE58DC007FF6B5 /* ZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUser.h; sourceTree = "<group>"; };
 		991614C517DE58DC007FF6B5 /* ZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZUser.m; sourceTree = "<group>"; };
+		991614C917DE813C007FF6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		991614CB17DE8161007FF6B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		991614CD17DE8172007FF6B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		991614CF17DE817F007FF6B5 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		991614D117DE8188007FF6B5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		991614D317DE818F007FF6B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		991614D517DE8198007FF6B5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		991614D717DE81A1007FF6B5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		991614D917DE81AB007FF6B5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		991614DB17DE82B4007FF6B5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9919151E17DA7B2A005DA25C /* whiteboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whiteboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9919152117DA7B2A005DA25C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9919152317DA7B2A005DA25C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -70,7 +90,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991614DA17DE81AB007FF6B5 /* SystemConfiguration.framework in Frameworks */,
+				991614D817DE81A1007FF6B5 /* StoreKit.framework in Frameworks */,
+				991614D617DE8198007FF6B5 /* Security.framework in Frameworks */,
+				991614D417DE818F007FF6B5 /* QuartzCore.framework in Frameworks */,
+				991614D217DE8188007FF6B5 /* MobileCoreServices.framework in Frameworks */,
+				991614D017DE817F007FF6B5 /* libz.1.1.3.dylib in Frameworks */,
+				991614DC17DE82B4007FF6B5 /* Parse.framework in Frameworks */,
+				991614CE17DE8172007FF6B5 /* CoreLocation.framework in Frameworks */,
 				9919152417DA7B2A005DA25C /* CoreGraphics.framework in Frameworks */,
+				991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */,
+				991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */,
 				9919152617DA7B2A005DA25C /* UIKit.framework in Frameworks */,
 				9919152217DA7B2A005DA25C /* Foundation.framework in Frameworks */,
 			);
@@ -111,6 +141,16 @@
 		9919152017DA7B2A005DA25C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				991614DB17DE82B4007FF6B5 /* Parse.framework */,
+				991614D917DE81AB007FF6B5 /* SystemConfiguration.framework */,
+				991614D717DE81A1007FF6B5 /* StoreKit.framework */,
+				991614D517DE8198007FF6B5 /* Security.framework */,
+				991614D317DE818F007FF6B5 /* QuartzCore.framework */,
+				991614D117DE8188007FF6B5 /* MobileCoreServices.framework */,
+				991614CF17DE817F007FF6B5 /* libz.1.1.3.dylib */,
+				991614CD17DE8172007FF6B5 /* CoreLocation.framework */,
+				991614CB17DE8161007FF6B5 /* CFNetwork.framework */,
+				991614C917DE813C007FF6B5 /* AudioToolbox.framework */,
 				9919152117DA7B2A005DA25C /* Foundation.framework */,
 				9919152317DA7B2A005DA25C /* CoreGraphics.framework */,
 				9919152517DA7B2A005DA25C /* UIKit.framework */,
@@ -395,6 +435,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sacha/Projects/whiteboard-ios-2",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
@@ -408,6 +452,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/sacha/Projects/whiteboard-ios-2",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
