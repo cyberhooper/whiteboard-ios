@@ -118,8 +118,6 @@ Properties</h2></td></tr>
 <tr class="separator:ae2f004da9c22a71ab6945d7abc404f8a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a80e01655b37cf0b899f056561b3c211d"><td class="memItemLeft" align="right" valign="top">NSURL *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_w_b_user-p.html#a80e01655b37cf0b899f056561b3c211d">profilePictureSmallURL</a></td></tr>
 <tr class="separator:a80e01655b37cf0b899f056561b3c211d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0f7e0470bbd4768579aacb4b5c542654"><td class="memItemLeft" align="right" valign="top">BOOL&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_w_b_user-p.html#a0f7e0470bbd4768579aacb4b5c542654">isLoggedIn</a></td></tr>
-<tr class="separator:a0f7e0470bbd4768579aacb4b5c542654"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0b91d4feac6a307c45d2f41c3ff13a7"><td class="memItemLeft" align="right" valign="top">NSDate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_w_b_user-p.html#ac0b91d4feac6a307c45d2f41c3ff13a7">createdAt</a></td></tr>
 <tr class="separator:ac0b91d4feac6a307c45d2f41c3ff13a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a043d435eca978fd6b21521fe90f5cbfe"><td class="memItemLeft" align="right" valign="top">NSDate *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_w_b_user-p.html#a043d435eca978fd6b21521fe90f5cbfe">updatedAt</a></td></tr>
@@ -130,8 +128,9 @@ Properties</h2></td></tr>
 <tr class="separator:a13d1972a3f8b72571bdbfb9ffd98b2c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00011">11</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<div class="textblock"><p><a class="el" href="protocol_w_b_user-p.html">WBUser</a> is the basic "User" protocol for the application. This protocol should be implemented by a concrete class that the developer creates. Any class that implements <a class="el" href="protocol_w_b_user-p.html">WBUser</a> should have the properties listed in this protocol, but can define others, as well. </p>
+
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00016">16</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 </div><h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="ac0b91d4feac6a307c45d2f41c3ff13a7"></a>
 <div class="memitem">
@@ -150,8 +149,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The date this user's account was created. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00022">22</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00062">62</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -172,8 +172,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The name that will be displayed in the UI throughout the app. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00014">14</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00027">27</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -194,8 +195,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The user's email address. Used to reset the password and to sign up for the app. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00018">18</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00047">47</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -216,30 +218,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The user's first name. Stored when the user signs up or changes his/her account info. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00016">16</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a0f7e0470bbd4768579aacb4b5c542654"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (BOOL) isLoggedIn</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">assign</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00021">21</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00037">37</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -260,8 +241,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The user's last name. Stored when the user signs up or changes his/her account info. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00017">17</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00042">42</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -282,8 +264,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The number of users that are being followed by this user. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00025">25</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00077">77</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -304,8 +287,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The number of users that are following this user. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00024">24</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00072">72</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -326,8 +310,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The URL of the user's medium sized profile picture image. The image at this location should be loaded asynchronously in the app. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00019">19</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00052">52</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -348,8 +333,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The URL of the user's small profile picture image. The image at this location should be loaded asynchronously in the app. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00020">20</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00057">57</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -370,8 +356,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The date this user's account was last updated. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00023">23</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00067">67</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -392,8 +379,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The unique ID representing this <a class="el" href="protocol_w_b_user-p.html">WBUser</a>. Represented as a string because some frameworks (ex. Facebook) might have alphanumeric IDs. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00013">13</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00022">22</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -414,8 +402,9 @@ Properties</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+<p>The username used to log into the app. </p>
 
-<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00015">15</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_user_8h_source.html#l00032">32</a> of file <a class="el" href="_w_b_user_8h_source.html">WBUser.h</a>.</p>
 
 </div>
 </div>
@@ -425,7 +414,7 @@ Properties</h2></td></tr>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2013 14:52:20 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 10 2013 16:14:01 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
