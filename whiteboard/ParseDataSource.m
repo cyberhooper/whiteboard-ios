@@ -32,12 +32,12 @@
   success();
 }
 
-- (void)signupWithInfo:(NSDictionary *)userInfos
+- (void)signupWithInfo:(NSDictionary *)userInfo
                success:(void (^)(id<WBUser>))success
                failure:(void (^)(NSError *))failure {
   PFUser *currentUser = [PFUser user];
-  [currentUser setUsername:[userInfos objectForKey:@"userName"]];
-  [currentUser setPassword:[userInfos objectForKey:@"password"]];
+  [currentUser setUsername:[userInfo objectForKey:@"userName"]];
+  [currentUser setPassword:[userInfo objectForKey:@"password"]];
   [currentUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded) {
       id<WBUser> wbUser = [WBUserFactory createUser];

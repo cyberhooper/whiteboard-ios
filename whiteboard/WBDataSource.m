@@ -34,11 +34,11 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
-+ (void)initWithDataSourceSubclass:(Class)dataSourceSubclass {
++ (void)setDataSourceSubclass:(Class)dataSourceSubclass {
   DataSourceSubclass = dataSourceSubclass;
 }
 
-- (void)signupWithInfo:(NSDictionary *)userInfos
+- (void)signupWithInfo:(NSDictionary *)userInfo
                success:(void (^)(id<WBUser> user))success
                failure:(void (^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];

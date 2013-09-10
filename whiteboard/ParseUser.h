@@ -13,7 +13,6 @@
 /**
  This is a sample concerete implementation of WBUser using Parse.
  */
-
 @interface ParseUser : PFUser <WBUser,PFSubclassing>
 
 @end

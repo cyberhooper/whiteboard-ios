@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zuser',['ZUser',['../interface_z_user.html',1,'']]]
+  ['zuser',['ZUser',['../class_z_user.html',1,'']]]
 ];

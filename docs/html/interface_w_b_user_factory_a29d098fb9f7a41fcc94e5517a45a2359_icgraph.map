@@ -1,5 +1,4 @@
 <map id="+[WBUserFactory createUser]" name="+[WBUserFactory createUser]">
-<area shape="rect" id="node2" href="$interface_my_view_controller.html#aa377609a1de0d3b1cde539355aa5f1f1" title="&#45;[MyViewController\l viewDidLoad]" alt="" coords="287,5,414,46"/>
-<area shape="rect" id="node3" href="$interface_parse_data_source.html#a29f7208f41d97bc023840a14a0b33498" title="&#45;[ParseDataSource loginWith\lUsername:andPassWord:success\l:failure:]" alt="" coords="243,71,459,127"/>
-<area shape="rect" id="node4" href="$interface_parse_data_source.html#a99237e6af93e8d308d3ff9b425bbe00b" title="&#45;[ParseDataSource signup\lWithInfo:success:failure:]" alt="" coords="264,151,437,193"/>
+<area shape="rect" id="node2" href="$interface_my_view_controller.html#aa377609a1de0d3b1cde539355aa5f1f1" title="&#45;[MyViewController\l viewDidLoad]" alt="" coords="266,5,393,46"/>
+<area shape="rect" id="node3" href="$interface_parse_data_source.html#a924d512a970b8c42c384a4aa174e5fe8" title="&#45;[ParseDataSource signup\lWithInfo:success:failure:]" alt="" coords="243,70,416,111"/>
 </map>

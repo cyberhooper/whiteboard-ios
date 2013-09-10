@@ -26,7 +26,7 @@ int main(int argc, char * argv[]) {
     // Inject |WBDatasource| subclass.
     NSString *dataSourceImplementation = [mainBundle infoDictionary][@"DataSourceImplementation"];
     Class dataSourceClass = NSClassFromString(dataSourceImplementation);
-    [WBDataSource initWithDataSourceSubclass:dataSourceClass];
+    [WBDataSource setDataSourceSubclass:dataSourceClass];
     
     
     return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));

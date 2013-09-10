@@ -1,0 +1,4 @@
+<map id="&#45;[ParseDataSource currentUser]" name="&#45;[ParseDataSource currentUser]">
+<area shape="rect" id="node2" href="$interface_parse_data_source.html#a29f7208f41d97bc023840a14a0b33498" title="&#45;[ParseDataSource loginWith\lUsername:andPassWord:success\l:failure:]" alt="" coords="224,5,440,61"/>
+<area shape="rect" id="node3" href="$interface_parse_data_source.html#a924d512a970b8c42c384a4aa174e5fe8" title="&#45;[ParseDataSource signup\lWithInfo:success:failure:]" alt="" coords="245,86,419,127"/>
+</map>
