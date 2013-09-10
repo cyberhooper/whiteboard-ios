@@ -1,6 +1,6 @@
-<map id="/Users/lnf/Documents/Whiteboard/whiteboard/WBDataSource.h" name="/Users/lnf/Documents/Whiteboard/whiteboard/WBDataSource.h">
-<area shape="rect" id="node2" href="$main_8m.html" title="/Users/lnf/Documents\l/Whiteboard/whiteboard\l/main.m" alt="" coords="5,109,163,165"/>
-<area shape="rect" id="node3" href="$_parse_data_source_8h.html" title="/Users/lnf/Documents\l/Whiteboard/whiteboard\l/ParseDataSource.h" alt="" coords="187,109,345,165"/>
-<area shape="rect" id="node5" href="$_w_b_data_source_8m.html" title="/Users/lnf/Documents\l/Whiteboard/whiteboard\l/WBDataSource.m" alt="" coords="370,109,528,165"/>
-<area shape="rect" id="node4" href="$_parse_data_source_8m.html" title="/Users/lnf/Documents\l/Whiteboard/whiteboard\l/ParseDataSource.m" alt="" coords="187,213,345,269"/>
+<map id="WBDataSource.h" name="WBDataSource.h">
+<area shape="rect" id="node2" href="$main_8m.html" title="main.m" alt="" coords="5,80,67,107"/>
+<area shape="rect" id="node3" href="$_parse_data_source_8h.html" title="ParseDataSource.h" alt="" coords="91,80,225,107"/>
+<area shape="rect" id="node5" href="$_w_b_data_source_8m.html" title="WBDataSource.m" alt="" coords="251,80,376,107"/>
+<area shape="rect" id="node4" href="$_parse_data_source_8m.html" title="ParseDataSource.m" alt="" coords="90,155,227,181"/>
 </map>
