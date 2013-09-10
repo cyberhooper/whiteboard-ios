@@ -71,4 +71,47 @@
   }];
 }
 
+- (void)testSignUpWithValidCredentialsCallsSuccess {
+  NSDictionary *userInfos = [[NSDictionary alloc] initWithObjects:@[@"testUser9", @"test"] forKeys:@[@"userName", @"password"]];
+  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(id<WBUser> user) {
+    XCTAssertNotNil(user, @"User return on signup should not be nil");
+    //We have to remove the user after the test to valid the next test launch
+    [[WBDataSource sharedInstance] deleteUserAccount:user success:^{
+      hasCalledBack = YES;
+    } failure:^(NSError *error) {
+    }];
+  } failure:nil];
+}
+
+- (void)testSignupWithValidCredentialsReturnsAValidUser {
+  NSDictionary *userInfos = [[NSDictionary alloc] initWithObjects:@[@"testUser0", @"test"] forKeys:@[@"userName", @"password"]];
+  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(id<WBUser> user) {
+    XCTAssertEqualObjects(user.userName, @"testUser0", @"User logged in should be the right one");
+    
+    //We have to remove the user after the test to valid the next test launch
+    [[WBDataSource sharedInstance] deleteUserAccount:user success:^{
+      hasCalledBack = YES;
+    } failure:^(NSError *error) {
+    }];
+  } failure:nil];
+}
+
+- (void)testSignupWithInvalidCredentialsYieldsError {
+  NSDictionary *userInfos = [[NSDictionary alloc] initWithObjects:@[@"testUser", @""] forKeys:@[@"userName", @"password"]];
+  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(id<WBUser> user) {
+  } failure:^(NSError *error) {
+    XCTAssertNotNil(error, @"signup with invalid credentials should return an error");
+    hasCalledBack = YES;
+  }];
+}
+
+- (void)testSignupWithInvalidCredentialsCallsFailure {
+  NSDictionary *userInfos = [[NSDictionary alloc] initWithObjects:@[@"testUser", @""] forKeys:@[@"userName", @"password"]];
+  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(id<WBUser> user) {
+  } failure:^(NSError *error) {
+    hasCalledBack = YES;
+  }];
+}
+
+
 @end

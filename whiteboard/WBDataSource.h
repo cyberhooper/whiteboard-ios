@@ -20,4 +20,13 @@
 
 + (void)initWithDataSourceSubclass:(Class)dataSourceSubclass;
 
+- (void)signupWithInfo:(NSDictionary *)userInfos
+               success:(void(^)(id<WBUser> user))success
+               failure:(void(^)(NSError *error))failure;
+
+- (void)deleteUserAccount:(id<WBUser> )user
+               success:(void(^)(void))success
+               failure:(void(^)(NSError *error))failure;
+
+
 @end

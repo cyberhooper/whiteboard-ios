@@ -27,5 +27,35 @@
 }
 
 
+- (void)signupWithInfo:(NSDictionary *)userInfos
+               success:(void (^)(id<WBUser>))success
+               failure:(void (^)(NSError *))failure {
+  PFUser *currentUser = [PFUser user];
+  [currentUser setUsername:[userInfos objectForKey:@"userName"]];
+  [currentUser setPassword:[userInfos objectForKey:@"password"]];
+  [currentUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (succeeded) {
+      id<WBUser> wbUser = [WBUserFactory createUser];
+      wbUser.userName = [currentUser username];
+      success(wbUser);
+    }
+    else {
+      failure (error);
+    }
+  }];
+  
+}
 
+-(void)deleteUserAccount:(id<WBUser>)user
+                 success:(void (^)(void))success
+                 failure:(void (^)(NSError *))failure {
+  [[PFUser currentUser] deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (succeeded) {
+      success();
+    }
+    else {
+      failure (error);
+    }
+  }];
+}
 @end
