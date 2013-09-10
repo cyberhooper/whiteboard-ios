@@ -18,6 +18,7 @@
                                     if (user) {                                      
                                       id<WBUser> wbUser = [WBUserFactory createUser];
                                       wbUser.userName = user.username;
+                                      wbUser.isLoggedIn = user.isAuthenticated;
                                       success(wbUser);
                                     } else {
                                       // The login failed. Check error to see why.

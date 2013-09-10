@@ -38,6 +38,8 @@
   [super tearDown];
 }
 
+#pragma mark - login
+
 - (void)testLoginWithValidCredentialsCallsSuccess {
   [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
     hasCalledBack = YES;
@@ -69,6 +71,13 @@
     XCTAssertNotNil(error, @"Loging with invalid credentials should return an error");
     hasCalledBack = YES;
   }];
+}
+
+- (void)testLoginUserIsLoggedIn {
+  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
+    hasCalledBack = YES;
+    XCTAssertTrue(user.isLoggedIn, @"User should be logged in after login success");
+  } failure:nil];
 }
 
 @end
