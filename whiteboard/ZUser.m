@@ -18,7 +18,6 @@
 @synthesize email;
 @synthesize profilePictureMediumURL;
 @synthesize profilePictureSmallURL;
-@synthesize isLoggedIn;
 @synthesize createdAt;
 @synthesize updatedAt;
 @synthesize numberOfFollowers;

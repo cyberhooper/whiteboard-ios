@@ -21,7 +21,7 @@ int main(int argc, char * argv[]) {
     // Inject <WBUser> concrete class.
     NSString *userImplementation = [mainBundle infoDictionary][@"UserImplementation"];
     Class userClass = NSClassFromString(userImplementation);
-    [WBUserFactory initWithUserClass:userClass];
+    [WBUserFactory setUserClass:userClass];
     
     
     // Inject |WBDatasource| subclass.

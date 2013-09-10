@@ -38,6 +38,8 @@
   [super tearDown];
 }
 
+#pragma mark - login
+
 - (void)testLoginWithValidCredentialsCallsSuccess {
   [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
     hasCalledBack = YES;

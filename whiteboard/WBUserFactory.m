@@ -16,7 +16,7 @@ static Class UserClass = nil;
   return [[UserClass alloc] init];
 }
 
-+ (void)initWithUserClass:(Class)userConcreteClass {
++ (void)setUserClass:(Class)userConcreteClass {
   UserClass = userConcreteClass;
 }
 
