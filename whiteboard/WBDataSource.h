@@ -11,12 +11,16 @@
 
 @interface WBDataSource : NSObject
 
-+ (id)sharedInstance;
++ (WBDataSource *)sharedInstance;
 
 - (void)loginWithUsername:(NSString *)username
               andPassWord:(NSString *)password
                   success:(void(^)(id<WBUser> user))success
                   failure:(void(^)(NSError *error))failure;
+
+- (void)logoutUser:(id<WBUser>)user
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure;
 
 + (void)initWithDataSourceSubclass:(Class)dataSourceSubclass;
 
@@ -28,5 +32,7 @@
                success:(void(^)(void))success
                failure:(void(^)(NSError *error))failure;
 
+@property (nonatomic, strong, readonly) id<WBUser> currentUser;
 
 @end
+

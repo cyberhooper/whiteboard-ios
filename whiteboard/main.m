@@ -17,7 +17,6 @@ int main(int argc, char * argv[]) {
 
     NSBundle *mainBundle = [NSBundle mainBundle];
     
-    
     // Inject <WBUser> concrete class.
     NSString *userImplementation = [mainBundle infoDictionary][@"UserImplementation"];
     Class userClass = NSClassFromString(userImplementation);

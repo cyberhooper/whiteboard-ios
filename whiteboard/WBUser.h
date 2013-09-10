@@ -29,11 +29,12 @@
 /**
  The username used to log into the app.
  */
-@property (nonatomic, strong) NSString *userName;
+@property (nonatomic, strong) NSString *username;
 
 /**
  The user's first name. Stored when the user signs up or changes his/her account info.
  */
+
 @property (nonatomic, strong) NSString *firstName;
 
 /**

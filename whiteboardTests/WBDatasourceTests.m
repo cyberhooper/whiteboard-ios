@@ -25,16 +25,16 @@
 
 - (void)tearDown {
   dataSource = nil;
-  hasCalledBack = NO;
-  NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:5];
+  NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:10];
   while (hasCalledBack == NO && [loopUntil timeIntervalSinceNow] > 0) {
     [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
                              beforeDate:loopUntil];
   }
   
   if (!hasCalledBack) {
-    XCTFail(@"No response after 5 sec");
+    XCTFail(@"No response after 10 sec");
   }
+  hasCalledBack = NO;
   [super tearDown];
 }
 
@@ -56,7 +56,7 @@
 - (void)testLoginWithValidCredentialsReturnsAValidUser {
   [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
     hasCalledBack = YES;
-    XCTAssertEqualObjects(user.userName, @"testUser", @"User logged in should be the right one");
+    XCTAssertEqualObjects(user.username, @"testUser", @"User logged in should be the right one");
   } failure:nil];
 }
 
@@ -88,7 +88,7 @@
 - (void)testSignupWithValidCredentialsReturnsAValidUser {
   NSDictionary *userInfos = [[NSDictionary alloc] initWithObjects:@[@"testUser0", @"test"] forKeys:@[@"userName", @"password"]];
   [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(id<WBUser> user) {
-    XCTAssertEqualObjects(user.userName, @"testUser0", @"User logged in should be the right one");
+    XCTAssertEqualObjects(user.username, @"testUser0", @"User logged in should be the right one");
     
     //We have to remove the user after the test to valid the next test launch
     [[WBDataSource sharedInstance] deleteUserAccount:user success:^{
@@ -115,5 +115,13 @@
   }];
 }
 
+- (void)testLogoutUser {
+  id<WBUser> currentUser = [WBDataSource sharedInstance].currentUser;
+  XCTAssertNotNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
+  [[WBDataSource sharedInstance] logoutUser:currentUser success:^{
+    hasCalledBack = YES;
+    XCTAssertNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
+  }failure:nil];
+}
 
 @end

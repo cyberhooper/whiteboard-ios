@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		991614C617DE58DC007FF6B5 /* ZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991614C517DE58DC007FF6B5 /* ZUser.m */; };
+		991614C617DE58DC007FF6B5 /* ParseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991614C517DE58DC007FF6B5 /* ParseUser.m */; };
 		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
 		991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CB17DE8161007FF6B5 /* CFNetwork.framework */; };
 		991614CE17DE8172007FF6B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CD17DE8172007FF6B5 /* CoreLocation.framework */; };
@@ -49,8 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		991614C417DE58DC007FF6B5 /* ZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUser.h; sourceTree = "<group>"; };
-		991614C517DE58DC007FF6B5 /* ZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZUser.m; sourceTree = "<group>"; };
+		991614C417DE58DC007FF6B5 /* ParseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUser.h; sourceTree = "<group>"; };
+		991614C517DE58DC007FF6B5 /* ParseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUser.m; sourceTree = "<group>"; };
 		991614C917DE813C007FF6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		991614CB17DE8161007FF6B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		991614CD17DE8172007FF6B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -175,8 +175,8 @@
 				99D80C7217DE0F9900809322 /* WBUser.h */,
 				9940D16917DF632A008B2825 /* WBDataSource.h */,
 				9940D16A17DF632A008B2825 /* WBDataSource.m */,
-				991614C417DE58DC007FF6B5 /* ZUser.h */,
-				991614C517DE58DC007FF6B5 /* ZUser.m */,
+				991614C417DE58DC007FF6B5 /* ParseUser.h */,
+				991614C517DE58DC007FF6B5 /* ParseUser.m */,
 				99D80C7F17DE51F800809322 /* WBUserFactory.h */,
 				99D80C8017DE51F900809322 /* WBUserFactory.m */,
 				99D80C7C17DE4FBF00809322 /* MyViewController.h */,
@@ -319,7 +319,7 @@
 				9940D16B17DF632A008B2825 /* WBDataSource.m in Sources */,
 				9940D16E17DF660F008B2825 /* ParseDataSource.m in Sources */,
 				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
-				991614C617DE58DC007FF6B5 /* ZUser.m in Sources */,
+				991614C617DE58DC007FF6B5 /* ParseUser.m in Sources */,
 				99D80C8117DE51F900809322 /* WBUserFactory.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
 			);

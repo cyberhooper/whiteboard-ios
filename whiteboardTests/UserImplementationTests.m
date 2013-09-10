@@ -48,8 +48,8 @@
 }
 
 - (void)testUserHasAUserName {
-  user.userName = @"username";
-  XCTAssertEqualObjects(user.userName, @"username", @"A User should have a username");
+  user.username = @"username";
+  XCTAssertEqualObjects(user.username, @"username", @"A User should have a username");
 }
 
 - (void)testUserHasAFirstName {

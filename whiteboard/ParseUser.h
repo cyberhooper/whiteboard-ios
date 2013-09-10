@@ -8,10 +8,12 @@
 
 #import <Foundation/Foundation.h>
 #import "WBUser.h"
+#import <Parse/PFUser.h>
 
 /**
- This is a sample concerete implementation of WBUser that was used for writing unit tests.
+ This is a sample concerete implementation of WBUser using Parse.
  */
-@interface ZUser : NSObject <WBUser>
+
+@interface ParseUser : PFUser <WBUser,PFSubclassing>
 
 @end
