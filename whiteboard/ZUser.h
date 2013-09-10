@@ -9,6 +9,9 @@
 #import <Foundation/Foundation.h>
 #import "WBUser.h"
 
+/**
+ This is a sample concerete implementation of WBUser that was used for writing unit tests.
+ */
 @interface ZUser : NSObject <WBUser>
 
 @end
