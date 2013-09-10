@@ -1,0 +1,4 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$interface_w_b_user_factory.html#ad661c3e59d528acf4fd4651ea98d4bc1" title="+[WBUserFactory setUserClass:]" alt="" coords="105,5,314,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#ab4fa0b937eca56acef1ebbbc65c12a6b" title="+[WBDataSource initWithData\lSourceSubclass:]" alt="" coords="112,57,307,98"/>
+</map>
