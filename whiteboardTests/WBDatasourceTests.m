@@ -56,7 +56,7 @@
 - (void)testLoginWithValidCredentialsReturnsAValidUser {
   [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
     hasCalledBack = YES;
-    XCTAssertEqualObjects(user.userName, @"testUser", @"User logged in should be the right one");
+    XCTAssertEqualObjects(user.username, @"testUser", @"User logged in should be the right one");
   } failure:nil];
 }
 

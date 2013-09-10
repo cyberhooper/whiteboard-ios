@@ -8,7 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import "WBUser.h"
+#import <Parse/PFUser.h>
 
-@interface ZUser : NSObject <WBUser>
+@interface ParseUser : PFUser <WBUser,PFSubclassing>
 
 @end

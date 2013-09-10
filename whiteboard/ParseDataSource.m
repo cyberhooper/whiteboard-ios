@@ -10,6 +10,8 @@
 #import <Parse/Parse.h>
 #import "WBUserFactory.h"
 
+#import "ParseUser.h"
+
 @implementation ParseDataSource
 
 - (void)loginWithUsername:(NSString *)username andPassWord:(NSString *)password success:(void (^)(id<WBUser>))success failure:(void (^)(NSError *))failure {
@@ -31,14 +33,7 @@
 }
 
 - (id<WBUser>)currentUser {
-  if (![PFUser currentUser]) {
-    return nil;
-  }
-  
-  PFUser *parseUser = [PFUser currentUser];
-  id<WBUser> currentUser = [WBUserFactory createUser];
-  currentUser.userName = parseUser.username;
-  return currentUser;
+  return [ParseUser currentUser];
 }
 
 @end
