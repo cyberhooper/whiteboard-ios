@@ -18,7 +18,6 @@
 @property (nonatomic, strong) NSString *email;
 @property (nonatomic, strong) NSURL *profilePictureMediumURL;
 @property (nonatomic, strong) NSURL *profilePictureSmallURL;
-@property (nonatomic) BOOL isLoggedIn;
 @property (nonatomic, strong) NSDate *createdAt;
 @property (nonatomic, strong) NSDate *updatedAt;
 @property (nonatomic, strong) NSNumber *numberOfFollowers;

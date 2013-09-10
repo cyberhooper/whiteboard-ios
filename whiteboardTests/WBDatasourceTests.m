@@ -25,16 +25,16 @@
 
 - (void)tearDown {
   dataSource = nil;
-  hasCalledBack = NO;
-  NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:5];
+  NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:10];
   while (hasCalledBack == NO && [loopUntil timeIntervalSinceNow] > 0) {
     [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
                              beforeDate:loopUntil];
   }
   
   if (!hasCalledBack) {
-    XCTFail(@"No response after 5 sec");
+    XCTFail(@"No response after 10 sec");
   }
+  hasCalledBack = NO;
   [super tearDown];
 }
 
@@ -73,11 +73,15 @@
   }];
 }
 
-- (void)testLoginUserIsLoggedIn {
-  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
+- (void)testLogoutUser {
+  id<WBUser> currentUser = [WBDataSource sharedInstance].currentUser;
+  XCTAssertNotNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
+  [[WBDataSource sharedInstance] logoutUser:currentUser success:^{
     hasCalledBack = YES;
-    XCTAssertTrue(user.isLoggedIn, @"User should be logged in after login success");
-  } failure:nil];
+    XCTAssertNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
+  }failure:nil];
 }
+
+
 
 @end

@@ -12,7 +12,7 @@
 
 static Class DataSourceSubclass = nil;
 
-+ (id)sharedInstance {
++ (WBDataSource *)sharedInstance {
   static WBDataSource *sharedInstance = nil;
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
@@ -21,7 +21,6 @@ static Class DataSourceSubclass = nil;
   return sharedInstance;
 }
 
-
 - (void)loginWithUsername:(NSString *)username
               andPassWord:(NSString *)password
                   success:(void(^)(id<WBUser> user))success
@@ -29,9 +28,19 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
+- (void)logoutUser:(id<WBUser>)user
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
 + (void)initWithDataSourceSubclass:(Class)dataSourceSubclass {
   DataSourceSubclass = dataSourceSubclass;
 }
 
+- (id<WBUser>)currentUser {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  return nil;
+}
 
 @end

@@ -15,18 +15,30 @@
 - (void)loginWithUsername:(NSString *)username andPassWord:(NSString *)password success:(void (^)(id<WBUser>))success failure:(void (^)(NSError *))failure {
   [PFUser logInWithUsernameInBackground:username password:password
                                   block:^(PFUser *user, NSError *error) {
-                                    if (user) {                                      
-                                      id<WBUser> wbUser = [WBUserFactory createUser];
-                                      wbUser.userName = user.username;
-                                      wbUser.isLoggedIn = user.isAuthenticated;
-                                      success(wbUser);
-                                    } else {
-                                      // The login failed. Check error to see why.
+                                    if (user)
+                                      success([self currentUser]);
+                                    else
                                       failure (error);
-                                    }
                                   }];
 }
 
+- (void)logoutUser:(id<WBUser>)user
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure {
+  // Parse logout is instant since it deletes the current pfuser on disk.
+  [PFUser logOut];
+  success();
+}
 
+- (id<WBUser>)currentUser {
+  if (![PFUser currentUser]) {
+    return nil;
+  }
+  
+  PFUser *parseUser = [PFUser currentUser];
+  id<WBUser> currentUser = [WBUserFactory createUser];
+  currentUser.userName = parseUser.username;
+  return currentUser;
+}
 
 @end
