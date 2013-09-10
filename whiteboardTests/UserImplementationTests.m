@@ -79,11 +79,6 @@
   XCTAssertEqualObjects(user.profilePictureSmallURL , url, @"user should have a profilePictureSmallURL");
 }
 
-- (void)testUserCanBeLoggedIn {
-  user.isLoggedIn = YES;
-  XCTAssertTrue(user.isLoggedIn, @"USer should be able to be logged in");
-}
-
 - (void)testUserHasACreationDate {
   NSDate *date = [NSDate date];
   user.createdAt = date;
