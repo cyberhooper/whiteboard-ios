@@ -38,5 +38,7 @@
 	</array>
 	<key>UserImplementation</key>
 	<string>ZUser</string>
+	<key>DataSourceImplementation</key>
+	<string>ParseDataSource</string>
 </dict>
 </plist>
