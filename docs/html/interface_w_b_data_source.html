@@ -104,14 +104,16 @@ Inheritance diagram for WBDataSource:</div>
 Collaboration diagram for WBDataSource:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_data_source__coll__graph.png" border="0" usemap="#_w_b_data_source_coll__map" alt="Collaboration graph"/></div>
-<map name="_w_b_data_source_coll__map" id="_w_b_data_source_coll__map">
-</map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Instance Methods</h2></td></tr>
 <tr class="memitem:ab91d3ad4ac66e0d8ba3f15afdb2e571e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_data_source.html#ab91d3ad4ac66e0d8ba3f15afdb2e571e">loginWithUsername:andPassWord:success:failure:</a></td></tr>
 <tr class="separator:ab91d3ad4ac66e0d8ba3f15afdb2e571e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a88b10ddbf5597d69fc1bff455e6aab7a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_data_source.html#a88b10ddbf5597d69fc1bff455e6aab7a">signupWithInfo:success:failure:</a></td></tr>
+<tr class="separator:a88b10ddbf5597d69fc1bff455e6aab7a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a84f813be7d58023c0f1896a16632ca8e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_data_source.html#a84f813be7d58023c0f1896a16632ca8e">deleteUserAccount:success:failure:</a></td></tr>
+<tr class="separator:a84f813be7d58023c0f1896a16632ca8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -124,6 +126,40 @@ Class Methods</h2></td></tr>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_w_b_data_source_8h_source.html#l00012">12</a> of file <a class="el" href="_w_b_data_source_8h_source.html">WBDataSource.h</a>.</p>
 </div><h2 class="groupheader">Method Documentation</h2>
+<a class="anchor" id="a84f813be7d58023c0f1896a16632ca8e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) deleteUserAccount: </td>
+          <td></td>
+          <td class="paramtype">(id&lt;<a class="el" href="protocol_w_b_user-p.html">WBUser</a>&gt;)&#160;</td>
+          <td class="paramname"><em>user</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(void)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_data_source_8m_source.html#l00042">42</a> of file <a class="el" href="_w_b_data_source_8m_source.html">WBDataSource.m</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="ab4fa0b937eca56acef1ebbbc65c12a6b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -208,6 +244,40 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a class="anchor" id="a88b10ddbf5597d69fc1bff455e6aab7a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) signupWithInfo: </td>
+          <td></td>
+          <td class="paramtype">(NSDictionary *)&#160;</td>
+          <td class="paramname"><em>userInfos</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(id&lt;<a class="el" href="protocol_w_b_user-p.html">WBUser</a>&gt; user)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_data_source_8m_source.html#l00036">36</a> of file <a class="el" href="_w_b_data_source_8m_source.html">WBDataSource.m</a>.</p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following files:<ul>
 <li>/Users/lnf/Documents/Whiteboard/whiteboard/<a class="el" href="_w_b_data_source_8h_source.html">WBDataSource.h</a></li>
 <li>/Users/lnf/Documents/Whiteboard/whiteboard/<a class="el" href="_w_b_data_source_8m_source.html">WBDataSource.m</a></li>
@@ -215,7 +285,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2013 17:40:42 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 10 2013 18:03:08 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -111,7 +111,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;+ (void)initWithDataSourceSubclass:(Class)dataSourceSubclass;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;- (void)signupWithInfo:(NSDictionary *)userInfos</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;               success:(<span class="keywordtype">void</span>(^)(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt; user))success</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;               failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;- (void)deleteUserAccount:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt; )user</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;               success:(<span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;               failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="keyword">@end</span></div>
 <div class="ttc" id="interface_w_b_data_source_html"><div class="ttname"><a href="interface_w_b_data_source.html">WBDataSource</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00012">WBDataSource.h:12</a></div></div>
 <div class="ttc" id="_w_b_user_8h_html"><div class="ttname"><a href="_w_b_user_8h.html">WBUser.h</a></div></div>
 <div class="ttc" id="interface_w_b_data_source_html_a37124130bcbd9810e697c80aefac6c9c"><div class="ttname"><a href="interface_w_b_data_source.html#a37124130bcbd9810e697c80aefac6c9c">+[WBDataSource sharedInstance]</a></div><div class="ttdeci">id sharedInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00015">WBDataSource.m:15</a></div></div>
@@ -119,7 +128,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2013 17:40:42 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 10 2013 18:03:08 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
