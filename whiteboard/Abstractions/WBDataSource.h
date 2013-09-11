@@ -78,6 +78,18 @@
                success:(void(^)(void))success
                failure:(void(^)(NSError *error))failure;
 
+/**
+ Saves a given WBUser to the server.
+ This is used to edit user info.
+ On failure to save, give the error back in a block.
+ @param user The WBUser to save remotely
+ @param success The success block
+ @param failure The failure block, called with an NSError
+ */
+- (void)saveUser:(id<WBUser>)user
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure;
+
 
 /**
 	The currently logged in WBUser, or nil if no user is logged in.

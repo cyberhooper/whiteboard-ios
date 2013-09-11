@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "WBDataSource.h"
+#import "WBUserFactory.h"
 
 @interface WBDatasourceTests : XCTestCase
 
@@ -25,17 +26,17 @@
 
 - (void)tearDown {
   dataSource = nil;
-  NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:10];
-  while (hasCalledBack == NO && [loopUntil timeIntervalSinceNow] > 0) {
-    [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
-                             beforeDate:loopUntil];
-  }
-  
-  if (!hasCalledBack) {
-    XCTFail(@"No response after 10 sec");
-  }
-  hasCalledBack = NO;
-  [super tearDown];
+//  NSDate *loopUntil = [NSDate dateWithTimeIntervalSinceNow:10];
+//  while (hasCalledBack == NO && [loopUntil timeIntervalSinceNow] > 0) {
+//    [[NSRunLoop currentRunLoop] runMode:NSDefaultRunLoopMode
+//                             beforeDate:loopUntil];
+//  }
+//  
+//  if (!hasCalledBack) {
+//    XCTFail(@"No response after 10 sec");
+//  }
+//  hasCalledBack = NO;
+//  [super tearDown];
 }
 
 #pragma mark - login
@@ -122,6 +123,27 @@
     hasCalledBack = YES;
     XCTAssertNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
   }failure:nil];
+}
+
+- (void)testEditAccountSucceeds {
+  __block BOOL successCalled = NO;
+  id<WBUser> user = [WBUserFactory createUser];
+  [[WBDataSource sharedInstance] saveUser:user success:^{
+    hasCalledBack = YES;
+    successCalled = YES;
+  } failure:^(NSError *error) {
+    
+  }];
+  
+  XCTAssertTrue(successCalled, @"fsf");
+}
+
+- (void)testEditAccountFailsWithWrongUser {
+  [[WBDataSource sharedInstance] saveUser:nil
+                                  success:nil
+                                  failure:^(NSError *error) {
+    hasCalledBack = YES;
+  }];
 }
 
 @end

@@ -66,5 +66,17 @@
     }
   }];
 }
+
+- (void)saveUser:(id<WBUser>)user
+         success:(void(^)(void))success
+         failure:(void(^)(NSError *error))failure {
+  PFUser *pfUser = (PFUser*)user;
+  [pfUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (succeeded && success)
+      success();
+    else if (failure)
+      failure(error);
+  }];
+}
                  
 @end
