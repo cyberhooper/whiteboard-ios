@@ -17,10 +17,25 @@
 
 @implementation ParseUser
 
-@dynamic numberFollowing;
+@synthesize userID;
+@synthesize displayName;
+@synthesize firstName;
+@synthesize lastName;
+@synthesize profilePictureSmallURL;
+@synthesize profilePictureMediumURL;
+@synthesize parseProfilePictureMediumURL;
+@synthesize numberOfFollowers;
+@synthesize numberFollowing;
 
-- (void)setProfilePictureMediumURL:(NSURL *)profilePictureMediumURL {
-  self.parseProfilePictureMediumURL = [profilePictureMediumURL absoluteString];
-}
+
+// Automatic synthesize is not require for now since those exist inPFUSer with the same name.
+// It might cause an issue later if the types mismatch.
+
+//username;
+//email;
+//profilePictureMediumURL;
+//profilePictureSmallURL;
+//createdAt;
+//updatedAt;
 
 @end
