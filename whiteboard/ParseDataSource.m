@@ -49,14 +49,18 @@
     }
   }];
 }
-   
+
 - (id<WBUser>)currentUser {
   return [ParseUser currentUser];
 }
 
+- (id<WBUser>)newUser {
+  return [[ParseUser alloc]init];
+}
+
 - (void)deleteUserAccount:(id<WBUser>)user
-                 success:(void (^)(void))success
-                 failure:(void (^)(NSError *))failure {
+                  success:(void (^)(void))success
+                  failure:(void (^)(NSError *))failure {
   [[PFUser currentUser] deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded) {
       success();
@@ -66,5 +70,18 @@
     }
   }];
 }
-                 
+
+- (void)resetPasswordForUser:(id<WBUser>)user
+                     success:(void (^)(void))success
+                     failure:(void (^)(NSError *))failure {
+  [PFUser requestPasswordResetForEmailInBackground:[user email] block:^(BOOL succeeded, NSError *error) {
+    if (succeeded) {
+      success();
+    }
+    else {
+      failure (error);
+    }
+  }];
+}
+
 @end

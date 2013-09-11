@@ -78,11 +78,26 @@
                success:(void(^)(void))success
                failure:(void(^)(NSError *error))failure;
 
+/**
+ reset password of the given WBUser from the server.
+ On failure to reset, give the error back in a block.
+ @param user The WBUser to reset password
+ @param success The success block
+ @param failure The failure block, called with an NSError
+ */
+- (void)resetPasswordForUser:(id<WBUser>)user
+                     success:(void (^)(void))success
+                     failure:(void (^)(NSError *))failure;
 
 /**
 	The currently logged in WBUser, or nil if no user is logged in.
  */
 @property (nonatomic, strong, readonly) id<WBUser> currentUser;
+
+/**
+ new WBUser
+ */
+@property (nonatomic, strong, readonly) id<WBUser> newUser;
 
 
 @end

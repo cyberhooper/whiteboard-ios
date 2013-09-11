@@ -45,12 +45,23 @@ static Class DataSourceSubclass = nil;
 }
 
 - (void)deleteUserAccount:(id<WBUser>)user
-                 success:(void (^)(void))success
-                 failure:(void (^)(NSError *error))failure {
+                  success:(void (^)(void))success
+                  failure:(void (^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)resetPasswordForUser:(id<WBUser>)user
+                     success:(void (^)(void))success
+                     failure:(void (^)(NSError *))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
 - (id<WBUser>)currentUser {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  return nil;
+}
+
+- (id<WBUser>)newUser {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
   return nil;
 }

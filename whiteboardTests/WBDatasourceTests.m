@@ -124,4 +124,22 @@
   }failure:nil];
 }
 
+- (void)testResetPasswordWithValidCredentials {
+  id<WBUser> user = [WBDataSource sharedInstance].newUser;
+  [user setEmail:@"sacha@fueled.com"];
+  [[WBDataSource sharedInstance] resetPasswordForUser:user success:^{
+    hasCalledBack = YES;
+  } failure:nil];
+}
+
+- (void)testResetPasswordWithInvalidCredentials {
+  id<WBUser> user = [WBDataSource sharedInstance].newUser;
+  [user setEmail:@"fakemail@fueled.com"];
+  [[WBDataSource sharedInstance] resetPasswordForUser:user success:^{
+  } failure:^(NSError *error) {
+    XCTAssertNotNil(error, @"signup with invalid credentials should return an error");
+    hasCalledBack = YES;
+  }];
+}
+
 @end
