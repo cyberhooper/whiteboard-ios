@@ -1,5 +1,5 @@
 /**
-@mainpage Main page title goes here
+@mainpage Whiteboard Documentation
 
-The main page content goes here
+Whiteboard is Fueled's standard starting project for photo sharing platforms. It was meant to be modular and easy to modify. Whiteboard comes with a data source/database built from Parse, but can be modified to use other backend services (such as a custom backend) or other methods of data storage (such as Core Data).
 */

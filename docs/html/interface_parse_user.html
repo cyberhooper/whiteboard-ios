@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,8 +84,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Instance Methods</a> &#124;
-<a href="#properties">Properties</a> &#124;
 <a href="class_parse_user-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">ParseUser Class Reference</div>  </div>
@@ -108,15 +106,8 @@ Collaboration diagram for ParseUser:</div>
 <area shape="rect" id="node3" href="protocol_w_b_user-p.html" title="\&lt;WBUser\&gt;" alt="" coords="94,80,177,107"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Instance Methods</h2></td></tr>
-<tr class="memitem:a4ec4bd5a2dd53ab4f9db34b8353c3a4e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_parse_user.html#a4ec4bd5a2dd53ab4f9db34b8353c3a4e">setProfilePictureMediumURL:</a><code> [implementation]</code></td></tr>
-<tr class="separator:a4ec4bd5a2dd53ab4f9db34b8353c3a4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
-Properties</h2></td></tr>
-<tr class="memitem:a976d288343bf867a8786ebc9bbba01bd"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_parse_user.html#a976d288343bf867a8786ebc9bbba01bd">parseProfilePictureMediumURL</a><code> [implementation]</code></td></tr>
-<tr class="separator:a976d288343bf867a8786ebc9bbba01bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
+Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_protocol_w_b_user-p"><td colspan="2" onclick="javascript:toggleInherit('properties_protocol_w_b_user-p')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="protocol_w_b_user-p.html">&lt;WBUser&gt;</a></td></tr>
 <tr class="memitem:a08bace06f60029d2bda9a8c9b9d5638d inherit properties_protocol_w_b_user-p"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="protocol_w_b_user-p.html#a08bace06f60029d2bda9a8c9b9d5638d">userID</a></td></tr>
 <tr class="separator:a08bace06f60029d2bda9a8c9b9d5638d inherit properties_protocol_w_b_user-p"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -147,64 +138,13 @@ Properties</h2></td></tr>
 <div class="textblock"><p>This is a sample concerete implementation of <a class="el" href="protocol_w_b_user-p.html">WBUser</a> using Parse. </p>
 
 <p>Definition at line <a class="el" href="_parse_user_8h_source.html#l00016">16</a> of file <a class="el" href="_parse_user_8h_source.html">ParseUser.h</a>.</p>
-</div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a4ec4bd5a2dd53ab4f9db34b8353c3a4e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) setProfilePictureMediumURL: </td>
-          <td></td>
-          <td class="paramtype">(NSURL *)&#160;</td>
-          <td class="paramname"><em>profilePictureMediumURL</em></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_parse_user_8m_source.html#l00022">22</a> of file <a class="el" href="_parse_user_8m_source.html">ParseUser.m</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Property Documentation</h2>
-<a class="anchor" id="a976d288343bf867a8786ebc9bbba01bd"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (NSString*) parseProfilePictureMediumURL</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span><span class="mlabel">implementation</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_parse_user_8m_source.html#l00014">14</a> of file <a class="el" href="_parse_user_8m_source.html">ParseUser.m</a>.</p>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_parse_user_8h_source.html">ParseUser.h</a></li>
-<li><a class="el" href="_parse_user_8m_source.html">ParseUser.m</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 10 2013 19:27:39 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Sep 11 2013 11:17:41 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
