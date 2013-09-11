@@ -57,7 +57,8 @@
 - (void)deleteUserAccount:(id<WBUser>)user
                  success:(void (^)(void))success
                  failure:(void (^)(NSError *))failure {
-  [[PFUser currentUser] deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+  PFUser *pfUser = (PFUser*)user;
+  [pfUser deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded) {
       success();
     }
