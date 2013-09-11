@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		991614C617DE58DC007FF6B5 /* ParseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991614C517DE58DC007FF6B5 /* ParseUser.m */; };
 		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
 		991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CB17DE8161007FF6B5 /* CFNetwork.framework */; };
 		991614CE17DE8172007FF6B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CD17DE8172007FF6B5 /* CoreLocation.framework */; };
@@ -30,12 +29,13 @@
 		9919154217DA7B2A005DA25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152117DA7B2A005DA25C /* Foundation.framework */; };
 		9919154317DA7B2A005DA25C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152517DA7B2A005DA25C /* UIKit.framework */; };
 		9919154B17DA7B2B005DA25C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919154917DA7B2B005DA25C /* InfoPlist.strings */; };
+		9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB4F17E0DA6500D1B18A /* WBDataSource.m */; };
+		9922AB5417E0DA6500D1B18A /* WBUserFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5217E0DA6500D1B18A /* WBUserFactory.m */; };
+		9922AB5A17E0DA6B00D1B18A /* ParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5717E0DA6B00D1B18A /* ParseDataSource.m */; };
+		9922AB5B17E0DA6B00D1B18A /* ParseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5917E0DA6B00D1B18A /* ParseUser.m */; };
 		9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940D16717DF62F1008B2825 /* WBDatasourceTests.m */; };
-		9940D16B17DF632A008B2825 /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940D16A17DF632A008B2825 /* WBDataSource.m */; };
-		9940D16E17DF660F008B2825 /* ParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940D16D17DF660F008B2825 /* ParseDataSource.m */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
 		99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7D17DE4FBF00809322 /* MyViewController.m */; };
-		99D80C8117DE51F900809322 /* WBUserFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C8017DE51F900809322 /* WBUserFactory.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,8 +49,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		991614C417DE58DC007FF6B5 /* ParseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUser.h; sourceTree = "<group>"; };
-		991614C517DE58DC007FF6B5 /* ParseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUser.m; sourceTree = "<group>"; };
 		991614C917DE813C007FF6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		991614CB17DE8161007FF6B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		991614CD17DE8172007FF6B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -77,17 +75,19 @@
 		9919154017DA7B2A005DA25C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9919154817DA7B2B005DA25C /* whiteboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whiteboardTests-Info.plist"; sourceTree = "<group>"; };
 		9919154A17DA7B2B005DA25C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9922AB4E17E0DA6500D1B18A /* WBDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataSource.h; sourceTree = "<group>"; };
+		9922AB4F17E0DA6500D1B18A /* WBDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDataSource.m; sourceTree = "<group>"; };
+		9922AB5017E0DA6500D1B18A /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
+		9922AB5117E0DA6500D1B18A /* WBUserFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUserFactory.h; sourceTree = "<group>"; };
+		9922AB5217E0DA6500D1B18A /* WBUserFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUserFactory.m; sourceTree = "<group>"; };
+		9922AB5617E0DA6B00D1B18A /* ParseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseDataSource.h; sourceTree = "<group>"; };
+		9922AB5717E0DA6B00D1B18A /* ParseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseDataSource.m; sourceTree = "<group>"; };
+		9922AB5817E0DA6B00D1B18A /* ParseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUser.h; sourceTree = "<group>"; };
+		9922AB5917E0DA6B00D1B18A /* ParseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUser.m; sourceTree = "<group>"; };
 		9940D16717DF62F1008B2825 /* WBDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDatasourceTests.m; sourceTree = "<group>"; };
-		9940D16917DF632A008B2825 /* WBDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataSource.h; sourceTree = "<group>"; };
-		9940D16A17DF632A008B2825 /* WBDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDataSource.m; sourceTree = "<group>"; };
-		9940D16C17DF660F008B2825 /* ParseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseDataSource.h; sourceTree = "<group>"; };
-		9940D16D17DF660F008B2825 /* ParseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseDataSource.m; sourceTree = "<group>"; };
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
-		99D80C7217DE0F9900809322 /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
 		99D80C7C17DE4FBF00809322 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		99D80C7D17DE4FBF00809322 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
-		99D80C7F17DE51F800809322 /* WBUserFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUserFactory.h; sourceTree = "<group>"; };
-		99D80C8017DE51F900809322 /* WBUserFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUserFactory.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,15 +170,8 @@
 				9919153317DA7B2A005DA25C /* Main.storyboard */,
 				9919153017DA7B2A005DA25C /* AppDelegate.h */,
 				9919153117DA7B2A005DA25C /* AppDelegate.m */,
-				9940D16C17DF660F008B2825 /* ParseDataSource.h */,
-				9940D16D17DF660F008B2825 /* ParseDataSource.m */,
-				99D80C7217DE0F9900809322 /* WBUser.h */,
-				9940D16917DF632A008B2825 /* WBDataSource.h */,
-				9940D16A17DF632A008B2825 /* WBDataSource.m */,
-				991614C417DE58DC007FF6B5 /* ParseUser.h */,
-				991614C517DE58DC007FF6B5 /* ParseUser.m */,
-				99D80C7F17DE51F800809322 /* WBUserFactory.h */,
-				99D80C8017DE51F900809322 /* WBUserFactory.m */,
+				9922AB4D17E0DA6500D1B18A /* Abstractions */,
+				9922AB5517E0DA6B00D1B18A /* Parse Implementations */,
 				99D80C7C17DE4FBF00809322 /* MyViewController.h */,
 				99D80C7D17DE4FBF00809322 /* MyViewController.m */,
 				9919153917DA7B2A005DA25C /* Images.xcassets */,
@@ -215,6 +208,29 @@
 				9919154917DA7B2B005DA25C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9922AB4D17E0DA6500D1B18A /* Abstractions */ = {
+			isa = PBXGroup;
+			children = (
+				9922AB4E17E0DA6500D1B18A /* WBDataSource.h */,
+				9922AB4F17E0DA6500D1B18A /* WBDataSource.m */,
+				9922AB5017E0DA6500D1B18A /* WBUser.h */,
+				9922AB5117E0DA6500D1B18A /* WBUserFactory.h */,
+				9922AB5217E0DA6500D1B18A /* WBUserFactory.m */,
+			);
+			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		9922AB5517E0DA6B00D1B18A /* Parse Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				9922AB5617E0DA6B00D1B18A /* ParseDataSource.h */,
+				9922AB5717E0DA6B00D1B18A /* ParseDataSource.m */,
+				9922AB5817E0DA6B00D1B18A /* ParseUser.h */,
+				9922AB5917E0DA6B00D1B18A /* ParseUser.m */,
+			);
+			path = "Parse Implementations";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,13 +331,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9922AB5A17E0DA6B00D1B18A /* ParseDataSource.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
-				9940D16B17DF632A008B2825 /* WBDataSource.m in Sources */,
-				9940D16E17DF660F008B2825 /* ParseDataSource.m in Sources */,
+				9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */,
 				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
-				991614C617DE58DC007FF6B5 /* ParseUser.m in Sources */,
-				99D80C8117DE51F900809322 /* WBUserFactory.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
+				9922AB5417E0DA6500D1B18A /* WBUserFactory.m in Sources */,
+				9922AB5B17E0DA6B00D1B18A /* ParseUser.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -66,4 +66,10 @@ static Class DataSourceSubclass = nil;
   return nil;
 }
 
+- (void)saveUser:(id<WBUser>)user
+         success:(void(^)(void))success
+         failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
 @end
