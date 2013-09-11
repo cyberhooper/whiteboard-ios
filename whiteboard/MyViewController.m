@@ -8,7 +8,7 @@
 
 #import "MyViewController.h"
 #import "WBUser.h"
-#import "WBUserFactory.h"
+#import "WBDataSource.h"
 
 @interface MyViewController ()
 
@@ -18,8 +18,15 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  id<WBUser> aUser = [WBUserFactory createUser];
+  id<WBUser> aUser = [WBDataSource createUser];
   NSLog(@"user.firstname : %@", aUser.firstName);
+  
+  // Log in :
+  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
+    NSLog(@"Logged in with user :%@", user);
+  } failure:^(NSError *error) {
+    NSLog(@"Loggin in failed :%@",error);
+  }];
 }
 
 @end

@@ -107,10 +107,9 @@
 @property (nonatomic, strong, readonly) id<WBUser> currentUser;
 
 /**
- new WBUser
+ creates a WBUser object.
  */
-@property (nonatomic, strong, readonly) id<WBUser> newUser;
-
++ (id<WBUser>)createUser;
 
 @end
 

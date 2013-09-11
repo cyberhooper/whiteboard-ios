@@ -8,8 +8,6 @@
 
 #import "ParseDataSource.h"
 #import <Parse/Parse.h>
-#import "WBUserFactory.h"
-
 #import "ParseUser.h"
 
 @implementation ParseDataSource
@@ -40,7 +38,7 @@
   [currentUser setPassword:[userInfo objectForKey:@"password"]];
   [currentUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded) {
-      id<WBUser> wbUser = [WBUserFactory createUser];
+      id<WBUser> wbUser = [[self class] createUser];
       wbUser.username = [currentUser username];
       success(wbUser);
     }
@@ -54,8 +52,8 @@
   return [ParseUser currentUser];
 }
 
-- (id<WBUser>)newUser {
-  return [[ParseUser alloc]init];
++ (id<WBUser>)createUser {
+  return  [[ParseUser alloc] init];
 }
 
 - (void)deleteUserAccount:(id<WBUser>)user

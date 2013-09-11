@@ -8,7 +8,6 @@
 
 #import <XCTest/XCTest.h>
 #import "WBDataSource.h"
-#import "WBUserFactory.h"
 
 @interface WBDatasourceTests : XCTestCase
 
@@ -126,7 +125,7 @@
 }
 
 - (void)testResetPasswordWithValidCredentials {
-  id<WBUser> user = [WBDataSource sharedInstance].newUser;
+  id<WBUser> user = [WBDataSource createUser];
   [user setEmail:@"sacha@fueled.com"];
   [[WBDataSource sharedInstance] resetPasswordForUser:user success:^{
     hasCalledBack = YES;
@@ -134,7 +133,7 @@
 }
 
 - (void)testResetPasswordWithInvalidCredentials {
-  id<WBUser> user = [WBDataSource sharedInstance].newUser;
+  id<WBUser> user = [WBDataSource createUser];
   [user setEmail:@"fakemail@fueled.com"];
   [[WBDataSource sharedInstance] resetPasswordForUser:user success:^{
   } failure:^(NSError *error) {
@@ -145,7 +144,7 @@
 
 - (void)testEditAccountSucceeds {
   __block BOOL successCalled = NO;
-  id<WBUser> user = [WBUserFactory createUser];
+  id<WBUser> user = [WBDataSource createUser];
   [[WBDataSource sharedInstance] saveUser:user success:^{
     hasCalledBack = YES;
     successCalled = YES;

@@ -61,9 +61,23 @@ static Class DataSourceSubclass = nil;
   return nil;
 }
 
-- (id<WBUser>)newUser {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
-  return nil;
++ (id<WBUser>)createUser {
+  if (DataSourceSubclass !=[self class] ) {
+    @try {
+      id <WBUser> user = [DataSourceSubclass createUser];
+      return user;
+    }
+    @catch (NSException *exception) {
+      [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+    }
+    @finally {
+      
+    }
+  }
+  else {
+        [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  }
+
 }
 
 - (void)saveUser:(id<WBUser>)user
