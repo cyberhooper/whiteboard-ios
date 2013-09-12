@@ -49,6 +49,7 @@
 		BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7417E22197003494CD /* MainFeedViewController.m */; };
 		BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F7517E22197003494CD /* MainFeedViewController.xib */; };
 		BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */; };
+		BE1B3F8017E24875003494CD /* WBTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7F17E24875003494CD /* WBTheme.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +122,8 @@
 		BE1B3F7517E22197003494CD /* MainFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedViewController.xib; sourceTree = "<group>"; };
 		BE1B3F7617E22197003494CD /* WBPhotoTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineViewController.h; sourceTree = "<group>"; };
 		BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineViewController.m; sourceTree = "<group>"; };
+		BE1B3F7E17E24875003494CD /* WBTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTheme.h; path = Theme/WBTheme.h; sourceTree = "<group>"; };
+		BE1B3F7F17E24875003494CD /* WBTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBTheme.m; path = Theme/WBTheme.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -307,6 +310,8 @@
 		BE1B3F7B17E22335003494CD /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				BE1B3F7E17E24875003494CD /* WBTheme.h */,
+				BE1B3F7F17E24875003494CD /* WBTheme.m */,
 			);
 			name = Theme;
 			sourceTree = "<group>";
@@ -460,6 +465,7 @@
 				BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */,
 				9922AB5B17E0DA6B00D1B18A /* ParseUser.m in Sources */,
 				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
+				BE1B3F8017E24875003494CD /* WBTheme.m in Sources */,
 				BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
