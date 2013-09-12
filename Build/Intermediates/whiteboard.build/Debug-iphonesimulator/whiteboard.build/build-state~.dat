@@ -1,662 +1,0 @@
-Twhiteboard
-v6
-r1
-cCheck dependencies
-cPhaseScriptExecution Check\ Pods\ Manifest.lock /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Script-31FEC07121E64B94ACAAF786.sh
-cProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch.pch whiteboard/whiteboard-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedCell.o /Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBManager.o /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseDataSource.o /Users/lnf/Documents/Whiteboard/whiteboard/Parse\ Implementations/ParseDataSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineSectionHeaderView.o /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/AppDelegate.o /Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBDataSource.o /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MyViewController.o /Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineCell.o /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/main.o /Users/lnf/Documents/Whiteboard/whiteboard/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/UIImageView+SLImageLoader.o /Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseUser.o /Users/lnf/Documents/Whiteboard/whiteboard/Parse\ Implementations/ParseUser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedViewController.o /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineViewController.o /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-cLd /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app/whiteboard normal i386
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
-c00000000521BCCE50000000000000176
-t1377553637
-s374
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
-c00000000522ACC8F00000000000003B5
-t1378536591
-s949
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
-c00000000522ACCD2000000000000019E
-t1378536658
-s414
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
-c00000000522ACCE70000000000902E30
-t1378536679
-s9449008
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CFNetwork.framework/CFNetwork
-c00000000522ACCEC0000000000583810
-t1378536684
-s5781520
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
-c00000000522ACCEE0000000000445830
-t1378536686
-s4479024
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/CoreLocation.framework/CoreLocation
-c00000000522ACCEF00000000000EC820
-t1378536687
-s968736
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
-c00000000522ACCFA000000000088B570
-t1378536698
-s8959344
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
-c00000000522ACD0F00000000001BA500
-t1378536719
-s1811712
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
-c00000000522ACD120000000000484860
-t1378536722
-s4737120
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Security.framework/Security
-c00000000522ACD140000000000127E10
-t1378536724
-s1211920
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/StoreKit.framework/StoreKit
-c00000000522ACD1A000000000006A870
-t1378536730
-s436336
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
-c00000000522ACD1B00000000001081B0
-t1378536731
-s1081776
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/UIKit.framework/UIKit
-c00000000522ACD200000000001DB1C90
-t1378536736
-s31136912
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/usr/lib/libz.1.1.3.dylib
-c00000000522ACE33000000000002B700
-t1378537011
-s177920
-
-N/Applications/Xcode 5 GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/include/module.map
-c00000000520D88540000000000000AC9
-t1376618580
-s2761
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch.pch
-t1379010653
-s114180
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/AppDelegate.o
-t1379010654
-s66984
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedCell.o
-t1379010654
-s44708
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedViewController.o
-t1379010654
-s47812
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MyViewController.o
-t1379010654
-s44228
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseDataSource.o
-t1379010654
-s26844
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseUser.o
-t1379010654
-s22364
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/UIImageView+SLImageLoader.o
-t1379010654
-s41708
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBDataSource.o
-t1379010654
-s17976
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBManager.o
-t1379010654
-s7708
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineCell.o
-t1379010654
-s48048
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineSectionHeaderView.o
-t1379010654
-s64548
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineViewController.o
-t1379010654
-s71080
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/main.o
-t1379010654
-s3636
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/whiteboard.LinkFileList
-c000000005232085D000000000000077E
-t1379010653
-s1918
-
-N/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Script-31FEC07121E64B94ACAAF786.sh
-c000000005232085D0000000000000103
-t1379010653
-s259
-
-N/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a
-c00000000000000000000000000000000
-t2
-s0
-
-N/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app/whiteboard
-t2
-s0
-
-N/Users/lnf/Documents/Whiteboard/Parse.framework/Parse
-c0000000052320219000000000120F7F4
-t1379009049
-s18937844
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.m
-c000000005231E7F00000000000000A44
-t1379002352
-s2628
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.m
-c000000005231E7F00000000000000307
-t1379002352
-s775
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.m
-c000000005231E8A50000000000000298
-t1379002533
-s664
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.m
-c000000005231EAA100000000000006E9
-t1379003041
-s1769
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.m
-c000000005231EA350000000000000B9F
-t1379002933
-s2975
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.m
-c000000005231E7F000000000000002BD
-t1379002352
-s701
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseDataSource.m
-c000000005231E7F00000000000000B13
-t1379002352
-s2835
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseUser.m
-c000000005231E7F00000000000000353
-t1379002352
-s851
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.m
-c000000005232021A00000000000005B2
-t1379009050
-s1458
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.m
-c000000005231E48E000000000000021A
-t1379001486
-s538
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.m
-c000000005231E48E000000000000026D
-t1379001486
-s621
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.m
-c000000005231DE5C0000000000000626
-t1378999900
-s1574
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/main.m
-c000000005231E7F00000000000000151
-t1379002352
-s337
-
-N/Users/lnf/Documents/Whiteboard/whiteboard/whiteboard-Prefix.pch
-c00000000522E24310000000000000154
-t1378755633
-s340
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/Parse\ Implementations/ParseDataSource.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/Parse\ Implementations/ParseUser.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.m
-r0
-
-CBuild AST from /Users/lnf/Documents/Whiteboard/whiteboard/main.m
-r0
-
-CCheck dependencies
-r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesdd94c6dd3fe2b741^4776dddd3fe2b741^---0#1#1#--18"Check dependencies36"594CC05D-B068-450B-BC87-DD1424075158-
-
-CCompileAssetCatalog /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app /Users/lnf/Documents/Whiteboard/whiteboard/Images.xcassets
-r0
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/AppDelegate.o /Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.222231
-e400703454.387075
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/AppDelegate.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/Parse.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFACL.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFAnalytics.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFAnonymousUtils.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFUser.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFConstants.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFObject.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFSubclassing.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFCloud.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFFile.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFGeoPoint.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFQuery.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFRelation.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFRole.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFImageView.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFInstallation.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFLogInViewController.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFLogInView.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFSignUpViewController.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFSignUpView.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFProduct.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFProductTableViewController.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFQueryTableViewController.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFTableViewCell.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFPurchase.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFPush.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFTwitterUtils.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PF_Twitter.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseUser.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBUser.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection64"Compile /Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.m211"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/AppDelegate.o whiteboard/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler4d1039de3fe2b741^460764de3fe2b741^---0#0#1#-19%DVTDocumentLocation2@72"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.m0000000000000000^3793"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/AppDelegate.o whiteboard/AppDelegate.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/AppDelegate.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/AppDelegate.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/AppDelegate.o36"52B53745-0783-46BD-B60C-735A0844887F-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedCell.o /Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703453.998459
-e400703454.165643
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedCell.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection71"Compile /Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.m219"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedCell.o whiteboard/Views/MainFeedCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb4c7ffdd3fe2b741^e1972ade3fe2b741^---0#0#1#-19%DVTDocumentLocation2@79"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.m0000000000000000^3811"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedCell.o whiteboard/Views/MainFeedCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedCell.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedCell.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedCell.o36"43BA97DD-301D-4858-A19D-D44D89B07F60-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedViewController.o /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.741330
-e400703454.853780
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedViewController.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection87"Compile /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.m245"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedViewController.o whiteboard/Controllers/MainFeedViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler19e5bdde3fe2b741^6c93dade3fe2b741^---0#0#1#-19%DVTDocumentLocation2@95"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.m0000000000000000^3883"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedViewController.o whiteboard/Controllers/MainFeedViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedViewController.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedViewController.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MainFeedViewController.o36"B4547574-A7A3-4C4C-9997-BC9FDB67A481-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MyViewController.o /Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.390922
-e400703454.505329
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MyViewController.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBUser.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection69"Compile /Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.m221"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MyViewController.o whiteboard/MyViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler75ae64de3fe2b741^f31b82de3fe2b741^---0#0#1#-19%DVTDocumentLocation2@77"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.m0000000000000000^3823"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MyViewController.o whiteboard/MyViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MyViewController.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MyViewController.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/MyViewController.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/MyViewController.o36"8F01A4C3-A4A8-466F-8335-F35BDA38ED0F-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseDataSource.o /Users/lnf/Documents/Whiteboard/whiteboard/Parse\ Implementations/ParseDataSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.083683
-e400703454.218860
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseDataSource.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseDataSource.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseDataSource.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseDataSource.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBUser.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/Parse.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFACL.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFAnalytics.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFAnonymousUtils.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFUser.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFConstants.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFObject.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFSubclassing.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFCloud.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFFile.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFGeoPoint.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFQuery.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFRelation.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFRole.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFImageView.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFInstallation.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFLogInViewController.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFLogInView.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFSignUpViewController.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFSignUpView.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFProduct.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFProductTableViewController.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFQueryTableViewController.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFTableViewCell.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PF_EGORefreshTableHeaderView.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFPurchase.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFPush.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFTwitterUtils.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PF_Twitter.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseUser.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection90"Compile /Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseDataSource.m242"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseDataSource.o whiteboard/Parse\ Implementations/ParseDataSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler789915de3fe2b741^e91038de3fe2b741^---0#0#1#-19%DVTDocumentLocation2@100"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/Parse%20Implementations/ParseDataSource.m0000000000000000^3863"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseDataSource.o whiteboard/Parse\ Implementations/ParseDataSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseDataSource.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseDataSource.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/Parse\ Implementations/ParseDataSource.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseDataSource.o36"B25D9E0A-071E-4BF1-B9B4-5FA19B07AD69-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseUser.o /Users/lnf/Documents/Whiteboard/whiteboard/Parse\ Implementations/ParseUser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.630700
-e400703454.740834
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseUser.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseUser.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseUser.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseUser.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBUser.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFUser.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFConstants.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFObject.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFACL.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFSubclassing.h
-d/Users/lnf/Documents/Whiteboard/Parse.framework/Headers/PFObject+Subclass.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection84"Compile /Users/lnf/Documents/Whiteboard/whiteboard/Parse Implementations/ParseUser.m230"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseUser.o whiteboard/Parse\ Implementations/ParseUser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler3292a1de3fe2b741^b1a7bdde3fe2b741^---0#0#1#-19%DVTDocumentLocation2@94"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/Parse%20Implementations/ParseUser.m0000000000000000^3827"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseUser.o whiteboard/Parse\ Implementations/ParseUser.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseUser.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseUser.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/Parse\ Implementations/ParseUser.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/ParseUser.o36"A63877D9-63C5-4F25-82BF-8A23560169C9-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/UIImageView+SLImageLoader.o /Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.522071
-e400703454.740400
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/UIImageView+SLImageLoader.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.m239"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/UIImageView+SLImageLoader.o whiteboard/UIImageView+SLImageLoader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler89cf85de3fe2b741^098cbdde3fe2b741^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.m0000000000000000^3877"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/UIImageView+SLImageLoader.o whiteboard/UIImageView+SLImageLoader.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/UIImageView+SLImageLoader.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/UIImageView+SLImageLoader.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/UIImageView+SLImageLoader.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/UIImageView+SLImageLoader.o36"8EEA7E32-96D6-48FF-B5EA-D6CB69E3BE28-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBDataSource.o /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.317979
-e400703454.397606
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBDataSource.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBUser.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.m226"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBDataSource.o whiteboard/Abstractions/WBDataSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler369151de3fe2b741^d5e865de3fe2b741^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.m0000000000000000^3825"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBDataSource.o whiteboard/Abstractions/WBDataSource.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBDataSource.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBDataSource.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBDataSource.o36"400AEBF6-7D0D-443D-A6B6-76DCB1F581AB-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBManager.o /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703453.998660
-e400703454.082147
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBManager.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBDataSource.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBUser.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection75"Compile /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.m220"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBManager.o whiteboard/Abstractions/WBManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb4c7ffdd3fe2b741^c80715de3fe2b741^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.m0000000000000000^3807"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBManager.o whiteboard/Abstractions/WBManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBManager.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBManager.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/Abstractions/WBManager.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBManager.o36"11784C83-54DA-4837-B0B0-97E697B19FD8-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineCell.o /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.399177
-e400703454.520204
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineCell.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection78"Compile /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.m233"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineCell.o whiteboard/Views/WBPhotoTimelineCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler785e66de3fe2b741^147685de3fe2b741^---0#0#1#-19%DVTDocumentLocation2@86"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.m0000000000000000^3853"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineCell.o whiteboard/Views/WBPhotoTimelineCell.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineCell.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineCell.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineCell.o36"2D7E0A80-E538-460A-9835-03B106611B21-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineSectionHeaderView.o /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.167116
-e400703454.316251
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineSectionHeaderView.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection91"Compile /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.m259"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineSectionHeaderView.o whiteboard/Views/WBPhotoTimelineSectionHeaderView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerbaf92ade3fe2b741^ad3051de3fe2b741^---0#0#1#-19%DVTDocumentLocation2@99"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.m0000000000000000^3931"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineSectionHeaderView.o whiteboard/Views/WBPhotoTimelineSectionHeaderView.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineSectionHeaderView.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineSectionHeaderView.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineSectionHeaderView.o36"E0CEC1E9-DCFA-4976-BE2C-92718BDBD44B-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineViewController.o /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.741560
-e400703454.864414
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineViewController.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.h
-d/Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.m259"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineViewController.o whiteboard/Controllers/WBPhotoTimelineViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerd0edbdde3fe2b741^6686ddde3fe2b741^---0#0#1#-19%DVTDocumentLocation2@102"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.m0000000000000000^3925"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineViewController.o whiteboard/Controllers/WBPhotoTimelineViewController.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineViewController.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineViewController.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/WBPhotoTimelineViewController.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/WBPhotoTimelineViewController.o36"112739C1-A8C1-4F0C-95EF-2588E23B49DB-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/main.o /Users/lnf/Documents/Whiteboard/whiteboard/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703454.510115
-e400703454.739814
-r1
-xCompileC
-xBuild/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/main.o
-x/Users/lnf/Documents/Whiteboard/whiteboard/main.m
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/main.m
-d/Users/lnf/Documents/Whiteboard/whiteboard/AppDelegate.h
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/lnf/Documents/Whiteboard/whiteboard/main.m197"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/main.o whiteboard/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb1c182de3fe2b741^eb6fbdde3fe2b741^---0#0#1#-19%DVTDocumentLocation2@65"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/main.m0000000000000000^3751"CompileC Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/main.o whiteboard/main.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/main.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/main.dia -c /Users/lnf/Documents/Whiteboard/whiteboard/main.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/main.o36"E7BCF221-E1CE-43F5-A3F1-CB3C3230BE79-
-bAC953640-0783-43B6-B95E-706057897416
-
-CCompileStoryboard /Users/lnf/Documents/Whiteboard/whiteboard/Base.lproj/Main.storyboard
-r0
-
-CCompileXIB /Users/lnf/Documents/Whiteboard/whiteboard/Controllers/MainFeedViewController.xib
-r0
-
-CCompileXIB /Users/lnf/Documents/Whiteboard/whiteboard/MainWindow.xib
-r0
-
-CCompileXIB /Users/lnf/Documents/Whiteboard/whiteboard/Views/MainFeedCell.xib
-r0
-
-CCompileXIB /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineCell.xib
-r0
-
-CCompileXIB /Users/lnf/Documents/Whiteboard/whiteboard/Views/WBPhotoTimelineSectionHeaderView.xib
-r0
-
-CCopyStringsFile /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app/en.lproj/InfoPlist.strings whiteboard/en.lproj/InfoPlist.strings
-r0
-
-CGenerateDSYMFile /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app.dSYM /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app/whiteboard
-r0
-
-CLd /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app/whiteboard normal i386
-s400703454.960322
-e400703454.978997
-r0
-xLd
-x/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app/whiteboard
-xnormal
-xi386
-d/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/whiteboard.LinkFileList
-old: library not found for -lPods
-oclang: error: linker command failed with exit code 1 (use -v to see invocation)
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection99"Link /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app/whiteboard77"Ld Build/Products/Debug-iphonesimulator/whiteboard.app/whiteboard normal i3863bfcf5de3fe2b741^809efade3fe2b741^-113"ld: library not found for -lPodsclang: error: linker command failed with exit code 1 (use -v to see invocation)2(21%IDEActivityLogMessage2@28"Library not found for -lPods-400703454#0#33#-0#-23%DVTTextDocumentLocation3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#26"Apple Mach-O Linker Notice--2@65"Linker command failed with exit code 1 (use -v to see invocation)-400703454#33#80#-2#-3@-0000000000000000^18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#18446744073709551615#0#25"Apple Mach-O Linker Error--0#0#1#--1772"Ld Build/Products/Debug-iphonesimulator/whiteboard.app/whiteboard normal i386    cd /Users/lnf/Documents/Whiteboard    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard -filelist /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/whiteboard.LinkFileList -Xlinker -objc_abi_version -Xlinker 2 -ObjC -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration -fobjc-arc -fobjc-link-runtime -Xlinker -no_implicit_dylibs -mios-simulator-version-min=7.0 -framework SystemConfiguration -framework StoreKit -framework Security -framework QuartzCore -framework MobileCoreServices -lz.1.1.3 -framework Parse -framework CoreLocation -framework CoreGraphics -framework CFNetwork -framework AudioToolbox -framework UIKit -framework Foundation -lPods -Xlinker -dependency_info -Xlinker /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/whiteboard_dependency_info.dat -o /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app/whiteboard36"F65A6298-F9F6-4B56-A637-417E534441AF-
-bAC953640-0783-43B6-B95E-706057897416
-
-CPhaseScriptExecution Check\ Pods\ Manifest.lock /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Script-31FEC07121E64B94ACAAF786.sh
-s400703453.868843
-e400703453.907389
-r1
-xPhaseScriptExecution
-xCheck Pods Manifest.lock
-x/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Script-31FEC07121E64B94ACAAF786.sh
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection50"Run custom shell script 'Check Pods Manifest.lock'158"PhaseScriptExecution Check\ Pods\ Manifest.lock Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Script-31FEC07121E64B94ACAAF786.sh1763e0dd3fe2b741^2596e8dd3fe2b741^---0#0#1#--22623"PhaseScriptExecution Check\ Pods\ Manifest.lock Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Script-31FEC07121E64B94ACAAF786.sh    cd /Users/lnf/Documents/Whiteboard    setenv ACTION build    setenv AD_HOC_CODE_SIGNING_ALLOWED NO    setenv ALTERNATE_GROUP staff    setenv ALTERNATE_MODE u+w,go-w,a+rX    setenv ALTERNATE_OWNER lnf    setenv ALWAYS_SEARCH_USER_PATHS NO    setenv ALWAYS_USE_SEPARATE_HEADERMAPS YES    setenv APPLE_INTERNAL_DEVELOPER_DIR /AppleInternal/Developer    setenv APPLE_INTERNAL_DIR /AppleInternal    setenv APPLE_INTERNAL_DOCUMENTATION_DIR /AppleInternal/Documentation    setenv APPLE_INTERNAL_LIBRARY_DIR /AppleInternal/Library    setenv APPLE_INTERNAL_TOOLS /AppleInternal/Developer/Tools    setenv APPLY_RULES_IN_COPY_FILES NO    setenv ARCHS i386    setenv ARCHS_STANDARD i386    setenv ARCHS_STANDARD_32_64_BIT i386    setenv ARCHS_STANDARD_32_BIT i386    setenv ARCHS_STANDARD_64_BIT x86_64    setenv ARCHS_STANDARD_INCLUDING_64_BIT "i386 x86_64"    setenv ASSETCATALOG_COMPILER_APPICON_NAME AppIcon    setenv ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME LaunchImage    setenv AVAILABLE_PLATFORMS "iphonesimulator macosx iphoneos"    setenv BUILD_COMPONENTS "headers build"    setenv BUILD_DIR /Users/lnf/Documents/Whiteboard/Build/Products    setenv BUILD_ROOT /Users/lnf/Documents/Whiteboard/Build/Products    setenv BUILD_STYLE     setenv BUILD_VARIANTS normal    setenv BUILT_PRODUCTS_DIR /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator    setenv CACHE_ROOT /var/folders/x3/cj8r8c1j4zj85k0thv4rp6g00000gn/C/com.apple.DeveloperTools/5.0-5A1412/Xcode    setenv CCHROOT /var/folders/x3/cj8r8c1j4zj85k0thv4rp6g00000gn/C/com.apple.DeveloperTools/5.0-5A1412/Xcode    setenv CHMOD /bin/chmod    setenv CHOWN /usr/sbin/chown    setenv CLANG_CXX_LANGUAGE_STANDARD gnu++0x    setenv CLANG_CXX_LIBRARY libc++    setenv CLANG_ENABLE_MODULES YES    setenv CLANG_ENABLE_OBJC_ARC YES    setenv CLANG_WARN_BOOL_CONVERSION YES    setenv CLANG_WARN_CONSTANT_CONVERSION YES    setenv CLANG_WARN_DIRECT_OBJC_ISA_USAGE YES_ERROR    setenv CLANG_WARN_EMPTY_BODY YES    setenv CLANG_WARN_ENUM_CONVERSION YES    setenv CLANG_WARN_INT_CONVERSION YES    setenv CLANG_WARN_OBJC_ROOT_CLASS YES_ERROR    setenv CLANG_WARN__DUPLICATE_METHOD_MATCH YES    setenv CLASS_FILE_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/JavaClasses    setenv CLEAN_PRECOMPS YES    setenv CLONE_HEADERS NO    setenv CODESIGNING_FOLDER_PATH /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app    setenv CODE_SIGNING_ALLOWED NO    setenv CODE_SIGN_CONTEXT_CLASS XCiPhoneSimulatorCodeSignContext    setenv COLOR_DIAGNOSTICS NO    setenv COMBINE_HIDPI_IMAGES NO    setenv COMMAND_MODE legacy    setenv COMPOSITE_SDK_DIRS /var/folders/x3/cj8r8c1j4zj85k0thv4rp6g00000gn/C/com.apple.DeveloperTools/5.0-5A1412/Xcode/CompositeSDKs    setenv COMPRESS_PNG_FILES YES    setenv CONFIGURATION Debug    setenv CONFIGURATION_BUILD_DIR /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator    setenv CONFIGURATION_TEMP_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator    setenv CONTENTS_FOLDER_PATH whiteboard.app    setenv COPYING_PRESERVES_HFS_DATA NO    setenv COPY_PHASE_STRIP NO    setenv COPY_RESOURCES_FROM_STATIC_FRAMEWORKS YES    setenv CP /bin/cp    setenv CREATE_INFOPLIST_SECTION_IN_BINARY NO    setenv CURRENT_ARCH i386    setenv CURRENT_VARIANT normal    setenv DEAD_CODE_STRIPPING NO    setenv DEBUGGING_SYMBOLS YES    setenv DEBUG_INFORMATION_FORMAT dwarf-with-dsym    setenv DEFAULT_COMPILER com.apple.compilers.llvm.clang.1_0    setenv DEFAULT_KEXT_INSTALL_PATH /System/Library/Extensions    setenv DEPLOYMENT_LOCATION NO    setenv DEPLOYMENT_POSTPROCESSING NO    setenv DERIVED_FILES_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources    setenv DERIVED_FILE_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources    setenv DERIVED_SOURCES_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources    setenv DEVELOPER_APPLICATIONS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Applications"    setenv DEVELOPER_BIN_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin"    setenv DEVELOPER_DIR "/Applications/Xcode 5 GM.app/Contents/Developer"    setenv DEVELOPER_FRAMEWORKS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Library/Frameworks"    setenv DEVELOPER_FRAMEWORKS_DIR_QUOTED "/Applications/Xcode 5 GM.app/Contents/Developer/Library/Frameworks"    setenv DEVELOPER_LIBRARY_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Library"    setenv DEVELOPER_SDK_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs"    setenv DEVELOPER_TOOLS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Tools"    setenv DEVELOPER_USR_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/usr"    setenv DEVELOPMENT_LANGUAGE English    setenv DOCUMENTATION_FOLDER_PATH whiteboard.app/English.lproj/Documentation    setenv DO_HEADER_SCANNING_IN_JAM NO    setenv DSTROOT /tmp/whiteboard.dst    setenv DT_TOOLCHAIN_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain"    setenv DWARF_DSYM_FILE_NAME whiteboard.app.dSYM    setenv DWARF_DSYM_FILE_SHOULD_ACCOMPANY_PRODUCT NO    setenv DWARF_DSYM_FOLDER_PATH /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator    setenv EFFECTIVE_PLATFORM_NAME -iphonesimulator    setenv ENABLE_HEADER_DEPENDENCIES YES    setenv EXCLUDED_INSTALLSRC_SUBDIRECTORY_PATTERNS ".DS_Store .svn .git .hg CVS"    setenv EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES "*.nib *.lproj *.framework *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj"    setenv EXECUTABLES_FOLDER_PATH whiteboard.app/Executables    setenv EXECUTABLE_FOLDER_PATH whiteboard.app    setenv EXECUTABLE_NAME whiteboard    setenv EXECUTABLE_PATH whiteboard.app/whiteboard    setenv FILE_LIST /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects/LinkFileList    setenv FIXED_FILES_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/FixedFiles    setenv FRAMEWORKS_FOLDER_PATH whiteboard.app/Frameworks    setenv FRAMEWORK_FLAG_PREFIX -framework    setenv FRAMEWORK_SEARCH_PATHS "/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator  /Users/lnf/Documents/Whiteboard"    setenv FRAMEWORK_VERSION A    setenv FULL_PRODUCT_NAME whiteboard.app    setenv GCC3_VERSION 3.3    setenv GCC_C_LANGUAGE_STANDARD gnu99    setenv GCC_DYNAMIC_NO_PIC NO    setenv GCC_INLINES_ARE_PRIVATE_EXTERN YES    setenv GCC_OBJC_LEGACY_DISPATCH YES    setenv GCC_OPTIMIZATION_LEVEL 0    setenv GCC_PFE_FILE_C_DIALECTS "c objective-c c++ objective-c++"    setenv GCC_PRECOMPILE_PREFIX_HEADER YES    setenv GCC_PREFIX_HEADER whiteboard/whiteboard-Prefix.pch    setenv GCC_PREPROCESSOR_DEFINITIONS "DEBUG=1  COCOAPODS=1"    setenv GCC_SYMBOLS_PRIVATE_EXTERN NO    setenv GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS YES    setenv GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS YES    setenv GCC_TREAT_WARNINGS_AS_ERRORS YES    setenv GCC_VERSION com.apple.compilers.llvm.clang.1_0    setenv GCC_VERSION_IDENTIFIER com_apple_compilers_llvm_clang_1_0    setenv GCC_WARN_ABOUT_RETURN_TYPE YES_ERROR    setenv GCC_WARN_UNDECLARED_SELECTOR YES    setenv GCC_WARN_UNINITIALIZED_AUTOS YES    setenv GCC_WARN_UNUSED_FUNCTION YES    setenv GCC_WARN_UNUSED_VARIABLE YES    setenv GENERATE_MASTER_OBJECT_FILE NO    setenv GENERATE_PKGINFO_FILE YES    setenv GENERATE_PROFILING_CODE NO    setenv GID 20    setenv GROUP staff    setenv HEADERMAP_INCLUDES_FLAT_ENTRIES_FOR_TARGET_BEING_BUILT YES    setenv HEADERMAP_INCLUDES_FRAMEWORK_ENTRIES_FOR_ALL_PRODUCT_TYPES YES    setenv HEADERMAP_INCLUDES_NONPUBLIC_NONPRIVATE_HEADERS YES    setenv HEADERMAP_INCLUDES_PROJECT_HEADERS YES    setenv HEADER_SEARCH_PATHS "/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include \"/Users/lnf/Documents/Whiteboard/Pods/Headers\" \"/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking\""    setenv ICONV /usr/bin/iconv    setenv INFOPLIST_EXPAND_BUILD_SETTINGS YES    setenv INFOPLIST_FILE whiteboard/whiteboard-Info.plist    setenv INFOPLIST_OUTPUT_FORMAT binary    setenv INFOPLIST_PATH whiteboard.app/Info.plist    setenv INFOPLIST_PREPROCESS NO    setenv INFOSTRINGS_PATH whiteboard.app/English.lproj/InfoPlist.strings    setenv INSTALL_DIR /tmp/whiteboard.dst/Applications    setenv INSTALL_GROUP staff    setenv INSTALL_MODE_FLAG u+w,go-w,a+rX    setenv INSTALL_OWNER lnf    setenv INSTALL_PATH /Applications    setenv INSTALL_ROOT /tmp/whiteboard.dst    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv JAVAC_DEFAULT_FLAGS "-J-Xms64m -J-XX:NewSize=4M -J-Dfile.encoding=UTF8"    setenv JAVA_APP_STUB /System/Library/Frameworks/JavaVM.framework/Resources/MacOS/JavaApplicationStub    setenv JAVA_ARCHIVE_CLASSES YES    setenv JAVA_ARCHIVE_TYPE JAR    setenv JAVA_COMPILER /usr/bin/javac    setenv JAVA_FOLDER_PATH whiteboard.app/Java    setenv JAVA_FRAMEWORK_RESOURCES_DIRS Resources    setenv JAVA_JAR_FLAGS cv    setenv JAVA_SOURCE_SUBDIR .    setenv JAVA_USE_DEPENDENCIES YES    setenv JAVA_ZIP_FLAGS -urg    setenv JIKES_DEFAULT_FLAGS "+E +OLDCSO"    setenv KEEP_PRIVATE_EXTERNS NO    setenv LD_DEPENDENCY_INFO_FILE /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/whiteboard_dependency_info.dat    setenv LD_GENERATE_MAP_FILE NO    setenv LD_MAP_FILE_PATH /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-LinkMap-normal-i386.txt    setenv LD_NO_PIE NO    setenv LD_QUOTE_LINKER_ARGUMENTS_FOR_COMPILER_DRIVER YES    setenv LEGACY_DEVELOPER_DIR "/Applications/Xcode 5 GM.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer"    setenv LEX lex    setenv LIBRARY_FLAG_NOSPACE YES    setenv LIBRARY_FLAG_PREFIX -l    setenv LIBRARY_KEXT_INSTALL_PATH /Library/Extensions    setenv LIBRARY_SEARCH_PATHS "/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator "    setenv LINKER_DISPLAYS_MANGLED_NAMES NO    setenv LINK_FILE_LIST_normal_i386 /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal/i386/whiteboard.LinkFileList    setenv LINK_WITH_STANDARD_LIBRARIES YES    setenv LOCALIZED_RESOURCES_FOLDER_PATH whiteboard.app/English.lproj    setenv LOCAL_ADMIN_APPS_DIR /Applications/Utilities    setenv LOCAL_APPS_DIR /Applications    setenv LOCAL_DEVELOPER_DIR /Library/Developer    setenv LOCAL_LIBRARY_DIR /Library    setenv MACH_O_TYPE mh_execute    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv MAC_OS_X_PRODUCT_BUILD_VERSION 12E55    setenv MAC_OS_X_VERSION_ACTUAL 1084    setenv MAC_OS_X_VERSION_MAJOR 1080    setenv MAC_OS_X_VERSION_MINOR 0804    setenv MODULE_CACHE_DIR /Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache    setenv NATIVE_ARCH i386    setenv NATIVE_ARCH_32_BIT i386    setenv NATIVE_ARCH_64_BIT x86_64    setenv NATIVE_ARCH_ACTUAL x86_64    setenv NO_COMMON YES    setenv OBJC_ABI_VERSION 2    setenv OBJECT_FILE_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects    setenv OBJECT_FILE_DIR_normal /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Objects-normal    setenv OBJROOT /Users/lnf/Documents/Whiteboard/Build/Intermediates    setenv ONLY_ACTIVE_ARCH YES    setenv OPTIMIZATION_LEVEL 0    setenv OS MACOS    setenv OSAC /usr/bin/osacompile    setenv OTHER_LDFLAGS "-ObjC -framework CoreGraphics -framework MobileCoreServices -framework Security -framework SystemConfiguration"    setenv PACKAGE_TYPE com.apple.package-type.wrapper.application    setenv PASCAL_STRINGS YES    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/local/bin:/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/usr/local/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/local/bin:/Applications/Xcode 5 GM.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    setenv PATH_PREFIXES_EXCLUDED_FROM_HEADER_DEPENDENCIES "/usr/include /usr/local/include /System/Library/Frameworks /System/Library/PrivateFrameworks /Applications/Xcode 5 GM.app/Contents/Developer/Headers /Applications/Xcode 5 GM.app/Contents/Developer/SDKs /Applications/Xcode 5 GM.app/Contents/Developer/Platforms"    setenv PBDEVELOPMENTPLIST_PATH whiteboard.app/pbdevelopment.plist    setenv PFE_FILE_C_DIALECTS objective-c    setenv PKGINFO_FILE_PATH /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/PkgInfo    setenv PKGINFO_PATH whiteboard.app/PkgInfo    setenv PLATFORM_DEVELOPER_APPLICATIONS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications"    setenv PLATFORM_DEVELOPER_BIN_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin"    setenv PLATFORM_DEVELOPER_LIBRARY_DIR "/Applications/Xcode 5 GM.app/Contents/PlugIns/Xcode3Core.ideplugin/Contents/SharedSupport/Developer/Library"    setenv PLATFORM_DEVELOPER_SDK_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs"    setenv PLATFORM_DEVELOPER_TOOLS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Tools"    setenv PLATFORM_DEVELOPER_USR_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr"    setenv PLATFORM_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform"    setenv PLATFORM_NAME iphonesimulator    setenv PLATFORM_PREFERRED_ARCH i386    setenv PLATFORM_PRODUCT_BUILD_VERSION 11A465    setenv PLATFORM_VERSION_AVAILABILITY_H_FORMAT 70000    setenv PLIST_FILE_OUTPUT_FORMAT binary    setenv PLUGINS_FOLDER_PATH whiteboard.app/PlugIns    setenv PODS_ROOT /Users/lnf/Documents/Whiteboard/Pods    setenv PRECOMPS_INCLUDE_HEADERS_FROM_BUILT_PRODUCTS_DIR YES    setenv PRECOMP_DESTINATION_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/PrefixHeaders    setenv PRESERVE_DEAD_CODE_INITS_AND_TERMS NO    setenv PRIVATE_HEADERS_FOLDER_PATH whiteboard.app/PrivateHeaders    setenv PRODUCT_NAME whiteboard    setenv PRODUCT_SETTINGS_PATH /Users/lnf/Documents/Whiteboard/whiteboard/whiteboard-Info.plist    setenv PRODUCT_TYPE com.apple.product-type.application    setenv PROFILING_CODE NO    setenv PROJECT whiteboard    setenv PROJECT_DERIVED_FILE_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/DerivedSources    setenv PROJECT_DIR /Users/lnf/Documents/Whiteboard    setenv PROJECT_FILE_PATH /Users/lnf/Documents/Whiteboard/whiteboard.xcodeproj    setenv PROJECT_NAME whiteboard    setenv PROJECT_TEMP_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build    setenv PROJECT_TEMP_ROOT /Users/lnf/Documents/Whiteboard/Build/Intermediates    setenv PUBLIC_HEADERS_FOLDER_PATH whiteboard.app/Headers    setenv RECURSIVE_SEARCH_PATHS_FOLLOW_SYMLINKS YES    setenv REMOVE_CVS_FROM_RESOURCES YES    setenv REMOVE_GIT_FROM_RESOURCES YES    setenv REMOVE_HG_FROM_RESOURCES YES    setenv REMOVE_SVN_FROM_RESOURCES YES    setenv REZ_COLLECTOR_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/ResourceManagerResources    setenv REZ_OBJECTS_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/ResourceManagerResources/Objects    setenv REZ_SEARCH_PATHS "/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator "    setenv SCAN_ALL_SOURCE_FILES_FOR_INCLUDES NO    setenv SCRIPTS_FOLDER_PATH whiteboard.app/Scripts    setenv SCRIPT_INPUT_FILE_COUNT 0    setenv SCRIPT_OUTPUT_FILE_COUNT 0    setenv SDKROOT "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk"    setenv SDK_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk"    setenv SDK_NAME iphonesimulator7.0    setenv SDK_PRODUCT_BUILD_VERSION 11A465    setenv SED /usr/bin/sed    setenv SEPARATE_STRIP NO    setenv SEPARATE_SYMBOL_EDIT NO    setenv SET_DIR_MODE_OWNER_GROUP YES    setenv SET_FILE_MODE_OWNER_GROUP NO    setenv SHALLOW_BUNDLE YES    setenv SHARED_DERIVED_FILE_DIR /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/DerivedSources    setenv SHARED_FRAMEWORKS_FOLDER_PATH whiteboard.app/SharedFrameworks    setenv SHARED_PRECOMPS_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders    setenv SHARED_SUPPORT_FOLDER_PATH whiteboard.app/SharedSupport    setenv SKIP_INSTALL NO    setenv SOURCE_ROOT /Users/lnf/Documents/Whiteboard    setenv SRCROOT /Users/lnf/Documents/Whiteboard    setenv STRINGS_FILE_OUTPUT_ENCODING binary    setenv STRIP_INSTALLED_PRODUCT YES    setenv STRIP_STYLE all    setenv SUPPORTED_DEVICE_FAMILIES "1 2"    setenv SUPPORTED_PLATFORMS "iphonesimulator iphoneos"    setenv SYMROOT /Users/lnf/Documents/Whiteboard/Build/Products    setenv SYSTEM_ADMIN_APPS_DIR /Applications/Utilities    setenv SYSTEM_APPS_DIR /Applications    setenv SYSTEM_CORE_SERVICES_DIR /System/Library/CoreServices    setenv SYSTEM_DEMOS_DIR /Applications/Extras    setenv SYSTEM_DEVELOPER_APPS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Applications"    setenv SYSTEM_DEVELOPER_BIN_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin"    setenv SYSTEM_DEVELOPER_DEMOS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Applications/Utilities/Built Examples"    setenv SYSTEM_DEVELOPER_DIR "/Applications/Xcode 5 GM.app/Contents/Developer"    setenv SYSTEM_DEVELOPER_DOC_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/ADC Reference Library"    setenv SYSTEM_DEVELOPER_GRAPHICS_TOOLS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Applications/Graphics Tools"    setenv SYSTEM_DEVELOPER_JAVA_TOOLS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Applications/Java Tools"    setenv SYSTEM_DEVELOPER_PERFORMANCE_TOOLS_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Applications/Performance Tools"    setenv SYSTEM_DEVELOPER_RELEASENOTES_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/ADC Reference Library/releasenotes"    setenv SYSTEM_DEVELOPER_TOOLS "/Applications/Xcode 5 GM.app/Contents/Developer/Tools"    setenv SYSTEM_DEVELOPER_TOOLS_DOC_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/ADC Reference Library/documentation/DeveloperTools"    setenv SYSTEM_DEVELOPER_TOOLS_RELEASENOTES_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/ADC Reference Library/releasenotes/DeveloperTools"    setenv SYSTEM_DEVELOPER_USR_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/usr"    setenv SYSTEM_DEVELOPER_UTILITIES_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Applications/Utilities"    setenv SYSTEM_DOCUMENTATION_DIR /Library/Documentation    setenv SYSTEM_KEXT_INSTALL_PATH /System/Library/Extensions    setenv SYSTEM_LIBRARY_DIR /System/Library    setenv TARGETED_DEVICE_FAMILY 1    setenv TARGETNAME whiteboard    setenv TARGET_BUILD_DIR /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator    setenv TARGET_NAME whiteboard    setenv TARGET_TEMP_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build    setenv TEMP_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build    setenv TEMP_FILES_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build    setenv TEMP_FILE_DIR /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build    setenv TEMP_ROOT /Users/lnf/Documents/Whiteboard/Build/Intermediates    setenv TOOLCHAINS com.apple.dt.toolchain.XcodeDefault    setenv UID 501    setenv UNLOCALIZED_RESOURCES_FOLDER_PATH whiteboard.app    setenv UNSTRIPPED_PRODUCT NO    setenv USER lnf    setenv USER_APPS_DIR /Users/lnf/Applications    setenv USER_LIBRARY_DIR /Users/lnf/Library    setenv USE_DYNAMIC_NO_PIC YES    setenv USE_HEADERMAP YES    setenv USE_HEADER_SYMLINKS NO    setenv VALIDATE_PRODUCT NO    setenv VALID_ARCHS "i386 x86_64"    setenv VERBOSE_PBXCP NO    setenv VERSIONPLIST_PATH whiteboard.app/version.plist    setenv VERSION_INFO_BUILDER lnf    setenv VERSION_INFO_FILE whiteboard_vers.c    setenv VERSION_INFO_STRING "\"@(#)PROGRAM:whiteboard  PROJECT:whiteboard-\""    setenv WRAPPER_EXTENSION app    setenv WRAPPER_NAME whiteboard.app    setenv WRAPPER_SUFFIX .app    setenv XCODE_APP_SUPPORT_DIR "/Applications/Xcode 5 GM.app/Contents/Developer/Library/Xcode"    setenv XCODE_PRODUCT_BUILD_VERSION 5A1412    setenv XCODE_VERSION_ACTUAL 0500    setenv XCODE_VERSION_MAJOR 0500    setenv XCODE_VERSION_MINOR 0500    setenv XPCSERVICES_FOLDER_PATH whiteboard.app/XPCServices    setenv YACC yacc    setenv arch i386    setenv variant normal    /bin/sh -c /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Script-31FEC07121E64B94ACAAF786.sh36"3033964F-658A-40C6-86E6-58EBD889F385-
-bAC953640-0783-43B6-B95E-706057897416
-
-CPhaseScriptExecution Copy\ Pods\ Resources /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/Script-C9C2C40C021B469983EC1958.sh
-r0
-
-CProcessInfoPlistFile /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app/Info.plist /Users/lnf/Documents/Whiteboard/whiteboard/whiteboard-Info.plist
-r0
-
-CProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch.pch whiteboard/whiteboard-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703453.918732
-e400703453.987801
-r1
-xProcessPCH
-x/Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch.pch
-xwhiteboard/whiteboard-Prefix.pch
-xnormal
-xi386
-xobjective-c
-xcom.apple.compilers.llvm.clang.1_0.compiler
-d/Users/lnf/Documents/Whiteboard/whiteboard/whiteboard-Prefix.pch
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection43"Precompile whiteboard/whiteboard-Prefix.pch223"ProcessPCH Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch.pch whiteboard/whiteboard-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera263ebdd3fe2b741^e9f20ade3fe2b741^---0#0#1#-19%DVTDocumentLocation2@80"file://localhost/Users/lnf/Documents/Whiteboard/whiteboard/whiteboard-Prefix.pch0000000000000000^3673"ProcessPCH Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch.pch whiteboard/whiteboard-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Werror -Werror=incompatible-pointer-types -Werror-implicit-function-declaration -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/whiteboard-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/whiteboard.build/Debug-iphonesimulator/whiteboard.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -F/Users/lnf/Documents/Whiteboard --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch.dia -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch.d -c /Users/lnf/Documents/Whiteboard/whiteboard/whiteboard-Prefix.pch -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/whiteboard-Prefix-ceteijnuyqxcpzbgnjzyoyxwcqgb/whiteboard-Prefix.pch.pch36"89F4A35B-6CA2-4FC4-9031-CDE05F8E0946-
-bAC953640-0783-43B6-B95E-706057897416
-
-CProcessPCH /Users/lnf/Library/Developer/Xcode/DerivedData/whiteboard-celgjaiesdqsbybzxnjnpsnxwkgd/Index/PrecompiledHeaders/whiteboard-Prefix-buxhcamtrvumurenaceakjbkpjbt_ast/whiteboard-Prefix.pch.pch whiteboard/whiteboard-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
-r0
-
-CTouch /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/whiteboard.app
-r0
-

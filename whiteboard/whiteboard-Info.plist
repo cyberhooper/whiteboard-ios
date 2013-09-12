@@ -37,6 +37,6 @@
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
 	<key>DataSourceImplementation</key>
-	<string>ParseDataSource</string>
+	<string>WBParseDataSource</string>
 </dict>
 </plist>

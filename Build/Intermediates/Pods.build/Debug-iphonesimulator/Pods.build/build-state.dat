@@ -26,27 +26,27 @@ t1378536658
 s414
 
 N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
-t1379010727
+t1379011276
 s3160
 
 N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList
-c000000005232086B0000000000000081
-t1379010667
+c0000000052320ACC0000000000000081
+t1379011276
 s129
 
 N/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a
-c00000000523208A400000000000BDDA0
-t1379010724
+c0000000052320ACA00000000000BDDA0
+t1379011274
 s777632
 
 N/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-Facebook-iOS-SDK.a
-c00000000523208A60000000000374AF8
-t1379010726
+c0000000052320ACC0000000000374AF8
+t1379011276
 s3623672
 
 N/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a
-t1379010727
-s4404528
+t2
+s0
 
 N/Users/lnf/Documents/Whiteboard/Pods/Pods-dummy.m
 c000000005232088F0000000000000070
@@ -58,11 +58,11 @@ r0
 
 CCheck dependencies
 r0
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies240daa7540e2b741^3082aa7540e2b741^---0#1#1#--18"Check dependencies36"F21B2C02-358E-4EEE-92E4-0D6B6B7A4FBB-
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesc5ae114c42e2b741^e9b7134c42e2b741^---0#1#1#--18"Check dependencies36"F3990EDC-C918-4975-8325-860CDD3BC3CC-
 
 CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o /Users/lnf/Documents/Whiteboard/Pods/Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
-s400703526.899294
-e400703527.051983
+s400704076.075278
+e400704076.211766
 r1
 xCompileC
 x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o
@@ -72,17 +72,17 @@ xi386
 xobjective-c
 xcom.apple.compilers.llvm.clang.1_0.compiler
 d/Users/lnf/Documents/Whiteboard/Pods/Pods-dummy.m
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/lnf/Documents/Whiteboard/Pods/Pods-dummy.m218"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb554e62640e2b741^e44e0d2740e2b741^---0#0#1#-19%DVTDocumentLocation2@65"file://localhost/Users/lnf/Documents/Whiteboard/Pods/Pods-dummy.m0000000000000000^3399"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.dia -c /Users/lnf/Documents/Whiteboard/Pods/Pods-dummy.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o36"0A7D9DCC-630D-44F5-B6D4-09120605268F-
-bEF950EEA-F100-47B9-AC79-CB3B8876C071
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection57"Compile /Users/lnf/Documents/Whiteboard/Pods/Pods-dummy.m218"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera969134c42e2b741^2e39364c42e2b741^---0#0#1#-19%DVTDocumentLocation2@65"file://localhost/Users/lnf/Documents/Whiteboard/Pods/Pods-dummy.m0000000000000000^3399"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o Pods-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Pods-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.dia -c /Users/lnf/Documents/Whiteboard/Pods/Pods-dummy.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods-dummy.o36"2594EC3F-62E5-485A-8172-90444E8534E1-
+b5FF7EB12-47D6-48E4-A793-D43E48E3F384
 
 CLibtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a normal i386
-s400703527.060599
-e400703527.345759
+s400704076.220579
+e400704076.489324
 r1
 xLibtool
 x/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a
 xnormal
 xi386
-lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Libtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a normal i38698"Libtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a normal i38696980f2740e2b741^b684582740e2b741^---0#0#1#--1018"Libtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a normal i386    cd /Users/lnf/Documents/Whiteboard/Pods    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -filelist /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList -framework Foundation -lPods-AFNetworking -lPods-Facebook-iOS-SDK -o /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a36"974FD6B6-D024-40F8-B8C4-1D91489E650B-
-bEF950EEA-F100-47B9-AC79-CB3B8876C071
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection98"Libtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a normal i38698"Libtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a normal i386098d384c42e2b741^ed447d4c42e2b741^---0#0#1#--1018"Libtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a normal i386    cd /Users/lnf/Documents/Whiteboard/Pods    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -filelist /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods.build/Objects-normal/i386/Pods.LinkFileList -framework Foundation -lPods-AFNetworking -lPods-Facebook-iOS-SDK -o /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods.a36"2BCB2296-3CB7-459B-8B59-725C7E9A76F0-
+b5FF7EB12-47D6-48E4-A793-D43E48E3F384
 

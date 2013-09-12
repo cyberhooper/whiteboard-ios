@@ -14,13 +14,7 @@
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  
-  
-  [ParseUser registerSubclass];
-  [Parse setApplicationId:@"aIriMbx6w8kAQdmJ1HI2FRJNk6ESBzWvgBABfJR6"
-                clientKey:@"nmnkgLPVzHfoQTOQEK6zphicN9ccdpJVbjMbftSF"];
-  [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
-  [WBManager setUp];
+  [WBManager setUpWithLauchOptions:launchOptions];
   return YES;
 }
 
