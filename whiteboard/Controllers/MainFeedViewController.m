@@ -33,7 +33,6 @@
 {
     [super viewDidLoad];
   
-  
   // Add dummy data
   NSMutableArray *array = [NSMutableArray array];
   for(NSInteger i = 1; i < 8; i++){
@@ -43,7 +42,6 @@
     NSDictionary *dict = @{@"photoUrl": image, @"username": username};
     [array addObject:dict];
   }
-  
   
   self.photos = array;
 }
