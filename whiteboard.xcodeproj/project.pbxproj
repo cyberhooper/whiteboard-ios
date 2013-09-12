@@ -48,6 +48,7 @@
 		BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7417E22197003494CD /* MainFeedViewController.m */; };
 		BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F7517E22197003494CD /* MainFeedViewController.xib */; };
 		BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */; };
+		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +120,8 @@
 		BE1B3F7517E22197003494CD /* MainFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedViewController.xib; sourceTree = "<group>"; };
 		BE1B3F7617E22197003494CD /* WBPhotoTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineViewController.h; sourceTree = "<group>"; };
 		BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineViewController.m; sourceTree = "<group>"; };
+		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
+		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +208,7 @@
 				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
 				BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */,
 				BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */,
+				DD2B8ED817E22E920094A3C4 /* Helpers */,
 				BE1B3F6017E22117003494CD /* Views */,
 				9919153317DA7B2A005DA25C /* Main.storyboard */,
 				9919153017DA7B2A005DA25C /* AppDelegate.h */,
@@ -298,6 +302,15 @@
 				BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DD2B8ED817E22E920094A3C4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */,
+				DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -445,6 +458,7 @@
 				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
+				DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */,
 				BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */,
 				9922AB5B17E0DA6B00D1B18A /* ParseUser.m in Sources */,
 				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
