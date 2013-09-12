@@ -195,6 +195,7 @@
 		9919152717DA7B2A005DA25C /* whiteboard */ = {
 			isa = PBXGroup;
 			children = (
+				BE1B3F7B17E22335003494CD /* Theme */,
 				BE1B3F7217E22197003494CD /* Controllers */,
 				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
 				BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */,
@@ -292,6 +293,13 @@
 				BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */,
 			);
 			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BE1B3F7B17E22335003494CD /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
