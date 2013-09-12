@@ -50,6 +50,7 @@
 		BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F7517E22197003494CD /* MainFeedViewController.xib */; };
 		BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */; };
 		BE1B3F8017E24875003494CD /* WBTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7F17E24875003494CD /* WBTheme.m */; };
+		BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3FC417E27420003494CD /* WBTheme.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineViewController.m; sourceTree = "<group>"; };
 		BE1B3F7E17E24875003494CD /* WBTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTheme.h; path = Theme/WBTheme.h; sourceTree = "<group>"; };
 		BE1B3F7F17E24875003494CD /* WBTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBTheme.m; path = Theme/WBTheme.m; sourceTree = "<group>"; };
+		BE1B3FC417E27420003494CD /* WBTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WBTheme.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +232,7 @@
 			children = (
 				9919152917DA7B2A005DA25C /* whiteboard-Info.plist */,
 				994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */,
+				BE1B3FC417E27420003494CD /* WBTheme.plist */,
 				9919152A17DA7B2A005DA25C /* InfoPlist.strings */,
 				9919152D17DA7B2A005DA25C /* main.m */,
 				9919152F17DA7B2A005DA25C /* whiteboard-Prefix.pch */,
@@ -402,6 +405,7 @@
 				BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */,
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
 				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
+				BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */,
 				9919153517DA7B2A005DA25C /* Main.storyboard in Resources */,
 				BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 			);
@@ -603,6 +607,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -632,6 +637,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",

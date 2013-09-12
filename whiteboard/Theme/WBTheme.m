@@ -8,6 +8,12 @@
 
 #import "WBTheme.h"
 
+@interface WBTheme()
+
+@property (nonatomic, strong) NSDictionary *themeDict;
+
+@end
+
 @implementation WBTheme
 
 + (WBTheme *)sharedTheme {
@@ -15,9 +21,14 @@
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
     sharedTheme = [[self alloc] init];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"WBTheme" ofType:@"plist"];
+    sharedTheme.themeDict = [NSDictionary dictionaryWithContentsOfFile:path];
   });
   return sharedTheme;
 }
 
+- (NSString *)headerImageName {
+  return [self.themeDict objectForKey:@"headerImageName"];
+}
 
 @end

@@ -15,11 +15,12 @@
  */
 @interface WBTheme : NSObject
 
-
 /**
 	The shared theme for the application.
 	@returns The shared theme instance for the application.
  */
 + (WBTheme *)sharedTheme;
+
+- (NSString *)headerImageName;
 
 @end
