@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBViewController.h"
 
-@interface WBPhotoTimelineViewController : UIViewController <UITableViewDataSource,
+@interface WBPhotoTimelineViewController : WBViewController <UITableViewDataSource,
                                                              UITableViewDelegate>
 
 /**

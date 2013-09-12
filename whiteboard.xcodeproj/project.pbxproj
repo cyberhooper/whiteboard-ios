@@ -50,6 +50,7 @@
 		BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F7517E22197003494CD /* MainFeedViewController.xib */; };
 		BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
+		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,8 @@
 		BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineViewController.m; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
+		DDA25DE317E26DFB00C44622 /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
+		DDA25DE417E26DFB00C44622 /* WBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,13 +211,13 @@
 			children = (
 				BE1B3F7217E22197003494CD /* Controllers */,
 				DD2B8ED817E22E920094A3C4 /* Helpers */,
-				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
 				BE1B3F6017E22117003494CD /* Views */,
-				9919153317DA7B2A005DA25C /* Main.storyboard */,
-				9919153017DA7B2A005DA25C /* AppDelegate.h */,
-				9919153117DA7B2A005DA25C /* AppDelegate.m */,
 				9922AB4D17E0DA6500D1B18A /* Abstractions */,
 				9922AB5517E0DA6B00D1B18A /* Parse Implementations */,
+				9919153317DA7B2A005DA25C /* Main.storyboard */,
+				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
+				9919153017DA7B2A005DA25C /* AppDelegate.h */,
+				9919153117DA7B2A005DA25C /* AppDelegate.m */,
 				99D80C7C17DE4FBF00809322 /* MyViewController.h */,
 				99D80C7D17DE4FBF00809322 /* MyViewController.m */,
 				9919153917DA7B2A005DA25C /* Images.xcassets */,
@@ -299,8 +302,7 @@
 				BE1B3F7317E22197003494CD /* MainFeedViewController.h */,
 				BE1B3F7417E22197003494CD /* MainFeedViewController.m */,
 				BE1B3F7517E22197003494CD /* MainFeedViewController.xib */,
-				BE1B3F7617E22197003494CD /* WBPhotoTimelineViewController.h */,
-				BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */,
+				DDA25DE217E26DEB00C44622 /* WB */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -314,6 +316,17 @@
 				DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DDA25DE217E26DEB00C44622 /* WB */ = {
+			isa = PBXGroup;
+			children = (
+				BE1B3F7617E22197003494CD /* WBPhotoTimelineViewController.h */,
+				BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */,
+				DDA25DE317E26DFB00C44622 /* WBViewController.h */,
+				DDA25DE417E26DFB00C44622 /* WBViewController.m */,
+			);
+			name = WB;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
 				9922AB5A17E0DA6B00D1B18A /* WBParseDataSource.m in Sources */,

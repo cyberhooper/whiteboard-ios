@@ -41,8 +41,6 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   UINib *nib = [UINib nibWithNibName:[self tableCellNib] bundle:nil];
   [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
   self.tableView.backgroundColor = [UIColor clearColor];
-
-  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundLeather"]];
 }
 
 #pragma mark - UITableViewDataSource
@@ -108,9 +106,13 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   cell.backgroundView.backgroundColor = [UIColor clearColor];
 }
 
-#pragma mark - TableCellNib
+#pragma mark - Config
 - (NSString *)tableCellNib {
   return NSStringFromClass([WBPhotoTimelineCell class]);
+}
+
+- (UIImage *)backgroundImage {
+  return [UIImage imageNamed:@"backgroundLeather"];
 }
 
 #pragma mark - UIScrollViewDelegate
