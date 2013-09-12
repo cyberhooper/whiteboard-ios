@@ -12,6 +12,27 @@
 
 @implementation ParseDataSource
 
+- (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
+  [ParseUser registerSubclass];
+  [Parse setApplicationId:[self applicationId]
+                clientKey:[self clientKey]];
+  [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+}
+
+- (NSString *)applicationId {
+  return [self configurationDictionary][@"ApplicationId"];
+}
+
+- (NSString *)clientKey {
+  return [self configurationDictionary][@"ClientKey"];
+}
+
+- (NSDictionary *)configurationDictionary {
+  NSBundle *mainBundle = [NSBundle mainBundle];
+  NSString *configurationPath = [mainBundle pathForResource:@"ParseConfiguration" ofType:@"plist"];
+  return [NSDictionary dictionaryWithContentsOfFile:configurationPath];
+}
+
 - (void)loginWithUsername:(NSString *)username andPassWord:(NSString *)password success:(void (^)(id<WBUser>))success failure:(void (^)(NSError *))failure {
   [PFUser logInWithUsernameInBackground:username password:password
                                   block:^(PFUser *user, NSError *error) {
