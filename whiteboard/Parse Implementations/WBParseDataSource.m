@@ -6,11 +6,11 @@
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
-#import "ParseDataSource.h"
+#import "WBParseDataSource.h"
 #import <Parse/Parse.h>
 #import "ParseUser.h"
 
-@implementation ParseDataSource
+@implementation WBParseDataSource
 
 - (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
   [ParseUser registerSubclass];

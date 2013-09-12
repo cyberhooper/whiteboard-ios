@@ -8,6 +8,6 @@
 
 #import "WBDataSource.h"
 
-@interface ParseDataSource : WBDataSource
+@interface WBParseDataSource : WBDataSource
 
 @end

@@ -31,7 +31,7 @@
 		9919154317DA7B2A005DA25C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152517DA7B2A005DA25C /* UIKit.framework */; };
 		9919154B17DA7B2B005DA25C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919154917DA7B2B005DA25C /* InfoPlist.strings */; };
 		9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB4F17E0DA6500D1B18A /* WBDataSource.m */; };
-		9922AB5A17E0DA6B00D1B18A /* ParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5717E0DA6B00D1B18A /* ParseDataSource.m */; };
+		9922AB5A17E0DA6B00D1B18A /* WBParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5717E0DA6B00D1B18A /* WBParseDataSource.m */; };
 		9922AB5B17E0DA6B00D1B18A /* ParseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5917E0DA6B00D1B18A /* ParseUser.m */; };
 		9922AB5E17E107F800D1B18A /* WBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5D17E107F800D1B18A /* WBManager.m */; };
 		9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940D16717DF62F1008B2825 /* WBDatasourceTests.m */; };
@@ -91,8 +91,8 @@
 		9922AB4E17E0DA6500D1B18A /* WBDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataSource.h; sourceTree = "<group>"; };
 		9922AB4F17E0DA6500D1B18A /* WBDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDataSource.m; sourceTree = "<group>"; };
 		9922AB5017E0DA6500D1B18A /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
-		9922AB5617E0DA6B00D1B18A /* ParseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseDataSource.h; sourceTree = "<group>"; };
-		9922AB5717E0DA6B00D1B18A /* ParseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseDataSource.m; sourceTree = "<group>"; };
+		9922AB5617E0DA6B00D1B18A /* WBParseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBParseDataSource.h; sourceTree = "<group>"; };
+		9922AB5717E0DA6B00D1B18A /* WBParseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBParseDataSource.m; sourceTree = "<group>"; };
 		9922AB5817E0DA6B00D1B18A /* ParseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUser.h; sourceTree = "<group>"; };
 		9922AB5917E0DA6B00D1B18A /* ParseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUser.m; sourceTree = "<group>"; };
 		9922AB5C17E107F800D1B18A /* WBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBManager.h; sourceTree = "<group>"; };
@@ -267,8 +267,8 @@
 		9922AB5517E0DA6B00D1B18A /* Parse Implementations */ = {
 			isa = PBXGroup;
 			children = (
-				9922AB5617E0DA6B00D1B18A /* ParseDataSource.h */,
-				9922AB5717E0DA6B00D1B18A /* ParseDataSource.m */,
+				9922AB5617E0DA6B00D1B18A /* WBParseDataSource.h */,
+				9922AB5717E0DA6B00D1B18A /* WBParseDataSource.m */,
 				9922AB5817E0DA6B00D1B18A /* ParseUser.h */,
 				9922AB5917E0DA6B00D1B18A /* ParseUser.m */,
 			);
@@ -442,7 +442,7 @@
 			files = (
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
-				9922AB5A17E0DA6B00D1B18A /* ParseDataSource.m in Sources */,
+				9922AB5A17E0DA6B00D1B18A /* WBParseDataSource.m in Sources */,
 				BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
 				9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */,
