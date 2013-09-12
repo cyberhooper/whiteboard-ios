@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B6E5B767D2D48748780E8CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F30985C67F4305AE5B3F10 /* libPods.a */; };
 		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
 		991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CB17DE8161007FF6B5 /* CFNetwork.framework */; };
 		991614CE17DE8172007FF6B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CD17DE8172007FF6B5 /* CoreLocation.framework */; };
@@ -99,6 +100,8 @@
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
 		99D80C7C17DE4FBF00809322 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		99D80C7D17DE4FBF00809322 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		A2E130B5A6424401B142406B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B0F30985C67F4305AE5B3F10 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1B3F5D17E22117003494CD /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SLImageLoader.h"; sourceTree = "<group>"; };
 		BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SLImageLoader.m"; sourceTree = "<group>"; };
@@ -136,6 +139,7 @@
 				991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */,
 				9919152617DA7B2A005DA25C /* UIKit.framework in Frameworks */,
 				9919152217DA7B2A005DA25C /* Foundation.framework in Frameworks */,
+				5B6E5B767D2D48748780E8CD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +163,7 @@
 				9919154617DA7B2A005DA25C /* whiteboardTests */,
 				9919152017DA7B2A005DA25C /* Frameworks */,
 				9919151F17DA7B2A005DA25C /* Products */,
+				A2E130B5A6424401B142406B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -188,6 +193,7 @@
 				9919152317DA7B2A005DA25C /* CoreGraphics.framework */,
 				9919152517DA7B2A005DA25C /* UIKit.framework */,
 				9919154017DA7B2A005DA25C /* XCTest.framework */,
+				B0F30985C67F4305AE5B3F10 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -301,9 +307,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9919155017DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "whiteboard" */;
 			buildPhases = (
+				31FEC07121E64B94ACAAF786 /* Check Pods Manifest.lock */,
 				9919151A17DA7B2A005DA25C /* Sources */,
 				9919151B17DA7B2A005DA25C /* Frameworks */,
 				9919151C17DA7B2A005DA25C /* Resources */,
+				C9C2C40C021B469983EC1958 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -391,6 +399,37 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		31FEC07121E64B94ACAAF786 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		C9C2C40C021B469983EC1958 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9919151A17DA7B2A005DA25C /* Sources */ = {
@@ -536,6 +575,7 @@
 		};
 		9919155117DA7B2B005DA25C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E130B5A6424401B142406B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -546,6 +586,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -553,6 +604,7 @@
 		};
 		9919155217DA7B2B005DA25C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E130B5A6424401B142406B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -563,6 +615,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

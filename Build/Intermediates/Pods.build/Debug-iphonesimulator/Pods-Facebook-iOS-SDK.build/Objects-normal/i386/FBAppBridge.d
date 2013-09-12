@@ -1,0 +1,21 @@
+dependencies: \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBAppBridge.m \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBAppBridge.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBAppCall.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBSession.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBDialogsData.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBAccessTokenData.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBAppLinkData.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBAppBridgeTypeToJSONConverter.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/Base64/FBBase64.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBUtility.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBFetchedAppSettings.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/Cryptography/FBCrypto.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBError.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBSession+Internal.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBSystemAccountStoreAdapter.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBSessionAppEventsState.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBAppCall+Internal.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBDialogsData+Internal.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBSettings+Internal.h \
+  /Users/lnf/Documents/Whiteboard/Pods/Facebook-iOS-SDK/src/FBSettings.h

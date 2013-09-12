@@ -1,0 +1,32 @@
+Contents of /Users/lnf/Documents/Whiteboard/whiteboard/whiteboard-Prefix.pch
+-x
+objective-c
+-arch
+i386
+-std=gnu99
+-fobjc-arc
+-fmodules
+-fmodules-cache-path=/Users/lnf/Library/Developer/Xcode/DerivedData/ModuleCache
+-fpascal-strings
+-O0
+-DDEBUG=1
+-DCOCOAPODS=1
+-isysroot
+/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+-fexceptions
+-fasm-blocks
+-g
+-fobjc-abi-version=2
+-fobjc-legacy-dispatch
+-mios-simulator-version-min=7.0
+-I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include
+-I/Users/lnf/Documents/Whiteboard/Pods/Headers
+-I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking
+-I/Users/lnf/Documents/Whiteboard/Pods/Headers/Parse
+-F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator
+-F/Users/lnf/Documents/Whiteboard/Pods/Parse
+-F/Users/lnf/Documents/Whiteboard
+i386-apple-darwin12.4.0
+"4.2.1 Compatible Apple LLVM 5.0 (clang-500.2.75)"
+SDK_PRODUCT_BUILD_VERSION=11A465
+11A465
