@@ -21,4 +21,9 @@
  */
 @property (nonatomic, strong) NSArray *photos;
 
+/**
+ Sets the name of the nib that is being used for the table cell
+ */
+- (NSString *)tableCellNib;
+
 @end

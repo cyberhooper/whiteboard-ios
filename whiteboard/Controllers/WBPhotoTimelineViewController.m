@@ -8,12 +8,15 @@
 
 #import "WBPhotoTimelineViewController.h"
 #import "WBPhotoTimelineSectionHeaderView.h"
+#import "WBPhotoTimelineCell.h"
 
 @interface WBPhotoTimelineViewController ()
 
 @end
 
 @implementation WBPhotoTimelineViewController
+
+static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -26,14 +29,17 @@
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  [super viewDidLoad];
+
+  UINib *nib = [UINib nibWithNibName:[self tableCellNib] bundle:nil];
+  [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
 }
 
 #pragma mark - UITableViewDataSource
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
   WBPhotoTimelineSectionHeaderView *sectionHeaderView = nil;
-  NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([WBPhotoTimelineSectionHeaderView class])
+  NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:
+                         NSStringFromClass([WBPhotoTimelineSectionHeaderView class])
                                                       owner:nil
                                                     options:nil];
   
@@ -43,8 +49,6 @@
       break;
     }
   }
-  
-  
   
   sectionHeaderView.displayName = [[self.photos objectAtIndex:section] valueForKey:@"username"];
   sectionHeaderView.date = [NSDate date];
@@ -72,21 +76,20 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
-  static NSString *CellIdentifier = @"Cell";
-  
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-  if (cell == nil) {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                  reuseIdentifier:CellIdentifier];
-  }
+  WBPhotoTimelineCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
   
   [self configureCell:cell forRowAtIndexPath:indexPath];
   
   return cell;
 }
 
-- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (void)configureCell:(id)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
   
+}
+
+#pragma mark - TableCellNib
+- (NSString *)tableCellNib {
+  return NSStringFromClass([WBPhotoTimelineCell class]);
 }
 
 - (void)didReceiveMemoryWarning

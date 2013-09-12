@@ -7,6 +7,7 @@
 //
 
 #import "MainFeedViewController.h"
+#import "MainFeedCell.h"
 
 @interface TestObject : NSObject
 @property (nonatomic, strong) NSString *username;
@@ -60,6 +61,10 @@
 - (CGFloat)tableView:(UITableView *)tableView heightForFooterrInSection:(NSInteger)section {
 #warning MAGIC NUMBER. REPLACE ME
   return 30.0f;
+}
+
+- (NSString *)tableCellNib {
+  return NSStringFromClass([MainFeedCell class]);
 }
 
 - (void)didReceiveMemoryWarning

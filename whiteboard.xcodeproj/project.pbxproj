@@ -29,6 +29,11 @@
 		DD1D26E517DE66BC00F3CABD /* MainFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1D26E317DE66BC00F3CABD /* MainFeedViewController.xib */; };
 		DD1D26E917DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D26E817DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m */; };
 		DD1D26EB17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1D26EA17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib */; };
+		DD2B8ED717E21B300094A3C4 /* UIImageView+SLImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8ED617E21B300094A3C4 /* UIImageView+SLImageLoader.m */; };
+		DDE8D3BD17E0DDA3007FD14B /* WBPhotoTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE8D3BC17E0DDA3007FD14B /* WBPhotoTimelineCell.m */; };
+		DDE8D3BF17E0FCB0007FD14B /* WBPhotoTimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDE8D3BE17E0FCB0007FD14B /* WBPhotoTimelineCell.xib */; };
+		DDE8D3C217E10E0D007FD14B /* MainFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE8D3C117E10E0D007FD14B /* MainFeedCell.m */; };
+		DDE8D3C417E10E71007FD14B /* MainFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDE8D3C317E10E71007FD14B /* MainFeedCell.xib */; };
 		DDFAA17617DE624F00D3BEEC /* WBPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFAA17417DE624F00D3BEEC /* WBPhotoTimelineViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +81,14 @@
 		DD1D26E717DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBPhotoTimelineSectionHeaderView.h; path = Views/WBPhotoTimelineSectionHeaderView.h; sourceTree = "<group>"; };
 		DD1D26E817DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBPhotoTimelineSectionHeaderView.m; path = Views/WBPhotoTimelineSectionHeaderView.m; sourceTree = "<group>"; };
 		DD1D26EA17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WBPhotoTimelineSectionHeaderView.xib; path = Views/WBPhotoTimelineSectionHeaderView.xib; sourceTree = "<group>"; };
+		DD2B8ED517E21B300094A3C4 /* UIImageView+SLImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SLImageLoader.h"; sourceTree = "<group>"; };
+		DD2B8ED617E21B300094A3C4 /* UIImageView+SLImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SLImageLoader.m"; sourceTree = "<group>"; };
+		DDE8D3BB17E0DDA3007FD14B /* WBPhotoTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBPhotoTimelineCell.h; path = Views/WBPhotoTimelineCell.h; sourceTree = "<group>"; };
+		DDE8D3BC17E0DDA3007FD14B /* WBPhotoTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBPhotoTimelineCell.m; path = Views/WBPhotoTimelineCell.m; sourceTree = "<group>"; };
+		DDE8D3BE17E0FCB0007FD14B /* WBPhotoTimelineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WBPhotoTimelineCell.xib; path = Views/WBPhotoTimelineCell.xib; sourceTree = "<group>"; };
+		DDE8D3C017E10E0D007FD14B /* MainFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainFeedCell.h; path = Views/MainFeedCell.h; sourceTree = "<group>"; };
+		DDE8D3C117E10E0D007FD14B /* MainFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainFeedCell.m; path = Views/MainFeedCell.m; sourceTree = "<group>"; };
+		DDE8D3C317E10E71007FD14B /* MainFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainFeedCell.xib; path = Views/MainFeedCell.xib; sourceTree = "<group>"; };
 		DDFAA17317DE624F00D3BEEC /* WBPhotoTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBPhotoTimelineViewController.h; path = Controllers/WBPhotoTimelineViewController.h; sourceTree = "<group>"; };
 		DDFAA17417DE624F00D3BEEC /* WBPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBPhotoTimelineViewController.m; path = Controllers/WBPhotoTimelineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -150,6 +163,7 @@
 				99D80C8017DE51F900809322 /* UserFactory.m */,
 				99D80C7C17DE4FBF00809322 /* MyViewController.h */,
 				99D80C7D17DE4FBF00809322 /* MyViewController.m */,
+				DD2B8ED417E21B290094A3C4 /* Helpers */,
 				DD1D26E617DE6CE100F3CABD /* Views */,
 				DDFAA17117DE620C00D3BEEC /* Controllers */,
 				9919153917DA7B2A005DA25C /* Images.xcassets */,
@@ -193,8 +207,23 @@
 				DD1D26E717DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.h */,
 				DD1D26E817DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m */,
 				DD1D26EA17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib */,
+				DDE8D3BB17E0DDA3007FD14B /* WBPhotoTimelineCell.h */,
+				DDE8D3BC17E0DDA3007FD14B /* WBPhotoTimelineCell.m */,
+				DDE8D3BE17E0FCB0007FD14B /* WBPhotoTimelineCell.xib */,
+				DDE8D3C017E10E0D007FD14B /* MainFeedCell.h */,
+				DDE8D3C117E10E0D007FD14B /* MainFeedCell.m */,
+				DDE8D3C317E10E71007FD14B /* MainFeedCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		DD2B8ED417E21B290094A3C4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				DD2B8ED517E21B300094A3C4 /* UIImageView+SLImageLoader.h */,
+				DD2B8ED617E21B300094A3C4 /* UIImageView+SLImageLoader.m */,
+			);
+			name = Helpers;
 			sourceTree = "<group>";
 		};
 		DDFAA17117DE620C00D3BEEC /* Controllers */ = {
@@ -295,7 +324,9 @@
 			files = (
 				DD1D26EB17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 				9919153A17DA7B2A005DA25C /* Images.xcassets in Resources */,
+				DDE8D3C417E10E71007FD14B /* MainFeedCell.xib in Resources */,
 				DD1D26E017DE64A800F3CABD /* MainWindow.xib in Resources */,
+				DDE8D3BF17E0FCB0007FD14B /* WBPhotoTimelineCell.xib in Resources */,
 				DD1D26E517DE66BC00F3CABD /* MainFeedViewController.xib in Resources */,
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
 				9919153517DA7B2A005DA25C /* Main.storyboard in Resources */,
@@ -323,8 +354,11 @@
 				DD1D26E917DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
 				DD1D26E417DE66BC00F3CABD /* MainFeedViewController.m in Sources */,
 				991614C617DE58DC007FF6B5 /* ZUser.m in Sources */,
+				DDE8D3BD17E0DDA3007FD14B /* WBPhotoTimelineCell.m in Sources */,
+				DDE8D3C217E10E0D007FD14B /* MainFeedCell.m in Sources */,
 				DDFAA17617DE624F00D3BEEC /* WBPhotoTimelineViewController.m in Sources */,
 				99D80C8117DE51F900809322 /* UserFactory.m in Sources */,
+				DD2B8ED717E21B300094A3C4 /* UIImageView+SLImageLoader.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
