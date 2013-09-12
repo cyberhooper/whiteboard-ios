@@ -52,7 +52,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   
   sectionHeaderView.displayName = [[self.photos objectAtIndex:section] valueForKey:@"username"];
   sectionHeaderView.date = [NSDate date];
-  #warning Image should be asynchronous
+  //warning Image should be asynchronous
   sectionHeaderView.profilePictureImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[self.photos objectAtIndex:section] valueForKey:@"photoUrl"]]]];
   sectionHeaderView.numberOfLikes = @2;
   sectionHeaderView.numberOfComments = @3;
@@ -61,7 +61,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-#warning MAGIC NUMBER. REPLACE ME
+//warning MAGIC NUMBER. REPLACE ME
   return 44.0f;
 }
 

@@ -1,0 +1,4 @@
+<map id="+[WBUserFactory createUser]" name="+[WBUserFactory createUser]">
+<area shape="rect" id="node2" href="$interface_my_view_controller.html#aa377609a1de0d3b1cde539355aa5f1f1" title="&#45;[MyViewController\l viewDidLoad]" alt="" coords="266,5,393,46"/>
+<area shape="rect" id="node3" href="$interface_parse_data_source.html#a924d512a970b8c42c384a4aa174e5fe8" title="&#45;[ParseDataSource signup\lWithInfo:success:failure:]" alt="" coords="243,70,416,111"/>
+</map>

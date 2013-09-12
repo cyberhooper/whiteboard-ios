@@ -36,7 +36,7 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>UserImplementation</key>
-	<string>ZUser</string>
+	<key>DataSourceImplementation</key>
+	<string>ParseDataSource</string>
 </dict>
 </plist>

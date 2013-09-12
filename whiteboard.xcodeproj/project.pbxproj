@@ -7,7 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		991614C617DE58DC007FF6B5 /* ZUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991614C517DE58DC007FF6B5 /* ZUser.m */; };
+		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
+		991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CB17DE8161007FF6B5 /* CFNetwork.framework */; };
+		991614CE17DE8172007FF6B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CD17DE8172007FF6B5 /* CoreLocation.framework */; };
+		991614D017DE817F007FF6B5 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CF17DE817F007FF6B5 /* libz.1.1.3.dylib */; };
+		991614D217DE8188007FF6B5 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D117DE8188007FF6B5 /* MobileCoreServices.framework */; };
+		991614D417DE818F007FF6B5 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D317DE818F007FF6B5 /* QuartzCore.framework */; };
+		991614D617DE8198007FF6B5 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D517DE8198007FF6B5 /* Security.framework */; };
+		991614D817DE81A1007FF6B5 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D717DE81A1007FF6B5 /* StoreKit.framework */; };
+		991614DA17DE81AB007FF6B5 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614D917DE81AB007FF6B5 /* SystemConfiguration.framework */; };
+		991614DC17DE82B4007FF6B5 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614DB17DE82B4007FF6B5 /* Parse.framework */; };
 		9919152217DA7B2A005DA25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152117DA7B2A005DA25C /* Foundation.framework */; };
 		9919152417DA7B2A005DA25C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152317DA7B2A005DA25C /* CoreGraphics.framework */; };
 		9919152617DA7B2A005DA25C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152517DA7B2A005DA25C /* UIKit.framework */; };
@@ -20,21 +29,24 @@
 		9919154217DA7B2A005DA25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152117DA7B2A005DA25C /* Foundation.framework */; };
 		9919154317DA7B2A005DA25C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152517DA7B2A005DA25C /* UIKit.framework */; };
 		9919154B17DA7B2B005DA25C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919154917DA7B2B005DA25C /* InfoPlist.strings */; };
+		9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB4F17E0DA6500D1B18A /* WBDataSource.m */; };
+		9922AB5A17E0DA6B00D1B18A /* ParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5717E0DA6B00D1B18A /* ParseDataSource.m */; };
+		9922AB5B17E0DA6B00D1B18A /* ParseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5917E0DA6B00D1B18A /* ParseUser.m */; };
+		9922AB5E17E107F800D1B18A /* WBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5D17E107F800D1B18A /* WBManager.m */; };
+		9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940D16717DF62F1008B2825 /* WBDatasourceTests.m */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
-		99D80C7B17DE32ED00809322 /* MyUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7A17DE32ED00809322 /* MyUser.m */; };
 		99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7D17DE4FBF00809322 /* MyViewController.m */; };
-		99D80C8117DE51F900809322 /* UserFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C8017DE51F900809322 /* UserFactory.m */; };
-		DD1D26E017DE64A800F3CABD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1D26DF17DE643D00F3CABD /* MainWindow.xib */; };
-		DD1D26E417DE66BC00F3CABD /* MainFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D26E217DE66BC00F3CABD /* MainFeedViewController.m */; };
-		DD1D26E517DE66BC00F3CABD /* MainFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1D26E317DE66BC00F3CABD /* MainFeedViewController.xib */; };
-		DD1D26E917DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = DD1D26E817DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m */; };
-		DD1D26EB17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD1D26EA17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib */; };
-		DD2B8ED717E21B300094A3C4 /* UIImageView+SLImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8ED617E21B300094A3C4 /* UIImageView+SLImageLoader.m */; };
-		DDE8D3BD17E0DDA3007FD14B /* WBPhotoTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE8D3BC17E0DDA3007FD14B /* WBPhotoTimelineCell.m */; };
-		DDE8D3BF17E0FCB0007FD14B /* WBPhotoTimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDE8D3BE17E0FCB0007FD14B /* WBPhotoTimelineCell.xib */; };
-		DDE8D3C217E10E0D007FD14B /* MainFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDE8D3C117E10E0D007FD14B /* MainFeedCell.m */; };
-		DDE8D3C417E10E71007FD14B /* MainFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDE8D3C317E10E71007FD14B /* MainFeedCell.xib */; };
-		DDFAA17617DE624F00D3BEEC /* WBPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDFAA17417DE624F00D3BEEC /* WBPhotoTimelineViewController.m */; };
+		BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F5D17E22117003494CD /* MainWindow.xib */; };
+		BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */; };
+		BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F6217E22117003494CD /* MainFeedCell.m */; };
+		BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F6317E22117003494CD /* MainFeedCell.xib */; };
+		BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F6517E22117003494CD /* WBPhotoTimelineCell.m */; };
+		BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F6617E22117003494CD /* WBPhotoTimelineCell.xib */; };
+		BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */; };
+		BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */; };
+		BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7417E22197003494CD /* MainFeedViewController.m */; };
+		BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F7517E22197003494CD /* MainFeedViewController.xib */; };
+		BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +60,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		991614C417DE58DC007FF6B5 /* ZUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZUser.h; sourceTree = "<group>"; };
-		991614C517DE58DC007FF6B5 /* ZUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZUser.m; sourceTree = "<group>"; };
+		991614C917DE813C007FF6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		991614CB17DE8161007FF6B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		991614CD17DE8172007FF6B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		991614CF17DE817F007FF6B5 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		991614D117DE8188007FF6B5 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		991614D317DE818F007FF6B5 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		991614D517DE8198007FF6B5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		991614D717DE81A1007FF6B5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		991614D917DE81AB007FF6B5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		991614DB17DE82B4007FF6B5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		9919151E17DA7B2A005DA25C /* whiteboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whiteboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9919152117DA7B2A005DA25C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9919152317DA7B2A005DA25C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,31 +86,36 @@
 		9919154017DA7B2A005DA25C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		9919154817DA7B2B005DA25C /* whiteboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whiteboardTests-Info.plist"; sourceTree = "<group>"; };
 		9919154A17DA7B2B005DA25C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9922AB4E17E0DA6500D1B18A /* WBDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataSource.h; sourceTree = "<group>"; };
+		9922AB4F17E0DA6500D1B18A /* WBDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDataSource.m; sourceTree = "<group>"; };
+		9922AB5017E0DA6500D1B18A /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
+		9922AB5617E0DA6B00D1B18A /* ParseDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseDataSource.h; sourceTree = "<group>"; };
+		9922AB5717E0DA6B00D1B18A /* ParseDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseDataSource.m; sourceTree = "<group>"; };
+		9922AB5817E0DA6B00D1B18A /* ParseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParseUser.h; sourceTree = "<group>"; };
+		9922AB5917E0DA6B00D1B18A /* ParseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParseUser.m; sourceTree = "<group>"; };
+		9922AB5C17E107F800D1B18A /* WBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBManager.h; sourceTree = "<group>"; };
+		9922AB5D17E107F800D1B18A /* WBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBManager.m; sourceTree = "<group>"; };
+		9940D16717DF62F1008B2825 /* WBDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDatasourceTests.m; sourceTree = "<group>"; };
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
-		99D80C7217DE0F9900809322 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
-		99D80C7917DE32ED00809322 /* MyUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUser.h; sourceTree = "<group>"; };
-		99D80C7A17DE32ED00809322 /* MyUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUser.m; sourceTree = "<group>"; };
 		99D80C7C17DE4FBF00809322 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		99D80C7D17DE4FBF00809322 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
-		99D80C7F17DE51F800809322 /* UserFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserFactory.h; sourceTree = "<group>"; };
-		99D80C8017DE51F900809322 /* UserFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserFactory.m; sourceTree = "<group>"; };
-		DD1D26DF17DE643D00F3CABD /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		DD1D26E117DE66BC00F3CABD /* MainFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainFeedViewController.h; path = Controllers/MainFeedViewController.h; sourceTree = "<group>"; };
-		DD1D26E217DE66BC00F3CABD /* MainFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainFeedViewController.m; path = Controllers/MainFeedViewController.m; sourceTree = "<group>"; };
-		DD1D26E317DE66BC00F3CABD /* MainFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainFeedViewController.xib; path = Controllers/MainFeedViewController.xib; sourceTree = "<group>"; };
-		DD1D26E717DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBPhotoTimelineSectionHeaderView.h; path = Views/WBPhotoTimelineSectionHeaderView.h; sourceTree = "<group>"; };
-		DD1D26E817DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBPhotoTimelineSectionHeaderView.m; path = Views/WBPhotoTimelineSectionHeaderView.m; sourceTree = "<group>"; };
-		DD1D26EA17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WBPhotoTimelineSectionHeaderView.xib; path = Views/WBPhotoTimelineSectionHeaderView.xib; sourceTree = "<group>"; };
-		DD2B8ED517E21B300094A3C4 /* UIImageView+SLImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SLImageLoader.h"; sourceTree = "<group>"; };
-		DD2B8ED617E21B300094A3C4 /* UIImageView+SLImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SLImageLoader.m"; sourceTree = "<group>"; };
-		DDE8D3BB17E0DDA3007FD14B /* WBPhotoTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBPhotoTimelineCell.h; path = Views/WBPhotoTimelineCell.h; sourceTree = "<group>"; };
-		DDE8D3BC17E0DDA3007FD14B /* WBPhotoTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBPhotoTimelineCell.m; path = Views/WBPhotoTimelineCell.m; sourceTree = "<group>"; };
-		DDE8D3BE17E0FCB0007FD14B /* WBPhotoTimelineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = WBPhotoTimelineCell.xib; path = Views/WBPhotoTimelineCell.xib; sourceTree = "<group>"; };
-		DDE8D3C017E10E0D007FD14B /* MainFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainFeedCell.h; path = Views/MainFeedCell.h; sourceTree = "<group>"; };
-		DDE8D3C117E10E0D007FD14B /* MainFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainFeedCell.m; path = Views/MainFeedCell.m; sourceTree = "<group>"; };
-		DDE8D3C317E10E71007FD14B /* MainFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainFeedCell.xib; path = Views/MainFeedCell.xib; sourceTree = "<group>"; };
-		DDFAA17317DE624F00D3BEEC /* WBPhotoTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBPhotoTimelineViewController.h; path = Controllers/WBPhotoTimelineViewController.h; sourceTree = "<group>"; };
-		DDFAA17417DE624F00D3BEEC /* WBPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBPhotoTimelineViewController.m; path = Controllers/WBPhotoTimelineViewController.m; sourceTree = "<group>"; };
+		BE1B3F5D17E22117003494CD /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SLImageLoader.h"; sourceTree = "<group>"; };
+		BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SLImageLoader.m"; sourceTree = "<group>"; };
+		BE1B3F6117E22117003494CD /* MainFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFeedCell.h; sourceTree = "<group>"; };
+		BE1B3F6217E22117003494CD /* MainFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFeedCell.m; sourceTree = "<group>"; };
+		BE1B3F6317E22117003494CD /* MainFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedCell.xib; sourceTree = "<group>"; };
+		BE1B3F6417E22117003494CD /* WBPhotoTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineCell.h; sourceTree = "<group>"; };
+		BE1B3F6517E22117003494CD /* WBPhotoTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineCell.m; sourceTree = "<group>"; };
+		BE1B3F6617E22117003494CD /* WBPhotoTimelineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoTimelineCell.xib; sourceTree = "<group>"; };
+		BE1B3F6717E22117003494CD /* WBPhotoTimelineSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineSectionHeaderView.h; sourceTree = "<group>"; };
+		BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineSectionHeaderView.m; sourceTree = "<group>"; };
+		BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoTimelineSectionHeaderView.xib; sourceTree = "<group>"; };
+		BE1B3F7317E22197003494CD /* MainFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFeedViewController.h; sourceTree = "<group>"; };
+		BE1B3F7417E22197003494CD /* MainFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFeedViewController.m; sourceTree = "<group>"; };
+		BE1B3F7517E22197003494CD /* MainFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedViewController.xib; sourceTree = "<group>"; };
+		BE1B3F7617E22197003494CD /* WBPhotoTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineViewController.h; sourceTree = "<group>"; };
+		BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +123,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				991614DA17DE81AB007FF6B5 /* SystemConfiguration.framework in Frameworks */,
+				991614D817DE81A1007FF6B5 /* StoreKit.framework in Frameworks */,
+				991614D617DE8198007FF6B5 /* Security.framework in Frameworks */,
+				991614D417DE818F007FF6B5 /* QuartzCore.framework in Frameworks */,
+				991614D217DE8188007FF6B5 /* MobileCoreServices.framework in Frameworks */,
+				991614D017DE817F007FF6B5 /* libz.1.1.3.dylib in Frameworks */,
+				991614DC17DE82B4007FF6B5 /* Parse.framework in Frameworks */,
+				991614CE17DE8172007FF6B5 /* CoreLocation.framework in Frameworks */,
 				9919152417DA7B2A005DA25C /* CoreGraphics.framework in Frameworks */,
+				991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */,
+				991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */,
 				9919152617DA7B2A005DA25C /* UIKit.framework in Frameworks */,
 				9919152217DA7B2A005DA25C /* Foundation.framework in Frameworks */,
 			);
@@ -139,6 +174,16 @@
 		9919152017DA7B2A005DA25C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				991614DB17DE82B4007FF6B5 /* Parse.framework */,
+				991614D917DE81AB007FF6B5 /* SystemConfiguration.framework */,
+				991614D717DE81A1007FF6B5 /* StoreKit.framework */,
+				991614D517DE8198007FF6B5 /* Security.framework */,
+				991614D317DE818F007FF6B5 /* QuartzCore.framework */,
+				991614D117DE8188007FF6B5 /* MobileCoreServices.framework */,
+				991614CF17DE817F007FF6B5 /* libz.1.1.3.dylib */,
+				991614CD17DE8172007FF6B5 /* CoreLocation.framework */,
+				991614CB17DE8161007FF6B5 /* CFNetwork.framework */,
+				991614C917DE813C007FF6B5 /* AudioToolbox.framework */,
 				9919152117DA7B2A005DA25C /* Foundation.framework */,
 				9919152317DA7B2A005DA25C /* CoreGraphics.framework */,
 				9919152517DA7B2A005DA25C /* UIKit.framework */,
@@ -150,22 +195,18 @@
 		9919152717DA7B2A005DA25C /* whiteboard */ = {
 			isa = PBXGroup;
 			children = (
+				BE1B3F7217E22197003494CD /* Controllers */,
+				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
+				BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */,
+				BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */,
+				BE1B3F6017E22117003494CD /* Views */,
+				9919153317DA7B2A005DA25C /* Main.storyboard */,
 				9919153017DA7B2A005DA25C /* AppDelegate.h */,
 				9919153117DA7B2A005DA25C /* AppDelegate.m */,
-				DD1D26DF17DE643D00F3CABD /* MainWindow.xib */,
-				99D80C7917DE32ED00809322 /* MyUser.h */,
-				99D80C7A17DE32ED00809322 /* MyUser.m */,
-				9919153317DA7B2A005DA25C /* Main.storyboard */,
-				99D80C7217DE0F9900809322 /* User.h */,
-				991614C417DE58DC007FF6B5 /* ZUser.h */,
-				991614C517DE58DC007FF6B5 /* ZUser.m */,
-				99D80C7F17DE51F800809322 /* UserFactory.h */,
-				99D80C8017DE51F900809322 /* UserFactory.m */,
+				9922AB4D17E0DA6500D1B18A /* Abstractions */,
+				9922AB5517E0DA6B00D1B18A /* Parse Implementations */,
 				99D80C7C17DE4FBF00809322 /* MyViewController.h */,
 				99D80C7D17DE4FBF00809322 /* MyViewController.m */,
-				DD2B8ED417E21B290094A3C4 /* Helpers */,
-				DD1D26E617DE6CE100F3CABD /* Views */,
-				DDFAA17117DE620C00D3BEEC /* Controllers */,
 				9919153917DA7B2A005DA25C /* Images.xcassets */,
 				9919152817DA7B2A005DA25C /* Supporting Files */,
 			);
@@ -187,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				99D80C7017DE0EA200809322 /* UserImplementationTests.m */,
+				9940D16717DF62F1008B2825 /* WBDatasourceTests.m */,
 				9919154717DA7B2B005DA25C /* Supporting Files */,
 			);
 			path = whiteboardTests;
@@ -201,49 +243,55 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		DD1D26E617DE6CE100F3CABD /* Views */ = {
+		9922AB4D17E0DA6500D1B18A /* Abstractions */ = {
 			isa = PBXGroup;
 			children = (
-				DD1D26E717DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.h */,
-				DD1D26E817DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m */,
-				DD1D26EA17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib */,
-				DDE8D3BB17E0DDA3007FD14B /* WBPhotoTimelineCell.h */,
-				DDE8D3BC17E0DDA3007FD14B /* WBPhotoTimelineCell.m */,
-				DDE8D3BE17E0FCB0007FD14B /* WBPhotoTimelineCell.xib */,
-				DDE8D3C017E10E0D007FD14B /* MainFeedCell.h */,
-				DDE8D3C117E10E0D007FD14B /* MainFeedCell.m */,
-				DDE8D3C317E10E71007FD14B /* MainFeedCell.xib */,
+				9922AB4E17E0DA6500D1B18A /* WBDataSource.h */,
+				9922AB4F17E0DA6500D1B18A /* WBDataSource.m */,
+				9922AB5017E0DA6500D1B18A /* WBUser.h */,
+				9922AB5C17E107F800D1B18A /* WBManager.h */,
+				9922AB5D17E107F800D1B18A /* WBManager.m */,
 			);
-			name = Views;
+			path = Abstractions;
 			sourceTree = "<group>";
 		};
-		DD2B8ED417E21B290094A3C4 /* Helpers */ = {
+		9922AB5517E0DA6B00D1B18A /* Parse Implementations */ = {
 			isa = PBXGroup;
 			children = (
-				DD2B8ED517E21B300094A3C4 /* UIImageView+SLImageLoader.h */,
-				DD2B8ED617E21B300094A3C4 /* UIImageView+SLImageLoader.m */,
+				9922AB5617E0DA6B00D1B18A /* ParseDataSource.h */,
+				9922AB5717E0DA6B00D1B18A /* ParseDataSource.m */,
+				9922AB5817E0DA6B00D1B18A /* ParseUser.h */,
+				9922AB5917E0DA6B00D1B18A /* ParseUser.m */,
 			);
-			name = Helpers;
+			path = "Parse Implementations";
 			sourceTree = "<group>";
 		};
-		DDFAA17117DE620C00D3BEEC /* Controllers */ = {
+		BE1B3F6017E22117003494CD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				DDFAA17217DE621400D3BEEC /* WBPhotoTimelineViewController */,
-				DD1D26E117DE66BC00F3CABD /* MainFeedViewController.h */,
-				DD1D26E217DE66BC00F3CABD /* MainFeedViewController.m */,
-				DD1D26E317DE66BC00F3CABD /* MainFeedViewController.xib */,
+				BE1B3F6117E22117003494CD /* MainFeedCell.h */,
+				BE1B3F6217E22117003494CD /* MainFeedCell.m */,
+				BE1B3F6317E22117003494CD /* MainFeedCell.xib */,
+				BE1B3F6417E22117003494CD /* WBPhotoTimelineCell.h */,
+				BE1B3F6517E22117003494CD /* WBPhotoTimelineCell.m */,
+				BE1B3F6617E22117003494CD /* WBPhotoTimelineCell.xib */,
+				BE1B3F6717E22117003494CD /* WBPhotoTimelineSectionHeaderView.h */,
+				BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */,
+				BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */,
 			);
-			name = Controllers;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		DDFAA17217DE621400D3BEEC /* WBPhotoTimelineViewController */ = {
+		BE1B3F7217E22197003494CD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				DDFAA17317DE624F00D3BEEC /* WBPhotoTimelineViewController.h */,
-				DDFAA17417DE624F00D3BEEC /* WBPhotoTimelineViewController.m */,
+				BE1B3F7317E22197003494CD /* MainFeedViewController.h */,
+				BE1B3F7417E22197003494CD /* MainFeedViewController.m */,
+				BE1B3F7517E22197003494CD /* MainFeedViewController.xib */,
+				BE1B3F7617E22197003494CD /* WBPhotoTimelineViewController.h */,
+				BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */,
 			);
-			name = WBPhotoTimelineViewController;
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +338,7 @@
 		9919151617DA7B2A005DA25C /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WB;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Fueled;
 				TargetAttributes = {
@@ -322,14 +371,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD1D26EB17DE6D3200F3CABD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
+				BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */,
+				BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */,
 				9919153A17DA7B2A005DA25C /* Images.xcassets in Resources */,
-				DDE8D3C417E10E71007FD14B /* MainFeedCell.xib in Resources */,
-				DD1D26E017DE64A800F3CABD /* MainWindow.xib in Resources */,
-				DDE8D3BF17E0FCB0007FD14B /* WBPhotoTimelineCell.xib in Resources */,
-				DD1D26E517DE66BC00F3CABD /* MainFeedViewController.xib in Resources */,
+				BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */,
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
+				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
 				9919153517DA7B2A005DA25C /* Main.storyboard in Resources */,
+				BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,18 +397,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99D80C7B17DE32ED00809322 /* MyUser.m in Sources */,
+				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
+				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
+				9922AB5A17E0DA6B00D1B18A /* ParseDataSource.m in Sources */,
+				BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
+				9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */,
 				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
-				DD1D26E917DE6D0500F3CABD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
-				DD1D26E417DE66BC00F3CABD /* MainFeedViewController.m in Sources */,
-				991614C617DE58DC007FF6B5 /* ZUser.m in Sources */,
-				DDE8D3BD17E0DDA3007FD14B /* WBPhotoTimelineCell.m in Sources */,
-				DDE8D3C217E10E0D007FD14B /* MainFeedCell.m in Sources */,
-				DDFAA17617DE624F00D3BEEC /* WBPhotoTimelineViewController.m in Sources */,
-				99D80C8117DE51F900809322 /* UserFactory.m in Sources */,
-				DD2B8ED717E21B300094A3C4 /* UIImageView+SLImageLoader.m in Sources */,
+				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
+				BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */,
+				9922AB5B17E0DA6B00D1B18A /* ParseUser.m in Sources */,
+				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
+				BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,6 +418,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */,
+				9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,6 +486,9 @@
 					"$(inherited)",
 				);
 				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -466,6 +520,9 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_TREAT_IMPLICIT_FUNCTION_DECLARATIONS_AS_ERRORS = YES;
+				GCC_TREAT_INCOMPATIBLE_POINTER_TYPE_WARNINGS_AS_ERRORS = YES;
+				GCC_TREAT_WARNINGS_AS_ERRORS = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
@@ -482,6 +539,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					$SRCROOT,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
@@ -495,6 +556,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					$SRCROOT,
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";

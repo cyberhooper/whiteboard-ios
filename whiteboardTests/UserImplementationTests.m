@@ -7,14 +7,14 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "User.h"
+#import "WBUser.h"
 
 @interface UserTests : XCTestCase
 
 @end
 
 @implementation UserTests {
-  id <User> user;
+  id <WBUser> user;
 }
 
 - (void)setUp {
@@ -48,8 +48,8 @@
 }
 
 - (void)testUserHasAUserName {
-  user.userName = @"username";
-  XCTAssertEqualObjects(user.userName, @"username", @"A User should have a username");
+  user.username = @"username";
+  XCTAssertEqualObjects(user.username, @"username", @"A User should have a username");
 }
 
 - (void)testUserHasAFirstName {
@@ -77,11 +77,6 @@
   user.profilePictureSmallURL = [NSURL URLWithString:@"http://www.foobar.jpg"];
   NSURL *url = [NSURL URLWithString:@"http://www.foobar.jpg"];
   XCTAssertEqualObjects(user.profilePictureSmallURL , url, @"user should have a profilePictureSmallURL");
-}
-
-- (void)testUserCanBeLoggedIn {
-  user.isLoggedIn = YES;
-  XCTAssertTrue(user.isLoggedIn, @"USer should be able to be logged in");
 }
 
 - (void)testUserHasACreationDate {

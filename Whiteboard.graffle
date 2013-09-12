@@ -973,7 +973,7 @@ notificationSettings : NSDictionary}</string>
 		<key>SidebarWidth</key>
 		<integer>120</integer>
 		<key>VisibleRegion</key>
-		<string>{{0, 22}, {1118, 739}}</string>
+		<string>{{0, 37}, {1118, 739}}</string>
 		<key>Zoom</key>
 		<real>1</real>
 		<key>ZoomValues</key>
