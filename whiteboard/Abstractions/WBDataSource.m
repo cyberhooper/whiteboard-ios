@@ -86,4 +86,8 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
+- (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
+    [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
 @end

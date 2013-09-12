@@ -10,6 +10,6 @@
 
 @interface WBManager : NSObject
 
-+ (void)setUp;
++ (void)setUpWithLauchOptions:(NSDictionary *)launchOptions;
 
 @end

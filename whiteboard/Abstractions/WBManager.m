@@ -11,11 +11,12 @@
 
 @implementation WBManager
 
-+ (void)setUp {
++ (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
   Class dataSourceClass = [self dataSourceSubclass];
   if (!dataSourceClass)
     [NSException raise:@"You should implement a WBDataSource subclass and put its name in the Info.plist under 'DataSourceImplementation' key." format:nil];
   [WBDataSource setDataSourceSubclass:[self dataSourceSubclass]];
+  [[WBDataSource sharedInstance] setUpWithLauchOptions:launchOptions];
 }
 
 + (Class)dataSourceSubclass {

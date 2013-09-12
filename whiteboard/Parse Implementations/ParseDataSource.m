@@ -12,6 +12,13 @@
 
 @implementation ParseDataSource
 
+- (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
+  [ParseUser registerSubclass];
+  [Parse setApplicationId:@"aIriMbx6w8kAQdmJ1HI2FRJNk6ESBzWvgBABfJR6"
+                  clientKey:@"nmnkgLPVzHfoQTOQEK6zphicN9ccdpJVbjMbftSF"];
+  [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+}
+
 - (void)loginWithUsername:(NSString *)username andPassWord:(NSString *)password success:(void (^)(id<WBUser>))success failure:(void (^)(NSError *))failure {
   [PFUser logInWithUsernameInBackground:username password:password
                                   block:^(PFUser *user, NSError *error) {

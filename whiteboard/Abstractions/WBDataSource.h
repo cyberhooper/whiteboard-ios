@@ -111,5 +111,11 @@
  */
 + (id<WBUser>)createUser;
 
+/**
+ Method called when the app starts that enables WBDatasource to
+ perform some setup code. Example, set Api key, base url etc.
+ */
+- (void)setUpWithLauchOptions:(NSDictionary *)launchOptions;
+
 @end
 
