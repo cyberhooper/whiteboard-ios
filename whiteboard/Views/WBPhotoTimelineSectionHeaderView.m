@@ -8,6 +8,7 @@
 
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "UIImageView+RoundedCorners.h"
+#import <FormatterKit/TTTTimeIntervalFormatter.h>
 
 @interface WBPhotoTimelineSectionHeaderView()
 @property (nonatomic, weak) IBOutlet UILabel *displayNameLabel;
@@ -50,7 +51,8 @@
 - (void)setDate:(NSDate *)date {
   _date = date;
   
-  self.dateLabel.text = [date description];
+  TTTTimeIntervalFormatter *timeIntervalFormatter = [[TTTTimeIntervalFormatter alloc] init];
+  self.dateLabel.text = [timeIntervalFormatter stringForTimeIntervalFromDate:date toDate:[NSDate date]];
 }
 
 - (void)setNumberOfLikes:(NSNumber *)numberOfLikes {
