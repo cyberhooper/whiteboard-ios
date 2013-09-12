@@ -7,13 +7,17 @@
 //
 
 #import "WBPhotoTimelineSectionHeaderView.h"
+#import "UIImageView+RoundedCorners.h"
+#import <FormatterKit/TTTTimeIntervalFormatter.h>
 
 @interface WBPhotoTimelineSectionHeaderView()
 @property (nonatomic, weak) IBOutlet UILabel *displayNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
-@property (nonatomic, weak) IBOutlet UIImageView *profilePictureImageView;
+
 @property (nonatomic, weak) IBOutlet UIButton *likeButton;
-@property (nonatomic, weak) IBOutlet UILabel *commentsLabel;
+@property (nonatomic, weak) IBOutlet UILabel *likeNumberLabel;
+@property (nonatomic, weak) IBOutlet UIButton *commentButton;
+@property (nonatomic, weak) IBOutlet UILabel *commentNumberLabel;
 @end
 
 @implementation WBPhotoTimelineSectionHeaderView
@@ -22,9 +26,21 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-
+      [self setupView];
     }
     return self;
+}
+
+- (void)awakeFromNib {
+  [super awakeFromNib];
+  
+  [self setupView];
+}
+
+#pragma mark - Setup
+- (void)setupView {
+  // Defaults
+  [self.profilePictureImageView roundedCornersWithRadius:3.f];
 }
 
 #pragma mark - Setters
@@ -37,25 +53,33 @@
 - (void)setDate:(NSDate *)date {
   _date = date;
   
-  self.dateLabel.text = [date description];
-}
-
-- (void)setProfilePictureImage:(UIImage *)profilePictureImage {
-  _profilePictureImage = profilePictureImage;
-  
-  self.profilePictureImageView.image = profilePictureImage;
+  TTTTimeIntervalFormatter *timeIntervalFormatter = [[TTTTimeIntervalFormatter alloc] init];
+  self.dateLabel.text = [timeIntervalFormatter stringForTimeIntervalFromDate:date toDate:[NSDate date]];
 }
 
 - (void)setNumberOfLikes:(NSNumber *)numberOfLikes {
   _numberOfLikes = numberOfLikes;
   
-  [self.likeButton setTitle:[NSString stringWithFormat:@"%d", numberOfLikes.intValue] forState:UIControlStateNormal];
+  self.likeNumberLabel.text = [NSString stringWithFormat:@"%d", numberOfLikes.intValue];
 }
 
 - (void)setNumberOfComments:(NSNumber *)numberOfComments {
   _numberOfComments = numberOfComments;
-  
-  self.commentsLabel.text = [NSString stringWithFormat:@"%d", numberOfComments.intValue];
+
+  self.commentNumberLabel.text = [NSString stringWithFormat:@"%d", numberOfComments.intValue];
+}
+
+#pragma mark - IBActions
+- (IBAction)likesButtonPressed:(id)sender {
+  if([self.delegate respondsToSelector:@selector(sectionHeaderLikesButtonPressed:)]){
+    [self.delegate sectionHeaderLikesButtonPressed:self];
+  }
+}
+
+- (IBAction)commentsButtonPressed:(id)sender {
+  if([self.delegate respondsToSelector:@selector(sectionHeaderCommentsButtonPressed:)]){
+    [self.delegate sectionHeaderCommentsButtonPressed:self];
+  }
 }
 
 @end

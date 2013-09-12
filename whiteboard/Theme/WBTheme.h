@@ -23,4 +23,6 @@
 
 - (NSString *)headerImageName;
 
+- (UIImage *)backgroundImage;
+
 @end

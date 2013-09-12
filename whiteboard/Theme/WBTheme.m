@@ -31,4 +31,8 @@
   return [self.themeDict objectForKey:@"headerImageName"];
 }
 
+- (UIImage *)backgroundImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"backgroundImage"]];
+}
+
 @end

@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>backgroundImage</key>
+	<string>backgroundLeather</string>
 	<key>headerImageName</key>
 	<string>some_image.png</string>
 </dict>
