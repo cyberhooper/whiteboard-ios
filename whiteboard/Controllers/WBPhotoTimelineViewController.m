@@ -96,6 +96,38 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   return NSStringFromClass([WBPhotoTimelineCell class]);
 }
 
+#pragma mark - UIScrollViewDelegate
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+  CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
+  CGFloat scrollViewHeight = scrollView.bounds.size.height;
+  
+  CGFloat offsetY = screenHeight - scrollViewHeight + scrollView.contentOffset.y;
+  
+  #warning Magic number, change this
+  if(offsetY <= -60.f){
+    [self scrollViewDidPullToRefresh:scrollView];
+  }
+}
+
+#pragma mark - Refresh
+- (void)scrollViewDidPullToRefresh:(UIScrollView *)scrollView {
+  // Don't scroll if it's loading
+  if(self.isLoading){
+    return;
+  }
+  
+  self.isLoading = YES;
+  NSLog(@"Refreshing...");
+  
+  #warning Change this. Perform fetch request
+  double delayInSeconds = 2.0;
+  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+    self.isLoading = NO;
+    NSLog(@"Done refreshing...");
+  });
+}
+
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];

@@ -205,8 +205,8 @@
 			isa = PBXGroup;
 			children = (
 				BE1B3F7217E22197003494CD /* Controllers */,
-				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
 				DD2B8ED817E22E920094A3C4 /* Helpers */,
+				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
 				BE1B3F6017E22117003494CD /* Views */,
 				9919153317DA7B2A005DA25C /* Main.storyboard */,
 				9919153017DA7B2A005DA25C /* AppDelegate.h */,
@@ -599,6 +599,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
@@ -628,6 +629,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
+				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
