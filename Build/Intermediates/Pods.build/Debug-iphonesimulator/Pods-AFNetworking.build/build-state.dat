@@ -1,0 +1,428 @@
+TPods-AFNetworking
+v6
+r1
+cCheck dependencies
+cProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPClient.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFImageRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFJSONRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFPropertyListRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFURLConnectionOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFXMLRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/UIImageView+AFNetworking.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking-dummy.o /Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a normal i386
+
+N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c00000000522ACC0900000000004D6390
+t1378536457
+s5071760
+
+N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c00000000522ACC0D0000000000A8EAD0
+t1378536461
+s11070160
+
+N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/MobileCoreServices.framework/MobileCoreServices
+c00000000522ACC130000000000211130
+t1378536467
+s2167088
+
+N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/Security.framework/Security
+c00000000522ACC15000000000017D8E0
+t1378536469
+s1562848
+
+N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/SystemConfiguration.framework/SystemConfiguration
+c00000000522ACC1500000000001A2270
+t1378536469
+s1712752
+
+N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+c00000000521BCCE50000000000000176
+t1377553637
+s374
+
+N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c00000000522ACC8F00000000000003B5
+t1378536591
+s949
+
+N/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000522ACCD2000000000000019E
+t1378536658
+s414
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPClient.o
+t1379011273
+s233356
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPRequestOperation.o
+t1379011273
+s58584
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFImageRequestOperation.o
+t1379011273
+s58940
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFJSONRequestOperation.o
+t1379011273
+s43216
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o
+t1379011273
+s34072
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFPropertyListRequestOperation.o
+t1379011273
+s41500
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFURLConnectionOperation.o
+t1379011273
+s195144
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFXMLRequestOperation.o
+t1379011273
+s34808
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking-dummy.o
+t1379011273
+s3264
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking.LinkFileList
+c0000000052320AC80000000000000612
+t1379011272
+s1554
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/UIImageView+AFNetworking.o
+t1379011273
+s66148
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch.pch
+t1379011273
+s5627700
+
+N/Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch.pch
+t1379011273
+s5620024
+
+N/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a
+t2
+s0
+
+N/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.m
+c000000005231F13E000000000000D08B
+t1379004734
+s53387
+
+N/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m
+c000000005231F13E0000000000003390
+t1379004734
+s13200
+
+N/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.m
+c000000005231F13E0000000000003209
+t1379004734
+s12809
+
+N/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.m
+c000000005231F13E00000000000018AE
+t1379004734
+s6318
+
+N/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m
+c000000005231F13E0000000000001654
+t1379004734
+s5716
+
+N/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m
+c000000005231F13E000000000000164A
+t1379004734
+s5706
+
+N/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m
+c000000005231F13E0000000000007A86
+t1379004734
+s31366
+
+N/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.m
+c000000005231F13E0000000000001944
+t1379004734
+s6468
+
+N/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.m
+c000000005231F13E000000000000194B
+t1379004734
+s6475
+
+N/Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-dummy.m
+c000000005232088E000000000000008A
+t1379010702
+s138
+
+N/Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-prefix.pch
+c000000005232088E00000000000001CF
+t1379010702
+s463
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.m
+r0
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m
+r0
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.m
+r0
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.m
+r0
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m
+r0
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m
+r0
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m
+r0
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.m
+r0
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.m
+r0
+
+CBuild AST from /Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-dummy.m
+r0
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies234da84842e2b741^db50b94842e2b741^---0#1#1#--18"Check dependencies36"3CB64461-C812-444D-864F-8CA04E540ECB-
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPClient.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.401860
+e400704073.800009
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPClient.o
+x/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.m
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection85"Compile /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.m261"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPClient.o AFNetworking/AFNetworking/AFHTTPClient.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerb709674942e2b741^85cdcc4942e2b741^---0#0#1#-19%DVTDocumentLocation2@93"file://localhost/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.m0000000000000000^3939"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPClient.o AFNetworking/AFNetworking/AFHTTPClient.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPClient.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPClient.dia -c /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPClient.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPClient.o36"5C3F6354-30D2-42A3-A4AE-C4419B676283-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.401854
+e400704073.562581
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPRequestOperation.o
+x/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m281"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPRequestOperation.o AFNetworking/AFNetworking/AFHTTPRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerea09674942e2b741^ea04904942e2b741^---0#0#1#-19%DVTDocumentLocation2@103"file://localhost/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m0000000000000000^3999"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPRequestOperation.o AFNetworking/AFNetworking/AFHTTPRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPRequestOperation.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPRequestOperation.dia -c /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFHTTPRequestOperation.o36"2CF9181B-7A5E-495B-BCB4-852FB8ED9EE7-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFImageRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.401918
+e400704073.543665
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFImageRequestOperation.o
+x/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.m
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection96"Compile /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.m283"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFImageRequestOperation.o AFNetworking/AFNetworking/AFImageRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler070b674942e2b741^c16f8b4942e2b741^---0#0#1#-19%DVTDocumentLocation2@104"file://localhost/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.m0000000000000000^4005"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFImageRequestOperation.o AFNetworking/AFNetworking/AFImageRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFImageRequestOperation.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFImageRequestOperation.dia -c /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFImageRequestOperation.o36"078DE0C4-463D-4307-967E-104E9924CEFF-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFJSONRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.545094
+e400704073.654954
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFJSONRequestOperation.o
+x/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.m
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Compile /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.m281"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFJSONRequestOperation.o AFNetworking/AFNetworking/AFJSONRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler89b28b4942e2b741^6ac1a74942e2b741^---0#0#1#-19%DVTDocumentLocation2@103"file://localhost/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.m0000000000000000^3999"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFJSONRequestOperation.o AFNetworking/AFNetworking/AFJSONRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFJSONRequestOperation.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFJSONRequestOperation.dia -c /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFJSONRequestOperation.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFJSONRequestOperation.o36"928CB492-8A30-4E78-A29F-3D9040D26FB4-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.564104
+e400704073.654521
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o
+x/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection106"Compile /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m303"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler9a96904942e2b741^268fa74942e2b741^---0#0#1#-19%DVTDocumentLocation2@114"file://localhost/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m0000000000000000^4065"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.dia -c /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFNetworkActivityIndicatorManager.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFNetworkActivityIndicatorManager.o36"3635F2A0-E57D-4771-9979-1D3CBA422320-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFPropertyListRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.655582
+e400704073.740477
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFPropertyListRequestOperation.o
+x/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection103"Compile /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m297"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFPropertyListRequestOperation.o AFNetworking/AFNetworking/AFPropertyListRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler3ffda74942e2b741^4b90bd4942e2b741^---0#0#1#-19%DVTDocumentLocation2@111"file://localhost/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m0000000000000000^4047"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFPropertyListRequestOperation.o AFNetworking/AFNetworking/AFPropertyListRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFPropertyListRequestOperation.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFPropertyListRequestOperation.dia -c /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFPropertyListRequestOperation.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFPropertyListRequestOperation.o36"32997D8C-CB23-45CB-8ED6-51107CB97FF5-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFURLConnectionOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.655758
+e400704073.961873
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFURLConnectionOperation.o
+x/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m285"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFURLConnectionOperation.o AFNetworking/AFNetworking/AFURLConnectionOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilerac03a84942e2b741^713df64942e2b741^---0#0#1#-19%DVTDocumentLocation2@105"file://localhost/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m0000000000000000^4011"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFURLConnectionOperation.o AFNetworking/AFNetworking/AFURLConnectionOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFURLConnectionOperation.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFURLConnectionOperation.dia -c /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFURLConnectionOperation.o36"32222F2E-9950-42E7-AF82-4CB15C234990-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFXMLRequestOperation.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.655772
+e400704073.729615
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFXMLRequestOperation.o
+x/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.m
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection94"Compile /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.m279"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFXMLRequestOperation.o AFNetworking/AFNetworking/AFXMLRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilereb00a84942e2b741^0cc8ba4942e2b741^---0#0#1#-19%DVTDocumentLocation2@102"file://localhost/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.m0000000000000000^3993"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFXMLRequestOperation.o AFNetworking/AFNetworking/AFXMLRequestOperation.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFXMLRequestOperation.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFXMLRequestOperation.dia -c /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFXMLRequestOperation.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/AFXMLRequestOperation.o36"FF721DEF-D31A-45D7-9DC3-2E8197146D31-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking-dummy.o /Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.742727
+e400704073.789566
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking-dummy.o
+x/Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-dummy.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-dummy.m
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection70"Compile /Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-dummy.m257"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking-dummy.o Pods-AFNetworking-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilere04abe4942e2b741^7920ca4942e2b741^---0#0#1#-19%DVTDocumentLocation2@78"file://localhost/Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-dummy.m0000000000000000^3919"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking-dummy.o Pods-AFNetworking-dummy.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking-dummy.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking-dummy.dia -c /Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-dummy.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking-dummy.o36"99C869B6-88B3-4B7B-B198-B69849B0C1CF-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CCompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/UIImageView+AFNetworking.o /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704073.732347
+e400704073.872281
+r1
+xCompileC
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/UIImageView+AFNetworking.o
+x/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.m
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFImageRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFHTTPRequestOperation.h
+d/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/AFURLConnectionOperation.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection97"Compile /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.m285"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/UIImageView+AFNetworking.o AFNetworking/AFNetworking/UIImageView+AFNetworking.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compilera4a8bb4942e2b741^035ddf4942e2b741^---0#0#1#-19%DVTDocumentLocation2@105"file://localhost/Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.m0000000000000000^4011"CompileC /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/UIImageView+AFNetworking.o AFNetworking/AFNetworking/UIImageView+AFNetworking.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 -include /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/UIImageView+AFNetworking.d --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/UIImageView+AFNetworking.dia -c /Users/lnf/Documents/Whiteboard/Pods/AFNetworking/AFNetworking/UIImageView+AFNetworking.m -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/UIImageView+AFNetworking.o36"F0EC5E5B-46E8-4E40-BA8F-AC95144C61EE-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CLibtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a normal i386
+s400704074.044294
+e400704074.066457
+r1
+xLibtool
+x/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a
+xnormal
+xi386
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection111"Libtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a normal i386111"Libtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a normal i3865c770b4a42e2b741^0c04114a42e2b741^---0#0#1#--1131"Libtool /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a normal i386    cd /Users/lnf/Documents/Whiteboard/Pods    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -filelist /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Objects-normal/i386/Pods-AFNetworking.LinkFileList -framework Foundation -framework MobileCoreServices -framework SystemConfiguration -framework Security -framework CoreGraphics -o /Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/libPods-AFNetworking.a36"F577D796-ED77-44FE-9A7F-BBF69BDBE9A6-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704072.726723
+e400704073.393244
+r1
+xProcessPCH
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch.pch
+xPods-AFNetworking-prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-prefix.pch
+d/Users/lnf/Documents/Whiteboard/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile Pods-AFNetworking-prefix.pch265"ProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler492fba4842e2b741^c9aa644942e2b741^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-prefix.pch0000000000000000^3813"ProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator -fobjc-arc -DOS_OBJECT_USE_OBJC=0 --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch.dia -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch.d -c /Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-prefix.pch -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-bniqrlxrenaruhesranduvxfztin/Pods-AFNetworking-prefix.pch.pch36"935DA115-B432-4012-AEEF-5A3C5F1DC837-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s400704072.728870
+e400704073.392964
+r1
+xProcessPCH
+x/Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch.pch
+xPods-AFNetworking-prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-prefix.pch
+d/Users/lnf/Documents/Whiteboard/Pods/Pods-environment.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection39"Precompile Pods-AFNetworking-prefix.pch265"ProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compileraab7ba4842e2b741^f299644942e2b741^---0#0#1#-19%DVTDocumentLocation2@81"file://localhost/Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-prefix.pch0000000000000000^3779"ProcessPCH /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/lnf/Documents/Whiteboard/Pods    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode 5 GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode 5 GM.app/Contents/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode\ 5\ GM.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-implicit-atomic-properties -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wno-undeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -DCOCOAPODS=1 -isysroot /Applications/Xcode\ 5\ GM.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-generated-files.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-own-target-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-all-target-headers.hmap -iquote /Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/Pods-AFNetworking-project-headers.hmap -I/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator/include -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders -I/Users/lnf/Documents/Whiteboard/Pods/BuildHeaders/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers -I/Users/lnf/Documents/Whiteboard/Pods/Headers/AFNetworking -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK -I/Users/lnf/Documents/Whiteboard/Pods/Headers/Facebook-iOS-SDK/FacebookSDK -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources/i386 -I/Users/lnf/Documents/Whiteboard/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-AFNetworking.build/DerivedSources -F/Users/lnf/Documents/Whiteboard/Build/Products/Debug-iphonesimulator --serialize-diagnostics /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch.dia -MMD -MT dependencies -MF /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch.d -c /Users/lnf/Documents/Whiteboard/Pods/Pods-AFNetworking-prefix.pch -o /Users/lnf/Documents/Whiteboard/Build/Intermediates/PrecompiledHeaders/Pods-AFNetworking-prefix-daxgtbdczjjgtgaxgslwcwuilrbx/Pods-AFNetworking-prefix.pch.pch36"84DA4D78-5B5B-4FB0-BF24-58C2EBDEEE5D-
+b217BD234-572E-43A0-9C25-CBDFCACD28BE
+
+CProcessPCH /Users/lnf/Library/Developer/Xcode/DerivedData/whiteboard-celgjaiesdqsbybzxnjnpsnxwkgd/Index/PrecompiledHeaders/Pods-AFNetworking-prefix-grkzotumcjehtvhjxtopfcdyccdf_ast/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+
+CProcessPCH /Users/lnf/Library/Developer/Xcode/DerivedData/whiteboard-celgjaiesdqsbybzxnjnpsnxwkgd/Index/PrecompiledHeaders/Pods-AFNetworking-prefix-gywawxvezwceesdfwsaetgzkxabk_ast/Pods-AFNetworking-prefix.pch.pch Pods-AFNetworking-prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.astbuilder
+r0
+

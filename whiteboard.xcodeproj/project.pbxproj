@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B6E5B767D2D48748780E8CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F30985C67F4305AE5B3F10 /* libPods.a */; };
 		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
 		991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CB17DE8161007FF6B5 /* CFNetwork.framework */; };
 		991614CE17DE8172007FF6B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CD17DE8172007FF6B5 /* CoreLocation.framework */; };
@@ -37,6 +38,17 @@
 		994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
 		99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7D17DE4FBF00809322 /* MyViewController.m */; };
+		BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F5D17E22117003494CD /* MainWindow.xib */; };
+		BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */; };
+		BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F6217E22117003494CD /* MainFeedCell.m */; };
+		BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F6317E22117003494CD /* MainFeedCell.xib */; };
+		BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F6517E22117003494CD /* WBPhotoTimelineCell.m */; };
+		BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F6617E22117003494CD /* WBPhotoTimelineCell.xib */; };
+		BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */; };
+		BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */; };
+		BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7417E22197003494CD /* MainFeedViewController.m */; };
+		BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F7517E22197003494CD /* MainFeedViewController.xib */; };
+		BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +102,25 @@
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
 		99D80C7C17DE4FBF00809322 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		99D80C7D17DE4FBF00809322 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
+		A2E130B5A6424401B142406B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		B0F30985C67F4305AE5B3F10 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1B3F5D17E22117003494CD /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SLImageLoader.h"; sourceTree = "<group>"; };
+		BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SLImageLoader.m"; sourceTree = "<group>"; };
+		BE1B3F6117E22117003494CD /* MainFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFeedCell.h; sourceTree = "<group>"; };
+		BE1B3F6217E22117003494CD /* MainFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFeedCell.m; sourceTree = "<group>"; };
+		BE1B3F6317E22117003494CD /* MainFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedCell.xib; sourceTree = "<group>"; };
+		BE1B3F6417E22117003494CD /* WBPhotoTimelineCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineCell.h; sourceTree = "<group>"; };
+		BE1B3F6517E22117003494CD /* WBPhotoTimelineCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineCell.m; sourceTree = "<group>"; };
+		BE1B3F6617E22117003494CD /* WBPhotoTimelineCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoTimelineCell.xib; sourceTree = "<group>"; };
+		BE1B3F6717E22117003494CD /* WBPhotoTimelineSectionHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineSectionHeaderView.h; sourceTree = "<group>"; };
+		BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineSectionHeaderView.m; sourceTree = "<group>"; };
+		BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoTimelineSectionHeaderView.xib; sourceTree = "<group>"; };
+		BE1B3F7317E22197003494CD /* MainFeedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFeedViewController.h; sourceTree = "<group>"; };
+		BE1B3F7417E22197003494CD /* MainFeedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFeedViewController.m; sourceTree = "<group>"; };
+		BE1B3F7517E22197003494CD /* MainFeedViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedViewController.xib; sourceTree = "<group>"; };
+		BE1B3F7617E22197003494CD /* WBPhotoTimelineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineViewController.h; sourceTree = "<group>"; };
+		BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +141,7 @@
 				991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */,
 				9919152617DA7B2A005DA25C /* UIKit.framework in Frameworks */,
 				9919152217DA7B2A005DA25C /* Foundation.framework in Frameworks */,
+				5B6E5B767D2D48748780E8CD /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -133,6 +165,7 @@
 				9919154617DA7B2A005DA25C /* whiteboardTests */,
 				9919152017DA7B2A005DA25C /* Frameworks */,
 				9919151F17DA7B2A005DA25C /* Products */,
+				A2E130B5A6424401B142406B /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -162,6 +195,7 @@
 				9919152317DA7B2A005DA25C /* CoreGraphics.framework */,
 				9919152517DA7B2A005DA25C /* UIKit.framework */,
 				9919154017DA7B2A005DA25C /* XCTest.framework */,
+				B0F30985C67F4305AE5B3F10 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -169,6 +203,11 @@
 		9919152717DA7B2A005DA25C /* whiteboard */ = {
 			isa = PBXGroup;
 			children = (
+				BE1B3F7217E22197003494CD /* Controllers */,
+				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
+				BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */,
+				BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */,
+				BE1B3F6017E22117003494CD /* Views */,
 				9919153317DA7B2A005DA25C /* Main.storyboard */,
 				9919153017DA7B2A005DA25C /* AppDelegate.h */,
 				9919153117DA7B2A005DA25C /* AppDelegate.m */,
@@ -236,6 +275,34 @@
 			path = "Parse Implementations";
 			sourceTree = "<group>";
 		};
+		BE1B3F6017E22117003494CD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BE1B3F6117E22117003494CD /* MainFeedCell.h */,
+				BE1B3F6217E22117003494CD /* MainFeedCell.m */,
+				BE1B3F6317E22117003494CD /* MainFeedCell.xib */,
+				BE1B3F6417E22117003494CD /* WBPhotoTimelineCell.h */,
+				BE1B3F6517E22117003494CD /* WBPhotoTimelineCell.m */,
+				BE1B3F6617E22117003494CD /* WBPhotoTimelineCell.xib */,
+				BE1B3F6717E22117003494CD /* WBPhotoTimelineSectionHeaderView.h */,
+				BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */,
+				BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BE1B3F7217E22197003494CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BE1B3F7317E22197003494CD /* MainFeedViewController.h */,
+				BE1B3F7417E22197003494CD /* MainFeedViewController.m */,
+				BE1B3F7517E22197003494CD /* MainFeedViewController.xib */,
+				BE1B3F7617E22197003494CD /* WBPhotoTimelineViewController.h */,
+				BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -243,9 +310,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9919155017DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "whiteboard" */;
 			buildPhases = (
+				31FEC07121E64B94ACAAF786 /* Check Pods Manifest.lock */,
 				9919151A17DA7B2A005DA25C /* Sources */,
 				9919151B17DA7B2A005DA25C /* Frameworks */,
 				9919151C17DA7B2A005DA25C /* Resources */,
+				C9C2C40C021B469983EC1958 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -313,10 +382,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */,
+				BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */,
 				9919153A17DA7B2A005DA25C /* Images.xcassets in Resources */,
 				994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */,
+				BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */,
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
+				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
 				9919153517DA7B2A005DA25C /* Main.storyboard in Resources */,
+				BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -330,18 +404,55 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31FEC07121E64B94ACAAF786 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+		};
+		C9C2C40C021B469983EC1958 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9919151A17DA7B2A005DA25C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
 				9922AB5A17E0DA6B00D1B18A /* ParseDataSource.m in Sources */,
+				BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
 				9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */,
 				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
+				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
+				BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */,
 				9922AB5B17E0DA6B00D1B18A /* ParseUser.m in Sources */,
+				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
+				BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -468,6 +579,7 @@
 		};
 		9919155117DA7B2B005DA25C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E130B5A6424401B142406B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -478,6 +590,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -485,6 +608,7 @@
 		};
 		9919155217DA7B2B005DA25C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A2E130B5A6424401B142406B /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -495,6 +619,17 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
 				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-framework",
+					CoreGraphics,
+					"-framework",
+					MobileCoreServices,
+					"-framework",
+					Security,
+					"-framework",
+					SystemConfiguration,
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
