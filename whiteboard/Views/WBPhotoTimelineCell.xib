@@ -20,6 +20,7 @@
                     </imageView>
                 </subviews>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="photoImageView" destination="qQC-3g-QC4" id="6AO-ra-zK1"/>
             </connections>

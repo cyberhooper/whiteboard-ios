@@ -11,7 +11,7 @@
 #import "WBPhotoTimelineCell.h"
 #import "UIImageView+SLImageLoader.h"
 
-@interface WBPhotoTimelineViewController ()
+@interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 
 @end
 
@@ -31,9 +31,18 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 - (void)viewDidLoad
 {
   [super viewDidLoad];
+  
+  [self setupView];
+}
 
+#pragma mark - Setup
+- (void)setupView {
+  // Setup NIB
   UINib *nib = [UINib nibWithNibName:[self tableCellNib] bundle:nil];
   [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
+  self.tableView.backgroundColor = [UIColor clearColor];
+
+  self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"backgroundLeather"]];
 }
 
 #pragma mark - UITableViewDataSource
@@ -59,6 +68,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
                                                   placeholder:nil];
   sectionHeaderView.numberOfLikes = @2;
   sectionHeaderView.numberOfComments = @3;
+  sectionHeaderView.delegate = self;
   
   return sectionHeaderView;
 }
@@ -89,6 +99,13 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 - (void)configureCell:(WBPhotoTimelineCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
   // Set the cell image
   [cell.photoImageView setImageWithPath:[[self.photos objectAtIndex:indexPath.section] valueForKey:@"photoUrl"] placeholder:nil];
+}
+
+- (void)tableView:(UITableView *)tableView
+  willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  cell.backgroundColor = [UIColor clearColor];
+  cell.contentView.backgroundColor = [UIColor clearColor];
+  cell.backgroundView.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark - TableCellNib
@@ -126,6 +143,15 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
     self.isLoading = NO;
     NSLog(@"Done refreshing...");
   });
+}
+
+#pragma mark - WBPhotoTimelineSectionHeaderViewDelegate
+- (void)sectionHeaderCommentsButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
+  NSLog(@"Comments pressed");
+}
+
+- (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
+  NSLog(@"Likes pressed");
 }
 
 - (void)didReceiveMemoryWarning

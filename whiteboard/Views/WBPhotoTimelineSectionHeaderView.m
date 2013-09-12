@@ -13,8 +13,11 @@
 @interface WBPhotoTimelineSectionHeaderView()
 @property (nonatomic, weak) IBOutlet UILabel *displayNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
+
 @property (nonatomic, weak) IBOutlet UIButton *likeButton;
+@property (nonatomic, weak) IBOutlet UILabel *likeNumberLabel;
 @property (nonatomic, weak) IBOutlet UIButton *commentButton;
+@property (nonatomic, weak) IBOutlet UILabel *commentNumberLabel;
 @end
 
 @implementation WBPhotoTimelineSectionHeaderView
@@ -37,7 +40,6 @@
 #pragma mark - Setup
 - (void)setupView {
   // Defaults
-  self.backgroundColor = [UIColor grayColor];
   [self.profilePictureImageView roundedCornersWithRadius:3.f];
 }
 
@@ -58,15 +60,26 @@
 - (void)setNumberOfLikes:(NSNumber *)numberOfLikes {
   _numberOfLikes = numberOfLikes;
   
-  [self.likeButton setTitle:[NSString stringWithFormat:@"%d", numberOfLikes.intValue]
-                   forState:UIControlStateNormal];
+  self.likeNumberLabel.text = [NSString stringWithFormat:@"%d", numberOfLikes.intValue];
 }
 
 - (void)setNumberOfComments:(NSNumber *)numberOfComments {
   _numberOfComments = numberOfComments;
 
-  [self.commentButton setTitle:[NSString stringWithFormat:@"%d", numberOfComments.intValue]
-                      forState:UIControlStateNormal];
+  self.commentNumberLabel.text = [NSString stringWithFormat:@"%d", numberOfComments.intValue];
+}
+
+#pragma mark - IBActions
+- (IBAction)likesButtonPressed:(id)sender {
+  if([self.delegate respondsToSelector:@selector(sectionHeaderLikesButtonPressed:)]){
+    [self.delegate sectionHeaderLikesButtonPressed:self];
+  }
+}
+
+- (IBAction)commentsButtonPressed:(id)sender {
+  if([self.delegate respondsToSelector:@selector(sectionHeaderCommentsButtonPressed:)]){
+    [self.delegate sectionHeaderCommentsButtonPressed:self];
+  }
 }
 
 @end
