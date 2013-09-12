@@ -206,8 +206,6 @@
 			children = (
 				BE1B3F7217E22197003494CD /* Controllers */,
 				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
-				BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */,
-				BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */,
 				DD2B8ED817E22E920094A3C4 /* Helpers */,
 				BE1B3F6017E22117003494CD /* Views */,
 				9919153317DA7B2A005DA25C /* Main.storyboard */,
@@ -307,6 +305,8 @@
 		DD2B8ED817E22E920094A3C4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */,
+				BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */,
 				DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */,
 				DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */,
 			);

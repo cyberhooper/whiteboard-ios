@@ -12,7 +12,6 @@
 @interface WBPhotoTimelineSectionHeaderView()
 @property (nonatomic, weak) IBOutlet UILabel *displayNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
-@property (nonatomic, weak) IBOutlet UIImageView *profilePictureImageView;
 @property (nonatomic, weak) IBOutlet UIButton *likeButton;
 @property (nonatomic, weak) IBOutlet UIButton *commentButton;
 @end
@@ -52,12 +51,6 @@
   _date = date;
   
   self.dateLabel.text = [date description];
-}
-
-- (void)setProfilePictureImage:(UIImage *)profilePictureImage {
-  _profilePictureImage = profilePictureImage;
-  
-  self.profilePictureImageView.image = profilePictureImage;
 }
 
 - (void)setNumberOfLikes:(NSNumber *)numberOfLikes {

@@ -9,6 +9,7 @@
 #import "WBPhotoTimelineViewController.h"
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "WBPhotoTimelineCell.h"
+#import "UIImageView+SLImageLoader.h"
 
 @interface WBPhotoTimelineViewController ()
 
@@ -52,8 +53,8 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   
   sectionHeaderView.displayName = [[self.photos objectAtIndex:section] valueForKey:@"username"];
   sectionHeaderView.date = [NSDate date];
-  //warning Image should be asynchronous
-  sectionHeaderView.profilePictureImage = [UIImage imageWithData:[NSData dataWithContentsOfURL:[NSURL URLWithString:[[self.photos objectAtIndex:section] valueForKey:@"photoUrl"]]]];
+  [sectionHeaderView.profilePictureImageView setImageWithPath:[[self.photos objectAtIndex:section] valueForKey:@"photoUrl"]
+                                                  placeholder:nil];
   sectionHeaderView.numberOfLikes = @2;
   sectionHeaderView.numberOfComments = @3;
   

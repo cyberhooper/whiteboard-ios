@@ -12,7 +12,7 @@
 
 @property (nonatomic, copy) NSString *displayName;
 @property (nonatomic, copy) NSDate *date;
-@property (nonatomic, strong) UIImage *profilePictureImage;
+@property (nonatomic, weak) IBOutlet UIImageView *profilePictureImageView;
 @property (nonatomic, strong) NSNumber *numberOfLikes;
 @property (nonatomic, strong) NSNumber *numberOfComments;
 
