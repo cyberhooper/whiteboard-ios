@@ -8,6 +8,7 @@
 
 #import <XCTest/XCTest.h>
 #import "WBUser.h"
+#import "WBDataSource.h"
 
 @interface UserTests : XCTestCase
 
@@ -19,18 +20,12 @@
 
 - (void)setUp {
   [super setUp];
-  
-  Class userClass = [self userImplementationClass];
-  user = [[userClass alloc] init];
+  user = [WBDataSource createUser];
 }
 
 - (void)tearDown{
   user = nil;
   [super tearDown];
-}
-
-- (void)testUserImplementationClassExists {
-  XCTAssertNotNil([self userImplementationClass], @"You need to implement a <User> concrete implementation");
 }
 
 - (void)testUserExists {
@@ -99,12 +94,6 @@
 - (void)testUserHasANumberFollowing {
   user.numberFollowing = @26;
   XCTAssertEqualObjects(user.numberFollowing, @26, @"User should have a number following");
-}
-
-- (Class)userImplementationClass {
-  NSBundle *mainBundle = [NSBundle mainBundle];
-  NSString *userImplementation = [mainBundle infoDictionary][@"UserImplementation"];
-  return NSClassFromString(userImplementation);
 }
 
 //  numberFollowing : NSNumber

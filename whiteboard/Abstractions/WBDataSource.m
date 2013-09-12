@@ -1,4 +1,4 @@
-//
+
 //  WBDataSource.m
 //  whiteboard
 //
@@ -62,23 +62,14 @@ static Class DataSourceSubclass = nil;
 }
 
 + (id<WBUser>)createUser {
-  if (DataSourceSubclass !=[self class] ) {
-    @try {
-      id <WBUser> user = [DataSourceSubclass createUser];
-      return user;
-    }
-    @catch (NSException *exception) {
-      [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
-    }
-    @finally {
-      
-    }
-  }
-  else {
-        [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
-  }
-
+ return [[[self class] sharedInstance] createUser];
 }
+
+- (id<WBUser>)createUser {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  return nil;
+}
+
 
 - (void)saveUser:(id<WBUser>)user
          success:(void(^)(void))success

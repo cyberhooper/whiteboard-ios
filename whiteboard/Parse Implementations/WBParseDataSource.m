@@ -73,10 +73,6 @@
   return [ParseUser currentUser];
 }
 
-+ (id<WBUser>)createUser {
-  return  [[ParseUser alloc] init];
-}
-
 - (void)deleteUserAccount:(id<WBUser>)user
                   success:(void (^)(void))success
                   failure:(void (^)(NSError *))failure {
@@ -112,6 +108,10 @@
     else if (failure)
       failure(error);
   }];
+}
+
+- (id<WBUser>)createUser {
+    return  [[ParseUser alloc] init];
 }
 
 @end
