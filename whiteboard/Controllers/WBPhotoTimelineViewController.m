@@ -39,6 +39,8 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 #pragma mark - UITableViewDataSource
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
   WBPhotoTimelineSectionHeaderView *sectionHeaderView = nil;
+  
+  // Find the Section Header Nib
   NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:
                          NSStringFromClass([WBPhotoTimelineSectionHeaderView class])
                                                       owner:nil
@@ -84,8 +86,9 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   return cell;
 }
 
-- (void)configureCell:(id)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-  
+- (void)configureCell:(WBPhotoTimelineCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  // Set the cell image
+  [cell.photoImageView setImageWithPath:[[self.photos objectAtIndex:indexPath.section] valueForKey:@"photoUrl"] placeholder:nil];
 }
 
 #pragma mark - TableCellNib
