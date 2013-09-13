@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E3067" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="4510" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3742"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIApplication">
@@ -26,7 +26,7 @@
                 <outlet property="rootViewController" destination="DOC-eU-kOs" id="Exz-bE-D3u"/>
             </connections>
         </window>
-        <tabBarController definesPresentationContext="YES" id="DOC-eU-kOs">
+        <tabBarController definesPresentationContext="YES" id="DOC-eU-kOs" customClass="WBTabBarController">
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <nil key="simulatedTopBarMetrics"/>
             <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
@@ -37,33 +37,6 @@
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tabBar>
-            <viewControllers>
-                <navigationController definesPresentationContext="YES" id="q8B-93-M7X">
-                    <tabBarItem key="tabBarItem" title="Item" id="Vyg-2f-kAL"/>
-                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <nil key="simulatedBottomBarMetrics"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                    <nil key="simulatedDestinationMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="DMB-Zq-7Qu">
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <viewControllers>
-                        <viewController nibName="MainFeedViewController" id="At9-7X-3wX" customClass="MainFeedViewController">
-                            <layoutGuides>
-                                <viewControllerLayoutGuide type="top" id="1nU-ZA-4pv"/>
-                                <viewControllerLayoutGuide type="bottom" id="uZU-2u-DcW"/>
-                            </layoutGuides>
-                            <navigationItem key="navigationItem" title="Root View Controller" id="a6C-py-0D6"/>
-                            <nil key="simulatedStatusBarMetrics"/>
-                            <nil key="simulatedTopBarMetrics"/>
-                            <nil key="simulatedBottomBarMetrics"/>
-                            <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
-                            <nil key="simulatedDestinationMetrics"/>
-                        </viewController>
-                    </viewControllers>
-                </navigationController>
-            </viewControllers>
         </tabBarController>
     </objects>
 </document>

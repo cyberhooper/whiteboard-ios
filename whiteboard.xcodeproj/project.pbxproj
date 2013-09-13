@@ -24,7 +24,6 @@
 		9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919152A17DA7B2A005DA25C /* InfoPlist.strings */; };
 		9919152E17DA7B2A005DA25C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919152D17DA7B2A005DA25C /* main.m */; };
 		9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9919153117DA7B2A005DA25C /* AppDelegate.m */; };
-		9919153517DA7B2A005DA25C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9919153317DA7B2A005DA25C /* Main.storyboard */; };
 		9919153A17DA7B2A005DA25C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9919153917DA7B2A005DA25C /* Images.xcassets */; };
 		9919154117DA7B2A005DA25C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919154017DA7B2A005DA25C /* XCTest.framework */; };
 		9919154217DA7B2A005DA25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152117DA7B2A005DA25C /* Foundation.framework */; };
@@ -51,6 +50,7 @@
 		BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */; };
 		BE1B3F8017E24875003494CD /* WBTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F7F17E24875003494CD /* WBTheme.m */; };
 		BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3FC417E27420003494CD /* WBTheme.plist */; };
+		BE1B3FCC17E38B13003494CD /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3FCB17E38B13003494CD /* WBTabBarController.m */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
 /* End PBXBuildFile section */
@@ -86,7 +86,6 @@
 		9919152F17DA7B2A005DA25C /* whiteboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whiteboard-Prefix.pch"; sourceTree = "<group>"; };
 		9919153017DA7B2A005DA25C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9919153117DA7B2A005DA25C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9919153417DA7B2A005DA25C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9919153917DA7B2A005DA25C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		9919153F17DA7B2A005DA25C /* whiteboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whiteboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9919154017DA7B2A005DA25C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -128,6 +127,9 @@
 		BE1B3F7E17E24875003494CD /* WBTheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WBTheme.h; path = Theme/WBTheme.h; sourceTree = "<group>"; };
 		BE1B3F7F17E24875003494CD /* WBTheme.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = WBTheme.m; path = Theme/WBTheme.m; sourceTree = "<group>"; };
 		BE1B3FC417E27420003494CD /* WBTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WBTheme.plist; sourceTree = "<group>"; };
+		BE1B3FCA17E38B13003494CD /* WBTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBTabBarController.h; sourceTree = "<group>"; };
+		BE1B3FCB17E38B13003494CD /* WBTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBTabBarController.m; sourceTree = "<group>"; };
+		BE1B3FCF17E395A9003494CD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DDA25DE317E26DFB00C44622 /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
@@ -192,6 +194,7 @@
 		9919152017DA7B2A005DA25C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BE1B3FCF17E395A9003494CD /* Accounts.framework */,
 				991614DB17DE82B4007FF6B5 /* Parse.framework */,
 				991614D917DE81AB007FF6B5 /* SystemConfiguration.framework */,
 				991614D717DE81A1007FF6B5 /* StoreKit.framework */,
@@ -220,7 +223,6 @@
 				BE1B3F6017E22117003494CD /* Views */,
 				9922AB4D17E0DA6500D1B18A /* Abstractions */,
 				9922AB5517E0DA6B00D1B18A /* Parse Implementations */,
-				9919153317DA7B2A005DA25C /* Main.storyboard */,
 				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
 				9919153017DA7B2A005DA25C /* AppDelegate.h */,
 				9919153117DA7B2A005DA25C /* AppDelegate.m */,
@@ -314,6 +316,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		BE1B3F7B17E22335003494CD /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				BE1B3F7E17E24875003494CD /* WBTheme.h */,
+				BE1B3F7F17E24875003494CD /* WBTheme.m */,
+			);
+			name = Theme;
+			sourceTree = "<group>";
+		};
 		DD2B8ED817E22E920094A3C4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
@@ -332,17 +343,10 @@
 				BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */,
 				DDA25DE317E26DFB00C44622 /* WBViewController.h */,
 				DDA25DE417E26DFB00C44622 /* WBViewController.m */,
+				BE1B3FCA17E38B13003494CD /* WBTabBarController.h */,
+				BE1B3FCB17E38B13003494CD /* WBTabBarController.m */,
 			);
 			name = WB;
-			sourceTree = "<group>";
-		};
-		BE1B3F7B17E22335003494CD /* Theme */ = {
-			isa = PBXGroup;
-			children = (
-				BE1B3F7E17E24875003494CD /* WBTheme.h */,
-				BE1B3F7F17E24875003494CD /* WBTheme.m */,
-			);
-			name = Theme;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +436,6 @@
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
 				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
 				BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */,
-				9919153517DA7B2A005DA25C /* Main.storyboard in Resources */,
 				BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,6 +486,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE1B3FCC17E38B13003494CD /* WBTabBarController.m in Sources */,
 				DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
@@ -528,14 +532,6 @@
 				9919152B17DA7B2A005DA25C /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		9919153317DA7B2A005DA25C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9919153417DA7B2A005DA25C /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		9919154917DA7B2B005DA25C /* InfoPlist.strings */ = {
