@@ -18,11 +18,11 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  id<WBUser> aUser = [WBDataSource createUser];
+  WBUser *aUser = [WBDataSource createUser];
   NSLog(@"user.firstname : %@", aUser.firstName);
   
   // Log in :
-  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
+  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
     NSLog(@"Logged in with user :%@", user);
   } failure:^(NSError *error) {
     NSLog(@"Loggin in failed :%@",error);

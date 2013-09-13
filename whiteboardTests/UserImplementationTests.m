@@ -15,7 +15,7 @@
 @end
 
 @implementation UserTests {
-  id <WBUser> user;
+  WBUser *user;
 }
 
 - (void)setUp {

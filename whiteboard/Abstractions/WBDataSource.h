@@ -15,6 +15,7 @@
  */
 @interface WBDataSource : NSObject
 
+@property (nonatomic, strong) WBUser *currentUser;
 
 /**
   The singleton method for creating a WBDataSource instance.
@@ -33,7 +34,7 @@
  */
 - (void)loginWithUsername:(NSString *)username
               andPassWord:(NSString *)password
-                  success:(void(^)(id<WBUser> user))success
+                  success:(void(^)(WBUser *user))success
                   failure:(void(^)(NSError *error))failure;
 
 
@@ -43,7 +44,7 @@
   @param success The success block
   @param failure The failure block, called with an NSError
  */
-- (void)logoutUser:(id<WBUser>)user
+- (void)logoutUser:(WBUser *)user
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure;
 
@@ -63,7 +64,7 @@
   @param failure The failure block, called with an NSError
  */
 - (void)signupWithInfo:(NSDictionary *)userInfo
-               success:(void(^)(id<WBUser> user))success
+               success:(void(^)(WBUser *user))success
                failure:(void(^)(NSError *error))failure;
 
 
@@ -74,7 +75,7 @@
   @param success The success block
   @param failure The failure block, called with an NSError
  */
-- (void)deleteUserAccount:(id<WBUser> )user
+- (void)deleteUserAccount:(WBUser *)user
                success:(void(^)(void))success
                failure:(void(^)(NSError *error))failure;
 
@@ -85,7 +86,7 @@
  @param success The success block
  @param failure The failure block, called with an NSError
  */
-- (void)resetPasswordForUser:(id<WBUser>)user
+- (void)resetPasswordForUser:(WBUser *)user
                      success:(void (^)(void))success
                      failure:(void (^)(NSError *))failure;
 
@@ -97,19 +98,19 @@
  @param success The success block
  @param failure The failure block, called with an NSError
  */
-- (void)saveUser:(id<WBUser>)user
+- (void)saveUser:(WBUser *)user
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure;
 
 /**
 	The currently logged in WBUser, or nil if no user is logged in.
  */
-@property (nonatomic, strong, readonly) id<WBUser> currentUser;
+- (WBUser *)currentUser;
 
 /**
  creates a WBUser object.
  */
-+ (id<WBUser>)createUser;
++ (WBUser *)createUser;
 
 /**
  Method called when the app starts that enables WBDatasource to

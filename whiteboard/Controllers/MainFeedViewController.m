@@ -8,6 +8,7 @@
 
 #import "MainFeedViewController.h"
 #import "MainFeedCell.h"
+#import "WBDataSource.h"
 
 @interface TestObject : NSObject
 @property (nonatomic, strong) NSString *username;
@@ -32,7 +33,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-  
+  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
+    NSLog(@"Logged in with user :%@", user);
+  } failure:^(NSError *error) {
+    NSLog(@"Loggin in failed :%@",error);
+  }];
   // Add dummy data
   NSMutableArray *array = [NSMutableArray array];
   for(NSInteger i = 1; i < 8; i++){
@@ -44,6 +49,8 @@
   }
   
   self.photos = array;
+  
+
 }
 
 #pragma mark - UITableView
