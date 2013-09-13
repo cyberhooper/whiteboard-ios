@@ -2,6 +2,22 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>tabBarCameraButtonImage-Selected</key>
+	<string>buttonCameraSelected</string>
+	<key>tabBarCameraButtonImage-Normal</key>
+	<string>buttonCamera</string>
+	<key>tabBarSelectedItemImage</key>
+	<string>backgroundTabBarItemSelected</string>
+	<key>tabBarBackgroundImage</key>
+	<string>backgroundTabBar</string>
+	<key>tabBarActivityButtonImage-Selected</key>
+	<string>iconTimelineSelected</string>
+	<key>tabBarActivityButtonImage-Normal</key>
+	<string>iconTimeline</string>
+	<key>tabBarHomeButtonImage-Selected</key>
+	<string>iconHomeSelected</string>
+	<key>tabBarHomeButtonImage-Normal</key>
+	<string>iconHome</string>
 	<key>commentButtonImage-Selected</key>
 	<string></string>
 	<key>commentButtonImage-Normal</key>

@@ -47,4 +47,40 @@
   return [UIImage imageNamed:[self.themeDict objectForKey:@"commentButtonImage-Normal"]];
 }
 
+- (UIImage *)tabBarHomeButtonNormalImage {
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarHomeButtonImage-Normal"]];
+  return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
+- (UIImage *)tabBarHomeButtonSelectedImage {
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarHomeButtonImage-Selected"]];
+  return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
+- (UIImage *)tabBarActivityButtonNormalImage {
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarActivityButtonImage-Normal"]];
+  return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
+- (UIImage *)tabBarActivityButtonSelectedImage {
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarActivityButtonImage-Selected"]];
+  return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+}
+
+- (UIImage *)tabBarBackgroundImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarBackgroundImage"]];
+}
+
+- (UIImage *)tabBarSelectedItemImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarSelectedItemImage"]];
+}
+
+- (UIImage *)tabBarCameraButtonNormalImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarCameraButtonImage-Normal"]];
+}
+
+- (UIImage *)tabBarCameraButtonSelectedImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarCameraButtonImage-Selected"]];
+}
+
 @end

@@ -37,16 +37,16 @@
 }
 
 - (void)setUpTabBarBackground {
-  [[self tabBar] setBackgroundImage:[UIImage imageNamed:@"backgroundTabBar.png"]];
-  [[self tabBar] setSelectionIndicatorImage:[UIImage imageNamed:@"backgroundTabBarItemSelected.png"]];
+  [[self tabBar] setBackgroundImage:[[WBTheme sharedTheme] tabBarBackgroundImage]];
+  [[self tabBar] setSelectionIndicatorImage:[[WBTheme sharedTheme] tabBarSelectedItemImage]];
 }
 
 - (void)setUpHomeViewController {
   MainFeedViewController *homeViewController = [[MainFeedViewController alloc] initWithNibName:NSStringFromClass([MainFeedViewController class]) bundle:nil];
-  UITabBarItem *homeTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:nil tag:0];
-  [homeTabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"iconHomeSelected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"iconHome.png"]];
-  [homeTabBarItem setTitleTextAttributes: @{ UITextAttributeTextColor: [UIColor colorWithRed:86.0f/255.0f green:55.0f/255.0f blue:42.0f/255.0f alpha:1.0f] } forState:UIControlStateNormal];
-  [homeTabBarItem setTitleTextAttributes: @{ UITextAttributeTextColor: [UIColor colorWithRed:129.0f/255.0f green:99.0f/255.0f blue:69.0f/255.0f alpha:1.0f] } forState:UIControlStateSelected];
+  UITabBarItem *homeTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:[[WBTheme sharedTheme] tabBarHomeButtonNormalImage] selectedImage:[[WBTheme sharedTheme] tabBarHomeButtonSelectedImage]];
+  
+  [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor colorWithRed:86.0f/255.0f green:55.0f/255.0f blue:42.0f/255.0f alpha:1.0f] } forState:UIControlStateNormal];
+  [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor colorWithRed:129.0f/255.0f green:99.0f/255.0f blue:69.0f/255.0f alpha:1.0f] } forState:UIControlStateSelected];
   self.homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
   [self.homeNavigationController setTabBarItem:homeTabBarItem];
 }
@@ -54,10 +54,10 @@
 - (void)setUpActivityViewController {
 #warning Change this to an activity view controller when it is implemented
   UIViewController *activityViewController = [[UIViewController alloc] init];
-  UITabBarItem *activityTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Activity" image:nil tag:0];
-  [activityTabBarItem setFinishedSelectedImage:[UIImage imageNamed:@"iconTimelineSelected.png"] withFinishedUnselectedImage:[UIImage imageNamed:@"iconTimeline.png"]];
-  [activityTabBarItem setTitleTextAttributes: @{ UITextAttributeTextColor: [UIColor colorWithRed:86.0f/255.0f green:55.0f/255.0f blue:42.0f/255.0f alpha:1.0f] } forState:UIControlStateNormal];
-  [activityTabBarItem setTitleTextAttributes: @{ UITextAttributeTextColor: [UIColor colorWithRed:129.0f/255.0f green:99.0f/255.0f blue:69.0f/255.0f alpha:1.0f] } forState:UIControlStateSelected];
+  UITabBarItem *activityTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Activity" image:[[WBTheme sharedTheme] tabBarActivityButtonNormalImage] selectedImage:[[WBTheme sharedTheme] tabBarActivityButtonSelectedImage]];
+  
+  [activityTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor colorWithRed:86.0f/255.0f green:55.0f/255.0f blue:42.0f/255.0f alpha:1.0f] } forState:UIControlStateNormal];
+  [activityTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [UIColor colorWithRed:129.0f/255.0f green:99.0f/255.0f blue:69.0f/255.0f alpha:1.0f] } forState:UIControlStateSelected];
   self.activityNavigationController = [[UINavigationController alloc] initWithRootViewController:activityViewController];
   [self.activityNavigationController setTabBarItem:activityTabBarItem];
 }
@@ -69,8 +69,8 @@
   
   UIButton *cameraButton = [UIButton buttonWithType:UIButtonTypeCustom];
   cameraButton.frame = CGRectMake( 94.0f, 0.0f, 131.0f, self.tabBar.bounds.size.height);
-  [cameraButton setImage:[UIImage imageNamed:@"buttonCamera.png"] forState:UIControlStateNormal];
-  [cameraButton setImage:[UIImage imageNamed:@"buttonCameraSelected.png"] forState:UIControlStateHighlighted];
+  [cameraButton setImage:[[WBTheme sharedTheme] tabBarCameraButtonNormalImage] forState:UIControlStateNormal];
+  [cameraButton setImage:[[WBTheme sharedTheme] tabBarCameraButtonSelectedImage] forState:UIControlStateHighlighted];
   [cameraButton addTarget:self action:@selector(photoCaptureButtonAction:) forControlEvents:UIControlEventTouchUpInside];
   [self.tabBar addSubview:cameraButton];
   

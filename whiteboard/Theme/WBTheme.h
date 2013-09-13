@@ -44,6 +44,13 @@
 	@returns The default Comment button image
  */
 - (UIImage *)commentButtonNormalImage;
-
+- (UIImage *)tabBarHomeButtonNormalImage;
+- (UIImage *)tabBarHomeButtonSelectedImage;
+- (UIImage *)tabBarActivityButtonNormalImage;
+- (UIImage *)tabBarActivityButtonSelectedImage;
+- (UIImage *)tabBarBackgroundImage;
+- (UIImage *)tabBarSelectedItemImage;
+- (UIImage *)tabBarCameraButtonNormalImage;
+- (UIImage *)tabBarCameraButtonSelectedImage;
 
 @end
