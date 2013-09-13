@@ -112,7 +112,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 }
 
 - (UIImage *)backgroundImage {
-  return [UIImage imageNamed:@"backgroundLeather"];
+  return [[WBTheme sharedTheme] backgroundImage];
 }
 
 #pragma mark - UIScrollViewDelegate

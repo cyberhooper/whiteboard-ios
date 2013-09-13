@@ -1,0 +1,50 @@
+//
+//  WBTheme.m
+//  whiteboard
+//
+//  Created by lnf-fueled on 9/12/13.
+//  Copyright (c) 2013 Fueled. All rights reserved.
+//
+
+#import "WBTheme.h"
+
+@interface WBTheme()
+
+/**
+	Dictionary to store the contents of the plist so the file contents only need to be loaded once.
+ */
+@property (nonatomic, strong) NSDictionary *themeDict;
+
+
+@end
+
+@implementation WBTheme
+
++ (WBTheme *)sharedTheme {
+  static WBTheme *sharedTheme = nil;
+  static dispatch_once_t onceToken;
+  dispatch_once(&onceToken, ^{
+    sharedTheme = [[self alloc] init];
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"WBTheme" ofType:@"plist"];
+    sharedTheme.themeDict = [NSDictionary dictionaryWithContentsOfFile:path];
+  });
+  return sharedTheme;
+}
+
+- (UIImage *)backgroundImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"backgroundImage"]];
+}
+
+- (UIImage *)likeButtonNormalImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"likeButtonImage-Normal"]];
+}
+
+- (UIImage *)likeButtonSelectedImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"likeButtonImage-Selected"]];
+}
+
+- (UIImage *)commentButtonNormalImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"commentButtonImage-Normal"]];
+}
+
+@end

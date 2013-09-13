@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBTheme.h"
 
 @interface WBViewController : UIViewController
 - (UIImage *)backgroundImage;
