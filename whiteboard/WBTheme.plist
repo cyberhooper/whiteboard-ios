@@ -5,7 +5,7 @@
 	<key>tabBarTextColor-Normal</key>
 	<dict>
 		<key>color</key>
-		<string>56372A</string>
+		<string>#56372A</string>
 		<key>alpha</key>
 		<real>1</real>
 	</dict>
@@ -25,14 +25,38 @@
 	<string>iconHomeSelected</string>
 	<key>tabBarHomeButtonImage-Normal</key>
 	<string>iconHome</string>
-	<key>commentButtonImage-Selected</key>
-	<string></string>
-	<key>commentButtonImage-Normal</key>
+	<key>defaultFontRegular</key>
+	<string>Helvetica</string>
+	<key>defaultFontBold</key>
+	<string>Helvetica-Bold</string>
+	<key>SECTION_commentButtonImage-Selected</key>
 	<string>iconComment</string>
-	<key>likeButtonImage-Selected</key>
+	<key>SECTION_commentButtonImage-Normal</key>
+	<string>iconComment</string>
+	<key>SECTION_commentButtonFont</key>
+	<string>Helvetica-Bold</string>
+	<key>SECTION_commentButtonColor</key>
+	<string></string>
+	<key>SECTION_likeButtonImage-Selected</key>
 	<string>buttonLikeSelected</string>
-	<key>likeButtonImage-Normal</key>
+	<key>SECTION_likeButtonImage-Normal</key>
 	<string>buttonLike</string>
+	<key>SECTION_likeButtonFont</key>
+	<string>Helvetica-Bold</string>
+	<key>SECTION_likeButtonColor</key>
+	<string></string>
+	<key>SECTION_displayNameFont</key>
+	<string>Helvetica-Bold</string>
+	<key>SECTION_displayNameFontSize</key>
+	<string>15</string>
+	<key>SECTION_displayNameFontColor</key>
+	<string>#493723</string>
+	<key>SECTION_dateFont</key>
+	<string>Helvetica</string>
+	<key>SECTION_dateFontColor</key>
+	<string>#7c7c7c</string>
+	<key>SECTION_dateFontSize</key>
+	<string>11</string>
 	<key>backgroundImage</key>
 	<string>backgroundLeather</string>
 </dict>

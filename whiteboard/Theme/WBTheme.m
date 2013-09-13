@@ -7,6 +7,7 @@
 //
 
 #import "WBTheme.h"
+#import "UIColor+Hex.h"
 
 @interface WBTheme()
 
@@ -40,16 +41,32 @@
   return [UIImage imageNamed:[self.themeDict objectForKey:@"backgroundImage"]];
 }
 
-- (UIImage *)likeButtonNormalImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"likeButtonImage-Normal"]];
+- (UIImage *)sectionLikeButtonNormalImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"SECTION_likeButtonImage-Normal"]];
 }
 
-- (UIImage *)likeButtonSelectedImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"likeButtonImage-Selected"]];
+- (UIImage *)sectionLikeButtonSelectedImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"SECTION_likeButtonImage-Selected"]];
 }
 
-- (UIImage *)commentButtonNormalImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"commentButtonImage-Normal"]];
+- (UIImage *)sectionCommentButtonNormalImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"SECTION_commentButtonImage-Normal"]];
+}
+
+- (UIFont *)sectionDisplayNameFont {
+  return [UIFont fontWithName:[self.themeDict objectForKey:@"SECTION_displayNameFont"] size:[[self.themeDict objectForKey:@"SECTION_displayNameFontSize"] floatValue]];
+}
+
+- (UIColor *)sectionDisplayNameFontColor {
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"SECTION_displayNameFontColor"]];
+}
+
+- (UIFont *)sectionDateNameFont {
+  return [UIFont fontWithName:[self.themeDict objectForKey:@"SECTION_dateFont"] size:[[self.themeDict objectForKey:@"SECTION_dateFontSize"] floatValue]];
+}
+
+- (UIColor *)sectionDateNameFontColor {
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"SECTION_dateFontColor"]];
 }
 
 - (UIImage *)tabBarHomeButtonNormalImage {
