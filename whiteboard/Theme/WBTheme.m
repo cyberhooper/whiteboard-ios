@@ -105,4 +105,12 @@
   return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarCameraButtonImage-Selected"]];
 }
 
+- (UIColor *)tabBarNormalFontColor {
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"tabBarTextColor-Normal"]];
+}
+
+- (UIColor *)tabBarSelectedFontColor {
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"tabBarTextColor-Selected"]];
+}
+
 @end

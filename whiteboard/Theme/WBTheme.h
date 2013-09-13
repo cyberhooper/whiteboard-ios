@@ -45,17 +45,6 @@
  */
 - (UIImage *)sectionCommentButtonNormalImage;
 
-- (UIImage *)commentButtonNormalImage;
-- (UIImage *)tabBarHomeButtonNormalImage;
-- (UIImage *)tabBarHomeButtonSelectedImage;
-- (UIImage *)tabBarActivityButtonNormalImage;
-- (UIImage *)tabBarActivityButtonSelectedImage;
-- (UIImage *)tabBarBackgroundImage;
-- (UIImage *)tabBarSelectedItemImage;
-- (UIImage *)tabBarCameraButtonNormalImage;
-- (UIImage *)tabBarCameraButtonSelectedImage;
-
-
 /**
  The default font for the section display name. Specified in the plist as "SECTION_displayNameFont".
  @returns The default font for the section display name
@@ -67,5 +56,17 @@
 - (UIFont *)sectionDateNameFont;
 
 - (UIColor *)sectionDateNameFontColor;
+
+- (UIImage *)tabBarHomeButtonNormalImage;
+- (UIImage *)tabBarHomeButtonSelectedImage;
+- (UIImage *)tabBarActivityButtonNormalImage;
+- (UIImage *)tabBarActivityButtonSelectedImage;
+- (UIImage *)tabBarBackgroundImage;
+- (UIImage *)tabBarSelectedItemImage;
+- (UIImage *)tabBarCameraButtonNormalImage;
+- (UIImage *)tabBarCameraButtonSelectedImage;
+
+- (UIColor *)tabBarNormalFontColor;
+- (UIColor *)tabBarSelectedFontColor;
 
 @end
