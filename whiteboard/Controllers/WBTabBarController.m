@@ -30,9 +30,10 @@
   
   [self setUpTabBarBackground];
   [self setUpHomeViewController];
+  [self setUpEmptyMiddleViewController];
   [self setUpActivityViewController];
   
-  self.viewControllers = @[self.homeNavigationController, self.activityNavigationController];
+  self.viewControllers = @[self.homeNavigationController, self.emptyMiddleNavigationController, self.activityNavigationController];
   
 }
 
@@ -49,6 +50,13 @@
   [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarSelectedFontColor] } forState:UIControlStateSelected];
   self.homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
   [self.homeNavigationController setTabBarItem:homeTabBarItem];
+}
+
+- (void)setUpEmptyMiddleViewController {
+  self.emptyMiddleNavigationController = [[UINavigationController alloc] init];
+  UITabBarItem *emptyItem = [[UITabBarItem alloc] init];
+  emptyItem.enabled = NO;
+  [self.emptyMiddleNavigationController setTabBarItem:emptyItem];
 }
 
 - (void)setUpActivityViewController {
@@ -79,7 +87,6 @@
   [swipeUpGestureRecognizer setNumberOfTouchesRequired:1];
   [cameraButton addGestureRecognizer:swipeUpGestureRecognizer];
 }
-
 
 #pragma mark - UIImagePickerDelegate
 

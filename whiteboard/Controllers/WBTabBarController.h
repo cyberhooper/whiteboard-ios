@@ -13,6 +13,7 @@
 @interface WBTabBarController : UITabBarController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 
 @property (nonatomic, strong) UINavigationController *homeNavigationController;
+@property (nonatomic, strong) UINavigationController *emptyMiddleNavigationController;
 @property (nonatomic, strong) UINavigationController *activityNavigationController;
 
 @end
