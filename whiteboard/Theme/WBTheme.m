@@ -31,6 +31,11 @@
   return sharedTheme;
 }
 
++ (UIColor *)uiColorFromHexString:(NSString *)hexString {
+#warning implement me!
+  return nil;
+}
+
 - (UIImage *)backgroundImage {
   return [UIImage imageNamed:[self.themeDict objectForKey:@"backgroundImage"]];
 }

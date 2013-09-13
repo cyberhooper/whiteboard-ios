@@ -2,6 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>tabBarTextColor-Normal</key>
+	<dict>
+		<key>color</key>
+		<string>56372A</string>
+		<key>alpha</key>
+		<real>1</real>
+	</dict>
 	<key>tabBarCameraButtonImage-Selected</key>
 	<string>buttonCameraSelected</string>
 	<key>tabBarCameraButtonImage-Normal</key>
