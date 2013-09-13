@@ -1,6 +1,7 @@
 <map id="WBDataSource.h" name="WBDataSource.h">
-<area shape="rect" id="node2" href="$main_8m.html" title="main.m" alt="" coords="5,80,67,107"/>
-<area shape="rect" id="node3" href="$_parse_data_source_8h.html" title="ParseDataSource.h" alt="" coords="91,80,225,107"/>
-<area shape="rect" id="node5" href="$_w_b_data_source_8m.html" title="WBDataSource.m" alt="" coords="251,80,376,107"/>
-<area shape="rect" id="node4" href="$_parse_data_source_8m.html" title="ParseDataSource.m" alt="" coords="90,155,227,181"/>
+<area shape="rect" id="node2" href="$_w_b_data_source_8m.html" title="WBDataSource.m" alt="" coords="5,80,131,107"/>
+<area shape="rect" id="node3" href="$_w_b_manager_8m.html" title="WBManager.m" alt="" coords="155,80,263,107"/>
+<area shape="rect" id="node4" href="$_my_view_controller_8m.html" title="MyViewController.m" alt="" coords="288,80,421,107"/>
+<area shape="rect" id="node5" href="$_w_b_parse_data_source_8h.html" title="WBParseDataSource.h" alt="" coords="446,80,601,107"/>
+<area shape="rect" id="node6" href="$_w_b_parse_data_source_8m.html" title="WBParseDataSource.m" alt="" coords="445,155,603,181"/>
 </map>

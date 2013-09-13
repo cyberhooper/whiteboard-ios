@@ -1,5 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$interface_w_b_data_source.html" title="WBDataSource" alt="" coords="133,5,245,32"/>
-<area shape="rect" id="node4" href="$interface_w_b_user_factory.html" title="WBUserFactory" alt="" coords="134,56,245,83"/>
-<area shape="rect" id="node3" href="$interface_parse_data_source.html" title="ParseDataSource" alt="" coords="294,5,418,32"/>
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_cell.html" title="WBPhotoTimelineCell" alt="" coords="171,5,314,32"/>
+<area shape="rect" id="node3" href="$interface_main_feed_cell.html" title="MainFeedCell" alt="" coords="363,5,461,32"/>
 </map>

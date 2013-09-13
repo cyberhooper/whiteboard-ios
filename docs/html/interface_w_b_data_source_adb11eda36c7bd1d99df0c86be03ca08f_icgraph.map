@@ -1,3 +1,4 @@
 <map id="+[WBDataSource setDataSourceSubclass:]" name="+[WBDataSource setDataSourceSubclass:]">
-<area shape="rect" id="node2" href="$main_8m.html#a0ddf1224851353fc92bfbff6f499fa97" title="main" alt="" coords="267,12,317,39"/>
+<area shape="rect" id="node2" href="$interface_w_b_manager.html#aecfee6267d07190ed07d6737f6214813" title="+[WBManager setUpWithLauch\lOptions:]" alt="" coords="267,5,471,46"/>
+<area shape="rect" id="node3" href="$interface_app_delegate.html#a0eeb7690788c7164f03af6252048d198" title="&#45;[AppDelegate application\l:didFinishLaunchingWithOptions:]" alt="" coords="521,5,727,46"/>
 </map>

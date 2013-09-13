@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_f5b06cc141e7837ee6f76e815b18b311.html">whiteboard</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_f5b06cc141e7837ee6f76e815b18b311.html">whiteboard</a></li><li class="navelem"><a class="el" href="dir_6e5023c20a5184c4716fbcfe25b17c2c.html">Abstractions</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -89,7 +89,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">WBDataSource.m</div>  </div>
 </div><!--header-->
 <div class="contents">
-<a href="_w_b_data_source_8m.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">//</span></div>
+<a href="_w_b_data_source_8m.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  WBDataSource.m</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  whiteboard</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
@@ -136,26 +136,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="interface_w_b_data_source.html#a84f813be7d58023c0f1896a16632ca8e">   47</a></span>&#160;- (void)deleteUserAccount:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)user</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                 success:(<span class="keywordtype">void</span> (^)(<span class="keywordtype">void</span>))success</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                 failure:(<span class="keywordtype">void</span> (^)(NSError *error))failure {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                  success:(<span class="keywordtype">void</span> (^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                  failure:(<span class="keywordtype">void</span> (^)(NSError *error))failure {</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  [NSException raise:@&quot;You should override in a WBDataSource subclass&quot; format:nil];</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;}</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;- (id&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)<a class="code" href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">currentUser</a> {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  [NSException raise:@&quot;You should override in a WBDataSource subclass&quot; format:nil];</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  <span class="keywordflow">return</span> nil;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="interface_w_b_data_source.html#a5cc614240fdf2c8247422029e7d6182b">   53</a></span>&#160;- (void)resetPasswordForUser:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)user</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                     success:(<span class="keywordtype">void</span> (^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                     failure:(<span class="keywordtype">void</span> (^)(NSError *))failure {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  [NSException raise:@&quot;You should override in a WBDataSource subclass&quot; format:nil];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;- (id&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)<a class="code" href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">currentUser</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  [NSException raise:@&quot;You should override in a WBDataSource subclass&quot; format:nil];</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> nil;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="interface_w_b_data_source.html#a788dfade175c4ded172983c2e94cdf70">   64</a></span>&#160;+ (id&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)<a class="code" href="interface_w_b_data_source.html#a788dfade175c4ded172983c2e94cdf70">createUser</a> {</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; <span class="keywordflow">return</span> [[[<span class="keyword">self</span> class] sharedInstance] createUser];</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;- (id&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)<a class="code" href="interface_w_b_data_source.html#a788dfade175c4ded172983c2e94cdf70">createUser</a> {</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  [NSException raise:@&quot;You should override in a WBDataSource subclass&quot; format:nil];</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  <span class="keywordflow">return</span> nil;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;}</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno"><a class="line" href="interface_w_b_data_source.html#a01c3a0f161dbce2a8fc44d3243712303">   74</a></span>&#160;- (void)saveUser:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)user</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;         success:(<span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;         failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  [NSException raise:@&quot;You should override in a WBDataSource subclass&quot; format:nil];</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;}</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="interface_w_b_data_source.html#a7a8ae37b4d14683c5b4dd16534d960ad">   80</a></span>&#160;- (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    [NSException raise:@&quot;You should override in a WBDataSource subclass&quot; format:nil];</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;}</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;<span class="keyword">@end</span></div>
 <div class="ttc" id="interface_w_b_data_source_html"><div class="ttname"><a href="interface_w_b_data_source.html">WBDataSource</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00016">WBDataSource.h:16</a></div></div>
 <div class="ttc" id="interface_w_b_data_source_html_adcfb7daf5420b88632fc9ad53b1cf5cb"><div class="ttname"><a href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb">+[WBDataSource sharedInstance]</a></div><div class="ttdeci">WBDataSource * sharedInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00015">WBDataSource.m:15</a></div></div>
+<div class="ttc" id="interface_w_b_data_source_html_a788dfade175c4ded172983c2e94cdf70"><div class="ttname"><a href="interface_w_b_data_source.html#a788dfade175c4ded172983c2e94cdf70">+[WBDataSource createUser]</a></div><div class="ttdeci">id&lt; WBUser &gt; createUser()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00064">WBDataSource.m:64</a></div></div>
 <div class="ttc" id="_w_b_data_source_8h_html"><div class="ttname"><a href="_w_b_data_source_8h.html">WBDataSource.h</a></div></div>
 <div class="ttc" id="protocol_w_b_user-p_html"><div class="ttname"><a href="protocol_w_b_user-p.html">WBUser-p</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_user_8h_source.html#l00016">WBUser.h:16</a></div></div>
-<div class="ttc" id="interface_w_b_data_source_html_a39f9bdeedd5135d37b40564c992928c0"><div class="ttname"><a href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">WBDataSource::currentUser</a></div><div class="ttdeci">id&lt; WBUser &gt; currentUser</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00085">WBDataSource.h:85</a></div></div>
+<div class="ttc" id="interface_w_b_data_source_html_a39f9bdeedd5135d37b40564c992928c0"><div class="ttname"><a href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">WBDataSource::currentUser</a></div><div class="ttdeci">id&lt; WBUser &gt; currentUser</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00107">WBDataSource.h:107</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 11 2013 11:17:41 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 13 2013 12:03:58 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -1,3 +1,5 @@
 <map id="&#45;[MyViewController viewDidLoad]" name="&#45;[MyViewController viewDidLoad]">
-<area shape="rect" id="node2" href="$interface_w_b_user_factory.html#a29d098fb9f7a41fcc94e5517a45a2359" title="+[WBUserFactory createUser]" alt="" coords="181,12,371,39"/>
+<area shape="rect" id="node2" href="$interface_w_b_data_source.html#a788dfade175c4ded172983c2e94cdf70" title="+[WBDataSource createUser]" alt="" coords="195,5,386,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="182,56,399,83"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#ab91d3ad4ac66e0d8ba3f15afdb2e571e" title="&#45;[WBDataSource loginWith\lUsername:andPassWord:success\l:failure:]" alt="" coords="183,107,399,163"/>
 </map>

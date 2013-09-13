@@ -1,5 +1,6 @@
 <map id="AppDelegate.m" name="AppDelegate.m">
 <area shape="rect" id="node2" href="$_app_delegate_8h.html" title="AppDelegate.h" alt="" coords="5,80,112,107"/>
 <area shape="rect" id="node5" href="$_parse_user_8h.html" title="ParseUser.h" alt="" coords="266,80,357,107"/>
-<area shape="rect" id="node7" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="272,155,352,181"/>
+<area shape="rect" id="node9" href="$_w_b_manager_8h.html" title="WBManager.h" alt="" coords="465,155,569,181"/>
+<area shape="rect" id="node7" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="224,155,304,181"/>
 </map>

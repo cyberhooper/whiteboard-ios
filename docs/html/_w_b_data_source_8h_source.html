@@ -81,7 +81,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <div id="nav-path" class="navpath">
   <ul>
-<li class="navelem"><a class="el" href="dir_f5b06cc141e7837ee6f76e815b18b311.html">whiteboard</a></li>  </ul>
+<li class="navelem"><a class="el" href="dir_f5b06cc141e7837ee6f76e815b18b311.html">whiteboard</a></li><li class="navelem"><a class="el" href="dir_6e5023c20a5184c4716fbcfe25b17c2c.html">Abstractions</a></li>  </ul>
 </div>
 </div><!-- top -->
 <div class="header">
@@ -129,21 +129,32 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;               success:(<span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;               failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno"><a class="line" href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">   85</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong, readonly) id&lt;WBUser&gt; <a class="code" href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">currentUser</a>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;<span class="keyword">@end</span></div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;- (void)resetPasswordForUser:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)user</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                     success:(<span class="keywordtype">void</span> (^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                     failure:(<span class="keywordtype">void</span> (^)(NSError *))failure;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- (void)saveUser:(<span class="keywordtype">id</span>&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)user</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;           success:(<span class="keywordtype">void</span>(^)(<span class="keywordtype">void</span>))success</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;           failure:(<span class="keywordtype">void</span>(^)(NSError *error))failure;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00107"></a><span class="lineno"><a class="line" href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">  107</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong, readonly) id&lt;WBUser&gt; <a class="code" href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">currentUser</a>;</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;+ (id&lt;<a class="code" href="protocol_w_b_user-p.html">WBUser</a>&gt;)<a class="code" href="interface_w_b_data_source.html#a788dfade175c4ded172983c2e94cdf70">createUser</a>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;- (void)setUpWithLauchOptions:(NSDictionary *)launchOptions;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
 <div class="ttc" id="interface_w_b_data_source_html"><div class="ttname"><a href="interface_w_b_data_source.html">WBDataSource</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00016">WBDataSource.h:16</a></div></div>
 <div class="ttc" id="_w_b_user_8h_html"><div class="ttname"><a href="_w_b_user_8h.html">WBUser.h</a></div></div>
 <div class="ttc" id="interface_w_b_data_source_html_adcfb7daf5420b88632fc9ad53b1cf5cb"><div class="ttname"><a href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb">+[WBDataSource sharedInstance]</a></div><div class="ttdeci">WBDataSource * sharedInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00015">WBDataSource.m:15</a></div></div>
+<div class="ttc" id="interface_w_b_data_source_html_a788dfade175c4ded172983c2e94cdf70"><div class="ttname"><a href="interface_w_b_data_source.html#a788dfade175c4ded172983c2e94cdf70">+[WBDataSource createUser]</a></div><div class="ttdeci">id&lt; WBUser &gt; createUser()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00064">WBDataSource.m:64</a></div></div>
 <div class="ttc" id="protocol_w_b_user-p_html"><div class="ttname"><a href="protocol_w_b_user-p.html">WBUser-p</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_user_8h_source.html#l00016">WBUser.h:16</a></div></div>
-<div class="ttc" id="interface_w_b_data_source_html_a39f9bdeedd5135d37b40564c992928c0"><div class="ttname"><a href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">WBDataSource::currentUser</a></div><div class="ttdeci">id&lt; WBUser &gt; currentUser</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00085">WBDataSource.h:85</a></div></div>
+<div class="ttc" id="interface_w_b_data_source_html_a39f9bdeedd5135d37b40564c992928c0"><div class="ttname"><a href="interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0">WBDataSource::currentUser</a></div><div class="ttdeci">id&lt; WBUser &gt; currentUser</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00107">WBDataSource.h:107</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed Sep 11 2013 11:17:41 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Sep 13 2013 12:03:58 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
