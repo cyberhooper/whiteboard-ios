@@ -41,6 +41,41 @@
 - (void)setupView {
   // Defaults
   [self.profilePictureImageView roundedCornersWithRadius:3.f];
+  
+  // Like button
+  [self.likeButton setImage:[self likeButtonImage] forState:UIControlStateNormal];
+  [self.likeButton setImage:[self likeButtonImageHighlighted] forState:UIControlStateHighlighted];
+  [self.likeButton setImage:[self likeButtonImageSelected] forState:UIControlStateSelected];
+  
+  // Comment button
+  [self.commentButton setImage:[self commentButtonImage] forState:UIControlStateNormal];
+  [self.commentButton setImage:[self commentButtonImageHighlighted] forState:UIControlStateHighlighted];
+  [self.commentButton setImage:[self commentButtonImageSelected] forState:UIControlStateSelected];
+}
+
+#pragma mark - Config
+- (UIImage *)likeButtonImage {
+  return [[WBTheme sharedTheme] likeButtonNormalImage];
+}
+
+- (UIImage *)likeButtonImageHighlighted {
+  return [[WBTheme sharedTheme] likeButtonSelectedImage];
+}
+
+- (UIImage *)likeButtonImageSelected {
+  return [[WBTheme sharedTheme] likeButtonSelectedImage];
+}
+
+- (UIImage *)commentButtonImage {
+  return [[WBTheme sharedTheme] commentButtonNormalImage];
+}
+
+- (UIImage *)commentButtonImageHighlighted {
+  return [[WBTheme sharedTheme] commentButtonNormalImage];
+}
+
+- (UIImage *)commentButtonImageSelected {
+  return [[WBTheme sharedTheme] commentButtonNormalImage];
 }
 
 #pragma mark - Setters
