@@ -12,7 +12,5 @@
 	<string>buttonLike</string>
 	<key>backgroundImage</key>
 	<string>backgroundLeather</string>
-	<key>headerImageName</key>
-	<string>some_image.png</string>
 </dict>
 </plist>

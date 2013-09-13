@@ -17,12 +17,33 @@
 
 /**
 	The shared theme for the application.
-	@returns The shared theme instance for the application.
+	@returns The shared WBTheme instance for the application.
  */
 + (WBTheme *)sharedTheme;
 
-- (NSString *)headerImageName;
-
+/**
+	The default background image for most screens. Specified in the plist as "backgroundImage".
+	@returns The default background image
+ */
 - (UIImage *)backgroundImage;
+
+/**
+	The default Like button image. Specified in the plist as "likeButtonImage-Normal".
+	@returns The default Like button image
+ */
+- (UIImage *)likeButtonNormalImage;
+
+/**
+	The default Like button image when the button is selected. Specified in the plist as "likeButtonImage-Selected".
+	@returns The default selected Like button image
+ */
+- (UIImage *)likeButtonSelectedImage;
+
+/**
+	The default Comment button image. Specified in the plist as "commentButtonImage-Normal".
+	@returns The default Comment button image
+ */
+- (UIImage *)commentButtonNormalImage;
+
 
 @end

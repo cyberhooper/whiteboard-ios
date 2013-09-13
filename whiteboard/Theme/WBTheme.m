@@ -10,7 +10,11 @@
 
 @interface WBTheme()
 
+/**
+	Dictionary to store the contents of the plist so the file contents only need to be loaded once.
+ */
 @property (nonatomic, strong) NSDictionary *themeDict;
+
 
 @end
 
@@ -27,12 +31,20 @@
   return sharedTheme;
 }
 
-- (NSString *)headerImageName {
-  return [self.themeDict objectForKey:@"headerImageName"];
-}
-
 - (UIImage *)backgroundImage {
   return [UIImage imageNamed:[self.themeDict objectForKey:@"backgroundImage"]];
+}
+
+- (UIImage *)likeButtonNormalImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"likeButtonImage-Normal"]];
+}
+
+- (UIImage *)likeButtonSelectedImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"likeButtonImage-Selected"]];
+}
+
+- (UIImage *)commentButtonNormalImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"commentButtonImage-Normal"]];
 }
 
 @end
