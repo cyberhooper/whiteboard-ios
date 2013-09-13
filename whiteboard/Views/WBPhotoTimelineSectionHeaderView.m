@@ -51,31 +51,43 @@
   [self.commentButton setImage:[self commentButtonImage] forState:UIControlStateNormal];
   [self.commentButton setImage:[self commentButtonImageHighlighted] forState:UIControlStateHighlighted];
   [self.commentButton setImage:[self commentButtonImageSelected] forState:UIControlStateSelected];
+  
+  // Display name label
+  self.displayNameLabel.textColor = [[WBTheme sharedTheme] sectionDisplayNameFontColor];
+  self.displayNameLabel.font = [[WBTheme sharedTheme] sectionDisplayNameFont];
+  
+  // Date label
+  self.dateLabel.font = [[WBTheme sharedTheme] sectionDateNameFont];
+  self.dateLabel.textColor = [[WBTheme sharedTheme] sectionDateNameFontColor];
 }
 
 #pragma mark - Config
 - (UIImage *)likeButtonImage {
-  return [[WBTheme sharedTheme] likeButtonNormalImage];
+  return [[WBTheme sharedTheme] sectionLikeButtonNormalImage];
 }
 
 - (UIImage *)likeButtonImageHighlighted {
-  return [[WBTheme sharedTheme] likeButtonSelectedImage];
+  return [[WBTheme sharedTheme] sectionLikeButtonSelectedImage];
 }
 
 - (UIImage *)likeButtonImageSelected {
-  return [[WBTheme sharedTheme] likeButtonSelectedImage];
+  return [[WBTheme sharedTheme] sectionLikeButtonSelectedImage];
 }
 
 - (UIImage *)commentButtonImage {
-  return [[WBTheme sharedTheme] commentButtonNormalImage];
+  return [[WBTheme sharedTheme] sectionCommentButtonNormalImage];
 }
 
 - (UIImage *)commentButtonImageHighlighted {
-  return [[WBTheme sharedTheme] commentButtonNormalImage];
+  return [[WBTheme sharedTheme] sectionCommentButtonNormalImage];
 }
 
 - (UIImage *)commentButtonImageSelected {
-  return [[WBTheme sharedTheme] commentButtonNormalImage];
+  return [[WBTheme sharedTheme] sectionCommentButtonNormalImage];
+}
+
+- (UIFont *)displayNameFont {
+  return [[WBTheme sharedTheme] sectionDisplayNameFont];
 }
 
 #pragma mark - Setters

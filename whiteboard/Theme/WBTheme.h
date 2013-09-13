@@ -31,19 +31,30 @@
 	The default Like button image. Specified in the plist as "likeButtonImage-Normal".
 	@returns The default Like button image
  */
-- (UIImage *)likeButtonNormalImage;
+- (UIImage *)sectionLikeButtonNormalImage;
 
 /**
 	The default Like button image when the button is selected. Specified in the plist as "likeButtonImage-Selected".
 	@returns The default selected Like button image
  */
-- (UIImage *)likeButtonSelectedImage;
+- (UIImage *)sectionLikeButtonSelectedImage;
 
 /**
 	The default Comment button image. Specified in the plist as "commentButtonImage-Normal".
 	@returns The default Comment button image
  */
-- (UIImage *)commentButtonNormalImage;
+- (UIImage *)sectionCommentButtonNormalImage;
 
+/**
+ The default font for the section display name. Specified in the plist as "SECTION_displayNameFont".
+ @returns The default font for the section display name
+ */
+- (UIFont *)sectionDisplayNameFont;
+
+- (UIColor *)sectionDisplayNameFontColor;
+
+- (UIFont *)sectionDateNameFont;
+
+- (UIColor *)sectionDateNameFontColor;
 
 @end
