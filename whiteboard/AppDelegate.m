@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import "ParseUser.h"
 #import "WBManager.h"
+#import "WBTheme.h"
 
 @implementation AppDelegate
 

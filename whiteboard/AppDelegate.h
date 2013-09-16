@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBTabBarController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (nonatomic, strong) IBOutlet UIWindow *window;
-@property (nonatomic, weak) IBOutlet UITabBarController *tabBarController;
+@property (nonatomic, weak) IBOutlet WBTabBarController *tabBarController;
 
 @end

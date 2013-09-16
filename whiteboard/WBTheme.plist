@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>tabBarTextColor-Selected</key>
+	<string>#816345</string>
+	<key>tabBarTextColor-Normal</key>
+	<string>#56372a</string>
+	<key>tabBarCameraButtonImage-Selected</key>
+	<string>buttonCameraSelected</string>
+	<key>tabBarCameraButtonImage-Normal</key>
+	<string>buttonCamera</string>
+	<key>tabBarSelectedItemImage</key>
+	<string>backgroundTabBarItemSelected</string>
+	<key>tabBarBackgroundImage</key>
+	<string>backgroundTabBar</string>
+	<key>tabBarActivityButtonImage-Selected</key>
+	<string>iconTimelineSelected</string>
+	<key>tabBarActivityButtonImage-Normal</key>
+	<string>iconTimeline</string>
+	<key>tabBarHomeButtonImage-Selected</key>
+	<string>iconHomeSelected</string>
+	<key>tabBarHomeButtonImage-Normal</key>
+	<string>iconHome</string>
+	<key>defaultFontRegular</key>
+	<string>Helvetica</string>
+	<key>defaultFontBold</key>
+	<string>Helvetica-Bold</string>
+	<key>SECTION_commentButtonImage-Selected</key>
+	<string>iconComment</string>
+	<key>SECTION_commentButtonImage-Normal</key>
+	<string>iconComment</string>
+	<key>SECTION_commentButtonFont</key>
+	<string>Helvetica-Bold</string>
+	<key>SECTION_commentButtonColor</key>
+	<string></string>
+	<key>SECTION_likeButtonImage-Selected</key>
+	<string>buttonLikeSelected</string>
+	<key>SECTION_likeButtonImage-Normal</key>
+	<string>buttonLike</string>
+	<key>SECTION_likeButtonFont</key>
+	<string>Helvetica-Bold</string>
+	<key>SECTION_likeButtonColor</key>
+	<string></string>
+	<key>SECTION_displayNameFont</key>
+	<string>Helvetica-Bold</string>
+	<key>SECTION_displayNameFontSize</key>
+	<string>15</string>
+	<key>SECTION_displayNameFontColor</key>
+	<string>#493723</string>
+	<key>SECTION_dateFont</key>
+	<string>Helvetica</string>
+	<key>SECTION_dateFontColor</key>
+	<string>#7c7c7c</string>
+	<key>SECTION_dateFontSize</key>
+	<string>11</string>
+	<key>backgroundImage</key>
+	<string>backgroundLeather</string>
+</dict>
+</plist>

@@ -19,7 +19,7 @@
  Loads the image and sets a placeholder image while loading and returns success and failure
  */
 - (void)setImageWithPath:(NSString *)path
-        placeholderImage:(UIImage *)placeholderImage
+             placeholder:(UIImage *)placeholder
                  success:(void (^)(UIImage *image))success
                  failure:(void (^)(NSError *error))failure;
 
