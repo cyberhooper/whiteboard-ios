@@ -156,7 +156,7 @@
 }
 
 - (WBUser *)createUser {
-  return [[WBUser alloc] init];;
+  return [[WBUser alloc] init];
 }
 
 #pragma mark - Photos
@@ -198,6 +198,58 @@
   PFUser *user = [PFUser currentUser];
   [photo setObject:user forKey:@"user"];
   return photo;
+}
+
+- (void)latestPhotos:(void(^)(NSArray *photos))success
+             failure:(void(^)(NSError *error))failure {
+  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  query.limit = 20;
+  [query orderByAscending:@"createdAt"];
+  [query includeKey:@"user"];
+  [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
+    if (!error) {
+      if (success) {
+        NSArray *wbPhotos = [self wbPhotosFromParsePhotos:photos];
+        success(wbPhotos);
+      }
+    } else {
+      NSLog(@"Error: %@ %@", error, [error userInfo]);
+    }
+  }];
+  
+  // filter with friends example :
+  //[query whereKey:@"user" containedIn:[currentUser friends]];
+  
+  //Restrict results. Faster?
+  //[query selectKeys:@[@"playerName", @"score"]];
+}
+
+- (NSArray *)wbPhotosFromParsePhotos:(NSArray *)parsePhotos {
+  NSMutableArray *wbPhotos = [@[] mutableCopy];
+  for (PFObject *photo in parsePhotos) {
+    WBPhoto *wbPhoto = [self wbPhotoFromParsePhoto:photo];
+    [wbPhotos addObject:wbPhoto];
+  }
+  return [NSArray arrayWithArray:wbPhotos];
+}
+
+- (WBPhoto *)wbPhotoFromParsePhoto:(PFObject *)parsePhoto {
+  WBPhoto *wbPhoto = [[WBPhoto alloc] init];
+  PFFile *imageFile = [parsePhoto objectForKey:@"imageFile"];
+  wbPhoto.url = [NSURL URLWithString:[imageFile url]];
+  PFUser *user = [parsePhoto objectForKey:@"user"];
+  wbPhoto.author = [self wbUserFromParseUser:user];
+  wbPhoto.createdAt = parsePhoto.createdAt;
+  NSLog(@"Photo : %@", [wbPhoto description]);
+  return wbPhoto;
+}
+
+- (WBUser *)wbUserFromParseUser:(PFUser *)parseUser {
+  WBUser *wbuser = [self createUser];
+  wbuser.username = parseUser.username;
+  //user.avatar = [parseUser objectForKey:@"avatar"];
+  NSLog(@"User : %@", [wbuser description]);
+  return wbuser;
 }
 
 @end

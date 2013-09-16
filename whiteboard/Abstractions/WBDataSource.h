@@ -129,6 +129,9 @@
             failure:(void(^)(NSError *error))failure
            progress:(void(^)(int percentDone))progress;
 
+- (void)latestPhotos:(void(^)(NSArray *photos))success
+             failure:(void(^)(NSError *error))failure;
+
 #pragma mark - Set Up
 
 /**

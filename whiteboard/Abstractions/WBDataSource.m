@@ -90,11 +90,18 @@ static Class DataSourceSubclass = nil;
   return nil;
 }
 
+#pragma mark - Photos
+
 - (void)uploadPhoto:(WBPhoto *)photo
             success:(void(^)(void))success
             failure:(void(^)(NSError *error))failure
            progress:(void(^)(int percentDone))progress {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)latestPhotos:(void(^)(NSArray *photos))success
+             failure:(void(^)(NSError *error))failure {
+    [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
 @end

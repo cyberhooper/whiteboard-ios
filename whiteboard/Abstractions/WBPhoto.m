@@ -10,4 +10,12 @@
 
 @implementation WBPhoto
 
+- (NSString *)description {
+  NSMutableString *description = [@"" mutableCopy];
+  [description appendFormat:@"WBPhoto "];
+  [description appendFormat:@"User : %@", self.author]; // ad author desc.
+  [description appendFormat:@"Created at : %@", self.createdAt];
+  return description;
+}
+
 @end

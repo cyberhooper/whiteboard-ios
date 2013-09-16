@@ -10,6 +10,8 @@
 #import "MainFeedCell.h"
 #import "WBDataSource.h"
 
+#warning TODO REMOVE
+#import <Parse/Parse.h>
 
 @interface TestObject : NSObject
 @property (nonatomic, strong) NSString *username;
@@ -50,17 +52,13 @@
   
   self.photos = array;
   
-  
-  ///// TEST upload photo
-  WBPhoto *photo = [[WBPhoto alloc] init];
-  photo.image = [UIImage imageNamed:@"photo"];
-  photo.author = [[WBDataSource sharedInstance] currentUser];
-  [[WBDataSource sharedInstance] uploadPhoto:photo success:^{
-    NSLog(@"Upload Success");
+  /// TEST get latest photos
+  [[WBDataSource sharedInstance] latestPhotos:^(NSArray *photos) {
+    for (WBPhoto *p in photos) {
+      // Build feed here.
+    }
   } failure:^(NSError *error) {
-     NSLog(@"Error: %@ %@", error, [error userInfo]);
-  } progress:^(int percentDone) {
-    NSLog(@"Uploading : %d %@",percentDone, @"%");
+    //Error
   }];
 }
 

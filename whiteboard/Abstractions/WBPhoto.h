@@ -13,16 +13,7 @@
 
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) WBUser *author;
-
-//@property (nonatomic, strong) NSURL *url;
-
-//
-//imageURL : NSURL
-//thumbnailURL : NSURL
-//user : id<User>
-//createdAt : NSDate
-//updatedAt : NSDate
-//text: NSString
-//usersWhoLiked : NSArray
+@property (nonatomic, strong) NSDate *createdAt;
+@property (nonatomic, strong) NSURL *url;
 
 @end

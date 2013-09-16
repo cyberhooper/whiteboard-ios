@@ -17,17 +17,28 @@
 @implementation WBPhotoTests {
   WBPhoto *photo;
   WBUser *user;
+  NSDate *date;
+  NSURL *url;
 }
 
 - (void)setUp {
   [super setUp];
+  user = [[WBUser alloc] init];
+  date = [NSDate date];
+  url = [NSURL URLWithString:@"http://www.google.com/avatar.png"];
+  
   photo = [[WBPhoto alloc] init];
   photo.image = [UIImage imageNamed:@"photo"];
-  photo.author = [[WBUser alloc] init];
+  photo.author = user;
+  photo.createdAt = date;
+  photo.url = url;
 }
 
 - (void)tearDown {
   photo = nil;
+  user = nil;
+  date = nil;
+  url = nil;
   [super tearDown];
 }
 
@@ -41,6 +52,14 @@
 
 - (void)testPhotoHAsAUser {
   XCTAssertEqualObjects(user, photo.author, @"Photo should have a user");
+}
+
+- (void)testPhotoHAsACreationDate {
+  XCTAssertEqualObjects(date, photo.createdAt, @"Photo should have a creation date");
+}
+
+- (void)testPhotoHAsAURL {
+  XCTAssertEqualObjects(url, photo.url, @"Photo should have a URL");
 }
 
 @end
