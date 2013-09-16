@@ -17,5 +17,4 @@
 @property (nonatomic, strong) NSDate *createdAt;
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) NSArray *likes; // contains user Ids of the user who liked.
-
 @end

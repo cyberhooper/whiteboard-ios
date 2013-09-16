@@ -25,6 +25,22 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   
   [self setupView];
   [self refreshPhotos];
+  
+  
+  /// Example Add comment.
+//  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
+//    NSLog(@"Logged in with user :%@", user);
+//    
+//    WBPhoto *photo = [[WBPhoto alloc] init];
+//    photo.photoID = @"iYB949pu4R";
+//    [[WBDataSource sharedInstance] addComment:@"Yesss PAPA jeu de jambe" onPhoto:photo success:^{
+//      
+//    } failure:^(NSError *error) {
+//    }];
+//    
+//  } failure:^(NSError *error) {
+//    NSLog(@"Loggin in failed :%@",error);
+//  }];
 }
 
 #pragma mark - Setup
@@ -155,27 +171,37 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 
 - (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
   WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:sectionView.sectionIndex.intValue]);
-  if (![photo.likes containsObject:[WBDataSource currentUser]]) {
-    [self likePhoto:photo];
+  if (![photo.likes containsObject:[WBDataSource currentUser].userID]) {
+    [self likePhoto:photo completion:^(BOOL success) {
+      if (success) {
+        sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue + 1);
+      }
+    }];
   } else {
-    [self unlikePhoto:photo];
+    [self unlikePhoto:photo completion:^(BOOL success) {
+      if (success && sectionView.numberOfLikes > 0) {
+        sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue - 1);
+      }
+    }];
   }
   NSLog(@"Likes pressed");
 }
 
-- (void)likePhoto:(WBPhoto *)photo {
+- (void)likePhoto:(WBPhoto *)photo completion:(void(^)(BOOL success))result {
   [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^{
-    // update UI
+    result(YES);
   } failure:^(NSError *error) {
+    result(NO);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
   }];
 }
 
-- (void)unlikePhoto:(WBPhoto *)photo {
+- (void)unlikePhoto:(WBPhoto *)photo completion:(void(^)(BOOL success))result {
   [[WBDataSource sharedInstance] unlikePhoto:photo withUser:[WBDataSource currentUser] success:^{
-    // update UI
+    result(YES);
   } failure:^(NSError *error) {
+    result(NO);
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Un-Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
     [alert show];
   }];

@@ -149,6 +149,11 @@
           success:(void(^)(void))success
           failure:(void(^)(NSError *error))failure;
 
+- (void)addComment:(NSString *)comment
+           onPhoto:(WBPhoto *)photo
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure;
+
 #pragma mark - Set Up
 
 /**
