@@ -14,6 +14,9 @@
 
 @implementation WBTabBarController
 
+static int kCameraIndex = 0;
+static int kLibraryIndex = 1;
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -113,6 +116,15 @@
   [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+#pragma mark - UIActionSheetDelegate
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+  if (buttonIndex == kCameraIndex) {
+    [self shouldStartCameraController];
+  } else if (buttonIndex == kLibraryIndex) {
+    [self shouldStartPhotoLibraryPickerController];
+  }
+}
+
 #pragma mark - ()
 
 - (BOOL)shouldPresentPhotoCaptureController {
@@ -147,22 +159,19 @@
   
   UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
   
-//  if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]
-//      && [[UIImagePickerController availableMediaTypesForSourceType:
-//           UIImagePickerControllerSourceTypeCamera] containsObject:(NSString *)kUTTypeImage]) {
-//    
-//    cameraUI.mediaTypes = [NSArray arrayWithObject:(NSString *) kUTTypeImage];
-//    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
-//    
-//    if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) {
-//      cameraUI.cameraDevice = UIImagePickerControllerCameraDeviceRear;
-//    } else if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceFront]) {
-//      cameraUI.cameraDevice = UIImagePickerControllerCameraDeviceFront;
-//    }
-//    
-//  } else {
-//    return NO;
-//  }
+  if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
+    
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeCamera;
+    
+    if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceRear]) {
+      cameraUI.cameraDevice = UIImagePickerControllerCameraDeviceRear;
+    } else if ([UIImagePickerController isCameraDeviceAvailable:UIImagePickerControllerCameraDeviceFront]) {
+      cameraUI.cameraDevice = UIImagePickerControllerCameraDeviceFront;
+    }
+    
+  } else {
+    return NO;
+  }
   
   cameraUI.allowsEditing = YES;
   cameraUI.showsCameraControls = YES;
@@ -181,21 +190,13 @@
   }
   
   UIImagePickerController *cameraUI = [[UIImagePickerController alloc] init];
-//  if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]
-//      && [[UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypePhotoLibrary] containsObject:(NSString *)kUTTypeImage]) {
-//    
-//    cameraUI.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
-//    cameraUI.mediaTypes = [NSArray arrayWithObject:(NSString *) kUTTypeImage];
-//    
-//  } else if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum]
-//             && [[UIImagePickerController availableMediaTypesForSourceType:UIImagePickerControllerSourceTypeSavedPhotosAlbum] containsObject:(NSString *)kUTTypeImage]) {
-//    
-//    cameraUI.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
-//    cameraUI.mediaTypes = [NSArray arrayWithObject:(NSString *) kUTTypeImage];
-//    
-//  } else {
-//    return NO;
-//  }
+  if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary]) {
+    cameraUI.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
+  } else if ([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeSavedPhotosAlbum]) {
+    cameraUI.sourceType = UIImagePickerControllerSourceTypeSavedPhotosAlbum;
+  } else {
+    return NO;
+  }
   
   cameraUI.allowsEditing = YES;
   cameraUI.delegate = self;
