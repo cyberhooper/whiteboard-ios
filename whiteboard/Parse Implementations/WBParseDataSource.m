@@ -78,6 +78,7 @@
 }
 
 - (WBUser *)currentUser {
+  [self mapCurrentWBUser:[PFUser currentUser]];
   return _currentUser;
 }
 
@@ -156,6 +157,43 @@
 
 - (WBUser *)createUser {
   return [[WBUser alloc] init];;
+}
+
+#pragma mark - Photos
+
+- (void)uploadPhoto:(WBPhoto *)photo
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure
+           progress:(void(^)(int percentDone))progress {
+  NSData *imageData = UIImageJPEGRepresentation(photo.image, 1);
+  PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
+  
+  // Save PFFile
+  [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (!error) {
+      PFObject *parsePhoto = [self parsePhotoWithImageFile:imageFile];
+      [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error && success)
+          success();
+        else if (failure)
+          failure(error);
+      }];
+    }
+    else
+      if (failure) failure(error);
+  } progressBlock:^(int percentDone) {
+    if (progress) progress(percentDone);
+  }];
+}
+
+- (PFObject *)parsePhotoWithImageFile:(PFFile *)imageFile {
+  // Create a PFObject around a PFFile and associate it with the current user
+  PFObject *photo = [PFObject objectWithClassName:@"Photo"];
+  [photo setObject:imageFile forKey:@"imageFile"];
+  photo.ACL = [PFACL ACLWithUser:[PFUser currentUser]]; // Set the access control list to current user for security purposes
+  PFUser *user = [PFUser currentUser];
+  [photo setObject:user forKey:@"user"];
+  return photo;
 }
 
 @end

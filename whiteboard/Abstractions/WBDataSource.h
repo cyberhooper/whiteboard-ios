@@ -8,12 +8,15 @@
 
 #import <Foundation/Foundation.h>
 #import "WBUser.h"
+#import "WBPhoto.h"
 
 /**
   Abstract singleton class representing a DataSource.
   The developer should subclass this class for each type of DataSource (ex. Parse).
  */
 @interface WBDataSource : NSObject
+
+#pragma mark - User
 
 @property (nonatomic, strong) WBUser *currentUser;
 
@@ -111,6 +114,15 @@
  creates a WBUser object.
  */
 + (WBUser *)createUser;
+
+#pragma mark - Photos
+
+- (void)uploadPhoto:(WBPhoto *)photo
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure
+           progress:(void(^)(int percentDone))progress;
+
+#pragma mark - Set Up
 
 /**
  Method called when the app starts that enables WBDatasource to

@@ -10,6 +10,7 @@
 #import "MainFeedCell.h"
 #import "WBDataSource.h"
 
+
 @interface TestObject : NSObject
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSURL *photoUrl;
@@ -30,8 +31,7 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
     [super viewDidLoad];
   [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
     NSLog(@"Logged in with user :%@", user);
@@ -50,7 +50,18 @@
   
   self.photos = array;
   
-
+  
+  ///// TEST upload photo
+  WBPhoto *photo = [[WBPhoto alloc] init];
+  photo.image = [UIImage imageNamed:@"photo"];
+  photo.author = [[WBDataSource sharedInstance] currentUser];
+  [[WBDataSource sharedInstance] uploadPhoto:photo success:^{
+    NSLog(@"Upload Success");
+  } failure:^(NSError *error) {
+     NSLog(@"Error: %@ %@", error, [error userInfo]);
+  } progress:^(int percentDone) {
+    NSLog(@"Uploading : %d %@",percentDone, @"%");
+  }];
 }
 
 #pragma mark - UITableView
