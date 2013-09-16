@@ -161,6 +161,10 @@
 
 #pragma mark - Photos
 
+- (WBPhoto *)createPhoto {
+  return [[WBPhoto alloc] init];
+}
+
 - (void)uploadPhoto:(WBPhoto *)photo
             success:(void(^)(void))success
             failure:(void(^)(NSError *error))failure

@@ -106,16 +106,23 @@
            failure:(void(^)(NSError *error))failure;
 
 /**
-	The currently logged in WBUser, or nil if no user is logged in.
+ Get the currently logged in user
+	@returns The currently logged in WBUser, or nil if no user is logged in.
  */
 - (WBUser *)currentUser;
 
 /**
  creates a WBUser object.
+ @returns The newly created WBUser
  */
 + (WBUser *)createUser;
 
 #pragma mark - Photos
+/**
+ Creates a WBPhoto object.
+ @returns The newly created WBPhoto
+ */
++ (WBPhoto *)createPhoto;
 
 - (void)uploadPhoto:(WBPhoto *)photo
             success:(void(^)(void))success
