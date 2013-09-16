@@ -2,7 +2,7 @@
 //  WBUser.h
 //  whiteboard
 //
-//  Created by Sacha Durand Saint Omer on 9/9/13.
+//  Created by Thibault Gauche on 9/13/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
@@ -13,10 +13,9 @@
  This protocol should be implemented by a concrete class that the developer creates.
  Any class that implements WBUser should have the properties listed in this protocol, but can define others, as well.
  */
-@protocol WBUser <NSObject>
-
+@interface WBUser : NSObject
 /**
- The unique ID representing this WBUser. 
+ The unique ID representing this WBUser.
  Represented as a string because some frameworks (ex. Facebook) might have alphanumeric IDs.
  */
 @property (nonatomic, strong) NSString *userID;
