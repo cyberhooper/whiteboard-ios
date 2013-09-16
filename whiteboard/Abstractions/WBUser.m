@@ -10,4 +10,8 @@
 
 @implementation WBUser
 
+- (NSString *)displayName {
+  return self.username;
+}
+
 @end
