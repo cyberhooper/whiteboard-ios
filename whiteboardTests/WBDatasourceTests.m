@@ -115,15 +115,6 @@
   }];
 }
 
-- (void)testLogoutUser {
-  WBUser *currentUser = [[WBDataSource sharedInstance] currentUser];
-  XCTAssertNotNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
-  [[WBDataSource sharedInstance] logoutUser:currentUser success:^{
-    hasCalledBack = YES;
-    XCTAssertNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
-  }failure:nil];
-}
-
 - (void)testResetPasswordWithValidCredentials {
   WBUser *user = [WBDataSource createUser];
   [user setEmail:@"sacha@fueled.com"];
@@ -161,6 +152,15 @@
                                   failure:^(NSError *error) {
     hasCalledBack = YES;
   }];
+}
+
+- (void)testLogoutUser {
+  WBUser *currentUser = [[WBDataSource sharedInstance] currentUser];
+  XCTAssertNotNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
+  [[WBDataSource sharedInstance] logoutUser:currentUser success:^{
+    hasCalledBack = YES;
+    XCTAssertNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
+  }failure:nil];
 }
 
 @end

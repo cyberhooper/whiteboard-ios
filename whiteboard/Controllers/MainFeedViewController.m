@@ -9,6 +9,7 @@
 #import "MainFeedViewController.h"
 #import "MainFeedCell.h"
 #import "WBDataSource.h"
+#import "WBLoginViewController.h"
 
 #warning TODO REMOVE
 #import <Parse/Parse.h>
@@ -36,6 +37,10 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
   //[self dummyData];
+  if (![[WBDataSource sharedInstance] currentUser].userID) {
+    WBLoginViewController *loginVC = [[WBLoginViewController alloc]init];
+    [self presentViewController:loginVC animated:NO completion:nil];
+  }
 }
 
 - (void)dummyData {

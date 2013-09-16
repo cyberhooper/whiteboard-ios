@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */; };
+		218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */; };
 		21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A26B5217E362E400BF2BF4 /* WBUser.m */; };
 		5B6E5B767D2D48748780E8CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F30985C67F4305AE5B3F10 /* libPods.a */; };
 		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
@@ -70,6 +72,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		218D5A2F17E7B2BE007D17DB /* WBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoginViewController.h; sourceTree = "<group>"; };
+		218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLoginViewController.m; sourceTree = "<group>"; };
+		218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoginViewController.xib; sourceTree = "<group>"; };
 		21A26B5117E362E400BF2BF4 /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
 		21A26B5217E362E400BF2BF4 /* WBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUser.m; sourceTree = "<group>"; };
 		991614C917DE813C007FF6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
@@ -324,6 +329,9 @@
 				BE1B3F7417E22197003494CD /* MainFeedViewController.m */,
 				BE1B3F7517E22197003494CD /* MainFeedViewController.xib */,
 				DDA25DE217E26DEB00C44622 /* WB */,
+				218D5A2F17E7B2BE007D17DB /* WBLoginViewController.h */,
+				218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */,
+				218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -452,6 +460,7 @@
 				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
 				BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */,
 				BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
+				218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +525,7 @@
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
 				DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */,
+				218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */,
 				BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */,
 				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
 				BE1B3F8017E24875003494CD /* WBTheme.m in Sources */,
