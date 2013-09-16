@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "MainFeedViewController.h"
 #import "WBTheme.h"
+#import "WBDataSource.h"
 
 @interface WBTabBarController : UITabBarController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 

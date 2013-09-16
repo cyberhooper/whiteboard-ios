@@ -94,6 +94,24 @@
   [self dismissViewControllerAnimated:YES completion:nil];
 }
 
+-(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
+  UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
+  WBPhoto *wbPhoto = [WBDataSource createPhoto];
+  wbPhoto.image = originalImage;
+  wbPhoto.author = [[WBDataSource sharedInstance] currentUser];
+#warning Add real code to the callbacks
+  [[WBDataSource sharedInstance] uploadPhoto:wbPhoto
+    success:^{
+      UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Suceeeded" message:@"Photo upload succeeded" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+      [alert show];
+  } failure:^(NSError *error) {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  } progress:^(int percentDone) {
+   
+  }];
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
 
 #pragma mark - ()
 
