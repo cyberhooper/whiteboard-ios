@@ -1,0 +1,5 @@
+<map id="&#45;[WBTabBarController setUpTabBarBackground]" name="&#45;[WBTabBarController setUpTabBarBackground]">
+<area shape="rect" id="node2" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="238,5,415,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#a124e8c3eb45c0c1c78201beb6f8cc1ca" title="&#45;[WBTheme tabBarBackground\lImage]" alt="" coords="227,57,426,98"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#af8de434e3a1b63829f052ecffa62fd2c" title="&#45;[WBTheme tabBarSelected\lItemImage]" alt="" coords="237,122,417,163"/>
+</map>

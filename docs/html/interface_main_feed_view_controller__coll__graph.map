@@ -1,3 +1,5 @@
 <map id="MainFeedViewController" name="MainFeedViewController">
-<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html" title="WBPhotoTimelineViewController" alt="" coords="133,80,333,107"/>
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html" title="WBPhotoTimelineViewController" alt="" coords="427,81,629,108"/>
+<area shape="rect" id="node3" href="$interface_w_b_view_controller.html" title="WBViewController" alt="" coords="211,5,335,32"/>
+<area shape="rect" id="node7" href="$protocol_w_b_photo_timeline_section_header_view_delegate-p.html" title="\&lt;WBPhotoTimelineSectionHeader\lViewDelegate\&gt;" alt="" coords="168,158,379,199"/>
 </map>

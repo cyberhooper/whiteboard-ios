@@ -1,5 +1,10 @@
 <map id="WBPhotoTimelineViewController.h" name="WBPhotoTimelineViewController.h">
-<area shape="rect" id="node2" href="$_main_feed_view_controller_8h.html" title="MainFeedViewController.h" alt="" coords="7,80,175,107"/>
-<area shape="rect" id="node4" href="$_w_b_photo_timeline_view_controller_8m.html" title="WBPhotoTimelineViewController.m" alt="" coords="199,80,413,107"/>
+<area shape="rect" id="node2" href="$_main_feed_view_controller_8h.html" title="MainFeedViewController.h" alt="" coords="99,80,267,107"/>
+<area shape="rect" id="node9" href="$_w_b_photo_timeline_view_controller_8m.html" title="WBPhotoTimelineViewController.m" alt="" coords="291,80,505,107"/>
 <area shape="rect" id="node3" href="$_main_feed_view_controller_8m.html" title="MainFeedViewController.m" alt="" coords="5,155,176,181"/>
+<area shape="rect" id="node4" href="$_w_b_tab_bar_controller_8h.html" title="WBTabBarController.h" alt="" coords="201,155,348,181"/>
+<area shape="rect" id="node5" href="$_app_delegate_8h.html" title="AppDelegate.h" alt="" coords="143,229,251,256"/>
+<area shape="rect" id="node8" href="$_w_b_tab_bar_controller_8m.html" title="WBTabBarController.m" alt="" coords="275,229,425,256"/>
+<area shape="rect" id="node6" href="$_app_delegate_8m.html" title="AppDelegate.m" alt="" coords="87,304,197,331"/>
+<area shape="rect" id="node7" href="$main_8m.html" title="main.m" alt="" coords="222,304,284,331"/>
 </map>

@@ -1,0 +1,8 @@
+<map id="&#45;[WBTheme sectionCommentButtonNormalImage]" name="&#45;[WBTheme sectionCommentButtonNormalImage]">
+<area shape="rect" id="node2" href="$class_w_b_photo_timeline_section_header_view.html#a4b8abbd078fdf681543ad2f6e13238d4" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage]" alt="" coords="241,5,461,46"/>
+<area shape="rect" id="node6" href="$class_w_b_photo_timeline_section_header_view.html#a17c47111b3e705bb98eb34140988ef24" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage\lHighlighted]" alt="" coords="242,71,459,127"/>
+<area shape="rect" id="node7" href="$class_w_b_photo_timeline_section_header_view.html#a209a46aec915460eaeb502597fdb6a50" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage\lSelected]" alt="" coords="242,151,459,207"/>
+<area shape="rect" id="node3" href="$class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="510,78,679,119"/>
+<area shape="rect" id="node4" href="$class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="733,45,909,86"/>
+<area shape="rect" id="node5" href="$class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="729,110,914,151"/>
+</map>

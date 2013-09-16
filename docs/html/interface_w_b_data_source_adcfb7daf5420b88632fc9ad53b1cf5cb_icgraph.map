@@ -1,5 +1,12 @@
 <map id="+[WBDataSource sharedInstance]" name="+[WBDataSource sharedInstance]">
-<area shape="rect" id="node2" href="$interface_my_view_controller.html#aa377609a1de0d3b1cde539355aa5f1f1" title="&#45;[MyViewController\l viewDidLoad]" alt="" coords="311,5,438,46"/>
-<area shape="rect" id="node3" href="$interface_w_b_manager.html#aecfee6267d07190ed07d6737f6214813" title="+[WBManager setUpWithLauch\lOptions:]" alt="" coords="273,70,477,111"/>
-<area shape="rect" id="node4" href="$interface_app_delegate.html#a0eeb7690788c7164f03af6252048d198" title="&#45;[AppDelegate application\l:didFinishLaunchingWithOptions:]" alt="" coords="526,70,733,111"/>
+<area shape="rect" id="node2" href="$interface_main_feed_view_controller.html#a38fb6203bc22d2576572da410470c8dd" title="&#45;[MainFeedViewController\l dummyData]" alt="" coords="293,5,459,46"/>
+<area shape="rect" id="node3" href="$interface_my_view_controller.html#aa377609a1de0d3b1cde539355aa5f1f1" title="&#45;[MyViewController\l viewDidLoad]" alt="" coords="313,70,439,111"/>
+<area shape="rect" id="node4" href="$interface_w_b_manager.html#aecfee6267d07190ed07d6737f6214813" title="+[WBManager setUpWithLauch\lOptions:]" alt="" coords="274,135,478,177"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo_timeline_view_controller.html#af4788542079abbbdf68aacc9feab264f" title="&#45;[WBPhotoTimelineViewController\l refreshPhotos]" alt="" coords="272,201,480,242"/>
+<area shape="rect" id="node11" href="$interface_w_b_tab_bar_controller.html#a34b2698fe100ca8282950d2b9cf36dc4" title="&#45;[WBTabBarController\l imagePickerController\l:didFinishPickingMediaWithInfo:]" alt="" coords="277,267,475,323"/>
+<area shape="rect" id="node5" href="$interface_app_delegate.html#a8d27d47977a32140552f039b57a240fa" title="&#45;[AppDelegate application\l:willFinishLaunchingWithOptions:]" alt="" coords="528,135,736,177"/>
+<area shape="rect" id="node7" href="$interface_w_b_photo_timeline_view_controller.html#a0b6d769b23f74af3a7c9b379fc02bdae" title="&#45;[WBPhotoTimelineViewController\l viewDidLoad]" alt="" coords="528,201,736,242"/>
+<area shape="rect" id="node9" href="$interface_w_b_photo_timeline_view_controller.html#adb783a06f543d319b4e4b7713d25ff9a" title="&#45;[WBPhotoTimelineViewController\l scrollViewDidPullToRefresh:]" alt="" coords="528,266,736,307"/>
+<area shape="rect" id="node8" href="$interface_main_feed_view_controller.html#adc032cd6b577ce279cfce26fe7b140d8" title="&#45;[MainFeedViewController\l viewDidLoad]" alt="" coords="805,201,971,242"/>
+<area shape="rect" id="node10" href="$interface_w_b_photo_timeline_view_controller.html#aa7d887a8b45843736299be9875236bf4" title="&#45;[WBPhotoTimelineViewController\l scrollViewDidScroll:]" alt="" coords="784,266,992,307"/>
 </map>

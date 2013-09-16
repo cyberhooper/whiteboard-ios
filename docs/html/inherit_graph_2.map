@@ -1,4 +1,9 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$protocol_w_b_user-p.html" title="\&lt;WBUser\&gt;" alt="" coords="166,5,250,32"/>
-<area shape="rect" id="node3" href="$interface_parse_user.html" title="ParseUser" alt="" coords="317,56,400,83"/>
+<area shape="rect" id="node2" href="$interface_test_object.html" title="TestObject" alt="" coords="147,5,231,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html" title="WBDataSource" alt="" coords="133,56,245,83"/>
+<area shape="rect" id="node5" href="$interface_w_b_manager.html" title="WBManager" alt="" coords="142,107,237,133"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo.html" title="WBPhoto" alt="" coords="151,157,228,184"/>
+<area shape="rect" id="node7" href="$interface_w_b_theme.html" title="WBTheme" alt="" coords="148,208,231,235"/>
+<area shape="rect" id="node8" href="$interface_w_b_user.html" title="WBUser" alt="" coords="154,259,225,285"/>
+<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html" title="WBParseDataSource" alt="" coords="293,56,440,83"/>
 </map>

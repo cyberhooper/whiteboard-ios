@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['commentslabel',['commentsLabel',['../interface_w_b_photo_timeline_section_header_view.html#ad1a6146d7fd634e894f4b7abbf0a1e4f',1,'WBPhotoTimelineSectionHeaderView']]],
-  ['createdat',['createdAt',['../protocol_w_b_user-p.html#ac0b91d4feac6a307c45d2f41c3ff13a7',1,'WBUser-p']]],
-  ['currentuser',['currentUser',['../interface_w_b_data_source.html#a39f9bdeedd5135d37b40564c992928c0',1,'WBDataSource']]]
+  ['commentbutton',['commentButton',['../class_w_b_photo_timeline_section_header_view.html#aec73a68cdcc5bcb08bc32e79ad40b0b2',1,'WBPhotoTimelineSectionHeaderView']]],
+  ['commentnumberlabel',['commentNumberLabel',['../class_w_b_photo_timeline_section_header_view.html#ac60975be2269e145b3c9dac174db8307',1,'WBPhotoTimelineSectionHeaderView']]],
+  ['createdat',['createdAt',['../interface_w_b_photo.html#a2da39db2b667a47878a12f06d6b71634',1,'WBPhoto::createdAt()'],['../interface_w_b_user.html#afe737880827c545eb83cd94d01e606e3',1,'WBUser::createdAt()']]],
+  ['currentuser',['currentUser',['../interface_w_b_data_source.html#af6b2d0317c0682ffbc93d5dc9af8265c',1,'WBDataSource']]]
 ];
