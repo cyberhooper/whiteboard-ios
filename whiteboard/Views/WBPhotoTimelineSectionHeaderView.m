@@ -101,7 +101,7 @@
   _date = date;
   
   TTTTimeIntervalFormatter *timeIntervalFormatter = [[TTTTimeIntervalFormatter alloc] init];
-  self.dateLabel.text = [timeIntervalFormatter stringForTimeIntervalFromDate:date toDate:[NSDate date]];
+  self.dateLabel.text = [timeIntervalFormatter stringForTimeIntervalFromDate:[NSDate date] toDate:date];
 }
 
 - (void)setNumberOfLikes:(NSNumber *)numberOfLikes {

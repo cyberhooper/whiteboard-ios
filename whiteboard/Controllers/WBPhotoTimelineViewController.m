@@ -10,6 +10,7 @@
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "WBPhotoTimelineCell.h"
 #import "UIImageView+SLImageLoader.h"
+#import "WBDataSource.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 
@@ -33,6 +34,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   [super viewDidLoad];
   
   [self setupView];
+  [self refreshPhotos];
 }
 
 #pragma mark - Setup
@@ -60,9 +62,11 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
     }
   }
   
-  sectionHeaderView.displayName = [[self.photos objectAtIndex:section] valueForKey:@"username"];
-  sectionHeaderView.date = [NSDate date];
-  [sectionHeaderView.profilePictureImageView setImageWithPath:[[self.photos objectAtIndex:section] valueForKey:@"photoUrl"]
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:section]);
+  sectionHeaderView.displayName = photo.author.displayName;
+  sectionHeaderView.date = photo.createdAt;
+#warning Change this to author's profile picture.
+  [sectionHeaderView.profilePictureImageView setImageWithPath:photo.url.absoluteString
                                                   placeholder:nil];
   sectionHeaderView.numberOfLikes = @2;
   sectionHeaderView.numberOfComments = @3;
@@ -95,8 +99,9 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 }
 
 - (void)configureCell:(WBPhotoTimelineCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
   // Set the cell image
-  [cell.photoImageView setImageWithPath:[[self.photos objectAtIndex:indexPath.section] valueForKey:@"photoUrl"] placeholder:nil];
+  [cell.photoImageView setImageWithPath:photo.url.absoluteString placeholder:nil];
 }
 
 - (void)tableView:(UITableView *)tableView
@@ -123,7 +128,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   CGFloat offsetY = screenHeight - scrollViewHeight + scrollView.contentOffset.y;
   
   #warning Magic number, change this
-  if(offsetY <= -60.f){
+  if(offsetY <= -100.f){
     [self scrollViewDidPullToRefresh:scrollView];
   }
 }
@@ -137,14 +142,20 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   
   self.isLoading = YES;
   NSLog(@"Refreshing...");
-  
-  #warning Change this. Perform fetch request
-  double delayInSeconds = 2.0;
-  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+  [self refreshPhotos];
+}
+
+- (void)refreshPhotos {
+  [[WBDataSource sharedInstance] latestPhotos:^(NSArray *photos) {
+    self.photos = photos;
+    [self.tableView reloadData];
     self.isLoading = NO;
-    NSLog(@"Done refreshing...");
-  });
+  }
+                                      failure:^(NSError *error){
+                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Refresh Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                        [alert show];
+                                        self.isLoading = NO;
+                                      }];
 }
 
 #pragma mark - WBPhotoTimelineSectionHeaderViewDelegate

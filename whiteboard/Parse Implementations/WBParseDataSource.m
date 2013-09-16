@@ -204,7 +204,7 @@
              failure:(void(^)(NSError *error))failure {
   PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
   query.limit = 20;
-  [query orderByAscending:@"createdAt"];
+  [query orderByDescending:@"createdAt"];
   [query includeKey:@"user"];
   [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
     if (!error) {
