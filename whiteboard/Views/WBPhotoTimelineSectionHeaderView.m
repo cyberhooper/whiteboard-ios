@@ -43,9 +43,7 @@
   [self.profilePictureImageView roundedCornersWithRadius:3.f];
   
   // Like button
-  [self.likeButton setImage:[self likeButtonImage] forState:UIControlStateNormal];
-  [self.likeButton setImage:[self likeButtonImageHighlighted] forState:UIControlStateHighlighted];
-  [self.likeButton setImage:[self likeButtonImageSelected] forState:UIControlStateSelected];
+  [self setUpLikeButton];
   
   // Comment button
   [self.commentButton setImage:[self commentButtonImage] forState:UIControlStateNormal];
@@ -59,6 +57,22 @@
   // Date label
   self.dateLabel.font = [[WBTheme sharedTheme] sectionDateNameFont];
   self.dateLabel.textColor = [[WBTheme sharedTheme] sectionDateNameFontColor];
+}
+
+- (void)setUpLikeButton {
+#warning set real text colors from the theme
+  // Like button
+  if (self.isLiked) {
+    [self.likeButton setImage:[self likeButtonImageHighlighted] forState:UIControlStateNormal];
+    [self.likeButton setImage:[self likeButtonImage] forState:UIControlStateHighlighted];
+    [self.likeButton setImage:[self likeButtonImage] forState:UIControlStateSelected];
+    self.likeNumberLabel.textColor = [UIColor whiteColor];
+  } else {
+    [self.likeButton setImage:[self likeButtonImage] forState:UIControlStateNormal];
+    [self.likeButton setImage:[self likeButtonImageHighlighted] forState:UIControlStateHighlighted];
+    [self.likeButton setImage:[self likeButtonImageSelected] forState:UIControlStateSelected];
+    self.likeNumberLabel.textColor = [UIColor blackColor];
+  }
 }
 
 #pragma mark - Config
@@ -116,6 +130,10 @@
   self.commentNumberLabel.text = [NSString stringWithFormat:@"%d", numberOfComments.intValue];
 }
 
+- (void)setIsLiked:(BOOL)isLiked {
+  _isLiked = isLiked;
+  [self setUpLikeButton];
+}
 #pragma mark - IBActions
 - (IBAction)likesButtonPressed:(id)sender {
   if([self.delegate respondsToSelector:@selector(sectionHeaderLikesButtonPressed:)]){

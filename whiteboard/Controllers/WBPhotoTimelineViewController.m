@@ -77,6 +77,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   sectionHeaderView.numberOfComments = @3;
   sectionHeaderView.delegate = self;
   sectionHeaderView.sectionIndex = @(section);
+  sectionHeaderView.isLiked = [photo.likes containsObject:[WBDataSource currentUser].userID];
   
   return sectionHeaderView;
 }
@@ -175,12 +176,14 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
     [self likePhoto:photo completion:^(BOOL success) {
       if (success) {
         sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue + 1);
+        sectionView.isLiked = YES;
       }
     }];
   } else {
     [self unlikePhoto:photo completion:^(BOOL success) {
       if (success && sectionView.numberOfLikes > 0) {
         sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue - 1);
+        sectionView.isLiked = NO;
       }
     }];
   }
