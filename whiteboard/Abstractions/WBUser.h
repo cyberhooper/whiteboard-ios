@@ -47,14 +47,9 @@
 @property (nonatomic, strong) NSString *email;
 
 /**
- The URL of the user's medium sized profile picture image. The image at this location should be loaded asynchronously in the app.
+ The URL of the user's avatar image. The image at this location should be loaded asynchronously in the app.
  */
-@property (nonatomic, strong) NSURL *profilePictureMediumURL;
-
-/**
- The URL of the user's small profile picture image. The image at this location should be loaded asynchronously in the app.
- */
-@property (nonatomic, strong) NSURL *profilePictureSmallURL;
+@property (nonatomic, strong) NSURL *avatar;
 
 /**
  The date this user's account was created.

@@ -130,8 +130,7 @@
   _currentUser.firstName = [user objectForKey:@"firstname"];
   _currentUser.lastName = [user objectForKey:@"lastname"];
   _currentUser.email = [user email];
-  _currentUser.profilePictureMediumURL = [user objectForKey:@"profilePictureMediumURL"];
-  _currentUser.profilePictureSmallURL = [user objectForKey:@"profilePictureSmallURL"];
+  _currentUser.avatar = [user objectForKey:@"avatar"];
   _currentUser.createdAt = user.createdAt;
   _currentUser.updatedAt = user.updatedAt;
   _currentUser.numberOfFollowers = [user objectForKey:@"numberOfFollowers"];
@@ -147,8 +146,7 @@
   [pfUser setObject:_currentUser.firstName forKey:@"firstname"];
   [pfUser setObject:_currentUser.lastName forKey:@"lastName"];
   pfUser.email = _currentUser.email;
-  [pfUser setObject:_currentUser.profilePictureMediumURL forKey:@"profilePictureMediumURL"];
-  [pfUser setObject:_currentUser.profilePictureSmallURL forKey:@"profilePictureSmallURL"];
+  [pfUser setObject:_currentUser.avatar forKey:@"avatar"];
   [pfUser setObject:_currentUser.numberOfFollowers forKey:@"numberOfFollowers"];
   [pfUser setObject:_currentUser.numberFollowing forKey:@"numberFollowing"];
   
@@ -240,16 +238,18 @@
   PFUser *user = [parsePhoto objectForKey:@"user"];
   wbPhoto.author = [self wbUserFromParseUser:user];
   wbPhoto.createdAt = parsePhoto.createdAt;
+  wbPhoto.likes = [parsePhoto objectForKey:@"likes"];
   NSLog(@"Photo : %@", [wbPhoto description]);
   return wbPhoto;
 }
 
 - (WBUser *)wbUserFromParseUser:(PFUser *)parseUser {
-  WBUser *wbuser = [self createUser];
-  wbuser.username = parseUser.username;
-  //user.avatar = [parseUser objectForKey:@"avatar"];
-  NSLog(@"User : %@", [wbuser description]);
-  return wbuser;
+  WBUser *wbUser = [self createUser];
+  wbUser.username = parseUser.username;
+  PFFile *avatarFile = [parseUser objectForKey:@"avatar"];
+  wbUser.avatar = [NSURL URLWithString:[avatarFile url]];
+  NSLog(@"User : %@", [wbUser description]);
+  return wbUser;
 }
 
 @end

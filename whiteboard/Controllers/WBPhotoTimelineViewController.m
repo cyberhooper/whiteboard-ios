@@ -20,17 +20,7 @@
 
 static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
   [super viewDidLoad];
   
   [self setupView];
@@ -65,10 +55,9 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:section]);
   sectionHeaderView.displayName = photo.author.displayName;
   sectionHeaderView.date = photo.createdAt;
-#warning Change this to author's profile picture.
-  [sectionHeaderView.profilePictureImageView setImageWithPath:photo.url.absoluteString
+  [sectionHeaderView.profilePictureImageView setImageWithPath:photo.author.avatar.absoluteString
                                                   placeholder:nil];
-  sectionHeaderView.numberOfLikes = @2;
+  sectionHeaderView.numberOfLikes = @(photo.likes.count);
   sectionHeaderView.numberOfComments = @3;
   sectionHeaderView.delegate = self;
   
