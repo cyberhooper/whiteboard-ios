@@ -53,6 +53,7 @@
 		BE1B3FCC17E38B13003494CD /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3FCB17E38B13003494CD /* WBTabBarController.m */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */; };
+		DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E9217E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m */; };
 		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -135,6 +136,8 @@
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD6F1E8D17E39FD30099866F /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Helpers/UIColor+Hex.h"; sourceTree = "<group>"; };
 		DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "Helpers/UIColor+Hex.m"; sourceTree = "<group>"; };
+		DD6F1E9117E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineSectionHeaderButton.h; sourceTree = "<group>"; };
+		DD6F1E9217E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineSectionHeaderButton.m; sourceTree = "<group>"; };
 		DDA25DE317E26DFB00C44622 /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
 		DDA25DE417E26DFB00C44622 /* WBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -301,9 +304,7 @@
 				BE1B3F6417E22117003494CD /* WBPhotoTimelineCell.h */,
 				BE1B3F6517E22117003494CD /* WBPhotoTimelineCell.m */,
 				BE1B3F6617E22117003494CD /* WBPhotoTimelineCell.xib */,
-				BE1B3F6717E22117003494CD /* WBPhotoTimelineSectionHeaderView.h */,
-				BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */,
-				BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */,
+				DD6F1E9017E3A80D0099866F /* Section Header */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -339,6 +340,18 @@
 				DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DD6F1E9017E3A80D0099866F /* Section Header */ = {
+			isa = PBXGroup;
+			children = (
+				BE1B3F6717E22117003494CD /* WBPhotoTimelineSectionHeaderView.h */,
+				BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */,
+				BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */,
+				DD6F1E9117E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.h */,
+				DD6F1E9217E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m */,
+			);
+			name = "Section Header";
 			sourceTree = "<group>";
 		};
 		DDA25DE217E26DEB00C44622 /* WB */ = {
@@ -496,6 +509,7 @@
 				DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
+				DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */,
 				9922AB5A17E0DA6B00D1B18A /* WBParseDataSource.m in Sources */,
 				BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
