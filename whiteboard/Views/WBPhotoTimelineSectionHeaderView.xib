@@ -33,55 +33,15 @@
                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <view contentMode="scaleToFill" id="CpD-Et-oiJ" userLabel="Like View">
+                        <view contentMode="scaleToFill" id="CpD-Et-oiJ" userLabel="Like View" customClass="WBPhotoTimelineSectionHeaderButton">
                             <rect key="frame" x="180" y="0.0" width="44" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Yc0-cr-01p" userLabel="Button - Like">
-                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                    <state key="normal">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="likesButtonPressed:" destination="ZZn-RL-Gty" eventType="touchUpInside" id="oxJ-vc-RpD"/>
-                                    </connections>
-                                </button>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Skb-hS-fDH" userLabel="Label - Likes number">
-                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                         </view>
-                        <view contentMode="scaleToFill" id="E8F-81-5PH" userLabel="Comment View">
-                            <rect key="frame" x="230" y="0.0" width="44" height="44"/>
+                        <view contentMode="scaleToFill" id="E8F-81-5PH" userLabel="Comment View" customClass="WBPhotoTimelineSectionHeaderButton">
+                            <rect key="frame" x="230" y="0.0" width="44.000000000000007" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
-                            <subviews>
-                                <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="zv8-qS-fm5" userLabel="Button - Comment">
-                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                    <state key="normal">
-                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                    </state>
-                                    <connections>
-                                        <action selector="commentsButtonPressed:" destination="ZZn-RL-Gty" eventType="touchUpInside" id="Xdz-1S-vId"/>
-                                    </connections>
-                                </button>
-                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="3mN-lY-gBt" userLabel="Label - Comments number">
-                                    <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
-                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <nil key="highlightedColor"/>
-                                </label>
-                            </subviews>
-                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.80000000000000004" colorSpace="calibratedWhite"/>
                         </view>
                     </subviews>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -90,12 +50,10 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="commentButton" destination="zv8-qS-fm5" id="qVT-6L-Bdg"/>
-                <outlet property="commentNumberLabel" destination="3mN-lY-gBt" id="hLu-Gi-bod"/>
+                <outlet property="commentButton" destination="E8F-81-5PH" id="7mk-CW-YWa"/>
                 <outlet property="dateLabel" destination="OtG-jx-fc6" id="A0X-Zg-c0r"/>
                 <outlet property="displayNameLabel" destination="Hce-uU-dc1" id="zqZ-7m-RxH"/>
-                <outlet property="likeButton" destination="Yc0-cr-01p" id="ToG-It-D8m"/>
-                <outlet property="likeNumberLabel" destination="Skb-hS-fDH" id="1p9-5y-BWF"/>
+                <outlet property="likeButton" destination="CpD-Et-oiJ" id="V8y-JL-B5A"/>
                 <outlet property="profilePictureImageView" destination="0tB-cx-9eo" id="JEV-Su-LEV"/>
             </connections>
         </view>
