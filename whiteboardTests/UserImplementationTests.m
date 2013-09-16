@@ -62,16 +62,10 @@
   XCTAssertEqualObjects(user.email , @"john.smith@gmail.com", @"A User should have an email");
 }
 
-- (void)testUserProfilePictureMediumURL {
-  user.profilePictureMediumURL = [NSURL URLWithString:@"http://www.foobar.jpg"];
+- (void)testUserHasAnAvatar {
+  user.avatar = [NSURL URLWithString:@"http://www.foobar.jpg"];
   NSURL *url = [NSURL URLWithString:@"http://www.foobar.jpg"];
-  XCTAssertEqualObjects(user.profilePictureMediumURL , url, @"user should have a profilePictureMediumURL");
-}
-
-- (void)testUserProfilePictureSmallURL {
-  user.profilePictureSmallURL = [NSURL URLWithString:@"http://www.foobar.jpg"];
-  NSURL *url = [NSURL URLWithString:@"http://www.foobar.jpg"];
-  XCTAssertEqualObjects(user.profilePictureSmallURL , url, @"user should have a profilePictureSmallURL");
+  XCTAssertEqualObjects(user.avatar , url, @"user should have an avatar");
 }
 
 - (void)testUserHasACreationDate {

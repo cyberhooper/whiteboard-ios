@@ -205,14 +205,10 @@
   [query orderByDescending:@"createdAt"];
   [query includeKey:@"user"];
   [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
-    if (!error) {
-      if (success) {
-        NSArray *wbPhotos = [self wbPhotosFromParsePhotos:photos];
-        success(wbPhotos);
-      }
-    } else {
+    if (!error && success)
+      success([self wbPhotosFromParsePhotos:photos]);
+    else
       NSLog(@"Error: %@ %@", error, [error userInfo]);
-    }
   }];
   
   // filter with friends example :
@@ -239,6 +235,7 @@
   wbPhoto.author = [self wbUserFromParseUser:user];
   wbPhoto.createdAt = parsePhoto.createdAt;
   wbPhoto.likes = [parsePhoto objectForKey:@"likes"];
+  wbPhoto.photoID = parsePhoto.objectId;
   NSLog(@"Photo : %@", [wbPhoto description]);
   return wbPhoto;
 }
@@ -250,6 +247,32 @@
   wbUser.avatar = [NSURL URLWithString:[avatarFile url]];
   NSLog(@"User : %@", [wbUser description]);
   return wbUser;
+}
+
+- (void)addComment:(NSString *)comment
+           onPhoto:(WBPhoto *)photo
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure {
+  
+  if (![PFUser currentUser]) {
+    if (failure) {
+      NSError *e = [NSError errorWithDomain:@"" code:0 userInfo:@{@"mesages" : @"You need to be logged in to post a comment"}];
+      failure(e);
+    }
+    return;
+  }
+  
+  PFObject *parseComment = [PFObject objectWithClassName:@"Comment"];
+  [parseComment setObject:comment forKey:@"text"];
+  [parseComment setObject:[PFUser currentUser] forKey:@"user"];
+  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  [parseComment setObject:parsePhoto forKey:@"photo"];
+  [parseComment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (!error && success)
+      success();
+    else if (failure)
+      failure(error);
+  }];
 }
 
 @end

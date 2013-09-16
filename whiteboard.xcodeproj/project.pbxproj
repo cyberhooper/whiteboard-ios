@@ -35,6 +35,8 @@
 		9922AB5E17E107F800D1B18A /* WBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9922AB5D17E107F800D1B18A /* WBManager.m */; };
 		9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940D16717DF62F1008B2825 /* WBDatasourceTests.m */; };
 		994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */; };
+		995D6C2317E78AD300550634 /* WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2217E78AD300550634 /* WBComment.m */; };
+		995D6C2517E78AEA00550634 /* WBCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2417E78AEA00550634 /* WBCommentTests.m */; };
 		996499BC17E3963200AA753F /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 996499BB17E3963200AA753F /* photo.png */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
 		99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7D17DE4FBF00809322 /* MyViewController.m */; };
@@ -105,6 +107,9 @@
 		9922AB5D17E107F800D1B18A /* WBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBManager.m; sourceTree = "<group>"; };
 		9940D16717DF62F1008B2825 /* WBDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDatasourceTests.m; sourceTree = "<group>"; };
 		994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParseConfiguration.plist; sourceTree = "<group>"; };
+		995D6C2117E78AD300550634 /* WBComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBComment.h; sourceTree = "<group>"; };
+		995D6C2217E78AD300550634 /* WBComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBComment.m; sourceTree = "<group>"; };
+		995D6C2417E78AEA00550634 /* WBCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommentTests.m; sourceTree = "<group>"; };
 		996499BB17E3963200AA753F /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
 		99D80C7C17DE4FBF00809322 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
@@ -262,6 +267,7 @@
 			children = (
 				99D80C7017DE0EA200809322 /* UserImplementationTests.m */,
 				99F9609517E390D7005D27EB /* WBPhotoTests.m */,
+				995D6C2417E78AEA00550634 /* WBCommentTests.m */,
 				9940D16717DF62F1008B2825 /* WBDatasourceTests.m */,
 				9919154717DA7B2B005DA25C /* Supporting Files */,
 			);
@@ -288,6 +294,8 @@
 				21A26B5217E362E400BF2BF4 /* WBUser.m */,
 				99F9609217E39034005D27EB /* WBPhoto.h */,
 				99F9609317E39034005D27EB /* WBPhoto.m */,
+				995D6C2117E78AD300550634 /* WBComment.h */,
+				995D6C2217E78AD300550634 /* WBComment.m */,
 			);
 			path = Abstractions;
 			sourceTree = "<group>";
@@ -515,6 +523,7 @@
 				21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
+				995D6C2317E78AD300550634 /* WBComment.m in Sources */,
 				DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */,
 				BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */,
 				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
@@ -529,6 +538,7 @@
 			files = (
 				99F9609617E390D7005D27EB /* WBPhotoTests.m in Sources */,
 				99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */,
+				995D6C2517E78AEA00550634 /* WBCommentTests.m in Sources */,
 				9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

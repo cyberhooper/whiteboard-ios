@@ -70,7 +70,6 @@ static Class DataSourceSubclass = nil;
   return nil;
 }
 
-
 - (void)saveUser:(WBUser *)user
          success:(void(^)(void))success
          failure:(void(^)(NSError *error))failure {
@@ -102,6 +101,13 @@ static Class DataSourceSubclass = nil;
 - (void)latestPhotos:(void(^)(NSArray *photos))success
              failure:(void(^)(NSError *error))failure {
     [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)addComment:(NSString *)comment
+           onPhoto:(WBPhoto *)photo
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
 @end
