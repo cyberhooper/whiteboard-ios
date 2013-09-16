@@ -60,6 +60,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   sectionHeaderView.numberOfLikes = @(photo.likes.count);
   sectionHeaderView.numberOfComments = @3;
   sectionHeaderView.delegate = self;
+  sectionHeaderView.sectionIndex = @(section);
   
   return sectionHeaderView;
 }
@@ -153,7 +154,31 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 }
 
 - (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:sectionView.sectionIndex.intValue]);
+  if (![photo.likes containsObject:[WBDataSource currentUser]]) {
+    [self likePhoto:photo];
+  } else {
+    [self unlikePhoto:photo];
+  }
   NSLog(@"Likes pressed");
+}
+
+- (void)likePhoto:(WBPhoto *)photo {
+  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^{
+    // update UI
+  } failure:^(NSError *error) {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  }];
+}
+
+- (void)unlikePhoto:(WBPhoto *)photo {
+  [[WBDataSource sharedInstance] unlikePhoto:photo withUser:[WBDataSource currentUser] success:^{
+    // update UI
+  } failure:^(NSError *error) {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Un-Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  }];
 }
 
 - (void)didReceiveMemoryWarning

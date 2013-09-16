@@ -222,6 +222,51 @@
   //[query selectKeys:@[@"playerName", @"score"]];
 }
 
+- (void)likePhoto:(WBPhoto *)photo
+         withUser:(WBUser *)user
+          success:(void(^)(void))success
+          failure:(void(^)(NSError *error))failure {
+  NSArray *likes = photo.likes;
+  if (photo.likes) {
+    if (![photo.likes containsObject:user.userID]) {
+      likes = [photo.likes arrayByAddingObject:user.userID];
+    }
+  } else {
+    likes = @[user.userID];
+  }
+  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  [parsePhoto setObject:likes forKey:@"likes"];
+  [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (succeeded && success) {
+      photo.likes = likes;
+      success();
+    } else if (failure) {
+      failure(error);
+    }
+  }];
+}
+
+- (void)unlikePhoto:(WBPhoto *)photo
+           withUser:(WBUser *)user
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure {
+  NSMutableArray *likes = [NSMutableArray arrayWithArray:photo.likes];
+  if ([likes containsObject:user.userID]) {
+    [likes removeObject:user.userID];
+  }
+  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  [parsePhoto setObject:likes forKey:@"likes"];
+  [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (succeeded && success) {
+      photo.likes = likes;
+      success();
+    } else if (failure) {
+      failure(error);
+    }
+  }];
+}
+
+
 - (NSArray *)wbPhotosFromParsePhotos:(NSArray *)parsePhotos {
   NSMutableArray *wbPhotos = [@[] mutableCopy];
   for (PFObject *photo in parsePhotos) {

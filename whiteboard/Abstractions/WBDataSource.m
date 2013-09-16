@@ -56,6 +56,10 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
++ (WBUser *)currentUser {
+  return [[[self class] sharedInstance] currentUser];
+}
+
 - (WBUser *)currentUser {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
   return nil;
@@ -103,5 +107,20 @@ static Class DataSourceSubclass = nil;
              failure:(void(^)(NSError *error))failure {
     [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
+
+- (void)likePhoto:(WBPhoto *)photo
+         withUser:(WBUser *)user
+          success:(void(^)(void))success
+          failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)unlikePhoto:(WBPhoto *)photo
+           withUser:(WBUser *)user
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
 
 @end

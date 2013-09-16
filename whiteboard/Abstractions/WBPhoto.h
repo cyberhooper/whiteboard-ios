@@ -11,6 +11,7 @@
 
 @interface WBPhoto : NSObject
 
+@property (nonatomic, strong) NSString *photoID;
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) WBUser *author;
 @property (nonatomic, strong) NSDate *createdAt;

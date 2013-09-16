@@ -47,6 +47,8 @@
  */
 @property (nonatomic, weak) id<WBPhotoTimelineSectionHeaderViewDelegate> delegate;
 
+@property (nonatomic, strong) NSNumber *sectionIndex;
+
 /**
  The image of the like button in normal state
  */

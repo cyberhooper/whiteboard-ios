@@ -101,7 +101,7 @@ static int kLibraryIndex = 1;
   UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
   WBPhoto *wbPhoto = [WBDataSource createPhoto];
   wbPhoto.image = originalImage;
-  wbPhoto.author = [[WBDataSource sharedInstance] currentUser];
+  wbPhoto.author = [WBDataSource currentUser];
 #warning Add real code to the callbacks
   [[WBDataSource sharedInstance] uploadPhoto:wbPhoto
     success:^{

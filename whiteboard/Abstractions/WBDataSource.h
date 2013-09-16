@@ -112,6 +112,13 @@
 - (WBUser *)currentUser;
 
 /**
+ Get the currently logged in user
+ @returns The currently logged in WBUser, or nil if no user is logged in.
+ */
++ (WBUser *)currentUser;
+
+
+/**
  creates a WBUser object.
  @returns The newly created WBUser
  */
@@ -131,6 +138,16 @@
 
 - (void)latestPhotos:(void(^)(NSArray *photos))success
              failure:(void(^)(NSError *error))failure;
+
+- (void)likePhoto:(WBPhoto *)photo
+         withUser:(WBUser *)user
+          success:(void(^)(void))success
+          failure:(void(^)(NSError *error))failure;
+
+- (void)unlikePhoto:(WBPhoto *)photo
+         withUser:(WBUser *)user
+          success:(void(^)(void))success
+          failure:(void(^)(NSError *error))failure;
 
 #pragma mark - Set Up
 
