@@ -1,0 +1,14 @@
+{
+    "applications": {
+        "_default": {
+            "link": "whiteboard"
+        }, 
+        "whiteboard": {
+            "applicationId": "aIriMbx6w8kAQdmJ1HI2FRJNk6ESBzWvgBABfJR6", 
+            "masterKey": "EotceItS6Ycmb36lulrXM7y0Tgfg2xMOBy3RvdAk"
+        }
+    }, 
+    "global": {
+        "parseVersion": "1.2.12"
+    }
+}
