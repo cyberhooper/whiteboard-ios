@@ -49,6 +49,8 @@
   [self.commentButton setImage:[self commentButtonImage] forState:UIControlStateNormal];
   [self.commentButton setImage:[self commentButtonImageHighlighted] forState:UIControlStateHighlighted];
   [self.commentButton setImage:[self commentButtonImageSelected] forState:UIControlStateSelected];
+  self.commentNumberLabel.font = [[WBTheme sharedTheme] sectionCommentFont];
+  self.commentNumberLabel.textColor = [[WBTheme sharedTheme] sectionCommentFontColor];
   
   // Display name label
   self.displayNameLabel.textColor = [[WBTheme sharedTheme] sectionDisplayNameFontColor];
@@ -60,19 +62,19 @@
 }
 
 - (void)setUpLikeButton {
-#warning set real text colors from the theme
   // Like button
   if (self.isLiked) {
     [self.likeButton setImage:[self likeButtonImageHighlighted] forState:UIControlStateNormal];
     [self.likeButton setImage:[self likeButtonImage] forState:UIControlStateHighlighted];
     [self.likeButton setImage:[self likeButtonImage] forState:UIControlStateSelected];
-    self.likeNumberLabel.textColor = [UIColor whiteColor];
+    self.likeNumberLabel.textColor = [[WBTheme sharedTheme] sectionLikeHighlightedFontColor];
   } else {
     [self.likeButton setImage:[self likeButtonImage] forState:UIControlStateNormal];
     [self.likeButton setImage:[self likeButtonImageHighlighted] forState:UIControlStateHighlighted];
     [self.likeButton setImage:[self likeButtonImageSelected] forState:UIControlStateSelected];
-    self.likeNumberLabel.textColor = [UIColor blackColor];
+    self.likeNumberLabel.textColor = [[WBTheme sharedTheme] sectionLikeFontColor];
   }
+  self.likeNumberLabel.font = [[WBTheme sharedTheme] sectionLikeFont];
 }
 
 #pragma mark - Config

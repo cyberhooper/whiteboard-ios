@@ -10,9 +10,6 @@
 #import "MainFeedCell.h"
 #import "WBDataSource.h"
 
-#warning TODO REMOVE
-#import <Parse/Parse.h>
-
 @interface TestObject : NSObject
 @property (nonatomic, strong) NSString *username;
 @property (nonatomic, strong) NSURL *photoUrl;

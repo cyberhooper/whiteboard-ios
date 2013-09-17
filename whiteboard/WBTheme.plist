@@ -54,6 +54,20 @@
 	<string>#7c7c7c</string>
 	<key>SECTION_dateFontSize</key>
 	<string>11</string>
+	<key>SECTION_likeFont</key>
+	<string>Helvetica</string>
+	<key>SECTION_likeFontColor</key>
+	<string>#111111</string>
+	<key>SECTION_likeHighlightedFontColor</key>
+	<string>#FFFFFF</string>
+	<key>SECTION_likeFontSize</key>
+	<string>15</string>
+	<key>SECTION_commentFont</key>
+	<string>Helvetica</string>
+	<key>SECTION_commentFontColor</key>
+	<string>#111111</string>
+	<key>SECTION_commentFontSize</key>
+	<string>15</string>
 	<key>backgroundImage</key>
 	<string>backgroundLeather</string>
 </dict>

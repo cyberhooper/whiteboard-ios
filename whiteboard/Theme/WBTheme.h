@@ -57,6 +57,16 @@
 
 - (UIColor *)sectionDateNameFontColor;
 
+- (UIFont *)sectionLikeFont;
+
+- (UIColor *)sectionLikeFontColor;
+
+- (UIColor *)sectionLikeHighlightedFontColor;
+
+- (UIFont *)sectionCommentFont;
+
+- (UIColor *)sectionCommentFontColor;
+
 - (UIImage *)tabBarHomeButtonNormalImage;
 - (UIImage *)tabBarHomeButtonSelectedImage;
 - (UIImage *)tabBarActivityButtonNormalImage;

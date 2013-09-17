@@ -32,11 +32,6 @@
   return sharedTheme;
 }
 
-+ (UIColor *)uiColorFromHexString:(NSString *)hexString {
-#warning implement me!
-  return nil;
-}
-
 - (UIImage *)backgroundImage {
   return [UIImage imageNamed:[self.themeDict objectForKey:@"backgroundImage"]];
 }
@@ -67,6 +62,25 @@
 
 - (UIColor *)sectionDateNameFontColor {
   return [UIColor colorWithHex:[self.themeDict objectForKey:@"SECTION_dateFontColor"]];
+}
+
+- (UIFont *)sectionLikeFont {
+  return [UIFont fontWithName:[self.themeDict objectForKey:@"SECTION_likeFont"] size:[[self.themeDict objectForKey:@"SECTION_likeFontSize"] floatValue]];
+}
+
+- (UIColor *)sectionLikeFontColor {
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"SECTION_likeFontColor"]];
+}
+- (UIColor *)sectionLikeHighlightedFontColor {
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"SECTION_likeHighlightedFontColor"]];
+}
+
+- (UIFont *)sectionCommentFont {
+  return [UIFont fontWithName:[self.themeDict objectForKey:@"SECTION_commentFont"] size:[[self.themeDict objectForKey:@"SECTION_commentFontSize"] floatValue]];
+}
+
+- (UIColor *)sectionCommentFontColor {
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"SECTION_commentFontColor"]];
 }
 
 - (UIImage *)tabBarHomeButtonNormalImage {
