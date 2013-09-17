@@ -108,7 +108,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 - (void)configureCell:(WBPhotoTimelineCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
   WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
   // Set the cell image
-  [cell.photoImageView setImageWithPath:photo.url.absoluteString placeholder:nil];
+  [cell.photoImageView setImageWithPath:photo.url.absoluteString placeholder:[[WBTheme sharedTheme] feedPlaceholderImage]];
 }
 
 - (void)tableView:(UITableView *)tableView
