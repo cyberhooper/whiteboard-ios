@@ -66,10 +66,17 @@
   PFUser *pfCurrentUser = [PFUser user];
   [pfCurrentUser setUsername:[userInfo objectForKey:@"userName"]];
   [pfCurrentUser setPassword:[userInfo objectForKey:@"password"]];
+  [pfCurrentUser setEmail:[userInfo objectForKey:@"email"]];
+
   [pfCurrentUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded) {
       [self mapCurrentWBUser:pfCurrentUser];
+      [self loginWithUsername:pfCurrentUser.username andPassWord:pfCurrentUser.password
+    success:^(WBUser *user) {
       success(_currentUser);
+    } failure:^(NSError *error) {
+      failure (error);
+    }];
     }
     else {
       failure (error);

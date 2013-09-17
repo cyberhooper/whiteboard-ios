@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2165EC2917E8B18600AC2F72 /* WBSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2165EC2717E8B18600AC2F72 /* WBSignupViewController.m */; };
+		2165EC2A17E8B18600AC2F72 /* WBSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2165EC2817E8B18600AC2F72 /* WBSignupViewController.xib */; };
+		2165EC2D17E8BBCD00AC2F72 /* EmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2165EC2C17E8BBCD00AC2F72 /* EmailValidator.m */; };
 		218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */; };
 		218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */; };
 		21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A26B5217E362E400BF2BF4 /* WBUser.m */; };
@@ -72,6 +75,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2165EC2617E8B18600AC2F72 /* WBSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSignupViewController.h; sourceTree = "<group>"; };
+		2165EC2717E8B18600AC2F72 /* WBSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSignupViewController.m; sourceTree = "<group>"; };
+		2165EC2817E8B18600AC2F72 /* WBSignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBSignupViewController.xib; sourceTree = "<group>"; };
+		2165EC2B17E8BBCD00AC2F72 /* EmailValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailValidator.h; sourceTree = "<group>"; };
+		2165EC2C17E8BBCD00AC2F72 /* EmailValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailValidator.m; sourceTree = "<group>"; };
 		218D5A2F17E7B2BE007D17DB /* WBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoginViewController.h; sourceTree = "<group>"; };
 		218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLoginViewController.m; sourceTree = "<group>"; };
 		218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoginViewController.xib; sourceTree = "<group>"; };
@@ -332,6 +340,9 @@
 				218D5A2F17E7B2BE007D17DB /* WBLoginViewController.h */,
 				218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */,
 				218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */,
+				2165EC2617E8B18600AC2F72 /* WBSignupViewController.h */,
+				2165EC2717E8B18600AC2F72 /* WBSignupViewController.m */,
+				2165EC2817E8B18600AC2F72 /* WBSignupViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -348,6 +359,8 @@
 		DD2B8ED817E22E920094A3C4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				2165EC2B17E8BBCD00AC2F72 /* EmailValidator.h */,
+				2165EC2C17E8BBCD00AC2F72 /* EmailValidator.m */,
 				BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */,
 				BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */,
 				DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */,
@@ -455,6 +468,7 @@
 				996499BC17E3963200AA753F /* photo.png in Resources */,
 				9919153A17DA7B2A005DA25C /* Images.xcassets in Resources */,
 				994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */,
+				2165EC2A17E8B18600AC2F72 /* WBSignupViewController.xib in Resources */,
 				BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */,
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
 				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
@@ -511,6 +525,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1B3FCC17E38B13003494CD /* WBTabBarController.m in Sources */,
+				2165EC2917E8B18600AC2F72 /* WBSignupViewController.m in Sources */,
 				DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */,
 				DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
@@ -530,6 +545,7 @@
 				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
 				BE1B3F8017E24875003494CD /* WBTheme.m in Sources */,
 				BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */,
+				2165EC2D17E8BBCD00AC2F72 /* EmailValidator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

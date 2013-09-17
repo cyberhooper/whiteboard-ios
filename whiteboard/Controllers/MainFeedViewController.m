@@ -39,7 +39,9 @@
   //[self dummyData];
   if (![[WBDataSource sharedInstance] currentUser].userID) {
     WBLoginViewController *loginVC = [[WBLoginViewController alloc]init];
-    [self presentViewController:loginVC animated:NO completion:nil];
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:loginVC];
+    navController.navigationBarHidden = YES;
+    [self presentViewController:navController animated:NO completion:nil];
   }
 }
 

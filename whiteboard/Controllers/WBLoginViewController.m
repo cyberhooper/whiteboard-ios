@@ -8,6 +8,7 @@
 
 #import "WBLoginViewController.h"
 #import "WBDataSource.h"
+#import "WBSignupViewController.h"
 
 @interface WBLoginViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
@@ -34,6 +35,7 @@
   }
   return YES;
 }
+
 - (IBAction)validFieldsAction:(id)sender {
   [self loginUser];
 }
@@ -44,8 +46,17 @@
                                           success:^(WBUser *user) {
                                             [self dismissViewControllerAnimated:YES completion:nil];
                                           } failure:^(NSError *error) {
-                                            
+                                            [[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Wrong creditentials", @"Wrong creditentials")
+                                                                       message:NSLocalizedString(@"Please try again", @"Please try again")
+                                                                      delegate:nil
+                                                             cancelButtonTitle:nil
+                                                             otherButtonTitles:NSLocalizedString(@"Ok", @"Ok"), nil]show ];
                                           }];
+}
+- (IBAction)registerAction:(id)sender {
+  WBSignupViewController *signupVC = [[WBSignupViewController alloc]init];
+  [self.navigationController pushViewController:signupVC animated:YES];
+  
 }
 
 @end
