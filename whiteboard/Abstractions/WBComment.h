@@ -11,6 +11,7 @@
 
 @interface WBComment : NSObject
 
+@property (nonatomic, strong) NSString *commentID;
 @property (nonatomic, strong) WBUser *author;
 @property (nonatomic, strong) NSString *text;
 @property (nonatomic, strong) NSDate *createdAt;

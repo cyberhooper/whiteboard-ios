@@ -25,6 +25,7 @@
   user = [[WBUser alloc] init];
   date = [NSDate date];
   comment = [[WBComment alloc] init];
+  comment.commentID = @"blabli42toto";
   comment.author = user;
   comment.createdAt = date;
   comment.text = @"Super idée !";
@@ -39,6 +40,10 @@
 
 - (void)testCommentExists {
   XCTAssertNotNil(comment, @"Should be able to create a comment");
+}
+
+- (void)testCommentHAsAnID {
+  XCTAssertEqualObjects(@"blabli42toto", comment.commentID, @"Comment should have an ID");
 }
 
 - (void)testCommentHasAnAuthor {
