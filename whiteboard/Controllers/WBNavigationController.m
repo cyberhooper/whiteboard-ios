@@ -9,6 +9,7 @@
 #import "WBNavigationController.h"
 #import "WBDataSource.h"
 #import "WBPhotoTimelineViewController.h"
+#import "ProfileViewController.h"
 
 @interface WBNavigationController ()
 
@@ -66,6 +67,9 @@ static const int kLogOutIndex = 2;
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
   switch (buttonIndex) {
     case kMyProfileIndex: {
+      ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:NSStringFromClass([ProfileViewController class])
+                                                                                             bundle:nil];
+      [self pushViewController:profileViewController animated:YES];
       break;
     }
     case kFindFriendsIndex: {

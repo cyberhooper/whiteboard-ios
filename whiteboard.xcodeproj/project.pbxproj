@@ -63,6 +63,10 @@
 		BE1B3FCC17E38B13003494CD /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3FCB17E38B13003494CD /* WBTabBarController.m */; };
 		BED03EA317E8B0E000EEEACC /* WBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EA217E8B0E000EEEACC /* WBNavigationController.m */; };
 		BED03EA517E8BDB300EEEACC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BED03EA417E8BDB300EEEACC /* Localizable.strings */; };
+		BED03EAC17E9162400EEEACC /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EAA17E9162400EEEACC /* ProfileViewController.m */; };
+		BED03EAD17E9162400EEEACC /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EAB17E9162400EEEACC /* ProfileViewController.xib */; };
+		BED03EB017E91EDD00EEEACC /* WBProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */; };
+		BED03EB217E91EFB00EEEACC /* WBProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */; };
 		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
@@ -160,6 +164,12 @@
 		BED03EA117E8B0E000EEEACC /* WBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNavigationController.h; sourceTree = "<group>"; };
 		BED03EA217E8B0E000EEEACC /* WBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNavigationController.m; sourceTree = "<group>"; };
 		BED03EA417E8BDB300EEEACC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		BED03EA917E9162400EEEACC /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		BED03EAA17E9162400EEEACC /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		BED03EAB17E9162400EEEACC /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
+		BED03EAE17E91EDD00EEEACC /* WBProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBProfileHeaderView.h; sourceTree = "<group>"; };
+		BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBProfileHeaderView.m; sourceTree = "<group>"; };
+		BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBProfileHeaderView.xib; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD6F1E8D17E39FD30099866F /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Helpers/UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -340,6 +350,9 @@
 				BE1B3F6717E22117003494CD /* WBPhotoTimelineSectionHeaderView.h */,
 				BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */,
 				BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */,
+				BED03EAE17E91EDD00EEEACC /* WBProfileHeaderView.h */,
+				BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */,
+				BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -350,13 +363,10 @@
 				BE1B3F7317E22197003494CD /* MainFeedViewController.h */,
 				BE1B3F7417E22197003494CD /* MainFeedViewController.m */,
 				BE1B3F7517E22197003494CD /* MainFeedViewController.xib */,
+				BED03EA917E9162400EEEACC /* ProfileViewController.h */,
+				BED03EAA17E9162400EEEACC /* ProfileViewController.m */,
+				BED03EAB17E9162400EEEACC /* ProfileViewController.xib */,
 				DDA25DE217E26DEB00C44622 /* WB */,
-				218D5A2F17E7B2BE007D17DB /* WBLoginViewController.h */,
-				218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */,
-				218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */,
-				2165EC2617E8B18600AC2F72 /* WBSignupViewController.h */,
-				2165EC2717E8B18600AC2F72 /* WBSignupViewController.m */,
-				2165EC2817E8B18600AC2F72 /* WBSignupViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -396,6 +406,12 @@
 				BE1B3FCB17E38B13003494CD /* WBTabBarController.m */,
 				BED03EA117E8B0E000EEEACC /* WBNavigationController.h */,
 				BED03EA217E8B0E000EEEACC /* WBNavigationController.m */,
+				218D5A2F17E7B2BE007D17DB /* WBLoginViewController.h */,
+				218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */,
+				218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */,
+				2165EC2617E8B18600AC2F72 /* WBSignupViewController.h */,
+				2165EC2717E8B18600AC2F72 /* WBSignupViewController.m */,
+				2165EC2817E8B18600AC2F72 /* WBSignupViewController.xib */,
 			);
 			name = WB;
 			sourceTree = "<group>";
@@ -479,6 +495,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED03EAD17E9162400EEEACC /* ProfileViewController.xib in Resources */,
 				BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */,
 				BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */,
 				BED03EA517E8BDB300EEEACC /* Localizable.strings in Resources */,
@@ -490,6 +507,7 @@
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
 				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
 				BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */,
+				BED03EB217E91EFB00EEEACC /* WBProfileHeaderView.xib in Resources */,
 				BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 				218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */,
 			);
@@ -545,6 +563,7 @@
 				2165EC2917E8B18600AC2F72 /* WBSignupViewController.m in Sources */,
 				DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */,
 				DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */,
+				BED03EAC17E9162400EEEACC /* ProfileViewController.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
 				9922AB5A17E0DA6B00D1B18A /* WBParseDataSource.m in Sources */,
@@ -562,6 +581,7 @@
 				218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */,
 				BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */,
 				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
+				BED03EB017E91EDD00EEEACC /* WBProfileHeaderView.m in Sources */,
 				BE1B3F8017E24875003494CD /* WBTheme.m in Sources */,
 				BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */,
 				2165EC2D17E8BBCD00AC2F72 /* EmailValidator.m in Sources */,
