@@ -51,12 +51,12 @@ static int kLibraryIndex = 1;
   
   [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarNormalFontColor] } forState:UIControlStateNormal];
   [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarSelectedFontColor] } forState:UIControlStateSelected];
-  self.homeNavigationController = [[UINavigationController alloc] initWithRootViewController:homeViewController];
+  self.homeNavigationController = [[WBNavigationController alloc] initWithRootViewController:homeViewController];
   [self.homeNavigationController setTabBarItem:homeTabBarItem];
 }
 
 - (void)setUpEmptyMiddleViewController {
-  self.emptyMiddleNavigationController = [[UINavigationController alloc] init];
+  self.emptyMiddleNavigationController = [[WBNavigationController alloc] init];
   UITabBarItem *emptyItem = [[UITabBarItem alloc] init];
   emptyItem.enabled = NO;
   [self.emptyMiddleNavigationController setTabBarItem:emptyItem];
@@ -69,7 +69,7 @@ static int kLibraryIndex = 1;
   
   [activityTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarNormalFontColor] } forState:UIControlStateNormal];
   [activityTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarSelectedFontColor] } forState:UIControlStateSelected];
-  self.activityNavigationController = [[UINavigationController alloc] initWithRootViewController:activityViewController];
+  self.activityNavigationController = [[WBNavigationController alloc] initWithRootViewController:activityViewController];
   [self.activityNavigationController setTabBarItem:activityTabBarItem];
 }
 
@@ -102,7 +102,6 @@ static int kLibraryIndex = 1;
   WBPhoto *wbPhoto = [WBDataSource createPhoto];
   wbPhoto.image = originalImage;
   wbPhoto.author = [WBDataSource currentUser];
-#warning Add real code to the callbacks
   [[WBDataSource sharedInstance] uploadPhoto:wbPhoto
     success:^{
       UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Upload Suceeeded" message:@"Photo upload succeeded" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];

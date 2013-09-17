@@ -75,8 +75,11 @@
 - (UIImage *)tabBarSelectedItemImage;
 - (UIImage *)tabBarCameraButtonNormalImage;
 - (UIImage *)tabBarCameraButtonSelectedImage;
-
 - (UIColor *)tabBarNormalFontColor;
 - (UIColor *)tabBarSelectedFontColor;
+
+- (UIImage *)navBarBackgroundImage;
+- (UIImage *)feedPlaceholderImage;
+
 
 @end

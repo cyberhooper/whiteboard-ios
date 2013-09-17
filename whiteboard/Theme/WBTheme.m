@@ -127,4 +127,12 @@
   return [UIColor colorWithHex:[self.themeDict objectForKey:@"tabBarTextColor-Selected"]];
 }
 
+- (UIImage *)navBarBackgroundImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"NAVBAR_backgroundImage"]];
+}
+
+- (UIImage *)feedPlaceholderImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"FEED_placeholderImage"]];
+}
+
 @end

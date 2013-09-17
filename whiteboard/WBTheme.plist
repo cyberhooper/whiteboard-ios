@@ -70,5 +70,9 @@
 	<string>15</string>
 	<key>backgroundImage</key>
 	<string>backgroundLeather</string>
+	<key>NAVBAR_backgroundImage</key>
+	<string>backgroundNavigationBar</string>
+	<key>FEED_placeholderImage</key>
+	<string>PlaceholderPhoto</string>
 </dict>
 </plist>
