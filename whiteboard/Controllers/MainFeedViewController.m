@@ -9,7 +9,6 @@
 #import "MainFeedViewController.h"
 #import "MainFeedCell.h"
 #import "WBDataSource.h"
-#import "WBLoginViewController.h"
 
 @interface TestObject : NSObject
 @property (nonatomic, strong) NSString *username;
@@ -35,10 +34,7 @@
   [super viewDidLoad];
   //[self dummyData];
   if (![[WBDataSource sharedInstance] currentUser].userID) {
-    WBLoginViewController *loginVC = [[WBLoginViewController alloc]init];
-    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:loginVC];
-    navController.navigationBarHidden = YES;
-    [self presentViewController:navController animated:NO completion:nil];
+    [self showLoginScreen];
   }
 }
 

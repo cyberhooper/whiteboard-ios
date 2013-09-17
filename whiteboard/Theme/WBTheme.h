@@ -79,6 +79,11 @@
 - (UIColor *)tabBarSelectedFontColor;
 
 - (UIImage *)navBarBackgroundImage;
+- (UIImage *)navBarSettingsButtonBackgroundImage;
+- (UIImage *)navBarSettingsButtonImage;
+- (UIImage *)navBarSettingsButtonHighlightedImage;
+- (UIFont *)navBarTitleFont;
+- (UIColor *)navBarTitleFontColor;
 - (UIImage *)feedPlaceholderImage;
 
 

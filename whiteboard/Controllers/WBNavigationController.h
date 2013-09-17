@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface WBNavigationController : UINavigationController
+@interface WBNavigationController : UINavigationController <UIActionSheetDelegate>
+
+@property (nonatomic, strong) UIButton *settingsButton;
 
 @end

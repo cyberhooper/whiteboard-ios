@@ -131,6 +131,26 @@
   return [UIImage imageNamed:[self.themeDict objectForKey:@"NAVBAR_backgroundImage"]];
 }
 
+- (UIImage *)navBarSettingsButtonBackgroundImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"NAVBAR_settingsButtonBackgroundImage"]];
+}
+
+- (UIImage *)navBarSettingsButtonImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"NAVBAR_settingsButtonImage"]];
+}
+
+- (UIImage *)navBarSettingsButtonHighlightedImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"NAVBAR_settingsButtonHighlightedImage"]];
+}
+
+- (UIFont *)navBarTitleFont {
+  return [UIFont fontWithName:[self.themeDict objectForKey:@"NAVBAR_titleFont"] size:[[self.themeDict objectForKey:@"NAVBAR_titleFontSize"] floatValue]];
+}
+
+- (UIColor *)navBarTitleFontColor {
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"NAVBAR_titleFontColor"]];
+}
+
 - (UIImage *)feedPlaceholderImage {
   return [UIImage imageNamed:[self.themeDict objectForKey:@"FEED_placeholderImage"]];
 }
