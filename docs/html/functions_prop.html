@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_p"><span>p</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_u"><span>u</span></a></li>
+      <li><a href="#index_v"><span>v</span></a></li>
       <li><a href="#index_w"><span>w</span></a></li>
     </ul>
   </div>
@@ -97,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -111,10 +112,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_a"></a>- a -</h3><ul>
 <li>activityNavigationController
-: <a class="el" href="interface_w_b_tab_bar_controller.html#ad9386990f89bb3d98041ef11f5330773">WBTabBarController</a>
+: <a class="el" href="interface_w_b_tab_bar_controller.html#a12688cc5c0ce6811034e45422ebb2fc8">WBTabBarController</a>
 </li>
 <li>author
-: <a class="el" href="interface_w_b_photo.html#a2f5d6bb135e18c2ae08a82b8255218e5">WBPhoto</a>
+: <a class="el" href="interface_w_b_comment.html#a1d0630ce3dad2f0768344775ca44b060">WBComment</a>
+, <a class="el" href="interface_w_b_photo.html#a2f5d6bb135e18c2ae08a82b8255218e5">WBPhoto</a>
 </li>
 <li>avatar
 : <a class="el" href="interface_w_b_user.html#acbd205d422005bc80825e9e3d32bacdb">WBUser</a>
@@ -126,12 +128,19 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>commentButton
 : <a class="el" href="class_w_b_photo_timeline_section_header_view.html#aec73a68cdcc5bcb08bc32e79ad40b0b2">WBPhotoTimelineSectionHeaderView</a>
 </li>
+<li>commentID
+: <a class="el" href="interface_w_b_comment.html#a1b0d2690b01129ac08fb1fdc1ddda546">WBComment</a>
+</li>
 <li>commentNumberLabel
 : <a class="el" href="class_w_b_photo_timeline_section_header_view.html#ac60975be2269e145b3c9dac174db8307">WBPhotoTimelineSectionHeaderView</a>
 </li>
+<li>comments
+: <a class="el" href="interface_w_b_photo.html#ac331229871edd438caf85fb80daea943">WBPhoto</a>
+</li>
 <li>createdAt
-: <a class="el" href="interface_w_b_user.html#afe737880827c545eb83cd94d01e606e3">WBUser</a>
+: <a class="el" href="interface_w_b_comment.html#a4a93b76ead0b67cb8b9a00df5efb2aee">WBComment</a>
 , <a class="el" href="interface_w_b_photo.html#a2da39db2b667a47878a12f06d6b71634">WBPhoto</a>
+, <a class="el" href="interface_w_b_user.html#afe737880827c545eb83cd94d01e606e3">WBUser</a>
 </li>
 <li>currentUser
 : <a class="el" href="interface_w_b_data_source.html#af6b2d0317c0682ffbc93d5dc9af8265c">WBDataSource</a>
@@ -156,8 +165,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>email
 : <a class="el" href="interface_w_b_user.html#ac5c9c89f934415d36fce92bbbfd221bb">WBUser</a>
 </li>
+<li>emailTextField
+: <a class="el" href="interface_w_b_signup_view_controller.html#abd8fcb410e59223970d79564bac9825e">WBSignupViewController</a>
+</li>
 <li>emptyMiddleNavigationController
-: <a class="el" href="interface_w_b_tab_bar_controller.html#a70fda4328f04f31d73b7aa383b3fd65e">WBTabBarController</a>
+: <a class="el" href="interface_w_b_tab_bar_controller.html#a36adfce32af1447af6ecf6231f7358c7">WBTabBarController</a>
 </li>
 </ul>
 
@@ -171,7 +183,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
 <li>homeNavigationController
-: <a class="el" href="interface_w_b_tab_bar_controller.html#a69dd1e149a0c54dcf01218c4bdd02db0">WBTabBarController</a>
+: <a class="el" href="interface_w_b_tab_bar_controller.html#a51d028ef94c765abd48a444f53b7773a">WBTabBarController</a>
 </li>
 </ul>
 
@@ -213,6 +225,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_p"></a>- p -</h3><ul>
+<li>passwordTextField
+: <a class="el" href="interface_w_b_login_view_controller.html#a65382638d1ae2af3542835d12936b3fd">WBLoginViewController</a>
+, <a class="el" href="interface_w_b_signup_view_controller.html#a607507eaa2f736c36ecd9884522cc6a8">WBSignupViewController</a>
+</li>
+<li>photoID
+: <a class="el" href="interface_w_b_photo.html#aa0f01ff4b8d656d75b2eb658c0cb1d6a">WBPhoto</a>
+</li>
 <li>photoImageView
 : <a class="el" href="interface_w_b_photo_timeline_cell.html#ad9a981691ec4a555e4fb595ba1b3700c">WBPhotoTimelineCell</a>
 </li>
@@ -232,6 +251,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>tableView
 : <a class="el" href="interface_w_b_photo_timeline_view_controller.html#a85335b3ab0cc94a33774a1b5f7bfff3b">WBPhotoTimelineViewController</a>
 </li>
+<li>text
+: <a class="el" href="interface_w_b_comment.html#a3dc285fda62cbd0505ea9b78b6d08e95">WBComment</a>
+</li>
 <li>themeDict
 : <a class="el" href="interface_w_b_theme.html#a144d4774e3f82f06284305a0cb9cbcc8">WBTheme</a>
 </li>
@@ -249,8 +271,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_w_b_user.html#a5172b431217e7202a208cf86ecb44ffa">WBUser</a>
 </li>
 <li>username
-: <a class="el" href="interface_w_b_user.html#a91d4dc6f11e3879a0bb9223db5d1d61e">WBUser</a>
-, <a class="el" href="interface_test_object.html#a344e3abfb8d1386d311eacba316b5457">TestObject</a>
+: <a class="el" href="interface_test_object.html#a344e3abfb8d1386d311eacba316b5457">TestObject</a>
+, <a class="el" href="interface_w_b_user.html#a91d4dc6f11e3879a0bb9223db5d1d61e">WBUser</a>
+</li>
+<li>userNameTextField
+: <a class="el" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">WBSignupViewController</a>
+</li>
+<li>usernameTextField
+: <a class="el" href="interface_w_b_login_view_controller.html#ad70c893a4c0fc4fb88c55ae762d47971">WBLoginViewController</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_v"></a>- v -</h3><ul>
+<li>validationButton
+: <a class="el" href="interface_w_b_login_view_controller.html#aff75d77e793eaa5a3b62d9bcf2d3ca0f">WBLoginViewController</a>
 </li>
 </ul>
 
@@ -263,7 +298,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 16 2013 15:51:20 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 17 2013 18:24:21 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

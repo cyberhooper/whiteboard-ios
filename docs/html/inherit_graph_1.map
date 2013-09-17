@@ -1,7 +1,11 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node2" href="$protocol_w_b_photo_timeline_section_header_view_delegate-p.html" title="\&lt;WBPhotoTimelineSectionHeader\lViewDelegate\&gt;" alt="" coords="168,5,379,46"/>
-<area shape="rect" id="node3" href="$interface_w_b_photo_timeline_view_controller.html" title="WBPhotoTimelineViewController" alt="" coords="427,96,629,123"/>
-<area shape="rect" id="node4" href="$interface_main_feed_view_controller.html" title="MainFeedViewController" alt="" coords="678,96,837,123"/>
-<area shape="rect" id="node8" href="$interface_my_view_controller.html" title="MyViewController" alt="" coords="213,172,333,199"/>
-<area shape="rect" id="node9" href="$interface_w_b_view_controller.html" title="WBViewController" alt="" coords="211,223,335,249"/>
+<area shape="rect" id="node2" href="$interface_email_validator.html" title="EmailValidator" alt="" coords="138,5,241,32"/>
+<area shape="rect" id="node3" href="$interface_test_object.html" title="TestObject" alt="" coords="147,56,231,83"/>
+<area shape="rect" id="node4" href="$interface_w_b_comment.html" title="WBComment" alt="" coords="140,107,239,133"/>
+<area shape="rect" id="node5" href="$interface_w_b_data_source.html" title="WBDataSource" alt="" coords="133,157,245,184"/>
+<area shape="rect" id="node7" href="$interface_w_b_manager.html" title="WBManager" alt="" coords="142,208,237,235"/>
+<area shape="rect" id="node8" href="$interface_w_b_photo.html" title="WBPhoto" alt="" coords="151,259,228,285"/>
+<area shape="rect" id="node9" href="$interface_w_b_theme.html" title="WBTheme" alt="" coords="148,309,231,336"/>
+<area shape="rect" id="node10" href="$interface_w_b_user.html" title="WBUser" alt="" coords="154,360,225,387"/>
+<area shape="rect" id="node6" href="$interface_w_b_parse_data_source.html" title="WBParseDataSource" alt="" coords="293,157,440,184"/>
 </map>

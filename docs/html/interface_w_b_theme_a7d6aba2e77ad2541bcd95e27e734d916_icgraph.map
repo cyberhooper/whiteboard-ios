@@ -1,7 +1,9 @@
 <map id="&#45;[WBTheme sectionLikeButtonSelectedImage]" name="&#45;[WBTheme sectionLikeButtonSelectedImage]">
-<area shape="rect" id="node2" href="$class_w_b_photo_timeline_section_header_view.html#abdec4a2a3fcbce45fe1310f9a1b44d5d" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageHighlighted]" alt="" coords="246,5,493,46"/>
-<area shape="rect" id="node6" href="$class_w_b_photo_timeline_section_header_view.html#ab51bbadddc3d4a03dde3534cd1868452" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageSelected]" alt="" coords="252,70,487,111"/>
-<area shape="rect" id="node3" href="$class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="542,38,711,79"/>
-<area shape="rect" id="node4" href="$class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="765,5,941,46"/>
-<area shape="rect" id="node5" href="$class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="761,70,946,111"/>
+<area shape="rect" id="node2" href="$class_w_b_photo_timeline_section_header_view.html#abdec4a2a3fcbce45fe1310f9a1b44d5d" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageHighlighted]" alt="" coords="246,37,493,78"/>
+<area shape="rect" id="node8" href="$class_w_b_photo_timeline_section_header_view.html#ab51bbadddc3d4a03dde3534cd1868452" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageSelected]" alt="" coords="252,102,487,143"/>
+<area shape="rect" id="node3" href="$class_w_b_photo_timeline_section_header_view.html#a18d7ef8a5876ce56afc030365737e919" title="&#45;[WBPhotoTimelineSection\lHeaderView setUpLikeButton]" alt="" coords="542,70,733,111"/>
+<area shape="rect" id="node4" href="$class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="782,37,951,78"/>
+<area shape="rect" id="node7" href="$class_w_b_photo_timeline_section_header_view.html#a8405afa346e0d90265c02e579f3d581a" title="&#45;[WBPhotoTimelineSection\lHeaderView setIsLiked:]" alt="" coords="782,102,951,143"/>
+<area shape="rect" id="node5" href="$class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="1005,5,1181,46"/>
+<area shape="rect" id="node6" href="$class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="1001,70,1186,111"/>
 </map>

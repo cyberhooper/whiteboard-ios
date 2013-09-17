@@ -1,3 +1,5 @@
 <map id="&#45;[WBParseDataSource currentUser]" name="&#45;[WBParseDataSource currentUser]">
 <area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896" title="&#45;[WBParseDataSource\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="209,5,399,61"/>
+<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c" title="&#45;[WBParseDataSource\l addComment:onPhoto\l:success:failure:]" alt="" coords="227,85,381,141"/>
+<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#a3c835bc612c784e69c8ca48cde429537" title="&#45;[WBParseDataSource\l signupWithInfo:success\l:failure:]" alt="" coords="449,5,607,61"/>
 </map>

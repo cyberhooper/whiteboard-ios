@@ -1,0 +1,10 @@
+<map id="&#45;[WBNavigationController viewWillAppear:]" name="&#45;[WBNavigationController viewWillAppear:]">
+<area shape="rect" id="node2" href="$interface_w_b_navigation_controller.html#a0cd89a4dc9367f73f61da7bb307386a7" title="&#45;[WBNavigationController\l setUpView]" alt="" coords="216,187,379,229"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="439,5,617,32"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#ac4e31c2426f7836ab0e41ee5e75582ac" title="&#45;[WBTheme navBarBackground\lImage]" alt="" coords="427,57,629,98"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#a6dc17d15268dfa16b0c56c0851255f34" title="&#45;[WBTheme navBarSettings\lButtonBackgroundImage]" alt="" coords="438,122,618,163"/>
+<area shape="rect" id="node6" href="$interface_w_b_theme.html#a32b1b72c24a286e365307c99287d50f0" title="&#45;[WBTheme navBarSettings\lButtonImage]" alt="" coords="438,187,618,229"/>
+<area shape="rect" id="node7" href="$interface_w_b_theme.html#ab4c50d7e66debecc23ce53813fa94132" title="&#45;[WBTheme navBarSettings\lButtonHighlightedImage]" alt="" coords="438,253,618,294"/>
+<area shape="rect" id="node8" href="$interface_w_b_theme.html#a9607da91e022be138db5b7dafefe707c" title="&#45;[WBTheme navBarTitleFont\lColor]" alt="" coords="438,318,618,359"/>
+<area shape="rect" id="node9" href="$interface_w_b_theme.html#a15bd4713e8dd4a69d99d6b37ddd7d9cf" title="&#45;[WBTheme navBarTitleFont]" alt="" coords="437,384,619,411"/>
+</map>

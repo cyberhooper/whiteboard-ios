@@ -12,5 +12,5 @@ var searchData=
   ['configurecell_3aforrowatindexpath_3a',['configureCell:forRowAtIndexPath:',['../interface_w_b_photo_timeline_view_controller.html#aef7c65b7145eb586c9a00bfe80a60482',1,'WBPhotoTimelineViewController']]],
   ['createphoto',['createPhoto',['../interface_w_b_data_source.html#a3aee28bc7776aa73da90dca86b9edd98',1,'WBDataSource::createPhoto()'],['../interface_w_b_parse_data_source.html#a346f4f0b9220ef3db661357b6d8a0766',1,'WBParseDataSource::createPhoto()']]],
   ['createuser',['createUser',['../interface_w_b_data_source.html#a718d0a138b4310034015ef2f77743ec4',1,'WBDataSource::createUser()'],['../interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee',1,'WBParseDataSource::createUser()']]],
-  ['currentuser',['currentUser',['../interface_w_b_data_source.html#a0cbb60dc725a9e379b0c2669d6faf157',1,'WBDataSource::currentUser()'],['../interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2',1,'WBParseDataSource::currentUser()']]]
+  ['currentuser',['currentUser',['../interface_w_b_data_source.html#a0cbb60dc725a9e379b0c2669d6faf157',1,'WBDataSource::currentUser()'],['../interface_w_b_data_source.html#a0cbb60dc725a9e379b0c2669d6faf157',1,'WBDataSource::currentUser()'],['../interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2',1,'WBParseDataSource::currentUser()']]]
 ];

@@ -1,6 +1,7 @@
 <map id="WBParseDataSource.m" name="WBParseDataSource.m">
-<area shape="rect" id="node2" href="$_w_b_parse_data_source_8h.html" title="WBParseDataSource.h" alt="" coords="5,80,160,107"/>
-<area shape="rect" id="node3" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="21,155,144,181"/>
-<area shape="rect" id="node5" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="59,304,139,331"/>
-<area shape="rect" id="node6" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="121,229,207,256"/>
+<area shape="rect" id="node2" href="$_w_b_parse_data_source_8h.html" title="WBParseDataSource.h" alt="" coords="21,80,177,107"/>
+<area shape="rect" id="node8" href="$_w_b_comment_8h.html" title="WBComment.h" alt="" coords="184,229,291,256"/>
+<area shape="rect" id="node3" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="10,155,133,181"/>
+<area shape="rect" id="node5" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="105,304,185,331"/>
+<area shape="rect" id="node6" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="21,229,107,256"/>
 </map>

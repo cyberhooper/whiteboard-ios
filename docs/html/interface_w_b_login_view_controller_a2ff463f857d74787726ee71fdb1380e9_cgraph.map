@@ -1,0 +1,5 @@
+<map id="&#45;[WBLoginViewController textFieldShouldReturn:]" name="&#45;[WBLoginViewController textFieldShouldReturn:]">
+<area shape="rect" id="node2" href="$interface_w_b_login_view_controller.html#ae28d727e5512f940c6ccf90447dd8d12" title="&#45;[WBLoginViewController\l loginUser]" alt="" coords="217,55,378,97"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="427,29,645,56"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#ab1466f4a4965134ae95dac14df935098" title="&#45;[WBDataSource loginWith\lUsername:andPassWord:success\l:failure:]" alt="" coords="428,80,644,136"/>
+</map>

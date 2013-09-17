@@ -1,5 +1,6 @@
 <map id="&#45;[MainFeedViewController viewDidLoad]" name="&#45;[MainFeedViewController viewDidLoad]">
 <area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#a0b6d769b23f74af3a7c9b379fc02bdae" title="&#45;[WBPhotoTimelineViewController\l viewDidLoad]" alt="" coords="219,70,427,111"/>
+<area shape="rect" id="node10" href="$interface_w_b_photo_timeline_view_controller.html#a9c3f28effab1b513daf1cae8dc2d8015" title="&#45;[WBPhotoTimelineViewController\l showLoginScreen]" alt="" coords="219,135,427,177"/>
 <area shape="rect" id="node3" href="$interface_w_b_view_controller.html#af9790a37244b6c14923028d44fe72013" title="&#45;[WBViewController\l viewDidLoad]" alt="" coords="513,5,644,46"/>
 <area shape="rect" id="node5" href="$interface_w_b_photo_timeline_view_controller.html#acacefb7adc84f5318d85d27ae20c3c97" title="&#45;[WBPhotoTimelineViewController\l setupView]" alt="" coords="475,70,683,111"/>
 <area shape="rect" id="node7" href="$interface_w_b_photo_timeline_view_controller.html#af4788542079abbbdf68aacc9feab264f" title="&#45;[WBPhotoTimelineViewController\l refreshPhotos]" alt="" coords="475,153,683,194"/>

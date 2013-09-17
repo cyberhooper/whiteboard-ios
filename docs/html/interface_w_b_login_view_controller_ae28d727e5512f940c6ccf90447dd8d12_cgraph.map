@@ -1,0 +1,4 @@
+<map id="&#45;[WBLoginViewController loginUser]" name="&#45;[WBLoginViewController loginUser]">
+<area shape="rect" id="node2" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="217,29,434,56"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#ab1466f4a4965134ae95dac14df935098" title="&#45;[WBDataSource loginWith\lUsername:andPassWord:success\l:failure:]" alt="" coords="217,80,433,136"/>
+</map>

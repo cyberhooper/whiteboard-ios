@@ -1,4 +1,7 @@
 <map id="&#45;[WBDataSource loginWithUsername:andPassWord:success:failure:]" name="&#45;[WBDataSource loginWithUsername:andPassWord:success:failure:]">
 <area shape="rect" id="node2" href="$interface_main_feed_view_controller.html#a38fb6203bc22d2576572da410470c8dd" title="&#45;[MainFeedViewController\l dummyData]" alt="" coords="269,5,435,46"/>
 <area shape="rect" id="node3" href="$interface_my_view_controller.html#aa377609a1de0d3b1cde539355aa5f1f1" title="&#45;[MyViewController\l viewDidLoad]" alt="" coords="289,70,415,111"/>
+<area shape="rect" id="node4" href="$interface_w_b_login_view_controller.html#ae28d727e5512f940c6ccf90447dd8d12" title="&#45;[WBLoginViewController\l loginUser]" alt="" coords="271,135,433,177"/>
+<area shape="rect" id="node5" href="$interface_w_b_login_view_controller.html#a2ff463f857d74787726ee71fdb1380e9" title="&#45;[WBLoginViewController\l textFieldShouldReturn:]" alt="" coords="483,102,645,143"/>
+<area shape="rect" id="node6" href="$interface_w_b_login_view_controller.html#a6636a23fe3319dce1052eb53c9dd1853" title="&#45;[WBLoginViewController\l validFieldsAction:]" alt="" coords="483,167,645,209"/>
 </map>

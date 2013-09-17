@@ -10,6 +10,4 @@
 
 @interface WBNavigationController : UINavigationController <UIActionSheetDelegate>
 
-@property (nonatomic, strong) UIButton *settingsButton;
-
 @end

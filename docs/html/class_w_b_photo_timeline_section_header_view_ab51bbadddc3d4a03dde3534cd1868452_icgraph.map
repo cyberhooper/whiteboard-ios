@@ -1,5 +1,7 @@
 <map id="&#45;[WBPhotoTimelineSectionHeaderView likeButtonImageSelected]" name="&#45;[WBPhotoTimelineSectionHeaderView likeButtonImageSelected]">
-<area shape="rect" id="node2" href="$class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="289,38,458,79"/>
-<area shape="rect" id="node3" href="$class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="512,5,688,46"/>
-<area shape="rect" id="node4" href="$class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="507,70,693,111"/>
+<area shape="rect" id="node2" href="$class_w_b_photo_timeline_section_header_view.html#a18d7ef8a5876ce56afc030365737e919" title="&#45;[WBPhotoTimelineSection\lHeaderView setUpLikeButton]" alt="" coords="289,70,479,111"/>
+<area shape="rect" id="node3" href="$class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="529,37,698,78"/>
+<area shape="rect" id="node6" href="$class_w_b_photo_timeline_section_header_view.html#a8405afa346e0d90265c02e579f3d581a" title="&#45;[WBPhotoTimelineSection\lHeaderView setIsLiked:]" alt="" coords="529,102,698,143"/>
+<area shape="rect" id="node4" href="$class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="752,5,928,46"/>
+<area shape="rect" id="node5" href="$class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="747,70,933,111"/>
 </map>

@@ -1,4 +1,6 @@
 <map id="&#45;[WBParseDataSource signupWithInfo:success:failure:]" name="&#45;[WBParseDataSource signupWithInfo:success:failure:]">
-<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="214,13,367,54"/>
-<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="417,13,570,54"/>
+<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="657,30,810,71"/>
+<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896" title="&#45;[WBParseDataSource\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="214,37,405,93"/>
+<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="859,30,1013,71"/>
+<area shape="rect" id="node5" href="$interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="454,89,607,130"/>
 </map>

@@ -1,10 +1,11 @@
 <map id="&#45;[WBParseDataSource createUser]" name="&#45;[WBParseDataSource createUser]">
-<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="214,54,367,95"/>
-<area shape="rect" id="node6" href="$interface_w_b_parse_data_source.html#a9c134bb913cec5177b775fb73fbc829e" title="&#45;[WBParseDataSource\l wbUserFromParseUser:]" alt="" coords="209,155,373,197"/>
-<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896" title="&#45;[WBParseDataSource\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="649,28,839,84"/>
-<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#a3c835bc612c784e69c8ca48cde429537" title="&#45;[WBParseDataSource\l signupWithInfo:success\l:failure:]" alt="" coords="431,28,590,84"/>
-<area shape="rect" id="node5" href="$interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="434,109,587,150"/>
-<area shape="rect" id="node7" href="$interface_w_b_parse_data_source.html#aad7aa99f2f30692296b32ba74d2a11e0" title="&#45;[WBParseDataSource\l wbPhotoFromParsePhoto:]" alt="" coords="421,174,600,215"/>
-<area shape="rect" id="node8" href="$interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="648,174,840,215"/>
-<area shape="rect" id="node9" href="$interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="889,174,1042,215"/>
+<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="214,119,367,161"/>
+<area shape="rect" id="node7" href="$interface_w_b_parse_data_source.html#a9c134bb913cec5177b775fb73fbc829e" title="&#45;[WBParseDataSource\l wbUserFromParseUser:]" alt="" coords="209,195,373,237"/>
+<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896" title="&#45;[WBParseDataSource\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="649,85,839,141"/>
+<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#a3c835bc612c784e69c8ca48cde429537" title="&#45;[WBParseDataSource\l signupWithInfo:success\l:failure:]" alt="" coords="889,111,1047,167"/>
+<area shape="rect" id="node5" href="$interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="434,49,587,90"/>
+<area shape="rect" id="node6" href="$interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c" title="&#45;[WBParseDataSource\l addComment:onPhoto\l:success:failure:]" alt="" coords="667,5,821,61"/>
+<area shape="rect" id="node8" href="$interface_w_b_parse_data_source.html#aad7aa99f2f30692296b32ba74d2a11e0" title="&#45;[WBParseDataSource\l wbPhotoFromParsePhoto:]" alt="" coords="421,217,600,258"/>
+<area shape="rect" id="node9" href="$interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="648,217,840,258"/>
+<area shape="rect" id="node10" href="$interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="891,217,1045,258"/>
 </map>

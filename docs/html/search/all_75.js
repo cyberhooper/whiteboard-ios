@@ -9,9 +9,12 @@ var searchData=
   ['uiimageview_2broundedcorners_2em',['UIImageView+RoundedCorners.m',['../_u_i_image_view_09_rounded_corners_8m.html',1,'']]],
   ['uiimageview_2bslimageloader_2eh',['UIImageView+SLImageLoader.h',['../_u_i_image_view_09_s_l_image_loader_8h.html',1,'']]],
   ['uiimageview_2bslimageloader_2em',['UIImageView+SLImageLoader.m',['../_u_i_image_view_09_s_l_image_loader_8m.html',1,'']]],
+  ['unlikephoto_3acompletion_3a',['unlikePhoto:completion:',['../interface_w_b_photo_timeline_view_controller.html#a09c4124d1a54a12cfa9c400483cf32a8',1,'WBPhotoTimelineViewController']]],
+  ['unlikephoto_3awithuser_3asuccess_3afailure_3a',['unlikePhoto:withUser:success:failure:',['../interface_w_b_data_source.html#ad1b0246dfd99404c50f31e3fe6920386',1,'WBDataSource::unlikePhoto:withUser:success:failure:()'],['../interface_w_b_parse_data_source.html#a8ebaec2e1488899907515280f1478bd2',1,'WBParseDataSource::unlikePhoto:withUser:success:failure:()']]],
   ['updatedat',['updatedAt',['../interface_w_b_user.html#a2a274e02a801953dac58d613e145d756',1,'WBUser']]],
   ['uploadphoto_3asuccess_3afailure_3aprogress_3a',['uploadPhoto:success:failure:progress:',['../interface_w_b_data_source.html#a83992f1fb78dbf27c07124dad51357aa',1,'WBDataSource::uploadPhoto:success:failure:progress:()'],['../interface_w_b_parse_data_source.html#af3ec936ebdc4fd2a14a9a273eb1f33d0',1,'WBParseDataSource::uploadPhoto:success:failure:progress:()']]],
   ['url',['url',['../interface_w_b_photo.html#a86cd64b38274d9db3088524132006baa',1,'WBPhoto']]],
   ['userid',['userID',['../interface_w_b_user.html#a5172b431217e7202a208cf86ecb44ffa',1,'WBUser']]],
-  ['username',['username',['../interface_w_b_user.html#a91d4dc6f11e3879a0bb9223db5d1d61e',1,'WBUser::username()'],['../interface_test_object.html#a344e3abfb8d1386d311eacba316b5457',1,'TestObject::username()']]]
+  ['username',['username',['../interface_w_b_user.html#a91d4dc6f11e3879a0bb9223db5d1d61e',1,'WBUser::username()'],['../interface_test_object.html#a344e3abfb8d1386d311eacba316b5457',1,'TestObject::username()']]],
+  ['usernametextfield',['userNameTextField',['../interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13',1,'WBSignupViewController::userNameTextField()'],['../interface_w_b_login_view_controller.html#ad70c893a4c0fc4fb88c55ae762d47971',1,'WBLoginViewController::usernameTextField()']]]
 ];

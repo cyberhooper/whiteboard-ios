@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -120,115 +120,169 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11">sharedTheme</a>;</div>
 <div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;}</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;+ (UIColor *)uiColorFromHexString:(NSString *)hexString {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#warning implement me!</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;<span class="preprocessor"></span>  <span class="keywordflow">return</span> nil;</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;}</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#aa36717901832ca032d31d81bc4c1287c">backgroundImage</a> {</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;backgroundImage&quot;]];</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;}</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a11c9bbd646b2236fc8f2d72da6dfddb1">sectionLikeButtonNormalImage</a> {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_likeButtonImage-Normal&quot;]];</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a7d6aba2e77ad2541bcd95e27e734d916">sectionLikeButtonSelectedImage</a> {</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_likeButtonImage-Selected&quot;]];</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#ab577d4cd965fcf4c7e29878b3ebc8818">sectionCommentButtonNormalImage</a> {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_commentButtonImage-Normal&quot;]];</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;- (UIFont *)<a class="code" href="interface_w_b_theme.html#a575b7e847a5f581d6292fe12608c1201">sectionDisplayNameFont</a> {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  <span class="keywordflow">return</span> [UIFont fontWithName:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_displayNameFont&quot;] size:[[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_displayNameFontSize&quot;] floatValue]];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#a3ed1a48f648b5f286dff4831ca21d986">sectionDisplayNameFontColor</a> {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_displayNameFontColor&quot;]];</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;}</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;- (UIFont *)<a class="code" href="interface_w_b_theme.html#a527fc28543fd1a7bf5ce2d948b923a6d">sectionDateNameFont</a> {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;  <span class="keywordflow">return</span> [UIFont fontWithName:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_dateFont&quot;] size:[[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_dateFontSize&quot;] floatValue]];</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;}</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#aede990ffdd63f29c65d701f5f83d170a">sectionDateNameFontColor</a> {</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_dateFontColor&quot;]];</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;}</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#ac89ae56c1ec5393974fe3b2d189a301a">tabBarHomeButtonNormalImage</a> {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  UIImage *image = [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarHomeButtonImage-Normal&quot;]];</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  <span class="keywordflow">return</span> [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;}</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a041689263438c535bef635d67301f507">tabBarHomeButtonSelectedImage</a> {</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  UIImage *image = [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarHomeButtonImage-Selected&quot;]];</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#aa36717901832ca032d31d81bc4c1287c">backgroundImage</a> {</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;backgroundImage&quot;]];</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;}</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a11c9bbd646b2236fc8f2d72da6dfddb1">sectionLikeButtonNormalImage</a> {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_likeButtonImage-Normal&quot;]];</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;}</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a7d6aba2e77ad2541bcd95e27e734d916">sectionLikeButtonSelectedImage</a> {</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_likeButtonImage-Selected&quot;]];</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#ab577d4cd965fcf4c7e29878b3ebc8818">sectionCommentButtonNormalImage</a> {</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_commentButtonImage-Normal&quot;]];</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;}</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;- (UIFont *)<a class="code" href="interface_w_b_theme.html#a575b7e847a5f581d6292fe12608c1201">sectionDisplayNameFont</a> {</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> [UIFont fontWithName:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_displayNameFont&quot;] size:[[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_displayNameFontSize&quot;] floatValue]];</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#a3ed1a48f648b5f286dff4831ca21d986">sectionDisplayNameFontColor</a> {</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_displayNameFontColor&quot;]];</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;}</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;- (UIFont *)<a class="code" href="interface_w_b_theme.html#a527fc28543fd1a7bf5ce2d948b923a6d">sectionDateNameFont</a> {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  <span class="keywordflow">return</span> [UIFont fontWithName:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_dateFont&quot;] size:[[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_dateFontSize&quot;] floatValue]];</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;}</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#aede990ffdd63f29c65d701f5f83d170a">sectionDateNameFontColor</a> {</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_dateFontColor&quot;]];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;}</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;- (UIFont *)<a class="code" href="interface_w_b_theme.html#acd6ac6529994adec1c4747496ce9df58">sectionLikeFont</a> {</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  <span class="keywordflow">return</span> [UIFont fontWithName:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_likeFont&quot;] size:[[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_likeFontSize&quot;] floatValue]];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;}</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#a2533a3f15a9a53b8e09f60b9aeafe547">sectionLikeFontColor</a> {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_likeFontColor&quot;]];</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;}</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#a7b2cfbb273a805af0b8820a09b400f79">sectionLikeHighlightedFontColor</a> {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_likeHighlightedFontColor&quot;]];</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;}</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;- (UIFont *)<a class="code" href="interface_w_b_theme.html#a4304a83fbd381be1856c98b0d1bd80f2">sectionCommentFont</a> {</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  <span class="keywordflow">return</span> [UIFont fontWithName:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_commentFont&quot;] size:[[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_commentFontSize&quot;] floatValue]];</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;}</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#ad370d626d88e7d277bd7bd015c2fb8e7">tabBarActivityButtonNormalImage</a> {</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  UIImage *image = [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarActivityButtonImage-Normal&quot;]];</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  <span class="keywordflow">return</span> [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;}</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a1f49a1f158c7f1d5639e03ad20e06007">tabBarActivityButtonSelectedImage</a> {</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  UIImage *image = [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarActivityButtonImage-Selected&quot;]];</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  <span class="keywordflow">return</span> [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a124e8c3eb45c0c1c78201beb6f8cc1ca">tabBarBackgroundImage</a> {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarBackgroundImage&quot;]];</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#af85a9a68b8cd29e4cddbadcfa9f30309">sectionCommentFontColor</a> {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;SECTION_commentFontColor&quot;]];</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;}</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#ac89ae56c1ec5393974fe3b2d189a301a">tabBarHomeButtonNormalImage</a> {</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  UIImage *image = [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarHomeButtonImage-Normal&quot;]];</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  <span class="keywordflow">return</span> [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;}</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a041689263438c535bef635d67301f507">tabBarHomeButtonSelectedImage</a> {</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  UIImage *image = [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarHomeButtonImage-Selected&quot;]];</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  <span class="keywordflow">return</span> [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;}</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#af8de434e3a1b63829f052ecffa62fd2c">tabBarSelectedItemImage</a> {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarSelectedItemImage&quot;]];</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;}</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a07f128bfbc77c8e93b8bbe24300b0afa">tabBarCameraButtonNormalImage</a> {</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarCameraButtonImage-Normal&quot;]];</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;}</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#abbe42919864374df32e7eb5d384d3a79">tabBarCameraButtonSelectedImage</a> {</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarCameraButtonImage-Selected&quot;]];</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;}</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#a6608047b12439bb61968b270327c2603">tabBarNormalFontColor</a> {</div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarTextColor-Normal&quot;]];</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;}</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#affbb8fb4cd74a9f4b0c1cb042793d1d3">tabBarSelectedFontColor</a> {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarTextColor-Selected&quot;]];</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;}</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#ad370d626d88e7d277bd7bd015c2fb8e7">tabBarActivityButtonNormalImage</a> {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;  UIImage *image = [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarActivityButtonImage-Normal&quot;]];</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  <span class="keywordflow">return</span> [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;}</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a1f49a1f158c7f1d5639e03ad20e06007">tabBarActivityButtonSelectedImage</a> {</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  UIImage *image = [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarActivityButtonImage-Selected&quot;]];</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;  <span class="keywordflow">return</span> [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;}</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a124e8c3eb45c0c1c78201beb6f8cc1ca">tabBarBackgroundImage</a> {</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarBackgroundImage&quot;]];</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;}</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#af8de434e3a1b63829f052ecffa62fd2c">tabBarSelectedItemImage</a> {</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarSelectedItemImage&quot;]];</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;}</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a07f128bfbc77c8e93b8bbe24300b0afa">tabBarCameraButtonNormalImage</a> {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarCameraButtonImage-Normal&quot;]];</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;}</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#abbe42919864374df32e7eb5d384d3a79">tabBarCameraButtonSelectedImage</a> {</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarCameraButtonImage-Selected&quot;]];</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#a6608047b12439bb61968b270327c2603">tabBarNormalFontColor</a> {</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarTextColor-Normal&quot;]];</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;}</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#affbb8fb4cd74a9f4b0c1cb042793d1d3">tabBarSelectedFontColor</a> {</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;tabBarTextColor-Selected&quot;]];</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;}</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#ac4e31c2426f7836ab0e41ee5e75582ac">navBarBackgroundImage</a> {</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;NAVBAR_backgroundImage&quot;]];</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;}</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a6dc17d15268dfa16b0c56c0851255f34">navBarSettingsButtonBackgroundImage</a> {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;NAVBAR_settingsButtonBackgroundImage&quot;]];</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;}</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a32b1b72c24a286e365307c99287d50f0">navBarSettingsButtonImage</a> {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;NAVBAR_settingsButtonImage&quot;]];</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;}</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#ab4c50d7e66debecc23ce53813fa94132">navBarSettingsButtonHighlightedImage</a> {</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;NAVBAR_settingsButtonHighlightedImage&quot;]];</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;}</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;- (UIFont *)<a class="code" href="interface_w_b_theme.html#a15bd4713e8dd4a69d99d6b37ddd7d9cf">navBarTitleFont</a> {</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;  <span class="keywordflow">return</span> [UIFont fontWithName:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;NAVBAR_titleFont&quot;] size:[[<span class="keyword">self</span>.themeDict objectForKey:@&quot;NAVBAR_titleFontSize&quot;] floatValue]];</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;}</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;- (UIColor *)<a class="code" href="interface_w_b_theme.html#a9607da91e022be138db5b7dafefe707c">navBarTitleFontColor</a> {</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;  <span class="keywordflow">return</span> [UIColor colorWithHex:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;NAVBAR_titleFontColor&quot;]];</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;}</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;- (UIImage *)<a class="code" href="interface_w_b_theme.html#a0aeefa2b32b5730ddab2e5c0c0c68550">feedPlaceholderImage</a> {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;  <span class="keywordflow">return</span> [UIImage imageNamed:[<span class="keyword">self</span>.themeDict objectForKey:@&quot;FEED_placeholderImage&quot;]];</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;}</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;<span class="keyword">@end</span></div>
 <div class="ttc" id="interface_w_b_theme_html_ac89ae56c1ec5393974fe3b2d189a301a"><div class="ttname"><a href="interface_w_b_theme.html#ac89ae56c1ec5393974fe3b2d189a301a">-[WBTheme tabBarHomeButtonNormalImage]</a></div><div class="ttdeci">UIImage * tabBarHomeButtonNormalImage()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_a9607da91e022be138db5b7dafefe707c"><div class="ttname"><a href="interface_w_b_theme.html#a9607da91e022be138db5b7dafefe707c">-[WBTheme navBarTitleFontColor]</a></div><div class="ttdeci">UIColor * navBarTitleFontColor()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_af8de434e3a1b63829f052ecffa62fd2c"><div class="ttname"><a href="interface_w_b_theme.html#af8de434e3a1b63829f052ecffa62fd2c">-[WBTheme tabBarSelectedItemImage]</a></div><div class="ttdeci">UIImage * tabBarSelectedItemImage()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_a7b2cfbb273a805af0b8820a09b400f79"><div class="ttname"><a href="interface_w_b_theme.html#a7b2cfbb273a805af0b8820a09b400f79">-[WBTheme sectionLikeHighlightedFontColor]</a></div><div class="ttdeci">UIColor * sectionLikeHighlightedFontColor()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_affbb8fb4cd74a9f4b0c1cb042793d1d3"><div class="ttname"><a href="interface_w_b_theme.html#affbb8fb4cd74a9f4b0c1cb042793d1d3">-[WBTheme tabBarSelectedFontColor]</a></div><div class="ttdeci">UIColor * tabBarSelectedFontColor()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_a6dc17d15268dfa16b0c56c0851255f34"><div class="ttname"><a href="interface_w_b_theme.html#a6dc17d15268dfa16b0c56c0851255f34">-[WBTheme navBarSettingsButtonBackgroundImage]</a></div><div class="ttdeci">UIImage * navBarSettingsButtonBackgroundImage()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_a2533a3f15a9a53b8e09f60b9aeafe547"><div class="ttname"><a href="interface_w_b_theme.html#a2533a3f15a9a53b8e09f60b9aeafe547">-[WBTheme sectionLikeFontColor]</a></div><div class="ttdeci">UIColor * sectionLikeFontColor()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_a6608047b12439bb61968b270327c2603"><div class="ttname"><a href="interface_w_b_theme.html#a6608047b12439bb61968b270327c2603">-[WBTheme tabBarNormalFontColor]</a></div><div class="ttdeci">UIColor * tabBarNormalFontColor()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_ad370d626d88e7d277bd7bd015c2fb8e7"><div class="ttname"><a href="interface_w_b_theme.html#ad370d626d88e7d277bd7bd015c2fb8e7">-[WBTheme tabBarActivityButtonNormalImage]</a></div><div class="ttdeci">UIImage * tabBarActivityButtonNormalImage()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_a11c9bbd646b2236fc8f2d72da6dfddb1"><div class="ttname"><a href="interface_w_b_theme.html#a11c9bbd646b2236fc8f2d72da6dfddb1">-[WBTheme sectionLikeButtonNormalImage]</a></div><div class="ttdeci">UIImage * sectionLikeButtonNormalImage()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_a527fc28543fd1a7bf5ce2d948b923a6d"><div class="ttname"><a href="interface_w_b_theme.html#a527fc28543fd1a7bf5ce2d948b923a6d">-[WBTheme sectionDateNameFont]</a></div><div class="ttdeci">UIFont * sectionDateNameFont()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_ac34ebf79ff51317f2fe4b8f27142cb11"><div class="ttname"><a href="interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11">+[WBTheme sharedTheme]</a></div><div class="ttdeci">WBTheme * sharedTheme()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_ac4e31c2426f7836ab0e41ee5e75582ac"><div class="ttname"><a href="interface_w_b_theme.html#ac4e31c2426f7836ab0e41ee5e75582ac">-[WBTheme navBarBackgroundImage]</a></div><div class="ttdeci">UIImage * navBarBackgroundImage()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_a4304a83fbd381be1856c98b0d1bd80f2"><div class="ttname"><a href="interface_w_b_theme.html#a4304a83fbd381be1856c98b0d1bd80f2">-[WBTheme sectionCommentFont]</a></div><div class="ttdeci">UIFont * sectionCommentFont()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_ab577d4cd965fcf4c7e29878b3ebc8818"><div class="ttname"><a href="interface_w_b_theme.html#ab577d4cd965fcf4c7e29878b3ebc8818">-[WBTheme sectionCommentButtonNormalImage]</a></div><div class="ttdeci">UIImage * sectionCommentButtonNormalImage()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_a7d6aba2e77ad2541bcd95e27e734d916"><div class="ttname"><a href="interface_w_b_theme.html#a7d6aba2e77ad2541bcd95e27e734d916">-[WBTheme sectionLikeButtonSelectedImage]</a></div><div class="ttdeci">UIImage * sectionLikeButtonSelectedImage()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_a3ed1a48f648b5f286dff4831ca21d986"><div class="ttname"><a href="interface_w_b_theme.html#a3ed1a48f648b5f286dff4831ca21d986">-[WBTheme sectionDisplayNameFontColor]</a></div><div class="ttdeci">UIColor * sectionDisplayNameFontColor()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_abbe42919864374df32e7eb5d384d3a79"><div class="ttname"><a href="interface_w_b_theme.html#abbe42919864374df32e7eb5d384d3a79">-[WBTheme tabBarCameraButtonSelectedImage]</a></div><div class="ttdeci">UIImage * tabBarCameraButtonSelectedImage()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_a0aeefa2b32b5730ddab2e5c0c0c68550"><div class="ttname"><a href="interface_w_b_theme.html#a0aeefa2b32b5730ddab2e5c0c0c68550">-[WBTheme feedPlaceholderImage]</a></div><div class="ttdeci">UIImage * feedPlaceholderImage()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_aede990ffdd63f29c65d701f5f83d170a"><div class="ttname"><a href="interface_w_b_theme.html#aede990ffdd63f29c65d701f5f83d170a">-[WBTheme sectionDateNameFontColor]</a></div><div class="ttdeci">UIColor * sectionDateNameFontColor()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_ab4c50d7e66debecc23ce53813fa94132"><div class="ttname"><a href="interface_w_b_theme.html#ab4c50d7e66debecc23ce53813fa94132">-[WBTheme navBarSettingsButtonHighlightedImage]</a></div><div class="ttdeci">UIImage * navBarSettingsButtonHighlightedImage()</div></div>
 <div class="ttc" id="_u_i_color_09_hex_8h_html"><div class="ttname"><a href="_u_i_color_09_hex_8h.html">UIColor+Hex.h</a></div></div>
+<div class="ttc" id="interface_w_b_theme_html_a15bd4713e8dd4a69d99d6b37ddd7d9cf"><div class="ttname"><a href="interface_w_b_theme.html#a15bd4713e8dd4a69d99d6b37ddd7d9cf">-[WBTheme navBarTitleFont]</a></div><div class="ttdeci">UIFont * navBarTitleFont()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_a575b7e847a5f581d6292fe12608c1201"><div class="ttname"><a href="interface_w_b_theme.html#a575b7e847a5f581d6292fe12608c1201">-[WBTheme sectionDisplayNameFont]</a></div><div class="ttdeci">UIFont * sectionDisplayNameFont()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_a1f49a1f158c7f1d5639e03ad20e06007"><div class="ttname"><a href="interface_w_b_theme.html#a1f49a1f158c7f1d5639e03ad20e06007">-[WBTheme tabBarActivityButtonSelectedImage]</a></div><div class="ttdeci">UIImage * tabBarActivityButtonSelectedImage()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_a32b1b72c24a286e365307c99287d50f0"><div class="ttname"><a href="interface_w_b_theme.html#a32b1b72c24a286e365307c99287d50f0">-[WBTheme navBarSettingsButtonImage]</a></div><div class="ttdeci">UIImage * navBarSettingsButtonImage()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_aa36717901832ca032d31d81bc4c1287c"><div class="ttname"><a href="interface_w_b_theme.html#aa36717901832ca032d31d81bc4c1287c">-[WBTheme backgroundImage]</a></div><div class="ttdeci">UIImage * backgroundImage()</div></div>
+<div class="ttc" id="interface_w_b_theme_html_af85a9a68b8cd29e4cddbadcfa9f30309"><div class="ttname"><a href="interface_w_b_theme.html#af85a9a68b8cd29e4cddbadcfa9f30309">-[WBTheme sectionCommentFontColor]</a></div><div class="ttdeci">UIColor * sectionCommentFontColor()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_a041689263438c535bef635d67301f507"><div class="ttname"><a href="interface_w_b_theme.html#a041689263438c535bef635d67301f507">-[WBTheme tabBarHomeButtonSelectedImage]</a></div><div class="ttdeci">UIImage * tabBarHomeButtonSelectedImage()</div></div>
 <div class="ttc" id="interface_w_b_theme_html"><div class="ttname"><a href="interface_w_b_theme.html">WBTheme</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_theme_8h_source.html#l00016">WBTheme.h:16</a></div></div>
 <div class="ttc" id="interface_w_b_theme_html_a07f128bfbc77c8e93b8bbe24300b0afa"><div class="ttname"><a href="interface_w_b_theme.html#a07f128bfbc77c8e93b8bbe24300b0afa">-[WBTheme tabBarCameraButtonNormalImage]</a></div><div class="ttdeci">UIImage * tabBarCameraButtonNormalImage()</div></div>
 <div class="ttc" id="_w_b_theme_8h_html"><div class="ttname"><a href="_w_b_theme_8h.html">WBTheme.h</a></div></div>
 <div class="ttc" id="interface_w_b_theme_html_a124e8c3eb45c0c1c78201beb6f8cc1ca"><div class="ttname"><a href="interface_w_b_theme.html#a124e8c3eb45c0c1c78201beb6f8cc1ca">-[WBTheme tabBarBackgroundImage]</a></div><div class="ttdeci">UIImage * tabBarBackgroundImage()</div></div>
 <div class="ttc" id="interface_w_b_theme_html_a144d4774e3f82f06284305a0cb9cbcc8"><div class="ttname"><a href="interface_w_b_theme.html#a144d4774e3f82f06284305a0cb9cbcc8">WBTheme::themeDict</a></div><div class="ttdeci">NSDictionary * themeDict</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_theme_8m_source.html#l00017">WBTheme.m:17</a></div></div>
+<div class="ttc" id="interface_w_b_theme_html_acd6ac6529994adec1c4747496ce9df58"><div class="ttname"><a href="interface_w_b_theme.html#acd6ac6529994adec1c4747496ce9df58">-[WBTheme sectionLikeFont]</a></div><div class="ttdeci">UIFont * sectionLikeFont()</div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 16 2013 15:51:19 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 17 2013 18:24:20 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

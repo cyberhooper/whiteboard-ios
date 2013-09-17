@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -113,6 +113,8 @@ Instance Methods</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
+<tr class="memitem:aa0f01ff4b8d656d75b2eb658c0cb1d6a"><td class="memItemLeft" align="right" valign="top">NSString *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_w_b_photo.html#aa0f01ff4b8d656d75b2eb658c0cb1d6a">photoID</a></td></tr>
+<tr class="separator:aa0f01ff4b8d656d75b2eb658c0cb1d6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c6c6fcc2532a1d50ad22dcdf881f83d"><td class="memItemLeft" align="right" valign="top">UIImage *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_w_b_photo.html#a3c6c6fcc2532a1d50ad22dcdf881f83d">image</a></td></tr>
 <tr class="separator:a3c6c6fcc2532a1d50ad22dcdf881f83d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f5d6bb135e18c2ae08a82b8255218e5"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_w_b_user.html">WBUser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_w_b_photo.html#a2f5d6bb135e18c2ae08a82b8255218e5">author</a></td></tr>
@@ -123,6 +125,8 @@ Properties</h2></td></tr>
 <tr class="separator:a86cd64b38274d9db3088524132006baa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2034a52b12ab414fbdfa691428202edf"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_w_b_photo.html#a2034a52b12ab414fbdfa691428202edf">likes</a></td></tr>
 <tr class="separator:a2034a52b12ab414fbdfa691428202edf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac331229871edd438caf85fb80daea943"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_w_b_photo.html#ac331229871edd438caf85fb80daea943">comments</a></td></tr>
+<tr class="separator:ac331229871edd438caf85fb80daea943"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -186,7 +190,29 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00015">15</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00016">16</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac331229871edd438caf85fb80daea943"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSArray*) comments</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00020">20</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
 
 </div>
 </div>
@@ -208,7 +234,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00016">16</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00017">17</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
 
 </div>
 </div>
@@ -230,7 +256,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00014">14</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00015">15</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
 
 </div>
 </div>
@@ -252,7 +278,29 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00018">18</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00019">19</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa0f01ff4b8d656d75b2eb658c0cb1d6a"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (NSString*) photoID</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">read</span><span class="mlabel">write</span><span class="mlabel">nonatomic</span><span class="mlabel">strong</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00014">14</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
 
 </div>
 </div>
@@ -274,7 +322,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00017">17</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_photo_8h_source.html#l00018">18</a> of file <a class="el" href="_w_b_photo_8h_source.html">WBPhoto.h</a>.</p>
 
 </div>
 </div>
@@ -285,7 +333,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Mon Sep 16 2013 15:51:19 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Sep 17 2013 18:24:21 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>
