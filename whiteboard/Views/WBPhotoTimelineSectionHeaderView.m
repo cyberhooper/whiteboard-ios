@@ -47,9 +47,7 @@
   [self.profilePictureImageView roundedCornersWithRadius:3.f];
   
   // Like button
-  self.likeButton.normalImage = [self likeButtonImage];
-  self.likeButton.highlightedImage = [self likeButtonImageHighlighted];
-  self.likeButton.selectedImage = [self likeButtonImageSelected];
+  [self setUpLikeButton];
 
   // Comment button
   self.commentButton.normalImage = [self commentButtonImage];
@@ -63,6 +61,19 @@
   // Date label
   self.dateLabel.font = [[WBTheme sharedTheme] sectionDateNameFont];
   self.dateLabel.textColor = [[WBTheme sharedTheme] sectionDateNameFontColor];
+}
+
+- (void)setUpLikeButton {
+  // Like button
+  if (self.isLiked) {
+    self.likeButton.normalImage = [self likeButtonImageHighlighted];
+    self.likeButton.highlightedImage = [self likeButtonImageHighlighted];
+    self.likeButton.selectedImage = [self likeButtonImageSelected];
+  } else {
+    self.likeButton.normalImage = [self likeButtonImage];
+    self.likeButton.highlightedImage = [self likeButtonImageHighlighted];
+    self.likeButton.selectedImage = [self likeButtonImageSelected];
+  }
 }
 
 #pragma mark - Config
@@ -118,7 +129,7 @@
   _date = date;
   
   TTTTimeIntervalFormatter *timeIntervalFormatter = [[TTTTimeIntervalFormatter alloc] init];
-  self.dateLabel.text = [timeIntervalFormatter stringForTimeIntervalFromDate:date toDate:[NSDate date]];
+  self.dateLabel.text = [timeIntervalFormatter stringForTimeIntervalFromDate:[NSDate date] toDate:date];
 }
 
 - (void)setNumberOfLikes:(NSNumber *)numberOfLikes {
@@ -133,6 +144,10 @@
   self.commentButton.numberLabel.text = [NSString stringWithFormat:@"%d", numberOfComments.intValue];
 }
 
+- (void)setIsLiked:(BOOL)isLiked {
+  _isLiked = isLiked;
+  [self setUpLikeButton];
+}
 #pragma mark - IBActions
 - (void)wbPhotoTimelineSectionHeaderButtonPressed:(WBPhotoTimelineSectionHeaderButton *)button {
   if(button == self.likeButton){

@@ -1,0 +1,7 @@
+<map id="&#45;[WBTabBarController setUpHomeViewController]" name="&#45;[WBTabBarController setUpHomeViewController]">
+<area shape="rect" id="node2" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="242,5,419,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ac89ae56c1ec5393974fe3b2d189a301a" title="&#45;[WBTheme tabBarHomeButton\lNormalImage]" alt="" coords="230,57,431,98"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#a041689263438c535bef635d67301f507" title="&#45;[WBTheme tabBarHomeButton\lSelectedImage]" alt="" coords="230,122,431,163"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#a6608047b12439bb61968b270327c2603" title="&#45;[WBTheme tabBarNormalFont\lColor]" alt="" coords="233,187,428,229"/>
+<area shape="rect" id="node6" href="$interface_w_b_theme.html#affbb8fb4cd74a9f4b0c1cb042793d1d3" title="&#45;[WBTheme tabBarSelected\lFontColor]" alt="" coords="241,253,421,294"/>
+</map>

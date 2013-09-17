@@ -102,31 +102,33 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div>
 <div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="keyword">@implementation </span><a class="code" href="interface_w_b_manager.html">WBManager</a></div>
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="interface_w_b_manager.html#af3684132d9705d7cbd8f3def488287d0">   14</a></span>&#160;+ (void)<a class="code" href="interface_w_b_manager.html#af3684132d9705d7cbd8f3def488287d0">setUp</a> {</div>
+<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="interface_w_b_manager.html#aecfee6267d07190ed07d6737f6214813">   14</a></span>&#160;+ (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {</div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  Class dataSourceClass = [<span class="keyword">self</span> <a class="code" href="interface_w_b_manager.html#a0f5d3c88c589b705402f305dbb0ec15f">dataSourceSubclass</a>];</div>
 <div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;  <span class="keywordflow">if</span> (!dataSourceClass)</div>
 <div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    [NSException raise:@&quot;You should implement a WBDataSource subclass and put its name in the Info.plist under &#39;DataSourceImplementation&#39; key.&quot; format:nil];</div>
 <div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  [<a class="code" href="interface_w_b_data_source.html">WBDataSource</a> <a class="code" href="interface_w_b_data_source.html#adb11eda36c7bd1d99df0c86be03ca08f">setDataSourceSubclass</a>:[<span class="keyword">self</span> <a class="code" href="interface_w_b_manager.html#a0f5d3c88c589b705402f305dbb0ec15f">dataSourceSubclass</a>]];</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;}</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="interface_w_b_manager.html#a0f5d3c88c589b705402f305dbb0ec15f">   21</a></span>&#160;+ (Class)<a class="code" href="interface_w_b_manager.html#a0f5d3c88c589b705402f305dbb0ec15f">dataSourceSubclass</a> {</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;  NSBundle *mainBundle = [NSBundle mainBundle];</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  NSString *dataSourceImplementation = [mainBundle infoDictionary][@&quot;DataSourceImplementation&quot;];</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  <span class="keywordflow">return</span> NSClassFromString(dataSourceImplementation);</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;}</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="interface_w_b_manager_html_af3684132d9705d7cbd8f3def488287d0"><div class="ttname"><a href="interface_w_b_manager.html#af3684132d9705d7cbd8f3def488287d0">+[WBManager setUp]</a></div><div class="ttdeci">void setUp()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_manager_8m_source.html#l00014">WBManager.m:14</a></div></div>
-<div class="ttc" id="interface_w_b_data_source_html"><div class="ttname"><a href="interface_w_b_data_source.html">WBDataSource</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00016">WBDataSource.h:16</a></div></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;  [[<a class="code" href="interface_w_b_data_source.html">WBDataSource</a> <a class="code" href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb">sharedInstance</a>] <a class="code" href="interface_w_b_data_source.html#a7a8ae37b4d14683c5b4dd16534d960ad">setUpWithLauchOptions</a>:launchOptions];</div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;}</div>
+<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
+<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="interface_w_b_manager.html#a0f5d3c88c589b705402f305dbb0ec15f">   22</a></span>&#160;+ (Class)<a class="code" href="interface_w_b_manager.html#a0f5d3c88c589b705402f305dbb0ec15f">dataSourceSubclass</a> {</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  NSBundle *mainBundle = [NSBundle mainBundle];</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  NSString *dataSourceImplementation = [mainBundle infoDictionary][@&quot;DataSourceImplementation&quot;];</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  <span class="keywordflow">return</span> NSClassFromString(dataSourceImplementation);</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;}</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_w_b_data_source_html"><div class="ttname"><a href="interface_w_b_data_source.html">WBDataSource</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00017">WBDataSource.h:17</a></div></div>
+<div class="ttc" id="interface_w_b_data_source_html_adcfb7daf5420b88632fc9ad53b1cf5cb"><div class="ttname"><a href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb">+[WBDataSource sharedInstance]</a></div><div class="ttdeci">WBDataSource * sharedInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00015">WBDataSource.m:15</a></div></div>
+<div class="ttc" id="interface_w_b_data_source_html_a7a8ae37b4d14683c5b4dd16534d960ad"><div class="ttname"><a href="interface_w_b_data_source.html#a7a8ae37b4d14683c5b4dd16534d960ad">-[WBDataSource setUpWithLauchOptions:]</a></div><div class="ttdeci">void setUpWithLauchOptions:(NSDictionary *launchOptions)</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00080">WBDataSource.m:80</a></div></div>
 <div class="ttc" id="interface_w_b_data_source_html_adb11eda36c7bd1d99df0c86be03ca08f"><div class="ttname"><a href="interface_w_b_data_source.html#adb11eda36c7bd1d99df0c86be03ca08f">+[WBDataSource setDataSourceSubclass:]</a></div><div class="ttdeci">void setDataSourceSubclass:(Class dataSourceSubclass)</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00037">WBDataSource.m:37</a></div></div>
 <div class="ttc" id="_w_b_data_source_8h_html"><div class="ttname"><a href="_w_b_data_source_8h.html">WBDataSource.h</a></div></div>
 <div class="ttc" id="_w_b_manager_8h_html"><div class="ttname"><a href="_w_b_manager_8h.html">WBManager.h</a></div></div>
-<div class="ttc" id="interface_w_b_manager_html_a0f5d3c88c589b705402f305dbb0ec15f"><div class="ttname"><a href="interface_w_b_manager.html#a0f5d3c88c589b705402f305dbb0ec15f">+[WBManager dataSourceSubclass]</a></div><div class="ttdeci">Class dataSourceSubclass()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_manager_8m_source.html#l00021">WBManager.m:21</a></div></div>
+<div class="ttc" id="interface_w_b_manager_html_a0f5d3c88c589b705402f305dbb0ec15f"><div class="ttname"><a href="interface_w_b_manager.html#a0f5d3c88c589b705402f305dbb0ec15f">+[WBManager dataSourceSubclass]</a></div><div class="ttdeci">Class dataSourceSubclass()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_manager_8m_source.html#l00022">WBManager.m:22</a></div></div>
 <div class="ttc" id="interface_w_b_manager_html"><div class="ttname"><a href="interface_w_b_manager.html">WBManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_manager_8h_source.html#l00011">WBManager.h:11</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Sep 12 2013 10:44:43 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Mon Sep 16 2013 15:51:19 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

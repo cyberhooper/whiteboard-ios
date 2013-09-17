@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "WBUser.h"
+#import "WBPhoto.h"
 
 /**
   Abstract singleton class representing a DataSource.
@@ -15,6 +16,9 @@
  */
 @interface WBDataSource : NSObject
 
+#pragma mark - User
+
+@property (nonatomic, strong) WBUser *currentUser;
 
 /**
   The singleton method for creating a WBDataSource instance.
@@ -33,7 +37,7 @@
  */
 - (void)loginWithUsername:(NSString *)username
               andPassWord:(NSString *)password
-                  success:(void(^)(id<WBUser> user))success
+                  success:(void(^)(WBUser *user))success
                   failure:(void(^)(NSError *error))failure;
 
 
@@ -43,7 +47,7 @@
   @param success The success block
   @param failure The failure block, called with an NSError
  */
-- (void)logoutUser:(id<WBUser>)user
+- (void)logoutUser:(WBUser *)user
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure;
 
@@ -63,7 +67,7 @@
   @param failure The failure block, called with an NSError
  */
 - (void)signupWithInfo:(NSDictionary *)userInfo
-               success:(void(^)(id<WBUser> user))success
+               success:(void(^)(WBUser *user))success
                failure:(void(^)(NSError *error))failure;
 
 
@@ -74,7 +78,7 @@
   @param success The success block
   @param failure The failure block, called with an NSError
  */
-- (void)deleteUserAccount:(id<WBUser> )user
+- (void)deleteUserAccount:(WBUser *)user
                success:(void(^)(void))success
                failure:(void(^)(NSError *error))failure;
 
@@ -85,7 +89,7 @@
  @param success The success block
  @param failure The failure block, called with an NSError
  */
-- (void)resetPasswordForUser:(id<WBUser>)user
+- (void)resetPasswordForUser:(WBUser *)user
                      success:(void (^)(void))success
                      failure:(void (^)(NSError *))failure;
 
@@ -97,19 +101,60 @@
  @param success The success block
  @param failure The failure block, called with an NSError
  */
-- (void)saveUser:(id<WBUser>)user
+- (void)saveUser:(WBUser *)user
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure;
 
 /**
-	The currently logged in WBUser, or nil if no user is logged in.
+ Get the currently logged in user
+	@returns The currently logged in WBUser, or nil if no user is logged in.
  */
-@property (nonatomic, strong, readonly) id<WBUser> currentUser;
+- (WBUser *)currentUser;
+
+/**
+ Get the currently logged in user
+ @returns The currently logged in WBUser, or nil if no user is logged in.
+ */
++ (WBUser *)currentUser;
+
 
 /**
  creates a WBUser object.
+ @returns The newly created WBUser
  */
-+ (id<WBUser>)createUser;
++ (WBUser *)createUser;
+
+#pragma mark - Photos
+/**
+ Creates a WBPhoto object.
+ @returns The newly created WBPhoto
+ */
++ (WBPhoto *)createPhoto;
+
+- (void)uploadPhoto:(WBPhoto *)photo
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure
+           progress:(void(^)(int percentDone))progress;
+
+- (void)latestPhotos:(void(^)(NSArray *photos))success
+             failure:(void(^)(NSError *error))failure;
+
+- (void)likePhoto:(WBPhoto *)photo
+         withUser:(WBUser *)user
+          success:(void(^)(void))success
+          failure:(void(^)(NSError *error))failure;
+
+- (void)unlikePhoto:(WBPhoto *)photo
+         withUser:(WBUser *)user
+          success:(void(^)(void))success
+          failure:(void(^)(NSError *error))failure;
+
+- (void)addComment:(NSString *)comment
+           onPhoto:(WBPhoto *)photo
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure;
+
+#pragma mark - Set Up
 
 /**
  Method called when the app starts that enables WBDatasource to

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['firstname',['firstName',['../protocol_w_b_user-p.html#aa256c1f159e0b843e63c01ef49f9eff4',1,'WBUser-p']]]
+  ['firstname',['firstName',['../interface_w_b_user.html#a148fd325b76dba4f57d6729a6920c7f1',1,'WBUser']]]
 ];

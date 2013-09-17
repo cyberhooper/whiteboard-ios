@@ -8,6 +8,10 @@
 
 #import "MainFeedViewController.h"
 #import "MainFeedCell.h"
+#import "WBDataSource.h"
+
+#warning TODO REMOVE
+#import <Parse/Parse.h>
 
 @interface TestObject : NSObject
 @property (nonatomic, strong) NSString *username;
@@ -29,9 +33,17 @@
     return self;
 }
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  //[self dummyData];
+}
+
+- (void)dummyData {
+  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
+    NSLog(@"Logged in with user :%@", user);
+  } failure:^(NSError *error) {
+    NSLog(@"Loggin in failed :%@",error);
+  }];
   
   // Add dummy data
   NSMutableArray *array = [NSMutableArray array];
@@ -44,6 +56,19 @@
   }
   
   self.photos = array;
+  
+//  /// TEST get latest photos
+//  [[WBDataSource sharedInstance] latestPhotos:^(NSArray *photos) {
+//    for (WBPhoto *p in photos) {
+//      // Build feed here.
+//    }
+//  } failure:^(NSError *error) {
+//    //Error
+//    NSLog(@"Error: %@ %@", error, [error userInfo]);
+//  } progress:^(int percentDone) {
+//    NSLog(@"Uploading : %d %@",percentDone, @"%");
+//  }];
+
 }
 
 #pragma mark - UITableView

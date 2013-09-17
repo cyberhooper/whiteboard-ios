@@ -41,20 +41,20 @@
 #pragma mark - login
 
 - (void)testLoginWithValidCredentialsCallsSuccess {
-  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
+  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
     hasCalledBack = YES;
   } failure:nil];
 }
 
 - (void)testLoginWithValidCredentialsReturnsANonNilUser {
-  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
+  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
     hasCalledBack = YES;
     XCTAssertNotNil(user, @"User return on login should not be nil");
   } failure:nil];
 }
 
 - (void)testLoginWithValidCredentialsReturnsAValidUser {
-  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(id<WBUser> user) {
+  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
     hasCalledBack = YES;
     XCTAssertEqualObjects(user.username, @"testUser", @"User logged in should be the right one");
   } failure:nil];
@@ -75,7 +75,7 @@
 
 - (void)testSignUpWithValidCredentialsCallsSuccess {
   NSDictionary *userInfos = [[NSDictionary alloc] initWithObjects:@[@"testUser9", @"test"] forKeys:@[@"userName", @"password"]];
-  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(id<WBUser> user) {
+  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(WBUser *user) {
     XCTAssertNotNil(user, @"User return on signup should not be nil");
     //We have to remove the user after the test to valid the next test launch
     [[WBDataSource sharedInstance] deleteUserAccount:user success:^{
@@ -87,7 +87,7 @@
 
 - (void)testSignupWithValidCredentialsReturnsAValidUser {
   NSDictionary *userInfos = [[NSDictionary alloc] initWithObjects:@[@"testUser0", @"test"] forKeys:@[@"userName", @"password"]];
-  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(id<WBUser> user) {
+  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(WBUser *user) {
     XCTAssertEqualObjects(user.username, @"testUser0", @"User logged in should be the right one");
     
     //We have to remove the user after the test to valid the next test launch
@@ -100,7 +100,7 @@
 
 - (void)testSignupWithInvalidCredentialsYieldsError {
   NSDictionary *userInfos = [[NSDictionary alloc] initWithObjects:@[@"testUser", @""] forKeys:@[@"userName", @"password"]];
-  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(id<WBUser> user) {
+  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(WBUser *user) {
   } failure:^(NSError *error) {
     XCTAssertNotNil(error, @"signup with invalid credentials should return an error");
     hasCalledBack = YES;
@@ -109,14 +109,14 @@
 
 - (void)testSignupWithInvalidCredentialsCallsFailure {
   NSDictionary *userInfos = [[NSDictionary alloc] initWithObjects:@[@"testUser", @""] forKeys:@[@"userName", @"password"]];
-  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(id<WBUser> user) {
+  [[WBDataSource sharedInstance] signupWithInfo:userInfos success:^(WBUser *user) {
   } failure:^(NSError *error) {
     hasCalledBack = YES;
   }];
 }
 
 - (void)testLogoutUser {
-  id<WBUser> currentUser = [WBDataSource sharedInstance].currentUser;
+  WBUser *currentUser = [[WBDataSource sharedInstance] currentUser];
   XCTAssertNotNil([WBDataSource sharedInstance].currentUser, @"User should be logged out after logout");
   [[WBDataSource sharedInstance] logoutUser:currentUser success:^{
     hasCalledBack = YES;
@@ -125,7 +125,7 @@
 }
 
 - (void)testResetPasswordWithValidCredentials {
-  id<WBUser> user = [WBDataSource createUser];
+  WBUser *user = [WBDataSource createUser];
   [user setEmail:@"sacha@fueled.com"];
   [[WBDataSource sharedInstance] resetPasswordForUser:user success:^{
     hasCalledBack = YES;
@@ -133,7 +133,7 @@
 }
 
 - (void)testResetPasswordWithInvalidCredentials {
-  id<WBUser> user = [WBDataSource createUser];
+  WBUser *user = [WBDataSource createUser];
   [user setEmail:@"fakemail@fueled.com"];
   [[WBDataSource sharedInstance] resetPasswordForUser:user success:^{
   } failure:^(NSError *error) {
@@ -144,7 +144,7 @@
 
 - (void)testEditAccountSucceeds {
   __block BOOL successCalled = NO;
-  id<WBUser> user = [WBDataSource createUser];
+  WBUser *user = [WBDataSource createUser];
   [[WBDataSource sharedInstance] saveUser:user success:^{
     hasCalledBack = YES;
     successCalled = YES;

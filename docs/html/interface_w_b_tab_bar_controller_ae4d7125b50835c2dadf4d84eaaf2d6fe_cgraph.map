@@ -1,0 +1,5 @@
+<map id="&#45;[WBTabBarController photoCaptureButtonAction:]" name="&#45;[WBTabBarController photoCaptureButtonAction:]">
+<area shape="rect" id="node2" href="$interface_w_b_tab_bar_controller.html#a018beecdd4447f2c07143f0ebeb609bf" title="&#45;[WBTabBarController\l shouldPresentPhotoCaptureController]" alt="" coords="235,42,474,83"/>
+<area shape="rect" id="node3" href="$interface_w_b_tab_bar_controller.html#a01c8cdd4a0005d431e9d67f1daa897ac" title="&#45;[WBTabBarController\l shouldStartCameraController]" alt="" coords="525,5,715,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_tab_bar_controller.html#aebd83d78df584b5c87d765cfecb8496e" title="&#45;[WBTabBarController\l shouldStartPhotoLibraryPicker\lController]" alt="" coords="523,71,717,127"/>
+</map>

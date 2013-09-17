@@ -1,0 +1,17 @@
+<map id="&#45;[WBPhotoTimelineSectionHeaderView awakeFromNib]" name="&#45;[WBPhotoTimelineSectionHeaderView awakeFromNib]">
+<area shape="rect" id="node2" href="$class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="241,326,410,367"/>
+<area shape="rect" id="node3" href="$class_w_b_photo_timeline_section_header_view.html#a6b37262b7c9abfdda5af271a4fcda675" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImage]" alt="" coords="489,135,676,177"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="762,201,939,228"/>
+<area shape="rect" id="node6" href="$class_w_b_photo_timeline_section_header_view.html#abdec4a2a3fcbce45fe1310f9a1b44d5d" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageHighlighted]" alt="" coords="459,70,706,111"/>
+<area shape="rect" id="node8" href="$class_w_b_photo_timeline_section_header_view.html#ab51bbadddc3d4a03dde3534cd1868452" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageSelected]" alt="" coords="465,5,700,46"/>
+<area shape="rect" id="node9" href="$class_w_b_photo_timeline_section_header_view.html#a4b8abbd078fdf681543ad2f6e13238d4" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage]" alt="" coords="473,253,693,294"/>
+<area shape="rect" id="node11" href="$class_w_b_photo_timeline_section_header_view.html#a17c47111b3e705bb98eb34140988ef24" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage\lHighlighted]" alt="" coords="474,319,691,375"/>
+<area shape="rect" id="node12" href="$class_w_b_photo_timeline_section_header_view.html#a209a46aec915460eaeb502597fdb6a50" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage\lSelected]" alt="" coords="474,399,691,455"/>
+<area shape="rect" id="node13" href="$interface_w_b_theme.html#a3ed1a48f648b5f286dff4831ca21d986" title="&#45;[WBTheme sectionDisplay\lNameFontColor]" alt="" coords="495,479,671,521"/>
+<area shape="rect" id="node14" href="$interface_w_b_theme.html#a575b7e847a5f581d6292fe12608c1201" title="&#45;[WBTheme sectionDisplay\lNameFont]" alt="" coords="495,545,671,586"/>
+<area shape="rect" id="node15" href="$interface_w_b_theme.html#a527fc28543fd1a7bf5ce2d948b923a6d" title="&#45;[WBTheme sectionDateName\lFont]" alt="" coords="485,610,680,651"/>
+<area shape="rect" id="node16" href="$interface_w_b_theme.html#aede990ffdd63f29c65d701f5f83d170a" title="&#45;[WBTheme sectionDateName\lFontColor]" alt="" coords="485,675,680,717"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#a11c9bbd646b2236fc8f2d72da6dfddb1" title="&#45;[WBTheme sectionLikeButton\lNormalImage]" alt="" coords="755,135,946,177"/>
+<area shape="rect" id="node7" href="$interface_w_b_theme.html#a7d6aba2e77ad2541bcd95e27e734d916" title="&#45;[WBTheme sectionLikeButton\lSelectedImage]" alt="" coords="755,38,946,79"/>
+<area shape="rect" id="node10" href="$interface_w_b_theme.html#ab577d4cd965fcf4c7e29878b3ebc8818" title="&#45;[WBTheme sectionComment\lButtonNormalImage]" alt="" coords="757,326,944,367"/>
+</map>

@@ -23,12 +23,12 @@ static Class DataSourceSubclass = nil;
 
 - (void)loginWithUsername:(NSString *)username
               andPassWord:(NSString *)password
-                  success:(void(^)(id<WBUser> user))success
+                  success:(void(^)(WBUser *user))success
                   failure:(void(^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
-- (void)logoutUser:(id<WBUser>)user
+- (void)logoutUser:(WBUser *)user
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
@@ -39,39 +39,42 @@ static Class DataSourceSubclass = nil;
 }
 
 - (void)signupWithInfo:(NSDictionary *)userInfo
-               success:(void (^)(id<WBUser> user))success
+               success:(void (^)(WBUser *user))success
                failure:(void (^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
-- (void)deleteUserAccount:(id<WBUser>)user
+- (void)deleteUserAccount:(WBUser *)user
                   success:(void (^)(void))success
                   failure:(void (^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
-- (void)resetPasswordForUser:(id<WBUser>)user
+- (void)resetPasswordForUser:(WBUser *)user
                      success:(void (^)(void))success
                      failure:(void (^)(NSError *))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
-- (id<WBUser>)currentUser {
++ (WBUser *)currentUser {
+  return [[[self class] sharedInstance] currentUser];
+}
+
+- (WBUser *)currentUser {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
   return nil;
 }
 
-+ (id<WBUser>)createUser {
++ (WBUser *)createUser {
  return [[[self class] sharedInstance] createUser];
 }
 
-- (id<WBUser>)createUser {
+- (WBUser *)createUser {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
   return nil;
 }
 
-
-- (void)saveUser:(id<WBUser>)user
+- (void)saveUser:(WBUser *)user
          success:(void(^)(void))success
          failure:(void(^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
@@ -79,6 +82,50 @@ static Class DataSourceSubclass = nil;
 
 - (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
     [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
++ (WBPhoto *)createPhoto {
+  return [[[self class] sharedInstance] createPhoto];
+}
+
+- (WBPhoto *)createPhoto {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  return nil;
+}
+
+#pragma mark - Photos
+
+- (void)uploadPhoto:(WBPhoto *)photo
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure
+           progress:(void(^)(int percentDone))progress {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)latestPhotos:(void(^)(NSArray *photos))success
+             failure:(void(^)(NSError *error))failure {
+    [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)likePhoto:(WBPhoto *)photo
+         withUser:(WBUser *)user
+          success:(void(^)(void))success
+          failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)unlikePhoto:(WBPhoto *)photo
+           withUser:(WBUser *)user
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)addComment:(NSString *)comment
+           onPhoto:(WBPhoto *)photo
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
 @end

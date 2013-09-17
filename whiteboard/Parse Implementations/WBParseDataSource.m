@@ -8,12 +8,12 @@
 
 #import "WBParseDataSource.h"
 #import <Parse/Parse.h>
-#import "ParseUser.h"
 
 @implementation WBParseDataSource
 
+@synthesize currentUser = _currentUser;
+
 - (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
-  [ParseUser registerSubclass];
   [Parse setApplicationId:[self applicationId]
                 clientKey:[self clientKey]];
   [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
@@ -33,35 +33,43 @@
   return [NSDictionary dictionaryWithContentsOfFile:configurationPath];
 }
 
-- (void)loginWithUsername:(NSString *)username andPassWord:(NSString *)password success:(void (^)(id<WBUser>))success failure:(void (^)(NSError *))failure {
-  [PFUser logInWithUsernameInBackground:username password:password
+- (void)loginWithUsername:(NSString *)username
+              andPassWord:(NSString *)password
+                  success:(void (^)(WBUser *))success
+                  failure:(void (^)(NSError *))failure {
+
+  [PFUser logInWithUsernameInBackground:username
+                               password:password
                                   block:^(PFUser *user, NSError *error) {
-                                    if (user)
+                                    if (user) {
+                                      [self mapCurrentWBUser:user];
                                       success([self currentUser]);
-                                    else
+                                    }
+                                    else {
                                       failure (error);
+                                    }
                                   }];
 }
 
-- (void)logoutUser:(id<WBUser>)user
+- (void)logoutUser:(WBUser *)user
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure {
   // Parse logout is instant since it deletes the current pfuser on disk.
+  _currentUser = nil;
   [PFUser logOut];
   success();
 }
 
 - (void)signupWithInfo:(NSDictionary *)userInfo
-               success:(void (^)(id<WBUser>))success
+               success:(void (^)(WBUser *))success
                failure:(void (^)(NSError *))failure {
-  PFUser *currentUser = [PFUser user];
-  [currentUser setUsername:[userInfo objectForKey:@"userName"]];
-  [currentUser setPassword:[userInfo objectForKey:@"password"]];
-  [currentUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+  PFUser *pfCurrentUser = [PFUser user];
+  [pfCurrentUser setUsername:[userInfo objectForKey:@"userName"]];
+  [pfCurrentUser setPassword:[userInfo objectForKey:@"password"]];
+  [pfCurrentUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded) {
-      id<WBUser> wbUser = [[self class] createUser];
-      wbUser.username = [currentUser username];
-      success(wbUser);
+      [self mapCurrentWBUser:pfCurrentUser];
+      success(_currentUser);
     }
     else {
       failure (error);
@@ -69,23 +77,25 @@
   }];
 }
 
-- (id<WBUser>)currentUser {
-  return [ParseUser currentUser];
+- (WBUser *)currentUser {
+  [self mapCurrentWBUser:[PFUser currentUser]];
+  return _currentUser;
 }
 
-- (void)deleteUserAccount:(id<WBUser>)user
+- (void)deleteUserAccount:(WBUser *)user
                   success:(void (^)(void))success
                   failure:(void (^)(NSError *))failure {
-  PFUser *pfUser = (PFUser*)user;
+  PFUser *pfUser = [self mapPFUser:user];
   [pfUser deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-    if (success && succeeded)
+    if (success && succeeded) {
+      _currentUser = nil;
       success();
-    else if (failure)
+    } else if (failure)
       failure (error);
   }];
 }
 
-- (void)resetPasswordForUser:(id<WBUser>)user
+- (void)resetPasswordForUser:(WBUser *)user
                      success:(void (^)(void))success
                      failure:(void (^)(NSError *))failure {
   [PFUser requestPasswordResetForEmailInBackground:[user email] block:^(BOOL succeeded, NSError *error) {
@@ -98,10 +108,10 @@
   }];
 }
 
-- (void)saveUser:(id<WBUser>)user
+- (void)saveUser:(WBUser *)user
          success:(void(^)(void))success
          failure:(void(^)(NSError *error))failure {
-  PFUser *pfUser = (PFUser*)user;
+  PFUser *pfUser = [self mapPFUser:user];
   [pfUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success)
       success();
@@ -110,8 +120,204 @@
   }];
 }
 
-- (id<WBUser>)createUser {
-    return  [[ParseUser alloc] init];
+- (void)mapCurrentWBUser:(PFUser *)user {
+  if (!_currentUser) {
+    _currentUser = [self createUser];
+  }
+  _currentUser.userID = user.objectId;
+  _currentUser.displayName = user.username;
+  _currentUser.username = user.username;
+  _currentUser.firstName = [user objectForKey:@"firstname"];
+  _currentUser.lastName = [user objectForKey:@"lastname"];
+  _currentUser.email = [user email];
+  _currentUser.avatar = [user objectForKey:@"avatar"];
+  _currentUser.createdAt = user.createdAt;
+  _currentUser.updatedAt = user.updatedAt;
+  _currentUser.numberOfFollowers = [user objectForKey:@"numberOfFollowers"];
+  _currentUser.numberFollowing = [user objectForKey:@"numberFollowing"];
+}
+
+- (PFUser *)mapPFUser:(WBUser *)user {
+  PFUser *pfUser = [PFUser user];
+  
+  pfUser.objectId = _currentUser.userID;
+  pfUser.username = _currentUser.displayName;
+  pfUser.username = _currentUser.username;
+  [pfUser setObject:_currentUser.firstName forKey:@"firstname"];
+  [pfUser setObject:_currentUser.lastName forKey:@"lastName"];
+  pfUser.email = _currentUser.email;
+  [pfUser setObject:_currentUser.avatar forKey:@"avatar"];
+  [pfUser setObject:_currentUser.numberOfFollowers forKey:@"numberOfFollowers"];
+  [pfUser setObject:_currentUser.numberFollowing forKey:@"numberFollowing"];
+  
+  return pfUser;
+}
+
+- (WBUser *)createUser {
+  return [[WBUser alloc] init];
+}
+
+#pragma mark - Photos
+
+- (WBPhoto *)createPhoto {
+  return [[WBPhoto alloc] init];
+}
+
+- (void)uploadPhoto:(WBPhoto *)photo
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure
+           progress:(void(^)(int percentDone))progress {
+  NSData *imageData = UIImageJPEGRepresentation(photo.image, 1);
+  PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
+  
+  // Save PFFile
+  [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (!error) {
+      PFObject *parsePhoto = [self parsePhotoWithImageFile:imageFile];
+      [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error && success)
+          success();
+        else if (failure)
+          failure(error);
+      }];
+    }
+    else
+      if (failure) failure(error);
+  } progressBlock:^(int percentDone) {
+    if (progress) progress(percentDone);
+  }];
+}
+
+- (PFObject *)parsePhotoWithImageFile:(PFFile *)imageFile {
+  // Create a PFObject around a PFFile and associate it with the current user
+  PFObject *photo = [PFObject objectWithClassName:@"Photo"];
+  [photo setObject:imageFile forKey:@"imageFile"];
+  photo.ACL = [PFACL ACLWithUser:[PFUser currentUser]]; // Set the access control list to current user for security purposes
+  PFUser *user = [PFUser currentUser];
+  [photo setObject:user forKey:@"user"];
+  return photo;
+}
+
+- (void)latestPhotos:(void(^)(NSArray *photos))success
+             failure:(void(^)(NSError *error))failure {
+  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  query.limit = 20;
+  [query orderByDescending:@"createdAt"];
+  [query includeKey:@"user"];
+  [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
+    if (!error && success)
+      success([self wbPhotosFromParsePhotos:photos]);
+    else
+      NSLog(@"Error: %@ %@", error, [error userInfo]);
+  }];
+  
+  // filter with friends example :
+  //[query whereKey:@"user" containedIn:[currentUser friends]];
+  
+  //Restrict results. Faster?
+  //[query selectKeys:@[@"playerName", @"score"]];
+}
+
+- (void)likePhoto:(WBPhoto *)photo
+         withUser:(WBUser *)user
+          success:(void(^)(void))success
+          failure:(void(^)(NSError *error))failure {
+  NSArray *likes = photo.likes;
+  if (photo.likes) {
+    if (![photo.likes containsObject:user.userID]) {
+      likes = [photo.likes arrayByAddingObject:user.userID];
+    }
+  } else {
+    likes = @[user.userID];
+  }
+  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  [parsePhoto setObject:likes forKey:@"likes"];
+  [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (succeeded && success) {
+      photo.likes = likes;
+      success();
+    } else if (failure) {
+      failure(error);
+    }
+  }];
+}
+
+- (void)unlikePhoto:(WBPhoto *)photo
+           withUser:(WBUser *)user
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure {
+  NSMutableArray *likes = [NSMutableArray arrayWithArray:photo.likes];
+  if ([likes containsObject:user.userID]) {
+    [likes removeObject:user.userID];
+  }
+  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  [parsePhoto setObject:likes forKey:@"likes"];
+  [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (succeeded && success) {
+      photo.likes = likes;
+      success();
+    } else if (failure) {
+      failure(error);
+    }
+  }];
+}
+
+
+- (NSArray *)wbPhotosFromParsePhotos:(NSArray *)parsePhotos {
+  NSMutableArray *wbPhotos = [@[] mutableCopy];
+  for (PFObject *photo in parsePhotos) {
+    WBPhoto *wbPhoto = [self wbPhotoFromParsePhoto:photo];
+    [wbPhotos addObject:wbPhoto];
+  }
+  return [NSArray arrayWithArray:wbPhotos];
+}
+
+- (WBPhoto *)wbPhotoFromParsePhoto:(PFObject *)parsePhoto {
+  WBPhoto *wbPhoto = [[WBPhoto alloc] init];
+  PFFile *imageFile = [parsePhoto objectForKey:@"imageFile"];
+  wbPhoto.url = [NSURL URLWithString:[imageFile url]];
+  PFUser *user = [parsePhoto objectForKey:@"user"];
+  wbPhoto.author = [self wbUserFromParseUser:user];
+  wbPhoto.createdAt = parsePhoto.createdAt;
+  wbPhoto.likes = [parsePhoto objectForKey:@"likes"];
+  wbPhoto.photoID = parsePhoto.objectId;
+  NSLog(@"Photo : %@", [wbPhoto description]);
+  return wbPhoto;
+}
+
+- (WBUser *)wbUserFromParseUser:(PFUser *)parseUser {
+  WBUser *wbUser = [self createUser];
+  wbUser.username = parseUser.username;
+  PFFile *avatarFile = [parseUser objectForKey:@"avatar"];
+  wbUser.avatar = [NSURL URLWithString:[avatarFile url]];
+  NSLog(@"User : %@", [wbUser description]);
+  return wbUser;
+}
+
+- (void)addComment:(NSString *)comment
+           onPhoto:(WBPhoto *)photo
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure {
+  
+  if (![PFUser currentUser]) {
+    if (failure) {
+      NSError *e = [NSError errorWithDomain:@"" code:0 userInfo:@{@"mesages" : @"You need to be logged in to post a comment"}];
+      failure(e);
+    }
+    return;
+  }
+  
+  PFObject *parseComment = [PFObject objectWithClassName:@"Comment"];
+  [parseComment setObject:comment forKey:@"text"];
+  [parseComment setObject:[PFUser currentUser] forKey:@"user"];
+  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  [parseComment setObject:parsePhoto forKey:@"photo"];
+  [parseComment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (!error && success)
+      success();
+    else if (failure)
+      failure(error);
+  }];
 }
 
 @end

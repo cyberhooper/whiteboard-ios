@@ -8,13 +8,16 @@
 
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
-#import "ParseUser.h"
 #import "WBManager.h"
 #import "WBTheme.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  return YES;
+}
+
+- (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [WBManager setUpWithLauchOptions:launchOptions];
   return YES;
 }

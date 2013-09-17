@@ -10,6 +10,7 @@
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "WBPhotoTimelineCell.h"
 #import "UIImageView+SLImageLoader.h"
+#import "WBDataSource.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 
@@ -19,20 +20,27 @@
 
 static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
   [super viewDidLoad];
   
   [self setupView];
+  [self refreshPhotos];
+  
+  
+  /// Example Add comment.
+//  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
+//    NSLog(@"Logged in with user :%@", user);
+//    
+//    WBPhoto *photo = [[WBPhoto alloc] init];
+//    photo.photoID = @"iYB949pu4R";
+//    [[WBDataSource sharedInstance] addComment:@"Yesss PAPA jeu de jambe" onPhoto:photo success:^{
+//      
+//    } failure:^(NSError *error) {
+//    }];
+//    
+//  } failure:^(NSError *error) {
+//    NSLog(@"Loggin in failed :%@",error);
+//  }];
 }
 
 #pragma mark - Setup
@@ -60,13 +68,16 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
     }
   }
   
-  sectionHeaderView.displayName = [[self.photos objectAtIndex:section] valueForKey:@"username"];
-  sectionHeaderView.date = [NSDate date];
-  [sectionHeaderView.profilePictureImageView setImageWithPath:[[self.photos objectAtIndex:section] valueForKey:@"photoUrl"]
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:section]);
+  sectionHeaderView.displayName = photo.author.displayName;
+  sectionHeaderView.date = photo.createdAt;
+  [sectionHeaderView.profilePictureImageView setImageWithPath:photo.author.avatar.absoluteString
                                                   placeholder:nil];
-  sectionHeaderView.numberOfLikes = @2;
+  sectionHeaderView.numberOfLikes = @(photo.likes.count);
   sectionHeaderView.numberOfComments = @3;
   sectionHeaderView.delegate = self;
+  sectionHeaderView.sectionIndex = @(section);
+  sectionHeaderView.isLiked = [photo.likes containsObject:[WBDataSource currentUser].userID];
   
   return sectionHeaderView;
 }
@@ -95,8 +106,9 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 }
 
 - (void)configureCell:(WBPhotoTimelineCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
   // Set the cell image
-  [cell.photoImageView setImageWithPath:[[self.photos objectAtIndex:indexPath.section] valueForKey:@"photoUrl"] placeholder:nil];
+  [cell.photoImageView setImageWithPath:photo.url.absoluteString placeholder:nil];
 }
 
 - (void)tableView:(UITableView *)tableView
@@ -123,7 +135,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   CGFloat offsetY = screenHeight - scrollViewHeight + scrollView.contentOffset.y;
   
   #warning Magic number, change this
-  if(offsetY <= -60.f){
+  if(offsetY <= -100.f){
     [self scrollViewDidPullToRefresh:scrollView];
   }
 }
@@ -137,14 +149,20 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   
   self.isLoading = YES;
   NSLog(@"Refreshing...");
-  
-  #warning Change this. Perform fetch request
-  double delayInSeconds = 2.0;
-  dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
-  dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+  [self refreshPhotos];
+}
+
+- (void)refreshPhotos {
+  [[WBDataSource sharedInstance] latestPhotos:^(NSArray *photos) {
+    self.photos = photos;
+    [self.tableView reloadData];
     self.isLoading = NO;
-    NSLog(@"Done refreshing...");
-  });
+  }
+                                      failure:^(NSError *error){
+                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Refresh Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+                                        [alert show];
+                                        self.isLoading = NO;
+                                      }];
 }
 
 #pragma mark - WBPhotoTimelineSectionHeaderViewDelegate
@@ -153,7 +171,43 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 }
 
 - (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:sectionView.sectionIndex.intValue]);
+  if (![photo.likes containsObject:[WBDataSource currentUser].userID]) {
+    [self likePhoto:photo completion:^(BOOL success) {
+      if (success) {
+        sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue + 1);
+        sectionView.isLiked = YES;
+      }
+    }];
+  } else {
+    [self unlikePhoto:photo completion:^(BOOL success) {
+      if (success && sectionView.numberOfLikes > 0) {
+        sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue - 1);
+        sectionView.isLiked = NO;
+      }
+    }];
+  }
   NSLog(@"Likes pressed");
+}
+
+- (void)likePhoto:(WBPhoto *)photo completion:(void(^)(BOOL success))result {
+  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^{
+    result(YES);
+  } failure:^(NSError *error) {
+    result(NO);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  }];
+}
+
+- (void)unlikePhoto:(WBPhoto *)photo completion:(void(^)(BOOL success))result {
+  [[WBDataSource sharedInstance] unlikePhoto:photo withUser:[WBDataSource currentUser] success:^{
+    result(YES);
+  } failure:^(NSError *error) {
+    result(NO);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Un-Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  }];
 }
 
 - (void)didReceiveMemoryWarning

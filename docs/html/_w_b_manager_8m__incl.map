@@ -1,5 +1,6 @@
 <map id="WBManager.m" name="WBManager.m">
 <area shape="rect" id="node2" href="$_w_b_manager_8h.html" title="WBManager.h" alt="" coords="5,155,109,181"/>
-<area shape="rect" id="node4" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="95,80,217,107"/>
-<area shape="rect" id="node5" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="185,155,265,181"/>
+<area shape="rect" id="node4" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="127,80,249,107"/>
+<area shape="rect" id="node5" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="185,229,265,256"/>
+<area shape="rect" id="node6" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="237,155,323,181"/>
 </map>

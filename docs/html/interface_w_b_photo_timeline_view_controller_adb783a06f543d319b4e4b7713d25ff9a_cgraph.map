@@ -1,0 +1,5 @@
+<map id="&#45;[WBPhotoTimelineViewController scrollViewDidPullToRefresh:]" name="&#45;[WBPhotoTimelineViewController scrollViewDidPullToRefresh:]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#af4788542079abbbdf68aacc9feab264f" title="&#45;[WBPhotoTimelineViewController\l refreshPhotos]" alt="" coords="261,51,469,93"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="518,29,735,56"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#a2528cabb4b4a6919d26ba9c4c8546e50" title="&#45;[WBDataSource latestPhotos\l:failure:]" alt="" coords="530,81,723,122"/>
+</map>
