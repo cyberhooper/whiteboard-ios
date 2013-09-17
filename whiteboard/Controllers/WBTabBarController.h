@@ -10,11 +10,12 @@
 #import "MainFeedViewController.h"
 #import "WBTheme.h"
 #import "WBDataSource.h"
+#import "WBNavigationController.h"
 
 @interface WBTabBarController : UITabBarController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 
-@property (nonatomic, strong) UINavigationController *homeNavigationController;
-@property (nonatomic, strong) UINavigationController *emptyMiddleNavigationController;
-@property (nonatomic, strong) UINavigationController *activityNavigationController;
+@property (nonatomic, strong) WBNavigationController *homeNavigationController;
+@property (nonatomic, strong) WBNavigationController *emptyMiddleNavigationController;
+@property (nonatomic, strong) WBNavigationController *activityNavigationController;
 
 @end

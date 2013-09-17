@@ -25,6 +25,22 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   
   [self setupView];
   [self refreshPhotos];
+  
+  
+  /// Example Add comment.
+//  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
+//    NSLog(@"Logged in with user :%@", user);
+//    
+//    WBPhoto *photo = [[WBPhoto alloc] init];
+//    photo.photoID = @"iYB949pu4R";
+//    [[WBDataSource sharedInstance] addComment:@"Yesss PAPA jeu de jambe" onPhoto:photo success:^{
+//      
+//    } failure:^(NSError *error) {
+//    }];
+//    
+//  } failure:^(NSError *error) {
+//    NSLog(@"Loggin in failed :%@",error);
+//  }];
 }
 
 #pragma mark - Setup
@@ -60,6 +76,8 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   sectionHeaderView.numberOfLikes = @(photo.likes.count);
   sectionHeaderView.numberOfComments = @3;
   sectionHeaderView.delegate = self;
+  sectionHeaderView.sectionIndex = @(section);
+  sectionHeaderView.isLiked = [photo.likes containsObject:[WBDataSource currentUser].userID];
   
   return sectionHeaderView;
 }
@@ -90,7 +108,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 - (void)configureCell:(WBPhotoTimelineCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
   WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
   // Set the cell image
-  [cell.photoImageView setImageWithPath:photo.url.absoluteString placeholder:nil];
+  [cell.photoImageView setImageWithPath:photo.url.absoluteString placeholder:[[WBTheme sharedTheme] feedPlaceholderImage]];
 }
 
 - (void)tableView:(UITableView *)tableView
@@ -153,7 +171,43 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 }
 
 - (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:sectionView.sectionIndex.intValue]);
+  if (![photo.likes containsObject:[WBDataSource currentUser].userID]) {
+    [self likePhoto:photo completion:^(BOOL success) {
+      if (success) {
+        sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue + 1);
+        sectionView.isLiked = YES;
+      }
+    }];
+  } else {
+    [self unlikePhoto:photo completion:^(BOOL success) {
+      if (success && sectionView.numberOfLikes > 0) {
+        sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue - 1);
+        sectionView.isLiked = NO;
+      }
+    }];
+  }
   NSLog(@"Likes pressed");
+}
+
+- (void)likePhoto:(WBPhoto *)photo completion:(void(^)(BOOL success))result {
+  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^{
+    result(YES);
+  } failure:^(NSError *error) {
+    result(NO);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  }];
+}
+
+- (void)unlikePhoto:(WBPhoto *)photo completion:(void(^)(BOOL success))result {
+  [[WBDataSource sharedInstance] unlikePhoto:photo withUser:[WBDataSource currentUser] success:^{
+    result(YES);
+  } failure:^(NSError *error) {
+    result(NO);
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Un-Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [alert show];
+  }];
 }
 
 - (void)didReceiveMemoryWarning

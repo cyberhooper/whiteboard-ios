@@ -11,10 +11,10 @@
 
 @interface WBPhoto : NSObject
 
+@property (nonatomic, strong) NSString *photoID;
 @property (nonatomic, strong) UIImage *image;
 @property (nonatomic, strong) WBUser *author;
 @property (nonatomic, strong) NSDate *createdAt;
 @property (nonatomic, strong) NSURL *url;
 @property (nonatomic, strong) NSArray *likes; // contains user Ids of the user who liked.
-
 @end

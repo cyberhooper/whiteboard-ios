@@ -28,6 +28,7 @@
   url = [NSURL URLWithString:@"http://www.google.com/avatar.png"];
   
   photo = [[WBPhoto alloc] init];
+  photo.photoID = @"14fgfq";
   photo.image = [UIImage imageNamed:@"photo"];
   photo.author = user;
   photo.createdAt = date;
@@ -44,6 +45,10 @@
 
 - (void)testPhotoExists {
   XCTAssertNotNil(photo, @"Should be able to create a photo");
+}
+
+- (void)testPhotoHasAnID {
+  XCTAssertEqualObjects(@"14fgfq", photo.photoID, @"Photo should have an ID");
 }
 
 - (void)testPhotoHasAnImage {

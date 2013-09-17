@@ -57,6 +57,16 @@
 
 - (UIColor *)sectionDateNameFontColor;
 
+- (UIFont *)sectionLikeFont;
+
+- (UIColor *)sectionLikeFontColor;
+
+- (UIColor *)sectionLikeHighlightedFontColor;
+
+- (UIFont *)sectionCommentFont;
+
+- (UIColor *)sectionCommentFontColor;
+
 - (UIImage *)tabBarHomeButtonNormalImage;
 - (UIImage *)tabBarHomeButtonSelectedImage;
 - (UIImage *)tabBarActivityButtonNormalImage;
@@ -65,8 +75,11 @@
 - (UIImage *)tabBarSelectedItemImage;
 - (UIImage *)tabBarCameraButtonNormalImage;
 - (UIImage *)tabBarCameraButtonSelectedImage;
-
 - (UIColor *)tabBarNormalFontColor;
 - (UIColor *)tabBarSelectedFontColor;
+
+- (UIImage *)navBarBackgroundImage;
+- (UIImage *)feedPlaceholderImage;
+
 
 @end
