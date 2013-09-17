@@ -10,4 +10,6 @@
 
 @interface WBNavigationController : UINavigationController
 
+@property (nonatomic, strong) UIButton *settingsButton;
+
 @end

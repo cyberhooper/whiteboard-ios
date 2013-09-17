@@ -12,3 +12,6 @@
 "TakePhoto" = "Take Photo";
 "ChoosePhoto" =  "Choose Photo";
 "Cancel" = "Cancel";
+
+// Nav Bar
+"NavBarTitle" = "Whiteboard";

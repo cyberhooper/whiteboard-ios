@@ -72,6 +72,18 @@
 	<string>backgroundLeather</string>
 	<key>NAVBAR_backgroundImage</key>
 	<string>backgroundNavigationBar</string>
+	<key>NAVBAR_settingsButtonBackgroundImage</key>
+	<string>buttonSettings</string>
+	<key>NAVBAR_settingsButtonImage</key>
+	<string>buttonImageSettings</string>
+	<key>NAVBAR_settingsButtonHighlightedImage</key>
+	<string>buttonImageSettingsSelected</string>
+	<key>NAVBAR_titleFont</key>
+	<string>Helvetica-Bold</string>
+	<key>NAVBAR_titleFontColor</key>
+	<string>#D0C8B5</string>
+	<key>NAVBAR_titleFontSize</key>
+	<string>22</string>
 	<key>FEED_placeholderImage</key>
 	<string>PlaceholderPhoto</string>
 </dict>
