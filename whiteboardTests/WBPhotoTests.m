@@ -9,6 +9,7 @@
 #import <XCTest/XCTest.h>
 #import "WBPhoto.h"
 #import "WBUser.h"
+#import "WBComment.h"
 
 @interface WBPhotoTests : XCTestCase
 
@@ -19,6 +20,7 @@
   WBUser *user;
   NSDate *date;
   NSURL *url;
+  NSArray *comments;
 }
 
 - (void)setUp {
@@ -27,12 +29,17 @@
   date = [NSDate date];
   url = [NSURL URLWithString:@"http://www.google.com/avatar.png"];
   
+  WBComment *comment1 = [[WBComment alloc] init];
+  WBComment *comment2 = [[WBComment alloc] init];
+  comments = @[comment1, comment2];
+  
   photo = [[WBPhoto alloc] init];
   photo.photoID = @"14fgfq";
   photo.image = [UIImage imageNamed:@"photo"];
   photo.author = user;
   photo.createdAt = date;
   photo.url = url;
+  photo.comments = comments;
 }
 
 - (void)tearDown {
@@ -40,6 +47,7 @@
   user = nil;
   date = nil;
   url = nil;
+  comments = nil;
   [super tearDown];
 }
 
@@ -65,6 +73,10 @@
 
 - (void)testPhotoHAsAURL {
   XCTAssertEqualObjects(url, photo.url, @"Photo should have a URL");
+}
+
+- (void)testPhotoHAsComments {
+  XCTAssertEqualObjects(comments,photo.comments, @"Photo should have a comments");
 }
 
 @end

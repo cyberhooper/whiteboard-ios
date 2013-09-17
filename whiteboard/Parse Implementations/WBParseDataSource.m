@@ -8,6 +8,7 @@
 
 #import "WBParseDataSource.h"
 #import <Parse/Parse.h>
+#import "WBComment.h"
 
 @implementation WBParseDataSource
 
@@ -287,6 +288,14 @@
   wbPhoto.author = [self wbUserFromParseUser:user];
   wbPhoto.createdAt = parsePhoto.createdAt;
   wbPhoto.likes = [parsePhoto objectForKey:@"likes"];
+  
+  NSMutableArray *comments = [@[] mutableCopy];
+  for (PFObject *parseComment in [parsePhoto objectForKey:@"comments"]) {
+    WBComment *comment = [[WBComment alloc] init];
+    comment.commentID = parseComment.objectId;
+    [comments addObject:comment];
+  }
+  wbPhoto.comments = comments;
   wbPhoto.photoID = parsePhoto.objectId;
   NSLog(@"Photo : %@", [wbPhoto description]);
   return wbPhoto;
@@ -318,8 +327,10 @@
   [parseComment setObject:comment forKey:@"text"];
   [parseComment setObject:[PFUser currentUser] forKey:@"user"];
   PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
-  [parseComment setObject:parsePhoto forKey:@"photo"];
-  [parseComment saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+  [parseComment setObject:parsePhoto.objectId forKey:@"photoID"]; // Using a pointer towards the photo doesn't work here, it makes the save operation fail.
+  [parsePhoto addObject:parseComment forKey:@"comments"];
+  
+  [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success)
       success();
     else if (failure)

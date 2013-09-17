@@ -25,22 +25,6 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   
   [self setupView];
   [self refreshPhotos];
-  
-  
-  /// Example Add comment.
-//  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
-//    NSLog(@"Logged in with user :%@", user);
-//    
-//    WBPhoto *photo = [[WBPhoto alloc] init];
-//    photo.photoID = @"iYB949pu4R";
-//    [[WBDataSource sharedInstance] addComment:@"Yesss PAPA jeu de jambe" onPhoto:photo success:^{
-//      
-//    } failure:^(NSError *error) {
-//    }];
-//    
-//  } failure:^(NSError *error) {
-//    NSLog(@"Loggin in failed :%@",error);
-//  }];
 }
 
 #pragma mark - Setup
@@ -74,7 +58,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   [sectionHeaderView.profilePictureImageView setImageWithPath:photo.author.avatar.absoluteString
                                                   placeholder:nil];
   sectionHeaderView.numberOfLikes = @(photo.likes.count);
-  sectionHeaderView.numberOfComments = @3;
+  sectionHeaderView.numberOfComments = @(photo.comments.count);
   sectionHeaderView.delegate = self;
   sectionHeaderView.sectionIndex = @(section);
   sectionHeaderView.isLiked = [photo.likes containsObject:[WBDataSource currentUser].userID];
