@@ -47,7 +47,7 @@ static int kLibraryIndex = 1;
 
 - (void)setUpHomeViewController {
   MainFeedViewController *homeViewController = [[MainFeedViewController alloc] initWithNibName:NSStringFromClass([MainFeedViewController class]) bundle:nil];
-  UITabBarItem *homeTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Home" image:[[WBTheme sharedTheme] tabBarHomeButtonNormalImage] selectedImage:[[WBTheme sharedTheme] tabBarHomeButtonSelectedImage]];
+  UITabBarItem *homeTabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"HomeTabTitle", @"Home") image:[[WBTheme sharedTheme] tabBarHomeButtonNormalImage] selectedImage:[[WBTheme sharedTheme] tabBarHomeButtonSelectedImage]];
   
   [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarNormalFontColor] } forState:UIControlStateNormal];
   [homeTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarSelectedFontColor] } forState:UIControlStateSelected];
@@ -65,7 +65,7 @@ static int kLibraryIndex = 1;
 - (void)setUpActivityViewController {
 #warning Change this to an activity view controller when it is implemented
   UIViewController *activityViewController = [[UIViewController alloc] init];
-  UITabBarItem *activityTabBarItem = [[UITabBarItem alloc] initWithTitle:@"Activity" image:[[WBTheme sharedTheme] tabBarActivityButtonNormalImage] selectedImage:[[WBTheme sharedTheme] tabBarActivityButtonSelectedImage]];
+  UITabBarItem *activityTabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"ActivityTabTitle", @"Activity") image:[[WBTheme sharedTheme] tabBarActivityButtonNormalImage] selectedImage:[[WBTheme sharedTheme] tabBarActivityButtonSelectedImage]];
   
   [activityTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarNormalFontColor] } forState:UIControlStateNormal];
   [activityTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarSelectedFontColor] } forState:UIControlStateSelected];
@@ -141,7 +141,7 @@ static int kLibraryIndex = 1;
   BOOL photoLibraryAvailable = [UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypePhotoLibrary];
   
   if (cameraDeviceAvailable && photoLibraryAvailable) {
-    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:nil otherButtonTitles:@"Take Photo", @"Choose Photo", nil];
+    UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel") destructiveButtonTitle:nil otherButtonTitles:NSLocalizedString(@"TakePhoto", @"Take Photo"), NSLocalizedString(@"ChoosePhoto", @"Choose Photo"), nil];
     [actionSheet showFromTabBar:self.tabBar];
   } else {
     // if we don't have at least two options, we automatically show whichever is available (camera or roll)

@@ -57,6 +57,7 @@
 		BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3FC417E27420003494CD /* WBTheme.plist */; };
 		BE1B3FCC17E38B13003494CD /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3FCB17E38B13003494CD /* WBTabBarController.m */; };
 		BED03EA317E8B0E000EEEACC /* WBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EA217E8B0E000EEEACC /* WBNavigationController.m */; };
+		BED03EA517E8BDB300EEEACC /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = BED03EA417E8BDB300EEEACC /* Localizable.strings */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */; };
 		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
@@ -145,6 +146,7 @@
 		BE1B3FCF17E395A9003494CD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		BED03EA117E8B0E000EEEACC /* WBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBNavigationController.h; sourceTree = "<group>"; };
 		BED03EA217E8B0E000EEEACC /* WBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBNavigationController.m; sourceTree = "<group>"; };
+		BED03EA417E8BDB300EEEACC /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD6F1E8D17E39FD30099866F /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Helpers/UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				9919152A17DA7B2A005DA25C /* InfoPlist.strings */,
 				9919152D17DA7B2A005DA25C /* main.m */,
 				9919152F17DA7B2A005DA25C /* whiteboard-Prefix.pch */,
+				BED03EA417E8BDB300EEEACC /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -457,6 +460,7 @@
 			files = (
 				BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */,
 				BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */,
+				BED03EA517E8BDB300EEEACC /* Localizable.strings in Resources */,
 				996499BC17E3963200AA753F /* photo.png in Resources */,
 				9919153A17DA7B2A005DA25C /* Images.xcassets in Resources */,
 				994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */,
