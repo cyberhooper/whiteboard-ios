@@ -162,5 +162,12 @@
  */
 - (void)setUpWithLauchOptions:(NSDictionary *)launchOptions;
 
+- (void)initiatizeFacebook;
+- (BOOL)facebookReturnHandleURL:(NSURL *)url;
+- (void)loginWithFacebook:(void(^)(void))success
+                  failure:(void(^)(NSError *error))failure;
+- (void)logoutWithFacebook:(void(^)(void))success
+                   failure:(void(^)(NSError *error))failure;
+
 @end
 

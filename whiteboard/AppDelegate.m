@@ -10,16 +10,23 @@
 #import <Parse/Parse.h>
 #import "WBManager.h"
 #import "WBTheme.h"
+#import "WBDataSource.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  [[WBDataSource sharedInstance]initiatizeFacebook];
   return YES;
 }
 
 - (BOOL)application:(UIApplication *)application willFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
   [WBManager setUpWithLauchOptions:launchOptions];
   return YES;
+}
+
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url
+  sourceApplication:(NSString *)sourceApplication annotation:(id)annotation {
+  return [[WBDataSource sharedInstance]facebookReturnHandleURL:url];
 }
 
 @end

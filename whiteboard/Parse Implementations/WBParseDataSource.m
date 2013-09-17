@@ -338,4 +338,36 @@
   }];
 }
 
+- (void)initiatizeFacebook {
+  [PFFacebookUtils initializeFacebook];
+}
+
+- (BOOL)facebookReturnHandleURL:(NSURL *)url {
+  return [PFFacebookUtils handleOpenURL:url];
+}
+
+- (void)loginWithFacebook:(void(^)(void))success
+                  failure:(void(^)(NSError *error))failure {
+  NSArray *permissionsArray = @[@"user_about_me"];
+  
+  // Login PFUser using Facebook
+  [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
+    if (!user) {
+      failure(error);
+    }
+    else {
+      success();
+    }
+  }];
+}
+
+- (void)logoutWithFacebook:(void(^)(void))success
+                   failure:(void(^)(NSError *error))failure {
+  [self logoutUser:nil success:^{
+    success();
+  } failure:^(NSError *error) {
+    failure(error);
+  }];
+}
+
 @end

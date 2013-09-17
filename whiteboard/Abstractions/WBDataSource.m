@@ -128,4 +128,20 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
+- (BOOL)facebookReturnHandleURL:(NSURL *)url {
+ [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  return NO;
+}
+
+- (void)loginWithFacebook:(void (^)(void))success failure:(void (^)(NSError *))failure {
+ [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)logoutWithFacebook:(void (^)(void))success failure:(void (^)(NSError *))failure {
+   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)initiatizeFacebook {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
 @end
