@@ -11,6 +11,7 @@
 #import "WBPhotoTimelineCell.h"
 #import "UIImageView+SLImageLoader.h"
 #import "WBDataSource.h"
+#import "WBLoginViewController.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 
@@ -49,6 +50,13 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   UINib *nib = [UINib nibWithNibName:[self tableCellNib] bundle:nil];
   [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
   self.tableView.backgroundColor = [UIColor clearColor];
+}
+
+- (void)showLoginScreen {
+  WBLoginViewController *loginVC = [[WBLoginViewController alloc]init];
+  UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:loginVC];
+  navController.navigationBarHidden = YES;
+  [self presentViewController:navController animated:NO completion:nil];
 }
 
 #pragma mark - UITableViewDataSource

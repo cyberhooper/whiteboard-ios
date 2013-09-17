@@ -15,3 +15,10 @@
 
 // Nav Bar
 "NavBarTitle" = "Whiteboard";
+
+// Settings
+"MyProfile" = "My Profile";
+"FindFriends" = "Find Friends";
+"LogOut" = "Log Out";
+"LogOutFailed" = "Log Out Failed";
+"LogOutFailedMessage" = "Failed to log out. Please try again.";

@@ -32,4 +32,6 @@
  */
 - (NSString *)tableCellNib;
 
+- (void)showLoginScreen;
+
 @end

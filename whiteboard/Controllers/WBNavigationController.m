@@ -7,12 +7,19 @@
 //
 
 #import "WBNavigationController.h"
+#import "WBDataSource.h"
+#import "WBPhotoTimelineViewController.h"
 
 @interface WBNavigationController ()
 
 @end
 
 @implementation WBNavigationController
+
+static const int kMyProfileIndex = 0;
+static const int kFindFriendsIndex = 1;
+static const int kLogOutIndex = 2;
+
 
 - (void)viewDidLoad
 {
@@ -38,6 +45,8 @@
   [settingsButton setImage:[[WBTheme sharedTheme] navBarSettingsButtonImage] forState:UIControlStateNormal];
   [settingsButton setImage:[[WBTheme sharedTheme] navBarSettingsButtonHighlightedImage] forState:UIControlStateHighlighted];
   
+  [settingsButton addTarget:self action:@selector(settingsButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+  
   UIBarButtonItem *settingsBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:settingsButton];
   self.topViewController.navigationItem.rightBarButtonItem = settingsBarButtonItem;
   
@@ -47,6 +56,42 @@
   // Set font and color
   [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [[WBTheme sharedTheme] navBarTitleFontColor], NSFontAttributeName : [[WBTheme sharedTheme] navBarTitleFont]}];
 }
+
+- (void)settingsButtonPressed {
+  UIActionSheet *actionSheet = [[UIActionSheet alloc] initWithTitle:nil delegate:self cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel") destructiveButtonTitle:nil otherButtonTitles:NSLocalizedString(@"MyProfile", @"My Profile"), NSLocalizedString(@"FindFriends", @"Find Friends"), NSLocalizedString(@"LogOut", @"Log Out"), nil];
+  [actionSheet showFromTabBar:self.tabBarController.tabBar];
+}
+
+#pragma mark - UIActionSheetDelegate
+-(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex {
+  switch (buttonIndex) {
+    case kMyProfileIndex: {
+      break;
+    }
+    case kFindFriendsIndex: {
+      break;
+    }
+    case kLogOutIndex: {
+      [[WBDataSource sharedInstance] logoutUser:[WBDataSource currentUser] success:^{
+        if ([self.visibleViewController isKindOfClass:[WBPhotoTimelineViewController class]] &&
+            [self.visibleViewController respondsToSelector:@selector(showLoginScreen)]) {
+          [(WBPhotoTimelineViewController *)self.visibleViewController showLoginScreen];
+        }
+      } failure:^(NSError *error) {
+        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:NSLocalizedString(@"LogOutFailed", "Log Out Failed")
+                                                        message:NSLocalizedString(@"LogOutFailedMessage", @"Log out failed...")
+                                                       delegate:nil
+                                              cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+                                              otherButtonTitles:nil];
+        [alert show];
+      }];
+      break;
+    }
+    default:
+      break;
+  }
+}
+
 
 - (void)didReceiveMemoryWarning
 {
