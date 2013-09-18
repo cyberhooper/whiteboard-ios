@@ -90,7 +90,6 @@
   // Create a PFObject around a PFFile and associate it with the current user
   PFObject *photo = [PFObject objectWithClassName:@"Photo"];
   [photo setObject:imageFile forKey:@"imageFile"];
-//  photo.ACL = [PFACL ACLWithUser:[PFUser currentUser]]; // Set the access control list to current user for security purposes
   PFUser *user = [PFUser currentUser];
   [photo setObject:user forKey:@"user"];
   return photo;

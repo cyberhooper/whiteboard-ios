@@ -86,5 +86,43 @@
 	<string>22</string>
 	<key>FEED_placeholderImage</key>
 	<string>PlaceholderPhoto</string>
+	<key>FINDFRIENDS_cellBackgroundImage</key>
+	<string>backgroundFindFriendsCell</string>
+	<key>FINDFRIENDS_nameFont</key>
+	<string>Helvetica-Bold</string>
+	<key>FINDFRIENDS_nameFontSize</key>
+	<string>16</string>
+	<key>FINDFRIENDS_nameFontColor</key>
+	<string>#422B22</string>
+	<key>FINDFRIENDS_nameShadowColor</key>
+	<string>#FFFFFF</string>
+	<key>FINDFRIENDS_numPhotosFont</key>
+	<string>Helvetica</string>
+	<key>FINDFRIENDS_numPhotosFontSize</key>
+	<string>11</string>
+	<key>FINDFRIENDS_numPhotosFontColor</key>
+	<string>#817F7B</string>
+	<key>FINDFRIENDS_numPhotosShadowColor</key>
+	<string>#FFFFFF</string>
+	<key>FINDFRIENDS_numPhotosShadowAlpha</key>
+	<string>0.7</string>
+	<key>FINDFRIENDS_followButtonFont</key>
+	<string>Helvetica</string>
+	<key>FINDFRIENDS_followButtonFontSize</key>
+	<string>15</string>
+	<key>FINDFRIENDS_followButtonNormalFontColor</key>
+	<string>#432C22</string>
+	<key>FINDFRIENDS_followButtonSelectedFontColor</key>
+	<string>#FFFFFF</string>
+	<key>FINDFRIENDS_followButtonNormalShadowColor</key>
+	<string>#E2C098</string>
+	<key>FINDFRIENDS_followButtonSelectedShadowColor</key>
+	<string>#000000</string>
+	<key>FINDFRIENDS_followButtonNormalBackgroundImage</key>
+	<string>buttonFollow</string>
+	<key>FINDFRIENDS_followButtonSelectedBackgroundImage</key>
+	<string>buttonFollowing</string>
+	<key>FINDFRIENDS_followButtonSelectedImage</key>
+	<string>iconTick</string>
 </dict>
 </plist>
