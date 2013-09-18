@@ -105,6 +105,7 @@ static NSString *cellIdentifier = @"WBFriendCell";
     WBUser *user = ((WBUser *)self.users[indexPath.row]);
     cell.name = user.displayName;
     [cell.avatarImageView setImageWithPath:user.avatar.absoluteString placeholder:nil];
+    cell.followButton.selected = user.isFollowed;
   }
 }
 

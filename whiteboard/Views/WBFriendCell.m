@@ -11,7 +11,6 @@
 @interface WBFriendCell()
 
 @property (nonatomic, weak) IBOutlet UILabel *numPhotosLabel;
-@property (nonatomic, weak) IBOutlet UIButton *followButton;
 @property (nonatomic, weak) IBOutlet UIButton *nameButton;
 @property (nonatomic, weak) IBOutlet UIButton *avatarImageButton;
 

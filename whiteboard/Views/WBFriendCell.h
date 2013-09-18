@@ -14,6 +14,7 @@
 @property (nonatomic, strong) NSString *name;
 @property (nonatomic, strong) NSNumber *numPhotos;
 @property (nonatomic, weak) IBOutlet UIImageView *avatarImageView;
+@property (nonatomic, weak) IBOutlet UIButton *followButton;
 
 + (CGFloat)heightForCell;
 
