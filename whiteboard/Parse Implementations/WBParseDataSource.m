@@ -1,4 +1,3 @@
-//
 //  ParseDataSource.m
 //  whiteboard
 //
@@ -200,7 +199,7 @@
   // Create a PFObject around a PFFile and associate it with the current user
   PFObject *photo = [PFObject objectWithClassName:@"Photo"];
   [photo setObject:imageFile forKey:@"imageFile"];
-  photo.ACL = [PFACL ACLWithUser:[PFUser currentUser]]; // Set the access control list to current user for security purposes
+//  photo.ACL = [PFACL ACLWithUser:[PFUser currentUser]]; // Set the access control list to current user for security purposes
   PFUser *user = [PFUser currentUser];
   [photo setObject:user forKey:@"user"];
   return photo;
@@ -312,6 +311,7 @@
 
 - (WBUser *)wbUserFromParseUser:(PFUser *)parseUser {
   WBUser *wbUser = [self createUser];
+  wbUser.userID = parseUser.objectId;
   wbUser.username = parseUser.username;
   PFFile *avatarFile = [parseUser objectForKey:@"avatar"];
   wbUser.avatar = [NSURL URLWithString:[avatarFile url]];
@@ -348,13 +348,70 @@
 
 #pragma mark - Follow 
 
-- (void)suggestedUsers:(void(^)(NSArray *users))success
+- (void)suggestedUsers:(void(^)(NSArray *suggestedUsers))success
                failure:(void(^)(NSError *error))failure {
-  PFQuery *query = [PFQuery queryWithClassName:@"User"];
+  PFQuery *query = [PFQuery queryWithClassName:@"_User"];
   [query orderByAscending:@"username"];
   [query findObjectsInBackgroundWithBlock:^(NSArray *users, NSError *error) {
+    if (!error && success) {
+      NSArray *wbUsers = [self wbUsersFromParseUsers:users];
+      
+      /// Tag users as followed or not.
+      PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
+      [[followingRelation query] findObjectsInBackgroundWithBlock:^(NSArray *followedUsers, NSError *error) {
+        if (error && failure) {
+          failure(error);
+        } else if (success) {
+          for (WBUser *wbUser in wbUsers) {
+            for (PFUser *followedUser in followedUsers) {
+              if ([followedUser.objectId isEqualToString:wbUser.userID]) {
+                wbUser.isFollowed = YES;
+              }
+            }
+          }
+          success(wbUsers);
+        }
+      }];
+    }
+    else if (failure) {
+      failure(error);
+    }
+  }];
+}
+
+- (void)toggleFollowForUser:(WBUser *)user
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure {
+  if (!user.isFollowed)
+    [self followUser:user success:success failure:failure];
+  else
+    [self unFollowUser:user success:success failure:failure];
+}
+
+- (void)followUser:(WBUser *)user
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure {
+  PFUser *currentUser = [PFUser currentUser];
+  PFUser *userToFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFRelation *followingRelation = [currentUser relationforKey:@"following"];
+  [followingRelation addObject:userToFollow];
+  [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success)
-      success([self wbUsersFromParseUsers:users]);
+      success();
+    else if (failure)
+      failure(error);
+  }];
+}
+
+- (void)unFollowUser:(WBUser *)user
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure {
+  PFUser *userToUnFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
+  [followingRelation removeObject:userToUnFollow];
+  [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (!error && success)
+      success();
     else if (failure)
       failure(error);
   }];

@@ -135,4 +135,10 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
+- (void)toggleFollowForUser:(WBUser *)user
+                    success:(void(^)(void))success
+                    failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
 @end
