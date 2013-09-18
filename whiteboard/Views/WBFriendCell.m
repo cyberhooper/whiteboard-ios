@@ -54,22 +54,39 @@
 
 - (void)setUpNameButton {
   [self.nameButton setBackgroundColor:[UIColor clearColor]];
-  [self.nameButton.titleLabel setFont:[UIFont boldSystemFontOfSize:16.0f]];
+  [self.nameButton.titleLabel setFont:[[WBTheme sharedTheme] findFriendsNameFont]];
   [self.nameButton.titleLabel setLineBreakMode:NSLineBreakByTruncatingTail];
-  [self.nameButton setTitleColor:[UIColor colorWithRed:87.0f/255.0f green:72.0f/255.0f blue:49.0f/255.0f alpha:1.0f] forState:UIControlStateNormal];
-  [self.nameButton setTitleColor:[UIColor colorWithRed:134.0f/255.0f green:100.0f/255.0f blue:65.0f/255.0f alpha:1.0f] forState:UIControlStateHighlighted];
-  [self.nameButton setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateNormal];
-  [self.nameButton setTitleShadowColor:[UIColor whiteColor] forState:UIControlStateSelected];
+  [self.nameButton setTitleColor:[[WBTheme sharedTheme] findFriendsNameFontColor] forState:UIControlStateNormal];
+  [self.nameButton setTitleColor:[[WBTheme sharedTheme] findFriendsNameFontColor] forState:UIControlStateHighlighted];
+  [self.nameButton setTitleShadowColor:[[WBTheme sharedTheme] findFriendsNameShadowColor] forState:UIControlStateNormal];
+  [self.nameButton setTitleShadowColor:[[WBTheme sharedTheme] findFriendsNameShadowColor] forState:UIControlStateSelected];
   [self.nameButton.titleLabel setShadowOffset:CGSizeMake( 0.0f, 1.0f)];
   [self.nameButton addTarget:self action:@selector(didTapUserButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)setUpNumPhotosLabel {
-  
+  [self.numPhotosLabel setFont:[[WBTheme sharedTheme] findFriendsNumPhotosFont]];
+  [self.numPhotosLabel setTextColor:[[WBTheme sharedTheme] findFriendsNumPhotosFontColor]];
+  [self.numPhotosLabel setBackgroundColor:[UIColor clearColor]];
+  [self.numPhotosLabel setShadowColor:[[WBTheme sharedTheme] findFriendsNumPhotosShadowColor]];
+  [self.numPhotosLabel setShadowOffset:CGSizeMake( 0.0f, 1.0f)];
 }
 
 - (void)setUpFollowButton {
-  
+  [self.followButton.titleLabel setFont:[[WBTheme sharedTheme] findFriendsFollowButtonFont]];
+  [self.followButton setTitleEdgeInsets:UIEdgeInsetsMake( 0.0f, 10.0f, 0.0f, 0.0f)];
+  [self.followButton setBackgroundImage:[[WBTheme sharedTheme] findFriendsFollowButtonNormalBackgroundImage] forState:UIControlStateNormal];
+  [self.followButton setBackgroundImage:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedBackgroundImage] forState:UIControlStateSelected];
+  [self.followButton setImage:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedImage] forState:UIControlStateSelected];
+  [self.followButton setTitle:@"Follow  " forState:UIControlStateNormal]; // space added for centering
+  [self.followButton setTitle:@"Following" forState:UIControlStateSelected];
+  [self.followButton setTitleColor:[[WBTheme sharedTheme] findFriendsFollowButtonNormalFontColor] forState:UIControlStateNormal];
+  [self.followButton setTitleColor:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedFontColor] forState:UIControlStateSelected];
+  [self.followButton setTitleShadowColor:[[WBTheme sharedTheme] findFriendsFollowButtonNormalShadowColor] forState:UIControlStateNormal];
+  [self.followButton setTitleShadowColor:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedShadowColor] forState:UIControlStateSelected];
+  [self.followButton.titleLabel setShadowOffset:CGSizeMake( 0.0f, -1.0f)];
+  [self.followButton setFrame:CGRectMake( 208.0f, 20.0f, 103.0f, 32.0f)];
+  [self.followButton addTarget:self action:@selector(didTapFollowButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 + (CGFloat)heightForCell {

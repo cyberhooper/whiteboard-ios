@@ -112,7 +112,7 @@
 	<string>15</string>
 	<key>FINDFRIENDS_followButtonNormalFontColor</key>
 	<string>#432C22</string>
-	<key>FINDFIRENDS_followButtonSelectedFontColor</key>
+	<key>FINDFRIENDS_followButtonSelectedFontColor</key>
 	<string>#FFFFFF</string>
 	<key>FINDFRIENDS_followButtonNormalShadowColor</key>
 	<string>#E2C098</string>
