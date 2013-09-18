@@ -348,7 +348,7 @@
 
 - (void)loginWithFacebook:(void(^)(void))success
                   failure:(void(^)(NSError *error))failure {
-  NSArray *permissionsArray = @[@"user_about_me"];
+  NSArray *permissionsArray = @[@"basic_info", @"email"];
   
   // Login PFUser using Facebook
   [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
