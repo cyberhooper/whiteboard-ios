@@ -8,6 +8,7 @@
 
 #import "WBSignupViewController.h"
 #import "WBDataSource.h"
+#import "WBAccountManager.h"
 #import "EmailValidator.h"
 
 @interface WBSignupViewController () <UITextFieldDelegate>
@@ -69,7 +70,7 @@
                                                             forKeys:@[@"userName",
                                                                       @"email",
                                                                       @"password"]];
-    [[WBDataSource sharedInstance] signupWithInfo:usersInfos success:^(WBUser *user) {
+    [[WBAccountManager sharedInstance] signupWithInfo:usersInfos success:^(WBUser *user) {
       [self.navigationController dismissViewControllerAnimated:YES
                                                     completion:nil];
     } failure:^(NSError *error) {

@@ -7,7 +7,7 @@
 //
 
 #import "WBLoginViewController.h"
-#import "WBDataSource.h"
+#import "WBAccountManager.h"
 #import "WBSignupViewController.h"
 
 @interface WBLoginViewController () <UITextFieldDelegate>
@@ -41,7 +41,7 @@
 }
 
 - (void)loginUser {
-  [[WBDataSource sharedInstance]loginWithUsername:self.usernameTextField.text
+  [[WBAccountManager sharedInstance]loginWithUsername:self.usernameTextField.text
                                       andPassWord:self.passwordTextField.text
                                           success:^(WBUser *user) {
                                             [self dismissViewControllerAnimated:YES completion:nil];
@@ -54,7 +54,7 @@
                                           }];
 }
 - (IBAction)loginWithFacebookAction:(id)sender {
-    [[WBDataSource sharedInstance]loginWithFacebook:^{
+    [[WBAccountManager sharedInstance]loginWithFacebook:^{
       [self dismissViewControllerAnimated:YES completion:nil];
     } failure:^(NSError *error) {
       [[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Wrong creditentials", @"Wrong creditentials")

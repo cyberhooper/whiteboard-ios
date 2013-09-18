@@ -9,6 +9,7 @@
 #import "WBNavigationController.h"
 #import "WBDataSource.h"
 #import "WBPhotoTimelineViewController.h"
+#import "WBAccountManager.h"
 
 @interface WBNavigationController ()
 
@@ -72,7 +73,7 @@ static const int kLogOutIndex = 2;
       break;
     }
     case kLogOutIndex: {
-      [[WBDataSource sharedInstance] logoutUser:[WBDataSource currentUser] success:^{
+      [[WBAccountManager sharedInstance] logoutUser:[WBDataSource currentUser] success:^{
         if ([self.visibleViewController isKindOfClass:[WBPhotoTimelineViewController class]] &&
             [self.visibleViewController respondsToSelector:@selector(showLoginScreen)]) {
           [(WBPhotoTimelineViewController *)self.visibleViewController showLoginScreen];

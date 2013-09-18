@@ -8,6 +8,7 @@
 
 #import "MyViewController.h"
 #import "WBUser.h"
+#import "WBAccountManager.h"
 #import "WBDataSource.h"
 
 @interface MyViewController ()
@@ -22,7 +23,7 @@
   NSLog(@"user.firstname : %@", aUser.firstName);
   
   // Log in :
-  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
+  [[WBAccountManager sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
     NSLog(@"Logged in with user :%@", user);
   } failure:^(NSError *error) {
     NSLog(@"Loggin in failed :%@",error);

@@ -10,6 +10,9 @@
 		2165EC2917E8B18600AC2F72 /* WBSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2165EC2717E8B18600AC2F72 /* WBSignupViewController.m */; };
 		2165EC2A17E8B18600AC2F72 /* WBSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2165EC2817E8B18600AC2F72 /* WBSignupViewController.xib */; };
 		2165EC2D17E8BBCD00AC2F72 /* EmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2165EC2C17E8BBCD00AC2F72 /* EmailValidator.m */; };
+		2173980217EA055E0071A03A /* WBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173980117EA055E0071A03A /* WBAccountManager.m */; };
+		2173980517EA06630071A03A /* WBParseAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173980417EA06630071A03A /* WBParseAccountManager.m */; };
+		2173980B17EA0B3D0071A03A /* WBUser+ParseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173980A17EA0B3D0071A03A /* WBUser+ParseUser.m */; };
 		218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */; };
 		218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */; };
 		21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A26B5217E362E400BF2BF4 /* WBUser.m */; };
@@ -84,6 +87,12 @@
 		2165EC2817E8B18600AC2F72 /* WBSignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBSignupViewController.xib; sourceTree = "<group>"; };
 		2165EC2B17E8BBCD00AC2F72 /* EmailValidator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailValidator.h; sourceTree = "<group>"; };
 		2165EC2C17E8BBCD00AC2F72 /* EmailValidator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailValidator.m; sourceTree = "<group>"; };
+		2173980017EA055E0071A03A /* WBAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAccountManager.h; sourceTree = "<group>"; };
+		2173980117EA055E0071A03A /* WBAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAccountManager.m; sourceTree = "<group>"; };
+		2173980317EA06630071A03A /* WBParseAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBParseAccountManager.h; sourceTree = "<group>"; };
+		2173980417EA06630071A03A /* WBParseAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBParseAccountManager.m; sourceTree = "<group>"; };
+		2173980917EA0B3D0071A03A /* WBUser+ParseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBUser+ParseUser.h"; sourceTree = "<group>"; };
+		2173980A17EA0B3D0071A03A /* WBUser+ParseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBUser+ParseUser.m"; sourceTree = "<group>"; };
 		218D5A2F17E7B2BE007D17DB /* WBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoginViewController.h; sourceTree = "<group>"; };
 		218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLoginViewController.m; sourceTree = "<group>"; };
 		218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoginViewController.xib; sourceTree = "<group>"; };
@@ -315,6 +324,8 @@
 				99F9609317E39034005D27EB /* WBPhoto.m */,
 				995D6C2117E78AD300550634 /* WBComment.h */,
 				995D6C2217E78AD300550634 /* WBComment.m */,
+				2173980017EA055E0071A03A /* WBAccountManager.h */,
+				2173980117EA055E0071A03A /* WBAccountManager.m */,
 			);
 			path = Abstractions;
 			sourceTree = "<group>";
@@ -324,6 +335,10 @@
 			children = (
 				9922AB5617E0DA6B00D1B18A /* WBParseDataSource.h */,
 				9922AB5717E0DA6B00D1B18A /* WBParseDataSource.m */,
+				2173980317EA06630071A03A /* WBParseAccountManager.h */,
+				2173980417EA06630071A03A /* WBParseAccountManager.m */,
+				2173980917EA0B3D0071A03A /* WBUser+ParseUser.h */,
+				2173980A17EA0B3D0071A03A /* WBUser+ParseUser.m */,
 			);
 			path = "Parse Implementations";
 			sourceTree = "<group>";
@@ -551,11 +566,14 @@
 				BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
 				9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */,
+				2173980B17EA0B3D0071A03A /* WBUser+ParseUser.m in Sources */,
 				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
 				99F9609417E39034005D27EB /* WBPhoto.m in Sources */,
 				21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */,
 				BED03EA317E8B0E000EEEACC /* WBNavigationController.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
+				2173980217EA055E0071A03A /* WBAccountManager.m in Sources */,
+				2173980517EA06630071A03A /* WBParseAccountManager.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
 				995D6C2317E78AD300550634 /* WBComment.m in Sources */,
 				DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */,

@@ -9,6 +9,7 @@
 #import "MainFeedViewController.h"
 #import "MainFeedCell.h"
 #import "WBDataSource.h"
+#import "WBAccountManager.h"
 
 @interface TestObject : NSObject
 @property (nonatomic, strong) NSString *username;
@@ -39,7 +40,7 @@
 }
 
 - (void)dummyData {
-  [[WBDataSource sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
+  [[WBAccountManager sharedInstance] loginWithUsername:@"testUser" andPassWord:@"test" success:^(WBUser *user) {
     NSLog(@"Logged in with user :%@", user);
   } failure:^(NSError *error) {
     NSLog(@"Loggin in failed :%@",error);
