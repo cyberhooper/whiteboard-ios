@@ -9,8 +9,9 @@
 #import "WBPhotoTimelineViewController.h"
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "WBPhotoTimelineCell.h"
-#import "UIImageView+SLImageLoader.h"
+#import "UIImageView+WBImageLoader.h"
 #import "WBDataSource.h"
+#import "WBLoadMoreCell.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 
@@ -18,7 +19,8 @@
 
 @implementation WBPhotoTimelineViewController
 
-static NSString *cellIdentifier = @"WBPhotoTimelineCell";
+static NSString *tableCellIdentifier = @"WBPhotoTimelineCell";
+static NSString *loadMoreCellIdentifier = @"WBPLoadMoreCell";
 
 - (void)viewDidLoad {
   [super viewDidLoad];
@@ -45,14 +47,25 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 
 #pragma mark - Setup
 - (void)setupView {
-  // Setup NIB
-  UINib *nib = [UINib nibWithNibName:[self tableCellNib] bundle:nil];
-  [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
+  // Setup table cell NIB
+  UINib *tableCellNib = [UINib nibWithNibName:[self tableCellNib] bundle:nil];
+  [self.tableView registerNib:tableCellNib forCellReuseIdentifier:tableCellIdentifier];
+  
+  // Setup load more cell NIB
+  UINib *loadMoreCellNib = [UINib nibWithNibName:[self loadMoreTableCellNib] bundle:nil];
+  [self.tableView registerNib:loadMoreCellNib forCellReuseIdentifier:loadMoreCellIdentifier];
+  
+  // Defaults
   self.tableView.backgroundColor = [UIColor clearColor];
 }
 
 #pragma mark - UITableViewDataSource
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
+  if ([self isLoadMoreCell:section]) {
+    // Load More section
+    return nil;
+  }
+  
   WBPhotoTimelineSectionHeaderView *sectionHeaderView = nil;
   
   // Find the Section Header Nib
@@ -83,12 +96,31 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+  if ([self isLoadMoreCell:section]) {
+    // Load More section
+    return 0.0f;
+  }
+  
 //warning MAGIC NUMBER. REPLACE ME
   return 44.0f;
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+  if (self.loadMore && self.photos.count != 0){
+    // Load more section
+    return self.photos.count + 1;
+  }
+  
   return self.photos.count;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  if ([self isLoadMoreCell:indexPath.section]) {
+    // Load More Section
+    return 44.0f;
+  }
+  
+  return 296.f;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -98,7 +130,12 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
-  WBPhotoTimelineCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+  if(indexPath.section == self.photos.count){
+    // Load More cell
+    return [self tableView:tableView cellForLoadMoreAtIndexPath:indexPath];
+  }
+  
+  WBPhotoTimelineCell *cell = [tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
   
   [self configureCell:cell forRowAtIndexPath:indexPath];
   
@@ -111,6 +148,13 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   [cell.photoImageView setImageWithPath:photo.url.absoluteString placeholder:nil];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  if ([self isLoadMoreCell:indexPath.section]) {
+    // Load More Cell
+    [self loadNextPage];
+  }
+}
+
 - (void)tableView:(UITableView *)tableView
   willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
   cell.backgroundColor = [UIColor clearColor];
@@ -118,9 +162,44 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   cell.backgroundView.backgroundColor = [UIColor clearColor];
 }
 
+#pragma mark - LoadMoreCell
+- (UITableViewCell *)tableView:(UITableView *)tableView
+    cellForLoadMoreAtIndexPath:(NSIndexPath *)indexPath {
+  
+  WBLoadMoreCell *cell = [tableView dequeueReusableCellWithIdentifier:loadMoreCellIdentifier];
+  
+  [self configureLoadMoreCell:cell forRowAtIndexPath:indexPath];
+  
+  return cell;
+}
+
+- (void)configureLoadMoreCell:(WBLoadMoreCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  // Set load more image
+  cell.loadMoreImage = [[WBTheme sharedTheme] feedLoadMoreImage];
+  
+  // Set seperator top
+  cell.seperatorTopImage = [[WBTheme sharedTheme] feedLoadMoreSeperatorTopImage];
+}
+
+- (BOOL)isLoadMoreCell:(NSInteger)row {
+  if(!self.loadMore){
+    return NO;
+  }
+  
+  return row == self.photos.count;
+}
+
+- (void)loadNextPage {
+  NSLog(@"Load next page here");
+}
+
 #pragma mark - Config
 - (NSString *)tableCellNib {
   return NSStringFromClass([WBPhotoTimelineCell class]);
+}
+
+- (NSString *)loadMoreTableCellNib {
+  return NSStringFromClass([WBLoadMoreCell class]);
 }
 
 - (UIImage *)backgroundImage {
@@ -135,7 +214,7 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
   CGFloat offsetY = screenHeight - scrollViewHeight + scrollView.contentOffset.y;
   
   #warning Magic number, change this
-  if(offsetY <= -100.f){
+  if(offsetY <= -150.f){
     [self scrollViewDidPullToRefresh:scrollView];
   }
 }
@@ -157,12 +236,17 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
     self.photos = photos;
     [self.tableView reloadData];
     self.isLoading = NO;
-  }
-                                      failure:^(NSError *error){
-                                        UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Refresh Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-                                        [alert show];
-                                        self.isLoading = NO;
-                                      }];
+    
+    NSLog(@"%@", photos);
+  } failure:^(NSError *error) {
+    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Refresh Failed"
+                                                    message:[error description]
+                                                   delegate:nil
+                                          cancelButtonTitle:@"OK"
+                                          otherButtonTitles:nil];
+    [alert show];
+    self.isLoading = NO;
+  }];
 }
 
 #pragma mark - WBPhotoTimelineSectionHeaderViewDelegate

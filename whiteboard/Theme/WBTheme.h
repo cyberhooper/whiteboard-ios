@@ -57,6 +57,9 @@
 
 - (UIColor *)sectionDateNameFontColor;
 
+- (UIImage *)feedLoadMoreSeperatorTopImage;
+- (UIImage *)feedLoadMoreImage;
+
 - (UIImage *)tabBarHomeButtonNormalImage;
 - (UIImage *)tabBarHomeButtonSelectedImage;
 - (UIImage *)tabBarActivityButtonNormalImage;

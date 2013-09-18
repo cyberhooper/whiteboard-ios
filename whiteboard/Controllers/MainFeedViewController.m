@@ -35,7 +35,9 @@
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-  //[self dummyData];
+  [self dummyData];
+  
+  self.loadMore = YES;
 }
 
 - (void)dummyData {
@@ -45,17 +47,17 @@
     NSLog(@"Loggin in failed :%@",error);
   }];
   
-  // Add dummy data
-  NSMutableArray *array = [NSMutableArray array];
-  for(NSInteger i = 1; i < 8; i++){
-    NSString *image = [NSString stringWithFormat:@"http://static.ddmcdn.com/gif/smart-car-%i.jpg", i];
-    NSString *username = [NSString stringWithFormat:@"Test %i", i];
-    
-    NSDictionary *dict = @{@"photoUrl": image, @"username": username};
-    [array addObject:dict];
-  }
-  
-  self.photos = array;
+//  // Add dummy data
+//  NSMutableArray *array = [NSMutableArray array];
+//  for(NSInteger i = 1; i < 8; i++){
+//    NSString *image = [NSString stringWithFormat:@"http://static.ddmcdn.com/gif/smart-car-%i.jpg", i];
+//    NSString *username = [NSString stringWithFormat:@"Test %i", i];
+//    
+//    NSDictionary *dict = @{@"photoUrl": image, @"username": username};
+//    [array addObject:dict];
+//  }
+//  
+//  self.photos = array;
   
 //  /// TEST get latest photos
 //  [[WBDataSource sharedInstance] latestPhotos:^(NSArray *photos) {
@@ -72,18 +74,32 @@
 }
 
 #pragma mark - UITableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+  if (self.loadMore && self.photos.count != 0){
+    // Load more section
+    return self.photos.count + 1;
+  }
+  
+  return self.photos.count;
+}
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  if (indexPath.section >= self.photos.count) {
+    // Load More Section
+    return 44.0f;
+  }
+  
   return 296.f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+  if (section == self.photos.count) {
+    // Load More section
+    return 0.0f;
+  }
+  
 //warning MAGIC NUMBER. REPLACE ME
   return 44.0f;
-}
-
-- (CGFloat)tableView:(UITableView *)tableView heightForFooterrInSection:(NSInteger)section {
-//warning MAGIC NUMBER. REPLACE ME
-  return 30.0f;
 }
 
 - (NSString *)tableCellNib {
