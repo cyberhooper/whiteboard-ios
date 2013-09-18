@@ -16,6 +16,8 @@
 		218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */; };
 		218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */; };
 		21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A26B5217E362E400BF2BF4 /* WBUser.m */; };
+		21AC154017EA470300DC59DF /* KeyboardAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC153D17EA470300DC59DF /* KeyboardAnimationView.m */; };
+		21AC154117EA470300DC59DF /* NSNotification+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC153F17EA470300DC59DF /* NSNotification+Keyboard.m */; };
 		5B6E5B767D2D48748780E8CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F30985C67F4305AE5B3F10 /* libPods.a */; };
 		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
 		991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CB17DE8161007FF6B5 /* CFNetwork.framework */; };
@@ -98,6 +100,10 @@
 		218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoginViewController.xib; sourceTree = "<group>"; };
 		21A26B5117E362E400BF2BF4 /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
 		21A26B5217E362E400BF2BF4 /* WBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUser.m; sourceTree = "<group>"; };
+		21AC153C17EA470300DC59DF /* KeyboardAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyboardAnimationView.h; sourceTree = "<group>"; };
+		21AC153D17EA470300DC59DF /* KeyboardAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAnimationView.m; sourceTree = "<group>"; };
+		21AC153E17EA470300DC59DF /* NSNotification+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotification+Keyboard.h"; sourceTree = "<group>"; };
+		21AC153F17EA470300DC59DF /* NSNotification+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+Keyboard.m"; sourceTree = "<group>"; };
 		991614C917DE813C007FF6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		991614CB17DE8161007FF6B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		991614CD17DE8172007FF6B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -388,6 +394,10 @@
 		DD2B8ED817E22E920094A3C4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				21AC153C17EA470300DC59DF /* KeyboardAnimationView.h */,
+				21AC153D17EA470300DC59DF /* KeyboardAnimationView.m */,
+				21AC153E17EA470300DC59DF /* NSNotification+Keyboard.h */,
+				21AC153F17EA470300DC59DF /* NSNotification+Keyboard.m */,
 				2165EC2B17E8BBCD00AC2F72 /* EmailValidator.h */,
 				2165EC2C17E8BBCD00AC2F72 /* EmailValidator.m */,
 				BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */,
@@ -557,8 +567,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BE1B3FCC17E38B13003494CD /* WBTabBarController.m in Sources */,
+				21AC154117EA470300DC59DF /* NSNotification+Keyboard.m in Sources */,
 				2165EC2917E8B18600AC2F72 /* WBSignupViewController.m in Sources */,
 				DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */,
+				21AC154017EA470300DC59DF /* KeyboardAnimationView.m in Sources */,
 				DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
