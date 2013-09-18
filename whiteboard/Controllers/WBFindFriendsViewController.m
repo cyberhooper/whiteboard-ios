@@ -8,7 +8,7 @@
 
 #import "WBFindFriendsViewController.h"
 #import "WBDataSource.h"
-#import "UIImageView+SLImageLoader.h"
+#import "UIImageView+WBImageLoader.h"
 
 @interface WBFindFriendsViewController ()
 
