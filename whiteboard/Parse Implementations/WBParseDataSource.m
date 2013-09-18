@@ -36,7 +36,7 @@
 }
 
 - (WBUser *)currentUser {
-  [WBUser mapWBUser:[PFUser currentUser]];
+  _currentUser = [WBUser mapWBUser:[PFUser currentUser]];
   return _currentUser;
 }
 
