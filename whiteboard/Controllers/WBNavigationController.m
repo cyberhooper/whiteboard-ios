@@ -10,6 +10,7 @@
 #import "WBDataSource.h"
 #import "WBPhotoTimelineViewController.h"
 #import "ProfileViewController.h"
+#import "WBFindFriendsViewController.h"
 
 @interface WBNavigationController ()
 
@@ -73,6 +74,8 @@ static const int kLogOutIndex = 2;
       break;
     }
     case kFindFriendsIndex: {
+      WBFindFriendsViewController *findFriendsViewController = [[WBFindFriendsViewController alloc] initWithStyle:UITableViewStylePlain];
+      [self pushViewController:findFriendsViewController animated:YES];
       break;
     }
     case kLogOutIndex: {

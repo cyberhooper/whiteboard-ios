@@ -67,6 +67,7 @@
 		BED03EAD17E9162400EEEACC /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EAB17E9162400EEEACC /* ProfileViewController.xib */; };
 		BED03EB017E91EDD00EEEACC /* WBProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */; };
 		BED03EB217E91EFB00EEEACC /* WBProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */; };
+		BED03EB517EA075D00EEEACC /* WBFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EB417EA075D00EEEACC /* WBFindFriendsViewController.m */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */; };
 		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
@@ -170,6 +171,8 @@
 		BED03EAE17E91EDD00EEEACC /* WBProfileHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBProfileHeaderView.h; sourceTree = "<group>"; };
 		BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBProfileHeaderView.m; sourceTree = "<group>"; };
 		BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBProfileHeaderView.xib; sourceTree = "<group>"; };
+		BED03EB317EA075D00EEEACC /* WBFindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBFindFriendsViewController.h; sourceTree = "<group>"; };
+		BED03EB417EA075D00EEEACC /* WBFindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBFindFriendsViewController.m; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD6F1E8D17E39FD30099866F /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Helpers/UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -412,6 +415,8 @@
 				2165EC2617E8B18600AC2F72 /* WBSignupViewController.h */,
 				2165EC2717E8B18600AC2F72 /* WBSignupViewController.m */,
 				2165EC2817E8B18600AC2F72 /* WBSignupViewController.xib */,
+				BED03EB317EA075D00EEEACC /* WBFindFriendsViewController.h */,
+				BED03EB417EA075D00EEEACC /* WBFindFriendsViewController.m */,
 			);
 			name = WB;
 			sourceTree = "<group>";
@@ -564,6 +569,7 @@
 				DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */,
 				DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */,
 				BED03EAC17E9162400EEEACC /* ProfileViewController.m in Sources */,
+				BED03EB517EA075D00EEEACC /* WBFindFriendsViewController.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
 				9922AB5A17E0DA6B00D1B18A /* WBParseDataSource.m in Sources */,
