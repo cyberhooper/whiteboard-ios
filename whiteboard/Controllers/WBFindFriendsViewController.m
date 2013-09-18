@@ -35,7 +35,7 @@ static NSString *cellIdentifier = @"WBFriendCell";
 {
   [super viewDidLoad];
   [self setUpView];
-  [self dummyData];
+  [self getSuggestedUsers];
 }
 
 #pragma mark - Config
@@ -51,6 +51,19 @@ static NSString *cellIdentifier = @"WBFriendCell";
 
 - (void)dummyData {
   self.users = @[@"Thibault", @"Sacha", @"Petter", @"German"];
+}
+
+- (void)getSuggestedUsers {
+  [[WBDataSource sharedInstance] suggestedUsers:^(NSArray *users) {
+    self.users = users;
+    [self.tableView reloadData];
+  } failure:^(NSError *error) {
+    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SuggestedFriendsFailed", @"Cannot Get Friends")
+                               message:NSLocalizedString(@"SuggestedFriendsFailedMessage", @"Suggested friends failed. Please try again.")
+                              delegate:nil
+                     cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+                     otherButtonTitles:nil] show];
+  }];
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,7 +102,9 @@ static NSString *cellIdentifier = @"WBFriendCell";
   if (indexPath.section == kInviteFriendsSectionIndex) {
     cell.textLabel.text = @"Invite Friends";
   } else {
-    cell.name = self.users[indexPath.row];
+    WBUser *user = ((WBUser *)self.users[indexPath.row]);
+    cell.name = user.displayName;
+    [cell.avatarImageView setImageWithPath:user.avatar.absoluteString placeholder:nil];
   }
 }
 

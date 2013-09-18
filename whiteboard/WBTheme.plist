@@ -107,7 +107,7 @@
 	<key>FINDFRIENDS_numPhotosShadowAlpha</key>
 	<string>0.7</string>
 	<key>FINDFRIENDS_followButtonFont</key>
-	<string>Helvetica</string>
+	<string>Helvetica-Bold</string>
 	<key>FINDFRIENDS_followButtonFontSize</key>
 	<string>15</string>
 	<key>FINDFRIENDS_followButtonNormalFontColor</key>

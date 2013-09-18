@@ -78,8 +78,8 @@
   [self.followButton setBackgroundImage:[[WBTheme sharedTheme] findFriendsFollowButtonNormalBackgroundImage] forState:UIControlStateNormal];
   [self.followButton setBackgroundImage:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedBackgroundImage] forState:UIControlStateSelected];
   [self.followButton setImage:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedImage] forState:UIControlStateSelected];
-  [self.followButton setTitle:@"Follow  " forState:UIControlStateNormal]; // space added for centering
-  [self.followButton setTitle:@"Following" forState:UIControlStateSelected];
+  [self.followButton setTitle:NSLocalizedString(@"FollowButton", @"Follow ") forState:UIControlStateNormal]; // space added for centering
+  [self.followButton setTitle:NSLocalizedString(@"FollowingButton", @"Following") forState:UIControlStateSelected];
   [self.followButton setTitleColor:[[WBTheme sharedTheme] findFriendsFollowButtonNormalFontColor] forState:UIControlStateNormal];
   [self.followButton setTitleColor:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedFontColor] forState:UIControlStateSelected];
   [self.followButton setTitleShadowColor:[[WBTheme sharedTheme] findFriendsFollowButtonNormalShadowColor] forState:UIControlStateNormal];
@@ -87,6 +87,21 @@
   [self.followButton.titleLabel setShadowOffset:CGSizeMake( 0.0f, -1.0f)];
   [self.followButton setFrame:CGRectMake( 208.0f, 20.0f, 103.0f, 32.0f)];
   [self.followButton addTarget:self action:@selector(didTapFollowButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)setName:(NSString *)name {
+  _name = name;
+  
+  CGSize maxSize = CGSizeMake(130, 30);
+  CGRect nameSize = [name boundingRectWithSize:maxSize
+                                       options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin
+                                    attributes:@{NSFontAttributeName : self.nameButton.titleLabel.font}
+                                       context:nil];
+  [self.nameButton setTitle:name forState:UIControlStateNormal];
+  [self.nameButton setTitle:name forState:UIControlStateHighlighted];
+  
+  // Adding 10 to the width because of a potential bug in boundingRect
+  [self.nameButton setFrame:CGRectMake( 60.0f, 17.0f, nameSize.size.width + 10, nameSize.size.height)];
 }
 
 + (CGFloat)heightForCell {

@@ -22,3 +22,9 @@
 "LogOut" = "Log Out";
 "LogOutFailed" = "Log Out Failed";
 "LogOutFailedMessage" = "Failed to log out. Please try again.";
+
+// Find Friends
+"SuggestedFriendsFailed" = "Cannot Get Friends";
+"SuggestedFriendsFailedMessage" = "Suggested friends failed. Please try again.";
+"FollowButton" = "Follow "; // space is added for centering
+"FollowingButton" = "Following";
