@@ -7,7 +7,6 @@
 //
 
 #import "WBFindFriendsViewController.h"
-#import "WBFriendCell.h"
 #import "WBDataSource.h"
 #import "UIImageView+SLImageLoader.h"
 
@@ -102,10 +101,12 @@ static NSString *cellIdentifier = @"WBFriendCell";
   if (indexPath.section == kInviteFriendsSectionIndex) {
     cell.textLabel.text = @"Invite Friends";
   } else {
+    cell.delegate = self;
     WBUser *user = ((WBUser *)self.users[indexPath.row]);
     cell.name = user.displayName;
     [cell.avatarImageView setImageWithPath:user.avatar.absoluteString placeholder:nil];
     cell.followButton.selected = user.isFollowed;
+    cell.userIndex = @(indexPath.row);
   }
 }
 
@@ -114,6 +115,26 @@ static NSString *cellIdentifier = @"WBFriendCell";
     return 44.0f;
   }
   return [WBFriendCell heightForCell];
+}
+
+#pragma mark - WBFriendCellDelegate
+- (void)cell:(WBFriendCell *)cellView didTapFollowButtonAtIndex:(NSNumber *)userIndex {
+  WBUser *user = ((WBUser *)self.users[userIndex.intValue]);
+  [[WBDataSource sharedInstance] toggleFollowForUser:user success:^{
+    [self getSuggestedUsers];
+    [self.tableView reloadData];
+  } failure:^(NSError *error) {
+    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
+                                message:error.description
+                               delegate:nil
+                      cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+                      otherButtonTitles:nil] show];
+  }];
+}
+
+- (void)cell:(WBFriendCell *)cellView didTapUserButtonAtIndex:(NSNumber *)userIndex {
+  WBUser *user = ((WBUser *)self.users[userIndex.intValue]);
+  // Push a user detail view controller
 }
 
 @end

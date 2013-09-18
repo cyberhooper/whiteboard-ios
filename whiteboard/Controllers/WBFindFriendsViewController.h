@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBFriendCell.h"
 
-@interface WBFindFriendsViewController : UITableViewController
+@interface WBFindFriendsViewController : UITableViewController <WBFriendCellDelegate>
 
 @property (nonatomic, strong) NSArray *users;
 

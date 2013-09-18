@@ -6,12 +6,16 @@
   Copyright (c) 2013 Fueled. All rights reserved.
 */
 
+// General
+"Cancel" = "Cancel";
+"Error" = "Error";
+
 // Tab Bar
 "HomeTabTitle" = "Home";
 "ActivityTabTitle" = "Activity";
 "TakePhoto" = "Take Photo";
 "ChoosePhoto" =  "Choose Photo";
-"Cancel" = "Cancel";
+
 
 // Nav Bar
 "NavBarTitle" = "Whiteboard";
