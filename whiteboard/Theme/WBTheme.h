@@ -67,6 +67,9 @@
 
 - (UIColor *)sectionCommentFontColor;
 
+- (UIImage *)feedLoadMoreSeperatorTopImage;
+- (UIImage *)feedLoadMoreImage;
+
 - (UIImage *)tabBarHomeButtonNormalImage;
 - (UIImage *)tabBarHomeButtonSelectedImage;
 - (UIImage *)tabBarActivityButtonNormalImage;

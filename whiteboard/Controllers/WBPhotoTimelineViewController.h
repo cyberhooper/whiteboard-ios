@@ -28,10 +28,25 @@
 @property (nonatomic, assign) BOOL isLoading;
 
 /**
+ Flag for indicating if the load more cell should be added or not
+ */
+@property (nonatomic, assign) BOOL loadMore;
+
+/**
+ Checks to see if the cell is the load more cell
+ */
+- (BOOL)isLoadMoreCell:(NSInteger)row;
+
+/**
  Sets the name of the nib that is being used for the table cell
  */
 - (NSString *)tableCellNib;
 
 - (void)showLoginScreen;
+
+/**
+ Sets the name of the nib that is being used for the load more cell
+ */
+- (NSString *)loadMoreTableCellNib;
 
 @end
