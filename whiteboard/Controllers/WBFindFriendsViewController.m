@@ -7,7 +7,9 @@
 //
 
 #import "WBFindFriendsViewController.h"
-#import "WBPhotoTimelineCell.h"
+#import "WBFriendCell.h"
+#import "WBDataSource.h"
+#import "UIImageView+SLImageLoader.h"
 
 @interface WBFindFriendsViewController ()
 
@@ -18,7 +20,7 @@
 static const int kInviteFriendsSectionIndex = 0;
 static const int kFriendsListSectionIndex = 1;
 
-static NSString *cellIdentifier = @"WBPhotoTimelineCell";
+static NSString *cellIdentifier = @"WBFriendCell";
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -31,14 +33,9 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+  [super viewDidLoad];
   [self setUpView];
+  [self dummyData];
 }
 
 #pragma mark - Config
@@ -49,7 +46,11 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 }
 
 - (NSString *)tableCellNib {
-  return NSStringFromClass([WBPhotoTimelineCell class]);
+  return NSStringFromClass([WBFriendCell class]);
+}
+
+- (void)dummyData {
+  self.users = @[@"Thibault", @"Sacha", @"Petter", @"German"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -77,12 +78,26 @@ static NSString *cellIdentifier = @"WBPhotoTimelineCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+  WBFriendCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
-    
-    return cell;
+  [self configureCell:cell forRowAtIndexPath:indexPath];
+  
+  return cell;
 }
 
+- (void)configureCell:(WBFriendCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  if (indexPath.section == kInviteFriendsSectionIndex) {
+    cell.textLabel.text = @"Invite Friends";
+  } else {
+    cell.name = self.users[indexPath.row];
+  }
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  if (indexPath.section == kInviteFriendsSectionIndex) {
+    return 44.0f;
+  }
+  return [WBFriendCell heightForCell];
+}
 
 @end

@@ -86,5 +86,20 @@
 - (UIColor *)navBarTitleFontColor;
 - (UIImage *)feedPlaceholderImage;
 
+- (UIImage *)findFriendsCellBackgroundImage;
+- (UIFont *)findFriendsNameFont;
+- (UIColor *)findFriendsNameFontColor;
+- (UIColor *)findFriendsNameShadowColor;
+- (UIFont *)findFriendsNumPhotosFont;
+- (UIColor *)findFriendsNumPhotosFontColor;
+- (UIColor *)findFriendsNumPhotosShadowColor;
+- (UIFont *)findFriendsFollowButtonFont;
+- (UIColor *)findFriendsFollowButtonNormalFontColor;
+- (UIColor *)findFriendsFollowButtonSelectedFontColor;
+- (UIColor *)findFriendsFollowButtonNormalShadowColor;
+- (UIColor *)findFriendsFollowButtonSelectedShadowColor;
+- (UIImage *)findFriendsFollowButtonNormalBackgroundImage;
+- (UIImage *)findFriendsFollowButtonSelectedBackgroundImage;
+- (UIImage *)findFriendsFollowButtonSelectedImage;
 
 @end

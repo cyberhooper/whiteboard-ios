@@ -155,4 +155,64 @@
   return [UIImage imageNamed:[self.themeDict objectForKey:@"FEED_placeholderImage"]];
 }
 
+- (UIImage *)findFriendsCellBackgroundImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"FINDFRIENDS_cellBackgroundImage"]];
+}
+
+- (UIFont *)findFriendsNameFont {
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_nameFont"] size:[self.themeDict[@"FINDFRIENDS_nameFontSize"] floatValue]];
+}
+
+- (UIColor *)findFriendsNameFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_nameFontColor"]];
+}
+
+- (UIColor *)findFriendsNameShadowColor {
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_nameShadowColor"]];
+}
+
+- (UIFont *)findFriendsNumPhotosFont {
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_numPhotosFont"] size:[self.themeDict[@"FINDFRIENDS_numPhotosFontSize"] floatValue]];
+}
+
+- (UIColor *)findFriendsNumPhotosFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_numPhotosFontColor"]];
+}
+
+- (UIColor *)findFriendsNumPhotosShadowColor {
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_numPhotosShadowColor"] andAlpha:[self.themeDict[@"FINDFRIENDS_numPhotosShadowAlpha"] floatValue]];
+}
+
+- (UIFont *)findFriendsFollowButtonFont {
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_followButtonFont"] size:[self.themeDict[@"FINDFRIENDS_followButtonFontSize"] floatValue]];
+}
+
+- (UIColor *)findFriendsFollowButtonNormalFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_followButtonNormalFontColor"]];
+}
+
+- (UIColor *)findFriendsFollowButtonSelectedFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_followButtonSelectedFontColor"]];
+}
+
+- (UIColor *)findFriendsFollowButtonNormalShadowColor {
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_followButtonNormalShadowColor"]];
+}
+
+- (UIColor *)findFriendsFollowButtonSelectedShadowColor {
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_followButtonSelectedShadowColor"]];
+}
+
+- (UIImage *)findFriendsFollowButtonNormalBackgroundImage {
+  return [UIImage imageNamed:self.themeDict[@"FINDFRIENDS_followButtonNormalBackgroundImage"]];
+}
+
+- (UIImage *)findFriendsFollowButtonSelectedBackgroundImage {
+  return [UIImage imageNamed:self.themeDict[@"FINDFRIENDS_followButtonSelectedBackgroundImage"]];
+}
+
+- (UIImage *)findFriendsFollowButtonSelectedImage {
+  return [UIImage imageNamed:self.themeDict[@"FINDFRIENDS_followButtonSelectedImage"]];
+}
+
 @end

@@ -68,6 +68,8 @@
 		BED03EB017E91EDD00EEEACC /* WBProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */; };
 		BED03EB217E91EFB00EEEACC /* WBProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */; };
 		BED03EB517EA075D00EEEACC /* WBFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EB417EA075D00EEEACC /* WBFindFriendsViewController.m */; };
+		BED03EB817EA0BDB00EEEACC /* WBFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */; };
+		BED03EBA17EA0C8800EEEACC /* WBFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */; };
 		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
@@ -173,6 +175,9 @@
 		BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBProfileHeaderView.xib; sourceTree = "<group>"; };
 		BED03EB317EA075D00EEEACC /* WBFindFriendsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBFindFriendsViewController.h; sourceTree = "<group>"; };
 		BED03EB417EA075D00EEEACC /* WBFindFriendsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBFindFriendsViewController.m; sourceTree = "<group>"; };
+		BED03EB617EA0BDB00EEEACC /* WBFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBFriendCell.h; sourceTree = "<group>"; };
+		BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBFriendCell.m; sourceTree = "<group>"; };
+		BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBFriendCell.xib; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD6F1E8D17E39FD30099866F /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Helpers/UIColor+Hex.h"; sourceTree = "<group>"; };
@@ -356,6 +361,9 @@
 				BED03EAE17E91EDD00EEEACC /* WBProfileHeaderView.h */,
 				BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */,
 				BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */,
+				BED03EB617EA0BDB00EEEACC /* WBFriendCell.h */,
+				BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */,
+				BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -502,6 +510,7 @@
 			files = (
 				BED03EAD17E9162400EEEACC /* ProfileViewController.xib in Resources */,
 				BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */,
+				BED03EBA17EA0C8800EEEACC /* WBFriendCell.xib in Resources */,
 				BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */,
 				BED03EA517E8BDB300EEEACC /* Localizable.strings in Resources */,
 				996499BC17E3963200AA753F /* photo.png in Resources */,
@@ -582,6 +591,7 @@
 				BED03EA317E8B0E000EEEACC /* WBNavigationController.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
+				BED03EB817EA0BDB00EEEACC /* WBFriendCell.m in Sources */,
 				995D6C2317E78AD300550634 /* WBComment.m in Sources */,
 				DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */,
 				218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */,
