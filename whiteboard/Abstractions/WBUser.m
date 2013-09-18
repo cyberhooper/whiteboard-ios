@@ -14,4 +14,12 @@
   return self.username;
 }
 
+- (NSString *)description {
+  NSMutableString *description = [@"" mutableCopy];
+  
+  NSString *isFollowedString = _isFollowed ? @"Followed" : @" Not Followed";
+  [description appendString:isFollowedString];
+  return description;
+}
+
 @end
