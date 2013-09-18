@@ -301,6 +301,15 @@
   return wbPhoto;
 }
 
+- (NSArray *)wbUsersFromParseUsers:(NSArray *)parseUsers {
+  NSMutableArray *wbUsers = [@[] mutableCopy];
+  for (PFUser *user in parseUsers) {
+    WBUser *wbUser = [self wbUserFromParseUser:user];
+    [wbUsers addObject:wbUser];
+  }
+  return [NSArray arrayWithArray:wbUsers];
+}
+
 - (WBUser *)wbUserFromParseUser:(PFUser *)parseUser {
   WBUser *wbUser = [self createUser];
   wbUser.username = parseUser.username;
@@ -327,12 +336,25 @@
   [parseComment setObject:comment forKey:@"text"];
   [parseComment setObject:[PFUser currentUser] forKey:@"user"];
   PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
-  [parseComment setObject:parsePhoto.objectId forKey:@"photoID"]; // Using a pointer towards the photo doesn't work here, it makes the save operation fail.
   [parsePhoto addObject:parseComment forKey:@"comments"];
   
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success)
       success();
+    else if (failure)
+      failure(error);
+  }];
+}
+
+#pragma mark - Follow 
+
+- (void)suggestedUsers:(void(^)(NSArray *users))success
+               failure:(void(^)(NSError *error))failure {
+  PFQuery *query = [PFQuery queryWithClassName:@"User"];
+  [query orderByAscending:@"username"];
+  [query findObjectsInBackgroundWithBlock:^(NSArray *users, NSError *error) {
+    if (!error && success)
+      success([self wbUsersFromParseUsers:users]);
     else if (failure)
       failure(error);
   }];
