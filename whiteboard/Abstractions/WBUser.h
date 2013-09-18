@@ -71,4 +71,9 @@
  */
 @property (nonatomic, strong) NSNumber *numberFollowing;
 
+/**
+ Tags if this user is followed by the current user.
+ */
+@property (nonatomic) BOOL isFollowed;
+
 @end

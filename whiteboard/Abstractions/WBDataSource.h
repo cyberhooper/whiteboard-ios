@@ -94,6 +94,15 @@
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure;
 
+#pragma mark - Follow
+
+- (void)suggestedUsers:(void(^)(NSArray *users))success
+               failure:(void(^)(NSError *error))failure;
+
+- (void)toggleFollowForUser:(WBUser *)user
+                    success:(void(^)(void))success
+                    failure:(void(^)(NSError *error))failure;
+
 #pragma mark - Set Up
 
 /**

@@ -10,7 +10,7 @@ Parse.Cloud.afterSave("Photo", function(request) {
   updateNumberOfPhotosForUser(user);
 });
 
- Parse.Cloud.afterDelete("Photo", function(request) {
+Parse.Cloud.afterDelete("Photo", function(request) {
   var user = userFromRequest(request);
   updateNumberOfPhotosForUser(user);
 });
@@ -20,18 +20,17 @@ function userFromRequest(request) {
 }
 
 function updateNumberOfPhotosForUser(user) {
-  getNumberOfPhotosFromUser(user, function(numberOfPhotos) {
-  	user.set("numberOfPhotos", numberOfPhotos);
-  	user.save();
-  });
-}
-
-function getNumberOfPhotosFromUser(user, callback) {
   var query = new Parse.Query("Photo");
   query.equalTo("user", user);
   query.count({
-	success: function(number) {
-	  callback(number);
-	}
+  	success: function(number) {
+  	  setNumberOfPhotosForUser(number, user);
+  	}
   });
 }
+
+function setNumberOfPhotosForUser(numberOfPhotos, user) {
+  user.set("numberOfPhotos", numberOfPhotos);
+  user.save();
+ }
+ 
