@@ -12,6 +12,8 @@
 
 @interface WBFindFriendsViewController ()
 
+@property (nonatomic, strong) NSString *selectedEmailAddress;
+
 @end
 
 @implementation WBFindFriendsViewController
@@ -195,7 +197,17 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 }
 
 - (void)inviteFriendsTapped {
-  NSLog(@"Invite friends here");
+  ABPeoplePickerNavigationController *addressBook = [[ABPeoplePickerNavigationController alloc] init];
+  addressBook.peoplePickerDelegate = self;
+  
+  if ([MFMailComposeViewController canSendMail] && [MFMessageComposeViewController canSendText]) {
+    addressBook.displayedProperties = [NSArray arrayWithObjects:[NSNumber numberWithInt:kABPersonEmailProperty], [NSNumber numberWithInt:kABPersonPhoneProperty], nil];
+  } else if ([MFMailComposeViewController canSendMail]) {
+    addressBook.displayedProperties = [NSArray arrayWithObject:[NSNumber numberWithInt:kABPersonEmailProperty]];
+  } else if ([MFMessageComposeViewController canSendText]) {
+    addressBook.displayedProperties = [NSArray arrayWithObject:[NSNumber numberWithInt:kABPersonPhoneProperty]];
+  }
+  [self presentViewController:addressBook animated:YES completion:nil];
 }
 
 #pragma mark - Invite Friends Cell
@@ -260,6 +272,91 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
                                                            cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
                                                            otherButtonTitles:nil] show];
                                        }];
+}
+
+#pragma mark - ABPeoplePickerDelegate
+
+/* Called when the user cancels the address book view controller. We simply dismiss it. */
+- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker {
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+/* Called when a member of the address book is selected, we return YES to display the member's details. */
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person {
+  return YES;
+}
+
+/* Called when the user selects a property of a person in their address book (ex. phone, email, location,...)
+ This method will allow them to send a text or email inviting them to Anypic.  */
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier {
+  
+  if (property == kABPersonEmailProperty) {
+    
+    ABMultiValueRef emailProperty = ABRecordCopyValue(person,property);
+    NSString *email = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(emailProperty,identifier);
+    self.selectedEmailAddress = email;
+    if ([MFMailComposeViewController canSendMail]) {
+      // go directly to mail
+      [self presentMailComposeViewController:email];
+    } else if ([MFMessageComposeViewController canSendText]) {
+      // go directly to iMessage
+      [self presentMessageComposeViewController:email];
+    }
+    
+  } else if (property == kABPersonPhoneProperty) {
+    ABMultiValueRef phoneProperty = ABRecordCopyValue(person,property);
+    NSString *phone = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(phoneProperty,identifier);
+    
+    if ([MFMessageComposeViewController canSendText]) {
+      [self presentMessageComposeViewController:phone];
+    }
+  }
+  
+  return NO;
+}
+
+- (void)presentMailComposeViewController:(NSString *)recipient {
+  // Create the compose email view controller
+  MFMailComposeViewController *composeEmailViewController = [[MFMailComposeViewController alloc] init];
+  
+  // Set the recipient to the selected email and a default text
+  [composeEmailViewController setMailComposeDelegate:self];
+  [composeEmailViewController setSubject:NSLocalizedString(@"EmailSubject", @"Email Subject")];
+  [composeEmailViewController setToRecipients:[NSArray arrayWithObjects:recipient, nil]];
+  [composeEmailViewController setMessageBody:NSLocalizedString(@"EmailBody", @"Email Body") isHTML:YES];
+  
+  [self dismissViewControllerAnimated:YES completion:^{
+    [self presentViewController:composeEmailViewController animated:YES completion:nil];
+  }];
+}
+
+- (void)presentMessageComposeViewController:(NSString *)recipient {
+  // Create the compose text message view controller
+  MFMessageComposeViewController *composeTextViewController = [[MFMessageComposeViewController alloc] init];
+  
+  // Send the destination phone number and a default text
+  [composeTextViewController setMessageComposeDelegate:self];
+  [composeTextViewController setRecipients:[NSArray arrayWithObjects:recipient, nil]];
+  [composeTextViewController setBody:NSLocalizedString(@"MessageBody", @"Message Body")];
+
+  [self dismissViewControllerAnimated:YES completion:^{
+    [self presentViewController:composeTextViewController animated:YES completion:nil];
+  }];
+}
+
+#pragma mark - MFMailComposeDelegate
+
+/* Simply dismiss the MFMailComposeViewController when the user sends an email or cancels */
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+#pragma mark - MFMessageComposeDelegate
+
+/* Simply dismiss the MFMessageComposeViewController when the user sends a text or cancels */
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
+  [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

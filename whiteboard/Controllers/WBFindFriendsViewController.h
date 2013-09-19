@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AddressBookUI/AddressBookUI.h>
+#import <MessageUI/MessageUI.h>
 #import "WBFriendCell.h"
 #import "WBLoadMoreCell.h"
 #import "WBInviteFriendsCell.h"
 
-@interface WBFindFriendsViewController : UITableViewController <WBFriendCellDelegate>
+
+@interface WBFindFriendsViewController : UITableViewController <WBFriendCellDelegate, ABPeoplePickerNavigationControllerDelegate, MFMailComposeViewControllerDelegate, MFMessageComposeViewControllerDelegate>
 
 @property (nonatomic, strong) NSArray *users;
 @property (nonatomic) BOOL loadMore;
