@@ -10,10 +10,6 @@
 
 @implementation WBUser
 
-- (NSString *)displayName {
-  return self.username;
-}
-
 - (NSString *)description {
   NSMutableString *description = [@"" mutableCopy];
   

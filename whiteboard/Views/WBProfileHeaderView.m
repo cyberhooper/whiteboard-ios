@@ -7,6 +7,7 @@
 //
 
 #import "WBProfileHeaderView.h"
+#import "WBDataSource.h"
 
 @implementation WBProfileHeaderView
 
@@ -29,6 +30,10 @@
 #pragma mark - Setup
 
 - (void)setUpView {
+  [self.nameLabel setText:[WBDataSource currentUser].displayName];
+  NSURL *avatar = [[WBDataSource sharedInstance]currentAvatar];
+  [self.profilePictureImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:avatar]]];
+  self.profilePictureImageView.layer.cornerRadius = 10.0f;
   
 }
 

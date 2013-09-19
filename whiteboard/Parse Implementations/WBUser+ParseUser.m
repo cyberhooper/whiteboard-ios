@@ -13,7 +13,7 @@
 + (WBUser *)mapWBUser:(PFUser *)user {
   WBUser *wbUser = [[WBUser alloc]init];
   wbUser.userID = user.objectId;
-  wbUser.displayName = user.username;
+  wbUser.displayName = [user objectForKey:@"displayName"];
   wbUser.username = user.username;
   wbUser.firstName = [user objectForKey:@"firstname"];
   wbUser.lastName = [user objectForKey:@"lastname"];
@@ -30,7 +30,7 @@
   PFUser *pfUser = [PFUser user];
   
   pfUser.objectId = user.userID;
-  pfUser.username = user.displayName;
+  [pfUser setObject:user.displayName forKey:@"displayName"];
   pfUser.username = user.username;
   [pfUser setObject:user.firstName forKey:@"firstname"];
   [pfUser setObject:user.lastName forKey:@"lastName"];
