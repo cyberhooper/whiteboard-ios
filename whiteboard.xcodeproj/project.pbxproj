@@ -75,6 +75,9 @@
 		BED03EBA17EA0C8800EEEACC /* WBFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */; };
 		BED03EBC17EB5D1800EEEACC /* WBInviteFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EBB17EB5D1800EEEACC /* WBInviteFriendsCell.xib */; };
 		BED03EBF17EB5D6600EEEACC /* WBInviteFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EBE17EB5D6600EEEACC /* WBInviteFriendsCell.m */; };
+		BED03EC117EB9ABE00EEEACC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */; };
+		BED03EC317EB9AD500EEEACC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC217EB9AD500EEEACC /* AddressBook.framework */; };
+		BED03EC517EB9ADC00EEEACC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC417EB9ADC00EEEACC /* MessageUI.framework */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */; };
 		DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1817E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m */; };
@@ -197,6 +200,9 @@
 		BED03EBB17EB5D1800EEEACC /* WBInviteFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBInviteFriendsCell.xib; sourceTree = "<group>"; };
 		BED03EBD17EB5D6600EEEACC /* WBInviteFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBInviteFriendsCell.h; sourceTree = "<group>"; };
 		BED03EBE17EB5D6600EEEACC /* WBInviteFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBInviteFriendsCell.m; sourceTree = "<group>"; };
+		BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		BED03EC217EB9AD500EEEACC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		BED03EC417EB9ADC00EEEACC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoadMoreCell.h; sourceTree = "<group>"; };
@@ -217,6 +223,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED03EC517EB9ADC00EEEACC /* MessageUI.framework in Frameworks */,
+				BED03EC317EB9AD500EEEACC /* AddressBook.framework in Frameworks */,
+				BED03EC117EB9ABE00EEEACC /* AddressBookUI.framework in Frameworks */,
 				991614DA17DE81AB007FF6B5 /* SystemConfiguration.framework in Frameworks */,
 				991614D817DE81A1007FF6B5 /* StoreKit.framework in Frameworks */,
 				991614D617DE8198007FF6B5 /* Security.framework in Frameworks */,
@@ -270,6 +279,9 @@
 		9919152017DA7B2A005DA25C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BED03EC417EB9ADC00EEEACC /* MessageUI.framework */,
+				BED03EC217EB9AD500EEEACC /* AddressBook.framework */,
+				BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */,
 				BE1B3FCF17E395A9003494CD /* Accounts.framework */,
 				991614DB17DE82B4007FF6B5 /* Parse.framework */,
 				991614D917DE81AB007FF6B5 /* SystemConfiguration.framework */,
