@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
-#import "UIImageView+SLImageLoader.h"
+#import "UIImageView+WBImageLoader.h"
 #import <AFNetworking/UIImageView+AFNetworking.h>
 
 @implementation UIImageView (WBImageLoader)

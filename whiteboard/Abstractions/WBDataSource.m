@@ -70,6 +70,14 @@ static Class DataSourceSubclass = nil;
 
 #pragma mark - Photos
 
+- (NSInteger)photoLimit {
+  if(_photoLimit == 0){
+    return 1;
+  }
+  
+  return _photoLimit;
+}
+
 - (void)uploadPhoto:(WBPhoto *)photo
             success:(void(^)(void))success
             failure:(void(^)(NSError *error))failure
@@ -79,7 +87,13 @@ static Class DataSourceSubclass = nil;
 
 - (void)latestPhotos:(void(^)(NSArray *photos))success
              failure:(void(^)(NSError *error))failure {
-    [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)latestPhotosWithOffset:(int)offset
+                       success:(void(^)(NSArray *photos))success
+                       failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
 - (void)likePhoto:(WBPhoto *)photo
@@ -113,6 +127,24 @@ static Class DataSourceSubclass = nil;
 - (void)toggleFollowForUser:(WBUser *)user
                     success:(void(^)(void))success
                     failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)numberOfPhotosForUser:(WBUser *)user
+                      success:(void(^)(int numberOfPhotos))success
+                      failure:(void(^)(NSError *error))failure {
+    [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)numberOfFollowersForUser:(WBUser *)user
+                         success:(void(^)(int numberOfFollowers))success
+                         failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)numberOfFollowingsForUser:(WBUser *)user
+                          success:(void(^)(int numberOfFollowings))success
+                          failure:(void(^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 

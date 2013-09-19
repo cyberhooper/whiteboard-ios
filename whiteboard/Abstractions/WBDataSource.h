@@ -21,6 +21,11 @@
 @property (nonatomic, strong) WBUser *currentUser;
 
 /**
+ The limit for the amount of photos to load at a time
+ */
+@property (nonatomic, assign) NSInteger photoLimit;
+
+/**
   The singleton method for creating a WBDataSource instance.
   @returns A concrete implementation of WBDataSource
  */
@@ -84,6 +89,10 @@
 - (void)latestPhotos:(void(^)(NSArray *photos))success
              failure:(void(^)(NSError *error))failure;
 
+- (void)latestPhotosWithOffset:(int)offset
+                       success:(void(^)(NSArray *photos))success
+                       failure:(void(^)(NSError *error))failure;
+
 - (void)likePhoto:(WBPhoto *)photo
          withUser:(WBUser *)user
           success:(void(^)(void))success
@@ -115,6 +124,20 @@
  perform some setup code. Example, set Api key, base url etc.
  */
 - (void)setUpWithLauchOptions:(NSDictionary *)launchOptions;
+
+#pragma mark - Profile
+
+- (void)numberOfPhotosForUser:(WBUser *)user
+                      success:(void(^)(int numberOfPhotos))success
+                      failure:(void(^)(NSError *error))failure;
+
+- (void)numberOfFollowersForUser:(WBUser *)user
+                      success:(void(^)(int numberOfFollowers))success
+                      failure:(void(^)(NSError *error))failure;
+
+- (void)numberOfFollowingsForUser:(WBUser *)user
+                         success:(void(^)(int numberOfFollowings))success
+                         failure:(void(^)(NSError *error))failure;
 
 @end
 

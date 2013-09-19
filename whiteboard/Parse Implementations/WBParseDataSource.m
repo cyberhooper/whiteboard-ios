@@ -102,8 +102,15 @@
 
 - (void)latestPhotos:(void(^)(NSArray *photos))success
              failure:(void(^)(NSError *error))failure {
+  [self latestPhotosWithOffset:0 success:success failure:failure];
+}
+
+- (void)latestPhotosWithOffset:(int)offset
+                       success:(void(^)(NSArray *photos))success
+                       failure:(void(^)(NSError *error))failure {
   PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
-  query.limit = 20;
+  query.limit = self.photoLimit;
+  query.skip = offset;
   [query orderByDescending:@"createdAt"];
   [query includeKey:@"user"];
   [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
@@ -112,13 +119,12 @@
     else
       NSLog(@"Error: %@ %@", error, [error userInfo]);
   }];
-  
-  // filter with friends example :
-  //[query whereKey:@"user" containedIn:[currentUser friends]];
-  
-  //Restrict results. Faster?
-  //[query selectKeys:@[@"playerName", @"score"]];
 }
+// filter with friends example :
+//[query whereKey:@"user" containedIn:[currentUser friends]];
+
+//Restrict results. Faster?
+//[query selectKeys:@[@"playerName", @"score"]];
 
 - (void)likePhoto:(WBPhoto *)photo
          withUser:(WBUser *)user
@@ -307,6 +313,60 @@
   [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success)
       success();
+    else if (failure)
+      failure(error);
+  }];
+}
+
+#pragma mark - Profile
+
+- (void)profileForUser:(WBUser *)wbUser
+               success:(void(^)(WBUser *user))success
+               failure:(void(^)(NSError *error))failure {
+  PFQuery *query = [PFQuery queryWithClassName:@"_User"];
+  [query getObjectInBackgroundWithId:wbUser.userID block:^(PFObject *user, NSError *error) {
+    if (!error && success)
+      success([self wbUserFromParseUser:(PFUser*)user]);
+    else if (failure)
+      failure(error);
+  }];
+}
+
+- (void)numberOfPhotosForUser:(WBUser *)user
+                      success:(void(^)(int numberOfPhotos))success
+                      failure:(void(^)(NSError *error))failure {
+  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFQuery *queryPhotoCount = [PFQuery queryWithClassName:@"Photo"];
+  [queryPhotoCount whereKey:@"user" equalTo:parseUser];
+  [queryPhotoCount countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+    if (!error && success)
+      success(number);
+    else if (failure)
+      failure(error);
+  }];
+}
+
+- (void)numberOfFollowersForUser:(WBUser *)user
+                         success:(void(^)(int numberOfFollowers))success
+                         failure:(void(^)(NSError *error))failure {
+  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFRelation *followerRelation = [parseUser relationforKey:@"follower"];
+  [[followerRelation query] countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+    if (!error && success)
+      success(number);
+    else if (failure)
+      failure(error);
+  }];
+}
+
+- (void)numberOfFollowingsForUser:(WBUser *)user
+                          success:(void(^)(int numberOfFollowings))success
+                          failure:(void(^)(NSError *error))failure {
+  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFRelation *followingRelation = [parseUser relationforKey:@"following"];
+  [[followingRelation query] countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+    if (!error && success)
+      success(number);
     else if (failure)
       failure(error);
   }];

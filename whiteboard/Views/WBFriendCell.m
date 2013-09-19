@@ -11,7 +11,6 @@
 @interface WBFriendCell()
 
 @property (nonatomic, weak) IBOutlet UILabel *numPhotosLabel;
-@property (nonatomic, weak) IBOutlet UIButton *followButton;
 @property (nonatomic, weak) IBOutlet UIButton *nameButton;
 @property (nonatomic, weak) IBOutlet UIButton *avatarImageButton;
 
@@ -78,8 +77,8 @@
   [self.followButton setBackgroundImage:[[WBTheme sharedTheme] findFriendsFollowButtonNormalBackgroundImage] forState:UIControlStateNormal];
   [self.followButton setBackgroundImage:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedBackgroundImage] forState:UIControlStateSelected];
   [self.followButton setImage:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedImage] forState:UIControlStateSelected];
-  [self.followButton setTitle:@"Follow  " forState:UIControlStateNormal]; // space added for centering
-  [self.followButton setTitle:@"Following" forState:UIControlStateSelected];
+  [self.followButton setTitle:NSLocalizedString(@"FollowButton", @"Follow ") forState:UIControlStateNormal]; // space added for centering
+  [self.followButton setTitle:NSLocalizedString(@"FollowingButton", @"Following") forState:UIControlStateSelected];
   [self.followButton setTitleColor:[[WBTheme sharedTheme] findFriendsFollowButtonNormalFontColor] forState:UIControlStateNormal];
   [self.followButton setTitleColor:[[WBTheme sharedTheme] findFriendsFollowButtonSelectedFontColor] forState:UIControlStateSelected];
   [self.followButton setTitleShadowColor:[[WBTheme sharedTheme] findFriendsFollowButtonNormalShadowColor] forState:UIControlStateNormal];
@@ -89,22 +88,37 @@
   [self.followButton addTarget:self action:@selector(didTapFollowButtonAction:) forControlEvents:UIControlEventTouchUpInside];
 }
 
+- (void)setName:(NSString *)name {
+  _name = name;
+  
+  CGSize maxSize = CGSizeMake(130, 30);
+  CGRect nameSize = [name boundingRectWithSize:maxSize
+                                       options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin
+                                    attributes:@{NSFontAttributeName : self.nameButton.titleLabel.font}
+                                       context:nil];
+  [self.nameButton setTitle:name forState:UIControlStateNormal];
+  [self.nameButton setTitle:name forState:UIControlStateHighlighted];
+  
+  // Adding 10 to the width because of a potential bug in boundingRect
+  [self.nameButton setFrame:CGRectMake( 60.0f, 17.0f, nameSize.size.width + 10, nameSize.size.height)];
+}
+
 + (CGFloat)heightForCell {
   return 67.0f;
 }
 
 #pragma mark Delegate Callbacks
 - (void)didTapUserButtonAction:(id)sender {
-//  if (self.delegate && [self.delegate respondsToSelector:@selector(cell:didTapUserButton:)]) {
-//    [self.delegate cell:self didTapUserButton:self.user];
-//  }
+  if (self.delegate && [self.delegate respondsToSelector:@selector(cell:didTapUserButtonAtIndex:)]) {
+    [self.delegate cell:self didTapUserButtonAtIndex:self.userIndex];
+  }
   NSLog(@"User button tapped");
 }
 
 - (void)didTapFollowButtonAction:(id)sender {
-//  if (self.delegate && [self.delegate respondsToSelector:@selector(cell:didTapFollowButton:)]) {
-//    [self.delegate cell:self didTapFollowButton:self.user];
-//  }
+  if (self.delegate && [self.delegate respondsToSelector:@selector(cell:didTapFollowButtonAtIndex:)]) {
+    [self.delegate cell:self didTapFollowButtonAtIndex:self.userIndex];
+  }
   NSLog(@"Follow button tapped");
 }
 

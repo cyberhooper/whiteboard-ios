@@ -47,13 +47,11 @@
 		994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */; };
 		995D6C2317E78AD300550634 /* WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2217E78AD300550634 /* WBComment.m */; };
 		995D6C2517E78AEA00550634 /* WBCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2417E78AEA00550634 /* WBCommentTests.m */; };
-		996499BC17E3963200AA753F /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = 996499BB17E3963200AA753F /* photo.png */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
 		99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7D17DE4FBF00809322 /* MyViewController.m */; };
 		99F9609417E39034005D27EB /* WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9609317E39034005D27EB /* WBPhoto.m */; };
 		99F9609617E390D7005D27EB /* WBPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9609517E390D7005D27EB /* WBPhotoTests.m */; };
 		BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F5D17E22117003494CD /* MainWindow.xib */; };
-		BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */; };
 		BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F6217E22117003494CD /* MainFeedCell.m */; };
 		BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F6317E22117003494CD /* MainFeedCell.xib */; };
 		BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BE1B3F6517E22117003494CD /* WBPhotoTimelineCell.m */; };
@@ -76,8 +74,13 @@
 		BED03EB817EA0BDB00EEEACC /* WBFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */; };
 		BED03EBA17EA0C8800EEEACC /* WBFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
+		DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */; };
+		DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1817E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m */; };
 		DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */; };
+		DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E9217E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m */; };
 		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
+		DDECB94B17EA521B00407255 /* WBLoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */; };
+		DDECB94D17EA644E00407255 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = DDECB94C17EA644E00407255 /* photo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,7 +150,6 @@
 		995D6C2117E78AD300550634 /* WBComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBComment.h; sourceTree = "<group>"; };
 		995D6C2217E78AD300550634 /* WBComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBComment.m; sourceTree = "<group>"; };
 		995D6C2417E78AEA00550634 /* WBCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommentTests.m; sourceTree = "<group>"; };
-		996499BB17E3963200AA753F /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
 		99D80C7C17DE4FBF00809322 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		99D80C7D17DE4FBF00809322 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
@@ -157,8 +159,6 @@
 		A2E130B5A6424401B142406B /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		B0F30985C67F4305AE5B3F10 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1B3F5D17E22117003494CD /* MainWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
-		BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SLImageLoader.h"; sourceTree = "<group>"; };
-		BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SLImageLoader.m"; sourceTree = "<group>"; };
 		BE1B3F6117E22117003494CD /* MainFeedCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainFeedCell.h; sourceTree = "<group>"; };
 		BE1B3F6217E22117003494CD /* MainFeedCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainFeedCell.m; sourceTree = "<group>"; };
 		BE1B3F6317E22117003494CD /* MainFeedCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MainFeedCell.xib; sourceTree = "<group>"; };
@@ -195,10 +195,18 @@
 		BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBFriendCell.xib; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
+		DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoadMoreCell.h; sourceTree = "<group>"; };
+		DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLoadMoreCell.m; sourceTree = "<group>"; };
+		DD304E1717E8AB8700B3BCA3 /* UIImageView+WBImageLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WBImageLoader.h"; path = "Helpers/UIImageView+WBImageLoader.h"; sourceTree = "<group>"; };
+		DD304E1817E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WBImageLoader.m"; path = "Helpers/UIImageView+WBImageLoader.m"; sourceTree = "<group>"; };
 		DD6F1E8D17E39FD30099866F /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIColor+Hex.h"; path = "Helpers/UIColor+Hex.h"; sourceTree = "<group>"; };
 		DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIColor+Hex.m"; path = "Helpers/UIColor+Hex.m"; sourceTree = "<group>"; };
+		DD6F1E9117E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoTimelineSectionHeaderButton.h; sourceTree = "<group>"; };
+		DD6F1E9217E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineSectionHeaderButton.m; sourceTree = "<group>"; };
 		DDA25DE317E26DFB00C44622 /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
 		DDA25DE417E26DFB00C44622 /* WBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewController.m; sourceTree = "<group>"; };
+		DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoadMoreCell.xib; sourceTree = "<group>"; };
+		DDECB94C17EA644E00407255 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,8 +290,8 @@
 		9919152717DA7B2A005DA25C /* whiteboard */ = {
 			isa = PBXGroup;
 			children = (
+				DDECB94C17EA644E00407255 /* photo.png */,
 				BE1B3F7B17E22335003494CD /* Theme */,
-				996499BB17E3963200AA753F /* photo.png */,
 				BE1B3F7217E22197003494CD /* Controllers */,
 				DD2B8ED817E22E920094A3C4 /* Helpers */,
 				BE1B3F6017E22117003494CD /* Views */,
@@ -385,6 +393,10 @@
 				BED03EB617EA0BDB00EEEACC /* WBFriendCell.h */,
 				BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */,
 				BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */,
+				DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */,
+				DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */,
+				DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */,
+				DD6F1E9017E3A80D0099866F /* Section Header */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -421,14 +433,26 @@
 				21AC153F17EA470300DC59DF /* NSNotification+Keyboard.m */,
 				2165EC2B17E8BBCD00AC2F72 /* EmailValidator.h */,
 				2165EC2C17E8BBCD00AC2F72 /* EmailValidator.m */,
-				BE1B3F5E17E22117003494CD /* UIImageView+SLImageLoader.h */,
-				BE1B3F5F17E22117003494CD /* UIImageView+SLImageLoader.m */,
+				DD304E1717E8AB8700B3BCA3 /* UIImageView+WBImageLoader.h */,
+				DD304E1817E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m */,
 				DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */,
 				DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */,
 				DD6F1E8D17E39FD30099866F /* UIColor+Hex.h */,
 				DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		DD6F1E9017E3A80D0099866F /* Section Header */ = {
+			isa = PBXGroup;
+			children = (
+				BE1B3F6717E22117003494CD /* WBPhotoTimelineSectionHeaderView.h */,
+				BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */,
+				BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */,
+				DD6F1E9117E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.h */,
+				DD6F1E9217E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m */,
+			);
+			name = "Section Header";
 			sourceTree = "<group>";
 		};
 		DDA25DE217E26DEB00C44622 /* WB */ = {
@@ -534,11 +558,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED03EAD17E9162400EEEACC /* ProfileViewController.xib in Resources */,
+				DDECB94D17EA644E00407255 /* photo.png in Resources */,
 				BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */,
 				BED03EBA17EA0C8800EEEACC /* WBFriendCell.xib in Resources */,
 				BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */,
 				BED03EA517E8BDB300EEEACC /* Localizable.strings in Resources */,
-				996499BC17E3963200AA753F /* photo.png in Resources */,
+				DDECB94B17EA521B00407255 /* WBLoadMoreCell.xib in Resources */,
 				9919153A17DA7B2A005DA25C /* Images.xcassets in Resources */,
 				994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */,
 				2165EC2A17E8B18600AC2F72 /* WBSignupViewController.xib in Resources */,
@@ -607,7 +632,9 @@
 				BED03EAC17E9162400EEEACC /* ProfileViewController.m in Sources */,
 				BED03EB517EA075D00EEEACC /* WBFindFriendsViewController.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
+				DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
+				DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */,
 				9922AB5A17E0DA6B00D1B18A /* WBParseDataSource.m in Sources */,
 				BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
@@ -617,6 +644,7 @@
 				99F9609417E39034005D27EB /* WBPhoto.m in Sources */,
 				21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */,
 				BED03EA317E8B0E000EEEACC /* WBNavigationController.m in Sources */,
+				DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				2173980217EA055E0071A03A /* WBAccountManager.m in Sources */,
 				2173980517EA06630071A03A /* WBParseAccountManager.m in Sources */,
@@ -625,7 +653,6 @@
 				995D6C2317E78AD300550634 /* WBComment.m in Sources */,
 				DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */,
 				218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */,
-				BE1B3F6B17E22117003494CD /* UIImageView+SLImageLoader.m in Sources */,
 				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
 				BED03EB017E91EDD00EEEACC /* WBProfileHeaderView.m in Sources */,
 				BE1B3F8017E24875003494CD /* WBTheme.m in Sources */,

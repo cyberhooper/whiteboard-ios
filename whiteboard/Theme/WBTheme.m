@@ -82,6 +82,15 @@
 - (UIColor *)sectionCommentFontColor {
   return [UIColor colorWithHex:[self.themeDict objectForKey:@"SECTION_commentFontColor"]];
 }
+  
+- (UIImage *)feedLoadMoreSeperatorTopImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"FEED_loadMoreSeperatorTopImage"]];
+}
+
+- (UIImage *)feedLoadMoreImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"FEED_loadMoreImage"]];
+
+}
 
 - (UIImage *)tabBarHomeButtonNormalImage {
   UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarHomeButtonImage-Normal"]];
