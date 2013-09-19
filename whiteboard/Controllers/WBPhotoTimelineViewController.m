@@ -16,6 +16,8 @@
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 
+@property int photoOffset;
+
 @end
 
 @implementation WBPhotoTimelineViewController
@@ -174,15 +176,17 @@ static NSString *loadMoreCellIdentifier = @"WBPLoadMoreCell";
 }
 
 - (BOOL)isLoadMoreCell:(NSInteger)row {
-  if(!self.loadMore){
-    return NO;
-  }
-  
-  return row == self.photos.count;
+  return row == self.photos.count && self.loadMore;
 }
 
 - (void)loadNextPage {
   NSLog(@"Load next page here");
+  
+  [[WBDataSource sharedInstance] latestPhotosWithOffset:self.photoOffset success:^(NSArray *photos) {
+    self.photoOffset += photos.count;
+    self.photos = [self.photos arrayByAddingObjectsFromArray:photos];
+    [self.tableView reloadData];
+  } failure:nil];
 }
 
 #pragma mark - Config
@@ -225,6 +229,7 @@ static NSString *loadMoreCellIdentifier = @"WBPLoadMoreCell";
 
 - (void)refreshPhotos {
   [[WBDataSource sharedInstance] latestPhotos:^(NSArray *photos) {
+    self.photoOffset = photos.count;
     self.photos = photos;
     [self.tableView reloadData];
     self.isLoading = NO;

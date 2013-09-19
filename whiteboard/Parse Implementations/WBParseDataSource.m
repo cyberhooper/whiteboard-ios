@@ -97,8 +97,15 @@
 
 - (void)latestPhotos:(void(^)(NSArray *photos))success
              failure:(void(^)(NSError *error))failure {
+  [self latestPhotosWithOffset:0 success:success failure:failure];
+}
+
+- (void)latestPhotosWithOffset:(int)offset
+                       success:(void(^)(NSArray *photos))success
+                       failure:(void(^)(NSError *error))failure {
   PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
-  query.limit = 20;
+  query.limit = 1;
+  query.skip = offset;
   [query orderByDescending:@"createdAt"];
   [query includeKey:@"user"];
   [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
@@ -107,13 +114,12 @@
     else
       NSLog(@"Error: %@ %@", error, [error userInfo]);
   }];
-  
-  // filter with friends example :
-  //[query whereKey:@"user" containedIn:[currentUser friends]];
-  
-  //Restrict results. Faster?
-  //[query selectKeys:@[@"playerName", @"score"]];
 }
+// filter with friends example :
+//[query whereKey:@"user" containedIn:[currentUser friends]];
+
+//Restrict results. Faster?
+//[query selectKeys:@[@"playerName", @"score"]];
 
 - (void)likePhoto:(WBPhoto *)photo
          withUser:(WBUser *)user

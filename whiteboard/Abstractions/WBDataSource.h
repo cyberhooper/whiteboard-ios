@@ -79,6 +79,10 @@
 - (void)latestPhotos:(void(^)(NSArray *photos))success
              failure:(void(^)(NSError *error))failure;
 
+- (void)latestPhotosWithOffset:(int)offset
+                       success:(void(^)(NSArray *photos))success
+                       failure:(void(^)(NSError *error))failure;
+
 - (void)likePhoto:(WBPhoto *)photo
          withUser:(WBUser *)user
           success:(void(^)(void))success

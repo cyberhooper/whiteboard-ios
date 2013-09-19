@@ -74,7 +74,13 @@ static Class DataSourceSubclass = nil;
 
 - (void)latestPhotos:(void(^)(NSArray *photos))success
              failure:(void(^)(NSError *error))failure {
-    [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)latestPhotosWithOffset:(int)offset
+                       success:(void(^)(NSArray *photos))success
+                       failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
 - (void)likePhoto:(WBPhoto *)photo
