@@ -9,6 +9,7 @@
 #import "WBFindFriendsViewController.h"
 #import "WBDataSource.h"
 #import "UIImageView+WBImageLoader.h"
+#import "ProfileViewController.h"
 
 @interface WBFindFriendsViewController ()
 
@@ -236,7 +237,10 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 
 - (void)cell:(WBFriendCell *)cellView didTapUserButtonAtIndex:(NSNumber *)userIndex {
   WBUser *user = ((WBUser *)self.users[userIndex.intValue]);
-  // Push a user detail view controller
+  ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:NSStringFromClass([ProfileViewController class])
+                                                                                         bundle:nil];
+  [profileViewController setUser:user];
+  [self.navigationController pushViewController:profileViewController animated:YES];
 }
 
 #pragma mark - Follow All/Unfollow All
