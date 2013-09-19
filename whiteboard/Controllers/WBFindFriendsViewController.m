@@ -36,8 +36,8 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 #pragma mark - Config
 - (void)setUpView {
   // Set up the nav bar
-  self.followAllButton = [[UIBarButtonItem alloc] initWithTitle:@"Follow All" style:UIBarButtonItemStyleBordered target:self action:@selector(followAll)];
-  self.unfollowAllButton = [[UIBarButtonItem alloc] initWithTitle:@"Unfollow All" style:UIBarButtonItemStyleBordered target:self action:@selector(unfollowAll)];
+  self.followAllButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"FollowAll", @"Follow All") style:UIBarButtonItemStyleBordered target:self action:@selector(followAll)];
+  self.unfollowAllButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"UnfollowAll", @"Unfollow All") style:UIBarButtonItemStyleBordered target:self action:@selector(unfollowAll)];
   self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[[WBTheme sharedTheme] findFriendsTitleImage]];
   
   // Setup NIB
