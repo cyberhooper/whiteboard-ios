@@ -9,6 +9,7 @@
 // General
 "Cancel" = "Cancel";
 "Error" = "Error";
+"Photos" = "Photos";
 
 // Tab Bar
 "HomeTabTitle" = "Home";
@@ -32,3 +33,4 @@
 "SuggestedFriendsFailedMessage" = "Suggested friends failed. Please try again.";
 "FollowButton" = "Follow "; // space is added for centering
 "FollowingButton" = "Following";
+"InviteFriends" = "Invite friends";

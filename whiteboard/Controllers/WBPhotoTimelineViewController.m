@@ -21,7 +21,7 @@
 @implementation WBPhotoTimelineViewController
 
 static NSString *tableCellIdentifier = @"WBPhotoTimelineCell";
-static NSString *loadMoreCellIdentifier = @"WBPLoadMoreCell";
+static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 
 - (void)viewDidLoad {
   [super viewDidLoad];

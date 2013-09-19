@@ -46,7 +46,9 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </imageView>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <connections>
                 <outlet property="avatarImageButton" destination="78j-PS-Dq9" id="E0C-Ag-x4l"/>
                 <outlet property="avatarImageView" destination="Jdu-zR-5vR" id="Uhs-ue-9GC"/>

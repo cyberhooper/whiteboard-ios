@@ -91,7 +91,7 @@
 - (void)setName:(NSString *)name {
   _name = name;
   
-  CGSize maxSize = CGSizeMake(130, 30);
+  CGSize maxSize = CGSizeMake(140, 30);
   CGRect nameSize = [name boundingRectWithSize:maxSize
                                        options:NSStringDrawingTruncatesLastVisibleLine | NSStringDrawingUsesLineFragmentOrigin
                                     attributes:@{NSFontAttributeName : self.nameButton.titleLabel.font}
@@ -101,6 +101,13 @@
   
   // Adding 10 to the width because of a potential bug in boundingRect
   [self.nameButton setFrame:CGRectMake( 60.0f, 17.0f, nameSize.size.width + 10, nameSize.size.height)];
+}
+
+- (void)setNumPhotos:(NSNumber *)numPhotos {
+  _numPhotos = numPhotos;
+  
+  [self.numPhotosLabel setText:[NSString stringWithFormat:@"%d %@", self.numPhotos.intValue, NSLocalizedString(@"Photos", @"Photos")]];
+  [self.numPhotosLabel setFrame:CGRectMake( 60.0f, 17.0f + self.nameButton.frame.size.height, 140.0f, self.numPhotosLabel.frame.size.height)];
 }
 
 + (CGFloat)heightForCell {
