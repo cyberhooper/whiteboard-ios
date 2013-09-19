@@ -11,6 +11,7 @@
 @class WBPhotoTimelineSectionHeaderView;
 
 @protocol WBPhotoTimelineSectionHeaderViewDelegate <NSObject>
+@optional
 - (void)sectionHeaderCommentsButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView;
 - (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView;
 @end
