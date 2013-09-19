@@ -307,4 +307,58 @@
   }];
 }
 
+#pragma mark - Profile
+
+- (void)profileForUser:(WBUser *)wbUser
+               success:(void(^)(WBUser *user))success
+               failure:(void(^)(NSError *error))failure {
+  PFQuery *query = [PFQuery queryWithClassName:@"_User"];
+  [query getObjectInBackgroundWithId:wbUser.userID block:^(PFObject *user, NSError *error) {
+    if (!error && success)
+      success([self wbUserFromParseUser:(PFUser*)user]);
+    else if (failure)
+      failure(error);
+  }];
+}
+
+- (void)numberOfPhotosForUser:(WBUser *)user
+                      success:(void(^)(int numberOfPhotos))success
+                      failure:(void(^)(NSError *error))failure {
+  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFQuery *queryPhotoCount = [PFQuery queryWithClassName:@"Photo"];
+  [queryPhotoCount whereKey:@"user" equalTo:parseUser];
+  [queryPhotoCount countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+    if (!error && success)
+      success(number);
+    else if (failure)
+      failure(error);
+  }];
+}
+
+- (void)numberOfFollowersForUser:(WBUser *)user
+                         success:(void(^)(int numberOfFollowers))success
+                         failure:(void(^)(NSError *error))failure {
+  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFRelation *followerRelation = [parseUser relationforKey:@"follower"];
+  [[followerRelation query] countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+    if (!error && success)
+      success(number);
+    else if (failure)
+      failure(error);
+  }];
+}
+
+- (void)numberOfFollowingsForUser:(WBUser *)user
+                          success:(void(^)(int numberOfFollowings))success
+                          failure:(void(^)(NSError *error))failure {
+  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFRelation *followingRelation = [parseUser relationforKey:@"following"];
+  [[followingRelation query] countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+    if (!error && success)
+      success(number);
+    else if (failure)
+      failure(error);
+  }];
+}
+
 @end

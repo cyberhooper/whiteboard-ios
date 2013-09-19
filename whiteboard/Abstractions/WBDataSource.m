@@ -111,4 +111,22 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
+- (void)numberOfPhotosForUser:(WBUser *)user
+                      success:(void(^)(int numberOfPhotos))success
+                      failure:(void(^)(NSError *error))failure {
+    [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)numberOfFollowersForUser:(WBUser *)user
+                         success:(void(^)(int numberOfFollowers))success
+                         failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)numberOfFollowingsForUser:(WBUser *)user
+                          success:(void(^)(int numberOfFollowings))success
+                          failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
 @end

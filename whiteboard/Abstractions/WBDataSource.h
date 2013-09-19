@@ -111,5 +111,19 @@
  */
 - (void)setUpWithLauchOptions:(NSDictionary *)launchOptions;
 
+#pragma mark - Profile
+
+- (void)numberOfPhotosForUser:(WBUser *)user
+                      success:(void(^)(int numberOfPhotos))success
+                      failure:(void(^)(NSError *error))failure;
+
+- (void)numberOfFollowersForUser:(WBUser *)user
+                      success:(void(^)(int numberOfFollowers))success
+                      failure:(void(^)(NSError *error))failure;
+
+- (void)numberOfFollowingsForUser:(WBUser *)user
+                         success:(void(^)(int numberOfFollowings))success
+                         failure:(void(^)(NSError *error))failure;
+
 @end
 
