@@ -104,7 +104,7 @@
                        success:(void(^)(NSArray *photos))success
                        failure:(void(^)(NSError *error))failure {
   PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
-  query.limit = 1;
+  query.limit = self.photoLimit;
   query.skip = offset;
   [query orderByDescending:@"createdAt"];
   [query includeKey:@"user"];

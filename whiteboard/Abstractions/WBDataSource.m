@@ -65,6 +65,14 @@ static Class DataSourceSubclass = nil;
 
 #pragma mark - Photos
 
+- (NSInteger)photoLimit {
+  if(_photoLimit == 0){
+    return 1;
+  }
+  
+  return _photoLimit;
+}
+
 - (void)uploadPhoto:(WBPhoto *)photo
             success:(void(^)(void))success
             failure:(void(^)(NSError *error))failure

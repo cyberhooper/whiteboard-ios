@@ -21,6 +21,11 @@
 @property (nonatomic, strong) WBUser *currentUser;
 
 /**
+ The limit for the amount of photos to load at a time
+ */
+@property (nonatomic, assign) NSInteger photoLimit;
+
+/**
   The singleton method for creating a WBDataSource instance.
   @returns A concrete implementation of WBDataSource
  */

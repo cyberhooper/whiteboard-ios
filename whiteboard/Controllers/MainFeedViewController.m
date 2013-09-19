@@ -86,7 +86,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-  if (indexPath.section >= self.photos.count) {
+  if ([self isLoadMoreCell:indexPath.section]) {
     // Load More Section
     return 44.0f;
   }
@@ -95,7 +95,7 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-  if (section == self.photos.count) {
+  if ([self isLoadMoreCell:section]) {
     // Load More section
     return 0.0f;
   }

@@ -15,9 +15,7 @@
 #import "WBLoadMoreCell.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
-
-@property int photoOffset;
-
+@property (nonatomic, assign) NSInteger photoOffset;
 @end
 
 @implementation WBPhotoTimelineViewController
@@ -183,10 +181,25 @@ static NSString *loadMoreCellIdentifier = @"WBPLoadMoreCell";
   NSLog(@"Load next page here");
   
   [[WBDataSource sharedInstance] latestPhotosWithOffset:self.photoOffset success:^(NSArray *photos) {
+    // If we receive nothing in return then set loadMore to NO.
+    if(photos.count == 0){
+      self.loadMore = NO;
+      return;
+    }
+    
     self.photoOffset += photos.count;
     self.photos = [self.photos arrayByAddingObjectsFromArray:photos];
     [self.tableView reloadData];
   } failure:nil];
+}
+
+- (void)setLoadMore:(BOOL)loadMore {
+  _loadMore = loadMore;
+  
+  // If loadMore is set to NO and there are exists objects then reload the tableview
+  if(!_loadMore){
+    [self.tableView reloadData];
+  }
 }
 
 #pragma mark - Config
@@ -231,6 +244,14 @@ static NSString *loadMoreCellIdentifier = @"WBPLoadMoreCell";
   [[WBDataSource sharedInstance] latestPhotos:^(NSArray *photos) {
     self.photoOffset = photos.count;
     self.photos = photos;
+    
+    // If the number of returned objects is less than the photoLimit then don't show the loadMore cell
+    if(photos.count < [[WBDataSource sharedInstance] photoLimit]){
+      self.loadMore = NO;
+    }else{
+      self.loadMore = YES;
+    }
+    
     [self.tableView reloadData];
     self.isLoading = NO;
     
