@@ -15,6 +15,8 @@
 
 @property (nonatomic, strong) NSArray *users;
 @property (nonatomic) BOOL loadMore;
+@property (nonatomic, strong) UIBarButtonItem *followAllButton;
+@property (nonatomic, strong) UIBarButtonItem *unfollowAllButton;
 
 /**
  Sets the name of the nib that is being used for the table cell

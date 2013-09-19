@@ -33,6 +33,11 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 
 #pragma mark - Config
 - (void)setUpView {
+  // Set up the nav bar
+  self.followAllButton = [[UIBarButtonItem alloc] initWithTitle:@"Follow All" style:UIBarButtonItemStyleBordered target:self action:@selector(followAll)];
+  self.unfollowAllButton = [[UIBarButtonItem alloc] initWithTitle:@"Unfollow All" style:UIBarButtonItemStyleBordered target:self action:@selector(unfollowAll)];
+  self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[[WBTheme sharedTheme] findFriendsTitleImage]];
+  
   // Setup NIB
   UINib *nib = [UINib nibWithNibName:[self tableCellNib] bundle:nil];
   [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
@@ -49,6 +54,16 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
   self.view.backgroundColor = [UIColor colorWithPatternImage:[[WBTheme sharedTheme] backgroundImage]];
   
   self.loadMore = YES;
+}
+
+- (void)configureBarButton {
+  NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isFollowed == NO"];
+  NSArray *unfollowedUsers = [self.users filteredArrayUsingPredicate:predicate];
+  if (unfollowedUsers.count) {
+    self.navigationItem.rightBarButtonItem = self.followAllButton;
+  } else {
+    self.navigationItem.rightBarButtonItem = self.unfollowAllButton;
+  }
 }
 
 - (NSString *)tableCellNib {
@@ -70,6 +85,7 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 - (void)getSuggestedUsers {
   [[WBDataSource sharedInstance] suggestedUsers:^(NSArray *users) {
     self.users = users;
+    [self configureBarButton];
     [self.tableView reloadData];
   } failure:^(NSError *error) {
     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SuggestedFriendsFailed", @"Cannot Get Friends")
@@ -140,6 +156,8 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
   if ([self isLoadMoreCell:indexPath.section]) {
     // Load More Cell
     [self loadNextPage];
+  } else if (indexPath.section == kInviteFriendsSectionIndex) {
+    [self inviteFriendsTapped];
   }
 }
 
@@ -172,6 +190,10 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
   NSLog(@"Load next page here");
 }
 
+- (void)inviteFriendsTapped {
+  NSLog(@"Invite friends here");
+}
+
 #pragma mark - Invite Friends Cell
 - (void)configureInviteFriendsCell:(WBInviteFriendsCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
   cell.inviteFriendsLabel.text = NSLocalizedString(@"InviteFriends", @"Invite friends");
@@ -195,6 +217,15 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 - (void)cell:(WBFriendCell *)cellView didTapUserButtonAtIndex:(NSNumber *)userIndex {
   WBUser *user = ((WBUser *)self.users[userIndex.intValue]);
   // Push a user detail view controller
+}
+
+#pragma mark - Follow All/Unfollow All
+- (void)followAll {
+  
+}
+
+- (void)unfollowAll {
+  
 }
 
 @end

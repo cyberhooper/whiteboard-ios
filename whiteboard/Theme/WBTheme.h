@@ -106,5 +106,6 @@
 - (UIImage *)findFriendsFollowButtonSelectedImage;
 - (UIFont *)findFriendsInviteFriendsFont;
 - (UIColor *)findFriendsInviteFriendsFontColor;
+- (UIImage *)findFriendsTitleImage;
 
 @end

@@ -232,4 +232,8 @@
   return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_inviteFriendsFontColor"]];
 }
 
+- (UIImage *)findFriendsTitleImage {
+  return [UIImage imageNamed:self.themeDict[@"FINDFRIENDS_titleImage"]];
+}
+
 @end

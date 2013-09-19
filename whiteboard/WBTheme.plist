@@ -140,5 +140,7 @@
 	<string>18</string>
 	<key>FINDFRIENDS_inviteFriendsFontColor</key>
 	<string>#422B22</string>
+	<key>FINDFRIENDS_titleImage</key>
+	<string>titleFindFriends</string>
 </dict>
 </plist>
