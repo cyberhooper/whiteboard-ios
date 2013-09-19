@@ -10,6 +10,11 @@
 #import <Parse/Parse.h>
 #import "WBParseDataSource.h"
 #import "WBUser+ParseUser.h"
+@interface WBParseAccountManager () <NSURLConnectionDelegate> {
+  NSMutableData *dataProfilePicture;
+}
+
+@end
 
 @implementation WBParseAccountManager
 
@@ -48,7 +53,7 @@
   [pfCurrentUser setUsername:[userInfo objectForKey:@"userName"]];
   [pfCurrentUser setPassword:[userInfo objectForKey:@"password"]];
   [pfCurrentUser setEmail:[userInfo objectForKey:@"email"]];
-  
+  [pfCurrentUser setObject:[userInfo objectForKey:@"userName"] forKey:@"displayName"];
   [pfCurrentUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded) {
       [WBUser mapWBUser:pfCurrentUser];
@@ -104,14 +109,69 @@
   NSArray *permissionsArray = @[@"basic_info", @"email"];
   
   // Login PFUser using Facebook
-  [PFFacebookUtils logInWithPermissions:permissionsArray block:^(PFUser *user, NSError *error) {
-    if (!user) {
-      failure(error);
+  [PFFacebookUtils logInWithPermissions:permissionsArray
+                                  block:^(PFUser *user, NSError *error) {
+                                    if (!user) {
+                                      failure(error);
+                                    }
+                                    else {
+                                      success();
+                                      // Create request for user's Facebook data
+                                      FBRequest *request = [FBRequest requestForMe];
+                                      
+                                      // Send request to Facebook
+                                      [request startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+                                        if (!error) {
+                                          // result is a dictionary with the user's Facebook data
+                                          NSDictionary *userData = (NSDictionary *)result;
+                                          
+                                          [user setObject:userData[@"name"] forKey:@"displayName"];
+                                          [user setEmail:userData[@"email"]];
+                                          [user save];
+                                          
+                                          NSURL *profilePictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", userData[@"id"]]];
+                                          
+                                          NSURLRequest *profilePictureURLRequest = [NSURLRequest requestWithURL:profilePictureURL cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:10.0f]; // Facebook profile picture cache policy: Expires in 2 weeks
+                                          [NSURLConnection connectionWithRequest:profilePictureURLRequest delegate:self];
+                                        }
+                                      }];
+                                    }
+                                  }];
+}
+
+#pragma mark - NSURLConnectionDataDelegate
+
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+  dataProfilePicture = [[NSMutableData alloc] init];
+}
+
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+  [dataProfilePicture appendData:data];
+}
+
+- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
+  [self processFacebookProfilePictureData:dataProfilePicture];
+}
+
+- (void)processFacebookProfilePictureData:(NSData *)newProfilePictureData {
+  if (newProfilePictureData.length == 0) {
+    return;
+  }
+ 
+  NSURL *cachesDirectoryURL = [[[NSFileManager defaultManager] URLsForDirectory:NSCachesDirectory
+                                                                      inDomains:NSUserDomainMask] lastObject]; // iOS Caches directory
+  NSURL *profilePictureCacheURL = [cachesDirectoryURL URLByAppendingPathComponent:@"FacebookProfilePicture.jpg"];
+  
+  if ([[NSFileManager defaultManager] fileExistsAtPath:[profilePictureCacheURL path]]) {
+    NSData *oldProfilePictureData = [NSData dataWithContentsOfFile:[profilePictureCacheURL path]];
+    if ([oldProfilePictureData isEqualToData:newProfilePictureData]) {
+      return;
     }
-    else {
-      success();
-    }
-  }];
+  }
+  
+  PFFile *fileImage = [PFFile fileWithData:newProfilePictureData];
+  [[PFUser currentUser] setObject:fileImage forKey:@"avatar"];
+  [[PFUser currentUser] save];
 }
 
 - (void)logoutWithFacebook:(void(^)(void))success

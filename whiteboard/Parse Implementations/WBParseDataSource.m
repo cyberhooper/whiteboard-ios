@@ -39,6 +39,11 @@
   return _currentUser;
 }
 
+- (NSURL *)currentAvatar {
+  PFFile *avatar = [[PFUser currentUser] objectForKey:@"avatar"];
+  return [NSURL URLWithString:[avatar url]];
+}
+
 - (void)saveUser:(WBUser *)user
          success:(void(^)(void))success
          failure:(void(^)(NSError *error))failure {
@@ -208,7 +213,7 @@
 - (WBUser *)wbUserFromParseUser:(PFUser *)parseUser {
   WBUser *wbUser = [self createUser];
   wbUser.userID = parseUser.objectId;
-  wbUser.username = parseUser.username;
+  wbUser.displayName = [parseUser objectForKey:@"displayName"];
   PFFile *avatarFile = [parseUser objectForKey:@"avatar"];
   wbUser.avatar = [NSURL URLWithString:[avatarFile url]];
   NSLog(@"User : %@", [wbUser description]);
@@ -247,7 +252,7 @@
 - (void)suggestedUsers:(void(^)(NSArray *suggestedUsers))success
                failure:(void(^)(NSError *error))failure {
   PFQuery *query = [PFQuery queryWithClassName:@"_User"];
-  [query orderByAscending:@"username"];
+  [query orderByAscending:@"displayName"];
   [query findObjectsInBackgroundWithBlock:^(NSArray *users, NSError *error) {
     if (!error && success) {
       NSArray *wbUsers = [self wbUsersFromParseUsers:users];

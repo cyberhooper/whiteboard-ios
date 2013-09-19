@@ -10,4 +10,10 @@
 
 @interface WBProfileHeaderView : UIView
 
+@property (weak, nonatomic) IBOutlet UIImageView *profilePictureImageView;
+@property (weak, nonatomic) IBOutlet UILabel *nameLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numberPicturesLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numberFollowersLabel;
+@property (weak, nonatomic) IBOutlet UILabel *numberFollowingLabel;
+
 @end

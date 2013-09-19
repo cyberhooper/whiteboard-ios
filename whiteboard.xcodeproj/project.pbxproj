@@ -82,7 +82,6 @@
 		DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E9217E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m */; };
 		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
 		DDECB94B17EA521B00407255 /* WBLoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */; };
-		DDECB94D17EA644E00407255 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = DDECB94C17EA644E00407255 /* photo.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -211,7 +210,6 @@
 		DDA25DE317E26DFB00C44622 /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
 		DDA25DE417E26DFB00C44622 /* WBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewController.m; sourceTree = "<group>"; };
 		DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoadMoreCell.xib; sourceTree = "<group>"; };
-		DDECB94C17EA644E00407255 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,7 +293,6 @@
 		9919152717DA7B2A005DA25C /* whiteboard */ = {
 			isa = PBXGroup;
 			children = (
-				DDECB94C17EA644E00407255 /* photo.png */,
 				BE1B3F7B17E22335003494CD /* Theme */,
 				BE1B3F7217E22197003494CD /* Controllers */,
 				DD2B8ED817E22E920094A3C4 /* Helpers */,
@@ -566,7 +563,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BED03EAD17E9162400EEEACC /* ProfileViewController.xib in Resources */,
-				DDECB94D17EA644E00407255 /* photo.png in Resources */,
 				BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */,
 				BED03EBA17EA0C8800EEEACC /* WBFriendCell.xib in Resources */,
 				BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */,

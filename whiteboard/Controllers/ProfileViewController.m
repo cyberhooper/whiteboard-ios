@@ -9,6 +9,7 @@
 #import "ProfileViewController.h"
 #import "MainFeedCell.h"
 #import "WBProfileHeaderView.h"
+#import "WBDataSource.h"
 
 @interface ProfileViewController ()
 
@@ -18,32 +19,31 @@
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+  if (self) {
+    // Custom initialization
+  }
+  return self;
 }
 
 - (void)viewDidLoad
 {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+  [super viewDidLoad];
+  // Do any additional setup after loading the view from its nib.
   WBProfileHeaderView *headerView = nil;
   
   // Find the Section Header Nib
-  NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:
-                         NSStringFromClass([WBProfileHeaderView class])
+  NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([WBProfileHeaderView class])
                                                       owner:nil
                                                     options:nil];
   
   for (id object in nibObjects) {
     if ([object isKindOfClass:[WBProfileHeaderView class]]) {
       headerView = (WBProfileHeaderView *)object;
-      break;
+    #warning set the current user
     }
   }
-
+  
   self.tableView.tableHeaderView = headerView;
 }
 
@@ -69,8 +69,8 @@
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 @end
