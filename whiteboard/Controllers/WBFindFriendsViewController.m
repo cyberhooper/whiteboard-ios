@@ -205,17 +205,21 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 
 #pragma mark - WBFriendCellDelegate
 - (void)cell:(WBFriendCell *)cellView didTapFollowButtonAtIndex:(NSNumber *)userIndex {
+  cellView.followButton.selected = !cellView.followButton.selected;
   WBUser *user = ((WBUser *)self.users[userIndex.intValue]);
   [[WBDataSource sharedInstance] toggleFollowForUser:user success:^{
-    [self getSuggestedUsers];
-    [self.tableView reloadData];
+    // Do nothing
   } failure:^(NSError *error) {
+    // The request failed, change the button back and show an error.
+    cellView.followButton.selected = !cellView.followButton.selected;
+    user.isFollowed = cellView.followButton.selected;
     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
                                 message:error.description
                                delegate:nil
                       cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
                       otherButtonTitles:nil] show];
   }];
+  user.isFollowed = cellView.followButton.selected;
 }
 
 - (void)cell:(WBFriendCell *)cellView didTapUserButtonAtIndex:(NSNumber *)userIndex {
@@ -225,11 +229,37 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 
 #pragma mark - Follow All/Unfollow All
 - (void)followAll {
-  
+  NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isFollowed == NO"];
+  NSArray *unfollowedUsers = [self.users filteredArrayUsingPredicate:predicate];
+  [[WBDataSource sharedInstance] followUsers:unfollowedUsers
+                                     success:^{
+                                       [self getSuggestedUsers];
+                                       [self.tableView reloadData];
+                                     }
+                                     failure:^(NSError *error) {
+                                       [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
+                                                                   message:error.description
+                                                                  delegate:nil
+                                                         cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+                                                         otherButtonTitles:nil] show];
+                                     }];
 }
 
 - (void)unfollowAll {
-  
+  NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isFollowed == YES"];
+  NSArray *followedUsers = [self.users filteredArrayUsingPredicate:predicate];
+  [[WBDataSource sharedInstance] unFollowUsers:followedUsers
+                                       success:^{
+                                         [self getSuggestedUsers];
+                                         [self.tableView reloadData];
+                                       }
+                                       failure:^(NSError *error) {
+                                         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
+                                                                     message:error.description
+                                                                    delegate:nil
+                                                           cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+                                                           otherButtonTitles:nil] show];
+                                       }];
 }
 
 @end

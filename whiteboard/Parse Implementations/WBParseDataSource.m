@@ -355,6 +355,7 @@
   PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
   PFQuery *queryPhotoCount = [PFQuery queryWithClassName:@"Photo"];
   [queryPhotoCount whereKey:@"user" equalTo:parseUser];
+  queryPhotoCount.cachePolicy = kPFCachePolicyCacheElseNetwork;
   [queryPhotoCount countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
       success(number);
