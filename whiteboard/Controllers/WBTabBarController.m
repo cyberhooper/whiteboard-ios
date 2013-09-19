@@ -100,7 +100,7 @@ static int kLibraryIndex = 1;
 -(void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
   UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
   WBPhoto *wbPhoto = [WBDataSource createPhoto];
-  wbPhoto.image = originalImage;
+  wbPhoto.image = [self resizeImageWithImage:originalImage];
   wbPhoto.author = [WBDataSource currentUser];
   [[WBDataSource sharedInstance] uploadPhoto:wbPhoto
     success:^{
@@ -125,6 +125,23 @@ static int kLibraryIndex = 1;
 }
 
 #pragma mark - ()
+
+-(UIImage*)resizeImageWithImage:(UIImage*)image {
+  CGSize size;
+  if (image.imageOrientation == UIImageOrientationUp || image.imageOrientation == UIImageOrientationDown){
+    size = CGSizeMake(800, 600);
+  }
+  else {
+    size = CGSizeMake(600, 800);
+  }
+  UIGraphicsBeginImageContext(size);
+  [image drawInRect:CGRectMake(0, 0, size.width, size.height)];
+  UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+  UIGraphicsEndImageContext();
+  UIImage *resizeImage = [UIImage imageWithData:UIImageJPEGRepresentation(newImage, 0.8)];
+  
+  return resizeImage;
+}
 
 - (BOOL)shouldPresentPhotoCaptureController {
   BOOL presentedPhotoCaptureController = [self shouldStartCameraController];
