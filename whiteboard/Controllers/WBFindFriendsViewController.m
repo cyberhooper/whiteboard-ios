@@ -142,7 +142,11 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
   [cell.avatarImageView setImageWithPath:user.avatar.absoluteString placeholder:nil];
   cell.followButton.selected = user.isFollowed;
   cell.userIndex = @(indexPath.row);
-  cell.numPhotos = @100000;
+  [[WBDataSource sharedInstance] numberOfPhotosForUser:user success:^(int numberOfPhotos) {
+    cell.numPhotos = @(numberOfPhotos);
+  } failure:^(NSError *error) {
+    cell.numPhotos = @0;
+  }];
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
