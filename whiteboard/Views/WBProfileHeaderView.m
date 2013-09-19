@@ -32,9 +32,20 @@
 - (void)setUpView {
   [self.nameLabel setText:[WBDataSource currentUser].displayName];
   NSURL *avatar = [[WBDataSource sharedInstance]currentAvatar];
+  CALayer *layer = [self.profilePictureImageView layer];
+  layer.cornerRadius = 10.0f;
+  layer.masksToBounds = YES;
   [self.profilePictureImageView setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:avatar]]];
-  self.profilePictureImageView.layer.cornerRadius = 10.0f;
-  
+  [[WBDataSource sharedInstance] numberOfFollowersForUser:[WBDataSource currentUser] success:^(int numberOfFollowers) {
+    self.numberFollowersLabel.text = [NSString stringWithFormat:@"%d followers", numberOfFollowers];
+  } failure:^(NSError *error) {}];
+  [[WBDataSource sharedInstance] numberOfFollowingsForUser:[WBDataSource currentUser] success:^(int numberOfFollowings) {
+    self.numberFollowingLabel.text = [NSString stringWithFormat:@"%d following", numberOfFollowings];
+  } failure:^(NSError *error) {}];
+  [[WBDataSource sharedInstance]numberOfPhotosForUser:[WBDataSource currentUser] success:^(int numberOfPhotos) {
+    self.numberPicturesLabel.text = [NSString stringWithFormat:@"%d photos", numberOfPhotos];
+  } failure:^(NSError *error) {}];
+
 }
 
 @end
