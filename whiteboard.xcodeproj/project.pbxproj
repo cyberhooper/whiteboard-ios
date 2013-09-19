@@ -73,6 +73,8 @@
 		BED03EB517EA075D00EEEACC /* WBFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EB417EA075D00EEEACC /* WBFindFriendsViewController.m */; };
 		BED03EB817EA0BDB00EEEACC /* WBFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */; };
 		BED03EBA17EA0C8800EEEACC /* WBFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */; };
+		BED03EBC17EB5D1800EEEACC /* WBInviteFriendsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EBB17EB5D1800EEEACC /* WBInviteFriendsCell.xib */; };
+		BED03EBF17EB5D6600EEEACC /* WBInviteFriendsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EBE17EB5D6600EEEACC /* WBInviteFriendsCell.m */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */; };
 		DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1817E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m */; };
@@ -193,6 +195,9 @@
 		BED03EB617EA0BDB00EEEACC /* WBFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBFriendCell.h; sourceTree = "<group>"; };
 		BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBFriendCell.m; sourceTree = "<group>"; };
 		BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBFriendCell.xib; sourceTree = "<group>"; };
+		BED03EBB17EB5D1800EEEACC /* WBInviteFriendsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBInviteFriendsCell.xib; sourceTree = "<group>"; };
+		BED03EBD17EB5D6600EEEACC /* WBInviteFriendsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBInviteFriendsCell.h; sourceTree = "<group>"; };
+		BED03EBE17EB5D6600EEEACC /* WBInviteFriendsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBInviteFriendsCell.m; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoadMoreCell.h; sourceTree = "<group>"; };
@@ -396,6 +401,9 @@
 				DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */,
 				DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */,
 				DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */,
+				BED03EBD17EB5D6600EEEACC /* WBInviteFriendsCell.h */,
+				BED03EBE17EB5D6600EEEACC /* WBInviteFriendsCell.m */,
+				BED03EBB17EB5D1800EEEACC /* WBInviteFriendsCell.xib */,
 				DD6F1E9017E3A80D0099866F /* Section Header */,
 			);
 			path = Views;
@@ -568,6 +576,7 @@
 				994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */,
 				2165EC2A17E8B18600AC2F72 /* WBSignupViewController.xib in Resources */,
 				BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */,
+				BED03EBC17EB5D1800EEEACC /* WBInviteFriendsCell.xib in Resources */,
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
 				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
 				BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */,
@@ -634,6 +643,7 @@
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
+				BED03EBF17EB5D6600EEEACC /* WBInviteFriendsCell.m in Sources */,
 				DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */,
 				9922AB5A17E0DA6B00D1B18A /* WBParseDataSource.m in Sources */,
 				BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */,

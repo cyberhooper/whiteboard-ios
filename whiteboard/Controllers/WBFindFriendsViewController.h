@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "WBFriendCell.h"
 #import "WBLoadMoreCell.h"
+#import "WBInviteFriendsCell.h"
 
 @interface WBFindFriendsViewController : UITableViewController <WBFriendCellDelegate>
 

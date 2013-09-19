@@ -22,6 +22,7 @@ static const int kLoadMoreSectionIndex = 2;
 
 static NSString *cellIdentifier = @"WBFriendCell";
 static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
+static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 
 - (void)viewDidLoad
 {
@@ -40,6 +41,10 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   UINib *loadMoreCellNib = [UINib nibWithNibName:[self loadMoreTableCellNib] bundle:nil];
   [self.tableView registerNib:loadMoreCellNib forCellReuseIdentifier:loadMoreCellIdentifier];
   
+  // Setup invite friends cell NIB
+  UINib *inviteFriendsCellNib = [UINib nibWithNibName:[self inviteFriendsTableCellNib] bundle:nil];
+  [self.tableView registerNib:inviteFriendsCellNib forCellReuseIdentifier:inviteFriendsCellIdentifier];
+  
   self.tableView.backgroundColor = [UIColor clearColor];
   self.view.backgroundColor = [UIColor colorWithPatternImage:[[WBTheme sharedTheme] backgroundImage]];
   
@@ -52,6 +57,10 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 
 - (NSString *)loadMoreTableCellNib {
   return NSStringFromClass([WBLoadMoreCell class]);
+}
+
+- (NSString *)inviteFriendsTableCellNib {
+  return NSStringFromClass([WBInviteFriendsCell class]);
 }
 
 - (void)dummyData {
@@ -97,9 +106,8 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
   if (indexPath.section == kInviteFriendsSectionIndex) {
-#warning Replace this with a real Invite Friends cell
-    WBFriendCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    cell.textLabel.text = @"Invite friends";
+    WBInviteFriendsCell *cell = [tableView dequeueReusableCellWithIdentifier:inviteFriendsCellIdentifier forIndexPath:indexPath];
+    [self configureInviteFriendsCell:cell forRowAtIndexPath:indexPath];
     return cell;
   } else if(indexPath.section == kLoadMoreSectionIndex){
     // Load More cell
@@ -118,6 +126,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   [cell.avatarImageView setImageWithPath:user.avatar.absoluteString placeholder:nil];
   cell.followButton.selected = user.isFollowed;
   cell.userIndex = @(indexPath.row);
+  cell.numPhotos = @100000;
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -161,6 +170,11 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 
 - (void)loadNextPage {
   NSLog(@"Load next page here");
+}
+
+#pragma mark - Invite Friends Cell
+- (void)configureInviteFriendsCell:(WBInviteFriendsCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  cell.inviteFriendsLabel.text = NSLocalizedString(@"InviteFriends", @"Invite friends");
 }
 
 #pragma mark - WBFriendCellDelegate

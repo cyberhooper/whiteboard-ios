@@ -224,4 +224,12 @@
   return [UIImage imageNamed:self.themeDict[@"FINDFRIENDS_followButtonSelectedImage"]];
 }
 
+- (UIFont *)findFriendsInviteFriendsFont {
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_inviteFriendsFont"] size:[self.themeDict[@"FINDFRIENDS_inviteFriendsFontSize"] floatValue]];
+}
+
+- (UIColor *)findFriendsInviteFriendsFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_inviteFriendsFontColor"]];
+}
+
 @end
