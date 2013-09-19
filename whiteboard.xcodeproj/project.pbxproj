@@ -73,6 +73,7 @@
 		BED03EB517EA075D00EEEACC /* WBFindFriendsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EB417EA075D00EEEACC /* WBFindFriendsViewController.m */; };
 		BED03EB817EA0BDB00EEEACC /* WBFriendCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */; };
 		BED03EBA17EA0C8800EEEACC /* WBFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */; };
+		DD17448317EB62C7009A4E23 /* WBPhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17448217EB62C7009A4E23 /* WBPhotoDetailsViewController.m */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */; };
 		DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1817E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m */; };
@@ -193,6 +194,8 @@
 		BED03EB617EA0BDB00EEEACC /* WBFriendCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBFriendCell.h; sourceTree = "<group>"; };
 		BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBFriendCell.m; sourceTree = "<group>"; };
 		BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBFriendCell.xib; sourceTree = "<group>"; };
+		DD17448117EB62C7009A4E23 /* WBPhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoDetailsViewController.h; sourceTree = "<group>"; };
+		DD17448217EB62C7009A4E23 /* WBPhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsViewController.m; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoadMoreCell.h; sourceTree = "<group>"; };
@@ -460,6 +463,8 @@
 			children = (
 				BE1B3F7617E22197003494CD /* WBPhotoTimelineViewController.h */,
 				BE1B3F7717E22197003494CD /* WBPhotoTimelineViewController.m */,
+				DD17448117EB62C7009A4E23 /* WBPhotoDetailsViewController.h */,
+				DD17448217EB62C7009A4E23 /* WBPhotoDetailsViewController.m */,
 				DDA25DE317E26DFB00C44622 /* WBViewController.h */,
 				DDA25DE417E26DFB00C44622 /* WBViewController.m */,
 				BE1B3FCA17E38B13003494CD /* WBTabBarController.h */,
@@ -632,6 +637,7 @@
 				BED03EAC17E9162400EEEACC /* ProfileViewController.m in Sources */,
 				BED03EB517EA075D00EEEACC /* WBFindFriendsViewController.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
+				DD17448317EB62C7009A4E23 /* WBPhotoDetailsViewController.m in Sources */,
 				DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
 				DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */,

@@ -13,6 +13,7 @@
 #import "WBDataSource.h"
 #import "WBLoginViewController.h"
 #import "WBLoadMoreCell.h"
+#import "WBPhotoDetailsViewController.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 @property (nonatomic, assign) NSInteger photoOffset;
@@ -144,7 +145,14 @@ static NSString *loadMoreCellIdentifier = @"WBPLoadMoreCell";
   if ([self isLoadMoreCell:indexPath.section]) {
     // Load More Cell
     [self loadNextPage];
+    return;
   }
+  
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
+  
+  WBPhotoDetailsViewController *photoDetailsVC = [[WBPhotoDetailsViewController alloc] init];
+  photoDetailsVC.photo = photo;
+  [self.navigationController pushViewController:photoDetailsVC animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView
