@@ -18,17 +18,10 @@
 
 static const int kInviteFriendsSectionIndex = 0;
 static const int kFriendsListSectionIndex = 1;
+static const int kLoadMoreSectionIndex = 2;
 
 static NSString *cellIdentifier = @"WBFriendCell";
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
+static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 
 - (void)viewDidLoad
 {
@@ -42,10 +35,23 @@ static NSString *cellIdentifier = @"WBFriendCell";
   // Setup NIB
   UINib *nib = [UINib nibWithNibName:[self tableCellNib] bundle:nil];
   [self.tableView registerNib:nib forCellReuseIdentifier:cellIdentifier];
+  
+  // Setup load more cell NIB
+  UINib *loadMoreCellNib = [UINib nibWithNibName:[self loadMoreTableCellNib] bundle:nil];
+  [self.tableView registerNib:loadMoreCellNib forCellReuseIdentifier:loadMoreCellIdentifier];
+  
+  self.tableView.backgroundColor = [UIColor clearColor];
+  self.view.backgroundColor = [UIColor colorWithPatternImage:[[WBTheme sharedTheme] backgroundImage]];
+  
+  self.loadMore = YES;
 }
 
 - (NSString *)tableCellNib {
   return NSStringFromClass([WBFriendCell class]);
+}
+
+- (NSString *)loadMoreTableCellNib {
+  return NSStringFromClass([WBLoadMoreCell class]);
 }
 
 - (void)dummyData {
@@ -76,13 +82,13 @@ static NSString *cellIdentifier = @"WBFriendCell";
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 2;
+  return self.loadMore ? 3 : 2;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-  if (section == kInviteFriendsSectionIndex) {
+  if (section == kInviteFriendsSectionIndex || section == kLoadMoreSectionIndex) {
     return 1;
   }
   return self.users.count;
@@ -90,31 +96,71 @@ static NSString *cellIdentifier = @"WBFriendCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-  WBFriendCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
-    
-  [self configureCell:cell forRowAtIndexPath:indexPath];
+  if (indexPath.section == kInviteFriendsSectionIndex) {
+#warning Replace this with a real Invite Friends cell
+    WBFriendCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+    cell.textLabel.text = @"Invite friends";
+    return cell;
+  } else if(indexPath.section == kLoadMoreSectionIndex){
+    // Load More cell
+    return [self tableView:tableView cellForLoadMoreAtIndexPath:indexPath];
+  }
   
+  WBFriendCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
+  [self configureCell:cell forRowAtIndexPath:indexPath];
   return cell;
 }
 
 - (void)configureCell:(WBFriendCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-  if (indexPath.section == kInviteFriendsSectionIndex) {
-    cell.textLabel.text = @"Invite Friends";
-  } else {
-    cell.delegate = self;
-    WBUser *user = ((WBUser *)self.users[indexPath.row]);
-    cell.name = user.displayName;
-    [cell.avatarImageView setImageWithPath:user.avatar.absoluteString placeholder:nil];
-    cell.followButton.selected = user.isFollowed;
-    cell.userIndex = @(indexPath.row);
-  }
+  cell.delegate = self;
+  WBUser *user = ((WBUser *)self.users[indexPath.row]);
+  cell.name = user.displayName;
+  [cell.avatarImageView setImageWithPath:user.avatar.absoluteString placeholder:nil];
+  cell.followButton.selected = user.isFollowed;
+  cell.userIndex = @(indexPath.row);
 }
 
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-  if (indexPath.section == kInviteFriendsSectionIndex) {
+  if (indexPath.section == kLoadMoreSectionIndex) {
     return 44.0f;
   }
   return [WBFriendCell heightForCell];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  if ([self isLoadMoreCell:indexPath.section]) {
+    // Load More Cell
+    [self loadNextPage];
+  }
+}
+
+#pragma mark - LoadMoreCell
+- (UITableViewCell *)tableView:(UITableView *)tableView
+    cellForLoadMoreAtIndexPath:(NSIndexPath *)indexPath {
+  WBLoadMoreCell *cell = [tableView dequeueReusableCellWithIdentifier:loadMoreCellIdentifier];
+  [self configureLoadMoreCell:cell forRowAtIndexPath:indexPath];
+  return cell;
+}
+
+- (void)configureLoadMoreCell:(WBLoadMoreCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  // Set load more image
+  cell.backgroundColor = [UIColor clearColor];
+  cell.loadMoreImage = [[WBTheme sharedTheme] feedLoadMoreImage];
+  
+  // Set seperator top
+  cell.seperatorTopImage = [[WBTheme sharedTheme] feedLoadMoreSeperatorTopImage];
+}
+
+- (BOOL)isLoadMoreCell:(NSInteger)section {
+  if(!self.loadMore){
+    return NO;
+  }
+  
+  return section == kLoadMoreSectionIndex;
+}
+
+- (void)loadNextPage {
+  NSLog(@"Load next page here");
 }
 
 #pragma mark - WBFriendCellDelegate

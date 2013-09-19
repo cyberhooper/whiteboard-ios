@@ -75,7 +75,7 @@ static const int kLogOutIndex = 2;
       break;
     }
     case kFindFriendsIndex: {
-      WBFindFriendsViewController *findFriendsViewController = [[WBFindFriendsViewController alloc] initWithStyle:UITableViewStylePlain];
+      WBFindFriendsViewController *findFriendsViewController = [[WBFindFriendsViewController alloc] init];
       [self pushViewController:findFriendsViewController animated:YES];
       break;
     }

@@ -8,10 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "WBFriendCell.h"
+#import "WBLoadMoreCell.h"
 
 @interface WBFindFriendsViewController : UITableViewController <WBFriendCellDelegate>
 
 @property (nonatomic, strong) NSArray *users;
+@property (nonatomic) BOOL loadMore;
 
 /**
  Sets the name of the nib that is being used for the table cell
