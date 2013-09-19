@@ -112,6 +112,14 @@
                     success:(void(^)(void))success
                     failure:(void(^)(NSError *error))failure;
 
+- (void)followUsers:(NSArray *)wbUsers
+           success:(void(^)(void))success
+           failure:(void(^)(NSError *error))failure;
+
+- (void)unFollowUsers:(NSArray *)wbUsers
+             success:(void(^)(void))success
+              failure:(void(^)(NSError *error))failure;
+
 #pragma mark - Set Up
 
 /**

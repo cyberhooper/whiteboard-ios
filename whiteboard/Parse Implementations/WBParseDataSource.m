@@ -287,10 +287,18 @@
 - (void)followUser:(WBUser *)user
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure {
+  [self followUsers:@[user] success:success failure:failure];
+}
+
+- (void)followUsers:(NSArray *)wbUsers
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure {
   PFUser *currentUser = [PFUser currentUser];
-  PFUser *userToFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
   PFRelation *followingRelation = [currentUser relationforKey:@"following"];
-  [followingRelation addObject:userToFollow];
+  for (WBUser *wbUser in wbUsers) {
+    PFUser *userToFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:wbUser.userID];
+    [followingRelation addObject:userToFollow];
+  }
   [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success)
       success();
@@ -302,9 +310,18 @@
 - (void)unFollowUser:(WBUser *)user
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure {
-  PFUser *userToUnFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
-  PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
-  [followingRelation removeObject:userToUnFollow];
+  [self unFollowUsers:@[user] success:success failure:failure];
+}
+
+- (void)unFollowUsers:(NSArray *)wbUsers
+              success:(void(^)(void))success
+              failure:(void(^)(NSError *error))failure {
+  PFUser *currentUser = [PFUser currentUser];
+  PFRelation *followingRelation = [currentUser relationforKey:@"following"];
+  for (WBUser *wbUser in wbUsers) {
+    PFUser *userToUnFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:wbUser.userID];
+    [followingRelation removeObject:userToUnFollow];
+  }
   [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success)
       success();
