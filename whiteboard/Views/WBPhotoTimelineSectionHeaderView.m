@@ -65,6 +65,11 @@
   // Date label
   self.dateLabel.font = [[WBTheme sharedTheme] sectionDateNameFont];
   self.dateLabel.textColor = [[WBTheme sharedTheme] sectionDateNameFontColor];
+  
+  UITapGestureRecognizer *reconizer = [[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(wbPhotoTimelineSectionHeaderTap)];
+  reconizer.numberOfTapsRequired = 1;
+    [self addGestureRecognizer:reconizer];
+  
 }
 
 - (void)setUpLikeButton {
@@ -125,10 +130,9 @@
 }
 
 #pragma mark - Setters
-- (void)setDisplayName:(NSString *)displayName {
-  _displayName = displayName;
-  
-  self.displayNameLabel.text = displayName;
+- (void)setAuthor:(WBUser *)author {
+  _author = author;
+  self.displayNameLabel.text = _author.displayName;
 }
 
 - (void)setDate:(NSDate *)date {
@@ -155,6 +159,10 @@
   [self setUpLikeButton];
 }
 #pragma mark - IBActions
+- (void)wbPhotoTimelineSectionHeaderTap {
+  [self.delegate sectionHeaderPressed:_author];
+}
+
 - (void)wbPhotoTimelineSectionHeaderButtonPressed:(WBPhotoTimelineSectionHeaderButton *)button {
   if(button == self.likeButton){
     if([self.delegate respondsToSelector:@selector(sectionHeaderLikesButtonPressed:)]){

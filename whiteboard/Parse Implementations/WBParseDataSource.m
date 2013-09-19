@@ -39,11 +39,6 @@
   return _currentUser;
 }
 
-- (NSURL *)currentAvatar {
-  PFFile *avatar = [[PFUser currentUser] objectForKey:@"avatar"];
-  return [NSURL URLWithString:[avatar url]];
-}
-
 - (void)saveUser:(WBUser *)user
          success:(void(^)(void))success
          failure:(void(^)(NSError *error))failure {

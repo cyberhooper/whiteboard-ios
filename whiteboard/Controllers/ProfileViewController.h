@@ -7,7 +7,10 @@
 //
 
 #import "WBPhotoTimelineViewController.h"
+#import "WBDataSource.h"
 
 @interface ProfileViewController : WBPhotoTimelineViewController
+@property (nonatomic, strong) WBUser *user;
+- (void)setupDataForUser:(WBUser *)user;
 
 @end

@@ -63,12 +63,6 @@
 + (WBUser *)currentUser;
 
 /**
- Get the avatar for logged in user
- @returns The current Avatar for logged in WBUser, or nil if no user is logged in.
- */
-- (NSURL *)currentAvatar;
-
-/**
  creates a WBUser object.
  @returns The newly created WBUser
  */

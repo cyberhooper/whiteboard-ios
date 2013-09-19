@@ -30,11 +30,6 @@ static Class DataSourceSubclass = nil;
   return [[[self class] sharedInstance] currentUser];
 }
 
-- (NSURL *)currentAvatar {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
-  return nil;
-}
-
 - (WBUser *)currentUser {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
   return nil;

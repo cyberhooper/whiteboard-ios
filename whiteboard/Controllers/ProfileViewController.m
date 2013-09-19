@@ -9,29 +9,17 @@
 #import "ProfileViewController.h"
 #import "MainFeedCell.h"
 #import "WBProfileHeaderView.h"
-#import "WBDataSource.h"
 
-@interface ProfileViewController ()
-
+@interface ProfileViewController () {
+  WBProfileHeaderView *headerView;
+}
 @end
 
 @implementation ProfileViewController
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-  self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-  if (self) {
-    // Custom initialization
-  }
-  return self;
-}
-
-- (void)viewDidLoad
-{
+- (void)viewDidLoad {
   [super viewDidLoad];
-  // Do any additional setup after loading the view from its nib.
-  WBProfileHeaderView *headerView = nil;
-  
+  headerView = nil;
   // Find the Section Header Nib
   NSArray *nibObjects = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([WBProfileHeaderView class])
                                                       owner:nil
@@ -40,11 +28,16 @@
   for (id object in nibObjects) {
     if ([object isKindOfClass:[WBProfileHeaderView class]]) {
       headerView = (WBProfileHeaderView *)object;
-    #warning set the current user
+      [self setupDataForUser:[self user]];
     }
   }
   
   self.tableView.tableHeaderView = headerView;
+  
+}
+
+- (void)setupDataForUser:(WBUser *)user {
+  [headerView setUpViewWithUser:user];
 }
 
 #pragma mark - UITableView
@@ -66,11 +59,9 @@
   return NSStringFromClass([MainFeedCell class]);
 }
 
+- (void)refreshPhotos {
+#pragma TODO get the pictures for the property user
 
-- (void)didReceiveMemoryWarning
-{
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
 }
 
 @end

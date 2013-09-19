@@ -13,6 +13,7 @@
 #import "WBDataSource.h"
 #import "WBLoginViewController.h"
 #import "WBLoadMoreCell.h"
+#import "ProfileViewController.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 @property (nonatomic, assign) NSInteger photoOffset;
@@ -74,7 +75,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   }
   
   WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:section]);
-  sectionHeaderView.displayName = photo.author.displayName;
+  sectionHeaderView.author = photo.author;
   sectionHeaderView.date = photo.createdAt;
   [sectionHeaderView.profilePictureImageView setImageWithPath:photo.author.avatar.absoluteString
                                                   placeholder:nil];
@@ -93,7 +94,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
     return 0.0f;
   }
   
-//warning MAGIC NUMBER. REPLACE ME
+  //warning MAGIC NUMBER. REPLACE ME
   return 44.0f;
 }
 
@@ -222,7 +223,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   
   CGFloat offsetY = screenHeight - scrollViewHeight + scrollView.contentOffset.y;
   
-  #warning Magic number, change this
+#warning Magic number, change this
   if(offsetY <= -150.f){
     [self scrollViewDidPullToRefresh:scrollView];
   }
@@ -292,6 +293,13 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   NSLog(@"Likes pressed");
 }
 
+- (void)sectionHeaderPressed:(WBUser *)author {
+  ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:NSStringFromClass([ProfileViewController class])
+                                                                                         bundle:nil];
+  [profileViewController setUser:author];
+  [self.navigationController pushViewController:profileViewController animated:YES];
+}
+
 - (void)likePhoto:(WBPhoto *)photo completion:(void(^)(BOOL success))result {
   [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^{
     result(YES);
@@ -314,8 +322,8 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 
 - (void)didReceiveMemoryWarning
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+  [super didReceiveMemoryWarning];
+  // Dispose of any resources that can be recreated.
 }
 
 @end

@@ -7,20 +7,22 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBUser.h"
 
 @class WBPhotoTimelineSectionHeaderView;
 
 @protocol WBPhotoTimelineSectionHeaderViewDelegate <NSObject>
 - (void)sectionHeaderCommentsButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView;
 - (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView;
+- (void)sectionHeaderPressed:(WBUser *)author;
 @end
 
 @interface WBPhotoTimelineSectionHeaderView : UIView
 
 /**
- The name of the user that will be displayed in the section header
+ The author of the photo currently displayed
  */
-@property (nonatomic, copy) NSString *displayName;
+@property (nonatomic, strong) WBUser *author;
 
 /**
  The date since the post was created
