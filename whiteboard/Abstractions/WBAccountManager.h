@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "WBUser.h"
 
+static NSString *kFacebookFriendsKey = @"kFacebookFriends";
+
 @interface WBAccountManager : NSObject
 
 + (WBAccountManager *)sharedInstance;
@@ -84,6 +86,9 @@
                   failure:(void(^)(NSError *error))failure;
 
 - (void)logoutWithFacebook:(void(^)(void))success
+                   failure:(void(^)(NSError *error))failure;
+
+- (void)getFacebookFriends:(void(^)(NSArray *friends))success
                    failure:(void(^)(NSError *error))failure;
 
 @end

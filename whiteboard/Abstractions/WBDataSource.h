@@ -19,6 +19,7 @@
 #pragma mark - User
 
 @property (nonatomic, strong) WBUser *currentUser;
+@property (nonatomic, strong) NSArray *facebookFriends;
 
 /**
  The limit for the amount of photos to load at a time
@@ -67,6 +68,7 @@
  @returns The newly created WBUser
  */
 + (WBUser *)createUser;
+
 
 #pragma mark - Photos
 /**

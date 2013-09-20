@@ -57,7 +57,7 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
   self.tableView.backgroundColor = [UIColor clearColor];
   self.view.backgroundColor = [UIColor colorWithPatternImage:[[WBTheme sharedTheme] backgroundImage]];
   
-  self.loadMore = YES;
+  self.loadMore = NO;
 }
 
 - (void)setupRefreshControl {
