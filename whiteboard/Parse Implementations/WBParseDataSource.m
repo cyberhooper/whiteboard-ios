@@ -108,6 +108,8 @@
   query.skip = offset;
   [query orderByDescending:@"createdAt"];
   [query includeKey:@"user"];
+  PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
+  [query whereKey:@"user" matchesQuery:[followingRelation query]];
   [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
     if (!error && success)
       success([self wbPhotosFromParsePhotos:photos]);
