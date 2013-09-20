@@ -31,6 +31,7 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 {
   [super viewDidLoad];
   [self setUpView];
+  [self setupRefreshControl];
   [self getSuggestedUsers];
 }
 
@@ -57,6 +58,20 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
   self.view.backgroundColor = [UIColor colorWithPatternImage:[[WBTheme sharedTheme] backgroundImage]];
   
   self.loadMore = YES;
+}
+
+- (void)setupRefreshControl {
+  // Create the refresh control
+  self.refreshControl = [[UIRefreshControl alloc] init];
+  
+  // Set the action
+  [self.refreshControl addTarget:self action:@selector(refreshControlRequest) forControlEvents:UIControlEventValueChanged];
+  
+  self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Updating data..."];
+}
+
+- (void)refreshControlRequest {
+  [self performSelector:@selector(getSuggestedUsers)withObject:nil];
 }
 
 - (void)configureBarButton {
@@ -86,10 +101,15 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 }
 
 - (void)getSuggestedUsers {
+  NSString *lastUpdated = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"LastUpdated", @"Last updated on"), [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterMediumStyle]];
+  
+  self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdated];
+  
   [[WBDataSource sharedInstance] suggestedUsers:^(NSArray *users) {
     self.users = users;
     [self configureBarButton];
     [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
   } failure:^(NSError *error) {
     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SuggestedFriendsFailed", @"Cannot Get Friends")
                                message:NSLocalizedString(@"SuggestedFriendsFailedMessage", @"Suggested friends failed. Please try again.")
@@ -97,6 +117,7 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
                      cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
                      otherButtonTitles:nil] show];
   }];
+  [self.refreshControl endRefreshing];
 }
 
 - (void)didReceiveMemoryWarning
