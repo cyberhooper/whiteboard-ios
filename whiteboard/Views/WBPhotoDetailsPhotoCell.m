@@ -8,8 +8,8 @@
 
 #import "WBPhotoDetailsPhotoCell.h"
 
+
 @interface WBPhotoDetailsPhotoCell()
-@property (nonatomic, weak) IBOutlet UIImageView *photoImageView;
 @end
 
 @implementation WBPhotoDetailsPhotoCell
@@ -18,9 +18,23 @@
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-        // Initialization code
+      [self setupView];
     }
     return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+  self = [super initWithCoder:aDecoder];
+  if(self){
+    [self setupView];
+  }
+  return self;
+}
+
+#pragma mark - SetupView
+- (void)setupView {
+
+  
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

@@ -9,6 +9,7 @@
 #import "WBPhotoDetailsViewController.h"
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "UIImageView+WBImageLoader.h"
+#import "WBPhotoDetailsPhotoCell.h"
 
 @interface WBPhotoDetailsViewController () <UITableViewDataSource, UITableViewDelegate, WBPhotoTimelineSectionHeaderViewDelegate>
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
@@ -33,7 +34,9 @@ static NSString *PhotoCellIdentifier = @"PhotoCellIdentifier";
 
 #pragma mark - Setup
 - (void)setupView {
-  //
+  // Register nibs
+  UINib *photoCellNib = [UINib nibWithNibName:NSStringFromClass([WBPhotoDetailsPhotoCell class]) bundle:nil];
+  [self.tableView registerNib:photoCellNib forCellReuseIdentifier:PhotoCellIdentifier];
 }
 
 #pragma mark - UITableView
@@ -92,15 +95,35 @@ static NSString *PhotoCellIdentifier = @"PhotoCellIdentifier";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
   
-  static NSString *CellIdentifier = @"Cell";
+  UITableViewCell *cell;
   
-  UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-  if (cell == nil) {
-    cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
-                                  reuseIdentifier:CellIdentifier];
+  switch (indexPath.row) {
+    case DetailsCellTypePhoto:
+      cell = (WBPhotoDetailsPhotoCell*)[tableView dequeueReusableCellWithIdentifier:PhotoCellIdentifier];
+      break;
+      
+    default:
+      cell = [tableView dequeueReusableCellWithIdentifier:nil];
+      break;
   }
   
+  [self configureCell:cell forRowAtIndexPath:indexPath];
+  
   return cell;
+}
+
+- (void)configureCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+  switch (indexPath.row) {
+    case DetailsCellTypePhoto: {
+      WBPhotoDetailsPhotoCell *photoCell = (WBPhotoDetailsPhotoCell *)cell;
+      [photoCell.photoImageView setImageWithPath:self.photo.url.absoluteString
+                                     placeholder:[[WBTheme sharedTheme] feedPlaceholderImage]];
+      break;
+    }
+      
+    default:
+      break;
+  }
 }
 
 #pragma mark - Getters
