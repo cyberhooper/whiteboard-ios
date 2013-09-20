@@ -9,10 +9,12 @@
 #import <Parse/Parse.h>
 #import "WBComment.h"
 #import "WBUser+ParseUser.h"
+#import "WBAccountManager.h"
 
 @implementation WBParseDataSource
 
 @synthesize currentUser = _currentUser;
+@synthesize facebookFriends = _facebookFriends;
 
 - (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
   [Parse setApplicationId:[self applicationId]
@@ -246,31 +248,38 @@
 
 - (void)suggestedUsers:(void(^)(NSArray *suggestedUsers))success
                failure:(void(^)(NSError *error))failure {
-  PFQuery *query = [PFQuery queryWithClassName:@"_User"];
-  [query orderByAscending:@"displayName"];
-  [query findObjectsInBackgroundWithBlock:^(NSArray *users, NSError *error) {
-    if (!error && success) {
-      NSArray *wbUsers = [self wbUsersFromParseUsers:users];
-      
-      /// Tag users as followed or not.
-      PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
-      [[followingRelation query] findObjectsInBackgroundWithBlock:^(NSArray *followedUsers, NSError *error) {
-        if (error && failure) {
-          failure(error);
-        } else if (success) {
-          for (WBUser *wbUser in wbUsers) {
-            for (PFUser *followedUser in followedUsers) {
-              if ([followedUser.objectId isEqualToString:wbUser.userID]) {
-                wbUser.isFollowed = YES;
-              }
-            }
-          }
-          success(wbUsers);
-        }
-      }];
-    }
-    else if (failure) {
+  // if the Facebook friend array is nil, get the friends from the account manager, then tag them
+  [[WBAccountManager sharedInstance] getFacebookFriends:^(NSArray *friends) {
+    [WBDataSource sharedInstance].facebookFriends = friends;
+    [self tagUsersAsFollowed:[WBDataSource sharedInstance].facebookFriends success:^(NSArray *suggestedUsers) {
+      if (success) {
+        success(suggestedUsers);
+      }
+    } failure:^(NSError *error) {
+      if (failure) {
+        failure(error);
+      }
+    }];
+  } failure:nil];
+}
+
+- (void)tagUsersAsFollowed:(NSArray *)users
+                   success:(void(^)(NSArray *suggestedUsers))success
+                   failure:(void(^)(NSError *error))failure {
+  /// Tag users as followed or not.
+  PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
+  [[followingRelation query] findObjectsInBackgroundWithBlock:^(NSArray *followedUsers, NSError *error) {
+    if (error && failure) {
       failure(error);
+    } else if (success) {
+      for (WBUser *wbUser in users) {
+        for (PFUser *followedUser in followedUsers) {
+          if ([followedUser.objectId isEqualToString:wbUser.userID]) {
+            wbUser.isFollowed = YES;
+          }
+        }
+      }
+      success(users);
     }
   }];
 }

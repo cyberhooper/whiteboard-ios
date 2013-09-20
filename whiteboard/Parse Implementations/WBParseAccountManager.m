@@ -42,6 +42,7 @@
            failure:(void(^)(NSError *error))failure {
   // Parse logout is instant since it deletes the current pfuser on disk.
   [WBDataSource sharedInstance].currentUser = nil;
+  [WBDataSource sharedInstance].facebookFriends = nil;
   [PFUser logOut];
   success();
 }
@@ -127,6 +128,7 @@
                                           
                                           [user setObject:userData[@"name"] forKey:@"displayName"];
                                           [user setEmail:userData[@"email"]];
+                                          [user setObject:userData[@"id"] forKey:@"facebookId"];
                                           [user save];
                                           
                                           NSURL *profilePictureURL = [NSURL URLWithString:[NSString stringWithFormat:@"https://graph.facebook.com/%@/picture?type=large&return_ssl_resources=1", userData[@"id"]]];
@@ -135,8 +137,50 @@
                                           [NSURLConnection connectionWithRequest:profilePictureURLRequest delegate:self];
                                         }
                                       }];
+                                      [self getFacebookFriends:^(NSArray *friends) {
+                                        [WBDataSource sharedInstance].facebookFriends = friends;
+                                      }
+                                                       failure:nil];
                                     }
                                   }];
+}
+
+- (void)getFacebookFriends:(void(^)(NSArray *friends))success
+                   failure:(void(^)(NSError *error))failure {
+  FBRequest *friendRequest = [FBRequest requestForMyFriends];
+  [friendRequest startWithCompletionHandler:^(FBRequestConnection *connection, id result, NSError *error) {
+    NSArray *data = [result objectForKey:@"data"];
+    
+    if (data) {
+      // we have friends data
+      NSMutableArray *facebookIds = [[NSMutableArray alloc] initWithCapacity:[data count]];
+      for (NSDictionary *friendData in data) {
+        if (friendData[@"id"]) {
+          [facebookIds addObject:friendData[@"id"]];
+        }
+      }
+      
+      NSError *error = nil;
+      // find common Facebook friends already using Anypic
+      PFQuery *facebookFriendsQuery = [PFUser query];
+      
+      [facebookFriendsQuery whereKey:@"facebookId" containedIn:facebookIds];
+      NSArray *whiteboardFriends = [facebookFriendsQuery findObjects:&error];
+      if (!error) {
+        NSMutableArray *whiteboardWBUsers = [NSMutableArray array];
+        [whiteboardFriends enumerateObjectsUsingBlock:^(PFUser *newFriend, NSUInteger idx, BOOL *stop) {
+          [whiteboardWBUsers addObject:[WBUser mapWBUser:newFriend]];
+        }];
+        if (success) {
+          success([NSArray arrayWithArray:whiteboardWBUsers]);
+        }
+      } else {
+        if (failure) {
+          failure(error);
+        }
+      }
+    }
+  }];
 }
 
 #pragma mark - NSURLConnectionDataDelegate
