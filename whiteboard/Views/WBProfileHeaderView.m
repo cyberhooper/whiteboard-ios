@@ -14,7 +14,7 @@
 {
     self = [super initWithFrame:frame];
     if (self) {
-        // Initialization code
+     
     }
     return self;
 }
@@ -22,6 +22,10 @@
 #pragma mark - Setup
 
 - (void)setUpViewWithUser:(WBUser *)user {
+  self.strokeImage.image = [[WBTheme sharedTheme] strokeProfilePictureImage];
+  self.followImage.image = [[WBTheme sharedTheme] pictoFollowImage];
+  self.pictureImage.image = [[WBTheme sharedTheme] pictoPhotoImage];
+  
   [self.nameLabel setText:user.displayName];
   
   NSURL *avatar = user.avatar;

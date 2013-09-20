@@ -63,8 +63,7 @@ static int kLibraryIndex = 1;
 }
 
 - (void)setUpActivityViewController {
-#warning Change this to an activity view controller when it is implemented
-  UIViewController *activityViewController = [[UIViewController alloc] init];
+  ActivityViewController *activityViewController = [[ActivityViewController alloc] init];
   UITabBarItem *activityTabBarItem = [[UITabBarItem alloc] initWithTitle:NSLocalizedString(@"ActivityTabTitle", @"Activity") image:[[WBTheme sharedTheme] tabBarActivityButtonNormalImage] selectedImage:[[WBTheme sharedTheme] tabBarActivityButtonSelectedImage]];
   
   [activityTabBarItem setTitleTextAttributes: @{ NSForegroundColorAttributeName: [[WBTheme sharedTheme] tabBarNormalFontColor] } forState:UIControlStateNormal];

@@ -2,6 +2,12 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>pictoFollowImage</key>
+	<string>iconFollowers</string>
+	<key>pictoPhotoImage</key>
+	<string>iconPics</string>
+	<key>profilePictureStroke</key>
+	<string>profilePictureStroke</string>
 	<key>tabBarTextColor-Selected</key>
 	<string>#816345</string>
 	<key>tabBarTextColor-Normal</key>

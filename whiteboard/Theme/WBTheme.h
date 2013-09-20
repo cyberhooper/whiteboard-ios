@@ -108,4 +108,8 @@
 - (UIColor *)findFriendsInviteFriendsFontColor;
 - (UIImage *)findFriendsTitleImage;
 
+- (UIImage *)strokeProfilePictureImage;
+- (UIImage *)pictoPhotoImage;
+- (UIImage *)pictoFollowImage;
+
 @end

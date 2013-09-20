@@ -14,7 +14,7 @@
                     <rect key="frame" x="94" y="38" width="132" height="132"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="profilePictureStroke" translatesAutoresizingMaskIntoConstraints="NO" id="Zcr-SL-Cxo">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zcr-SL-Cxo">
                     <rect key="frame" x="88" y="34" width="143" height="143"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -50,11 +50,11 @@
                     <nil key="highlightedColor"/>
                     <color key="shadowColor" red="0.0" green="0.0" blue="0.0" alpha="0.29999999999999999" colorSpace="calibratedRGB"/>
                 </label>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconPics" translatesAutoresizingMaskIntoConstraints="NO" id="Fqk-BQ-lj2">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fqk-BQ-lj2">
                     <rect key="frame" x="26" y="50" width="45" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="iconFollowers" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-9s-A1h">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Gd5-9s-A1h">
                     <rect key="frame" x="247" y="50" width="52" height="37"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -62,17 +62,15 @@
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="followImage" destination="Gd5-9s-A1h" id="eA7-n4-D9m"/>
                 <outlet property="nameLabel" destination="ccV-Ke-ppE" id="nhr-gB-4Un"/>
                 <outlet property="numberFollowersLabel" destination="0VL-wb-Ud3" id="xj8-dx-dFE"/>
                 <outlet property="numberFollowingLabel" destination="lx5-Vk-aKf" id="Ild-aP-shH"/>
                 <outlet property="numberPicturesLabel" destination="OnR-2h-mOU" id="Xz3-9L-8tz"/>
+                <outlet property="pictureImage" destination="Fqk-BQ-lj2" id="HdE-E2-d8u"/>
                 <outlet property="profilePictureImageView" destination="AlS-AN-peO" id="iWw-U8-bzL"/>
+                <outlet property="strokeImage" destination="Zcr-SL-Cxo" id="i0w-9F-qvb"/>
             </connections>
         </view>
     </objects>
-    <resources>
-        <image name="iconFollowers" width="52" height="37"/>
-        <image name="iconPics" width="45" height="37"/>
-        <image name="profilePictureStroke" width="143" height="143"/>
-    </resources>
 </document>

@@ -236,4 +236,16 @@
   return [UIImage imageNamed:self.themeDict[@"FINDFRIENDS_titleImage"]];
 }
 
+- (UIImage *)strokeProfilePictureImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"profilePictureStroke"]];
+}
+
+- (UIImage *)pictoPhotoImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"pictoPhotoImage"]];
+}
+
+- (UIImage *)pictoFollowImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"pictoFollowImage"]];
+}
+
 @end

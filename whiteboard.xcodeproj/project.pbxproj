@@ -18,6 +18,10 @@
 		21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A26B5217E362E400BF2BF4 /* WBUser.m */; };
 		21AC154017EA470300DC59DF /* KeyboardAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC153D17EA470300DC59DF /* KeyboardAnimationView.m */; };
 		21AC154117EA470300DC59DF /* NSNotification+Keyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AC153F17EA470300DC59DF /* NSNotification+Keyboard.m */; };
+		21BD8AF817ECA51A00AC1CD8 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BD8AF617ECA51A00AC1CD8 /* ActivityViewController.m */; };
+		21BD8AF917ECA51A00AC1CD8 /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21BD8AF717ECA51A00AC1CD8 /* ActivityViewController.xib */; };
+		21BD8AFC17ECAECE00AC1CD8 /* WBActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BD8AFB17ECAECE00AC1CD8 /* WBActivityCell.m */; };
+		21BD8AFE17ECAF0000AC1CD8 /* WBActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21BD8AFD17ECAF0000AC1CD8 /* WBActivityCell.xib */; };
 		5B6E5B767D2D48748780E8CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F30985C67F4305AE5B3F10 /* libPods.a */; };
 		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
 		991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CB17DE8161007FF6B5 /* CFNetwork.framework */; };
@@ -118,6 +122,12 @@
 		21AC153D17EA470300DC59DF /* KeyboardAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyboardAnimationView.m; sourceTree = "<group>"; };
 		21AC153E17EA470300DC59DF /* NSNotification+Keyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotification+Keyboard.h"; sourceTree = "<group>"; };
 		21AC153F17EA470300DC59DF /* NSNotification+Keyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+Keyboard.m"; sourceTree = "<group>"; };
+		21BD8AF517ECA51A00AC1CD8 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		21BD8AF617ECA51A00AC1CD8 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
+		21BD8AF717ECA51A00AC1CD8 /* ActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
+		21BD8AFA17ECAECE00AC1CD8 /* WBActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBActivityCell.h; sourceTree = "<group>"; };
+		21BD8AFB17ECAECE00AC1CD8 /* WBActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBActivityCell.m; sourceTree = "<group>"; };
+		21BD8AFD17ECAF0000AC1CD8 /* WBActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBActivityCell.xib; sourceTree = "<group>"; };
 		991614C917DE813C007FF6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		991614CB17DE8161007FF6B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		991614CD17DE8172007FF6B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -405,6 +415,8 @@
 				BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */,
 				BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */,
 				BED03EB617EA0BDB00EEEACC /* WBFriendCell.h */,
+				21BD8AFA17ECAECE00AC1CD8 /* WBActivityCell.h */,
+				21BD8AFB17ECAECE00AC1CD8 /* WBActivityCell.m */,
 				BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */,
 				BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */,
 				DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */,
@@ -414,6 +426,7 @@
 				BED03EBE17EB5D6600EEEACC /* WBInviteFriendsCell.m */,
 				BED03EBB17EB5D1800EEEACC /* WBInviteFriendsCell.xib */,
 				DD6F1E9017E3A80D0099866F /* Section Header */,
+				21BD8AFD17ECAF0000AC1CD8 /* WBActivityCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -428,6 +441,9 @@
 				BED03EAA17E9162400EEEACC /* ProfileViewController.m */,
 				BED03EAB17E9162400EEEACC /* ProfileViewController.xib */,
 				DDA25DE217E26DEB00C44622 /* WB */,
+				21BD8AF517ECA51A00AC1CD8 /* ActivityViewController.h */,
+				21BD8AF617ECA51A00AC1CD8 /* ActivityViewController.m */,
+				21BD8AF717ECA51A00AC1CD8 /* ActivityViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -583,7 +599,9 @@
 				9919153A17DA7B2A005DA25C /* Images.xcassets in Resources */,
 				994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */,
 				2165EC2A17E8B18600AC2F72 /* WBSignupViewController.xib in Resources */,
+				21BD8AF917ECA51A00AC1CD8 /* ActivityViewController.xib in Resources */,
 				BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */,
+				21BD8AFE17ECAF0000AC1CD8 /* WBActivityCell.xib in Resources */,
 				BED03EBC17EB5D1800EEEACC /* WBInviteFriendsCell.xib in Resources */,
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
 				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
@@ -665,6 +683,7 @@
 				DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				2173980217EA055E0071A03A /* WBAccountManager.m in Sources */,
+				21BD8AFC17ECAECE00AC1CD8 /* WBActivityCell.m in Sources */,
 				2173980517EA06630071A03A /* WBParseAccountManager.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
 				BED03EB817EA0BDB00EEEACC /* WBFriendCell.m in Sources */,
@@ -674,6 +693,7 @@
 				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
 				BED03EB017E91EDD00EEEACC /* WBProfileHeaderView.m in Sources */,
 				BE1B3F8017E24875003494CD /* WBTheme.m in Sources */,
+				21BD8AF817ECA51A00AC1CD8 /* ActivityViewController.m in Sources */,
 				BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */,
 				2165EC2D17E8BBCD00AC2F72 /* EmailValidator.m in Sources */,
 			);

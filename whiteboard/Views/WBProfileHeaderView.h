@@ -16,6 +16,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *numberPicturesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberFollowersLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberFollowingLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *pictureImage;
+@property (weak, nonatomic) IBOutlet UIImageView *followImage;
+@property (weak, nonatomic) IBOutlet UIImageView *strokeImage;
 
 - (void)setUpViewWithUser:(WBUser *)user;
 

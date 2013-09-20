@@ -11,6 +11,7 @@
 #import "WBTheme.h"
 #import "WBDataSource.h"
 #import "WBNavigationController.h"
+#import "ActivityViewController.h"
 
 @interface WBTabBarController : UITabBarController <UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 
