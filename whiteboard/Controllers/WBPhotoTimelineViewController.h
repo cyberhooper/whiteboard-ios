@@ -32,6 +32,8 @@
  */
 @property (nonatomic, assign) BOOL loadMore;
 
+@property (nonatomic, assign) NSInteger photoOffset;
+
 /**
  Checks to see if the cell is the load more cell
  */

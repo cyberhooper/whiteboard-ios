@@ -60,8 +60,31 @@
 }
 
 - (void)refreshPhotos {
-#pragma TODO get the pictures for the property user
+  [[WBDataSource sharedInstance] photosForUser:[self user]
+                                    withOffset:0 success:^(NSArray *photos) {
+                                      self.photoOffset = photos.count;
+                                      self.photos = photos;
+                                      
+                                      // If the number of returned objects is less than the photoLimit then don't show the loadMore cell
+                                      if(photos.count < [[WBDataSource sharedInstance] photoLimit]){
+                                        self.loadMore = NO;
+                                      }else{
+                                        self.loadMore = YES;
+                                      }
+                                      
+                                      [self.tableView reloadData];
+                                      self.isLoading = NO;
 
+                                    } failure:^(NSError *error) {
+                                      UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Refresh Failed"
+                                                                                      message:[error description]
+                                                                                     delegate:nil
+                                                                            cancelButtonTitle:@"OK"
+                                                                            otherButtonTitles:nil];
+                                      [alert show];
+                                      self.isLoading = NO;
+
+                                    }];
 }
 
 @end

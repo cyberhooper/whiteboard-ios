@@ -16,7 +16,6 @@
 #import "ProfileViewController.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
-@property (nonatomic, assign) NSInteger photoOffset;
 @property (nonatomic, strong) NSMutableArray *photosBeeingLiked;
 @end
 
