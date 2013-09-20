@@ -102,16 +102,16 @@
           success:(void(^)(void))success
           failure:(void(^)(NSError *error))failure;
 
+- (void)fetchPhoto:(WBPhoto *)photo
+           success:(void(^)(WBPhoto *fetchedPhoto))success
+           failure:(void(^)(NSError *error))failure;
+
 #pragma mark - Comments
 
 - (void)addComment:(NSString *)comment
            onPhoto:(WBPhoto *)photo
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure;
-
-- (void)fetchCommentsForPhoto:(WBPhoto *)photo
-                 success:(void(^)(void))success
-                 failure:(void(^)(NSError *error))failure;
 
 #pragma mark - Follow
 
