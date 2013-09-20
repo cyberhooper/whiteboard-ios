@@ -72,7 +72,7 @@ static Class DataSourceSubclass = nil;
 
 - (NSInteger)photoLimit {
   if(_photoLimit == 0){
-    return 1;
+    return 10;
   }
   
   return _photoLimit;
@@ -96,9 +96,16 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
+- (void)photosForUser:(WBUser *)wbUser
+           withOffset:(int)offset
+              success:(void(^)(NSArray *photos))success
+              failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
 - (void)likePhoto:(WBPhoto *)photo
          withUser:(WBUser *)user
-          success:(void(^)(void))success
+          success:(void(^)(NSArray *likes))success
           failure:(void(^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
@@ -110,10 +117,18 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
+#pragma mark - Comments 
+
 - (void)addComment:(NSString *)comment
            onPhoto:(WBPhoto *)photo
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
+- (void)fetchCommentsForPhoto:(WBPhoto *)photo
+                      success:(void(^)(void))success
+                      failure:(void(^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 

@@ -41,4 +41,6 @@
  */
 @property (nonatomic, weak) id<WBPhotoTimelineSectionHeaderButtonDelegate> delegate;
 
+@property (nonatomic, strong) UIButton *button;
+
 @end

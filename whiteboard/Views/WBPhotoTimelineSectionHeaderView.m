@@ -9,7 +9,6 @@
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "UIImageView+RoundedCorners.h"
 #import <FormatterKit/TTTTimeIntervalFormatter.h>
-#import "WBPhotoTimelineSectionHeaderButton.h"
 
 @interface WBPhotoTimelineSectionHeaderView() <WBPhotoTimelineSectionHeaderButtonDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *displayNameLabel;
@@ -20,7 +19,6 @@
 //@property (nonatomic, weak) IBOutlet UIButton *commentButton;
 //@property (nonatomic, weak) IBOutlet UILabel *commentNumberLabel;
 
-@property (nonatomic, weak) IBOutlet WBPhotoTimelineSectionHeaderButton *likeButton;
 @property (nonatomic, weak) IBOutlet WBPhotoTimelineSectionHeaderButton *commentButton;
 @end
 

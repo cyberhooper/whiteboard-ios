@@ -116,60 +116,64 @@
   [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
     if (!error && success)
       success([self wbPhotosFromParsePhotos:photos]);
-    else
-      NSLog(@"Error: %@ %@", error, [error userInfo]);
+    else if (failure)
+      failure(error);
   }];
 }
-// filter with friends example :
-//[query whereKey:@"user" containedIn:[currentUser friends]];
 
-//Restrict results. Faster?
-//[query selectKeys:@[@"playerName", @"score"]];
+- (void)photosForUser:(WBUser *)wbUser
+          withOffset:(int)offset
+              success:(void(^)(NSArray *photos))success
+              failure:(void(^)(NSError *error))failure {
+  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  query.limit = 100;
+  query.skip = offset;
+  [query orderByDescending:@"createdAt"];
+  [query includeKey:@"user"];
+  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:wbUser.userID];
+  [query whereKey:@"user" equalTo:parseUser];
+  [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
+    if (!error && success)
+      success([self wbPhotosFromParsePhotos:photos]);
+    else  if (failure)
+      failure(error);
+  }];
+}
 
 - (void)likePhoto:(WBPhoto *)photo
-         withUser:(WBUser *)user
-          success:(void(^)(void))success
-          failure:(void(^)(NSError *error))failure {
-  NSArray *likes = photo.likes;
-  if (photo.likes) {
-    if (![photo.likes containsObject:user.userID]) {
-      likes = [photo.likes arrayByAddingObject:user.userID];
-    }
-  } else {
-    likes = @[user.userID];
-  }
+        withUser:(WBUser *)user
+         success:(void (^)(NSArray *likes))success
+         failure:(void (^)(NSError *))failure {
   PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
-  [parsePhoto setObject:likes forKey:@"likes"];
+  PFObject *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  [parsePhoto addUniqueObject:parseUser forKey:@"likes"];
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success) {
-      photo.likes = likes;
-      success();
+      WBPhoto *responsePhoto = [self wbPhotoFromParsePhoto:parsePhoto];
+      success(responsePhoto.likes);
     } else if (failure) {
       failure(error);
     }
   }];
+  
 }
 
 - (void)unlikePhoto:(WBPhoto *)photo
            withUser:(WBUser *)user
             success:(void(^)(void))success
             failure:(void(^)(NSError *error))failure {
-  NSMutableArray *likes = [NSMutableArray arrayWithArray:photo.likes];
-  if ([likes containsObject:user.userID]) {
-    [likes removeObject:user.userID];
-  }
   PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
-  [parsePhoto setObject:likes forKey:@"likes"];
+  PFObject *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  [parsePhoto removeObject:parseUser forKey:@"likes"];
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success) {
-      photo.likes = likes;
+      //photo.likes = likes;
       success();
     } else if (failure) {
       failure(error);
     }
   }];
 }
-
 
 - (NSArray *)wbPhotosFromParsePhotos:(NSArray *)parsePhotos {
   NSMutableArray *wbPhotos = [@[] mutableCopy];
@@ -182,12 +186,13 @@
 
 - (WBPhoto *)wbPhotoFromParsePhoto:(PFObject *)parsePhoto {
   WBPhoto *wbPhoto = [[WBPhoto alloc] init];
+  [parsePhoto fetchIfNeeded];
   PFFile *imageFile = [parsePhoto objectForKey:@"imageFile"];
   wbPhoto.url = [NSURL URLWithString:[imageFile url]];
   PFUser *user = [parsePhoto objectForKey:@"user"];
   wbPhoto.author = [self wbUserFromParseUser:user];
   wbPhoto.createdAt = parsePhoto.createdAt;
-  wbPhoto.likes = [parsePhoto objectForKey:@"likes"];
+  wbPhoto.likes = [self wbUsersFromParseUsers:[parsePhoto objectForKey:@"likes"]];
   
   NSMutableArray *comments = [@[] mutableCopy];
   for (PFObject *parseComment in [parsePhoto objectForKey:@"comments"]) {
@@ -204,6 +209,7 @@
 - (NSArray *)wbUsersFromParseUsers:(NSArray *)parseUsers {
   NSMutableArray *wbUsers = [@[] mutableCopy];
   for (PFUser *user in parseUsers) {
+    [user fetchIfNeeded];
     WBUser *wbUser = [self wbUserFromParseUser:user];
     [wbUsers addObject:wbUser];
   }
@@ -212,6 +218,7 @@
 
 - (WBUser *)wbUserFromParseUser:(PFUser *)parseUser {
   WBUser *wbUser = [self createUser];
+  [parseUser fetchIfNeeded];
   wbUser.userID = parseUser.objectId;
   wbUser.displayName = [parseUser objectForKey:@"displayName"];
   PFFile *avatarFile = [parseUser objectForKey:@"avatar"];
@@ -219,6 +226,8 @@
   NSLog(@"User : %@", [wbUser description]);
   return wbUser;
 }
+
+#pragma mark - Comments
 
 - (void)addComment:(NSString *)comment
            onPhoto:(WBPhoto *)photo
@@ -246,6 +255,19 @@
       failure(error);
   }];
 }
+
+//- (void)fetchCommentsForPhoto:(WBPhoto *)photo
+//                      success:(void(^)(void))success
+//                      failure:(void(^)(NSError *error))failure {
+//  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+//  [query includeKey:@"comments"];
+//  [query getObjectInBackgroundWithId:photo.photoID block:^(PFObject *parsePhoto, NSError *error) {
+//    if (!error && success) {
+//      photo = [self wbPhotoFromParsePhoto:parsePhoto];
+//      success([self wbPhotoFromParsePhoto:parsePhoto]);
+//    }
+//  }];
+//}
 
 #pragma mark - Follow 
 
@@ -367,8 +389,9 @@
                          success:(void(^)(int numberOfFollowers))success
                          failure:(void(^)(NSError *error))failure {
   PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
-  PFRelation *followerRelation = [parseUser relationforKey:@"follower"];
-  [[followerRelation query] countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+  PFQuery *query = [PFQuery queryWithClassName:@"_User"];
+  [query whereKey:@"following" equalTo:parseUser];
+  [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
       success(number);
     else if (failure)

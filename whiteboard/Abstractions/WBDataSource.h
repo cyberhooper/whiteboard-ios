@@ -93,9 +93,14 @@
                        success:(void(^)(NSArray *photos))success
                        failure:(void(^)(NSError *error))failure;
 
+- (void)photosForUser:(WBUser *)wbUser
+           withOffset:(int)offset
+              success:(void(^)(NSArray *photos))success
+              failure:(void(^)(NSError *error))failure;
+
 - (void)likePhoto:(WBPhoto *)photo
          withUser:(WBUser *)user
-          success:(void(^)(void))success
+          success:(void(^)(NSArray *likes))success
           failure:(void(^)(NSError *error))failure;
 
 - (void)unlikePhoto:(WBPhoto *)photo
@@ -103,10 +108,16 @@
           success:(void(^)(void))success
           failure:(void(^)(NSError *error))failure;
 
+#pragma mark - Comments
+
 - (void)addComment:(NSString *)comment
            onPhoto:(WBPhoto *)photo
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure;
+
+- (void)fetchCommentsForPhoto:(WBPhoto *)photo
+                 success:(void(^)(void))success
+                 failure:(void(^)(NSError *error))failure;
 
 #pragma mark - Follow
 
