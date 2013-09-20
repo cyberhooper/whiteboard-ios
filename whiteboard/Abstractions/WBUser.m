@@ -9,13 +9,18 @@
 #import "WBUser.h"
 
 @implementation WBUser
+//
+//- (NSString *)description {
+//  NSMutableString *description = [@"" mutableCopy];
+//  
+//  NSString *isFollowedString = _isFollowed ? @"Followed" : @" Not Followed";
+//  [description appendString:isFollowedString];
+//  return description;
+//}
 
-- (NSString *)description {
-  NSMutableString *description = [@"" mutableCopy];
-  
-  NSString *isFollowedString = _isFollowed ? @"Followed" : @" Not Followed";
-  [description appendString:isFollowedString];
-  return description;
+
+- (BOOL)isEqual:(id)object {
+  return [[(WBUser *)object userID] isEqualToString:self.userID];
 }
 
 @end

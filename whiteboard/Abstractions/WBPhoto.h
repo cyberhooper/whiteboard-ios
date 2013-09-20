@@ -19,4 +19,6 @@
 @property (nonatomic, strong) NSArray *likes; // contains user Ids of the user who liked.
 @property (nonatomic, strong) NSArray *comments;
 
+- (BOOL)isLikedByUser:(WBUser *)user; // TODO write test.
+
 @end

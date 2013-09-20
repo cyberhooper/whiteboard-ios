@@ -17,6 +17,7 @@
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 @property (nonatomic, assign) NSInteger photoOffset;
+@property (nonatomic, strong) NSMutableArray *photosBeeingLiked;
 @end
 
 @implementation WBPhotoTimelineViewController
@@ -83,7 +84,8 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   sectionHeaderView.numberOfComments = @(photo.comments.count);
   sectionHeaderView.delegate = self;
   sectionHeaderView.sectionIndex = @(section);
-  sectionHeaderView.isLiked = [photo.likes containsObject:[WBDataSource currentUser].userID];
+  sectionHeaderView.isLiked = [photo isLikedByUser:[WBDataSource sharedInstance].currentUser];//[photo.likes containsObject:[WBDataSource currentUser].userID];
+  sectionHeaderView.likeButton.button.enabled = ![self isBeeingLiked:photo];
   
   return sectionHeaderView;
 }
@@ -273,26 +275,6 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   NSLog(@"Comments pressed");
 }
 
-- (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
-  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:sectionView.sectionIndex.intValue]);
-  if (![photo.likes containsObject:[WBDataSource currentUser].userID]) {
-    [self likePhoto:photo completion:^(BOOL success) {
-      if (success) {
-        sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue + 1);
-        sectionView.isLiked = YES;
-      }
-    }];
-  } else {
-    [self unlikePhoto:photo completion:^(BOOL success) {
-      if (success && sectionView.numberOfLikes > 0) {
-        sectionView.numberOfLikes = @(sectionView.numberOfLikes.intValue - 1);
-        sectionView.isLiked = NO;
-      }
-    }];
-  }
-  NSLog(@"Likes pressed");
-}
-
 - (void)sectionHeaderPressed:(WBUser *)author {
   ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:NSStringFromClass([ProfileViewController class])
                                                                                          bundle:nil];
@@ -300,30 +282,80 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   [self.navigationController pushViewController:profileViewController animated:YES];
 }
 
-- (void)likePhoto:(WBPhoto *)photo completion:(void(^)(BOOL success))result {
-  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^{
-    result(YES);
+#pragma mark - Like Management
+
+- (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
+  WBPhoto *photo = [self photoForSectionView:sectionView];
+  [self.photosBeeingLiked addObject:photo];
+  [self toggleLikeOnPhoto:photo completion:^{
+    [self.photosBeeingLiked removeObject:photo];
+    [self.tableView reloadData];
+  }];
+  [self.tableView reloadData]; // only reload the section concerned. for optimisation ?
+}
+
+- (WBPhoto *)photoForSectionView:(WBPhotoTimelineSectionHeaderView *)sectionView {
+  return self.photos[sectionView.sectionIndex.intValue];
+}
+
+- (void)toggleLikeOnPhoto:(WBPhoto *)photo
+               completion:(void(^)(void))completion {
+  if ([photo isLikedByUser:[WBDataSource sharedInstance].currentUser])
+    [self unlikePhoto:photo completion:completion];
+  else
+    [self likePhoto:photo completion:completion];
+}
+
+- (void)likePhoto:(WBPhoto *)photo completion:(void(^)(void))completion {
+  [self addLikeOnPhoto:photo];
+  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^(NSArray *likes) {
+    completion();
   } failure:^(NSError *error) {
-    result(NO);
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
+    [self removeLikeOnPhoto:photo];
+    [self likeFailedWithError:error];
+    completion();
   }];
 }
 
-- (void)unlikePhoto:(WBPhoto *)photo completion:(void(^)(BOOL success))result {
+- (void)unlikePhoto:(WBPhoto *)photo completion:(void(^)(void))completion {
+  [self removeLikeOnPhoto:photo];
   [[WBDataSource sharedInstance] unlikePhoto:photo withUser:[WBDataSource currentUser] success:^{
-    result(YES);
+    completion();
   } failure:^(NSError *error) {
-    result(NO);
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Un-Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
+    [self addLikeOnPhoto:photo];
+    [self unLikeFailedWithError:error];
+    completion();
   }];
 }
+   
+- (void)likeFailedWithError:(NSError *)error {
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+  [alert show];
+}
 
-- (void)didReceiveMemoryWarning
-{
-  [super didReceiveMemoryWarning];
-  // Dispose of any resources that can be recreated.
+- (void)unLikeFailedWithError:(NSError *)error {
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Un-Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+  [alert show];
+}
+
+- (void)addLikeOnPhoto:(WBPhoto *)photo {
+  photo.likes = [photo.likes arrayByAddingObject:[[WBDataSource sharedInstance] currentUser]];
+}
+
+- (void)removeLikeOnPhoto:(WBPhoto *)photo {
+  NSMutableArray *arr = [photo.likes mutableCopy];
+  [arr removeObject:[WBDataSource sharedInstance].currentUser];
+  photo.likes = arr;
+}
+
+- (BOOL)isBeeingLiked:(WBPhoto *)photo {
+  return [self.photosBeeingLiked containsObject:photo];
+}
+
+- (NSMutableArray *)photosBeeingLiked {
+  if (!_photosBeeingLiked)
+    _photosBeeingLiked = [@[] mutableCopy];
+  return _photosBeeingLiked;
 }
 
 @end

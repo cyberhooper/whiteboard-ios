@@ -9,7 +9,7 @@
 #import "WBPhotoTimelineSectionHeaderButton.h"
 
 @interface WBPhotoTimelineSectionHeaderButton()
-@property (nonatomic, strong) UIButton *button;
+
 @end
 
 @implementation WBPhotoTimelineSectionHeaderButton

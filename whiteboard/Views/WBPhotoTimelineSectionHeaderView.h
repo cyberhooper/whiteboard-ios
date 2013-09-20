@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBPhotoTimelineSectionHeaderButton.h"
 #import "WBUser.h"
 
 @class WBPhotoTimelineSectionHeaderView;
@@ -51,6 +52,8 @@
 
 @property (nonatomic, strong) NSNumber *sectionIndex;
 @property (nonatomic) BOOL isLiked;
+
+@property (nonatomic, weak) IBOutlet WBPhotoTimelineSectionHeaderButton *likeButton;
 
 /**
  The image of the like button in normal state
