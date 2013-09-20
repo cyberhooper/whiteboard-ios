@@ -170,6 +170,19 @@
   }];
 }
 
+- (void)fetchPhoto:(WBPhoto *)photo
+           success:(void(^)(WBPhoto *fetchedPhoto))success
+           failure:(void(^)(NSError *error))failure {
+  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  [query includeKey:@"likes"];
+  [query includeKey:@"comments"];
+  [query getObjectInBackgroundWithId:photo.photoID block:^(PFObject *parsePhoto, NSError *error) {
+    if (!error && success) {
+      success([self wbPhotoFromParsePhoto:parsePhoto]);
+    }
+  }];
+}
+
 - (NSArray *)wbPhotosFromParsePhotos:(NSArray *)parsePhotos {
   NSMutableArray *wbPhotos = [@[] mutableCopy];
   for (PFObject *photo in parsePhotos) {
@@ -193,6 +206,12 @@
   for (PFObject *parseComment in [parsePhoto objectForKey:@"comments"]) {
     WBComment *comment = [[WBComment alloc] init];
     comment.commentID = parseComment.objectId;
+    if ([parseComment isDataAvailable]) {
+      comment.author = [self wbUserFromParseUser:[parseComment objectForKey:@"user"]];
+      comment.text = [parseComment objectForKey:@"text"];
+      comment.createdAt = parseComment.createdAt;
+    }
+
     [comments addObject:comment];
   }
   wbPhoto.comments = comments;
@@ -250,19 +269,6 @@
       failure(error);
   }];
 }
-
-//- (void)fetchCommentsForPhoto:(WBPhoto *)photo
-//                      success:(void(^)(void))success
-//                      failure:(void(^)(NSError *error))failure {
-//  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
-//  [query includeKey:@"comments"];
-//  [query getObjectInBackgroundWithId:photo.photoID block:^(PFObject *parsePhoto, NSError *error) {
-//    if (!error && success) {
-//      photo = [self wbPhotoFromParsePhoto:parsePhoto];
-//      success([self wbPhotoFromParsePhoto:parsePhoto]);
-//    }
-//  }];
-//}
 
 #pragma mark - Follow 
 
