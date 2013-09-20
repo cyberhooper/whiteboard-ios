@@ -9,8 +9,11 @@
 #import "WBFindFriendsViewController.h"
 #import "WBDataSource.h"
 #import "UIImageView+WBImageLoader.h"
+#import "ProfileViewController.h"
 
 @interface WBFindFriendsViewController ()
+
+@property (nonatomic, strong) NSString *selectedEmailAddress;
 
 @end
 
@@ -28,14 +31,15 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 {
   [super viewDidLoad];
   [self setUpView];
+  [self setupRefreshControl];
   [self getSuggestedUsers];
 }
 
 #pragma mark - Config
 - (void)setUpView {
   // Set up the nav bar
-  self.followAllButton = [[UIBarButtonItem alloc] initWithTitle:@"Follow All" style:UIBarButtonItemStyleBordered target:self action:@selector(followAll)];
-  self.unfollowAllButton = [[UIBarButtonItem alloc] initWithTitle:@"Unfollow All" style:UIBarButtonItemStyleBordered target:self action:@selector(unfollowAll)];
+  self.followAllButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"FollowAll", @"Follow All") style:UIBarButtonItemStyleBordered target:self action:@selector(followAll)];
+  self.unfollowAllButton = [[UIBarButtonItem alloc] initWithTitle:NSLocalizedString(@"UnfollowAll", @"Unfollow All") style:UIBarButtonItemStyleBordered target:self action:@selector(unfollowAll)];
   self.navigationItem.titleView = [[UIImageView alloc] initWithImage:[[WBTheme sharedTheme] findFriendsTitleImage]];
   
   // Setup NIB
@@ -54,6 +58,20 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
   self.view.backgroundColor = [UIColor colorWithPatternImage:[[WBTheme sharedTheme] backgroundImage]];
   
   self.loadMore = YES;
+}
+
+- (void)setupRefreshControl {
+  // Create the refresh control
+  self.refreshControl = [[UIRefreshControl alloc] init];
+  
+  // Set the action
+  [self.refreshControl addTarget:self action:@selector(refreshControlRequest) forControlEvents:UIControlEventValueChanged];
+  
+  self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Updating data..."];
+}
+
+- (void)refreshControlRequest {
+  [self performSelector:@selector(getSuggestedUsers)withObject:nil];
 }
 
 - (void)configureBarButton {
@@ -83,10 +101,15 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 }
 
 - (void)getSuggestedUsers {
+  NSString *lastUpdated = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"LastUpdated", @"Last updated on"), [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterMediumStyle]];
+  
+  self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:lastUpdated];
+  
   [[WBDataSource sharedInstance] suggestedUsers:^(NSArray *users) {
     self.users = users;
     [self configureBarButton];
     [self.tableView reloadData];
+    [self.refreshControl endRefreshing];
   } failure:^(NSError *error) {
     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"SuggestedFriendsFailed", @"Cannot Get Friends")
                                message:NSLocalizedString(@"SuggestedFriendsFailedMessage", @"Suggested friends failed. Please try again.")
@@ -94,6 +117,7 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
                      cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
                      otherButtonTitles:nil] show];
   }];
+  [self.refreshControl endRefreshing];
 }
 
 - (void)didReceiveMemoryWarning
@@ -195,7 +219,17 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 }
 
 - (void)inviteFriendsTapped {
-  NSLog(@"Invite friends here");
+  ABPeoplePickerNavigationController *addressBook = [[ABPeoplePickerNavigationController alloc] init];
+  addressBook.peoplePickerDelegate = self;
+  
+  if ([MFMailComposeViewController canSendMail] && [MFMessageComposeViewController canSendText]) {
+    addressBook.displayedProperties = [NSArray arrayWithObjects:[NSNumber numberWithInt:kABPersonEmailProperty], [NSNumber numberWithInt:kABPersonPhoneProperty], nil];
+  } else if ([MFMailComposeViewController canSendMail]) {
+    addressBook.displayedProperties = [NSArray arrayWithObject:[NSNumber numberWithInt:kABPersonEmailProperty]];
+  } else if ([MFMessageComposeViewController canSendText]) {
+    addressBook.displayedProperties = [NSArray arrayWithObject:[NSNumber numberWithInt:kABPersonPhoneProperty]];
+  }
+  [self presentViewController:addressBook animated:YES completion:nil];
 }
 
 #pragma mark - Invite Friends Cell
@@ -205,31 +239,149 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 
 #pragma mark - WBFriendCellDelegate
 - (void)cell:(WBFriendCell *)cellView didTapFollowButtonAtIndex:(NSNumber *)userIndex {
+  cellView.followButton.selected = !cellView.followButton.selected;
   WBUser *user = ((WBUser *)self.users[userIndex.intValue]);
   [[WBDataSource sharedInstance] toggleFollowForUser:user success:^{
-    [self getSuggestedUsers];
-    [self.tableView reloadData];
+    // Do nothing
   } failure:^(NSError *error) {
+    // The request failed, change the button back and show an error.
+    cellView.followButton.selected = !cellView.followButton.selected;
+    user.isFollowed = cellView.followButton.selected;
     [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
                                 message:error.description
                                delegate:nil
                       cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
                       otherButtonTitles:nil] show];
   }];
+  user.isFollowed = cellView.followButton.selected;
 }
 
 - (void)cell:(WBFriendCell *)cellView didTapUserButtonAtIndex:(NSNumber *)userIndex {
   WBUser *user = ((WBUser *)self.users[userIndex.intValue]);
-  // Push a user detail view controller
+  ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:NSStringFromClass([ProfileViewController class])
+                                                                                         bundle:nil];
+  [profileViewController setUser:user];
+  [self.navigationController pushViewController:profileViewController animated:YES];
 }
 
 #pragma mark - Follow All/Unfollow All
 - (void)followAll {
-  
+  NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isFollowed == NO"];
+  NSArray *unfollowedUsers = [self.users filteredArrayUsingPredicate:predicate];
+  [[WBDataSource sharedInstance] followUsers:unfollowedUsers
+                                     success:^{
+                                       [self getSuggestedUsers];
+                                       [self.tableView reloadData];
+                                     }
+                                     failure:^(NSError *error) {
+                                       [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
+                                                                   message:error.description
+                                                                  delegate:nil
+                                                         cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+                                                         otherButtonTitles:nil] show];
+                                     }];
 }
 
 - (void)unfollowAll {
+  NSPredicate *predicate = [NSPredicate predicateWithFormat:@"isFollowed == YES"];
+  NSArray *followedUsers = [self.users filteredArrayUsingPredicate:predicate];
+  [[WBDataSource sharedInstance] unFollowUsers:followedUsers
+                                       success:^{
+                                         [self getSuggestedUsers];
+                                         [self.tableView reloadData];
+                                       }
+                                       failure:^(NSError *error) {
+                                         [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Error", @"Error")
+                                                                     message:error.description
+                                                                    delegate:nil
+                                                           cancelButtonTitle:NSLocalizedString(@"Cancel", @"Cancel")
+                                                           otherButtonTitles:nil] show];
+                                       }];
+}
+
+#pragma mark - ABPeoplePickerDelegate
+
+/* Called when the user cancels the address book view controller. We simply dismiss it. */
+- (void)peoplePickerNavigationControllerDidCancel:(ABPeoplePickerNavigationController *)peoplePicker {
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+/* Called when a member of the address book is selected, we return YES to display the member's details. */
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person {
+  return YES;
+}
+
+/* Called when the user selects a property of a person in their address book (ex. phone, email, location,...)
+ This method will allow them to send a text or email inviting them to Anypic.  */
+- (BOOL)peoplePickerNavigationController:(ABPeoplePickerNavigationController *)peoplePicker shouldContinueAfterSelectingPerson:(ABRecordRef)person property:(ABPropertyID)property identifier:(ABMultiValueIdentifier)identifier {
   
+  if (property == kABPersonEmailProperty) {
+    
+    ABMultiValueRef emailProperty = ABRecordCopyValue(person,property);
+    NSString *email = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(emailProperty,identifier);
+    self.selectedEmailAddress = email;
+    if ([MFMailComposeViewController canSendMail]) {
+      // go directly to mail
+      [self presentMailComposeViewController:email];
+    } else if ([MFMessageComposeViewController canSendText]) {
+      // go directly to iMessage
+      [self presentMessageComposeViewController:email];
+    }
+    
+  } else if (property == kABPersonPhoneProperty) {
+    ABMultiValueRef phoneProperty = ABRecordCopyValue(person,property);
+    NSString *phone = (__bridge_transfer NSString *)ABMultiValueCopyValueAtIndex(phoneProperty,identifier);
+    
+    if ([MFMessageComposeViewController canSendText]) {
+      [self presentMessageComposeViewController:phone];
+    }
+  }
+  
+  return NO;
+}
+
+- (void)presentMailComposeViewController:(NSString *)recipient {
+  // Create the compose email view controller
+  MFMailComposeViewController *composeEmailViewController = [[MFMailComposeViewController alloc] init];
+  
+  // Set the recipient to the selected email and a default text
+  [composeEmailViewController setMailComposeDelegate:self];
+  [composeEmailViewController setSubject:NSLocalizedString(@"EmailSubject", @"Email Subject")];
+  [composeEmailViewController setToRecipients:[NSArray arrayWithObjects:recipient, nil]];
+  [composeEmailViewController setMessageBody:NSLocalizedString(@"EmailBody", @"Email Body") isHTML:YES];
+  
+  [self dismissViewControllerAnimated:YES completion:^{
+    [self presentViewController:composeEmailViewController animated:YES completion:nil];
+  }];
+}
+
+- (void)presentMessageComposeViewController:(NSString *)recipient {
+  // Create the compose text message view controller
+  MFMessageComposeViewController *composeTextViewController = [[MFMessageComposeViewController alloc] init];
+  
+  // Send the destination phone number and a default text
+  [composeTextViewController setMessageComposeDelegate:self];
+  [composeTextViewController setRecipients:[NSArray arrayWithObjects:recipient, nil]];
+  [composeTextViewController setBody:NSLocalizedString(@"MessageBody", @"Message Body")];
+
+  [self dismissViewControllerAnimated:YES completion:^{
+    [self presentViewController:composeTextViewController animated:YES completion:nil];
+  }];
+}
+
+#pragma mark - MFMailComposeDelegate
+
+/* Simply dismiss the MFMailComposeViewController when the user sends an email or cancels */
+- (void)mailComposeController:(MFMailComposeViewController *)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError *)error {
+  [self dismissViewControllerAnimated:YES completion:nil];
+}
+
+
+#pragma mark - MFMessageComposeDelegate
+
+/* Simply dismiss the MFMessageComposeViewController when the user sends a text or cancels */
+- (void)messageComposeViewController:(MFMessageComposeViewController *)controller didFinishWithResult:(MessageComposeResult)result {
+  [self dismissViewControllerAnimated:YES completion:nil];
 }
 
 @end

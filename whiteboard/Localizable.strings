@@ -34,3 +34,11 @@
 "FollowButton" = "Follow "; // space is added for centering
 "FollowingButton" = "Following";
 "InviteFriends" = "Invite friends";
+"FollowAll" = "Follow All";
+"UnfollowAll" = "Unfollow All";
+"EmailSubject" = "Join me on Whiteboard";
+"EmailBody" = "<h2>Header!</h2><p><a href=\"\">Whiteboard</a> is the easiest way to share photos with your friends. HTML goes here!</p>";
+"MessageBody" = "Check out the Whiteboard app!";
+
+// Pull to refresh
+"LastUpdated" = "Last updated on";

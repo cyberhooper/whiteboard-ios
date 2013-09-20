@@ -71,6 +71,7 @@ static const int kLogOutIndex = 2;
     case kMyProfileIndex: {
       ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:NSStringFromClass([ProfileViewController class])
                                                                                              bundle:nil];
+      [profileViewController setUser:[WBDataSource currentUser]];
       [self pushViewController:profileViewController animated:YES];
       break;
     }

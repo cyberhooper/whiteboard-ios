@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBDataSource.h"
 
 @interface WBProfileHeaderView : UIView
 
@@ -15,5 +16,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *numberPicturesLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberFollowersLabel;
 @property (weak, nonatomic) IBOutlet UILabel *numberFollowingLabel;
+
+- (void)setUpViewWithUser:(WBUser *)user;
+
 
 @end

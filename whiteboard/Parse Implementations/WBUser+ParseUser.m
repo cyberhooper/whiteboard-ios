@@ -18,7 +18,8 @@
   wbUser.firstName = [user objectForKey:@"firstname"];
   wbUser.lastName = [user objectForKey:@"lastname"];
   wbUser.email = [user email];
-  wbUser.avatar = [user objectForKey:@"avatar"];
+  PFFile *avatar = [user objectForKey:@"avatar"];
+  wbUser.avatar = [NSURL URLWithString:[avatar url]];
   wbUser.createdAt = user.createdAt;
   wbUser.updatedAt = user.updatedAt;
   wbUser.numberOfFollowers = [user objectForKey:@"numberOfFollowers"];
@@ -35,7 +36,8 @@
   [pfUser setObject:user.firstName forKey:@"firstname"];
   [pfUser setObject:user.lastName forKey:@"lastName"];
   pfUser.email = user.email;
-  [pfUser setObject:user.avatar forKey:@"avatar"];
+  PFFile *avatar = [PFFile fileWithData:[NSData dataWithContentsOfURL:user.avatar]];
+  [pfUser setObject:avatar forKey:@"avatar"];
   [pfUser setObject:user.numberOfFollowers forKey:@"numberOfFollowers"];
   [pfUser setObject:user.numberFollowing forKey:@"numberFollowing"];
   
