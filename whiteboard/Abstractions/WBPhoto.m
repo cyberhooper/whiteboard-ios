@@ -21,9 +21,5 @@
 - (BOOL)isEqual:(id)object {
   return [[(WBPhoto *)object photoID] isEqualToString:self.photoID];
 }
-
-- (BOOL)isLikedByUser:(WBUser *)user {
-  return [self.likes containsObject:user];
-}
-          
+      
 @end

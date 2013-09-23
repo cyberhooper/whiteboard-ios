@@ -51,6 +51,7 @@
 		994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */; };
 		995D6C2317E78AD300550634 /* WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2217E78AD300550634 /* WBComment.m */; };
 		995D6C2517E78AEA00550634 /* WBCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2417E78AEA00550634 /* WBCommentTests.m */; };
+		99A1408017F09E5E00F1378D /* WBPhoto+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
 		99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7D17DE4FBF00809322 /* MyViewController.m */; };
 		99F9609417E39034005D27EB /* WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9609317E39034005D27EB /* WBPhoto.m */; };
@@ -164,6 +165,8 @@
 		995D6C2117E78AD300550634 /* WBComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBComment.h; sourceTree = "<group>"; };
 		995D6C2217E78AD300550634 /* WBComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBComment.m; sourceTree = "<group>"; };
 		995D6C2417E78AEA00550634 /* WBCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommentTests.m; sourceTree = "<group>"; };
+		99A1407E17F09E5E00F1378D /* WBPhoto+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBPhoto+Utils.h"; sourceTree = "<group>"; };
+		99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBPhoto+Utils.m"; sourceTree = "<group>"; };
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
 		99D80C7C17DE4FBF00809322 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
 		99D80C7D17DE4FBF00809322 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
@@ -472,6 +475,8 @@
 				DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */,
 				DD6F1E8D17E39FD30099866F /* UIColor+Hex.h */,
 				DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */,
+				99A1407E17F09E5E00F1378D /* WBPhoto+Utils.h */,
+				99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -673,6 +678,7 @@
 				DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */,
 				9922AB5A17E0DA6B00D1B18A /* WBParseDataSource.m in Sources */,
 				BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
+				99A1408017F09E5E00F1378D /* WBPhoto+Utils.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
 				9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */,
 				2173980B17EA0B3D0071A03A /* WBUser+ParseUser.m in Sources */,
