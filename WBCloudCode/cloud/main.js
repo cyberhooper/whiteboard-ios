@@ -10,6 +10,16 @@ Parse.Cloud.afterSave("Photo", function(request) {
   updateNumberOfPhotosForUser(user);
 });
 
+Parse.Cloud.beforeDelete("Photo", function(request, response) {
+  var author = userFromRequest(request);
+  var requester = request.user;
+  if (author.id != requester.id) {
+    response.error("You do not have permission to delete this photo.");
+  } else {
+    response.success();
+  }
+});
+
 Parse.Cloud.afterDelete("Photo", function(request) {
   var user = userFromRequest(request);
   updateNumberOfPhotosForUser(user);

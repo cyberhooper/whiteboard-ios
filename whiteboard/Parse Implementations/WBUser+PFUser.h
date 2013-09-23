@@ -1,5 +1,5 @@
 //
-//  WBUser+ParseUser.h
+//  WBUser+PFUser.h
 //  whiteboard
 //
 //  Created by Thibault Gauche on 9/18/13.
@@ -9,7 +9,8 @@
 #import "WBUser.h"
 #import <Parse/Parse.h>
 
-@interface WBUser (ParseUser)
-+ (WBUser *)mapWBUser:(PFUser *)user;
-+ (PFUser *)mapPFUser:(WBUser *)user;
+@interface WBUser (PFUser)
+
+- (PFUser *)PFUser;
+
 @end

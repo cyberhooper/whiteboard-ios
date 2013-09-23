@@ -26,51 +26,57 @@ static Class AccountManagerSubclass = nil;
 }
 
 - (BOOL)facebookReturnHandleURL:(NSURL *)url {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
   return NO;
 }
 
 - (void)loginWithFacebook:(void (^)(void))success failure:(void (^)(NSError *))failure {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
 }
 
 - (void)logoutWithFacebook:(void (^)(void))success failure:(void (^)(NSError *))failure {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
 }
 
 - (void)initiatizeFacebook {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
 }
 
 - (void)loginWithUsername:(NSString *)username
               andPassWord:(NSString *)password
                   success:(void(^)(WBUser *user))success
                   failure:(void(^)(NSError *error))failure {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
 }
 
 - (void)logoutUser:(WBUser *)user
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
 }
 
 
 - (void)signupWithInfo:(NSDictionary *)userInfo
                success:(void (^)(WBUser *user))success
                failure:(void (^)(NSError *error))failure {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
 }
 
 - (void)deleteUserAccount:(WBUser *)user
                   success:(void (^)(void))success
                   failure:(void (^)(NSError *error))failure {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
 }
 
 - (void)resetPasswordForUser:(WBUser *)user
                      success:(void (^)(void))success
                      failure:(void (^)(NSError *))failure {
-  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
 }
+
+- (void)getFacebookFriends:(void (^)(NSArray *))success
+                   failure:(void (^)(NSError *))failure {
+  [NSException raise:@"You should override in a WBAccountManager subclass" format:nil];
+}
+
 @end
