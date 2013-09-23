@@ -105,4 +105,14 @@
 - (UIImage *)findFriendsFollowButtonSelectedBackgroundImage;
 - (UIImage *)findFriendsFollowButtonSelectedImage;
 
+- (UIImage *)detailsTextfieldBackgroundImage;
+- (UIImage *)detailsAddCommentIconImage;
+- (UIImage *)detailsCommentsSeperatorImage;
+- (UIFont *)detailsCommentsNameFont;
+- (UIColor *)detailsCommentsNameFontColor;
+- (UIFont *)detailsCommentsMessageFont;
+- (UIColor *)detailsCommentsMessageFontColor;
+- (UIFont *)detailsCommentsDateFont;
+- (UIColor *)detailsCommentsDateFontColor;
+
 @end

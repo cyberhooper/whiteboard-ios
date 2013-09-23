@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WBPhotoDetailsCell.h"
 
-@interface WBPhotoDetailsPhotoCell : UITableViewCell
+@interface WBPhotoDetailsCellPhoto : WBPhotoDetailsCell
 /**
  The main photo to be displayed in the cell
  */

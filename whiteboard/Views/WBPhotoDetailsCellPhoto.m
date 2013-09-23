@@ -6,19 +6,19 @@
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
-#import "WBPhotoDetailsPhotoCell.h"
+#import "WBPhotoDetailsCellPhoto.h"
 
 
-@interface WBPhotoDetailsPhotoCell()
+@interface WBPhotoDetailsCellPhoto()
 @end
 
-@implementation WBPhotoDetailsPhotoCell
+@implementation WBPhotoDetailsCellPhoto
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
-      [self setupView];
+      
     }
     return self;
 }
@@ -26,15 +26,22 @@
 - (id)initWithCoder:(NSCoder *)aDecoder {
   self = [super initWithCoder:aDecoder];
   if(self){
-    [self setupView];
+
   }
   return self;
 }
 
 #pragma mark - SetupView
 - (void)setupView {
-
+  [super setupView];
   
+  // Defaults
+  self.seperatorBottom = NO;
+}
+
+#pragma mark - CellHeight
++ (CGFloat)cellHeight {
+  return 280.f;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated

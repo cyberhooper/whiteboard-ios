@@ -153,7 +153,8 @@
 }
 
 - (UIFont *)navBarTitleFont {
-  return [UIFont fontWithName:[self.themeDict objectForKey:@"NAVBAR_titleFont"] size:[[self.themeDict objectForKey:@"NAVBAR_titleFontSize"] floatValue]];
+  return [UIFont fontWithName:[self.themeDict objectForKey:@"NAVBAR_titleFont"]
+                         size:[[self.themeDict objectForKey:@"NAVBAR_titleFontSize"] floatValue]];
 }
 
 - (UIColor *)navBarTitleFontColor {
@@ -169,7 +170,8 @@
 }
 
 - (UIFont *)findFriendsNameFont {
-  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_nameFont"] size:[self.themeDict[@"FINDFRIENDS_nameFontSize"] floatValue]];
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_nameFont"]
+                         size:[self.themeDict[@"FINDFRIENDS_nameFontSize"] floatValue]];
 }
 
 - (UIColor *)findFriendsNameFontColor {
@@ -181,7 +183,8 @@
 }
 
 - (UIFont *)findFriendsNumPhotosFont {
-  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_numPhotosFont"] size:[self.themeDict[@"FINDFRIENDS_numPhotosFontSize"] floatValue]];
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_numPhotosFont"]
+                         size:[self.themeDict[@"FINDFRIENDS_numPhotosFontSize"] floatValue]];
 }
 
 - (UIColor *)findFriendsNumPhotosFontColor {
@@ -189,11 +192,13 @@
 }
 
 - (UIColor *)findFriendsNumPhotosShadowColor {
-  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_numPhotosShadowColor"] andAlpha:[self.themeDict[@"FINDFRIENDS_numPhotosShadowAlpha"] floatValue]];
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_numPhotosShadowColor"]
+                      andAlpha:[self.themeDict[@"FINDFRIENDS_numPhotosShadowAlpha"] floatValue]];
 }
 
 - (UIFont *)findFriendsFollowButtonFont {
-  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_followButtonFont"] size:[self.themeDict[@"FINDFRIENDS_followButtonFontSize"] floatValue]];
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_followButtonFont"]
+                         size:[self.themeDict[@"FINDFRIENDS_followButtonFontSize"] floatValue]];
 }
 
 - (UIColor *)findFriendsFollowButtonNormalFontColor {
@@ -222,6 +227,46 @@
 
 - (UIImage *)findFriendsFollowButtonSelectedImage {
   return [UIImage imageNamed:self.themeDict[@"FINDFRIENDS_followButtonSelectedImage"]];
+}
+
+#pragma mark - Details
+- (UIImage *)detailsTextfieldBackgroundImage {
+  return [UIImage imageNamed:self.themeDict[@"DETAILS_textfieldBackgroundImage"]];
+}
+
+- (UIImage *)detailsAddCommentIconImage {
+  return [UIImage imageNamed:self.themeDict[@"DETAILS_addCommentIconImage"]];
+}
+
+- (UIImage *)detailsCommentsSeperatorImage {
+  return [UIImage imageNamed:self.themeDict[@"DETAILS_commentsSeperatorImage"]];
+}
+
+- (UIFont *)detailsCommentsNameFont {
+  return [UIFont fontWithName:self.themeDict[@"DETAILS_commentNameFont"]
+                         size:[self.themeDict[@"DETAILS_commentNameFontSize"] floatValue]];
+}
+
+- (UIColor *)detailsCommentsNameFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"DETAILS_commentNameFontColor"]];
+}
+
+- (UIFont *)detailsCommentsMessageFont {
+  return [UIFont fontWithName:self.themeDict[@"DETAILS_commentMessageFont"]
+                         size:[self.themeDict[@"DETAILS_commentMessageFontSize"] floatValue]];
+}
+
+- (UIColor *)detailsCommentsMessageFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"DETAILS_commentMessageFontColor"]];
+}
+
+- (UIFont *)detailsCommentsDateFont {
+  return [UIFont fontWithName:self.themeDict[@"DETAILS_commentDateFont"]
+                         size:[self.themeDict[@"DETAILS_commentDateFontSize"] floatValue]];
+}
+
+- (UIColor *)detailsCommentsDateFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"DETAILS_commentDateFontColor"]];
 }
 
 @end

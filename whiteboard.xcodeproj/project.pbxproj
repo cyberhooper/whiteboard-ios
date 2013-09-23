@@ -75,14 +75,21 @@
 		BED03EBA17EA0C8800EEEACC /* WBFriendCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */; };
 		DD17448317EB62C7009A4E23 /* WBPhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17448217EB62C7009A4E23 /* WBPhotoDetailsViewController.m */; };
 		DD17448717EB82F0009A4E23 /* WBPhotoDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD17448617EB82EF009A4E23 /* WBPhotoDetailsViewController.xib */; };
-		DD17448A17EB8466009A4E23 /* WBPhotoDetailsPhotoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17448917EB8466009A4E23 /* WBPhotoDetailsPhotoCell.m */; };
-		DD17448C17EB847C009A4E23 /* WBPhotoDetailsPhotoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD17448B17EB847C009A4E23 /* WBPhotoDetailsPhotoCell.xib */; };
+		DD17448A17EB8466009A4E23 /* WBPhotoDetailsCellPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = DD17448917EB8466009A4E23 /* WBPhotoDetailsCellPhoto.m */; };
+		DD17448C17EB847C009A4E23 /* WBPhotoDetailsCellPhoto.xib in Resources */ = {isa = PBXBuildFile; fileRef = DD17448B17EB847C009A4E23 /* WBPhotoDetailsCellPhoto.xib */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */; };
 		DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1817E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m */; };
 		DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */; };
 		DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */ = {isa = PBXBuildFile; fileRef = DD6F1E9217E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m */; };
 		DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DDA25DE417E26DFB00C44622 /* WBViewController.m */; };
+		DDAC835817F095A900E91B9A /* WBPhotoDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAC835717F095A900E91B9A /* WBPhotoDetailsCell.m */; };
+		DDAC835B17F0994200E91B9A /* WBPhotoDetailsCellLikes.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAC835A17F0994200E91B9A /* WBPhotoDetailsCellLikes.m */; };
+		DDAC835D17F0997000E91B9A /* WBPhotoDetailsCellLikes.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAC835C17F0997000E91B9A /* WBPhotoDetailsCellLikes.xib */; };
+		DDAC836017F0A3F600E91B9A /* WBPhotoDetailsCellComment.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAC835F17F0A3F600E91B9A /* WBPhotoDetailsCellComment.m */; };
+		DDAC836217F0A4D800E91B9A /* WBPhotoDetailsCellComment.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAC836117F0A4D800E91B9A /* WBPhotoDetailsCellComment.xib */; };
+		DDAC836517F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAC836417F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.m */; };
+		DDAC836717F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAC836617F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib */; };
 		DDECB94B17EA521B00407255 /* WBLoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */; };
 		DDECB94D17EA644E00407255 /* photo.png in Resources */ = {isa = PBXBuildFile; fileRef = DDECB94C17EA644E00407255 /* photo.png */; };
 /* End PBXBuildFile section */
@@ -200,9 +207,9 @@
 		DD17448117EB62C7009A4E23 /* WBPhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoDetailsViewController.h; sourceTree = "<group>"; };
 		DD17448217EB62C7009A4E23 /* WBPhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsViewController.m; sourceTree = "<group>"; };
 		DD17448617EB82EF009A4E23 /* WBPhotoDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoDetailsViewController.xib; sourceTree = "<group>"; };
-		DD17448817EB8466009A4E23 /* WBPhotoDetailsPhotoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoDetailsPhotoCell.h; sourceTree = "<group>"; };
-		DD17448917EB8466009A4E23 /* WBPhotoDetailsPhotoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsPhotoCell.m; sourceTree = "<group>"; };
-		DD17448B17EB847C009A4E23 /* WBPhotoDetailsPhotoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoDetailsPhotoCell.xib; sourceTree = "<group>"; };
+		DD17448817EB8466009A4E23 /* WBPhotoDetailsCellPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoDetailsCellPhoto.h; sourceTree = "<group>"; };
+		DD17448917EB8466009A4E23 /* WBPhotoDetailsCellPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsCellPhoto.m; sourceTree = "<group>"; };
+		DD17448B17EB847C009A4E23 /* WBPhotoDetailsCellPhoto.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoDetailsCellPhoto.xib; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoadMoreCell.h; sourceTree = "<group>"; };
@@ -215,6 +222,17 @@
 		DD6F1E9217E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTimelineSectionHeaderButton.m; sourceTree = "<group>"; };
 		DDA25DE317E26DFB00C44622 /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
 		DDA25DE417E26DFB00C44622 /* WBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewController.m; sourceTree = "<group>"; };
+		DDAC835617F095A900E91B9A /* WBPhotoDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoDetailsCell.h; sourceTree = "<group>"; };
+		DDAC835717F095A900E91B9A /* WBPhotoDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsCell.m; sourceTree = "<group>"; };
+		DDAC835917F0994200E91B9A /* WBPhotoDetailsCellLikes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoDetailsCellLikes.h; sourceTree = "<group>"; };
+		DDAC835A17F0994200E91B9A /* WBPhotoDetailsCellLikes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsCellLikes.m; sourceTree = "<group>"; };
+		DDAC835C17F0997000E91B9A /* WBPhotoDetailsCellLikes.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoDetailsCellLikes.xib; sourceTree = "<group>"; };
+		DDAC835E17F0A3F600E91B9A /* WBPhotoDetailsCellComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoDetailsCellComment.h; sourceTree = "<group>"; };
+		DDAC835F17F0A3F600E91B9A /* WBPhotoDetailsCellComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsCellComment.m; sourceTree = "<group>"; };
+		DDAC836117F0A4D800E91B9A /* WBPhotoDetailsCellComment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoDetailsCellComment.xib; sourceTree = "<group>"; };
+		DDAC836317F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoDetailsCellAddComment.h; sourceTree = "<group>"; };
+		DDAC836417F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsCellAddComment.m; sourceTree = "<group>"; };
+		DDAC836617F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoDetailsCellAddComment.xib; sourceTree = "<group>"; };
 		DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoadMoreCell.xib; sourceTree = "<group>"; };
 		DDECB94C17EA644E00407255 /* photo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = photo.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -397,9 +415,7 @@
 				BE1B3F6717E22117003494CD /* WBPhotoTimelineSectionHeaderView.h */,
 				BE1B3F6817E22117003494CD /* WBPhotoTimelineSectionHeaderView.m */,
 				BE1B3F6917E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib */,
-				DD17448817EB8466009A4E23 /* WBPhotoDetailsPhotoCell.h */,
-				DD17448917EB8466009A4E23 /* WBPhotoDetailsPhotoCell.m */,
-				DD17448B17EB847C009A4E23 /* WBPhotoDetailsPhotoCell.xib */,
+				DDAC835517F0959300E91B9A /* WBPhotoDetailsCells */,
 				BED03EAE17E91EDD00EEEACC /* WBProfileHeaderView.h */,
 				BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */,
 				BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */,
@@ -494,6 +510,27 @@
 			name = WB;
 			sourceTree = "<group>";
 		};
+		DDAC835517F0959300E91B9A /* WBPhotoDetailsCells */ = {
+			isa = PBXGroup;
+			children = (
+				DDAC835617F095A900E91B9A /* WBPhotoDetailsCell.h */,
+				DDAC835717F095A900E91B9A /* WBPhotoDetailsCell.m */,
+				DD17448817EB8466009A4E23 /* WBPhotoDetailsCellPhoto.h */,
+				DD17448917EB8466009A4E23 /* WBPhotoDetailsCellPhoto.m */,
+				DD17448B17EB847C009A4E23 /* WBPhotoDetailsCellPhoto.xib */,
+				DDAC835917F0994200E91B9A /* WBPhotoDetailsCellLikes.h */,
+				DDAC835A17F0994200E91B9A /* WBPhotoDetailsCellLikes.m */,
+				DDAC835C17F0997000E91B9A /* WBPhotoDetailsCellLikes.xib */,
+				DDAC835E17F0A3F600E91B9A /* WBPhotoDetailsCellComment.h */,
+				DDAC835F17F0A3F600E91B9A /* WBPhotoDetailsCellComment.m */,
+				DDAC836117F0A4D800E91B9A /* WBPhotoDetailsCellComment.xib */,
+				DDAC836317F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.h */,
+				DDAC836417F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.m */,
+				DDAC836617F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib */,
+			);
+			name = WBPhotoDetailsCells;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -573,7 +610,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD17448C17EB847C009A4E23 /* WBPhotoDetailsPhotoCell.xib in Resources */,
+				DD17448C17EB847C009A4E23 /* WBPhotoDetailsCellPhoto.xib in Resources */,
 				BED03EAD17E9162400EEEACC /* ProfileViewController.xib in Resources */,
 				DDECB94D17EA644E00407255 /* photo.png in Resources */,
 				BE1B3F6F17E22117003494CD /* WBPhotoTimelineCell.xib in Resources */,
@@ -583,13 +620,16 @@
 				DDECB94B17EA521B00407255 /* WBLoadMoreCell.xib in Resources */,
 				9919153A17DA7B2A005DA25C /* Images.xcassets in Resources */,
 				994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */,
+				DDAC836717F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib in Resources */,
 				2165EC2A17E8B18600AC2F72 /* WBSignupViewController.xib in Resources */,
 				DD17448717EB82F0009A4E23 /* WBPhotoDetailsViewController.xib in Resources */,
 				BE1B3F7917E22197003494CD /* MainFeedViewController.xib in Resources */,
+				DDAC835D17F0997000E91B9A /* WBPhotoDetailsCellLikes.xib in Resources */,
 				9919152C17DA7B2A005DA25C /* InfoPlist.strings in Resources */,
 				BE1B3F6D17E22117003494CD /* MainFeedCell.xib in Resources */,
 				BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */,
 				BED03EB217E91EFB00EEEACC /* WBProfileHeaderView.xib in Resources */,
+				DDAC836217F0A4D800E91B9A /* WBPhotoDetailsCellComment.xib in Resources */,
 				BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 				218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */,
 			);
@@ -648,10 +688,11 @@
 				21AC154017EA470300DC59DF /* KeyboardAnimationView.m in Sources */,
 				DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */,
 				BED03EAC17E9162400EEEACC /* ProfileViewController.m in Sources */,
-				DD17448A17EB8466009A4E23 /* WBPhotoDetailsPhotoCell.m in Sources */,
+				DD17448A17EB8466009A4E23 /* WBPhotoDetailsCellPhoto.m in Sources */,
 				BED03EB517EA075D00EEEACC /* WBFindFriendsViewController.m in Sources */,
 				BE1B3F6C17E22117003494CD /* MainFeedCell.m in Sources */,
 				DD17448317EB62C7009A4E23 /* WBPhotoDetailsViewController.m in Sources */,
+				DDAC836517F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.m in Sources */,
 				DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */,
 				9922AB5E17E107F800D1B18A /* WBManager.m in Sources */,
 				DD6F1E9317E3A8240099866F /* WBPhotoTimelineSectionHeaderButton.m in Sources */,
@@ -663,6 +704,7 @@
 				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
 				99F9609417E39034005D27EB /* WBPhoto.m in Sources */,
 				21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */,
+				DDAC835B17F0994200E91B9A /* WBPhotoDetailsCellLikes.m in Sources */,
 				BED03EA317E8B0E000EEEACC /* WBNavigationController.m in Sources */,
 				DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
@@ -674,7 +716,9 @@
 				DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */,
 				218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */,
 				BE1B3F7817E22197003494CD /* MainFeedViewController.m in Sources */,
+				DDAC836017F0A3F600E91B9A /* WBPhotoDetailsCellComment.m in Sources */,
 				BED03EB017E91EDD00EEEACC /* WBProfileHeaderView.m in Sources */,
+				DDAC835817F095A900E91B9A /* WBPhotoDetailsCell.m in Sources */,
 				BE1B3F8017E24875003494CD /* WBTheme.m in Sources */,
 				BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */,
 				2165EC2D17E8BBCD00AC2F72 /* EmailValidator.m in Sources */,

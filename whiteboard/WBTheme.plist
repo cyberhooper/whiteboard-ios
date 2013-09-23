@@ -134,5 +134,29 @@
 	<string>buttonFollowing</string>
 	<key>FINDFRIENDS_followButtonSelectedImage</key>
 	<string>iconTick</string>
+	<key>DETAILS_textfieldBackgroundImage</key>
+	<string>textfieldComment</string>
+	<key>DETAILS_addCommentIconImage</key>
+	<string>iconAddComment</string>
+	<key>DETAILS_commentsSeperatorImage</key>
+	<string>separatorComments</string>
+	<key>DETAILS_commentNameFont</key>
+	<string>Helvetica-Bold</string>
+	<key>DETAILS_commentNameFontSize</key>
+	<string>13</string>
+	<key>DETAILS_commentNameFontColor</key>
+	<string>#493723</string>
+	<key>DETAILS_commentMessageFont</key>
+	<string>Helvetica</string>
+	<key>DETAILS_commentMessageFontSize</key>
+	<string>13</string>
+	<key>DETAILS_commentMessageFontColor</key>
+	<string>#493723</string>
+	<key>DETAILS_commentDateFont</key>
+	<string>Helvetica</string>
+	<key>DETAILS_commentDateFontSize</key>
+	<string>11</string>
+	<key>DETAILS_commentDateFontColor</key>
+	<string>#808080</string>
 </dict>
 </plist>
