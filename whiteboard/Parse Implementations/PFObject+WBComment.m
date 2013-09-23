@@ -12,6 +12,7 @@
 @implementation PFObject (WBComment)
 
 - (WBComment *)WBComment {
+  [self fetchIfNeeded];
   WBComment *comment = [[WBComment alloc] init];
   // Set ID
   comment.commentID = self.objectId;

@@ -13,6 +13,7 @@
 @implementation PFObject (WBPhoto)
 
 - (WBPhoto *)WBPhoto {
+  [self fetchIfNeeded];
   WBPhoto *wbPhoto = [[WBPhoto alloc] init];
   // Set ID
   wbPhoto.photoID = self.objectId;
