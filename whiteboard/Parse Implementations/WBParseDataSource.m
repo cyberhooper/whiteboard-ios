@@ -72,6 +72,7 @@
   [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error) {
       PFObject *parsePhoto = [self parsePhotoWithImageFile:imageFile];
+      parsePhoto.ACL = [self photoACL];
       [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
         if (!error && success)
           success();
@@ -84,6 +85,13 @@
   } progressBlock:^(int percentDone) {
     if (progress) progress(percentDone);
   }];
+}
+    
+- (PFACL *)photoACL {
+  PFACL *acl = [PFACL ACL];
+  [acl setPublicReadAccess:YES];
+  [acl setWriteAccess:YES forUser:[PFUser currentUser]];
+  return acl;
 }
 
 - (PFObject *)parsePhotoWithImageFile:(PFFile *)imageFile {
