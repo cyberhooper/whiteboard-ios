@@ -1,14 +1,14 @@
 //
-//  WBUser+ParseUser.m
+//  WBUser+PFUser.m
 //  whiteboard
 //
 //  Created by Thibault Gauche on 9/18/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
-#import "WBUser+ParseUser.h"
+#import "WBUser+PFUser.h"
 
-@implementation WBUser (ParseUser)
+@implementation WBUser (PFUser)
 
 - (PFUser *)PFUser {
   PFUser *pfUser = [PFUser user];

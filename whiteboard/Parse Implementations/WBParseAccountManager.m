@@ -9,7 +9,7 @@
 #import "WBParseAccountManager.h"
 #import <Parse/Parse.h>
 #import "WBParseDataSource.h"
-#import "WBUser+ParseUser.h"
+#import "WBUser+PFUser.h"
 #import "PFUser+WBUser.h"
 @interface WBParseAccountManager () <NSURLConnectionDelegate> {
   NSMutableData *dataProfilePicture;

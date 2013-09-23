@@ -8,7 +8,7 @@
 #import "WBParseDataSource.h"
 #import <Parse/Parse.h>
 #import "WBComment.h"
-#import "WBUser+ParseUser.h"
+#import "WBUser+PFUser.h"
 #import "PFUser+WBUser.h"
 #import "WBAccountManager.h"
 

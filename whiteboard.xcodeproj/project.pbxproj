@@ -12,7 +12,7 @@
 		2165EC2D17E8BBCD00AC2F72 /* EmailValidator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2165EC2C17E8BBCD00AC2F72 /* EmailValidator.m */; };
 		2173980217EA055E0071A03A /* WBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173980117EA055E0071A03A /* WBAccountManager.m */; };
 		2173980517EA06630071A03A /* WBParseAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173980417EA06630071A03A /* WBParseAccountManager.m */; };
-		2173980B17EA0B3D0071A03A /* WBUser+ParseUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173980A17EA0B3D0071A03A /* WBUser+ParseUser.m */; };
+		2173980B17EA0B3D0071A03A /* WBUser+PFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 2173980A17EA0B3D0071A03A /* WBUser+PFUser.m */; };
 		218D5A3217E7B2BE007D17DB /* WBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */; };
 		218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */; };
 		21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 21A26B5217E362E400BF2BF4 /* WBUser.m */; };
@@ -83,6 +83,10 @@
 		BED03EC317EB9AD500EEEACC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC217EB9AD500EEEACC /* AddressBook.framework */; };
 		BED03EC517EB9ADC00EEEACC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC417EB9ADC00EEEACC /* MessageUI.framework */; };
 		BED03ECB17F097BF00EEEACC /* PFUser+WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03ECA17F097BF00EEEACC /* PFUser+WBUser.m */; };
+		BED03ECE17F09C5300EEEACC /* WBPhoto+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03ECD17F09C5300EEEACC /* WBPhoto+PFObject.m */; };
+		BED03ED117F0A2E100EEEACC /* PFObject+WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03ED017F0A2E100EEEACC /* PFObject+WBPhoto.m */; };
+		BED03ED417F0B5C100EEEACC /* WBComment+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03ED317F0B5C100EEEACC /* WBComment+PFObject.m */; };
+		BED03ED817F0B80C00EEEACC /* PFObject+WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03ED717F0B80C00EEEACC /* PFObject+WBComment.m */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */; };
 		DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1817E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m */; };
@@ -112,8 +116,8 @@
 		2173980117EA055E0071A03A /* WBAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBAccountManager.m; sourceTree = "<group>"; };
 		2173980317EA06630071A03A /* WBParseAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBParseAccountManager.h; sourceTree = "<group>"; };
 		2173980417EA06630071A03A /* WBParseAccountManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBParseAccountManager.m; sourceTree = "<group>"; };
-		2173980917EA0B3D0071A03A /* WBUser+ParseUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBUser+ParseUser.h"; sourceTree = "<group>"; };
-		2173980A17EA0B3D0071A03A /* WBUser+ParseUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBUser+ParseUser.m"; sourceTree = "<group>"; };
+		2173980917EA0B3D0071A03A /* WBUser+PFUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBUser+PFUser.h"; sourceTree = "<group>"; };
+		2173980A17EA0B3D0071A03A /* WBUser+PFUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBUser+PFUser.m"; sourceTree = "<group>"; };
 		218D5A2F17E7B2BE007D17DB /* WBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoginViewController.h; sourceTree = "<group>"; };
 		218D5A3017E7B2BE007D17DB /* WBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLoginViewController.m; sourceTree = "<group>"; };
 		218D5A3117E7B2BE007D17DB /* WBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoginViewController.xib; sourceTree = "<group>"; };
@@ -216,6 +220,14 @@
 		BED03EC417EB9ADC00EEEACC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		BED03EC917F097BF00EEEACC /* PFUser+WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFUser+WBUser.h"; sourceTree = "<group>"; };
 		BED03ECA17F097BF00EEEACC /* PFUser+WBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFUser+WBUser.m"; sourceTree = "<group>"; };
+		BED03ECC17F09C5300EEEACC /* WBPhoto+PFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBPhoto+PFObject.h"; sourceTree = "<group>"; };
+		BED03ECD17F09C5300EEEACC /* WBPhoto+PFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBPhoto+PFObject.m"; sourceTree = "<group>"; };
+		BED03ECF17F0A2E100EEEACC /* PFObject+WBPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFObject+WBPhoto.h"; sourceTree = "<group>"; };
+		BED03ED017F0A2E100EEEACC /* PFObject+WBPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFObject+WBPhoto.m"; sourceTree = "<group>"; };
+		BED03ED217F0B5C100EEEACC /* WBComment+PFObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBComment+PFObject.h"; sourceTree = "<group>"; };
+		BED03ED317F0B5C100EEEACC /* WBComment+PFObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBComment+PFObject.m"; sourceTree = "<group>"; };
+		BED03ED617F0B80B00EEEACC /* PFObject+WBComment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFObject+WBComment.h"; sourceTree = "<group>"; };
+		BED03ED717F0B80C00EEEACC /* PFObject+WBComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFObject+WBComment.m"; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoadMoreCell.h; sourceTree = "<group>"; };
@@ -396,10 +408,7 @@
 				9922AB5717E0DA6B00D1B18A /* WBParseDataSource.m */,
 				2173980317EA06630071A03A /* WBParseAccountManager.h */,
 				2173980417EA06630071A03A /* WBParseAccountManager.m */,
-				2173980917EA0B3D0071A03A /* WBUser+ParseUser.h */,
-				2173980A17EA0B3D0071A03A /* WBUser+ParseUser.m */,
-				BED03EC917F097BF00EEEACC /* PFUser+WBUser.h */,
-				BED03ECA17F097BF00EEEACC /* PFUser+WBUser.m */,
+				BED03ED517F0B5EC00EEEACC /* Mapping */,
 			);
 			path = "Parse Implementations";
 			sourceTree = "<group>";
@@ -460,6 +469,25 @@
 				BE1B3F7F17E24875003494CD /* WBTheme.m */,
 			);
 			name = Theme;
+			sourceTree = "<group>";
+		};
+		BED03ED517F0B5EC00EEEACC /* Mapping */ = {
+			isa = PBXGroup;
+			children = (
+				2173980917EA0B3D0071A03A /* WBUser+PFUser.h */,
+				2173980A17EA0B3D0071A03A /* WBUser+PFUser.m */,
+				BED03EC917F097BF00EEEACC /* PFUser+WBUser.h */,
+				BED03ECA17F097BF00EEEACC /* PFUser+WBUser.m */,
+				BED03ECC17F09C5300EEEACC /* WBPhoto+PFObject.h */,
+				BED03ECD17F09C5300EEEACC /* WBPhoto+PFObject.m */,
+				BED03ECF17F0A2E100EEEACC /* PFObject+WBPhoto.h */,
+				BED03ED017F0A2E100EEEACC /* PFObject+WBPhoto.m */,
+				BED03ED217F0B5C100EEEACC /* WBComment+PFObject.h */,
+				BED03ED317F0B5C100EEEACC /* WBComment+PFObject.m */,
+				BED03ED617F0B80B00EEEACC /* PFObject+WBComment.h */,
+				BED03ED717F0B80C00EEEACC /* PFObject+WBComment.m */,
+			);
+			name = Mapping;
 			sourceTree = "<group>";
 		};
 		DD2B8ED817E22E920094A3C4 /* Helpers */ = {
@@ -663,10 +691,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BED03ED817F0B80C00EEEACC /* PFObject+WBComment.m in Sources */,
 				BE1B3FCC17E38B13003494CD /* WBTabBarController.m in Sources */,
 				21AC154117EA470300DC59DF /* NSNotification+Keyboard.m in Sources */,
 				2165EC2917E8B18600AC2F72 /* WBSignupViewController.m in Sources */,
 				DDA25DE517E26DFB00C44622 /* WBViewController.m in Sources */,
+				BED03ED117F0A2E100EEEACC /* PFObject+WBPhoto.m in Sources */,
 				21AC154017EA470300DC59DF /* KeyboardAnimationView.m in Sources */,
 				DD6F1E8F17E39FD30099866F /* UIColor+Hex.m in Sources */,
 				BED03EAC17E9162400EEEACC /* ProfileViewController.m in Sources */,
@@ -680,13 +710,14 @@
 				BE1B3F7017E22117003494CD /* WBPhotoTimelineSectionHeaderView.m in Sources */,
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
 				9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */,
-				2173980B17EA0B3D0071A03A /* WBUser+ParseUser.m in Sources */,
+				2173980B17EA0B3D0071A03A /* WBUser+PFUser.m in Sources */,
 				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
 				99F9609417E39034005D27EB /* WBPhoto.m in Sources */,
 				21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */,
 				BED03EA317E8B0E000EEEACC /* WBNavigationController.m in Sources */,
 				DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
+				BED03ECE17F09C5300EEEACC /* WBPhoto+PFObject.m in Sources */,
 				2173980217EA055E0071A03A /* WBAccountManager.m in Sources */,
 				BED03ECB17F097BF00EEEACC /* PFUser+WBUser.m in Sources */,
 				21BD8AFC17ECAECE00AC1CD8 /* WBActivityCell.m in Sources */,
@@ -700,6 +731,7 @@
 				BED03EB017E91EDD00EEEACC /* WBProfileHeaderView.m in Sources */,
 				BE1B3F8017E24875003494CD /* WBTheme.m in Sources */,
 				21BD8AF817ECA51A00AC1CD8 /* ActivityViewController.m in Sources */,
+				BED03ED417F0B5C100EEEACC /* WBComment+PFObject.m in Sources */,
 				BE1B3F7A17E22197003494CD /* WBPhotoTimelineViewController.m in Sources */,
 				2165EC2D17E8BBCD00AC2F72 /* EmailValidator.m in Sources */,
 			);
