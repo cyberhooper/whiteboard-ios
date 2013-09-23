@@ -33,7 +33,8 @@
   }
   
   self.tableView.tableHeaderView = headerView;
-  
+  self.loadMore = YES;
+
 }
 
 - (void)setupDataForUser:(WBUser *)user {
@@ -41,11 +42,31 @@
 }
 
 #pragma mark - UITableView
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+  if (self.loadMore && self.photos.count != 0){
+    // Load more section
+    return self.photos.count + 1;
+  }
+  
+  return self.photos.count;
+}
+
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+  if ([self isLoadMoreCell:indexPath.section]) {
+    // Load More Section
+    return 44.0f;
+  }
+  
   return 296.f;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
+  if ([self isLoadMoreCell:section]) {
+    // Load More section
+    return 0.0f;
+  }
+  
   //warning MAGIC NUMBER. REPLACE ME
   return 44.0f;
 }
@@ -61,7 +82,8 @@
 
 - (void)refreshPhotos {
   [[WBDataSource sharedInstance] photosForUser:[self user]
-                                    withOffset:0 success:^(NSArray *photos) {
+                                    withOffset:0
+                                       success:^(NSArray *photos) {
                                       self.photoOffset = photos.count;
                                       self.photos = photos;
                                       
