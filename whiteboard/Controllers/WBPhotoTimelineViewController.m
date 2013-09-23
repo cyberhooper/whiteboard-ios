@@ -14,6 +14,7 @@
 #import "WBLoginViewController.h"
 #import "WBLoadMoreCell.h"
 #import "ProfileViewController.h"
+#import "WBPhoto+Utils.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 @property (nonatomic, strong) NSMutableArray *photosBeeingLiked;
@@ -83,7 +84,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   sectionHeaderView.numberOfComments = @(photo.comments.count);
   sectionHeaderView.delegate = self;
   sectionHeaderView.sectionIndex = @(section);
-  sectionHeaderView.isLiked = [photo isLikedByUser:[WBDataSource sharedInstance].currentUser];//[photo.likes containsObject:[WBDataSource currentUser].userID];
+  sectionHeaderView.isLiked = [photo isLiked];
   sectionHeaderView.likeButton.button.enabled = ![self isBeeingLiked:photo];
   
   return sectionHeaderView;
@@ -299,7 +300,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 
 - (void)toggleLikeOnPhoto:(WBPhoto *)photo
                completion:(void(^)(void))completion {
-  if ([photo isLikedByUser:[WBDataSource sharedInstance].currentUser])
+  if ([photo isLiked])
     [self unlikePhoto:photo completion:completion];
   else
     [self likePhoto:photo completion:completion];
