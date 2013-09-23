@@ -10,6 +10,10 @@
 #import "WBComment.h"
 #import "WBUser+PFUser.h"
 #import "PFUser+WBUser.h"
+#import "WBPhoto+PFObject.h"
+#import "PFObject+WBPhoto.h"
+#import "WBComment+PFObject.h"
+#import "PFObject+WBComment.h"
 #import "WBAccountManager.h"
 
 @implementation WBParseDataSource
@@ -149,7 +153,7 @@
   [parsePhoto addUniqueObject:parseUser forKey:@"likes"];
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success) {
-      WBPhoto *responsePhoto = [self wbPhotoFromParsePhoto:parsePhoto];
+      WBPhoto *responsePhoto = [parsePhoto WBPhoto];
       success(responsePhoto.likes);
     } else if (failure) {
       failure(error);
@@ -183,7 +187,7 @@
   [query includeKey:@"comments"];
   [query getObjectInBackgroundWithId:photo.photoID block:^(PFObject *parsePhoto, NSError *error) {
     if (!error && success) {
-      success([self wbPhotoFromParsePhoto:parsePhoto]);
+      success([parsePhoto WBPhoto]);
     }
   }];
 }
@@ -191,59 +195,20 @@
 - (NSArray *)wbPhotosFromParsePhotos:(NSArray *)parsePhotos {
   NSMutableArray *wbPhotos = [@[] mutableCopy];
   for (PFObject *photo in parsePhotos) {
-    WBPhoto *wbPhoto = [self wbPhotoFromParsePhoto:photo];
+    WBPhoto *wbPhoto = [photo WBPhoto];
     [wbPhotos addObject:wbPhoto];
   }
   return [NSArray arrayWithArray:wbPhotos];
-}
-
-- (WBPhoto *)wbPhotoFromParsePhoto:(PFObject *)parsePhoto {
-  WBPhoto *wbPhoto = [[WBPhoto alloc] init];
-  [parsePhoto fetchIfNeeded];
-  PFFile *imageFile = [parsePhoto objectForKey:@"imageFile"];
-  wbPhoto.url = [NSURL URLWithString:[imageFile url]];
-  PFUser *user = [parsePhoto objectForKey:@"user"];
-  wbPhoto.author = [self wbUserFromParseUser:user];
-  wbPhoto.createdAt = parsePhoto.createdAt;
-  wbPhoto.likes = [self wbUsersFromParseUsers:[parsePhoto objectForKey:@"likes"]];
-  
-  NSMutableArray *comments = [@[] mutableCopy];
-  for (PFObject *parseComment in [parsePhoto objectForKey:@"comments"]) {
-    WBComment *comment = [[WBComment alloc] init];
-    comment.commentID = parseComment.objectId;
-    if ([parseComment isDataAvailable]) {
-      comment.author = [self wbUserFromParseUser:[parseComment objectForKey:@"user"]];
-      comment.text = [parseComment objectForKey:@"text"];
-      comment.createdAt = parseComment.createdAt;
-    }
-
-    [comments addObject:comment];
-  }
-  wbPhoto.comments = comments;
-  wbPhoto.photoID = parsePhoto.objectId;
-  NSLog(@"Photo : %@", [wbPhoto description]);
-  return wbPhoto;
 }
 
 - (NSArray *)wbUsersFromParseUsers:(NSArray *)parseUsers {
   NSMutableArray *wbUsers = [@[] mutableCopy];
   for (PFUser *user in parseUsers) {
     [user fetchIfNeeded];
-    WBUser *wbUser = [self wbUserFromParseUser:user];
+    WBUser *wbUser = [user WBUser];
     [wbUsers addObject:wbUser];
   }
   return [NSArray arrayWithArray:wbUsers];
-}
-
-- (WBUser *)wbUserFromParseUser:(PFUser *)parseUser {
-  WBUser *wbUser = [self createUser];
-  [parseUser fetchIfNeeded];
-  wbUser.userID = parseUser.objectId;
-  wbUser.displayName = [parseUser objectForKey:@"displayName"];
-  PFFile *avatarFile = [parseUser objectForKey:@"avatar"];
-  wbUser.avatar = [NSURL URLWithString:[avatarFile url]];
-  NSLog(@"User : %@", [wbUser description]);
-  return wbUser;
 }
 
 #pragma mark - Comments
@@ -378,7 +343,7 @@
   PFQuery *query = [PFQuery queryWithClassName:@"_User"];
   [query getObjectInBackgroundWithId:wbUser.userID block:^(PFObject *user, NSError *error) {
     if (!error && success)
-      success([self wbUserFromParseUser:(PFUser*)user]);
+      success([(PFUser*)user WBUser]);
     else if (failure)
       failure(error);
   }];

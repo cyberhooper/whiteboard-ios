@@ -11,6 +11,7 @@
 @implementation PFUser (WBUser)
 
 - (WBUser *)WBUser{
+  [self fetchIfNeeded];
   WBUser *wbUser = [[WBUser alloc]init];
   wbUser.userID = self.objectId;
   wbUser.displayName = [self objectForKey:@"displayName"];
