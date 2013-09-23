@@ -69,8 +69,6 @@
            progress:(void(^)(int percentDone))progress {
   NSData *imageData = UIImageJPEGRepresentation(photo.image, 1);
   PFFile *imageFile = [PFFile fileWithName:@"Image.jpg" data:imageData];
-  
-  // Save PFFile
   [imageFile saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error) {
       PFObject *parsePhoto = [self parsePhotoWithImageFile:imageFile];
@@ -254,6 +252,18 @@
   wbUser.avatar = [NSURL URLWithString:[avatarFile url]];
   NSLog(@"User : %@", [wbUser description]);
   return wbUser;
+}
+
+- (void)deletePhoto:(WBPhoto *)photo
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure {  
+  PFObject *photoToDelete = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  [photoToDelete deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+    if (succeeded && success)
+      success();
+    else if (failure)
+      failure(error);
+  }];
 }
 
 #pragma mark - Comments

@@ -108,6 +108,10 @@
            success:(void(^)(WBPhoto *fetchedPhoto))success
            failure:(void(^)(NSError *error))failure;
 
+- (void)deletePhoto:(WBPhoto *)photo
+            success:(void(^)(void))success
+            failure:(void(^)(NSError *error))failure;
+
 #pragma mark - Comments
 
 - (void)addComment:(NSString *)comment
