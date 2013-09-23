@@ -9,6 +9,7 @@
 #import <Parse/Parse.h>
 #import "WBComment.h"
 #import "WBUser+ParseUser.h"
+#import "PFUser+WBUser.h"
 #import "WBAccountManager.h"
 
 @implementation WBParseDataSource
@@ -37,14 +38,14 @@
 }
 
 - (WBUser *)currentUser {
-  _currentUser = [WBUser mapWBUser:[PFUser currentUser]];
+  _currentUser = [[PFUser currentUser] WBUser];
   return _currentUser;
 }
 
 - (void)saveUser:(WBUser *)user
          success:(void(^)(void))success
          failure:(void(^)(NSError *error))failure {
-  PFUser *pfUser = [WBUser mapPFUser:user];
+  PFUser *pfUser = [user PFUser];
   [pfUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success)
       success();

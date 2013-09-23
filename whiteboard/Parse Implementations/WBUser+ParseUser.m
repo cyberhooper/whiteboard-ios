@@ -10,36 +10,19 @@
 
 @implementation WBUser (ParseUser)
 
-+ (WBUser *)mapWBUser:(PFUser *)user {
-  WBUser *wbUser = [[WBUser alloc]init];
-  wbUser.userID = user.objectId;
-  wbUser.displayName = [user objectForKey:@"displayName"];
-  wbUser.username = user.username;
-  wbUser.firstName = [user objectForKey:@"firstname"];
-  wbUser.lastName = [user objectForKey:@"lastname"];
-  wbUser.email = [user email];
-  PFFile *avatar = [user objectForKey:@"avatar"];
-  wbUser.avatar = [NSURL URLWithString:[avatar url]];
-  wbUser.createdAt = user.createdAt;
-  wbUser.updatedAt = user.updatedAt;
-  wbUser.numberOfFollowers = [user objectForKey:@"numberOfFollowers"];
-  wbUser.numberFollowing = [user objectForKey:@"numberFollowing"];
-  return wbUser;
-}
-
-+ (PFUser *)mapPFUser:(WBUser *)user {
+- (PFUser *)PFUser {
   PFUser *pfUser = [PFUser user];
   
-  pfUser.objectId = user.userID;
-  [pfUser setObject:user.displayName forKey:@"displayName"];
-  pfUser.username = user.username;
-  [pfUser setObject:user.firstName forKey:@"firstname"];
-  [pfUser setObject:user.lastName forKey:@"lastName"];
-  pfUser.email = user.email;
-  PFFile *avatar = [PFFile fileWithData:[NSData dataWithContentsOfURL:user.avatar]];
+  pfUser.objectId = self.userID;
+  [pfUser setObject:self.displayName forKey:@"displayName"];
+  pfUser.username = self.username;
+  [pfUser setObject:self.firstName forKey:@"firstname"];
+  [pfUser setObject:self.lastName forKey:@"lastName"];
+  pfUser.email = self.email;
+  PFFile *avatar = [PFFile fileWithData:[NSData dataWithContentsOfURL:self.avatar]];
   [pfUser setObject:avatar forKey:@"avatar"];
-  [pfUser setObject:user.numberOfFollowers forKey:@"numberOfFollowers"];
-  [pfUser setObject:user.numberFollowing forKey:@"numberFollowing"];
+  [pfUser setObject:self.numberOfFollowers forKey:@"numberOfFollowers"];
+  [pfUser setObject:self.numberFollowing forKey:@"numberFollowing"];
   
   return pfUser;
 }

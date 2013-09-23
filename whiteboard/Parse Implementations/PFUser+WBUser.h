@@ -1,16 +1,16 @@
 //
-//  WBUser+ParseUser.h
+//  PFUser+WBUser.h
 //  whiteboard
 //
-//  Created by Thibault Gauche on 9/18/13.
+//  Created by Lauren Frazier | Fueled on 9/23/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
 #import "WBUser.h"
 #import <Parse/Parse.h>
 
-@interface WBUser (ParseUser)
+@interface PFUser (WBUser)
 
-- (PFUser *)PFUser;
+- (WBUser *)WBUser;
 
 @end

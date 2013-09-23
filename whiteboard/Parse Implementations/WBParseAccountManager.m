@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import "WBParseDataSource.h"
 #import "WBUser+ParseUser.h"
+#import "PFUser+WBUser.h"
 @interface WBParseAccountManager () <NSURLConnectionDelegate> {
   NSMutableData *dataProfilePicture;
 }
@@ -28,7 +29,7 @@
                                password:password
                                   block:^(PFUser *user, NSError *error) {
                                     if (user) {
-                                      [WBUser mapWBUser:user];
+                                      [user WBUser];
                                       success([[WBDataSource sharedInstance] currentUser]);
                                     }
                                     else {
@@ -57,7 +58,7 @@
   [pfCurrentUser setObject:[userInfo objectForKey:@"userName"] forKey:@"displayName"];
   [pfCurrentUser signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded) {
-      [WBUser mapWBUser:pfCurrentUser];
+      [pfCurrentUser WBUser];
       [self loginWithUsername:pfCurrentUser.username andPassWord:pfCurrentUser.password
                       success:^(WBUser *user) {
                         success([WBDataSource sharedInstance].currentUser);
@@ -74,7 +75,7 @@
 - (void)deleteUserAccount:(WBUser *)user
                   success:(void (^)(void))success
                   failure:(void (^)(NSError *))failure {
-  PFUser *pfUser = [WBUser mapPFUser:user];
+  PFUser *pfUser = [user PFUser];
   [pfUser deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (success && succeeded) {
       [WBDataSource sharedInstance].currentUser = nil;
@@ -169,7 +170,7 @@
       if (!error) {
         NSMutableArray *whiteboardWBUsers = [NSMutableArray array];
         [whiteboardFriends enumerateObjectsUsingBlock:^(PFUser *newFriend, NSUInteger idx, BOOL *stop) {
-          [whiteboardWBUsers addObject:[WBUser mapWBUser:newFriend]];
+          [whiteboardWBUsers addObject:[newFriend WBUser]];
         }];
         if (success) {
           success([NSArray arrayWithArray:whiteboardWBUsers]);

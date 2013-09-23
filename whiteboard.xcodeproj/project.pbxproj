@@ -82,6 +82,7 @@
 		BED03EC117EB9ABE00EEEACC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */; };
 		BED03EC317EB9AD500EEEACC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC217EB9AD500EEEACC /* AddressBook.framework */; };
 		BED03EC517EB9ADC00EEEACC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC417EB9ADC00EEEACC /* MessageUI.framework */; };
+		BED03ECB17F097BF00EEEACC /* PFUser+WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = BED03ECA17F097BF00EEEACC /* PFUser+WBUser.m */; };
 		DD2B8EDB17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m in Sources */ = {isa = PBXBuildFile; fileRef = DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */; };
 		DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1217E8AB2500B3BCA3 /* WBLoadMoreCell.m */; };
 		DD304E1917E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = DD304E1817E8AB8700B3BCA3 /* UIImageView+WBImageLoader.m */; };
@@ -213,6 +214,8 @@
 		BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		BED03EC217EB9AD500EEEACC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		BED03EC417EB9ADC00EEEACC /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		BED03EC917F097BF00EEEACC /* PFUser+WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFUser+WBUser.h"; sourceTree = "<group>"; };
+		BED03ECA17F097BF00EEEACC /* PFUser+WBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFUser+WBUser.m"; sourceTree = "<group>"; };
 		DD2B8ED917E23D1D0094A3C4 /* UIImageView+RoundedCorners.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIImageView+RoundedCorners.h"; path = "Helpers/UIImageView+RoundedCorners.h"; sourceTree = "<group>"; };
 		DD2B8EDA17E23D1D0094A3C4 /* UIImageView+RoundedCorners.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+RoundedCorners.m"; path = "Helpers/UIImageView+RoundedCorners.m"; sourceTree = "<group>"; };
 		DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoadMoreCell.h; sourceTree = "<group>"; };
@@ -395,6 +398,8 @@
 				2173980417EA06630071A03A /* WBParseAccountManager.m */,
 				2173980917EA0B3D0071A03A /* WBUser+ParseUser.h */,
 				2173980A17EA0B3D0071A03A /* WBUser+ParseUser.m */,
+				BED03EC917F097BF00EEEACC /* PFUser+WBUser.h */,
+				BED03ECA17F097BF00EEEACC /* PFUser+WBUser.m */,
 			);
 			path = "Parse Implementations";
 			sourceTree = "<group>";
@@ -683,6 +688,7 @@
 				DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				2173980217EA055E0071A03A /* WBAccountManager.m in Sources */,
+				BED03ECB17F097BF00EEEACC /* PFUser+WBUser.m in Sources */,
 				21BD8AFC17ECAECE00AC1CD8 /* WBActivityCell.m in Sources */,
 				2173980517EA06630071A03A /* WBParseAccountManager.m in Sources */,
 				9919152E17DA7B2A005DA25C /* main.m in Sources */,
