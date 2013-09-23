@@ -105,19 +105,30 @@
 - (void)latestPhotosWithOffset:(int)offset
                        success:(void(^)(NSArray *photos))success
                        failure:(void(^)(NSError *error))failure {
-  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  PFQuery *query = [PFQuery orQueryWithSubqueries:@[[self queryForcurrentUserPhotos], [self queryForCurentUserFriendPhotos]]];
   query.limit = self.photoLimit;
   query.skip = offset;
   [query orderByDescending:@"createdAt"];
   [query includeKey:@"user"];
-  PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
-  [query whereKey:@"user" matchesQuery:[followingRelation query]];
   [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
     if (!error && success)
       success([self wbPhotosFromParsePhotos:photos]);
     else if (failure)
       failure(error);
   }];
+}
+
+- (PFQuery*)queryForcurrentUserPhotos {
+  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  [query whereKey:@"user" equalTo:[PFUser currentUser]];
+  return query;
+}
+
+- (PFQuery *)queryForCurentUserFriendPhotos {
+  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
+  [query whereKey:@"user" matchesQuery:[followingRelation query]];
+  return query;
 }
 
 - (void)photosForUser:(WBUser *)wbUser
