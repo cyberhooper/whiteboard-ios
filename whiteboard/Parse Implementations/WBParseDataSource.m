@@ -10,6 +10,7 @@
 #import "WBComment.h"
 #import "WBUser+ParseUser.h"
 #import "WBAccountManager.h"
+#import "WBParseConstants.h"
 
 @implementation WBParseDataSource
 
@@ -88,9 +89,8 @@
 }
     
 - (PFACL *)photoACL {
-  PFACL *acl = [PFACL ACL];
+  PFACL *acl = [PFACL ACLWithUser:[PFUser currentUser]];
   [acl setPublicReadAccess:YES];
-  [acl setWriteAccess:YES forUser:[PFUser currentUser]];
   return acl;
 }
 
@@ -126,14 +126,17 @@
 
 - (PFQuery*)queryForcurrentUserPhotos {
   PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
-  [query whereKey:@"user" equalTo:[PFUser currentUser]];
+  if ([PFUser currentUser])
+    [query whereKey:@"user" equalTo:[PFUser currentUser]];
   return query;
 }
 
 - (PFQuery *)queryForCurentUserFriendPhotos {
   PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
-  PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
-  [query whereKey:@"user" matchesQuery:[followingRelation query]];
+  if ([PFUser currentUser]) {
+    PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
+    [query whereKey:@"user" matchesQuery:[followingRelation query]];
+  }
   return query;
 }
 
@@ -167,11 +170,11 @@
     if (succeeded && success) {
       WBPhoto *responsePhoto = [self wbPhotoFromParsePhoto:parsePhoto];
       success(responsePhoto.likes);
+      [self createLikeActivityForPhoto:parsePhoto];
     } else if (failure) {
       failure(error);
     }
   }];
-  
 }
 
 - (void)unlikePhoto:(WBPhoto *)photo
@@ -183,8 +186,8 @@
   [parsePhoto removeObject:parseUser forKey:@"likes"];
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success) {
-      //photo.likes = likes;
       success();
+      [self deletePossiblePreviouslikeActivityForPhoto:parsePhoto];
     } else if (failure) {
       failure(error);
     }
@@ -363,15 +366,20 @@
             failure:(void(^)(NSError *error))failure {
   PFUser *currentUser = [PFUser currentUser];
   PFRelation *followingRelation = [currentUser relationforKey:@"following"];
+  NSMutableArray *parseUsers = [@[]mutableCopy];
   for (WBUser *wbUser in wbUsers) {
     PFUser *userToFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:wbUser.userID];
     [followingRelation addObject:userToFollow];
+    [parseUsers addObject:userToFollow];
   }
   [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-    if (!error && success)
+    if (!error && success) {
       success();
-    else if (failure)
+      [self createFollowActivityForUsers:parseUsers];
+    }
+    else if (failure) {
       failure(error);
+    }
   }];
 }
 
@@ -386,15 +394,20 @@
               failure:(void(^)(NSError *error))failure {
   PFUser *currentUser = [PFUser currentUser];
   PFRelation *followingRelation = [currentUser relationforKey:@"following"];
+  NSMutableArray *parseUsers = [@[]mutableCopy];
   for (WBUser *wbUser in wbUsers) {
     PFUser *userToUnFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:wbUser.userID];
     [followingRelation removeObject:userToUnFollow];
+    [parseUsers addObject:userToUnFollow];
   }
   [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-    if (!error && success)
+    if (!error && success) {
       success();
-    else if (failure)
+      [self deletePossiblePreviousFollowActivityForUsers:parseUsers];
+    }
+    else if (failure) {
       failure(error);
+    }
   }];
 }
 
@@ -452,6 +465,53 @@
     else if (failure)
       failure(error);
   }];
+}
+
+#pragma mark - Activities
+
+- (void)createLikeActivityForPhoto:(PFObject *)photo {
+  PFObject *activity = [PFObject objectWithClassName:@"Activity"];
+  [activity setObject:kActivityTypeLike forKey:kActivityTypeKey];
+  [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
+  [activity setObject:[photo objectForKey:@"user"] forKey:kActivityToUserKey];
+  [activity setObject:photo forKey:kActivityPhotoKey];
+  [activity saveInBackground];
+}
+
+- (void)deletePossiblePreviouslikeActivityForPhoto:(PFObject *)photo {
+  PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
+  [query whereKey:kActivityTypeKey equalTo:kActivityTypeLike];
+  [query whereKey:@"fromUser" equalTo:[PFUser currentUser]];
+  [query whereKey:@"photo" equalTo:photo];
+  [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    for (PFObject *o in objects) {
+      [o deleteInBackground];
+    }
+  }];
+}
+
+- (void)createFollowActivityForUsers:(NSArray *)users {
+  for (PFObject *user in users) {
+    PFObject *activity = [PFObject objectWithClassName:@"Activity"];
+    [activity setObject:kActivityTypeFollow forKey:kActivityTypeKey];
+    [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
+    [activity setObject:user forKey:kActivityToUserKey];
+    [activity saveInBackground];
+  }
+}
+
+- (void)deletePossiblePreviousFollowActivityForUsers:(NSArray *)users {
+  for (PFObject *user in users) {
+    PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
+    [query whereKey:kActivityTypeKey equalTo:kActivityTypeFollow];
+    [query whereKey:kActivityFromUserKey equalTo:[PFUser currentUser]];
+    [query whereKey:kActivityToUserKey equalTo:user];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+      for (PFObject *o in objects) {
+        [o deleteInBackground];
+      }
+    }];
+  }
 }
 
 @end
