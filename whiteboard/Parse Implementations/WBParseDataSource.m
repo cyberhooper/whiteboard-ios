@@ -510,12 +510,12 @@
   WBActivity *activity = [[WBActivity alloc] init];
   activity.type = [object objectForKey:kActivityTypeKey];
   PFUser *toUser = [object objectForKey:kActivityToUserKey];
-  activity.toUser = [self wbUserFromParseUser:toUser];
+  activity.toUser = [toUser WBUser];
   activity.createdAt = object.createdAt;
   
   if ([activity.type isEqualToString:kActivityTypeLike] || [activity.type isEqualToString:kActivityTypeComment]) {
     PFObject *photo = [object objectForKey:@"photo"];
-    activity.photo = [self wbPhotoFromParsePhoto:photo];
+    activity.photo = [photo WBPhoto];
   }
   return activity;
 }
