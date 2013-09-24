@@ -112,4 +112,8 @@
 - (UIImage *)pictoPhotoImage;
 - (UIImage *)pictoFollowImage;
 
+- (UIImage *)loginLoginWithFacebookImage;
+- (UIImage *)loginLoginWithFacebookSelectedImage;
+- (UIImage *)loginBackgroundImage;
+
 @end

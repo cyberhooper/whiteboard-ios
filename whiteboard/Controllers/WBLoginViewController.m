@@ -14,6 +14,9 @@
 @property (weak, nonatomic) IBOutlet UITextField *usernameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
 @property (weak, nonatomic) IBOutlet UIButton *validationButton;
+@property (strong, nonatomic) IBOutlet UIButton *registerButton;
+@property (strong, nonatomic) IBOutlet UIButton *loginWithFacebookButton;
+@property (strong, nonatomic) IBOutlet UIImageView *backgroundImageView;
 
 @end
 
@@ -23,6 +26,14 @@
   [super viewDidLoad];
   [self.usernameTextField setDelegate:self];
   [self.passwordTextField setDelegate:self];
+  
+  [self setupView];
+}
+
+- (void)setupView {
+  [self.loginWithFacebookButton setBackgroundImage:[[WBTheme sharedTheme] loginLoginWithFacebookImage] forState:UIControlStateNormal];
+  [self.loginWithFacebookButton setBackgroundImage:[[WBTheme sharedTheme] loginLoginWithFacebookSelectedImage] forState:UIControlStateHighlighted];
+  self.backgroundImageView.image =[[WBTheme sharedTheme] loginBackgroundImage];
 }
 
 - (BOOL)textFieldShouldReturn:(UITextField *)textField {

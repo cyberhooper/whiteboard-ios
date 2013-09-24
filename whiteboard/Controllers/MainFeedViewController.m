@@ -32,7 +32,7 @@
 }
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
+  //[super viewDidLoad];
 
   //[self dummyData];
   if (![[WBDataSource sharedInstance] currentUser].userID) {

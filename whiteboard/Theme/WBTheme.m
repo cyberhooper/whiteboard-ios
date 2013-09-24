@@ -248,4 +248,16 @@
   return [UIImage imageNamed:[self.themeDict objectForKey:@"pictoFollowImage"]];
 }
 
+- (UIImage *)loginLoginWithFacebookImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"LOGIN_buttonFacebook"]];
+}
+
+- (UIImage *)loginLoginWithFacebookSelectedImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"LOGIN_buttonFacebookSelected"]];
+}
+
+- (UIImage *)loginBackgroundImage {
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"LOGIN_backgroundImage"]];
+}
+
 @end

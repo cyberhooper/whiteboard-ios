@@ -148,5 +148,11 @@
 	<string>#422B22</string>
 	<key>FINDFRIENDS_titleImage</key>
 	<string>titleFindFriends</string>
+	<key>LOGIN_buttonFacebook</key>
+	<string>buttonFacebook</string>
+	<key>LOGIN_buttonFacebookSelected</key>
+	<string>buttonFacebookSelected</string>
+	<key>LOGIN_backgroundImage</key>
+	<string>backgroundLogin</string>
 </dict>
 </plist>
