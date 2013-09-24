@@ -52,6 +52,7 @@
 		995D6C2317E78AD300550634 /* WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2217E78AD300550634 /* WBComment.m */; };
 		995D6C2517E78AEA00550634 /* WBCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2417E78AEA00550634 /* WBCommentTests.m */; };
 		9998873517F2057B0000C11E /* WBParseConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 9998873417F2057B0000C11E /* WBParseConstants.m */; };
+		9998873817F222770000C11E /* WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9998873717F222770000C11E /* WBActivity.m */; };
 		99A1408017F09E5E00F1378D /* WBPhoto+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
 		99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7D17DE4FBF00809322 /* MyViewController.m */; };
@@ -168,6 +169,8 @@
 		995D6C2417E78AEA00550634 /* WBCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommentTests.m; sourceTree = "<group>"; };
 		9998873317F2057B0000C11E /* WBParseConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBParseConstants.h; sourceTree = "<group>"; };
 		9998873417F2057B0000C11E /* WBParseConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBParseConstants.m; sourceTree = "<group>"; };
+		9998873617F222770000C11E /* WBActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBActivity.h; sourceTree = "<group>"; };
+		9998873717F222770000C11E /* WBActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBActivity.m; sourceTree = "<group>"; };
 		99A1407E17F09E5E00F1378D /* WBPhoto+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBPhoto+Utils.h"; sourceTree = "<group>"; };
 		99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBPhoto+Utils.m"; sourceTree = "<group>"; };
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
@@ -388,6 +391,8 @@
 				995D6C2217E78AD300550634 /* WBComment.m */,
 				2173980017EA055E0071A03A /* WBAccountManager.h */,
 				2173980117EA055E0071A03A /* WBAccountManager.m */,
+				9998873617F222770000C11E /* WBActivity.h */,
+				9998873717F222770000C11E /* WBActivity.m */,
 			);
 			path = Abstractions;
 			sourceTree = "<group>";
@@ -693,6 +698,7 @@
 				21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */,
 				BED03EA317E8B0E000EEEACC /* WBNavigationController.m in Sources */,
 				DD304E1317E8AB2500B3BCA3 /* WBLoadMoreCell.m in Sources */,
+				9998873817F222770000C11E /* WBActivity.m in Sources */,
 				BE1B3F6E17E22117003494CD /* WBPhotoTimelineCell.m in Sources */,
 				2173980217EA055E0071A03A /* WBAccountManager.m in Sources */,
 				21BD8AFC17ECAECE00AC1CD8 /* WBActivityCell.m in Sources */,

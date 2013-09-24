@@ -11,6 +11,7 @@
 #import "WBUser+ParseUser.h"
 #import "WBAccountManager.h"
 #import "WBParseConstants.h"
+#import "WBActivity.h"
 
 @implementation WBParseDataSource
 
@@ -512,6 +513,45 @@
       }
     }];
   }
+}
+
+#pragma mark - Activity feed
+
+- (void)recentActivities:(void(^)(NSArray *activities))success
+                 failure:(void(^)(NSError *error))failure {
+  PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
+  [query whereKey:kActivityToUserKey equalTo:[PFUser currentUser]];
+  [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+    if (!error && success) {
+      success([self wbActivitiesFromActivities:objects]);
+    }
+    else if (failure) {
+      failure(error);
+    }
+  }];
+}
+
+- (NSArray *)wbActivitiesFromActivities:(NSArray *)activities {
+  NSMutableArray *wbActivities = [@[] mutableCopy];
+  for (PFObject *activity in activities) {
+    WBActivity *wbActivity = [self wbActivityfromActivity:activity];
+    [wbActivities addObject:wbActivity];
+  }
+  return [NSArray arrayWithArray:wbActivities];
+}
+              
+- (WBActivity *)wbActivityfromActivity:(PFObject *)object {
+  WBActivity *activity = [[WBActivity alloc] init];
+  activity.type = [object objectForKey:kActivityTypeKey];
+  PFUser *toUser = [object objectForKey:kActivityToUserKey];
+  activity.toUser = [self wbUserFromParseUser:toUser];
+  activity.createdAt = object.createdAt;
+  
+  if ([activity.type isEqualToString:kActivityTypeLike] || [activity.type isEqualToString:kActivityTypeComment]) {
+    PFObject *photo = [object objectForKey:@"photo"];
+    activity.photo = [self wbPhotoFromParsePhoto:photo];
+  }
+  return activity;
 }
 
 @end

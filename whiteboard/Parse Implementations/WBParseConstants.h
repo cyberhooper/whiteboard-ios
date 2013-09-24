@@ -11,6 +11,7 @@
 // Type values
 extern NSString *const kActivityTypeLike;
 extern NSString *const kActivityTypeFollow;
+extern NSString *const kActivityTypeComment;
 
 
 extern NSString *const kActivityTypeKey;

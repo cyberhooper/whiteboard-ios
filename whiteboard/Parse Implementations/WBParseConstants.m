@@ -10,7 +10,7 @@
 
 NSString *const kActivityTypeLike = @"like";
 NSString *const kActivityTypeFollow = @"follow";
-
+NSString *const kActivityTypeComment = @"comment";
 
 
 NSString *const kActivityTypeKey =      @"type";
