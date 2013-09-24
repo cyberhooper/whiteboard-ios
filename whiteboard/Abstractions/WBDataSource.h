@@ -158,5 +158,10 @@
                          success:(void(^)(int numberOfFollowings))success
                          failure:(void(^)(NSError *error))failure;
 
+#pragma mark - Activity feed
+
+- (void)recentActivities:(void(^)(NSArray *activities))success
+                 failure:(void(^)(NSError *error))failure;
+
 @end
 

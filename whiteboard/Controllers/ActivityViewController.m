@@ -7,6 +7,7 @@
 //
 
 #import "ActivityViewController.h"
+#import "WBDataSource.h"
 
 @interface ActivityViewController ()
 
@@ -14,10 +15,14 @@
 
 @implementation ActivityViewController
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
+- (void)viewDidLoad {
+  [super viewDidLoad];
   self.tableView.backgroundColor = [UIColor clearColor];
+  [[WBDataSource sharedInstance] recentActivities:^(NSArray *activities) {
+    NSLog(@"%@", activities);
+  } failure:^(NSError *error) {
+    
+  }];
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {

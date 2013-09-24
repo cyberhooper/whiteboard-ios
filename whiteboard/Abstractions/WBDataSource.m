@@ -178,4 +178,11 @@ static Class DataSourceSubclass = nil;
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
+#pragma mark - Activity feed
+
+- (void)recentActivities:(void(^)(NSArray *activities))success
+                 failure:(void(^)(NSError *error))failure {
+    [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
 @end
