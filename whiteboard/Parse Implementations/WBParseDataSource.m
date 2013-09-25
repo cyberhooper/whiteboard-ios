@@ -250,7 +250,6 @@
            onPhoto:(WBPhoto *)photo
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure {
-  
   if (![PFUser currentUser]) {
     if (failure) {
       NSError *e = [NSError errorWithDomain:@"" code:0 userInfo:@{@"mesages" : @"You need to be logged in to post a comment"}];
@@ -264,12 +263,14 @@
   [parseComment setObject:[PFUser currentUser] forKey:@"user"];
   PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
   [parsePhoto addObject:parseComment forKey:@"comments"];
-  
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-    if (!error && success)
+    if (!error && success) {
       success();
-    else if (failure)
+      [self createCommentActivityForPhoto:parsePhoto];
+    }
+    else if (failure) {
       failure(error);
+    }
   }];
 }
 
@@ -479,6 +480,15 @@
       }
     }];
   }
+}
+
+- (void)createCommentActivityForPhoto:(PFObject *)photo {
+  PFObject *activity = [PFObject objectWithClassName:@"Activity"];
+  [activity setObject:kActivityTypeComment forKey:kActivityTypeKey];
+  [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
+  [activity setObject:[photo objectForKey:@"user"] forKey:kActivityToUserKey];
+  [activity setObject:photo forKey:kActivityPhotoKey];
+  [activity saveInBackground];
 }
 
 #pragma mark - Activity feed
