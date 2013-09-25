@@ -34,6 +34,10 @@ typedef enum {
 
 @implementation WBPhotoDetailsViewController
 
+#define kNumberOfPhotoCells 1
+#define kNumberOfLikesCells 1
+#define kNumberOfAddCommentCells 1
+
 static NSString *PhotoCellIdentifier = @"PhotoCellIdentifier";
 static NSString *LikesCellIdentifier = @"LikesCellIdentifier";
 static NSString *CommentsCellIdentifier = @"CommentsCellIdentifier";
@@ -214,7 +218,12 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
       
     case DetailsCellTypeComments: {
       WBPhotoDetailsCellComment *commentCell = (WBPhotoDetailsCellComment *)cell;
-      WBComment *comment = [self.comments objectAtIndex:indexPath.row];
+      
+      // The self.comments array doesn't start at indexPath.row because of the likes cell and photo cell.
+      // Therefore we have to create an offset
+      NSInteger commentsOffset = kNumberOfPhotoCells + kNumberOfLikesCells;
+      
+      WBComment *comment = [self.comments objectAtIndex:indexPath.row - commentsOffset];
       
       // Set the avatar
       [commentCell.avatarImageView setImageWithPath:comment.author.avatar.absoluteString placeholder:nil];
@@ -232,7 +241,7 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
     }
       
     case DetailsCellTypeAddComment: {
-      
+
       break;
     }
       
@@ -259,36 +268,10 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
 }
 
 - (NSInteger)numberOfTotalRows {
-  NSInteger photoCell = 1;
-  NSInteger likesCell = 1;
-  NSInteger commentsCell = self.comments.count;
-  NSInteger commentAddCommentCell = 1;
+  NSInteger numberOfCommentsCells = self.comments.count;
   
-  return photoCell + likesCell + commentsCell + commentAddCommentCell;
+  return kNumberOfPhotoCells + kNumberOfLikesCells + numberOfCommentsCells + kNumberOfAddCommentCells;
 }
-
-#pragma mark - Getters
-- (UITableView *)tableView {
-  if(_tableView != nil){
-    return _tableView;
-  }
-  
-  CGRect frame = CGRectMake(0.f,
-                            0.f,
-                            self.view.frame.size.width,
-                            self.view.frame.size.height);
-  UITableView *table = [[UITableView alloc] initWithFrame:frame style:UITableViewStyleGrouped];
-  table.backgroundColor = [UIColor clearColor];
-  table.separatorStyle = UITableViewCellSeparatorStyleNone;
-  table.delegate = self;
-  table.dataSource = self;
-  
-  _tableView = table;
-  return _tableView;
-}
-
-
-#pragma mark - Layout
 
 #pragma mark - Config
 - (UIImage *)backgroundImage {

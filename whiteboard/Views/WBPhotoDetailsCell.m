@@ -66,8 +66,9 @@
   
   // Seperator bottom imageview frame
   CGFloat seperatorHeight = 2.f;
+  CGFloat seperatorPosY = self.frame.size.height - 1.f;
   CGRect seperatorBottomFrame = CGRectMake(0.f,
-                                           self.frame.size.height - seperatorHeight,
+                                           seperatorPosY,
                                            self.frame.size.width,
                                            seperatorHeight);
   self.seperatorBottomImageView.frame = seperatorBottomFrame;
