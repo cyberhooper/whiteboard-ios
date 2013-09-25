@@ -10,6 +10,7 @@
 #import "WBViewController.h"
 
 @interface ActivityViewController : WBViewController <UITableViewDelegate, UITableViewDataSource>
+
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
 @end
