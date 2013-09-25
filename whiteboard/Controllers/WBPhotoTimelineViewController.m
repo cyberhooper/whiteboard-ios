@@ -15,6 +15,7 @@
 #import "WBLoadMoreCell.h"
 #import "ProfileViewController.h"
 #import "WBPhoto+Utils.h"
+#import "WBPhotoDetailsViewController.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 @property (nonatomic, strong) NSMutableArray *photosBeeingLiked;
@@ -147,7 +148,14 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   if ([self isLoadMoreCell:indexPath.section]) {
     // Load More Cell
     [self loadNextPage];
+    return;
   }
+  
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
+  
+  WBPhotoDetailsViewController *photoDetailsVC = [[WBPhotoDetailsViewController alloc] init];
+  photoDetailsVC.photo = photo;
+  [self.navigationController pushViewController:photoDetailsVC animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView

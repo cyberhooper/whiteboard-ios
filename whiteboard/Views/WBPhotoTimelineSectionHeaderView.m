@@ -50,12 +50,14 @@
   // Comment button
   self.commentButton.numberLabel.font = [[WBTheme sharedTheme] sectionCommentFont];
   self.commentButton.numberLabel.textColor = [[WBTheme sharedTheme] sectionCommentFontColor];
+  self.commentButton.hidden = YES;
 
   self.commentButton.normalImage = [self commentButtonImage];
   self.commentButton.highlightedImage = [self commentButtonImageHighlighted];
   self.commentButton.selectedImage = [self commentButtonImageSelected];
 
-  
+  self.likeButton.hidden = YES;
+
   // Display name label
   self.displayNameLabel.textColor = [[WBTheme sharedTheme] sectionDisplayNameFontColor];
   self.displayNameLabel.font = [[WBTheme sharedTheme] sectionDisplayNameFont];
@@ -143,12 +145,14 @@
 - (void)setNumberOfLikes:(NSNumber *)numberOfLikes {
   _numberOfLikes = numberOfLikes;
   
+  self.likeButton.hidden = NO;
   self.likeButton.numberLabel.text = [NSString stringWithFormat:@"%d", numberOfLikes.intValue];
 }
 
 - (void)setNumberOfComments:(NSNumber *)numberOfComments {
   _numberOfComments = numberOfComments;
 
+  self.commentButton.hidden = NO;
   self.commentButton.numberLabel.text = [NSString stringWithFormat:@"%d", numberOfComments.intValue];
 }
 
