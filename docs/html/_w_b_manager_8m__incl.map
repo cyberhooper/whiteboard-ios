@@ -1,6 +1,7 @@
 <map id="WBManager.m" name="WBManager.m">
-<area shape="rect" id="node2" href="$_w_b_manager_8h.html" title="WBManager.h" alt="" coords="5,155,109,181"/>
-<area shape="rect" id="node4" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="127,80,249,107"/>
-<area shape="rect" id="node5" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="185,229,265,256"/>
-<area shape="rect" id="node6" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="237,155,323,181"/>
+<area shape="rect" id="node2" href="$_w_b_manager_8h.html" title="WBManager.h" alt="" coords="5,229,109,256"/>
+<area shape="rect" id="node4" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="168,80,291,107"/>
+<area shape="rect" id="node7" href="$_w_b_account_manager_8h.html" title="WBAccountManager.h" alt="" coords="349,155,499,181"/>
+<area shape="rect" id="node5" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="268,229,348,256"/>
+<area shape="rect" id="node6" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="186,155,272,181"/>
 </map>

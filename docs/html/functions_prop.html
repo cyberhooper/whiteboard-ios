@@ -71,12 +71,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul class="tablist">
       <li><a href="functions.html"><span>All</span></a></li>
       <li><a href="functions_func.html"><span>Functions</span></a></li>
+      <li><a href="functions_vars.html"><span>Variables</span></a></li>
       <li class="current"><a href="functions_prop.html"><span>Properties</span></a></li>
     </ul>
   </div>
   <div id="navrow4" class="tabs3">
     <ul class="tablist">
       <li><a href="#index_a"><span>a</span></a></li>
+      <li><a href="#index_b"><span>b</span></a></li>
       <li><a href="#index_c"><span>c</span></a></li>
       <li><a href="#index_d"><span>d</span></a></li>
       <li><a href="#index_e"><span>e</span></a></li>
@@ -84,8 +86,10 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
       <li><a href="#index_h"><span>h</span></a></li>
       <li><a href="#index_i"><span>i</span></a></li>
       <li><a href="#index_l"><span>l</span></a></li>
+      <li><a href="#index_m"><span>m</span></a></li>
       <li><a href="#index_n"><span>n</span></a></li>
       <li><a href="#index_p"><span>p</span></a></li>
+      <li><a href="#index_s"><span>s</span></a></li>
       <li><a href="#index_t"><span>t</span></a></li>
       <li><a href="#index_u"><span>u</span></a></li>
       <li><a href="#index_v"><span>v</span></a></li>
@@ -98,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,33 +118,50 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>activityNavigationController
 : <a class="el" href="interface_w_b_tab_bar_controller.html#a12688cc5c0ce6811034e45422ebb2fc8">WBTabBarController</a>
 </li>
+<li>addCommentIconImageView
+: <a class="el" href="interface_w_b_photo_details_cell_add_comment.html#a0ec569cb6381a6bdfe1aaa0e87877761">WBPhotoDetailsCellAddComment</a>
+</li>
 <li>author
-: <a class="el" href="interface_w_b_comment.html#a1d0630ce3dad2f0768344775ca44b060">WBComment</a>
-, <a class="el" href="interface_w_b_photo.html#a2f5d6bb135e18c2ae08a82b8255218e5">WBPhoto</a>
+: <a class="el" href="interface_w_b_photo.html#a2f5d6bb135e18c2ae08a82b8255218e5">WBPhoto</a>
+, <a class="el" href="interface_w_b_comment.html#a1d0630ce3dad2f0768344775ca44b060">WBComment</a>
 </li>
 <li>avatar
 : <a class="el" href="interface_w_b_user.html#acbd205d422005bc80825e9e3d32bacdb">WBUser</a>
+</li>
+<li>avatarImageButton
+: <a class="el" href="interface_w_b_friend_cell.html#a700c2d7362fa4e398de910e053d45381">WBFriendCell</a>
+</li>
+<li>avatarImageView
+: <a class="el" href="interface_w_b_photo_details_cell_comment.html#aa8522741df85ff8c44f23cb2a595b17c">WBPhotoDetailsCellComment</a>
+, <a class="el" href="interface_w_b_friend_cell.html#a0b71f652011827fc7ccb347620d96ea4">WBFriendCell</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_b"></a>- b -</h3><ul>
+<li>button
+: <a class="el" href="interface_w_b_photo_timeline_section_header_button.html#a025603850de0290bc47e43046dc880a0">WBPhotoTimelineSectionHeaderButton</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_c"></a>- c -</h3><ul>
-<li>commentButton
-: <a class="el" href="class_w_b_photo_timeline_section_header_view.html#aec73a68cdcc5bcb08bc32e79ad40b0b2">WBPhotoTimelineSectionHeaderView</a>
-</li>
 <li>commentID
 : <a class="el" href="interface_w_b_comment.html#a1b0d2690b01129ac08fb1fdc1ddda546">WBComment</a>
 </li>
-<li>commentNumberLabel
-: <a class="el" href="class_w_b_photo_timeline_section_header_view.html#ac60975be2269e145b3c9dac174db8307">WBPhotoTimelineSectionHeaderView</a>
-</li>
 <li>comments
 : <a class="el" href="interface_w_b_photo.html#ac331229871edd438caf85fb80daea943">WBPhoto</a>
+, <a class="el" href="interface_w_b_photo_details_view_controller.html#a6b33bf3a75bb55e324e190339cf8c987">WBPhotoDetailsViewController</a>
+</li>
+<li>commentTextField
+: <a class="el" href="interface_w_b_photo_details_cell_add_comment.html#aa4c0f43355959fbf29a68c8b39b1bca0">WBPhotoDetailsCellAddComment</a>
 </li>
 <li>createdAt
-: <a class="el" href="interface_w_b_comment.html#a4a93b76ead0b67cb8b9a00df5efb2aee">WBComment</a>
-, <a class="el" href="interface_w_b_photo.html#a2da39db2b667a47878a12f06d6b71634">WBPhoto</a>
+: <a class="el" href="interface_w_b_photo.html#a2da39db2b667a47878a12f06d6b71634">WBPhoto</a>
+, <a class="el" href="interface_w_b_comment.html#a4a93b76ead0b67cb8b9a00df5efb2aee">WBComment</a>
+, <a class="el" href="interface_w_b_activity.html#a136ea8dae4c8711c18f24c03fbcfc6c5">WBActivity</a>
 , <a class="el" href="interface_w_b_user.html#afe737880827c545eb83cd94d01e606e3">WBUser</a>
+, <a class="el" href="interface_w_b_photo_details_cell_comment.html#a7e0a53f0dbfbc52a831f076eb687e64c">WBPhotoDetailsCellComment</a>
 </li>
 <li>currentUser
 : <a class="el" href="interface_w_b_data_source.html#af6b2d0317c0682ffbc93d5dc9af8265c">WBDataSource</a>
@@ -150,10 +171,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 <h3><a class="anchor" id="index_d"></a>- d -</h3><ul>
 <li>dateLabel
-: <a class="el" href="class_w_b_photo_timeline_section_header_view.html#ae6ba39a8428e2bb14b9e9d4d9d60db08">WBPhotoTimelineSectionHeaderView</a>
+: <a class="el" href="interface_w_b_photo_details_cell_comment.html#acbf03eda9b15aaf2f70852e0d5934f55">WBPhotoDetailsCellComment</a>
+, <a class="el" href="class_w_b_photo_timeline_section_header_view.html#ae6ba39a8428e2bb14b9e9d4d9d60db08">WBPhotoTimelineSectionHeaderView</a>
+</li>
+<li>delegate
+: <a class="el" href="interface_w_b_photo_timeline_section_header_button.html#ab774d3cd822abf38880e50353a6bea2f">WBPhotoTimelineSectionHeaderButton</a>
+, <a class="el" href="interface_w_b_friend_cell.html#aee33c956085d66a54b0b87c4c1281725">WBFriendCell</a>
 </li>
 <li>displayName
-: <a class="el" href="interface_w_b_user.html#a3904235704b2ff38cbefd3c7f21b67ff">WBUser</a>
+: <a class="el" href="interface_w_b_user.html#aad4a370a4a327a08f5102ef83da590e3">WBUser</a>
 </li>
 <li>displayNameLabel
 : <a class="el" href="class_w_b_photo_timeline_section_header_view.html#a4fbeee7a73f6978a20f4592ca09b0fa7">WBPhotoTimelineSectionHeaderView</a>
@@ -175,13 +201,28 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 
 
 <h3><a class="anchor" id="index_f"></a>- f -</h3><ul>
+<li>facebookFriends
+: <a class="el" href="interface_w_b_data_source.html#a38c5af5cf7fe3f05672242928c891381">WBDataSource</a>
+</li>
 <li>firstName
 : <a class="el" href="interface_w_b_user.html#a148fd325b76dba4f57d6729a6920c7f1">WBUser</a>
+</li>
+<li>followAllButton
+: <a class="el" href="interface_w_b_find_friends_view_controller.html#aa460e6e71d91b604dfbf4ed340414164">WBFindFriendsViewController</a>
+</li>
+<li>followButton
+: <a class="el" href="interface_w_b_friend_cell.html#af0f338fe3b0ff3b6ce32b18e2b2efd15">WBFriendCell</a>
+</li>
+<li>followImage
+: <a class="el" href="interface_w_b_profile_header_view.html#afadd14e1d1fe97aeaa9f830d53a267c4">WBProfileHeaderView</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_h"></a>- h -</h3><ul>
+<li>highlightedImage
+: <a class="el" href="interface_w_b_photo_timeline_section_header_button.html#a65f7fc8bdfae623e0dc21ff796778a3b">WBPhotoTimelineSectionHeaderButton</a>
+</li>
 <li>homeNavigationController
 : <a class="el" href="interface_w_b_tab_bar_controller.html#a51d028ef94c765abd48a444f53b7773a">WBTabBarController</a>
 </li>
@@ -191,6 +232,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <h3><a class="anchor" id="index_i"></a>- i -</h3><ul>
 <li>image
 : <a class="el" href="interface_w_b_photo.html#a3c6c6fcc2532a1d50ad22dcdf881f83d">WBPhoto</a>
+</li>
+<li>inviteFriendsLabel
+: <a class="el" href="interface_w_b_invite_friends_cell.html#a0b3c2f34c54d998cbac86b1055c219ce">WBInviteFriendsCell</a>
+</li>
+<li>isFollowed
+: <a class="el" href="interface_w_b_user.html#aa960ac176805d1ed85206f54dabffed5">WBUser</a>
+</li>
+<li>isLiked
+: <a class="el" href="interface_w_b_photo_details_cell_likes.html#a294784aa663973f9b54bf2b2e49db797">WBPhotoDetailsCellLikes</a>
 </li>
 <li>isLoading
 : <a class="el" href="interface_w_b_photo_timeline_view_controller.html#a5818163551ea534293a767228046326c">WBPhotoTimelineViewController</a>
@@ -203,23 +253,78 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_w_b_user.html#a9e7c534df6c0a370b9532fc5e62146b1">WBUser</a>
 </li>
 <li>likeButton
-: <a class="el" href="class_w_b_photo_timeline_section_header_view.html#a5e305472c2490025acf8b4d418678f0a">WBPhotoTimelineSectionHeaderView</a>
+: <a class="el" href="interface_w_b_photo_details_cell_likes.html#a557590ad5b09b7846d9895132e3ae972">WBPhotoDetailsCellLikes</a>
 </li>
-<li>likeNumberLabel
-: <a class="el" href="class_w_b_photo_timeline_section_header_view.html#a370b80d855bc4d21d63410aa141ea07a">WBPhotoTimelineSectionHeaderView</a>
+<li>likers
+: <a class="el" href="interface_w_b_photo_details_cell_likes.html#ad2eec4f6705f647e39cb32eae053fc3c">WBPhotoDetailsCellLikes</a>
+</li>
+<li>likersView
+: <a class="el" href="interface_w_b_photo_details_cell_likes.html#a377bd073ec6689fd8d99d4fabef792b0">WBPhotoDetailsCellLikes</a>
 </li>
 <li>likes
 : <a class="el" href="interface_w_b_photo.html#a2034a52b12ab414fbdfa691428202edf">WBPhoto</a>
+</li>
+<li>loadMore
+: <a class="el" href="interface_w_b_photo_timeline_view_controller.html#aa46e6b4993a377e4f5f501a88e2fbc8e">WBPhotoTimelineViewController</a>
+, <a class="el" href="interface_w_b_find_friends_view_controller.html#ab8c7a4ababd2b25200738d1ec9037b61">WBFindFriendsViewController</a>
+</li>
+<li>loadMoreImage
+: <a class="el" href="interface_w_b_load_more_cell.html#afc822a882b7b198218e0ba370273e702">WBLoadMoreCell</a>
+</li>
+<li>loadMoreImageView
+: <a class="el" href="interface_w_b_load_more_cell.html#aa022ef6e79ff5be7538bd95a57e8d48a">WBLoadMoreCell</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_m"></a>- m -</h3><ul>
+<li>message
+: <a class="el" href="interface_w_b_photo_details_cell_comment.html#a3dd1a58fc9a9c868a2a188b4e2c67f71">WBPhotoDetailsCellComment</a>
+</li>
+<li>messageLabel
+: <a class="el" href="interface_w_b_photo_details_cell_comment.html#aaab08151e0a8b9875980f762cea8daf3">WBPhotoDetailsCellComment</a>
 </li>
 </ul>
 
 
 <h3><a class="anchor" id="index_n"></a>- n -</h3><ul>
+<li>name
+: <a class="el" href="interface_w_b_friend_cell.html#a5692f87b64d446d5d501e8a2d2bfee54">WBFriendCell</a>
+, <a class="el" href="interface_w_b_photo_details_cell_comment.html#a1afe48fa37a9f11ebe8197ef73f57ff0">WBPhotoDetailsCellComment</a>
+</li>
+<li>nameButton
+: <a class="el" href="interface_w_b_friend_cell.html#af2963a56cca5521c74abd932453a3fd6">WBFriendCell</a>
+</li>
+<li>nameLabel
+: <a class="el" href="interface_w_b_profile_header_view.html#a3a08a9d8f5563fc31cde5b1507b82e05">WBProfileHeaderView</a>
+, <a class="el" href="interface_w_b_photo_details_cell_comment.html#a6659e694f2a4acde4733da512b1f40a3">WBPhotoDetailsCellComment</a>
+</li>
+<li>normalImage
+: <a class="el" href="interface_w_b_photo_timeline_section_header_button.html#a3f4859168e3fd48afe40a0641fefbccf">WBPhotoTimelineSectionHeaderButton</a>
+</li>
+<li>numberFollowersLabel
+: <a class="el" href="interface_w_b_profile_header_view.html#a3efee2df73832fe282f297840e2bf0f2">WBProfileHeaderView</a>
+</li>
 <li>numberFollowing
 : <a class="el" href="interface_w_b_user.html#a6fc5436976efcbe284ce4b29a870363a">WBUser</a>
 </li>
+<li>numberFollowingLabel
+: <a class="el" href="interface_w_b_profile_header_view.html#aef5fe328b4d62d730226670b74a1cbd9">WBProfileHeaderView</a>
+</li>
+<li>numberLabel
+: <a class="el" href="interface_w_b_photo_timeline_section_header_button.html#a5410354c90786d3cb00b21bbb00e0f05">WBPhotoTimelineSectionHeaderButton</a>
+</li>
 <li>numberOfFollowers
 : <a class="el" href="interface_w_b_user.html#a431db2cf80d9a38fa5fff66921ebab29">WBUser</a>
+</li>
+<li>numberPicturesLabel
+: <a class="el" href="interface_w_b_profile_header_view.html#af6f8294995799ac76470a862ea934f42">WBProfileHeaderView</a>
+</li>
+<li>numPhotos
+: <a class="el" href="interface_w_b_friend_cell.html#a5b891941e2e4e5a07d6ee45ae0736347">WBFriendCell</a>
+</li>
+<li>numPhotosLabel
+: <a class="el" href="interface_w_b_friend_cell.html#a52d2eeb7e238928a18802e56f6df5e7f">WBFriendCell</a>
 </li>
 </ul>
 
@@ -229,17 +334,53 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_w_b_login_view_controller.html#a65382638d1ae2af3542835d12936b3fd">WBLoginViewController</a>
 , <a class="el" href="interface_w_b_signup_view_controller.html#a607507eaa2f736c36ecd9884522cc6a8">WBSignupViewController</a>
 </li>
+<li>photo
+: <a class="el" href="interface_w_b_photo_details_view_controller.html#a3eb2220abea9d61ad3cc7c315399ad3d">WBPhotoDetailsViewController</a>
+, <a class="el" href="interface_w_b_activity.html#afd040a6d740b7e42f304925d38a8108b">WBActivity</a>
+</li>
 <li>photoID
 : <a class="el" href="interface_w_b_photo.html#aa0f01ff4b8d656d75b2eb658c0cb1d6a">WBPhoto</a>
 </li>
 <li>photoImageView
-: <a class="el" href="interface_w_b_photo_timeline_cell.html#ad9a981691ec4a555e4fb595ba1b3700c">WBPhotoTimelineCell</a>
+: <a class="el" href="interface_w_b_photo_details_cell_photo.html#a7bc9d2d79d82c857d4e2cbc34b0e4c93">WBPhotoDetailsCellPhoto</a>
+, <a class="el" href="interface_w_b_photo_timeline_cell.html#ad9a981691ec4a555e4fb595ba1b3700c">WBPhotoTimelineCell</a>
+</li>
+<li>photoLimit
+: <a class="el" href="interface_w_b_data_source.html#ab9d707be3a255ae640e7f4a6c876f0cf">WBDataSource</a>
+</li>
+<li>photoOffset
+: <a class="el" href="interface_w_b_photo_timeline_view_controller.html#a45d23d8a2cf98c82c7e7e08149499b1a">WBPhotoTimelineViewController</a>
 </li>
 <li>photos
 : <a class="el" href="interface_w_b_photo_timeline_view_controller.html#a8f05bbafba16a4e68f99fade15eeabc6">WBPhotoTimelineViewController</a>
 </li>
-<li>photoUrl
-: <a class="el" href="interface_test_object.html#a5ff2ec4bc3b3cbfcf9878bb731efe836">TestObject</a>
+<li>pictureImage
+: <a class="el" href="interface_w_b_profile_header_view.html#ab13ff45b57c5e3f2758b6355308fde17">WBProfileHeaderView</a>
+</li>
+<li>profilePictureImageView
+: <a class="el" href="interface_w_b_profile_header_view.html#a6d6ac6cca38abb6f68c873bb2927d6d9">WBProfileHeaderView</a>
+</li>
+</ul>
+
+
+<h3><a class="anchor" id="index_s"></a>- s -</h3><ul>
+<li>selectedEmailAddress
+: <a class="el" href="interface_w_b_find_friends_view_controller.html#a7a1d5d1ddfc80a17b6b0e845bd711ca6">WBFindFriendsViewController</a>
+</li>
+<li>selectedImage
+: <a class="el" href="interface_w_b_photo_timeline_section_header_button.html#ad29e5cd39fb925406dd21e8d3211669c">WBPhotoTimelineSectionHeaderButton</a>
+</li>
+<li>seperatorBottom
+: <a class="el" href="interface_w_b_photo_details_cell.html#acdfaba0e8024867b83bf445b8826183e">WBPhotoDetailsCell</a>
+</li>
+<li>seperatorTopImage
+: <a class="el" href="interface_w_b_load_more_cell.html#a9cbd235a0c2161db03ecc2b15ae572ba">WBLoadMoreCell</a>
+</li>
+<li>seperatorTopImageView
+: <a class="el" href="interface_w_b_load_more_cell.html#ae1a1d69480731261d2707be0a6bc0d64">WBLoadMoreCell</a>
+</li>
+<li>strokeImage
+: <a class="el" href="interface_w_b_profile_header_view.html#aaa2398687301a107fb0130b5cf5eeaf0">WBProfileHeaderView</a>
 </li>
 </ul>
 
@@ -249,7 +390,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 : <a class="el" href="interface_app_delegate.html#aa8c3eaa9f33dc7c849330fe8986dbc9d">AppDelegate</a>
 </li>
 <li>tableView
-: <a class="el" href="interface_w_b_photo_timeline_view_controller.html#a85335b3ab0cc94a33774a1b5f7bfff3b">WBPhotoTimelineViewController</a>
+: <a class="el" href="interface_activity_view_controller.html#af84a4db5ca836444420428c964a3d2af">ActivityViewController</a>
+, <a class="el" href="interface_w_b_photo_details_view_controller.html#a00826ebf56d0e01ed9fd1940202f0ca6">WBPhotoDetailsViewController</a>
+, <a class="el" href="interface_w_b_photo_timeline_view_controller.html#a85335b3ab0cc94a33774a1b5f7bfff3b">WBPhotoTimelineViewController</a>
 </li>
 <li>text
 : <a class="el" href="interface_w_b_comment.html#a3dc285fda62cbd0505ea9b78b6d08e95">WBComment</a>
@@ -257,28 +400,45 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <li>themeDict
 : <a class="el" href="interface_w_b_theme.html#a144d4774e3f82f06284305a0cb9cbcc8">WBTheme</a>
 </li>
+<li>toUser
+: <a class="el" href="interface_w_b_activity.html#ab010c564a71a16225cd748bc43e4dc8a">WBActivity</a>
+</li>
+<li>type
+: <a class="el" href="interface_w_b_activity.html#a790c46cb843807f9bc4ad9148f6ccb9f">WBActivity</a>
+</li>
 </ul>
 
 
 <h3><a class="anchor" id="index_u"></a>- u -</h3><ul>
+<li>unfollowAllButton
+: <a class="el" href="interface_w_b_find_friends_view_controller.html#ad187d4aab69027578366a65bf8bf0541">WBFindFriendsViewController</a>
+</li>
 <li>updatedAt
 : <a class="el" href="interface_w_b_user.html#a2a274e02a801953dac58d613e145d756">WBUser</a>
 </li>
 <li>url
 : <a class="el" href="interface_w_b_photo.html#a86cd64b38274d9db3088524132006baa">WBPhoto</a>
 </li>
+<li>user
+: <a class="el" href="interface_profile_view_controller.html#aaafadac39c6bc75bb6a8cc55629ad3ef">ProfileViewController</a>
+</li>
 <li>userID
 : <a class="el" href="interface_w_b_user.html#a5172b431217e7202a208cf86ecb44ffa">WBUser</a>
 </li>
+<li>userIndex
+: <a class="el" href="interface_w_b_friend_cell.html#adb24c32dfe9df7183d49cefe65a071bb">WBFriendCell</a>
+</li>
 <li>username
-: <a class="el" href="interface_test_object.html#a344e3abfb8d1386d311eacba316b5457">TestObject</a>
-, <a class="el" href="interface_w_b_user.html#a91d4dc6f11e3879a0bb9223db5d1d61e">WBUser</a>
+: <a class="el" href="interface_w_b_user.html#a91d4dc6f11e3879a0bb9223db5d1d61e">WBUser</a>
+</li>
+<li>usernameTextField
+: <a class="el" href="interface_w_b_login_view_controller.html#ad70c893a4c0fc4fb88c55ae762d47971">WBLoginViewController</a>
 </li>
 <li>userNameTextField
 : <a class="el" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">WBSignupViewController</a>
 </li>
-<li>usernameTextField
-: <a class="el" href="interface_w_b_login_view_controller.html#ad70c893a4c0fc4fb88c55ae762d47971">WBLoginViewController</a>
+<li>users
+: <a class="el" href="interface_w_b_find_friends_view_controller.html#a2bbf580824dbcd105dc484b404833921">WBFindFriendsViewController</a>
 </li>
 </ul>
 
@@ -298,7 +458,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 17 2013 18:24:21 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 26 2013 15:01:44 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

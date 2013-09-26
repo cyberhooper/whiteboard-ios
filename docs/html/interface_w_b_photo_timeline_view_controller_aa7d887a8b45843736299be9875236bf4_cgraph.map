@@ -1,6 +1,6 @@
 <map id="&#45;[WBPhotoTimelineViewController scrollViewDidScroll:]" name="&#45;[WBPhotoTimelineViewController scrollViewDidScroll:]">
-<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#adb783a06f543d319b4e4b7713d25ff9a" title="&#45;[WBPhotoTimelineViewController\l scrollViewDidPullToRefresh:]" alt="" coords="261,51,469,93"/>
-<area shape="rect" id="node3" href="$interface_w_b_photo_timeline_view_controller.html#af4788542079abbbdf68aacc9feab264f" title="&#45;[WBPhotoTimelineViewController\l refreshPhotos]" alt="" coords="517,51,725,93"/>
-<area shape="rect" id="node4" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="774,29,991,56"/>
-<area shape="rect" id="node5" href="$interface_w_b_data_source.html#a2528cabb4b4a6919d26ba9c4c8546e50" title="&#45;[WBDataSource latestPhotos\l:failure:]" alt="" coords="786,81,979,122"/>
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#adb783a06f543d319b4e4b7713d25ff9a" title="&#45;[WBPhotoTimelineViewController\l scrollViewDidPullToRefresh:]" alt="" coords="261,27,469,69"/>
+<area shape="rect" id="node3" href="$interface_w_b_photo_timeline_view_controller.html#af4788542079abbbdf68aacc9feab264f" title="&#45;[WBPhotoTimelineViewController\l refreshPhotos]" alt="" coords="517,27,725,69"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="774,5,991,32"/>
+<area shape="rect" id="node5" href="$interface_w_b_data_source.html#a2528cabb4b4a6919d26ba9c4c8546e50" title="&#45;[WBDataSource latestPhotos\l:failure:]" alt="" coords="786,57,979,98"/>
 </map>

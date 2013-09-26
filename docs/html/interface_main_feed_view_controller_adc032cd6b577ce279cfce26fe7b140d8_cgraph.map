@@ -1,11 +1,12 @@
 <map id="&#45;[MainFeedViewController viewDidLoad]" name="&#45;[MainFeedViewController viewDidLoad]">
-<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#a0b6d769b23f74af3a7c9b379fc02bdae" title="&#45;[WBPhotoTimelineViewController\l viewDidLoad]" alt="" coords="219,70,427,111"/>
-<area shape="rect" id="node10" href="$interface_w_b_photo_timeline_view_controller.html#a9c3f28effab1b513daf1cae8dc2d8015" title="&#45;[WBPhotoTimelineViewController\l showLoginScreen]" alt="" coords="219,135,427,177"/>
-<area shape="rect" id="node3" href="$interface_w_b_view_controller.html#af9790a37244b6c14923028d44fe72013" title="&#45;[WBViewController\l viewDidLoad]" alt="" coords="513,5,644,46"/>
-<area shape="rect" id="node5" href="$interface_w_b_photo_timeline_view_controller.html#acacefb7adc84f5318d85d27ae20c3c97" title="&#45;[WBPhotoTimelineViewController\l setupView]" alt="" coords="475,70,683,111"/>
-<area shape="rect" id="node7" href="$interface_w_b_photo_timeline_view_controller.html#af4788542079abbbdf68aacc9feab264f" title="&#45;[WBPhotoTimelineViewController\l refreshPhotos]" alt="" coords="475,153,683,194"/>
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#a0b6d769b23f74af3a7c9b379fc02bdae" title="&#45;[WBPhotoTimelineViewController\l viewDidLoad]" alt="" coords="219,99,427,141"/>
+<area shape="rect" id="node11" href="$interface_w_b_photo_timeline_view_controller.html#a9c3f28effab1b513daf1cae8dc2d8015" title="&#45;[WBPhotoTimelineViewController\l showLoginScreen]" alt="" coords="219,165,427,206"/>
+<area shape="rect" id="node3" href="$interface_w_b_view_controller.html#af9790a37244b6c14923028d44fe72013" title="&#45;[WBViewController\l viewDidLoad]" alt="" coords="513,19,644,61"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_timeline_view_controller.html#acacefb7adc84f5318d85d27ae20c3c97" title="&#45;[WBPhotoTimelineViewController\l setupView]" alt="" coords="475,99,683,141"/>
+<area shape="rect" id="node8" href="$interface_w_b_photo_timeline_view_controller.html#af4788542079abbbdf68aacc9feab264f" title="&#45;[WBPhotoTimelineViewController\l refreshPhotos]" alt="" coords="475,194,683,235"/>
 <area shape="rect" id="node4" href="$interface_w_b_view_controller.html#a94978608a19a215066d39da41fa2b359" title="&#45;[WBViewController\l backgroundImage]" alt="" coords="775,5,905,46"/>
 <area shape="rect" id="node6" href="$interface_w_b_photo_timeline_view_controller.html#a65e736558de72fc88a7b77924e0cc4f1" title="&#45;[WBPhotoTimelineViewController\l tableCellNib]" alt="" coords="736,70,944,111"/>
-<area shape="rect" id="node8" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="731,160,949,187"/>
-<area shape="rect" id="node9" href="$interface_w_b_data_source.html#a2528cabb4b4a6919d26ba9c4c8546e50" title="&#45;[WBDataSource latestPhotos\l:failure:]" alt="" coords="743,211,937,253"/>
+<area shape="rect" id="node7" href="$interface_w_b_photo_timeline_view_controller.html#a89d8c8301d0986a9f6072f802abfa410" title="&#45;[WBPhotoTimelineViewController\l loadMoreTableCellNib]" alt="" coords="736,135,944,177"/>
+<area shape="rect" id="node9" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="731,201,949,228"/>
+<area shape="rect" id="node10" href="$interface_w_b_data_source.html#a2528cabb4b4a6919d26ba9c4c8546e50" title="&#45;[WBDataSource latestPhotos\l:failure:]" alt="" coords="743,253,937,294"/>
 </map>

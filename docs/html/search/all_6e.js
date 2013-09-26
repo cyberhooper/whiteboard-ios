@@ -1,12 +1,29 @@
 var searchData=
 [
+  ['name',['name',['../interface_w_b_friend_cell.html#a5692f87b64d446d5d501e8a2d2bfee54',1,'WBFriendCell::name()'],['../interface_w_b_photo_details_cell_comment.html#a1afe48fa37a9f11ebe8197ef73f57ff0',1,'WBPhotoDetailsCellComment::name()']]],
+  ['namebutton',['nameButton',['../interface_w_b_friend_cell.html#af2963a56cca5521c74abd932453a3fd6',1,'WBFriendCell']]],
+  ['namelabel',['nameLabel',['../interface_w_b_profile_header_view.html#a3a08a9d8f5563fc31cde5b1507b82e05',1,'WBProfileHeaderView::nameLabel()'],['../interface_w_b_photo_details_cell_comment.html#a6659e694f2a4acde4733da512b1f40a3',1,'WBPhotoDetailsCellComment::nameLabel()']]],
   ['navbarbackgroundimage',['navBarBackgroundImage',['../interface_w_b_theme.html#ac4e31c2426f7836ab0e41ee5e75582ac',1,'WBTheme']]],
   ['navbarsettingsbuttonbackgroundimage',['navBarSettingsButtonBackgroundImage',['../interface_w_b_theme.html#a6dc17d15268dfa16b0c56c0851255f34',1,'WBTheme']]],
   ['navbarsettingsbuttonhighlightedimage',['navBarSettingsButtonHighlightedImage',['../interface_w_b_theme.html#ab4c50d7e66debecc23ce53813fa94132',1,'WBTheme']]],
   ['navbarsettingsbuttonimage',['navBarSettingsButtonImage',['../interface_w_b_theme.html#a32b1b72c24a286e365307c99287d50f0',1,'WBTheme']]],
   ['navbartitlefont',['navBarTitleFont',['../interface_w_b_theme.html#a15bd4713e8dd4a69d99d6b37ddd7d9cf',1,'WBTheme']]],
   ['navbartitlefontcolor',['navBarTitleFontColor',['../interface_w_b_theme.html#a9607da91e022be138db5b7dafefe707c',1,'WBTheme']]],
+  ['normalimage',['normalImage',['../interface_w_b_photo_timeline_section_header_button.html#a3f4859168e3fd48afe40a0641fefbccf',1,'WBPhotoTimelineSectionHeaderButton']]],
+  ['nsnotification_28keyboard_29',['NSNotification(Keyboard)',['../category_n_s_notification_07_keyboard_08.html',1,'']]],
+  ['nsnotification_2bkeyboard_2eh',['NSNotification+Keyboard.h',['../_n_s_notification_09_keyboard_8h.html',1,'']]],
+  ['nsnotification_2bkeyboard_2em',['NSNotification+Keyboard.m',['../_n_s_notification_09_keyboard_8m.html',1,'']]],
+  ['numberfollowerslabel',['numberFollowersLabel',['../interface_w_b_profile_header_view.html#a3efee2df73832fe282f297840e2bf0f2',1,'WBProfileHeaderView']]],
   ['numberfollowing',['numberFollowing',['../interface_w_b_user.html#a6fc5436976efcbe284ce4b29a870363a',1,'WBUser']]],
+  ['numberfollowinglabel',['numberFollowingLabel',['../interface_w_b_profile_header_view.html#aef5fe328b4d62d730226670b74a1cbd9',1,'WBProfileHeaderView']]],
+  ['numberlabel',['numberLabel',['../interface_w_b_photo_timeline_section_header_button.html#a5410354c90786d3cb00b21bbb00e0f05',1,'WBPhotoTimelineSectionHeaderButton']]],
   ['numberoffollowers',['numberOfFollowers',['../interface_w_b_user.html#a431db2cf80d9a38fa5fff66921ebab29',1,'WBUser']]],
-  ['numberofsectionsintableview_3a',['numberOfSectionsInTableView:',['../interface_w_b_photo_timeline_view_controller.html#acb1b49be31ec0c6d040eaa177a35c743',1,'WBPhotoTimelineViewController']]]
+  ['numberoffollowersforuser_3asuccess_3afailure_3a',['numberOfFollowersForUser:success:failure:',['../interface_w_b_data_source.html#a28d0b1cf76aaf8c4cda89f72a1f3db90',1,'WBDataSource::numberOfFollowersForUser:success:failure:()'],['../interface_w_b_parse_data_source.html#a77ebf208311384da5453ced5fed75ba9',1,'WBParseDataSource::numberOfFollowersForUser:success:failure:()']]],
+  ['numberoffollowingsforuser_3asuccess_3afailure_3a',['numberOfFollowingsForUser:success:failure:',['../interface_w_b_data_source.html#a12fc47cf9216e528657c1a8097918362',1,'WBDataSource::numberOfFollowingsForUser:success:failure:()'],['../interface_w_b_parse_data_source.html#a631335469e92b8a79bfff5cbf4e29496',1,'WBParseDataSource::numberOfFollowingsForUser:success:failure:()']]],
+  ['numberofphotosforuser_3asuccess_3afailure_3a',['numberOfPhotosForUser:success:failure:',['../interface_w_b_data_source.html#a13f8aaf5df2dd25dddea7546bc711245',1,'WBDataSource::numberOfPhotosForUser:success:failure:()'],['../interface_w_b_parse_data_source.html#aab5eb3266eb9305b098ced3784ca390d',1,'WBParseDataSource::numberOfPhotosForUser:success:failure:()']]],
+  ['numberofsectionsintableview_3a',['numberOfSectionsInTableView:',['../interface_main_feed_view_controller.html#adeaaa1a8c6a4add1b61ee870f5c9af20',1,'MainFeedViewController::numberOfSectionsInTableView:()'],['../interface_w_b_find_friends_view_controller.html#a6ead1318d90abea4e2f4c71127487ce4',1,'WBFindFriendsViewController::numberOfSectionsInTableView:()'],['../interface_w_b_photo_details_view_controller.html#aabc02ab88910da37d384db7da8b78004',1,'WBPhotoDetailsViewController::numberOfSectionsInTableView:()'],['../interface_w_b_photo_timeline_view_controller.html#acb1b49be31ec0c6d040eaa177a35c743',1,'WBPhotoTimelineViewController::numberOfSectionsInTableView:()']]],
+  ['numberoftotalrows',['numberOfTotalRows',['../interface_w_b_photo_details_view_controller.html#a0864138fdd626da21ce43059c90f9905',1,'WBPhotoDetailsViewController']]],
+  ['numberpictureslabel',['numberPicturesLabel',['../interface_w_b_profile_header_view.html#af6f8294995799ac76470a862ea934f42',1,'WBProfileHeaderView']]],
+  ['numphotos',['numPhotos',['../interface_w_b_friend_cell.html#a5b891941e2e4e5a07d6ee45ae0736347',1,'WBFriendCell']]],
+  ['numphotoslabel',['numPhotosLabel',['../interface_w_b_friend_cell.html#a52d2eeb7e238928a18802e56f6df5e7f',1,'WBFriendCell']]]
 ];

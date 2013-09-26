@@ -1,7 +1,16 @@
 <map id="WBParseDataSource.m" name="WBParseDataSource.m">
-<area shape="rect" id="node2" href="$_w_b_parse_data_source_8h.html" title="WBParseDataSource.h" alt="" coords="21,80,177,107"/>
-<area shape="rect" id="node8" href="$_w_b_comment_8h.html" title="WBComment.h" alt="" coords="184,229,291,256"/>
-<area shape="rect" id="node3" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="10,155,133,181"/>
-<area shape="rect" id="node5" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="105,304,185,331"/>
-<area shape="rect" id="node6" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="21,229,107,256"/>
+<area shape="rect" id="node2" href="$_w_b_parse_data_source_8h.html" title="WBParseDataSource.h" alt="" coords="379,80,534,107"/>
+<area shape="rect" id="node8" href="$_w_b_comment_8h.html" title="WBComment.h" alt="" coords="800,155,907,181"/>
+<area shape="rect" id="node9" href="$_w_b_user_09_p_f_user_8h.html" title="WBUser+PFUser.h" alt="" coords="559,80,690,107"/>
+<area shape="rect" id="node10" href="$_p_f_user_09_w_b_user_8h.html" title="PFUser+WBUser.h" alt="" coords="1154,80,1285,107"/>
+<area shape="rect" id="node11" href="$_w_b_photo_09_p_f_object_8h.html" title="WBPhoto+PFObject.h" alt="" coords="205,80,354,107"/>
+<area shape="rect" id="node12" href="$_p_f_object_09_w_b_photo_8h.html" title="PFObject+WBPhoto.h" alt="" coords="31,80,181,107"/>
+<area shape="rect" id="node13" href="$_w_b_comment_09_p_f_object_8h.html" title="WBComment+PFObject.h" alt="" coords="959,80,1130,107"/>
+<area shape="rect" id="node14" href="$_p_f_object_09_w_b_comment_8h.html" title="PFObject+WBComment.h" alt="" coords="765,80,935,107"/>
+<area shape="rect" id="node15" href="$_w_b_account_manager_8h.html" title="WBAccountManager.h" alt="" coords="984,229,1134,256"/>
+<area shape="rect" id="node16" href="$_w_b_parse_constants_8h.html" title="WBParseConstants.h" alt="" coords="1174,304,1321,331"/>
+<area shape="rect" id="node17" href="$_w_b_activity_8h.html" title="WBActivity.h" alt="" coords="254,155,347,181"/>
+<area shape="rect" id="node3" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="473,155,595,181"/>
+<area shape="rect" id="node5" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="594,304,674,331"/>
+<area shape="rect" id="node6" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="405,229,491,256"/>
 </map>

@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -114,6 +114,8 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a6636a23fe3319dce1052eb53c9dd1853"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae28d727e5512f940c6ccf90447dd8d12"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_login_view_controller.html#ae28d727e5512f940c6ccf90447dd8d12">loginUser</a><code> [implementation]</code></td></tr>
 <tr class="separator:ae28d727e5512f940c6ccf90447dd8d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5071478a756b6073f9c14a045e5a5c9e"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_login_view_controller.html#a5071478a756b6073f9c14a045e5a5c9e">loginWithFacebookAction:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a5071478a756b6073f9c14a045e5a5c9e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1addc414620f58d0500931cb56b3889a"><td class="memItemLeft" align="right" valign="top">(IBAction)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_login_view_controller.html#a1addc414620f58d0500931cb56b3889a">registerAction:</a><code> [implementation]</code></td></tr>
 <tr class="separator:a1addc414620f58d0500931cb56b3889a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
@@ -158,7 +160,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_login_view_controller_ae28d727e5512f940c6ccf90447dd8d12_cgraph.png" border="0" usemap="#interface_w_b_login_view_controller_ae28d727e5512f940c6ccf90447dd8d12_cgraph" alt=""/></div>
 <map name="interface_w_b_login_view_controller_ae28d727e5512f940c6ccf90447dd8d12_cgraph" id="interface_w_b_login_view_controller_ae28d727e5512f940c6ccf90447dd8d12_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="217,29,434,56"/><area shape="rect" id="node3" href="interface_w_b_data_source.html#ab1466f4a4965134ae95dac14df935098" title="&#45;[WBDataSource loginWith\lUsername:andPassWord:success\l:failure:]" alt="" coords="217,80,433,136"/></map>
+<area shape="rect" id="node2" href="interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6" title="+[WBAccountManager\l sharedInstance]" alt="" coords="237,5,387,46"/><area shape="rect" id="node3" href="interface_w_b_account_manager.html#a8f3b37aff7d5aa18885539c458e0f29a" title="&#45;[WBAccountManager\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="217,71,407,127"/></map>
 </div>
 </p>
 
@@ -168,6 +170,41 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="interface_w_b_login_view_controller_ae28d727e5512f940c6ccf90447dd8d12_icgraph.png" border="0" usemap="#interface_w_b_login_view_controller_ae28d727e5512f940c6ccf90447dd8d12_icgraph" alt=""/></div>
 <map name="interface_w_b_login_view_controller_ae28d727e5512f940c6ccf90447dd8d12_icgraph" id="interface_w_b_login_view_controller_ae28d727e5512f940c6ccf90447dd8d12_icgraph">
 <area shape="rect" id="node2" href="interface_w_b_login_view_controller.html#a2ff463f857d74787726ee71fdb1380e9" title="&#45;[WBLoginViewController\l textFieldShouldReturn:]" alt="" coords="217,5,378,46"/><area shape="rect" id="node3" href="interface_w_b_login_view_controller.html#a6636a23fe3319dce1052eb53c9dd1853" title="&#45;[WBLoginViewController\l validFieldsAction:]" alt="" coords="217,70,378,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5071478a756b6073f9c14a045e5a5c9e"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (IBAction) loginWithFacebookAction: </td>
+          <td></td>
+          <td class="paramtype">(id)&#160;</td>
+          <td class="paramname"><em>sender</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_login_view_controller_8m_source.html#l00056">56</a> of file <a class="el" href="_w_b_login_view_controller_8m_source.html">WBLoginViewController.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_login_view_controller_a5071478a756b6073f9c14a045e5a5c9e_cgraph.png" border="0" usemap="#interface_w_b_login_view_controller_a5071478a756b6073f9c14a045e5a5c9e_cgraph" alt=""/></div>
+<map name="interface_w_b_login_view_controller_a5071478a756b6073f9c14a045e5a5c9e_cgraph" id="interface_w_b_login_view_controller_a5071478a756b6073f9c14a045e5a5c9e_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6" title="+[WBAccountManager\l sharedInstance]" alt="" coords="238,5,389,46"/><area shape="rect" id="node3" href="interface_w_b_account_manager.html#ae27e4adabb161917eb10244ad8f5b51b" title="&#45;[WBAccountManager\l loginWithFacebook:failure:]" alt="" coords="227,70,400,111"/></map>
 </div>
 </p>
 
@@ -195,7 +232,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_login_view_controller_8m_source.html#l00056">56</a> of file <a class="el" href="_w_b_login_view_controller_8m_source.html">WBLoginViewController.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_login_view_controller_8m_source.html#l00068">68</a> of file <a class="el" href="_w_b_login_view_controller_8m_source.html">WBLoginViewController.m</a>.</p>
 
 </div>
 </div>
@@ -228,7 +265,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_login_view_controller_a2ff463f857d74787726ee71fdb1380e9_cgraph.png" border="0" usemap="#interface_w_b_login_view_controller_a2ff463f857d74787726ee71fdb1380e9_cgraph" alt=""/></div>
 <map name="interface_w_b_login_view_controller_a2ff463f857d74787726ee71fdb1380e9_cgraph" id="interface_w_b_login_view_controller_a2ff463f857d74787726ee71fdb1380e9_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_login_view_controller.html#ae28d727e5512f940c6ccf90447dd8d12" title="&#45;[WBLoginViewController\l loginUser]" alt="" coords="217,55,378,97"/><area shape="rect" id="node3" href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="427,29,645,56"/><area shape="rect" id="node4" href="interface_w_b_data_source.html#ab1466f4a4965134ae95dac14df935098" title="&#45;[WBDataSource loginWith\lUsername:andPassWord:success\l:failure:]" alt="" coords="428,80,644,136"/></map>
+<area shape="rect" id="node2" href="interface_w_b_login_view_controller.html#ae28d727e5512f940c6ccf90447dd8d12" title="&#45;[WBLoginViewController\l loginUser]" alt="" coords="217,42,378,83"/><area shape="rect" id="node3" href="interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6" title="+[WBAccountManager\l sharedInstance]" alt="" coords="447,5,598,46"/><area shape="rect" id="node4" href="interface_w_b_account_manager.html#a8f3b37aff7d5aa18885539c458e0f29a" title="&#45;[WBAccountManager\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="427,71,618,127"/></map>
 </div>
 </p>
 
@@ -263,7 +300,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_login_view_controller_a6636a23fe3319dce1052eb53c9dd1853_cgraph.png" border="0" usemap="#interface_w_b_login_view_controller_a6636a23fe3319dce1052eb53c9dd1853_cgraph" alt=""/></div>
 <map name="interface_w_b_login_view_controller_a6636a23fe3319dce1052eb53c9dd1853_cgraph" id="interface_w_b_login_view_controller_a6636a23fe3319dce1052eb53c9dd1853_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_login_view_controller.html#ae28d727e5512f940c6ccf90447dd8d12" title="&#45;[WBLoginViewController\l loginUser]" alt="" coords="217,55,378,97"/><area shape="rect" id="node3" href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="427,29,645,56"/><area shape="rect" id="node4" href="interface_w_b_data_source.html#ab1466f4a4965134ae95dac14df935098" title="&#45;[WBDataSource loginWith\lUsername:andPassWord:success\l:failure:]" alt="" coords="428,80,644,136"/></map>
+<area shape="rect" id="node2" href="interface_w_b_login_view_controller.html#ae28d727e5512f940c6ccf90447dd8d12" title="&#45;[WBLoginViewController\l loginUser]" alt="" coords="217,42,378,83"/><area shape="rect" id="node3" href="interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6" title="+[WBAccountManager\l sharedInstance]" alt="" coords="447,5,598,46"/><area shape="rect" id="node4" href="interface_w_b_account_manager.html#a8f3b37aff7d5aa18885539c458e0f29a" title="&#45;[WBAccountManager\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="427,71,618,127"/></map>
 </div>
 </p>
 
@@ -368,7 +405,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 17 2013 18:24:21 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 26 2013 15:01:43 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

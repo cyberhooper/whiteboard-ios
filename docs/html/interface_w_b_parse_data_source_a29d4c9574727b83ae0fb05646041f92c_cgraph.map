@@ -1,5 +1,4 @@
 <map id="&#45;[WBParseDataSource addComment:onPhoto:success:failure:]" name="&#45;[WBParseDataSource addComment:onPhoto:success:failure:]">
-<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="209,13,362,54"/>
-<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="411,13,565,54"/>
-<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="614,13,767,54"/>
+<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="237,5,390,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#af150b776406a4b15b533c00023716afd" title="&#45;[WBParseDataSource\l createCommentActivityForPhoto:]" alt="" coords="209,70,418,111"/>
 </map>

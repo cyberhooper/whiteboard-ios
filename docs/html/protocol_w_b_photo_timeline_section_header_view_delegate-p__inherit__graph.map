@@ -1,4 +1,6 @@
 <map id="&lt;WBPhotoTimelineSectionHeaderViewDelegate&gt;" name="&lt;WBPhotoTimelineSectionHeaderViewDelegate&gt;">
-<area shape="rect" id="node3" href="$interface_w_b_photo_timeline_view_controller.html" title="WBPhotoTimelineViewController" alt="" coords="10,171,211,197"/>
-<area shape="rect" id="node4" href="$interface_main_feed_view_controller.html" title="MainFeedViewController" alt="" coords="31,245,189,272"/>
+<area shape="rect" id="node3" href="$interface_w_b_photo_details_view_controller.html" title="WBPhotoDetailsViewController" alt="" coords="5,171,200,197"/>
+<area shape="rect" id="node4" href="$interface_w_b_photo_timeline_view_controller.html" title="WBPhotoTimelineViewController" alt="" coords="225,171,425,197"/>
+<area shape="rect" id="node5" href="$interface_main_feed_view_controller.html" title="MainFeedViewController" alt="" coords="161,245,319,272"/>
+<area shape="rect" id="node6" href="$interface_profile_view_controller.html" title="ProfileViewController" alt="" coords="343,245,477,272"/>
 </map>

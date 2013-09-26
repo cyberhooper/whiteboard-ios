@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,110 +93,114 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  WBSignupViewController.m</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  whiteboard</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Thibault Gauche on 9/17/13.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by ttg-fueled on 9/17/13.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2013 Fueled. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_w_b_signup_view_controller_8h.html">WBSignupViewController.h</a>&quot;</span></div>
 <div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_w_b_data_source_8h.html">WBDataSource.h</a>&quot;</span></div>
-<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_email_validator_8h.html">EmailValidator.h</a>&quot;</span></div>
-<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div>
-<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_w_b_signup_view_controller.html">WBSignupViewController</a> () &lt;UITextFieldDelegate&gt;</div>
-<div class="line"><a name="l00014"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">   14</a></span>&#160;<span class="keyword">@property</span> (weak, nonatomic) IBOutlet UITextField *userNameTextField;</div>
-<div class="line"><a name="l00015"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#abd8fcb410e59223970d79564bac9825e">   15</a></span>&#160;<span class="keyword">@property</span> (weak, nonatomic) IBOutlet UITextField *emailTextField;</div>
-<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a607507eaa2f736c36ecd9884522cc6a8">   16</a></span>&#160;<span class="keyword">@property</span> (weak, nonatomic) IBOutlet UITextField *passwordTextField;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">@end</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_w_b_account_manager_8h.html">WBAccountManager.h</a>&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_email_validator_8h.html">EmailValidator.h</a>&quot;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#import &quot;<a class="code" href="_keyboard_animation_view_8h.html">KeyboardAnimationView.h</a>&quot;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">@interface </span><a class="code" href="interface_w_b_signup_view_controller.html">WBSignupViewController</a> () &lt;UITextFieldDelegate&gt;</div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">   16</a></span>&#160;<span class="keyword">@property</span> (weak, nonatomic) IBOutlet UITextField *userNameTextField;</div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#abd8fcb410e59223970d79564bac9825e">   17</a></span>&#160;<span class="keyword">@property</span> (weak, nonatomic) IBOutlet UITextField *emailTextField;</div>
+<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a607507eaa2f736c36ecd9884522cc6a8">   18</a></span>&#160;<span class="keyword">@property</span> (weak, nonatomic) IBOutlet UITextField *passwordTextField;</div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">@implementation </span><a class="code" href="interface_w_b_signup_view_controller.html">WBSignupViewController</a></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">@end</span></div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
-<div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a2e85ef09b63f50084dd0a1d9df2bbadb">   22</a></span>&#160;- (void)<a class="code" href="interface_w_b_signup_view_controller.html#a2e85ef09b63f50084dd0a1d9df2bbadb">viewDidLoad</a> {</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  [<span class="keyword">super</span> viewDidLoad];</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  [<span class="keyword">self</span>.userNameTextField setDelegate:self];</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  [<span class="keyword">self</span>.emailTextField setDelegate:self];</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  [<span class="keyword">self</span>.passwordTextField setDelegate:self];</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;}</div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#abd427cd7bbde41e7aa500958b44ca0b5">   29</a></span>&#160;- (BOOL)textFieldShouldReturn:(UITextField *)textField {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">if</span> (textField == <span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">userNameTextField</a>) {</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (!(<span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">userNameTextField</a>.text.length &gt; 0)) {</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      [<span class="keyword">self</span>.userNameTextField setBackgroundColor:[UIColor redColor]];</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    }</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    [<span class="keyword">self</span>.emailTextField becomeFirstResponder];</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (textField == <span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#abd8fcb410e59223970d79564bac9825e">emailTextField</a>) {</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <a class="code" href="interface_email_validator.html">EmailValidator</a> *validator = [[<a class="code" href="interface_email_validator.html">EmailValidator</a> alloc]init];</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">if</span> (![validator isValid:<span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#abd8fcb410e59223970d79564bac9825e">emailTextField</a>.text]) {</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      [<span class="keyword">self</span>.emailTextField setBackgroundColor:[UIColor redColor]];</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    }</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    [<span class="keyword">self</span>.passwordTextField becomeFirstResponder];</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">if</span> (!(<span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#a607507eaa2f736c36ecd9884522cc6a8">passwordTextField</a>.text.length &gt;= 6)) {</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      [<span class="keyword">self</span>.passwordTextField setBackgroundColor:[UIColor redColor]];</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    [<span class="keyword">self</span>.view endEditing:YES];</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  <span class="keywordflow">return</span> YES;</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;}</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#af13a382d9c0ce1bb1cecf7093a26ad6a">   52</a></span>&#160;- (void)textFieldDidBeginEditing:(UITextField *)textField {</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  [textField setBackgroundColor:[UIColor whiteColor]];</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a4c80f5758b679881a529a4b2a9c2bd3c">   56</a></span>&#160;- (IBAction)loginAction:(<span class="keywordtype">id</span>)sender {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  [<span class="keyword">self</span>.navigationController popViewControllerAnimated:YES];</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;}</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a93fb05469bd9e5887f6008bb68c5badb">   60</a></span>&#160;- (IBAction)signupAction:(<span class="keywordtype">id</span>)sender {</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  <a class="code" href="interface_email_validator.html">EmailValidator</a> *validator = [[<a class="code" href="interface_email_validator.html">EmailValidator</a> alloc]init];</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">userNameTextField</a>.text.length &gt; 0 &amp;&amp;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      <span class="keyword">self</span>.passwordTextField.text.length &gt;= 6 &amp;&amp;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      [validator isValid:<span class="keyword">self</span>.emailTextField.text]) {</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    NSDictionary *usersInfos = [[NSDictionary alloc]initWithObjects:@[<span class="keyword">self</span>.userNameTextField.text,</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                                                                      self.emailTextField.text,</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                      self.passwordTextField.text]</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                            forKeys:@[@&quot;userName&quot;,</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                                      @&quot;email&quot;,</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                                      @&quot;password&quot;]];</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    [[<a class="code" href="interface_w_b_data_source.html">WBDataSource</a> <a class="code" href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb">sharedInstance</a>] <a class="code" href="interface_w_b_data_source.html#a1b3d7f47062635a61374e60a5c38e41c">signupWithInfo</a>:usersInfos <a class="code" href="interface_w_b_data_source.html#a1b3d7f47062635a61374e60a5c38e41c">success</a>:^(WBUser *user) {</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;      [<span class="keyword">self</span>.navigationController dismissViewControllerAnimated:YES</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                    completion:nil];</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    } <a class="code" href="interface_w_b_data_source.html#a1b3d7f47062635a61374e60a5c38e41c">failure</a>:^(NSError *error) {</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      [[[UIAlertView alloc]initWithTitle:NSLocalizedString(@&quot;Error&quot;, @&quot;Error&quot;)</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                 message:NSLocalizedString(@&quot;try later&quot;, @&quot;try later&quot;)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                                delegate:nil</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                       cancelButtonTitle:nil</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                       otherButtonTitles:NSLocalizedString(@&quot;Ok&quot;, @&quot;Ok&quot;), nil]show];</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }];</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  <span class="keywordflow">else</span> {</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    [[[UIAlertView alloc]initWithTitle:NSLocalizedString(@&quot;Wrong creditentials&quot;, @&quot;Wrong creditentials&quot;)</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                               message:NSLocalizedString(@&quot;username not empty, email valid and 6 characters for the password&quot;, @&quot;username not empty, email valid and 6 characters for the password&quot;)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                              delegate:nil</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                     cancelButtonTitle:nil</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                     otherButtonTitles:NSLocalizedString(@&quot;Ok&quot;, @&quot;Ok&quot;), nil]show];</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">@end</span></div>
-<div class="ttc" id="interface_w_b_data_source_html"><div class="ttname"><a href="interface_w_b_data_source.html">WBDataSource</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8h_source.html#l00017">WBDataSource.h:17</a></div></div>
-<div class="ttc" id="interface_w_b_data_source_html_adcfb7daf5420b88632fc9ad53b1cf5cb"><div class="ttname"><a href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb">+[WBDataSource sharedInstance]</a></div><div class="ttdeci">WBDataSource * sharedInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00015">WBDataSource.m:15</a></div></div>
-<div class="ttc" id="interface_w_b_signup_view_controller_html_a6b4831b04d715cf056e21721725b0f13"><div class="ttname"><a href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">WBSignupViewController::userNameTextField</a></div><div class="ttdeci">IBOutlet UITextField * userNameTextField</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_signup_view_controller_8m_source.html#l00014">WBSignupViewController.m:14</a></div></div>
-<div class="ttc" id="interface_w_b_signup_view_controller_html_a607507eaa2f736c36ecd9884522cc6a8"><div class="ttname"><a href="interface_w_b_signup_view_controller.html#a607507eaa2f736c36ecd9884522cc6a8">WBSignupViewController::passwordTextField</a></div><div class="ttdeci">IBOutlet UITextField * passwordTextField</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_signup_view_controller_8m_source.html#l00016">WBSignupViewController.m:16</a></div></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">@implementation </span><a class="code" href="interface_w_b_signup_view_controller.html">WBSignupViewController</a></div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
+<div class="line"><a name="l00024"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a2e85ef09b63f50084dd0a1d9df2bbadb">   24</a></span>&#160;- (void)<a class="code" href="interface_w_b_signup_view_controller.html#a2e85ef09b63f50084dd0a1d9df2bbadb">viewDidLoad</a> {</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  [<span class="keyword">super</span> viewDidLoad];</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;  [<span class="keyword">self</span>.userNameTextField setDelegate:self];</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  [<span class="keyword">self</span>.emailTextField setDelegate:self];</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  [<span class="keyword">self</span>.passwordTextField setDelegate:self];</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;}</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#abd427cd7bbde41e7aa500958b44ca0b5">   31</a></span>&#160;- (BOOL)textFieldShouldReturn:(UITextField *)textField {</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  <span class="keywordflow">if</span> (textField == <span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">userNameTextField</a>) {</div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordflow">if</span> (!(<span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">userNameTextField</a>.text.length &gt; 0)) {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;      [<span class="keyword">self</span>.userNameTextField setBackgroundColor:[UIColor redColor]];</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    [<span class="keyword">self</span>.emailTextField becomeFirstResponder];</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;  }</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  <span class="keywordflow">else</span> <span class="keywordflow">if</span> (textField == <span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#abd8fcb410e59223970d79564bac9825e">emailTextField</a>) {</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="interface_email_validator.html">EmailValidator</a> *validator = [[<a class="code" href="interface_email_validator.html">EmailValidator</a> alloc]init];</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keywordflow">if</span> (![validator isValid:<span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#abd8fcb410e59223970d79564bac9825e">emailTextField</a>.text]) {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      [<span class="keyword">self</span>.emailTextField setBackgroundColor:[UIColor redColor]];</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    }</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    [<span class="keyword">self</span>.passwordTextField becomeFirstResponder];</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;  }</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    <span class="keywordflow">if</span> (!(<span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#a607507eaa2f736c36ecd9884522cc6a8">passwordTextField</a>.text.length &gt;= 6)) {</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      [<span class="keyword">self</span>.passwordTextField setBackgroundColor:[UIColor redColor]];</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    }</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    [<span class="keyword">self</span>.view endEditing:YES];</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  <span class="keywordflow">return</span> YES;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;}</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#af13a382d9c0ce1bb1cecf7093a26ad6a">   54</a></span>&#160;- (void)textFieldDidBeginEditing:(UITextField *)textField {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  [textField setBackgroundColor:[UIColor whiteColor]];</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;}</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a4c80f5758b679881a529a4b2a9c2bd3c">   58</a></span>&#160;- (IBAction)loginAction:(<span class="keywordtype">id</span>)sender {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  [<span class="keyword">self</span>.navigationController popViewControllerAnimated:YES];</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;}</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
+<div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="interface_w_b_signup_view_controller.html#a93fb05469bd9e5887f6008bb68c5badb">   62</a></span>&#160;- (IBAction)signupAction:(<span class="keywordtype">id</span>)sender {</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  <a class="code" href="interface_email_validator.html">EmailValidator</a> *validator = [[<a class="code" href="interface_email_validator.html">EmailValidator</a> alloc]init];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  <span class="keywordflow">if</span> (<span class="keyword">self</span>.<a class="code" href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">userNameTextField</a>.text.length &gt; 0 &amp;&amp;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;      <span class="keyword">self</span>.passwordTextField.text.length &gt;= 6 &amp;&amp;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      [validator isValid:<span class="keyword">self</span>.emailTextField.text]) {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    NSDictionary *usersInfos = [[NSDictionary alloc]initWithObjects:@[<span class="keyword">self</span>.userNameTextField.text,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                                      self.emailTextField.text,</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                                                                      self.passwordTextField.text]</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                                                            forKeys:@[@&quot;userName&quot;,</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                                                      @&quot;email&quot;,</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                                                      @&quot;password&quot;]];</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    [[<a class="code" href="interface_w_b_account_manager.html">WBAccountManager</a> <a class="code" href="interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6">sharedInstance</a>] <a class="code" href="interface_w_b_account_manager.html#ab770ea3a7610126e34986cbcf12f0fea">signupWithInfo</a>:usersInfos <a class="code" href="interface_w_b_account_manager.html#ab770ea3a7610126e34986cbcf12f0fea">success</a>:^(WBUser *user) {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      [<span class="keyword">self</span>.navigationController dismissViewControllerAnimated:YES</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                    completion:nil];</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    } <a class="code" href="interface_w_b_account_manager.html#ab770ea3a7610126e34986cbcf12f0fea">failure</a>:^(NSError *error) {</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      [[[UIAlertView alloc]initWithTitle:NSLocalizedString(@&quot;Error&quot;, @&quot;Error&quot;)</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                 message:NSLocalizedString(@&quot;try later&quot;, @&quot;try later&quot;)</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                delegate:nil</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                       cancelButtonTitle:nil</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                       otherButtonTitles:NSLocalizedString(@&quot;Ok&quot;, @&quot;Ok&quot;), nil]show];</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }];</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  <span class="keywordflow">else</span> {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    [[[UIAlertView alloc]initWithTitle:NSLocalizedString(@&quot;Wrong creditentials&quot;, @&quot;Wrong creditentials&quot;)</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                               message:NSLocalizedString(@&quot;username not empty, email valid and 6 characters for the password&quot;, @&quot;username not empty, email valid and 6 characters for the password&quot;)</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                              delegate:nil</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                     cancelButtonTitle:nil</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                     otherButtonTitles:NSLocalizedString(@&quot;Ok&quot;, @&quot;Ok&quot;), nil]show];</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;  }</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;}</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="keyword">@end</span></div>
+<div class="ttc" id="interface_w_b_account_manager_html_a96545ecf6e96c7f02a9d1eae5b98baa6"><div class="ttname"><a href="interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6">+[WBAccountManager sharedInstance]</a></div><div class="ttdeci">WBAccountManager * sharedInstance()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_account_manager_8m_source.html#l00015">WBAccountManager.m:15</a></div></div>
+<div class="ttc" id="interface_w_b_signup_view_controller_html_a6b4831b04d715cf056e21721725b0f13"><div class="ttname"><a href="interface_w_b_signup_view_controller.html#a6b4831b04d715cf056e21721725b0f13">WBSignupViewController::userNameTextField</a></div><div class="ttdeci">IBOutlet UITextField * userNameTextField</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_signup_view_controller_8m_source.html#l00016">WBSignupViewController.m:16</a></div></div>
+<div class="ttc" id="interface_w_b_signup_view_controller_html_a607507eaa2f736c36ecd9884522cc6a8"><div class="ttname"><a href="interface_w_b_signup_view_controller.html#a607507eaa2f736c36ecd9884522cc6a8">WBSignupViewController::passwordTextField</a></div><div class="ttdeci">IBOutlet UITextField * passwordTextField</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_signup_view_controller_8m_source.html#l00018">WBSignupViewController.m:18</a></div></div>
+<div class="ttc" id="_w_b_account_manager_8h_html"><div class="ttname"><a href="_w_b_account_manager_8h.html">WBAccountManager.h</a></div></div>
 <div class="ttc" id="interface_w_b_signup_view_controller_html"><div class="ttname"><a href="interface_w_b_signup_view_controller.html">WBSignupViewController</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_signup_view_controller_8h_source.html#l00011">WBSignupViewController.h:11</a></div></div>
-<div class="ttc" id="interface_w_b_signup_view_controller_html_a2e85ef09b63f50084dd0a1d9df2bbadb"><div class="ttname"><a href="interface_w_b_signup_view_controller.html#a2e85ef09b63f50084dd0a1d9df2bbadb">-[WBSignupViewController viewDidLoad]</a></div><div class="ttdeci">void viewDidLoad()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_signup_view_controller_8m_source.html#l00022">WBSignupViewController.m:22</a></div></div>
+<div class="ttc" id="interface_w_b_signup_view_controller_html_a2e85ef09b63f50084dd0a1d9df2bbadb"><div class="ttname"><a href="interface_w_b_signup_view_controller.html#a2e85ef09b63f50084dd0a1d9df2bbadb">-[WBSignupViewController viewDidLoad]</a></div><div class="ttdeci">void viewDidLoad()</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_signup_view_controller_8m_source.html#l00024">WBSignupViewController.m:24</a></div></div>
 <div class="ttc" id="_w_b_data_source_8h_html"><div class="ttname"><a href="_w_b_data_source_8h.html">WBDataSource.h</a></div></div>
+<div class="ttc" id="interface_w_b_account_manager_html_ab770ea3a7610126e34986cbcf12f0fea"><div class="ttname"><a href="interface_w_b_account_manager.html#ab770ea3a7610126e34986cbcf12f0fea">-[WBAccountManager signupWithInfo:success:failure:]</a></div><div class="ttdeci">void signupWithInfo:success:failure:(NSDictionary *userInfo,[success] WBUser *user success,[failure] NSError *error failure)</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_account_manager_8m_source.html#l00059">WBAccountManager.m:59</a></div></div>
 <div class="ttc" id="interface_email_validator_html"><div class="ttname"><a href="interface_email_validator.html">EmailValidator</a></div><div class="ttdef"><b>Definition:</b> <a href="_email_validator_8h_source.html#l00011">EmailValidator.h:11</a></div></div>
 <div class="ttc" id="_w_b_signup_view_controller_8h_html"><div class="ttname"><a href="_w_b_signup_view_controller_8h.html">WBSignupViewController.h</a></div></div>
 <div class="ttc" id="_email_validator_8h_html"><div class="ttname"><a href="_email_validator_8h.html">EmailValidator.h</a></div></div>
-<div class="ttc" id="interface_w_b_data_source_html_a1b3d7f47062635a61374e60a5c38e41c"><div class="ttname"><a href="interface_w_b_data_source.html#a1b3d7f47062635a61374e60a5c38e41c">-[WBDataSource signupWithInfo:success:failure:]</a></div><div class="ttdeci">void signupWithInfo:success:failure:(NSDictionary *userInfo,[success] WBUser *user success,[failure] NSError *error failure)</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_data_source_8m_source.html#l00041">WBDataSource.m:41</a></div></div>
-<div class="ttc" id="interface_w_b_signup_view_controller_html_abd8fcb410e59223970d79564bac9825e"><div class="ttname"><a href="interface_w_b_signup_view_controller.html#abd8fcb410e59223970d79564bac9825e">WBSignupViewController::emailTextField</a></div><div class="ttdeci">IBOutlet UITextField * emailTextField</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_signup_view_controller_8m_source.html#l00015">WBSignupViewController.m:15</a></div></div>
+<div class="ttc" id="_keyboard_animation_view_8h_html"><div class="ttname"><a href="_keyboard_animation_view_8h.html">KeyboardAnimationView.h</a></div></div>
+<div class="ttc" id="interface_w_b_account_manager_html"><div class="ttname"><a href="interface_w_b_account_manager.html">WBAccountManager</a></div><div class="ttdef"><b>Definition:</b> <a href="_w_b_account_manager_8h_source.html#l00014">WBAccountManager.h:14</a></div></div>
+<div class="ttc" id="interface_w_b_signup_view_controller_html_abd8fcb410e59223970d79564bac9825e"><div class="ttname"><a href="interface_w_b_signup_view_controller.html#abd8fcb410e59223970d79564bac9825e">WBSignupViewController::emailTextField</a></div><div class="ttdeci">IBOutlet UITextField * emailTextField</div><div class="ttdef"><b>Definition:</b> <a href="_w_b_signup_view_controller_8m_source.html#l00017">WBSignupViewController.m:17</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 17 2013 18:24:20 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 26 2013 15:01:41 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

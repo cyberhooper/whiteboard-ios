@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -117,53 +117,87 @@ Instance Methods</h2></td></tr>
 <tr class="separator:aab71b1d2f4d6356f39ca1a435b8c20f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af5fc2965bca8343368f88003d9ac6b76"><td class="memItemLeft" align="right" valign="top">(NSDictionary *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#af5fc2965bca8343368f88003d9ac6b76">configurationDictionary</a><code> [implementation]</code></td></tr>
 <tr class="separator:af5fc2965bca8343368f88003d9ac6b76"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa632fee89c29f98a990ea71927970896"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896">loginWithUsername:andPassWord:success:failure:</a><code> [implementation]</code></td></tr>
-<tr class="separator:aa632fee89c29f98a990ea71927970896"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a70a406f3e33e9008a5529c3ea15bbfcb"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a70a406f3e33e9008a5529c3ea15bbfcb">logoutUser:success:failure:</a><code> [implementation]</code></td></tr>
-<tr class="separator:a70a406f3e33e9008a5529c3ea15bbfcb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3c835bc612c784e69c8ca48cde429537"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a3c835bc612c784e69c8ca48cde429537">signupWithInfo:success:failure:</a><code> [implementation]</code></td></tr>
-<tr class="separator:a3c835bc612c784e69c8ca48cde429537"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89c1e6420798b87b0175b2bf212c0da2"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2">currentUser</a><code> [implementation]</code></td></tr>
 <tr class="separator:a89c1e6420798b87b0175b2bf212c0da2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a14f503e59ea629528b4d869e2cb6ceb0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a14f503e59ea629528b4d869e2cb6ceb0">deleteUserAccount:success:failure:</a><code> [implementation]</code></td></tr>
-<tr class="separator:a14f503e59ea629528b4d869e2cb6ceb0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa2d8f83954b2f3167451f132a429e22e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#aa2d8f83954b2f3167451f132a429e22e">resetPasswordForUser:success:failure:</a><code> [implementation]</code></td></tr>
-<tr class="separator:aa2d8f83954b2f3167451f132a429e22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af7cbee84d7b09fbd039d44a851d3fb5b"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#af7cbee84d7b09fbd039d44a851d3fb5b">saveUser:success:failure:</a><code> [implementation]</code></td></tr>
 <tr class="separator:af7cbee84d7b09fbd039d44a851d3fb5b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad657d6694a28c454b5ef9b2cfd063785"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785">mapCurrentWBUser:</a><code> [implementation]</code></td></tr>
-<tr class="separator:ad657d6694a28c454b5ef9b2cfd063785"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b837ead2a4de10689aff815c337008f"><td class="memItemLeft" align="right" valign="top">(PFUser *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a6b837ead2a4de10689aff815c337008f">mapPFUser:</a><code> [implementation]</code></td></tr>
-<tr class="separator:a6b837ead2a4de10689aff815c337008f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a872f38d709b4689e52e92e9cbbea29ee"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee">createUser</a><code> [implementation]</code></td></tr>
 <tr class="separator:a872f38d709b4689e52e92e9cbbea29ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a346f4f0b9220ef3db661357b6d8a0766"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_w_b_photo.html">WBPhoto</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a346f4f0b9220ef3db661357b6d8a0766">createPhoto</a><code> [implementation]</code></td></tr>
 <tr class="separator:a346f4f0b9220ef3db661357b6d8a0766"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3ec936ebdc4fd2a14a9a273eb1f33d0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#af3ec936ebdc4fd2a14a9a273eb1f33d0">uploadPhoto:success:failure:progress:</a><code> [implementation]</code></td></tr>
 <tr class="separator:af3ec936ebdc4fd2a14a9a273eb1f33d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a835045e83234513c1f58903299618a3d"><td class="memItemLeft" align="right" valign="top">(PFACL *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a835045e83234513c1f58903299618a3d">photoACL</a><code> [implementation]</code></td></tr>
+<tr class="separator:a835045e83234513c1f58903299618a3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a70cec53683cfc407b3d499450cde9b4c"><td class="memItemLeft" align="right" valign="top">(PFObject *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a70cec53683cfc407b3d499450cde9b4c">parsePhotoWithImageFile:</a><code> [implementation]</code></td></tr>
 <tr class="separator:a70cec53683cfc407b3d499450cde9b4c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abb2644696621cf533e6464d5c4ed7fdc"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc">latestPhotos:failure:</a><code> [implementation]</code></td></tr>
 <tr class="separator:abb2644696621cf533e6464d5c4ed7fdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f01da6df5624b0ad44d26e1c9955920"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a3f01da6df5624b0ad44d26e1c9955920">likePhoto:withUser:success:failure:</a><code> [implementation]</code></td></tr>
-<tr class="separator:a3f01da6df5624b0ad44d26e1c9955920"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4332b23ddd0d539c4c4fa599afaab7cf"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a4332b23ddd0d539c4c4fa599afaab7cf">latestPhotosWithOffset:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a4332b23ddd0d539c4c4fa599afaab7cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3db7f3649a0c14cc72d64cf8a2e63686"><td class="memItemLeft" align="right" valign="top">(PFQuery *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a3db7f3649a0c14cc72d64cf8a2e63686">queryForcurrentUserPhotos</a><code> [implementation]</code></td></tr>
+<tr class="separator:a3db7f3649a0c14cc72d64cf8a2e63686"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac470127e3944c6b0c80a164f302aa88b"><td class="memItemLeft" align="right" valign="top">(PFQuery *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#ac470127e3944c6b0c80a164f302aa88b">queryForCurentUserFriendPhotos</a><code> [implementation]</code></td></tr>
+<tr class="separator:ac470127e3944c6b0c80a164f302aa88b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41fe794adfbe6d27faf99ae5f7a2ddd4"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a41fe794adfbe6d27faf99ae5f7a2ddd4">photosForUser:withOffset:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a41fe794adfbe6d27faf99ae5f7a2ddd4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af2431a3c693720d3bd1beae83531fe13"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#af2431a3c693720d3bd1beae83531fe13">likePhoto:withUser:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:af2431a3c693720d3bd1beae83531fe13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ebaec2e1488899907515280f1478bd2"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a8ebaec2e1488899907515280f1478bd2">unlikePhoto:withUser:success:failure:</a><code> [implementation]</code></td></tr>
 <tr class="separator:a8ebaec2e1488899907515280f1478bd2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67fc87c89185020661577f7b3553e7f0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a67fc87c89185020661577f7b3553e7f0">fetchPhoto:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a67fc87c89185020661577f7b3553e7f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5bf697ccf169cee6652f4e4597ee56c"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c">wbPhotosFromParsePhotos:</a><code> [implementation]</code></td></tr>
 <tr class="separator:ad5bf697ccf169cee6652f4e4597ee56c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad7aa99f2f30692296b32ba74d2a11e0"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_w_b_photo.html">WBPhoto</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#aad7aa99f2f30692296b32ba74d2a11e0">wbPhotoFromParsePhoto:</a><code> [implementation]</code></td></tr>
-<tr class="separator:aad7aa99f2f30692296b32ba74d2a11e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9c134bb913cec5177b775fb73fbc829e"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a9c134bb913cec5177b775fb73fbc829e">wbUserFromParseUser:</a><code> [implementation]</code></td></tr>
-<tr class="separator:a9c134bb913cec5177b775fb73fbc829e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5677ddbbca510146e7b28bc1af65e995"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a5677ddbbca510146e7b28bc1af65e995">wbUsersFromParseUsers:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a5677ddbbca510146e7b28bc1af65e995"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa7edcae34789f401fcba1b55159f060e"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#aa7edcae34789f401fcba1b55159f060e">deletePhoto:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:aa7edcae34789f401fcba1b55159f060e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a29d4c9574727b83ae0fb05646041f92c"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c">addComment:onPhoto:success:failure:</a><code> [implementation]</code></td></tr>
 <tr class="separator:a29d4c9574727b83ae0fb05646041f92c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e2cf57c97ba02f7491e995f767d304"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a70e2cf57c97ba02f7491e995f767d304">suggestedUsers:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a70e2cf57c97ba02f7491e995f767d304"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d897439ca8b96f1c7af80a8bc2a5342"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a2d897439ca8b96f1c7af80a8bc2a5342">tagUsersAsFollowed:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a2d897439ca8b96f1c7af80a8bc2a5342"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8f7be63ed60c874e7bbf22475ac6892"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892">toggleFollowForUser:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:aa8f7be63ed60c874e7bbf22475ac6892"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6509410d0c5155c5e19aa3fe2a182ba6"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a6509410d0c5155c5e19aa3fe2a182ba6">followUser:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a6509410d0c5155c5e19aa3fe2a182ba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae506035597e9305ca3f7d232a8b750b0"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#ae506035597e9305ca3f7d232a8b750b0">followUsers:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:ae506035597e9305ca3f7d232a8b750b0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac93de296286b2cbd750c3035c4852c3f"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#ac93de296286b2cbd750c3035c4852c3f">unFollowUser:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:ac93de296286b2cbd750c3035c4852c3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4a60ac2be60ce1d7469b73e4b36087b6"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a4a60ac2be60ce1d7469b73e4b36087b6">unFollowUsers:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a4a60ac2be60ce1d7469b73e4b36087b6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a78385f432402c4aaeae7ca11c59e5bed"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a78385f432402c4aaeae7ca11c59e5bed">profileForUser:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a78385f432402c4aaeae7ca11c59e5bed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab5eb3266eb9305b098ced3784ca390d"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#aab5eb3266eb9305b098ced3784ca390d">numberOfPhotosForUser:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:aab5eb3266eb9305b098ced3784ca390d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77ebf208311384da5453ced5fed75ba9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a77ebf208311384da5453ced5fed75ba9">numberOfFollowersForUser:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a77ebf208311384da5453ced5fed75ba9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a631335469e92b8a79bfff5cbf4e29496"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a631335469e92b8a79bfff5cbf4e29496">numberOfFollowingsForUser:success:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a631335469e92b8a79bfff5cbf4e29496"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae3bcd247e1c2f8c2d00ad7ffac7c52c9"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#ae3bcd247e1c2f8c2d00ad7ffac7c52c9">createLikeActivityForPhoto:</a><code> [implementation]</code></td></tr>
+<tr class="separator:ae3bcd247e1c2f8c2d00ad7ffac7c52c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a99c69c31f752255835e824c8d7a257c8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a99c69c31f752255835e824c8d7a257c8">deletePossiblePreviouslikeActivityForPhoto:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a99c69c31f752255835e824c8d7a257c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5b7aa47b8d6375cd75e9e3d6be30cbb8"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a5b7aa47b8d6375cd75e9e3d6be30cbb8">createFollowActivityForUsers:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a5b7aa47b8d6375cd75e9e3d6be30cbb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63c4bd4199b295a1ac8692be781c5760"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a63c4bd4199b295a1ac8692be781c5760">deletePossiblePreviousFollowActivityForUsers:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a63c4bd4199b295a1ac8692be781c5760"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af150b776406a4b15b533c00023716afd"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#af150b776406a4b15b533c00023716afd">createCommentActivityForPhoto:</a><code> [implementation]</code></td></tr>
+<tr class="separator:af150b776406a4b15b533c00023716afd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70a6d07b8156c4bda30c5a23be813c39"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a70a6d07b8156c4bda30c5a23be813c39">recentActivities:failure:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a70a6d07b8156c4bda30c5a23be813c39"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade830ee8ef58d78f3937ecf643deee58"><td class="memItemLeft" align="right" valign="top">(NSArray *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#ade830ee8ef58d78f3937ecf643deee58">wbActivitiesFromActivities:</a><code> [implementation]</code></td></tr>
+<tr class="separator:ade830ee8ef58d78f3937ecf643deee58"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5731d38793a806032d1d754c004bf0cc"><td class="memItemLeft" align="right" valign="top">(<a class="el" href="interface_w_b_activity.html">WBActivity</a> *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_parse_data_source.html#a5731d38793a806032d1d754c004bf0cc">wbActivityfromActivity:</a><code> [implementation]</code></td></tr>
+<tr class="separator:a5731d38793a806032d1d754c004bf0cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_interface_w_b_data_source"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_interface_w_b_data_source')"><img src="closed.png" alt="-"/>&#160;Instance Methods inherited from <a class="el" href="interface_w_b_data_source.html">WBDataSource</a></td></tr>
-<tr class="memitem:ab1466f4a4965134ae95dac14df935098 inherit pub_methods_interface_w_b_data_source"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_data_source.html#ab1466f4a4965134ae95dac14df935098">loginWithUsername:andPassWord:success:failure:</a></td></tr>
-<tr class="separator:ab1466f4a4965134ae95dac14df935098 inherit pub_methods_interface_w_b_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b3d7f47062635a61374e60a5c38e41c inherit pub_methods_interface_w_b_data_source"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_data_source.html#a1b3d7f47062635a61374e60a5c38e41c">signupWithInfo:success:failure:</a></td></tr>
-<tr class="separator:a1b3d7f47062635a61374e60a5c38e41c inherit pub_methods_interface_w_b_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ce8ad77919a888a14915462ec864663 inherit pub_methods_interface_w_b_data_source"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_data_source.html#a6ce8ad77919a888a14915462ec864663">deleteUserAccount:success:failure:</a></td></tr>
-<tr class="separator:a6ce8ad77919a888a14915462ec864663 inherit pub_methods_interface_w_b_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a210d063f58522c324d173cdf67caf26d inherit pub_methods_interface_w_b_data_source"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_data_source.html#a210d063f58522c324d173cdf67caf26d">likePhoto:withUser:success:failure:</a></td></tr>
+<tr class="separator:a210d063f58522c324d173cdf67caf26d inherit pub_methods_interface_w_b_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42bd31035b65471fb4eecab80b9545ae inherit pub_methods_interface_w_b_data_source"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_data_source.html#a42bd31035b65471fb4eecab80b9545ae">suggestedUsers:failure:</a></td></tr>
+<tr class="separator:a42bd31035b65471fb4eecab80b9545ae inherit pub_methods_interface_w_b_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -175,6 +209,10 @@ Additional Inherited Members</h2></td></tr>
 <tr class="inherit_header properties_interface_w_b_data_source"><td colspan="2" onclick="javascript:toggleInherit('properties_interface_w_b_data_source')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="interface_w_b_data_source.html">WBDataSource</a></td></tr>
 <tr class="memitem:af6b2d0317c0682ffbc93d5dc9af8265c inherit properties_interface_w_b_data_source"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interface_w_b_user.html">WBUser</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_w_b_data_source.html#af6b2d0317c0682ffbc93d5dc9af8265c">currentUser</a></td></tr>
 <tr class="separator:af6b2d0317c0682ffbc93d5dc9af8265c inherit properties_interface_w_b_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38c5af5cf7fe3f05672242928c891381 inherit properties_interface_w_b_data_source"><td class="memItemLeft" align="right" valign="top">NSArray *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_w_b_data_source.html#a38c5af5cf7fe3f05672242928c891381">facebookFriends</a></td></tr>
+<tr class="separator:a38c5af5cf7fe3f05672242928c891381 inherit properties_interface_w_b_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d707be3a255ae640e7f4a6c876f0cf inherit properties_interface_w_b_data_source"><td class="memItemLeft" align="right" valign="top">NSInteger&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_w_b_data_source.html#ab9d707be3a255ae640e7f4a6c876f0cf">photoLimit</a></td></tr>
+<tr class="separator:ab9d707be3a255ae640e7f4a6c876f0cf inherit properties_interface_w_b_data_source"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
@@ -226,14 +264,14 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a4703bc96a3ccd636a1187e5b16460d5c">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00313">313</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00249">249</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_parse_data_source_a29d4c9574727b83ae0fb05646041f92c_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a29d4c9574727b83ae0fb05646041f92c_cgraph" alt=""/></div>
 <map name="interface_w_b_parse_data_source_a29d4c9574727b83ae0fb05646041f92c_cgraph" id="interface_w_b_parse_data_source_a29d4c9574727b83ae0fb05646041f92c_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="209,13,362,54"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="411,13,565,54"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="614,13,767,54"/></map>
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="237,5,390,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#af150b776406a4b15b533c00023716afd" title="&#45;[WBParseDataSource\l createCommentActivityForPhoto:]" alt="" coords="209,70,418,111"/></map>
 </div>
 </p>
 
@@ -260,7 +298,7 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00023">23</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00032">32</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -303,7 +341,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00027">27</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00036">36</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -346,7 +384,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00031">31</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00040">40</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -354,6 +392,111 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="interface_w_b_parse_data_source_af5fc2965bca8343368f88003d9ac6b76_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_af5fc2965bca8343368f88003d9ac6b76_icgraph" alt=""/></div>
 <map name="interface_w_b_parse_data_source_af5fc2965bca8343368f88003d9ac6b76_icgraph" id="interface_w_b_parse_data_source_af5fc2965bca8343368f88003d9ac6b76_icgraph">
 <area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ade154ce1973e32cfa7013d8fcb3ca5af" title="&#45;[WBParseDataSource\l applicationId]" alt="" coords="209,5,362,46"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#aab71b1d2f4d6356f39ca1a435b8c20f3" title="&#45;[WBParseDataSource\l clientKey]" alt="" coords="209,70,362,111"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a1af3a364a63da0839ad0c06f0dded1b4" title="&#45;[WBParseDataSource\l setUpWithLauchOptions:]" alt="" coords="411,38,581,79"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af150b776406a4b15b533c00023716afd"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) createCommentActivityForPhoto: </td>
+          <td></td>
+          <td class="paramtype">(PFObject *)&#160;</td>
+          <td class="paramname"><em>photo</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00485">485</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_af150b776406a4b15b533c00023716afd_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_af150b776406a4b15b533c00023716afd_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_af150b776406a4b15b533c00023716afd_icgraph" id="interface_w_b_parse_data_source_af150b776406a4b15b533c00023716afd_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c" title="&#45;[WBParseDataSource\l addComment:onPhoto\l:success:failure:]" alt="" coords="265,5,418,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5b7aa47b8d6375cd75e9e3d6be30cbb8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) createFollowActivityForUsers: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>users</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00461">461</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a5b7aa47b8d6375cd75e9e3d6be30cbb8_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a5b7aa47b8d6375cd75e9e3d6be30cbb8_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a5b7aa47b8d6375cd75e9e3d6be30cbb8_icgraph" id="interface_w_b_parse_data_source_a5b7aa47b8d6375cd75e9e3d6be30cbb8_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ae506035597e9305ca3f7d232a8b750b0" title="&#45;[WBParseDataSource\l followUsers:success\l:failure:]" alt="" coords="246,5,399,61"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a6509410d0c5155c5e19aa3fe2a182ba6" title="&#45;[WBParseDataSource\l followUser:success\l:failure:]" alt="" coords="449,5,602,61"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892" title="&#45;[WBParseDataSource\l toggleFollowForUser\l:success:failure:]" alt="" coords="651,5,805,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae3bcd247e1c2f8c2d00ad7ffac7c52c9"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) createLikeActivityForPhoto: </td>
+          <td></td>
+          <td class="paramtype">(PFObject *)&#160;</td>
+          <td class="paramname"><em>photo</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00440">440</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_ae3bcd247e1c2f8c2d00ad7ffac7c52c9_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ae3bcd247e1c2f8c2d00ad7ffac7c52c9_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_ae3bcd247e1c2f8c2d00ad7ffac7c52c9_icgraph" id="interface_w_b_parse_data_source_ae3bcd247e1c2f8c2d00ad7ffac7c52c9_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#af2431a3c693720d3bd1beae83531fe13" title="&#45;[WBParseDataSource\l likePhoto:withUser\l:success:failure:]" alt="" coords="233,5,386,61"/></map>
 </div>
 </p>
 
@@ -384,7 +527,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a3aee28bc7776aa73da90dca86b9edd98">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00170">170</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00069">69</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 </div>
 </div>
@@ -413,16 +556,7 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a718d0a138b4310034015ef2f77743ec4">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00164">164</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_a872f38d709b4689e52e92e9cbbea29ee_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a872f38d709b4689e52e92e9cbbea29ee_icgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_a872f38d709b4689e52e92e9cbbea29ee_icgraph" id="interface_w_b_parse_data_source_a872f38d709b4689e52e92e9cbbea29ee_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="214,119,367,161"/><area shape="rect" id="node7" href="interface_w_b_parse_data_source.html#a9c134bb913cec5177b775fb73fbc829e" title="&#45;[WBParseDataSource\l wbUserFromParseUser:]" alt="" coords="209,195,373,237"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896" title="&#45;[WBParseDataSource\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="649,85,839,141"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a3c835bc612c784e69c8ca48cde429537" title="&#45;[WBParseDataSource\l signupWithInfo:success\l:failure:]" alt="" coords="889,111,1047,167"/><area shape="rect" id="node5" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="434,49,587,90"/><area shape="rect" id="node6" href="interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c" title="&#45;[WBParseDataSource\l addComment:onPhoto\l:success:failure:]" alt="" coords="667,5,821,61"/><area shape="rect" id="node8" href="interface_w_b_parse_data_source.html#aad7aa99f2f30692296b32ba74d2a11e0" title="&#45;[WBParseDataSource\l wbPhotoFromParsePhoto:]" alt="" coords="421,217,600,258"/><area shape="rect" id="node9" href="interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="648,217,840,258"/><area shape="rect" id="node10" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="891,217,1045,258"/></map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00063">63</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 </div>
 </div>
@@ -451,29 +585,20 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a0cbb60dc725a9e379b0c2669d6faf157">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00088">88</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_a89c1e6420798b87b0175b2bf212c0da2_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a89c1e6420798b87b0175b2bf212c0da2_cgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_a89c1e6420798b87b0175b2bf212c0da2_cgraph" id="interface_w_b_parse_data_source_a89c1e6420798b87b0175b2bf212c0da2_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="209,5,362,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="411,5,565,46"/></map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00046">46</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_parse_data_source_a89c1e6420798b87b0175b2bf212c0da2_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a89c1e6420798b87b0175b2bf212c0da2_icgraph" alt=""/></div>
 <map name="interface_w_b_parse_data_source_a89c1e6420798b87b0175b2bf212c0da2_icgraph" id="interface_w_b_parse_data_source_a89c1e6420798b87b0175b2bf212c0da2_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896" title="&#45;[WBParseDataSource\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="209,5,399,61"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c" title="&#45;[WBParseDataSource\l addComment:onPhoto\l:success:failure:]" alt="" coords="227,85,381,141"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a3c835bc612c784e69c8ca48cde429537" title="&#45;[WBParseDataSource\l signupWithInfo:success\l:failure:]" alt="" coords="449,5,607,61"/></map>
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a3db7f3649a0c14cc72d64cf8a2e63686" title="&#45;[WBParseDataSource\l queryForcurrentUserPhotos]" alt="" coords="225,5,404,46"/><area shape="rect" id="node5" href="interface_w_b_parse_data_source.html#ac470127e3944c6b0c80a164f302aa88b" title="&#45;[WBParseDataSource\l queryForCurentUserFriendPhotos]" alt="" coords="208,70,421,111"/><area shape="rect" id="node6" href="interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c" title="&#45;[WBParseDataSource\l addComment:onPhoto\l:success:failure:]" alt="" coords="238,136,391,192"/><area shape="rect" id="node7" href="interface_w_b_parse_data_source.html#ae506035597e9305ca3f7d232a8b750b0" title="&#45;[WBParseDataSource\l followUsers:success\l:failure:]" alt="" coords="238,216,391,272"/><area shape="rect" id="node10" href="interface_w_b_parse_data_source.html#a4a60ac2be60ce1d7469b73e4b36087b6" title="&#45;[WBParseDataSource\l unFollowUsers:success\l:failure:]" alt="" coords="235,296,394,352"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a4332b23ddd0d539c4c4fa599afaab7cf" title="&#45;[WBParseDataSource\l latestPhotosWithOffset\l:success:failure:]" alt="" coords="469,31,624,87"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="673,38,826,79"/><area shape="rect" id="node8" href="interface_w_b_parse_data_source.html#a6509410d0c5155c5e19aa3fe2a182ba6" title="&#45;[WBParseDataSource\l followUser:success\l:failure:]" alt="" coords="470,216,623,272"/><area shape="rect" id="node9" href="interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892" title="&#45;[WBParseDataSource\l toggleFollowForUser\l:success:failure:]" alt="" coords="673,256,826,312"/><area shape="rect" id="node11" href="interface_w_b_parse_data_source.html#ac93de296286b2cbd750c3035c4852c3f" title="&#45;[WBParseDataSource\l unFollowUser:success\l:failure:]" alt="" coords="470,296,623,352"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a14f503e59ea629528b4d869e2cb6ceb0"></a>
+<a class="anchor" id="aa7edcae34789f401fcba1b55159f060e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -481,10 +606,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) deleteUserAccount: </td>
+          <td class="memname">- (void) deletePhoto: </td>
           <td></td>
-          <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
-          <td class="paramname"><em>user</em></td>
+          <td class="paramtype">(<a class="el" href="interface_w_b_photo.html">WBPhoto</a> *)&#160;</td>
+          <td class="paramname"><em>photo</em></td>
         </tr>
         <tr>
           <td class="paramkey">success:</td>
@@ -495,7 +620,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramtype">(NSError *error)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -511,14 +636,243 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00093">93</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a7b3bd367e98be1697bd339a852869da5">WBDataSource</a>.</p>
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00235">235</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a63c4bd4199b295a1ac8692be781c5760"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) deletePossiblePreviousFollowActivityForUsers: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>users</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00471">471</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a63c4bd4199b295a1ac8692be781c5760_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a63c4bd4199b295a1ac8692be781c5760_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a63c4bd4199b295a1ac8692be781c5760_icgraph" id="interface_w_b_parse_data_source_a63c4bd4199b295a1ac8692be781c5760_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a4a60ac2be60ce1d7469b73e4b36087b6" title="&#45;[WBParseDataSource\l unFollowUsers:success\l:failure:]" alt="" coords="249,5,407,61"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#ac93de296286b2cbd750c3035c4852c3f" title="&#45;[WBParseDataSource\l unFollowUser:success\l:failure:]" alt="" coords="457,5,610,61"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892" title="&#45;[WBParseDataSource\l toggleFollowForUser\l:success:failure:]" alt="" coords="659,5,813,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a99c69c31f752255835e824c8d7a257c8"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) deletePossiblePreviouslikeActivityForPhoto: </td>
+          <td></td>
+          <td class="paramtype">(PFObject *)&#160;</td>
+          <td class="paramname"><em>photo</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00449">449</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a99c69c31f752255835e824c8d7a257c8_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a99c69c31f752255835e824c8d7a257c8_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a99c69c31f752255835e824c8d7a257c8_icgraph" id="interface_w_b_parse_data_source_a99c69c31f752255835e824c8d7a257c8_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a8ebaec2e1488899907515280f1478bd2" title="&#45;[WBParseDataSource\l unlikePhoto:withUser\l:success:failure:]" alt="" coords="230,5,383,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a67fc87c89185020661577f7b3553e7f0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) fetchPhoto: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_w_b_photo.html">WBPhoto</a> *)&#160;</td>
+          <td class="paramname"><em>photo</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_w_b_photo.html">WBPhoto</a> *fetchedPhoto)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a393a2ef1fb991ac763d821cbd638e3f9">WBDataSource</a>.</p>
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00203">203</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a6509410d0c5155c5e19aa3fe2a182ba6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) followUser: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
+          <td class="paramname"><em>user</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(void)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00326">326</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_a14f503e59ea629528b4d869e2cb6ceb0_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a14f503e59ea629528b4d869e2cb6ceb0_cgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_a14f503e59ea629528b4d869e2cb6ceb0_cgraph" id="interface_w_b_parse_data_source_a14f503e59ea629528b4d869e2cb6ceb0_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a6b837ead2a4de10689aff815c337008f" title="&#45;[WBParseDataSource\l mapPFUser:]" alt="" coords="235,13,389,54"/></map>
+<div class="center"><img src="interface_w_b_parse_data_source_a6509410d0c5155c5e19aa3fe2a182ba6_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a6509410d0c5155c5e19aa3fe2a182ba6_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a6509410d0c5155c5e19aa3fe2a182ba6_cgraph" id="interface_w_b_parse_data_source_a6509410d0c5155c5e19aa3fe2a182ba6_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ae506035597e9305ca3f7d232a8b750b0" title="&#45;[WBParseDataSource\l followUsers:success\l:failure:]" alt="" coords="209,31,362,87"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="430,5,583,46"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a5b7aa47b8d6375cd75e9e3d6be30cbb8" title="&#45;[WBParseDataSource\l createFollowActivityForUsers:]" alt="" coords="411,70,602,111"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a6509410d0c5155c5e19aa3fe2a182ba6_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a6509410d0c5155c5e19aa3fe2a182ba6_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a6509410d0c5155c5e19aa3fe2a182ba6_icgraph" id="interface_w_b_parse_data_source_a6509410d0c5155c5e19aa3fe2a182ba6_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892" title="&#45;[WBParseDataSource\l toggleFollowForUser\l:success:failure:]" alt="" coords="209,5,362,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae506035597e9305ca3f7d232a8b750b0"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) followUsers: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>wbUsers</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(void)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a11c9434020a72c448e716052bedef3f8">WBDataSource</a>.</p>
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00332">332</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_ae506035597e9305ca3f7d232a8b750b0_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ae506035597e9305ca3f7d232a8b750b0_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_ae506035597e9305ca3f7d232a8b750b0_cgraph" id="interface_w_b_parse_data_source_ae506035597e9305ca3f7d232a8b750b0_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="227,5,381,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a5b7aa47b8d6375cd75e9e3d6be30cbb8" title="&#45;[WBParseDataSource\l createFollowActivityForUsers:]" alt="" coords="209,70,399,111"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_ae506035597e9305ca3f7d232a8b750b0_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ae506035597e9305ca3f7d232a8b750b0_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_ae506035597e9305ca3f7d232a8b750b0_icgraph" id="interface_w_b_parse_data_source_ae506035597e9305ca3f7d232a8b750b0_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a6509410d0c5155c5e19aa3fe2a182ba6" title="&#45;[WBParseDataSource\l followUser:success\l:failure:]" alt="" coords="209,5,362,61"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892" title="&#45;[WBParseDataSource\l toggleFollowForUser\l:success:failure:]" alt="" coords="411,5,565,61"/></map>
 </div>
 </p>
 
@@ -558,20 +912,82 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a2528cabb4b4a6919d26ba9c4c8546e50">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00209">209</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00112">112</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_parse_data_source_abb2644696621cf533e6464d5c4ed7fdc_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_abb2644696621cf533e6464d5c4ed7fdc_cgraph" alt=""/></div>
 <map name="interface_w_b_parse_data_source_abb2644696621cf533e6464d5c4ed7fdc_cgraph" id="interface_w_b_parse_data_source_abb2644696621cf533e6464d5c4ed7fdc_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="208,5,400,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#aad7aa99f2f30692296b32ba74d2a11e0" title="&#45;[WBParseDataSource\l wbPhotoFromParsePhoto:]" alt="" coords="448,5,627,46"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a9c134bb913cec5177b775fb73fbc829e" title="&#45;[WBParseDataSource\l wbUserFromParseUser:]" alt="" coords="675,5,839,46"/><area shape="rect" id="node5" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="889,5,1042,46"/></map>
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a4332b23ddd0d539c4c4fa599afaab7cf" title="&#45;[WBParseDataSource\l latestPhotosWithOffset\l:success:failure:]" alt="" coords="208,63,363,119"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a3db7f3649a0c14cc72d64cf8a2e63686" title="&#45;[WBParseDataSource\l queryForcurrentUserPhotos]" alt="" coords="428,5,607,46"/><area shape="rect" id="node5" href="interface_w_b_parse_data_source.html#ac470127e3944c6b0c80a164f302aa88b" title="&#45;[WBParseDataSource\l queryForCurentUserFriendPhotos]" alt="" coords="411,70,624,111"/><area shape="rect" id="node6" href="interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="421,135,613,177"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="673,38,826,79"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a3f01da6df5624b0ad44d26e1c9955920"></a>
+<a class="anchor" id="a4332b23ddd0d539c4c4fa599afaab7cf"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) latestPhotosWithOffset: </td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>offset</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *photos)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a6d431e142550c1e0f0e56d7872b72963">WBDataSource</a>.</p>
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00117">117</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a4332b23ddd0d539c4c4fa599afaab7cf_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a4332b23ddd0d539c4c4fa599afaab7cf_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a4332b23ddd0d539c4c4fa599afaab7cf_cgraph" id="interface_w_b_parse_data_source_a4332b23ddd0d539c4c4fa599afaab7cf_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a3db7f3649a0c14cc72d64cf8a2e63686" title="&#45;[WBParseDataSource\l queryForcurrentUserPhotos]" alt="" coords="225,5,404,46"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#ac470127e3944c6b0c80a164f302aa88b" title="&#45;[WBParseDataSource\l queryForCurentUserFriendPhotos]" alt="" coords="208,70,421,111"/><area shape="rect" id="node5" href="interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="219,135,411,177"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="470,38,623,79"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a4332b23ddd0d539c4c4fa599afaab7cf_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a4332b23ddd0d539c4c4fa599afaab7cf_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a4332b23ddd0d539c4c4fa599afaab7cf_icgraph" id="interface_w_b_parse_data_source_a4332b23ddd0d539c4c4fa599afaab7cf_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="209,13,362,54"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af2431a3c693720d3bd1beae83531fe13"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -593,57 +1009,7 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(void)&#160;</td>
-          <td class="paramname"><em>success</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">failure:</td>
-          <td></td>
-          <td class="paramtype">(NSError *error)&#160;</td>
-          <td class="paramname"><em>failure</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a3eaec7db9a74c91bc3ca4597f0c0b860">WBDataSource</a>.</p>
-
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00229">229</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="aa632fee89c29f98a990ea71927970896"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) loginWithUsername: </td>
-          <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>username</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">andPassWord:</td>
-          <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>password</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">success:</td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
+          <td class="paramtype">(NSArray *likes)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
@@ -665,29 +1031,20 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00037">37</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00168">168</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_aa632fee89c29f98a990ea71927970896_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_aa632fee89c29f98a990ea71927970896_cgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_aa632fee89c29f98a990ea71927970896_cgraph" id="interface_w_b_parse_data_source_aa632fee89c29f98a990ea71927970896_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="449,13,602,54"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="246,42,399,83"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="651,13,805,54"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_aa632fee89c29f98a990ea71927970896_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_aa632fee89c29f98a990ea71927970896_icgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_aa632fee89c29f98a990ea71927970896_icgraph" id="interface_w_b_parse_data_source_aa632fee89c29f98a990ea71927970896_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a3c835bc612c784e69c8ca48cde429537" title="&#45;[WBParseDataSource\l signupWithInfo:success\l:failure:]" alt="" coords="246,5,405,61"/></map>
+<div class="center"><img src="interface_w_b_parse_data_source_af2431a3c693720d3bd1beae83531fe13_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_af2431a3c693720d3bd1beae83531fe13_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_af2431a3c693720d3bd1beae83531fe13_cgraph" id="interface_w_b_parse_data_source_af2431a3c693720d3bd1beae83531fe13_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ae3bcd247e1c2f8c2d00ad7ffac7c52c9" title="&#45;[WBParseDataSource\l createLikeActivityForPhoto:]" alt="" coords="209,13,386,54"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a70a406f3e33e9008a5529c3ea15bbfcb"></a>
+<a class="anchor" id="a77ebf208311384da5453ced5fed75ba9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -695,7 +1052,7 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) logoutUser: </td>
+          <td class="memname">- (void) numberOfFollowersForUser: </td>
           <td></td>
           <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
           <td class="paramname"><em>user</em></td>
@@ -703,7 +1060,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(void)&#160;</td>
+          <td class="paramtype">(int numberOfFollowers)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
@@ -724,23 +1081,14 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Logout the given user. On failure to log out, return the NSError in the failure block. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">user</td><td>The user to log out </td></tr>
-    <tr><td class="paramname">success</td><td>The success block </td></tr>
-    <tr><td class="paramname">failure</td><td>The failure block, called with an NSError </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a2c7474f43fb53a95d3bff899b0fcabd9">WBDataSource</a>.</p>
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a28d0b1cf76aaf8c4cda89f72a1f3db90">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00055">55</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00411">411</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ad657d6694a28c454b5ef9b2cfd063785"></a>
+<a class="anchor" id="a631335469e92b8a79bfff5cbf4e29496"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -748,55 +1096,27 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) mapCurrentWBUser: </td>
-          <td></td>
-          <td class="paramtype">(PFUser *)&#160;</td>
-          <td class="paramname"><em>user</em></td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00131">131</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_ad657d6694a28c454b5ef9b2cfd063785_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ad657d6694a28c454b5ef9b2cfd063785_cgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_ad657d6694a28c454b5ef9b2cfd063785_cgraph" id="interface_w_b_parse_data_source_ad657d6694a28c454b5ef9b2cfd063785_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="209,5,362,46"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_ad657d6694a28c454b5ef9b2cfd063785_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ad657d6694a28c454b5ef9b2cfd063785_icgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_ad657d6694a28c454b5ef9b2cfd063785_icgraph" id="interface_w_b_parse_data_source_ad657d6694a28c454b5ef9b2cfd063785_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896" title="&#45;[WBParseDataSource\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="411,37,602,93"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a3c835bc612c784e69c8ca48cde429537" title="&#45;[WBParseDataSource\l signupWithInfo:success\l:failure:]" alt="" coords="651,5,810,61"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="209,97,362,138"/><area shape="rect" id="node5" href="interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c" title="&#45;[WBParseDataSource\l addComment:onPhoto\l:success:failure:]" alt="" coords="430,117,583,173"/></map>
-</div>
-</p>
-
-</div>
-</div>
-<a class="anchor" id="a6b837ead2a4de10689aff815c337008f"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (PFUser *) mapPFUser: </td>
+          <td class="memname">- (void) numberOfFollowingsForUser: </td>
           <td></td>
           <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
           <td class="paramname"><em>user</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
           <td></td>
+          <td class="paramtype">(int numberOfFollowings)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -806,16 +1126,53 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00148">148</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a12fc47cf9216e528657c1a8097918362">WBDataSource</a>.</p>
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_a6b837ead2a4de10689aff815c337008f_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a6b837ead2a4de10689aff815c337008f_icgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_a6b837ead2a4de10689aff815c337008f_icgraph" id="interface_w_b_parse_data_source_a6b837ead2a4de10689aff815c337008f_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a14f503e59ea629528b4d869e2cb6ceb0" title="&#45;[WBParseDataSource\l deleteUserAccount:success\l:failure:]" alt="" coords="209,5,389,61"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#af7cbee84d7b09fbd039d44a851d3fb5b" title="&#45;[WBParseDataSource\l saveUser:success:failure:]" alt="" coords="213,86,385,127"/></map>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00425">425</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
 </div>
-</p>
+</div>
+<a class="anchor" id="aab5eb3266eb9305b098ced3784ca390d"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) numberOfPhotosForUser: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
+          <td class="paramname"><em>user</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(int numberOfPhotos)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a13f8aaf5df2dd25dddea7546bc711245">WBDataSource</a>.</p>
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00396">396</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 </div>
 </div>
@@ -841,7 +1198,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00199">199</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00103">103</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -854,7 +1211,7 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="aa2d8f83954b2f3167451f132a429e22e"></a>
+<a class="anchor" id="a835045e83234513c1f58903299618a3d"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -862,21 +1219,61 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) resetPasswordForUser: </td>
+          <td class="memname">- (PFACL *) photoACL </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00097">97</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a835045e83234513c1f58903299618a3d_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a835045e83234513c1f58903299618a3d_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a835045e83234513c1f58903299618a3d_icgraph" id="interface_w_b_parse_data_source_a835045e83234513c1f58903299618a3d_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#af3ec936ebdc4fd2a14a9a273eb1f33d0" title="&#45;[WBParseDataSource\l uploadPhoto:success\l:failure:progress:]" alt="" coords="209,5,362,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a41fe794adfbe6d27faf99ae5f7a2ddd4"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) photosForUser: </td>
           <td></td>
           <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
-          <td class="paramname"><em>user</em></td>
+          <td class="paramname"><em>wbUser</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">withOffset:</td>
+          <td></td>
+          <td class="paramtype">(int)&#160;</td>
+          <td class="paramname"><em>offset</em></td>
         </tr>
         <tr>
           <td class="paramkey">success:</td>
           <td></td>
-          <td class="paramtype">(void)&#160;</td>
+          <td class="paramtype">(NSArray *photos)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramtype">(NSError *error)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -891,19 +1288,194 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>reset password of the given <a class="el" href="interface_w_b_user.html">WBUser</a> from the server. On failure to reset, give the error back in a block. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">user</td><td>The <a class="el" href="interface_w_b_user.html">WBUser</a> to reset password </td></tr>
-    <tr><td class="paramname">success</td><td>The success block </td></tr>
-    <tr><td class="paramname">failure</td><td>The failure block, called with an NSError </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a307c739ae7721ea43be8fd33bcacd263">WBDataSource</a>.</p>
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a17458614cb88856b29c980d7c483cbc5">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00106">106</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00149">149</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a41fe794adfbe6d27faf99ae5f7a2ddd4_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a41fe794adfbe6d27faf99ae5f7a2ddd4_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a41fe794adfbe6d27faf99ae5f7a2ddd4_cgraph" id="interface_w_b_parse_data_source_a41fe794adfbe6d27faf99ae5f7a2ddd4_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="221,13,413,54"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a78385f432402c4aaeae7ca11c59e5bed"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) profileForUser: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
+          <td class="paramname"><em>wbUser</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *user)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00384">384</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac470127e3944c6b0c80a164f302aa88b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (PFQuery *) queryForCurentUserFriendPhotos </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00140">140</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_ac470127e3944c6b0c80a164f302aa88b_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ac470127e3944c6b0c80a164f302aa88b_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_ac470127e3944c6b0c80a164f302aa88b_cgraph" id="interface_w_b_parse_data_source_ac470127e3944c6b0c80a164f302aa88b_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="267,5,421,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_ac470127e3944c6b0c80a164f302aa88b_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ac470127e3944c6b0c80a164f302aa88b_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_ac470127e3944c6b0c80a164f302aa88b_icgraph" id="interface_w_b_parse_data_source_ac470127e3944c6b0c80a164f302aa88b_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a4332b23ddd0d539c4c4fa599afaab7cf" title="&#45;[WBParseDataSource\l latestPhotosWithOffset\l:success:failure:]" alt="" coords="267,5,421,61"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="470,13,623,54"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3db7f3649a0c14cc72d64cf8a2e63686"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (PFQuery *) queryForcurrentUserPhotos </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00133">133</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a3db7f3649a0c14cc72d64cf8a2e63686_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a3db7f3649a0c14cc72d64cf8a2e63686_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a3db7f3649a0c14cc72d64cf8a2e63686_cgraph" id="interface_w_b_parse_data_source_a3db7f3649a0c14cc72d64cf8a2e63686_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="233,5,386,46"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a3db7f3649a0c14cc72d64cf8a2e63686_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a3db7f3649a0c14cc72d64cf8a2e63686_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a3db7f3649a0c14cc72d64cf8a2e63686_icgraph" id="interface_w_b_parse_data_source_a3db7f3649a0c14cc72d64cf8a2e63686_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a4332b23ddd0d539c4c4fa599afaab7cf" title="&#45;[WBParseDataSource\l latestPhotosWithOffset\l:success:failure:]" alt="" coords="232,5,387,61"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="435,13,589,54"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a70a6d07b8156c4bda30c5a23be813c39"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) recentActivities: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *activities)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#aaa9c5ea54abcaa27eecd0024b607ca1d">WBDataSource</a>.</p>
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00496">496</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a70a6d07b8156c4bda30c5a23be813c39_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a70a6d07b8156c4bda30c5a23be813c39_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a70a6d07b8156c4bda30c5a23be813c39_cgraph" id="interface_w_b_parse_data_source_a70a6d07b8156c4bda30c5a23be813c39_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ade830ee8ef58d78f3937ecf643deee58" title="&#45;[WBParseDataSource\l wbActivitiesFromActivities:]" alt="" coords="209,5,383,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a5731d38793a806032d1d754c004bf0cc" title="&#45;[WBParseDataSource\l wbActivityfromActivity:]" alt="" coords="433,5,586,46"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -956,14 +1528,14 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a10b22237ecbfccf4143ec7482c32ee3d">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00119">119</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00051">51</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_parse_data_source_af7cbee84d7b09fbd039d44a851d3fb5b_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_af7cbee84d7b09fbd039d44a851d3fb5b_cgraph" alt=""/></div>
 <map name="interface_w_b_parse_data_source_af7cbee84d7b09fbd039d44a851d3fb5b_cgraph" id="interface_w_b_parse_data_source_af7cbee84d7b09fbd039d44a851d3fb5b_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a6b837ead2a4de10689aff815c337008f" title="&#45;[WBParseDataSource\l mapPFUser:]" alt="" coords="227,5,381,46"/></map>
+<area shape="rect" id="node2" href="interface_w_b_user.html#a544114ba69a4943872d32a33aafffd79" title="&#45;[WBUser PFUser]" alt="" coords="227,29,354,56"/></map>
 </div>
 </p>
 
@@ -994,7 +1566,7 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a7a8ae37b4d14683c5b4dd16534d960ad">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00017">17</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00026">26</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -1007,7 +1579,7 @@ Here is the call graph for this function:</div>
 
 </div>
 </div>
-<a class="anchor" id="a3c835bc612c784e69c8ca48cde429537"></a>
+<a class="anchor" id="a70e2cf57c97ba02f7491e995f767d304"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1015,21 +1587,15 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (void) signupWithInfo: </td>
+          <td class="memname">- (void) suggestedUsers: </td>
           <td></td>
-          <td class="paramtype">(NSDictionary *)&#160;</td>
-          <td class="paramname"><em>userInfo</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">success:</td>
-          <td></td>
-          <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
+          <td class="paramtype">(NSArray *suggestedUsers)&#160;</td>
           <td class="paramname"><em>success</em></td>
         </tr>
         <tr>
           <td class="paramkey">failure:</td>
           <td></td>
-          <td class="paramtype">(NSError *)&#160;</td>
+          <td class="paramtype">(NSError *error)&#160;</td>
           <td class="paramname"><em>failure</em>&#160;</td>
         </tr>
         <tr>
@@ -1045,14 +1611,241 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00064">64</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00279">279</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_a3c835bc612c784e69c8ca48cde429537_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a3c835bc612c784e69c8ca48cde429537_cgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_a3c835bc612c784e69c8ca48cde429537_cgraph" id="interface_w_b_parse_data_source_a3c835bc612c784e69c8ca48cde429537_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ad657d6694a28c454b5ef9b2cfd063785" title="&#45;[WBParseDataSource\l mapCurrentWBUser:]" alt="" coords="657,30,810,71"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896" title="&#45;[WBParseDataSource\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="214,37,405,93"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="859,30,1013,71"/><area shape="rect" id="node5" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="454,89,607,130"/></map>
+<div class="center"><img src="interface_w_b_parse_data_source_a70e2cf57c97ba02f7491e995f767d304_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a70e2cf57c97ba02f7491e995f767d304_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a70e2cf57c97ba02f7491e995f767d304_cgraph" id="interface_w_b_parse_data_source_a70e2cf57c97ba02f7491e995f767d304_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6" title="+[WBAccountManager\l sharedInstance]" alt="" coords="247,5,398,46"/><area shape="rect" id="node3" href="interface_w_b_account_manager.html#a8bb117b68fd914a4d00c6fdd30e6b2dd" title="&#45;[WBAccountManager\l getFacebookFriends\l:failure:]" alt="" coords="249,71,396,127"/><area shape="rect" id="node4" href="interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="214,151,431,177"/><area shape="rect" id="node5" href="interface_w_b_parse_data_source.html#a2d897439ca8b96f1c7af80a8bc2a5342" title="&#45;[WBParseDataSource\l tagUsersAsFollowed\l:success:failure:]" alt="" coords="246,201,399,257"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2d897439ca8b96f1c7af80a8bc2a5342"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) tagUsersAsFollowed: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>users</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(NSArray *suggestedUsers)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Tag users as followed or not. </p>
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00296">296</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a2d897439ca8b96f1c7af80a8bc2a5342_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a2d897439ca8b96f1c7af80a8bc2a5342_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a2d897439ca8b96f1c7af80a8bc2a5342_icgraph" id="interface_w_b_parse_data_source_a2d897439ca8b96f1c7af80a8bc2a5342_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a70e2cf57c97ba02f7491e995f767d304" title="&#45;[WBParseDataSource\l suggestedUsers:failure:]" alt="" coords="209,13,367,54"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa8f7be63ed60c874e7bbf22475ac6892"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) toggleFollowForUser: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
+          <td class="paramname"><em>user</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(void)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a2fa3f8522ee5ac3188aece12749f0093">WBDataSource</a>.</p>
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00317">317</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_aa8f7be63ed60c874e7bbf22475ac6892_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_aa8f7be63ed60c874e7bbf22475ac6892_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_aa8f7be63ed60c874e7bbf22475ac6892_cgraph" id="interface_w_b_parse_data_source_aa8f7be63ed60c874e7bbf22475ac6892_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a6509410d0c5155c5e19aa3fe2a182ba6" title="&#45;[WBParseDataSource\l followUser:success\l:failure:]" alt="" coords="209,27,362,83"/><area shape="rect" id="node6" href="interface_w_b_parse_data_source.html#ac93de296286b2cbd750c3035c4852c3f" title="&#45;[WBParseDataSource\l unFollowUser:success\l:failure:]" alt="" coords="209,107,362,163"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#ae506035597e9305ca3f7d232a8b750b0" title="&#45;[WBParseDataSource\l followUsers:success\l:failure:]" alt="" coords="414,27,567,83"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="639,70,793,111"/><area shape="rect" id="node5" href="interface_w_b_parse_data_source.html#a5b7aa47b8d6375cd75e9e3d6be30cbb8" title="&#45;[WBParseDataSource\l createFollowActivityForUsers:]" alt="" coords="621,5,811,46"/><area shape="rect" id="node7" href="interface_w_b_parse_data_source.html#a4a60ac2be60ce1d7469b73e4b36087b6" title="&#45;[WBParseDataSource\l unFollowUsers:success\l:failure:]" alt="" coords="411,107,570,163"/><area shape="rect" id="node8" href="interface_w_b_parse_data_source.html#a63c4bd4199b295a1ac8692be781c5760" title="&#45;[WBParseDataSource\l deletePossiblePreviousFollow\lActivityForUsers:]" alt="" coords="619,136,813,192"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac93de296286b2cbd750c3035c4852c3f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) unFollowUser: </td>
+          <td></td>
+          <td class="paramtype">(<a class="el" href="interface_w_b_user.html">WBUser</a> *)&#160;</td>
+          <td class="paramname"><em>user</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(void)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00354">354</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_ac93de296286b2cbd750c3035c4852c3f_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ac93de296286b2cbd750c3035c4852c3f_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_ac93de296286b2cbd750c3035c4852c3f_cgraph" id="interface_w_b_parse_data_source_ac93de296286b2cbd750c3035c4852c3f_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a4a60ac2be60ce1d7469b73e4b36087b6" title="&#45;[WBParseDataSource\l unFollowUsers:success\l:failure:]" alt="" coords="209,35,367,91"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="437,5,590,46"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a63c4bd4199b295a1ac8692be781c5760" title="&#45;[WBParseDataSource\l deletePossiblePreviousFollow\lActivityForUsers:]" alt="" coords="417,71,610,127"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_ac93de296286b2cbd750c3035c4852c3f_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ac93de296286b2cbd750c3035c4852c3f_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_ac93de296286b2cbd750c3035c4852c3f_icgraph" id="interface_w_b_parse_data_source_ac93de296286b2cbd750c3035c4852c3f_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892" title="&#45;[WBParseDataSource\l toggleFollowForUser\l:success:failure:]" alt="" coords="209,5,362,61"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a4a60ac2be60ce1d7469b73e4b36087b6"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (void) unFollowUsers: </td>
+          <td></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>wbUsers</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">success:</td>
+          <td></td>
+          <td class="paramtype">(void)&#160;</td>
+          <td class="paramname"><em>success</em></td>
+        </tr>
+        <tr>
+          <td class="paramkey">failure:</td>
+          <td></td>
+          <td class="paramtype">(NSError *error)&#160;</td>
+          <td class="paramname"><em>failure</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a6de42f682cf85c3f72bfa015bd7fc8a1">WBDataSource</a>.</p>
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00360">360</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a4a60ac2be60ce1d7469b73e4b36087b6_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a4a60ac2be60ce1d7469b73e4b36087b6_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a4a60ac2be60ce1d7469b73e4b36087b6_cgraph" id="interface_w_b_parse_data_source_a4a60ac2be60ce1d7469b73e4b36087b6_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="234,5,387,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a63c4bd4199b295a1ac8692be781c5760" title="&#45;[WBParseDataSource\l deletePossiblePreviousFollow\lActivityForUsers:]" alt="" coords="214,71,407,127"/></map>
+</div>
+</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a4a60ac2be60ce1d7469b73e4b36087b6_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a4a60ac2be60ce1d7469b73e4b36087b6_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a4a60ac2be60ce1d7469b73e4b36087b6_icgraph" id="interface_w_b_parse_data_source_a4a60ac2be60ce1d7469b73e4b36087b6_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ac93de296286b2cbd750c3035c4852c3f" title="&#45;[WBParseDataSource\l unFollowUser:success\l:failure:]" alt="" coords="214,5,367,61"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892" title="&#45;[WBParseDataSource\l toggleFollowForUser\l:success:failure:]" alt="" coords="417,5,570,61"/></map>
 </div>
 </p>
 
@@ -1104,7 +1897,16 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#ad1b0246dfd99404c50f31e3fe6920386">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00253">253</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00186">186</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a8ebaec2e1488899907515280f1478bd2_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a8ebaec2e1488899907515280f1478bd2_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a8ebaec2e1488899907515280f1478bd2_cgraph" id="interface_w_b_parse_data_source_a8ebaec2e1488899907515280f1478bd2_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a99c69c31f752255835e824c8d7a257c8" title="&#45;[WBParseDataSource\l deletePossiblePreviouslike\lActivityForPhoto:]" alt="" coords="209,5,383,61"/></map>
+</div>
+</p>
 
 </div>
 </div>
@@ -1154,20 +1956,20 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented from <a class="el" href="interface_w_b_data_source.html#a83992f1fb78dbf27c07124dad51357aa">WBDataSource</a>.</p>
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00174">174</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00073">73</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_parse_data_source_af3ec936ebdc4fd2a14a9a273eb1f33d0_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_af3ec936ebdc4fd2a14a9a273eb1f33d0_cgraph" alt=""/></div>
 <map name="interface_w_b_parse_data_source_af3ec936ebdc4fd2a14a9a273eb1f33d0_cgraph" id="interface_w_b_parse_data_source_af3ec936ebdc4fd2a14a9a273eb1f33d0_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a70cec53683cfc407b3d499450cde9b4c" title="&#45;[WBParseDataSource\l parsePhotoWithImageFile:]" alt="" coords="208,13,384,54"/></map>
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a70cec53683cfc407b3d499450cde9b4c" title="&#45;[WBParseDataSource\l parsePhotoWithImageFile:]" alt="" coords="208,5,384,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a835045e83234513c1f58903299618a3d" title="&#45;[WBParseDataSource\l photoACL]" alt="" coords="219,70,373,111"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="aad7aa99f2f30692296b32ba74d2a11e0"></a>
+<a class="anchor" id="ade830ee8ef58d78f3937ecf643deee58"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1175,10 +1977,10 @@ Here is the call graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="interface_w_b_photo.html">WBPhoto</a> *) wbPhotoFromParsePhoto: </td>
+          <td class="memname">- (NSArray *) wbActivitiesFromActivities: </td>
           <td></td>
-          <td class="paramtype">(PFObject *)&#160;</td>
-          <td class="paramname"><em>parsePhoto</em></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>activities</em></td>
           <td></td>
         </tr>
       </table>
@@ -1189,23 +1991,58 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00283">283</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00510">510</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_aad7aa99f2f30692296b32ba74d2a11e0_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_aad7aa99f2f30692296b32ba74d2a11e0_cgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_aad7aa99f2f30692296b32ba74d2a11e0_cgraph" id="interface_w_b_parse_data_source_aad7aa99f2f30692296b32ba74d2a11e0_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a9c134bb913cec5177b775fb73fbc829e" title="&#45;[WBParseDataSource\l wbUserFromParseUser:]" alt="" coords="233,5,397,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="446,5,599,46"/></map>
+<div class="center"><img src="interface_w_b_parse_data_source_ade830ee8ef58d78f3937ecf643deee58_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ade830ee8ef58d78f3937ecf643deee58_cgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_ade830ee8ef58d78f3937ecf643deee58_cgraph" id="interface_w_b_parse_data_source_ade830ee8ef58d78f3937ecf643deee58_cgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a5731d38793a806032d1d754c004bf0cc" title="&#45;[WBParseDataSource\l wbActivityfromActivity:]" alt="" coords="230,5,383,46"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_aad7aa99f2f30692296b32ba74d2a11e0_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_aad7aa99f2f30692296b32ba74d2a11e0_icgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_aad7aa99f2f30692296b32ba74d2a11e0_icgraph" id="interface_w_b_parse_data_source_aad7aa99f2f30692296b32ba74d2a11e0_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="232,5,424,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="473,5,626,46"/></map>
+<div class="center"><img src="interface_w_b_parse_data_source_ade830ee8ef58d78f3937ecf643deee58_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ade830ee8ef58d78f3937ecf643deee58_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_ade830ee8ef58d78f3937ecf643deee58_icgraph" id="interface_w_b_parse_data_source_ade830ee8ef58d78f3937ecf643deee58_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a70a6d07b8156c4bda30c5a23be813c39" title="&#45;[WBParseDataSource\l recentActivities:failure:]" alt="" coords="230,5,383,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a5731d38793a806032d1d754c004bf0cc"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (<a class="el" href="interface_w_b_activity.html">WBActivity</a> *) wbActivityfromActivity: </td>
+          <td></td>
+          <td class="paramtype">(PFObject *)&#160;</td>
+          <td class="paramname"><em>object</em></td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00519">519</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_parse_data_source_a5731d38793a806032d1d754c004bf0cc_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a5731d38793a806032d1d754c004bf0cc_icgraph" alt=""/></div>
+<map name="interface_w_b_parse_data_source_a5731d38793a806032d1d754c004bf0cc_icgraph" id="interface_w_b_parse_data_source_a5731d38793a806032d1d754c004bf0cc_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#ade830ee8ef58d78f3937ecf643deee58" title="&#45;[WBParseDataSource\l wbActivitiesFromActivities:]" alt="" coords="209,5,383,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a70a6d07b8156c4bda30c5a23be813c39" title="&#45;[WBParseDataSource\l recentActivities:failure:]" alt="" coords="433,5,586,46"/></map>
 </div>
 </p>
 
@@ -1233,29 +2070,20 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00274">274</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_ad5bf697ccf169cee6652f4e4597ee56c_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ad5bf697ccf169cee6652f4e4597ee56c_cgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_ad5bf697ccf169cee6652f4e4597ee56c_cgraph" id="interface_w_b_parse_data_source_ad5bf697ccf169cee6652f4e4597ee56c_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#aad7aa99f2f30692296b32ba74d2a11e0" title="&#45;[WBParseDataSource\l wbPhotoFromParsePhoto:]" alt="" coords="245,5,424,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#a9c134bb913cec5177b775fb73fbc829e" title="&#45;[WBParseDataSource\l wbUserFromParseUser:]" alt="" coords="473,5,637,46"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="686,5,839,46"/></map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00216">216</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_parse_data_source_ad5bf697ccf169cee6652f4e4597ee56c_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_ad5bf697ccf169cee6652f4e4597ee56c_icgraph" alt=""/></div>
 <map name="interface_w_b_parse_data_source_ad5bf697ccf169cee6652f4e4597ee56c_icgraph" id="interface_w_b_parse_data_source_ad5bf697ccf169cee6652f4e4597ee56c_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="246,5,399,46"/></map>
+<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a4332b23ddd0d539c4c4fa599afaab7cf" title="&#45;[WBParseDataSource\l latestPhotosWithOffset\l:success:failure:]" alt="" coords="252,5,407,61"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#a41fe794adfbe6d27faf99ae5f7a2ddd4" title="&#45;[WBParseDataSource\l photosForUser:withOffset\l:success:failure:]" alt="" coords="245,85,413,141"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="462,13,615,54"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a9c134bb913cec5177b775fb73fbc829e"></a>
+<a class="anchor" id="a5677ddbbca510146e7b28bc1af65e995"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -1263,10 +2091,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">- (<a class="el" href="interface_w_b_user.html">WBUser</a> *) wbUserFromParseUser: </td>
+          <td class="memname">- (NSArray *) wbUsersFromParseUsers: </td>
           <td></td>
-          <td class="paramtype">(PFUser *)&#160;</td>
-          <td class="paramname"><em>parseUser</em></td>
+          <td class="paramtype">(NSArray *)&#160;</td>
+          <td class="paramname"><em>parseUsers</em></td>
           <td></td>
         </tr>
       </table>
@@ -1277,25 +2105,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00304">304</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
-
-<p><div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_a9c134bb913cec5177b775fb73fbc829e_cgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a9c134bb913cec5177b775fb73fbc829e_cgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_a9c134bb913cec5177b775fb73fbc829e_cgraph" id="interface_w_b_parse_data_source_a9c134bb913cec5177b775fb73fbc829e_cgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#a872f38d709b4689e52e92e9cbbea29ee" title="&#45;[WBParseDataSource\l createUser]" alt="" coords="219,5,373,46"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_parse_data_source_a9c134bb913cec5177b775fb73fbc829e_icgraph.png" border="0" usemap="#interface_w_b_parse_data_source_a9c134bb913cec5177b775fb73fbc829e_icgraph" alt=""/></div>
-<map name="interface_w_b_parse_data_source_a9c134bb913cec5177b775fb73fbc829e_icgraph" id="interface_w_b_parse_data_source_a9c134bb913cec5177b775fb73fbc829e_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_parse_data_source.html#aad7aa99f2f30692296b32ba74d2a11e0" title="&#45;[WBParseDataSource\l wbPhotoFromParsePhoto:]" alt="" coords="219,5,397,46"/><area shape="rect" id="node3" href="interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="445,5,637,46"/><area shape="rect" id="node4" href="interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="686,5,839,46"/></map>
-</div>
-</p>
+<p>Definition at line <a class="el" href="_w_b_parse_data_source_8m_source.html#l00225">225</a> of file <a class="el" href="_w_b_parse_data_source_8m_source.html">WBParseDataSource.m</a>.</p>
 
 </div>
 </div>
@@ -1306,7 +2116,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 17 2013 18:24:21 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 26 2013 15:01:43 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

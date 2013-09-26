@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -84,7 +84,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Instance Methods</a> &#124;
 <a href="#properties">Properties</a> &#124;
 <a href="class_w_b_photo_timeline_cell-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -106,13 +105,6 @@ Collaboration diagram for WBPhotoTimelineCell:</div>
 <div class="center"><img src="interface_w_b_photo_timeline_cell__coll__graph.png" border="0" usemap="#_w_b_photo_timeline_cell_coll__map" alt="Collaboration graph"/></div>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Instance Methods</h2></td></tr>
-<tr class="memitem:a665daae442be0a65cbf7d042665205eb"><td class="memItemLeft" align="right" valign="top">(id)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_photo_timeline_cell.html#a665daae442be0a65cbf7d042665205eb">initWithStyle:reuseIdentifier:</a><code> [implementation]</code></td></tr>
-<tr class="separator:a665daae442be0a65cbf7d042665205eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a58662e8303d208bbfb0af79f867b828a"><td class="memItemLeft" align="right" valign="top">(void)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_photo_timeline_cell.html#a58662e8303d208bbfb0af79f867b828a">setSelected:animated:</a><code> [implementation]</code></td></tr>
-<tr class="separator:a58662e8303d208bbfb0af79f867b828a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
 <tr class="memitem:ad9a981691ec4a555e4fb595ba1b3700c"><td class="memItemLeft" align="right" valign="top">IBOutlet UIImageView *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_w_b_photo_timeline_cell.html#ad9a981691ec4a555e4fb595ba1b3700c">photoImageView</a></td></tr>
@@ -121,80 +113,7 @@ Properties</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
 <p>Definition at line <a class="el" href="_w_b_photo_timeline_cell_8h_source.html#l00011">11</a> of file <a class="el" href="_w_b_photo_timeline_cell_8h_source.html">WBPhotoTimelineCell.h</a>.</p>
-</div><h2 class="groupheader">Method Documentation</h2>
-<a class="anchor" id="a665daae442be0a65cbf7d042665205eb"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (id) initWithStyle: </td>
-          <td></td>
-          <td class="paramtype">(UITableViewCellStyle)&#160;</td>
-          <td class="paramname"><em>style</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">reuseIdentifier:</td>
-          <td></td>
-          <td class="paramtype">(NSString *)&#160;</td>
-          <td class="paramname"><em>reuseIdentifier</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_w_b_photo_timeline_cell_8m_source.html#l00013">13</a> of file <a class="el" href="_w_b_photo_timeline_cell_8m_source.html">WBPhotoTimelineCell.m</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a58662e8303d208bbfb0af79f867b828a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">- (void) setSelected: </td>
-          <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>selected</em></td>
-        </tr>
-        <tr>
-          <td class="paramkey">animated:</td>
-          <td></td>
-          <td class="paramtype">(BOOL)&#160;</td>
-          <td class="paramname"><em>animated</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">implementation</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_w_b_photo_timeline_cell_8m_source.html#l00022">22</a> of file <a class="el" href="_w_b_photo_timeline_cell_8m_source.html">WBPhotoTimelineCell.m</a>.</p>
-
-</div>
-</div>
-<h2 class="groupheader">Property Documentation</h2>
+</div><h2 class="groupheader">Property Documentation</h2>
 <a class="anchor" id="ad9a981691ec4a555e4fb595ba1b3700c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -218,14 +137,13 @@ Properties</h2></td></tr>
 
 </div>
 </div>
-<hr/>The documentation for this class was generated from the following files:<ul>
+<hr/>The documentation for this class was generated from the following file:<ul>
 <li><a class="el" href="_w_b_photo_timeline_cell_8h_source.html">WBPhotoTimelineCell.h</a></li>
-<li><a class="el" href="_w_b_photo_timeline_cell_8m_source.html">WBPhotoTimelineCell.m</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 17 2013 18:24:21 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 26 2013 15:01:43 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

@@ -1,4 +1,5 @@
 <map id="WBPhotoTimelineSectionHeaderView.h" name="WBPhotoTimelineSectionHeaderView.h">
-<area shape="rect" id="node2" href="$_w_b_photo_timeline_view_controller_8m.html" title="WBPhotoTimelineViewController.m" alt="" coords="5,104,219,131"/>
-<area shape="rect" id="node3" href="$_w_b_photo_timeline_section_header_view_8m.html" title="WBPhotoTimelineSectionHeader\lView.m" alt="" coords="244,97,447,138"/>
+<area shape="rect" id="node2" href="$_w_b_photo_details_view_controller_8m.html" title="WBPhotoDetailsViewController.m" alt="" coords="5,104,213,131"/>
+<area shape="rect" id="node3" href="$_w_b_photo_timeline_view_controller_8m.html" title="WBPhotoTimelineViewController.m" alt="" coords="238,104,452,131"/>
+<area shape="rect" id="node4" href="$_w_b_photo_timeline_section_header_view_8m.html" title="WBPhotoTimelineSectionHeader\lView.m" alt="" coords="477,97,680,138"/>
 </map>

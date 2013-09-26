@@ -1,3 +1,4 @@
 <map id="&#45;[WBParseDataSource uploadPhoto:success:failure:progress:]" name="&#45;[WBParseDataSource uploadPhoto:success:failure:progress:]">
-<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#a70cec53683cfc407b3d499450cde9b4c" title="&#45;[WBParseDataSource\l parsePhotoWithImageFile:]" alt="" coords="208,13,384,54"/>
+<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#a70cec53683cfc407b3d499450cde9b4c" title="&#45;[WBParseDataSource\l parsePhotoWithImageFile:]" alt="" coords="208,5,384,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#a835045e83234513c1f58903299618a3d" title="&#45;[WBParseDataSource\l photoACL]" alt="" coords="219,70,373,111"/>
 </map>

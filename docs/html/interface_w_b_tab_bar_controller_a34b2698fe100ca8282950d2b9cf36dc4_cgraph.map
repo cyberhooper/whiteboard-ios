@@ -1,5 +1,6 @@
 <map id="&#45;[WBTabBarController imagePickerController:didFinishPickingMediaWithInfo:]" name="&#45;[WBTabBarController imagePickerController:didFinishPickingMediaWithInfo:]">
 <area shape="rect" id="node2" href="$interface_w_b_data_source.html#a3aee28bc7776aa73da90dca86b9edd98" title="+[WBDataSource createPhoto]" alt="" coords="264,5,461,32"/>
-<area shape="rect" id="node3" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="254,80,471,107"/>
-<area shape="rect" id="node4" href="$interface_w_b_data_source.html#a83992f1fb78dbf27c07124dad51357aa" title="&#45;[WBDataSource uploadPhoto\l:success:failure:progress:]" alt="" coords="265,131,460,173"/>
+<area shape="rect" id="node3" href="$interface_w_b_tab_bar_controller.html#abc395b3cea70173d307a6108647b919a" title="&#45;[WBTabBarController\l resizeImageWithImage:]" alt="" coords="283,57,443,98"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="254,123,471,149"/>
+<area shape="rect" id="node5" href="$interface_w_b_data_source.html#a83992f1fb78dbf27c07124dad51357aa" title="&#45;[WBDataSource uploadPhoto\l:success:failure:progress:]" alt="" coords="265,174,460,215"/>
 </map>
