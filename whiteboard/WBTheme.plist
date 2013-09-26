@@ -8,25 +8,25 @@
 	<string>iconPics</string>
 	<key>profilePictureStroke</key>
 	<string>profilePictureStroke</string>
-	<key>tabBarTextColor-Selected</key>
+	<key>TABBAR_textColor-Selected</key>
 	<string>#816345</string>
-	<key>tabBarTextColor-Normal</key>
+	<key>TABBAR_textColor-Normal</key>
 	<string>#56372a</string>
-	<key>tabBarCameraButtonImage-Selected</key>
+	<key>TABBAR_cameraButtonImage-Selected</key>
 	<string>buttonCameraSelected</string>
-	<key>tabBarCameraButtonImage-Normal</key>
+	<key>TABBAR_cameraButtonImage-Normal</key>
 	<string>buttonCamera</string>
-	<key>tabBarSelectedItemImage</key>
+	<key>TABBAR_selectedItemImage</key>
 	<string>backgroundTabBarItemSelected</string>
-	<key>tabBarBackgroundImage</key>
+	<key>TABBAR_backgroundImage</key>
 	<string>backgroundTabBar</string>
-	<key>tabBarActivityButtonImage-Selected</key>
+	<key>TABBAR_activityButtonImage-Selected</key>
 	<string>iconTimelineSelected</string>
-	<key>tabBarActivityButtonImage-Normal</key>
+	<key>TABBAR_activityButtonImage-Normal</key>
 	<string>iconTimeline</string>
-	<key>tabBarHomeButtonImage-Selected</key>
+	<key>TABBAR_homeButtonImage-Selected</key>
 	<string>iconHomeSelected</string>
-	<key>tabBarHomeButtonImage-Normal</key>
+	<key>TABBAR_homeButtonImage-Normal</key>
 	<string>iconHome</string>
 	<key>defaultFontRegular</key>
 	<string>Helvetica</string>
@@ -82,8 +82,6 @@
 	<string>separatorTimeline</string>
 	<key>FEED_loadMoreImage</key>
 	<string>CellLoadMore</string>
-	<key>New item</key>
-	<string></string>
 	<key>backgroundImage</key>
 	<string>backgroundLeather</string>
 	<key>NAVBAR_backgroundImage</key>

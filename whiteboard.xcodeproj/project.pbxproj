@@ -370,9 +370,9 @@
 				BE1B3F6017E22117003494CD /* Views */,
 				9922AB4D17E0DA6500D1B18A /* Abstractions */,
 				9922AB5517E0DA6B00D1B18A /* Parse Implementations */,
-				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
 				9919153017DA7B2A005DA25C /* AppDelegate.h */,
 				9919153117DA7B2A005DA25C /* AppDelegate.m */,
+				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
 				9919153917DA7B2A005DA25C /* Images.xcassets */,
 				9919152817DA7B2A005DA25C /* Supporting Files */,
 			);

@@ -93,47 +93,47 @@
 }
 
 - (UIImage *)tabBarHomeButtonNormalImage {
-  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarHomeButtonImage-Normal"]];
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_homeButtonImage-Normal"]];
   return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 - (UIImage *)tabBarHomeButtonSelectedImage {
-  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarHomeButtonImage-Selected"]];
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_homeButtonImage-Selected"]];
   return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 - (UIImage *)tabBarActivityButtonNormalImage {
-  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarActivityButtonImage-Normal"]];
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_activityButtonImage-Normal"]];
   return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 - (UIImage *)tabBarActivityButtonSelectedImage {
-  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarActivityButtonImage-Selected"]];
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_activityButtonImage-Selected"]];
   return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 - (UIImage *)tabBarBackgroundImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarBackgroundImage"]];
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_backgroundImage"]];
 }
 
 - (UIImage *)tabBarSelectedItemImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarSelectedItemImage"]];
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_selectedItemImage"]];
 }
 
 - (UIImage *)tabBarCameraButtonNormalImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarCameraButtonImage-Normal"]];
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_cameraButtonImage-Normal"]];
 }
 
 - (UIImage *)tabBarCameraButtonSelectedImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarCameraButtonImage-Selected"]];
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_cameraButtonImage-Selected"]];
 }
 
 - (UIColor *)tabBarNormalFontColor {
-  return [UIColor colorWithHex:[self.themeDict objectForKey:@"tabBarTextColor-Normal"]];
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"TABBAR_textColor-Normal"]];
 }
 
 - (UIColor *)tabBarSelectedFontColor {
-  return [UIColor colorWithHex:[self.themeDict objectForKey:@"tabBarTextColor-Selected"]];
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"TABBAR_textColor-Selected"]];
 }
 
 - (UIImage *)navBarBackgroundImage {
