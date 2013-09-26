@@ -13,12 +13,6 @@
 @interface WBPhotoTimelineSectionHeaderView() <WBPhotoTimelineSectionHeaderButtonDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *displayNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
-
-//@property (nonatomic, weak) IBOutlet UIButton *likeButton;
-//@property (nonatomic, weak) IBOutlet UILabel *likeNumberLabel;
-//@property (nonatomic, weak) IBOutlet UIButton *commentButton;
-//@property (nonatomic, weak) IBOutlet UILabel *commentNumberLabel;
-
 @property (nonatomic, weak) IBOutlet WBPhotoTimelineSectionHeaderButton *commentButton;
 @end
 
@@ -35,7 +29,6 @@
 
 - (void)awakeFromNib {
   [super awakeFromNib];
-  
   [self setupView];
 }
 

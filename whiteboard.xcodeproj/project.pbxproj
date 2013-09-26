@@ -465,9 +465,10 @@
 				BED03EAE17E91EDD00EEEACC /* WBProfileHeaderView.h */,
 				BED03EAF17E91EDD00EEEACC /* WBProfileHeaderView.m */,
 				BED03EB117E91EFB00EEEACC /* WBProfileHeaderView.xib */,
-				BED03EB617EA0BDB00EEEACC /* WBFriendCell.h */,
 				21BD8AFA17ECAECE00AC1CD8 /* WBActivityCell.h */,
 				21BD8AFB17ECAECE00AC1CD8 /* WBActivityCell.m */,
+				21BD8AFD17ECAF0000AC1CD8 /* WBActivityCell.xib */,
+				BED03EB617EA0BDB00EEEACC /* WBFriendCell.h */,
 				BED03EB717EA0BDB00EEEACC /* WBFriendCell.m */,
 				BED03EB917EA0C8800EEEACC /* WBFriendCell.xib */,
 				DD304E1117E8AB2500B3BCA3 /* WBLoadMoreCell.h */,
@@ -477,7 +478,6 @@
 				BED03EBE17EB5D6600EEEACC /* WBInviteFriendsCell.m */,
 				BED03EBB17EB5D1800EEEACC /* WBInviteFriendsCell.xib */,
 				DD6F1E9017E3A80D0099866F /* Section Header */,
-				21BD8AFD17ECAF0000AC1CD8 /* WBActivityCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -491,10 +491,10 @@
 				BED03EA917E9162400EEEACC /* ProfileViewController.h */,
 				BED03EAA17E9162400EEEACC /* ProfileViewController.m */,
 				BED03EAB17E9162400EEEACC /* ProfileViewController.xib */,
-				DDA25DE217E26DEB00C44622 /* WB */,
 				21BD8AF517ECA51A00AC1CD8 /* ActivityViewController.h */,
 				21BD8AF617ECA51A00AC1CD8 /* ActivityViewController.m */,
 				21BD8AF717ECA51A00AC1CD8 /* ActivityViewController.xib */,
+				DDA25DE217E26DEB00C44622 /* WB */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
