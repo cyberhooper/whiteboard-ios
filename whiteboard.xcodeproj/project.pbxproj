@@ -55,7 +55,6 @@
 		9998873817F222770000C11E /* WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 9998873717F222770000C11E /* WBActivity.m */; };
 		99A1408017F09E5E00F1378D /* WBPhoto+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
-		99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7D17DE4FBF00809322 /* MyViewController.m */; };
 		99F9609417E39034005D27EB /* WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9609317E39034005D27EB /* WBPhoto.m */; };
 		99F9609617E390D7005D27EB /* WBPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9609517E390D7005D27EB /* WBPhotoTests.m */; };
 		BE1B3F6A17E22117003494CD /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE1B3F5D17E22117003494CD /* MainWindow.xib */; };
@@ -190,8 +189,6 @@
 		99A1407E17F09E5E00F1378D /* WBPhoto+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBPhoto+Utils.h"; sourceTree = "<group>"; };
 		99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBPhoto+Utils.m"; sourceTree = "<group>"; };
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
-		99D80C7C17DE4FBF00809322 /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
-		99D80C7D17DE4FBF00809322 /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 		99F9609217E39034005D27EB /* WBPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhoto.h; sourceTree = "<group>"; };
 		99F9609317E39034005D27EB /* WBPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhoto.m; sourceTree = "<group>"; };
 		99F9609517E390D7005D27EB /* WBPhotoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTests.m; sourceTree = "<group>"; };
@@ -376,8 +373,6 @@
 				BE1B3F5D17E22117003494CD /* MainWindow.xib */,
 				9919153017DA7B2A005DA25C /* AppDelegate.h */,
 				9919153117DA7B2A005DA25C /* AppDelegate.m */,
-				99D80C7C17DE4FBF00809322 /* MyViewController.h */,
-				99D80C7D17DE4FBF00809322 /* MyViewController.m */,
 				9919153917DA7B2A005DA25C /* Images.xcassets */,
 				9919152817DA7B2A005DA25C /* Supporting Files */,
 			);
@@ -789,7 +784,6 @@
 				9919153217DA7B2A005DA25C /* AppDelegate.m in Sources */,
 				9922AB5317E0DA6500D1B18A /* WBDataSource.m in Sources */,
 				2173980B17EA0B3D0071A03A /* WBUser+PFUser.m in Sources */,
-				99D80C7E17DE4FBF00809322 /* MyViewController.m in Sources */,
 				99F9609417E39034005D27EB /* WBPhoto.m in Sources */,
 				21A26B5317E362E400BF2BF4 /* WBUser.m in Sources */,
 				DDAC835B17F0994200E91B9A /* WBPhotoDetailsCellLikes.m in Sources */,

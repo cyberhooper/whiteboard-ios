@@ -2,7 +2,7 @@
 //  WBUser+PFUser.m
 //  whiteboard
 //
-//  Created by Thibault Gauche on 9/18/13.
+//  Created by ttg-fueled on 9/18/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 

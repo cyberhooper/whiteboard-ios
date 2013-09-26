@@ -2,7 +2,7 @@
 //  PFUser+WBUser.m
 //  whiteboard
 //
-//  Created by Lauren Frazier | Fueled on 9/23/13.
+//  Created by lnf-fueled on 9/23/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
