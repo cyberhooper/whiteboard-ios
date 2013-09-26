@@ -1,0 +1,5 @@
+<map id="&#45;[WBParseDataSource deletePossiblePreviousFollowActivityForUsers:]" name="&#45;[WBParseDataSource deletePossiblePreviousFollowActivityForUsers:]">
+<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#a4a60ac2be60ce1d7469b73e4b36087b6" title="&#45;[WBParseDataSource\l unFollowUsers:success\l:failure:]" alt="" coords="249,5,407,61"/>
+<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#ac93de296286b2cbd750c3035c4852c3f" title="&#45;[WBParseDataSource\l unFollowUser:success\l:failure:]" alt="" coords="457,5,610,61"/>
+<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892" title="&#45;[WBParseDataSource\l toggleFollowForUser\l:success:failure:]" alt="" coords="659,5,813,61"/>
+</map>

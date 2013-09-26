@@ -1,0 +1,11 @@
+<map id="&#45;[WBPhotoTimelineViewController toggleLikeOnPhoto:completion:]" name="&#45;[WBPhotoTimelineViewController toggleLikeOnPhoto:completion:]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#a631571b9bd4a72526a5e62d74d246535" title="&#45;[WBPhotoTimelineViewController\l unlikePhoto:completion:]" alt="" coords="261,143,469,184"/>
+<area shape="rect" id="node8" href="$interface_w_b_photo_timeline_view_controller.html#a0f0887172270cbf5c210918e7210ea54" title="&#45;[WBPhotoTimelineViewController\l likePhoto:completion:]" alt="" coords="261,270,469,311"/>
+<area shape="rect" id="node3" href="$interface_w_b_photo_timeline_view_controller.html#a6821927c1a6dcb3dbf6f0cab2dd1bea6" title="&#45;[WBPhotoTimelineViewController\l removeLikeOnPhoto:]" alt="" coords="517,175,725,216"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="774,216,991,242"/>
+<area shape="rect" id="node5" href="$interface_w_b_data_source.html#ad1b0246dfd99404c50f31e3fe6920386" title="&#45;[WBDataSource unlikePhoto\l:withUser:success:failure:]" alt="" coords="528,44,715,86"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo_timeline_view_controller.html#aae2beef16db05e8bed08b7e23288703c" title="&#45;[WBPhotoTimelineViewController\l addLikeOnPhoto:]" alt="" coords="517,240,725,282"/>
+<area shape="rect" id="node7" href="$interface_w_b_photo_timeline_view_controller.html#afb5412f35ee9c5c72c80a2f046a5ae21" title="&#45;[WBPhotoTimelineViewController\l unLikeFailedWithError:]" alt="" coords="517,110,725,151"/>
+<area shape="rect" id="node9" href="$interface_w_b_data_source.html#a210d063f58522c324d173cdf67caf26d" title="&#45;[WBDataSource likePhoto\l:withUser:success:failure:]" alt="" coords="535,358,708,399"/>
+<area shape="rect" id="node10" href="$interface_w_b_photo_timeline_view_controller.html#a4163ee7f64372d455156018ce770541b" title="&#45;[WBPhotoTimelineViewController\l likeFailedWithError:]" alt="" coords="517,423,725,464"/>
+</map>

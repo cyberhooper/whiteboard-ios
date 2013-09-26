@@ -1,0 +1,8 @@
+<map id="&#45;[WBTheme findFriendsCellBackgroundImage]" name="&#45;[WBTheme findFriendsCellBackgroundImage]">
+<area shape="rect" id="node2" href="$interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="227,71,402,97"/>
+<area shape="rect" id="node5" href="$interface_w_b_invite_friends_cell.html#a5ae4329d86943625055b535f32f7cfca" title="&#45;[WBInviteFriendsCell\l setUpView]" alt="" coords="244,122,385,163"/>
+<area shape="rect" id="node3" href="$interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="463,5,639,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="451,71,650,97"/>
+<area shape="rect" id="node6" href="$interface_w_b_invite_friends_cell.html#a4fa4cc5e2feb55a84d285b273ccfb729" title="&#45;[WBInviteFriendsCell\l initWithStyle:reuseIdentifier:]" alt="" coords="462,122,639,163"/>
+<area shape="rect" id="node7" href="$interface_w_b_invite_friends_cell.html#a719d5fa25ea425162007e7686d7a8317" title="&#45;[WBInviteFriendsCell\l awakeFromNib]" alt="" coords="480,187,621,229"/>
+</map>

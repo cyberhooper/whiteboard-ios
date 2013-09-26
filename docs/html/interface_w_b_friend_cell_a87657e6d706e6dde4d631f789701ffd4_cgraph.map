@@ -1,0 +1,6 @@
+<map id="&#45;[WBFriendCell setUpNumPhotosLabel]" name="&#45;[WBFriendCell setUpNumPhotosLabel]">
+<area shape="rect" id="node2" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="265,5,442,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#a6fba25dbc5e5b99d7f4bbd04fcc6b032" title="&#45;[WBTheme findFriendsNum\lPhotosFont]" alt="" coords="264,57,443,98"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#af5dd9621f12a5dfbea1ff186b3d85197" title="&#45;[WBTheme findFriendsNum\lPhotosFontColor]" alt="" coords="264,122,443,163"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#accdbac0ea45fb400012d34570b60fdbc" title="&#45;[WBTheme findFriendsNum\lPhotosShadowColor]" alt="" coords="264,187,443,229"/>
+</map>

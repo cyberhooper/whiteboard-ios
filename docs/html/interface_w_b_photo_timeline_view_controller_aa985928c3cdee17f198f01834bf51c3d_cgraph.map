@@ -1,0 +1,6 @@
+<map id="&#45;[WBPhotoTimelineViewController tableView:cellForLoadMoreAtIndexPath:]" name="&#45;[WBPhotoTimelineViewController tableView:cellForLoadMoreAtIndexPath:]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#a02d3d78879f0ea414733e092c92b84ab" title="&#45;[WBPhotoTimelineViewController\l configureLoadMoreCell:forRowAtIndexPath:]" alt="" coords="307,49,581,90"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="655,5,833,32"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#a3589d81555ebc35bc0270f6a943b3ec8" title="&#45;[WBTheme feedLoadMoreImage]" alt="" coords="638,56,850,83"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#a538042bd2c6e4319ea9f1aa6aaf029f1" title="&#45;[WBTheme feedLoadMoreSeperator\lTopImage]" alt="" coords="629,107,859,149"/>
+</map>

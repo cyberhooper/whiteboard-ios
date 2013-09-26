@@ -1,0 +1,4 @@
+<map id="&#45;[WBDataSource latestPhotosWithOffset:success:failure:]" name="&#45;[WBDataSource latestPhotosWithOffset:success:failure:]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#a095f52ae3dd9812dd80ef4d43dd7ee95" title="&#45;[WBPhotoTimelineViewController\l loadNextPage]" alt="" coords="248,5,456,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_photo_timeline_view_controller.html#a25a16c8514c1e70ac3f9ad4aff095a24" title="&#45;[WBPhotoTimelineViewController\l tableView:didSelectRowAtIndexPath:]" alt="" coords="504,5,744,46"/>
+</map>

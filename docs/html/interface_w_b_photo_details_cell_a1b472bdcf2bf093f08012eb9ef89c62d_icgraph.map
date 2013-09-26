@@ -1,0 +1,9 @@
+<map id="&#45;[WBPhotoDetailsCell setupView]" name="&#45;[WBPhotoDetailsCell setupView]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_details_cell.html#aa608096e7a8f8d853002de32bc6e2633" title="&#45;[WBPhotoDetailsCell\l initWithStyle:reuseIdentifier:]" alt="" coords="219,5,397,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_photo_details_cell.html#a803c498aff93795e1cd1ef024c949a77" title="&#45;[WBPhotoDetailsCell\l awakeFromNib]" alt="" coords="236,70,380,111"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_details_cell_add_comment.html#a4ce2f3ddb8460c12f5efdcd3ce3b8e08" title="&#45;[WBPhotoDetailsCellAddComment\l setupView]" alt="" coords="197,135,419,177"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo_details_cell_comment.html#ac7bd2de923f6dc5aab710ae632efad5f" title="&#45;[WBPhotoDetailsCellComment\l setupView]" alt="" coords="209,201,407,242"/>
+<area shape="rect" id="node7" href="$interface_w_b_photo_details_cell_likes.html#a0cf5a749968bba033ea9fa90e2b4b425" title="&#45;[WBPhotoDetailsCellLikes\l setupView]" alt="" coords="221,266,395,307"/>
+<area shape="rect" id="node8" href="$interface_w_b_photo_details_cell_photo.html#ae7c33c48ad570fd1cc4da459dc76a963" title="&#45;[WBPhotoDetailsCellPhoto\l setupView]" alt="" coords="219,331,397,373"/>
+<area shape="rect" id="node3" href="$interface_w_b_photo_details_cell_photo.html#a7444c2f754a78ee718f22829a7bc1578" title="&#45;[WBPhotoDetailsCellPhoto\l initWithStyle:reuseIdentifier:]" alt="" coords="467,5,645,46"/>
+</map>

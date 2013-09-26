@@ -1,0 +1,5 @@
+<map id="&#45;[WBAccountManager loginWithUsername:andPassWord:success:failure:]" name="&#45;[WBAccountManager loginWithUsername:andPassWord:success:failure:]">
+<area shape="rect" id="node2" href="$interface_w_b_login_view_controller.html#ae28d727e5512f940c6ccf90447dd8d12" title="&#45;[WBLoginViewController\l loginUser]" alt="" coords="246,38,407,79"/>
+<area shape="rect" id="node3" href="$interface_w_b_login_view_controller.html#a2ff463f857d74787726ee71fdb1380e9" title="&#45;[WBLoginViewController\l textFieldShouldReturn:]" alt="" coords="457,5,618,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_login_view_controller.html#a6636a23fe3319dce1052eb53c9dd1853" title="&#45;[WBLoginViewController\l validFieldsAction:]" alt="" coords="457,70,618,111"/>
+</map>

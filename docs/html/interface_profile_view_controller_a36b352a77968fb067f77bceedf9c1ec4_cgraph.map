@@ -1,0 +1,4 @@
+<map id="&#45;[ProfileViewController refreshPhotos]" name="&#45;[ProfileViewController refreshPhotos]">
+<area shape="rect" id="node2" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="198,5,415,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#a17458614cb88856b29c980d7c483cbc5" title="&#45;[WBDataSource photosFor\lUser:withOffset:success\l:failure:]" alt="" coords="217,56,396,112"/>
+</map>

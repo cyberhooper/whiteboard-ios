@@ -1,0 +1,6 @@
+<map id="&#45;[WBPhotoTimelineViewController tableView:viewForHeaderInSection:]" name="&#45;[WBPhotoTimelineViewController tableView:viewForHeaderInSection:]">
+<area shape="rect" id="node2" href="$interface_w_b_photo.html#ac63ea2f443d0f916d171d1b4d1b758c7" title="&#45;[WBPhoto isLiked]" alt="" coords="322,5,451,32"/>
+<area shape="rect" id="node4" href="$class_w_b_photo_timeline_section_header_view.html#aefe9dc4715e85db9adb1c5fcaf279596" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButton]" alt="" coords="302,57,471,98"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_timeline_view_controller.html#abd6e9f555c5141ce618e731c0a7f3588" title="&#45;[WBPhotoTimelineViewController\l isBeeingLiked:]" alt="" coords="283,122,491,163"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="539,5,757,32"/>
+</map>

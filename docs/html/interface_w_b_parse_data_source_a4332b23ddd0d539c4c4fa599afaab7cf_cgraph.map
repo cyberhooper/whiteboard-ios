@@ -1,0 +1,6 @@
+<map id="&#45;[WBParseDataSource latestPhotosWithOffset:success:failure:]" name="&#45;[WBParseDataSource latestPhotosWithOffset:success:failure:]">
+<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#a3db7f3649a0c14cc72d64cf8a2e63686" title="&#45;[WBParseDataSource\l queryForcurrentUserPhotos]" alt="" coords="225,5,404,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#ac470127e3944c6b0c80a164f302aa88b" title="&#45;[WBParseDataSource\l queryForCurentUserFriendPhotos]" alt="" coords="208,70,421,111"/>
+<area shape="rect" id="node5" href="$interface_w_b_parse_data_source.html#ad5bf697ccf169cee6652f4e4597ee56c" title="&#45;[WBParseDataSource\l wbPhotosFromParsePhotos:]" alt="" coords="219,135,411,177"/>
+<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="470,38,623,79"/>
+</map>

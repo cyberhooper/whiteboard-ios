@@ -1,0 +1,11 @@
+<map id="&#45;[ProfileViewController setupDataForUser:]" name="&#45;[ProfileViewController setupDataForUser:]">
+<area shape="rect" id="node2" href="$interface_w_b_profile_header_view.html#a1083e214f9a2dae6e231813ef44baab4" title="&#45;[WBProfileHeaderView\l setUpViewWithUser:]" alt="" coords="197,191,352,233"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="431,5,609,32"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#af20525311da02332fd0f2bd39f55b837" title="&#45;[WBTheme strokeProfilePicture\lImage]" alt="" coords="422,57,618,98"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#a2a47c982ac14d247e182c86e587d64e6" title="&#45;[WBTheme pictoFollowImage]" alt="" coords="423,123,617,149"/>
+<area shape="rect" id="node6" href="$interface_w_b_theme.html#aec3343a62ff272c526fca282de1c487f" title="&#45;[WBTheme pictoPhotoImage]" alt="" coords="425,173,615,200"/>
+<area shape="rect" id="node7" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="411,224,629,251"/>
+<area shape="rect" id="node8" href="$interface_w_b_data_source.html#a28d0b1cf76aaf8c4cda89f72a1f3db90" title="&#45;[WBDataSource numberOfFollowers\lForUser:success:failure:]" alt="" coords="404,275,636,317"/>
+<area shape="rect" id="node9" href="$interface_w_b_data_source.html#a12fc47cf9216e528657c1a8097918362" title="&#45;[WBDataSource numberOfFollowings\lForUser:success:failure:]" alt="" coords="401,341,639,382"/>
+<area shape="rect" id="node10" href="$interface_w_b_data_source.html#a13f8aaf5df2dd25dddea7546bc711245" title="&#45;[WBDataSource numberOfPhotos\lForUser:success:failure:]" alt="" coords="411,406,629,447"/>
+</map>

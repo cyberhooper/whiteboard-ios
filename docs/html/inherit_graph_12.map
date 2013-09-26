@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$protocol_w_b_photo_timeline_section_header_button_delegate-p.html" title="\&lt;WBPhotoTimelineSectionHeader\lButtonDelegate\&gt;" alt="" coords="203,5,413,46"/>
+<area shape="rect" id="node4" href="$protocol_w_b_photo_timeline_section_header_view_delegate-p.html" title="\&lt;WBPhotoTimelineSectionHeader\lViewDelegate\&gt;" alt="" coords="203,70,413,111"/>
+<area shape="rect" id="node3" href="$class_w_b_photo_timeline_section_header_view.html" title="WBPhotoTimelineSectionHeaderView" alt="" coords="461,12,693,39"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_details_view_controller.html" title="WBPhotoDetailsViewController" alt="" coords="479,136,675,163"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo_timeline_view_controller.html" title="WBPhotoTimelineViewController" alt="" coords="477,187,678,213"/>
+<area shape="rect" id="node7" href="$interface_main_feed_view_controller.html" title="MainFeedViewController" alt="" coords="742,161,901,188"/>
+<area shape="rect" id="node8" href="$interface_profile_view_controller.html" title="ProfileViewController" alt="" coords="754,212,889,239"/>
+<area shape="rect" id="node10" href="$interface_activity_view_controller.html" title="ActivityViewController" alt="" coords="507,237,648,264"/>
+<area shape="rect" id="node13" href="$interface_w_b_login_view_controller.html" title="WBLoginViewController" alt="" coords="231,339,385,365"/>
+<area shape="rect" id="node14" href="$interface_w_b_signup_view_controller.html" title="WBSignupViewController" alt="" coords="226,288,390,315"/>
+<area shape="rect" id="node16" href="$interface_w_b_view_controller.html" title="WBViewController" alt="" coords="246,237,370,264"/>
+</map>

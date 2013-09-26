@@ -1,0 +1,6 @@
+<map id="WBPhotoDetailsCell" name="WBPhotoDetailsCell">
+<area shape="rect" id="node3" href="$interface_w_b_photo_details_cell_add_comment.html" title="WBPhotoDetailsCellAddComment" alt="" coords="358,5,573,32"/>
+<area shape="rect" id="node4" href="$interface_w_b_photo_details_cell_comment.html" title="WBPhotoDetailsCellComment" alt="" coords="370,56,561,83"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_details_cell_likes.html" title="WBPhotoDetailsCellLikes" alt="" coords="382,107,549,133"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo_details_cell_photo.html" title="WBPhotoDetailsCellPhoto" alt="" coords="380,157,551,184"/>
+</map>

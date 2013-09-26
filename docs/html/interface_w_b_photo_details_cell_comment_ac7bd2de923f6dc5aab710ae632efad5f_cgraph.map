@@ -1,0 +1,10 @@
+<map id="&#45;[WBPhotoDetailsCellComment setupView]" name="&#45;[WBPhotoDetailsCellComment setupView]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_details_cell.html#a1b472bdcf2bf093f08012eb9ef89c62d" title="&#45;[WBPhotoDetailsCell\l setupView]" alt="" coords="277,5,421,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="261,71,438,97"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#a18d14fe8ea8032bb34169c17e229ab79" title="&#45;[WBTheme detailsComments\lNameFont]" alt="" coords="254,122,445,163"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#a92d40fc5e5b6d71b0972814accb64380" title="&#45;[WBTheme detailsComments\lNameFontColor]" alt="" coords="254,187,445,229"/>
+<area shape="rect" id="node6" href="$interface_w_b_theme.html#a59294278dacb667ba82485b4e1e38550" title="&#45;[WBTheme detailsComments\lMessageFont]" alt="" coords="254,253,445,294"/>
+<area shape="rect" id="node7" href="$interface_w_b_theme.html#a986a69f7d11ee3454ee7bf6f095faaa5" title="&#45;[WBTheme detailsComments\lMessageFontColor]" alt="" coords="254,318,445,359"/>
+<area shape="rect" id="node8" href="$interface_w_b_theme.html#ad3f4e2263487ed05114c30f5c4ca8f08" title="&#45;[WBTheme detailsComments\lDateFont]" alt="" coords="254,383,445,425"/>
+<area shape="rect" id="node9" href="$interface_w_b_theme.html#a904d4579c006e696ca215253d543c769" title="&#45;[WBTheme detailsComments\lDateFontColor]" alt="" coords="254,449,445,490"/>
+</map>

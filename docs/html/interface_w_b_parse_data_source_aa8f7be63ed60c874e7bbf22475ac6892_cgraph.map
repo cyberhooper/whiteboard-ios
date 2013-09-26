@@ -1,0 +1,9 @@
+<map id="&#45;[WBParseDataSource toggleFollowForUser:success:failure:]" name="&#45;[WBParseDataSource toggleFollowForUser:success:failure:]">
+<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#a6509410d0c5155c5e19aa3fe2a182ba6" title="&#45;[WBParseDataSource\l followUser:success\l:failure:]" alt="" coords="209,27,362,83"/>
+<area shape="rect" id="node6" href="$interface_w_b_parse_data_source.html#ac93de296286b2cbd750c3035c4852c3f" title="&#45;[WBParseDataSource\l unFollowUser:success\l:failure:]" alt="" coords="209,107,362,163"/>
+<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#ae506035597e9305ca3f7d232a8b750b0" title="&#45;[WBParseDataSource\l followUsers:success\l:failure:]" alt="" coords="414,27,567,83"/>
+<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#a89c1e6420798b87b0175b2bf212c0da2" title="&#45;[WBParseDataSource\l currentUser]" alt="" coords="639,70,793,111"/>
+<area shape="rect" id="node5" href="$interface_w_b_parse_data_source.html#a5b7aa47b8d6375cd75e9e3d6be30cbb8" title="&#45;[WBParseDataSource\l createFollowActivityForUsers:]" alt="" coords="621,5,811,46"/>
+<area shape="rect" id="node7" href="$interface_w_b_parse_data_source.html#a4a60ac2be60ce1d7469b73e4b36087b6" title="&#45;[WBParseDataSource\l unFollowUsers:success\l:failure:]" alt="" coords="411,107,570,163"/>
+<area shape="rect" id="node8" href="$interface_w_b_parse_data_source.html#a63c4bd4199b295a1ac8692be781c5760" title="&#45;[WBParseDataSource\l deletePossiblePreviousFollow\lActivityForUsers:]" alt="" coords="619,136,813,192"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="&#45;[WBTheme feedLoadMoreSeperatorTopImage]" name="&#45;[WBTheme feedLoadMoreSeperatorTopImage]">
+<area shape="rect" id="node2" href="$interface_w_b_find_friends_view_controller.html#a92191d126bfa15ced74a8371e958ae43" title="&#45;[WBFindFriendsViewController\l configureLoadMoreCell:forRowAtIndex\lPath:]" alt="" coords="300,5,540,61"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_timeline_view_controller.html#a02d3d78879f0ea414733e092c92b84ab" title="&#45;[WBPhotoTimelineViewController\l configureLoadMoreCell:forRowAtIndexPath:]" alt="" coords="283,86,557,127"/>
+<area shape="rect" id="node3" href="$interface_w_b_find_friends_view_controller.html#af63b1a1eaa155b804d6b4fce75579a5c" title="&#45;[WBFindFriendsViewController\l tableView:cellForLoadMoreAtIndex\lPath:]" alt="" coords="622,5,842,61"/>
+<area shape="rect" id="node4" href="$interface_w_b_find_friends_view_controller.html#acc6e8afb45c5cabb7c2b5427bf82a37e" title="&#45;[WBFindFriendsViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="907,13,1131,54"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo_timeline_view_controller.html#aa985928c3cdee17f198f01834bf51c3d" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForLoadMoreAtIndexPath:]" alt="" coords="605,86,859,127"/>
+<area shape="rect" id="node7" href="$interface_w_b_photo_timeline_view_controller.html#a335d3cc0617bf17dc451e7c53031ee0b" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="907,86,1131,127"/>
+</map>

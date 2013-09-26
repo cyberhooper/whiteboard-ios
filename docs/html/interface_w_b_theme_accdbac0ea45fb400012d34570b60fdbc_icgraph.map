@@ -1,0 +1,6 @@
+<map id="&#45;[WBTheme findFriendsNumPhotosShadowColor]" name="&#45;[WBTheme findFriendsNumPhotosShadowColor]">
+<area shape="rect" id="node2" href="$interface_w_b_friend_cell.html#a87657e6d706e6dde4d631f789701ffd4" title="&#45;[WBFriendCell setUpNumPhotos\lLabel]" alt="" coords="233,34,442,75"/>
+<area shape="rect" id="node3" href="$interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="491,41,666,68"/>
+<area shape="rect" id="node4" href="$interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="727,5,903,46"/>
+<area shape="rect" id="node5" href="$interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="715,71,914,97"/>
+</map>

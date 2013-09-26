@@ -1,0 +1,4 @@
+<map id="&#45;[WBFindFriendsViewController cell:didTapFollowButtonAtIndex:]" name="&#45;[WBFindFriendsViewController cell:didTapFollowButtonAtIndex:]">
+<area shape="rect" id="node2" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="262,5,479,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#a2fa3f8522ee5ac3188aece12749f0093" title="&#45;[WBDataSource toggleFollow\lForUser:success:failure:]" alt="" coords="275,57,467,98"/>
+</map>

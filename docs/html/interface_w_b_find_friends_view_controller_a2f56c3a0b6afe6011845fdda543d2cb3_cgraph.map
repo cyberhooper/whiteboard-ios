@@ -1,0 +1,7 @@
+<map id="&#45;[WBFindFriendsViewController followAll]" name="&#45;[WBFindFriendsViewController followAll]">
+<area shape="rect" id="node2" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="491,5,709,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#a11c9434020a72c448e716052bedef3f8" title="&#45;[WBDataSource followUsers\l:success:failure:]" alt="" coords="251,41,439,82"/>
+<area shape="rect" id="node4" href="$interface_w_b_find_friends_view_controller.html#a9e7c9c3dce64b52bb93a8363b4b0b020" title="&#45;[WBFindFriendsViewController\l getSuggestedUsers]" alt="" coords="248,106,443,147"/>
+<area shape="rect" id="node5" href="$interface_w_b_data_source.html#a42bd31035b65471fb4eecab80b9545ae" title="&#45;[WBDataSource suggested\lUsers:failure:]" alt="" coords="509,73,691,114"/>
+<area shape="rect" id="node6" href="$interface_w_b_find_friends_view_controller.html#a4898628da359d9d30f478445c7a06e7f" title="&#45;[WBFindFriendsViewController\l configureBarButton]" alt="" coords="503,138,697,179"/>
+</map>
