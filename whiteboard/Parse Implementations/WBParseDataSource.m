@@ -14,14 +14,29 @@
 #import "PFObject+WBPhoto.h"
 #import "WBComment+PFObject.h"
 #import "PFObject+WBComment.h"
+#import "PFObject+WBActivity.h"
 #import "WBAccountManager.h"
 #import "WBParseConstants.h"
 #import "WBActivity.h"
+#import "WBParsePushNotificationCreator.h"
 
-@implementation WBParseDataSource
+@implementation WBParseDataSource {
+  WBParsePushNotificationCreator *pushNotificationCreator;
+}
 
 @synthesize currentUser = _currentUser;
 @synthesize facebookFriends = _facebookFriends;
+
+- (id)init {
+  if (self = [super init]) {
+    pushNotificationCreator = [[WBParsePushNotificationCreator alloc] init];
+  }
+  return self;
+}
+
+- (void)dealloc {
+  pushNotificationCreator = nil;
+}
 
 - (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
   [Parse setApplicationId:[self applicationId]
@@ -97,6 +112,8 @@
 - (PFACL *)photoACL {
   PFACL *acl = [PFACL ACLWithUser:[PFUser currentUser]];
   [acl setPublicReadAccess:YES];
+  ///
+  [acl setPublicWriteAccess:YES];
   return acl;
 }
 
@@ -177,6 +194,7 @@
       WBPhoto *responsePhoto = [parsePhoto WBPhoto];
       success(responsePhoto.likes);
       [self createLikeActivityForPhoto:parsePhoto];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"didLikePhoto" object:nil userInfo:@{@"user": user, @"photo": photo}];
     } else if (failure) {
       failure(error);
     }
@@ -267,6 +285,7 @@
     if (!error && success) {
       success();
       [self createCommentActivityForPhoto:parsePhoto];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"didCommentPhoto" object:nil userInfo:@{@"user": [self currentUser], @"photo": photo}];
     }
     else if (failure) {
       failure(error);
@@ -344,6 +363,7 @@
     if (!error && success) {
       success();
       [self createFollowActivityForUsers:parseUsers];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"didFollowUsers" object:nil userInfo:@{@"user" : [self currentUser] ,@"followedUsers": wbUsers}];
     }
     else if (failure) {
       failure(error);
@@ -397,10 +417,9 @@
                       success:(void(^)(int numberOfPhotos))success
                       failure:(void(^)(NSError *error))failure {
   PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
-  PFQuery *queryPhotoCount = [PFQuery queryWithClassName:@"Photo"];
-  [queryPhotoCount whereKey:@"user" equalTo:parseUser];
-  queryPhotoCount.cachePolicy = kPFCachePolicyCacheElseNetwork;
-  [queryPhotoCount countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  [query whereKey:@"user" equalTo:parseUser];
+  [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
       success(number);
     else if (failure)
@@ -411,9 +430,9 @@
 - (void)numberOfFollowersForUser:(WBUser *)user
                          success:(void(^)(int numberOfFollowers))success
                          failure:(void(^)(NSError *error))failure {
-  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFUser *pfUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
   PFQuery *query = [PFQuery queryWithClassName:@"_User"];
-  [query whereKey:@"following" equalTo:parseUser];
+  [query whereKey:@"following" equalTo:pfUser];
   [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
       success(number);
@@ -425,8 +444,8 @@
 - (void)numberOfFollowingsForUser:(WBUser *)user
                           success:(void(^)(int numberOfFollowings))success
                           failure:(void(^)(NSError *error))failure {
-  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
-  PFRelation *followingRelation = [parseUser relationforKey:@"following"];
+  PFUser *pfUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFRelation *followingRelation = [pfUser relationforKey:@"following"];
   [[followingRelation query] countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
       success(number);
@@ -509,25 +528,10 @@
 
 - (NSArray *)wbActivitiesFromActivities:(NSArray *)activities {
   NSMutableArray *wbActivities = [@[] mutableCopy];
-  for (PFObject *activity in activities) {
-    WBActivity *wbActivity = [self wbActivityfromActivity:activity];
-    [wbActivities addObject:wbActivity];
+  for (PFObject *a in activities) {
+    [wbActivities addObject:[a WBActivity]];
   }
   return [NSArray arrayWithArray:wbActivities];
 }
               
-- (WBActivity *)wbActivityfromActivity:(PFObject *)object {
-  WBActivity *activity = [[WBActivity alloc] init];
-  activity.type = [object objectForKey:kActivityTypeKey];
-  PFUser *toUser = [object objectForKey:kActivityToUserKey];
-  activity.toUser = [toUser WBUser];
-  activity.createdAt = object.createdAt;
-  
-  if ([activity.type isEqualToString:kActivityTypeLike] || [activity.type isEqualToString:kActivityTypeComment]) {
-    PFObject *photo = [object objectForKey:@"photo"];
-    activity.photo = [photo WBPhoto];
-  }
-  return activity;
-}
-
 @end

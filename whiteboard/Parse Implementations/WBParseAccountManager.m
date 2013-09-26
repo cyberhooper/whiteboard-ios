@@ -24,13 +24,13 @@
               andPassWord:(NSString *)password
                   success:(void (^)(WBUser *))success
                   failure:(void (^)(NSError *))failure {
-  
   [PFUser logInWithUsernameInBackground:username
                                password:password
                                   block:^(PFUser *user, NSError *error) {
                                     if (user) {
                                       [user WBUser];
                                       success([[WBDataSource sharedInstance] currentUser]);
+                                      [self subscribeUserToPrivatePushChannel:user];
                                     }
                                     else {
                                       failure (error);
@@ -44,8 +44,31 @@
   // Parse logout is instant since it deletes the current pfuser on disk.
   [WBDataSource sharedInstance].currentUser = nil;
   [WBDataSource sharedInstance].facebookFriends = nil;
+  [self unsubscribeUserFromPrivatePushChannel:[PFUser currentUser]];
   [PFUser logOut];
   success();
+#warning  no failure handeling??
+}
+
+- (void)subscribeUserToPrivatePushChannel:(PFUser *)user {
+  NSString *privateChannelName = [NSString stringWithFormat:@"user_%@", [user objectId]];
+  
+  // Add the user to the installation so we can track the owner of the device
+  [[PFInstallation currentInstallation] setObject:[PFUser currentUser] forKey:@"user"];
+  
+  // Subscribe user to private channel
+  [[PFInstallation currentInstallation] addUniqueObject:privateChannelName forKey:@"channels"];
+  
+  // Save installation object
+  [[PFInstallation currentInstallation] saveEventually];
+  [user setObject:privateChannelName forKey:@"channel"];
+  [user saveEventually];
+}
+
+- (void)unsubscribeUserFromPrivatePushChannel:(PFUser *)user {
+  [[PFInstallation currentInstallation] removeObjectForKey:@"user"];
+  [[PFInstallation currentInstallation] removeObject:[user objectForKey:@"channel"] forKey:@"channels"];
+  [[PFInstallation currentInstallation] saveEventually];;
 }
 
 - (void)signupWithInfo:(NSDictionary *)userInfo
@@ -118,6 +141,7 @@
                                     }
                                     else {
                                       success();
+                                      [self subscribeUserToPrivatePushChannel:user];
                                       // Create request for user's Facebook data
                                       FBRequest *request = [FBRequest requestForMe];
                                       
