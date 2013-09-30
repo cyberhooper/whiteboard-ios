@@ -1,3 +1,4 @@
+
 //
 //  PFObject+WBComment.m
 //  whiteboard
@@ -12,17 +13,12 @@
 @implementation PFObject (WBComment)
 
 - (WBComment *)WBComment {
-  [self fetchIfNeeded];
   WBComment *comment = [[WBComment alloc] init];
-  // Set ID
   comment.commentID = self.objectId;
-  [self fetchIfNeeded];
-  if ([self isDataAvailable]) {
-    // Set author
+
+  if (self.isDataAvailable) {
     comment.author = [[self objectForKey:@"user"] WBUser];
-    // Set text
     comment.text = [self objectForKey:@"text"];
-    // Set created at date
     comment.createdAt = self.createdAt;
   }
   return comment;

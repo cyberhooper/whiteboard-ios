@@ -20,7 +20,7 @@
 #import "WBDataSource.h"
 #import "ProfileViewController.h"
 
-@interface WBPhotoDetailsViewController () <UITableViewDataSource, UITableViewDelegate, WBPhotoTimelineSectionHeaderViewDelegate, WBPhotoDetailsCellLikesDelegate >
+@interface WBPhotoDetailsViewController () <UITableViewDataSource, UITableViewDelegate, WBPhotoTimelineSectionHeaderViewDelegate, WBPhotoDetailsCellLikesDelegate, WBPhotoDetailsCellAddCommentDelegate>
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 @end
 
@@ -132,13 +132,10 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
       break;
       
     case DetailsCellTypeComments: {
-//      WBComment *comment = [self.comments objectAtIndex:indexPath.row];
-      
-      return [WBPhotoDetailsCellComment cellHeightWithMessage:@"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley."];
-//      return [WBPhotoDetailsCellComment cellHeight];
+      WBComment *comment = [self commentForIndexPath:indexPath];
+      return comment.text ? [WBPhotoDetailsCellComment cellHeightWithMessage:comment.text] : 0;
       break;
     }
-      
     case DetailsCellTypeAddComment:
       return [WBPhotoDetailsCellAddComment cellHeight];
       break;
@@ -188,43 +185,26 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
                                      placeholder:[[WBTheme sharedTheme] feedPlaceholderImage]];
       break;
     }
-      
     case DetailsCellTypeLikes: {
       WBPhotoDetailsCellLikes *likesCell = (WBPhotoDetailsCellLikes *)cell;
       likesCell.likers = self.photo.likes;
       likesCell.delegate = self;
       break;
     }
-      
     case DetailsCellTypeComments: {
       WBPhotoDetailsCellComment *commentCell = (WBPhotoDetailsCellComment *)cell;
-      
-      // The self.comments array doesn't start at indexPath.row because of the likes cell and photo cell.
-      // Therefore we have to create an offset
-      NSInteger commentsOffset = kNumberOfPhotoCells + kNumberOfLikesCells;
-      
-      WBComment *comment = [self.photo.comments objectAtIndex:indexPath.row - commentsOffset];
-      
-      // Set the avatar
+      WBComment *comment = [self commentForIndexPath:indexPath];
       [commentCell.avatarImageView setImageWithPath:comment.author.avatar.absoluteString placeholder:nil];
-      
-      // Set name
-      commentCell.name = comment.author.username;
-      
-      // Set message
-      commentCell.message = @"Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley.";
-      
-      // Set date
+      commentCell.name = comment.author.displayName;
+      commentCell.message = comment.text;
       commentCell.createdAt = comment.createdAt;
-      
       break;
     }
-      
     case DetailsCellTypeAddComment: {
-
+      WBPhotoDetailsCellAddComment *commentCell = (WBPhotoDetailsCellAddComment *)cell;
+      commentCell.delegate = self;
       break;
     }
-      
     default:
       break;
   }
@@ -258,17 +238,37 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
   return [[WBTheme sharedTheme] backgroundImage];
 }
 
-#pragma mark - WBPhotoDetailsCellLikesDelegate
+#pragma mark - Likes Cell Delegate
 
 - (void)likesCellDidSelectAvatarAtIndex:(NSUInteger)index {
   WBUser *user = self.photo.likes[index];
   [self pushProfile:user];
 }
 
-#pragma mark - WBPhotoTimelineSectionHeaderViewDelegate
+#pragma mark - SectionHeaderView Delegate
 
 - (void)sectionHeaderPressed:(WBUser *)author {
   [self pushProfile:author];
+}
+
+#pragma mark - Comment Cell Delegate
+
+- (void)commentCell:(WBPhotoDetailsCellAddComment *)cell
+ didTapSendWithText:(NSString *)text {
+  [[WBDataSource sharedInstance] addComment:text onPhoto:self.photo success:^{
+    [cell clearTextField];
+    
+    WBComment *comment = [[WBComment alloc] init];
+    comment.author = [[WBDataSource sharedInstance] currentUser];
+    comment.text = text;
+    comment.createdAt = [NSDate date];
+    
+    self.photo.comments = [self.photo.comments arrayByAddingObject: comment];
+    
+    [self.tableView reloadData];
+  } failure:^(NSError *error) {
+    
+  }];
 }
 
 #pragma mark - Helpers
@@ -279,6 +279,12 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
   [self.navigationController pushViewController:profileVC animated:YES];
 }
 
-
+- (WBComment *)commentForIndexPath:(NSIndexPath *)indexPath {
+  // The self.comments array doesn't start at indexPath.row because of the likes cell and photo cell.
+  // Therefore we have to create an offset
+  NSInteger commentsOffset = kNumberOfPhotoCells + kNumberOfLikesCells;
+  WBComment *comment = [self.photo.comments objectAtIndex:indexPath.row - commentsOffset];
+  return comment;
+}
 
 @end

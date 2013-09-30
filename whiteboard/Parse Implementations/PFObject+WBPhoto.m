@@ -13,11 +13,11 @@
 @implementation PFObject (WBPhoto)
 
 - (WBPhoto *)WBPhoto {
-  [self fetchIfNeeded];
+  //[self fetchIfNeeded];
   WBPhoto *wbPhoto = [[WBPhoto alloc] init];
   // Set ID
   wbPhoto.photoID = self.objectId;
-  [self fetchIfNeeded];
+  //[self fetchIfNeeded];
   // Set image
   PFFile *imageFile = [self objectForKey:@"imageFile"];
   wbPhoto.url = [NSURL URLWithString:[imageFile url]];

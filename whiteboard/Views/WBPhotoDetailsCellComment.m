@@ -21,15 +21,6 @@
 
 @implementation WBPhotoDetailsCellComment
 
-- (id)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code
-    }
-    return self;
-}
-
 #pragma mark - Setup
 - (void)setupView {
   [super setupView];

@@ -8,6 +8,17 @@
 
 #import "WBPhotoDetailsCell.h"
 
+@class WBPhotoDetailsCellAddComment;
+
+@protocol WBPhotoDetailsCellAddCommentDelegate <NSObject>
+
+- (void)commentCell:(WBPhotoDetailsCellAddComment *)cell didTapSendWithText:(NSString *)text;
+
+@end
+
 @interface WBPhotoDetailsCellAddComment : WBPhotoDetailsCell
+
+@property (nonatomic, weak) id<WBPhotoDetailsCellAddCommentDelegate> delegate;
+- (void)clearTextField;
 
 @end

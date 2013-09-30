@@ -222,8 +222,9 @@
            success:(void(^)(WBPhoto *fetchedPhoto))success
            failure:(void(^)(NSError *error))failure {
   PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  [query includeKey:@"user"];
   [query includeKey:@"likes"];
-  [query includeKey:@"comments"];
+  [query includeKey:@"comments.user"];
   [query getObjectInBackgroundWithId:photo.photoID block:^(PFObject *parsePhoto, NSError *error) {
     if (!error && success) {
       success([parsePhoto WBPhoto]);
@@ -268,23 +269,11 @@
            onPhoto:(WBPhoto *)photo
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure {
-  if (![PFUser currentUser]) {
-    if (failure) {
-      NSError *e = [NSError errorWithDomain:@"" code:0 userInfo:@{@"mesages" : @"You need to be logged in to post a comment"}];
-      failure(e);
-    }
-    return;
-  }
-  
-  PFObject *parseComment = [PFObject objectWithClassName:@"Comment"];
-  [parseComment setObject:comment forKey:@"text"];
-  [parseComment setObject:[PFUser currentUser] forKey:@"user"];
-  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
-  [parsePhoto addObject:parseComment forKey:@"comments"];
-  [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+  NSDictionary * params = @{@"comment" : comment, @"photoId" : photo.photoID };
+  [PFCloud callFunctionInBackground:@"addCommentToPhoto" withParameters:params block:^(id object, NSError *error) {
     if (!error && success) {
       success();
-      [self createCommentActivityForPhoto:parsePhoto];
+     [self createCommentActivityForPhoto:object];
       [[NSNotificationCenter defaultCenter] postNotificationName:@"didCommentPhoto" object:nil userInfo:@{@"user": [self currentUser], @"photo": photo}];
     }
     else if (failure) {
