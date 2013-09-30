@@ -59,6 +59,7 @@
     
     CGRect frame = CGRectMake(posX, posY, size.width, size.height);
     
+    
     UIImageView *likerImageView = [[UIImageView alloc] initWithFrame:frame];
     likerImageView.clipsToBounds = YES;
     [likerImageView roundedCornersWithRadius:3.f];
@@ -70,7 +71,17 @@
     [likerImageView setImageWithPath:user.avatar.absoluteString placeholder:nil];
     
     [self.likersView addSubview:likerImageView];
+    
+    
+    // Detect Taps on avatars.
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    button.frame = frame;
+    [button addTarget:self action:@selector(tap:) forControlEvents:UIControlEventTouchUpInside];
+    button.tag = i;
+    [self.likersView addSubview:button];
   }
+  
+  [self setupView];
 }
 
 #pragma mark - CellHeight
@@ -78,13 +89,12 @@
   return 42.f;
 }
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect
-{
-    // Drawing code
+- (void)tap:(UIButton *)sender  {
+  if ([_delegate respondsToSelector:@selector(likesCellDidSelectAvatarAtIndex:)]) {
+    [_delegate likesCellDidSelectAvatarAtIndex:sender.tag];
+  }
 }
-*/
+
+
 
 @end

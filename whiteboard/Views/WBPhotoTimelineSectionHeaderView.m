@@ -155,7 +155,9 @@
 }
 #pragma mark - IBActions
 - (void)wbPhotoTimelineSectionHeaderTap {
-  [self.delegate sectionHeaderPressed:_author];
+  if ([_delegate respondsToSelector:@selector(sectionHeaderPressed:)]) {
+    [self.delegate sectionHeaderPressed:_author];
+  }
 }
 
 - (void)wbPhotoTimelineSectionHeaderButtonPressed:(WBPhotoTimelineSectionHeaderButton *)button {

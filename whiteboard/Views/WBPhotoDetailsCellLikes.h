@@ -8,6 +8,12 @@
 
 #import "WBPhotoDetailsCell.h"
 
+@protocol WBPhotoDetailsCellLikesDelegate <NSObject>
+
+- (void)likesCellDidSelectAvatarAtIndex:(NSUInteger)index;
+
+@end
+
 @interface WBPhotoDetailsCellLikes : WBPhotoDetailsCell
 
 /**
@@ -19,5 +25,7 @@
  An array full of WBUser's who has liked the photo
  */
 @property (nonatomic, assign) NSArray *likers;
+
+@property (nonatomic, weak) id<WBPhotoDetailsCellLikesDelegate> delegate;
 
 @end

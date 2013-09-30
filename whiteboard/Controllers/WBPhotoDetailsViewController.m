@@ -17,11 +17,11 @@
 
 #import "WBComment.h"
 #import "WBUser.h"
+#import "WBDataSource.h"
+#import "ProfileViewController.h"
 
-@interface WBPhotoDetailsViewController () <UITableViewDataSource, UITableViewDelegate, WBPhotoTimelineSectionHeaderViewDelegate>
+@interface WBPhotoDetailsViewController () <UITableViewDataSource, UITableViewDelegate, WBPhotoTimelineSectionHeaderViewDelegate, WBPhotoDetailsCellLikesDelegate >
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
-
-@property (nonatomic, strong) NSMutableArray *comments;
 @end
 
 typedef enum {
@@ -47,7 +47,13 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
   [super viewDidLoad];
 
   [self setupView];
-  [self setupDummyData];
+  
+  [[WBDataSource sharedInstance] fetchPhoto:self.photo success:^(WBPhoto *fetchedPhoto) {
+    self.photo = fetchedPhoto;
+    [self.tableView reloadData];
+  } failure:^(NSError *error) {
+    NSLog(@"Failed");
+  }];
 }
 
 #pragma mark - Setup
@@ -75,24 +81,6 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
   [self.tableView registerNib:addCommentCellNib forCellReuseIdentifier:AddCommentCellIdentifier];
 }
 
-- (void)setupDummyData {
-  self.comments = [NSMutableArray array];
-  
-  for(NSInteger i = 0; i < 10; i++){
-    WBComment *comment = [[WBComment alloc] init];
-    comment.createdAt = [NSDate date];
-    comment.text = [NSString stringWithFormat:@"Comment text %i", i];
-    
-    WBUser *user = [[WBUser alloc] init];
-    user.username = [NSString stringWithFormat:@"User %i", arc4random()];
-    user.avatar = [NSURL URLWithString:@"http://lorempixel.com/400/400/people/"];
-    
-    comment.author = user;
-    
-    [self.comments addObject:comment];
-  }
-}
-
 #pragma mark - UITableView
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section {
   WBPhotoTimelineSectionHeaderView *sectionHeaderView = nil;
@@ -110,11 +98,13 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
     }
   }
   
+  sectionHeaderView.author = self.photo.author;
   sectionHeaderView.date = self.photo.createdAt;
   [sectionHeaderView.profilePictureImageView setImageWithPath:self.photo.author.avatar.absoluteString
                                                   placeholder:nil];
   sectionHeaderView.delegate = self;
-  
+  sectionHeaderView.delegate = self;
+  sectionHeaderView.sectionIndex = @(section);  
   return sectionHeaderView;
 }
 
@@ -201,17 +191,8 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
       
     case DetailsCellTypeLikes: {
       WBPhotoDetailsCellLikes *likesCell = (WBPhotoDetailsCellLikes *)cell;
-
-      #warning Test objects. Remove this for production
-      NSMutableArray *array = [NSMutableArray array];
-      for (NSInteger i = 0; i < 10; i++) {
-        WBUser *user = [[WBUser alloc] init];
-        user.avatar = [NSURL URLWithString:@"http://lorempixel.com/400/400/people/"];
-        [array addObject:user];
-      }
-      
-      likesCell.likers = array;
-      
+      likesCell.likers = self.photo.likes;
+      likesCell.delegate = self;
       break;
     }
       
@@ -222,7 +203,7 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
       // Therefore we have to create an offset
       NSInteger commentsOffset = kNumberOfPhotoCells + kNumberOfLikesCells;
       
-      WBComment *comment = [self.comments objectAtIndex:indexPath.row - commentsOffset];
+      WBComment *comment = [self.photo.comments objectAtIndex:indexPath.row - commentsOffset];
       
       // Set the avatar
       [commentCell.avatarImageView setImageWithPath:comment.author.avatar.absoluteString placeholder:nil];
@@ -267,7 +248,7 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
 }
 
 - (NSInteger)numberOfTotalRows {
-  NSInteger numberOfCommentsCells = self.comments.count;
+  NSInteger numberOfCommentsCells = self.photo.comments.count;
   
   return kNumberOfPhotoCells + kNumberOfLikesCells + numberOfCommentsCells + kNumberOfAddCommentCells;
 }
@@ -277,10 +258,27 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
   return [[WBTheme sharedTheme] backgroundImage];
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - WBPhotoDetailsCellLikesDelegate
+
+- (void)likesCellDidSelectAvatarAtIndex:(NSUInteger)index {
+  WBUser *user = self.photo.likes[index];
+  [self pushProfile:user];
 }
+
+#pragma mark - WBPhotoTimelineSectionHeaderViewDelegate
+
+- (void)sectionHeaderPressed:(WBUser *)author {
+  [self pushProfile:author];
+}
+
+#pragma mark - Helpers
+
+- (void)pushProfile:(WBUser *)user {
+  ProfileViewController *profileVC = [[ProfileViewController alloc] init];
+  profileVC.user = user;
+  [self.navigationController pushViewController:profileVC animated:YES];
+}
+
+
 
 @end
