@@ -349,6 +349,9 @@
   }
   [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success) {
+      for (WBUser *u in wbUsers) {
+        u.isFollowed = YES;
+      }
       success();
       [self createFollowActivityForUsers:parseUsers];
       [[NSNotificationCenter defaultCenter] postNotificationName:@"didFollowUsers" object:nil userInfo:@{@"user" : [self currentUser] ,@"followedUsers": wbUsers}];
@@ -378,6 +381,9 @@
   }
   [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success) {
+      for (WBUser *u in wbUsers) {
+        u.isFollowed = NO;
+      }
       success();
       [self deletePossiblePreviousFollowActivityForUsers:parseUsers];
     }

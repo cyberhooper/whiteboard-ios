@@ -112,12 +112,10 @@
                      success:(void (^)(void))success
                      failure:(void (^)(NSError *))failure {
   [PFUser requestPasswordResetForEmailInBackground:[user email] block:^(BOOL succeeded, NSError *error) {
-    if (succeeded) {
+    if (succeeded)
       success();
-    }
-    else {
+    else
       failure (error);
-    }
   }];
 }
 

@@ -9,9 +9,11 @@
 #import "ProfileViewController.h"
 #import "MainFeedCell.h"
 #import "WBProfileHeaderView.h"
+#import "WBPhotoDetailsViewController.h"
 
 @interface ProfileViewController () {
   WBProfileHeaderView *headerView;
+  UIBarButtonItem *followButton;
 }
 @end
 
@@ -33,7 +35,7 @@
   }
   
   self.tableView.tableHeaderView = headerView;
-  
+  [self addfollowBarButtonItem];
 }
 
 - (void)setupDataForUser:(WBUser *)user {
@@ -87,6 +89,37 @@
                                       self.isLoading = NO;
 
                                     }];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath { 
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
+  WBPhotoDetailsViewController *photoDetailsVC = [[WBPhotoDetailsViewController alloc] init];
+  photoDetailsVC.photo = photo;
+  [self.navigationController pushViewController:photoDetailsVC animated:YES];
+}
+
+#pragma mark - Follo / Unfollow button
+
+- (void)addfollowBarButtonItem {
+  followButton = [[UIBarButtonItem alloc] initWithTitle:@"Follow"
+                                                  style:UIBarButtonItemStylePlain
+                                                 target:self
+                                                 action:@selector(toggleFollow)];
+  self.navigationItem.rightBarButtonItem = followButton;
+}
+
+- (void)toggleFollow {
+  followButton.enabled = NO;
+  [[WBDataSource sharedInstance] toggleFollowForUser:self.user success:^{
+    [self refreshFollowButton];
+  } failure:^(NSError *error) {
+    [self refreshFollowButton];
+  }];
+}
+
+- (void)refreshFollowButton {
+  followButton.enabled = YES;
+  followButton.title = self.user.isFollowed ? @"Unfollow" : @"Follow";
 }
 
 @end
