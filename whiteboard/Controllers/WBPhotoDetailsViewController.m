@@ -7,6 +7,7 @@
 //
 
 #import "WBPhotoDetailsViewController.h"
+#import "WBNavigationController.h"
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "UIImageView+WBImageLoader.h"
 #import "KeyboardAnimationView.h"
@@ -45,12 +46,14 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
 
 - (void)viewDidLoad {
   [super viewDidLoad];
-
+  [(WBNavigationController *)[self parentViewController] showSettingsButton:NO];
   [self setupView];
+  [self setUpActivityButton];
   
   [[WBDataSource sharedInstance] fetchPhoto:self.photo success:^(WBPhoto *fetchedPhoto) {
     self.photo = fetchedPhoto;
     [self.tableView reloadData];
+    [self.photo setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:self.photo.url]]];
   } failure:^(NSError *error) {
     NSLog(@"Failed");
   }];
@@ -79,6 +82,33 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
   UINib *addCommentCellNib = [UINib nibWithNibName:
                               NSStringFromClass([WBPhotoDetailsCellAddComment class]) bundle:nil];
   [self.tableView registerNib:addCommentCellNib forCellReuseIdentifier:AddCommentCellIdentifier];
+  
+}
+
+- (void)setUpActivityButton {
+  self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAction
+                                                                                         target:self
+                                                                                         action:@selector(activityButtonAction:)];
+  
+}
+
+- (void)activityButtonAction:(id)sender {
+  [self showShareSheet];
+}
+
+#pragma mark - ()
+
+- (void)showShareSheet {
+  
+  NSMutableArray *activityItems = [NSMutableArray arrayWithCapacity:3];
+  
+  if (self.photo.image == nil) {
+    [self.photo setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:self.photo.url]]];
+  }
+  [activityItems addObject:self.photo.image];
+  
+  UIActivityViewController *activityViewController = [[UIActivityViewController alloc] initWithActivityItems:activityItems applicationActivities:nil];
+  [self.navigationController presentViewController:activityViewController animated:YES completion:nil];
 }
 
 #pragma mark - UITableView
@@ -104,7 +134,7 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
                                                   placeholder:nil];
   sectionHeaderView.delegate = self;
   sectionHeaderView.delegate = self;
-  sectionHeaderView.sectionIndex = @(section);  
+  sectionHeaderView.sectionIndex = @(section);
   return sectionHeaderView;
 }
 
@@ -272,7 +302,6 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
 }
 
 #pragma mark - Helpers
-
 - (void)pushProfile:(WBUser *)user {
   ProfileViewController *profileVC = [[ProfileViewController alloc] init];
   profileVC.user = user;

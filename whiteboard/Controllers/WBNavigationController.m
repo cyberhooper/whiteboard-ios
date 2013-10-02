@@ -24,10 +24,9 @@ static const int kFindFriendsIndex = 1;
 static const int kLogOutIndex = 2;
 
 
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+- (void)viewDidLoad {
+  [super viewDidLoad];
+  self.showSettingsButton = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -39,9 +38,24 @@ static const int kLogOutIndex = 2;
   // Set background image
   [self.navigationBar setBackgroundImage:[[WBTheme sharedTheme] navBarBackgroundImage] forBarMetrics:UIBarMetricsDefault];
   
+  // Add title
+  self.topViewController.navigationItem.title = NSLocalizedString(@"NavBarTitle", @"Whiteboard");
+  
+  // Set font and color
+  [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [[WBTheme sharedTheme] navBarTitleFontColor], NSFontAttributeName : [[WBTheme sharedTheme] navBarTitleFont]}];
+  if ([self showSettingsButton]) {
+    [self setUpSettingsButton];
+  }
+}
+
+- (void)showSettingsButton:(BOOL)value {
+  _showSettingsButton = value;
+}
+
+- (void)setUpSettingsButton {
   // Create right bar button (Settings)
   UIImage *settingsButtonBackgroundImage = [[WBTheme sharedTheme] navBarSettingsButtonBackgroundImage];
-
+  
   UIButton *settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
   settingsButton.frame = CGRectMake( 0, 0, settingsButtonBackgroundImage.size.width, settingsButtonBackgroundImage.size.height );
   [settingsButton setBackgroundImage:settingsButtonBackgroundImage forState:UIControlStateNormal];
@@ -52,12 +66,7 @@ static const int kLogOutIndex = 2;
   
   UIBarButtonItem *settingsBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:settingsButton];
   self.topViewController.navigationItem.rightBarButtonItem = settingsBarButtonItem;
-  
-  // Add title
-  self.topViewController.navigationItem.title = NSLocalizedString(@"NavBarTitle", @"Whiteboard");
-  
-  // Set font and color
-  [self.navigationBar setTitleTextAttributes:@{NSForegroundColorAttributeName : [[WBTheme sharedTheme] navBarTitleFontColor], NSFontAttributeName : [[WBTheme sharedTheme] navBarTitleFont]}];
+
 }
 
 - (void)settingsButtonPressed {
@@ -71,8 +80,24 @@ static const int kLogOutIndex = 2;
     case kMyProfileIndex: {
       ProfileViewController *profileViewController = [[ProfileViewController alloc] initWithNibName:NSStringFromClass([ProfileViewController class])
                                                                                              bundle:nil];
+      
+      
       [profileViewController setUser:[WBDataSource currentUser]];
       [self pushViewController:profileViewController animated:YES];
+
+      UIImage *settingsButtonBackgroundImage = [[WBTheme sharedTheme] navBarSettingsButtonBackgroundImage];
+
+      UIButton *settingsButton = [UIButton buttonWithType:UIButtonTypeCustom];
+      settingsButton.frame = CGRectMake( 0, 0, settingsButtonBackgroundImage.size.width, settingsButtonBackgroundImage.size.height );
+      [settingsButton setBackgroundImage:settingsButtonBackgroundImage forState:UIControlStateNormal];
+      [settingsButton setImage:[[WBTheme sharedTheme] navBarSettingsButtonImage] forState:UIControlStateNormal];
+      [settingsButton setImage:[[WBTheme sharedTheme] navBarSettingsButtonHighlightedImage] forState:UIControlStateHighlighted];
+      
+      [settingsButton addTarget:self action:@selector(settingsButtonPressed) forControlEvents:UIControlEventTouchUpInside];
+      
+      UIBarButtonItem *settingsBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:settingsButton];
+      self.topViewController.navigationItem.rightBarButtonItem = settingsBarButtonItem;
+
       break;
     }
     case kFindFriendsIndex: {
