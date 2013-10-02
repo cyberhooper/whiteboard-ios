@@ -31,6 +31,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   
   [self setupView];
   [self refreshPhotos];
+  [self setupRefreshControl];
 }
 
 #pragma mark - Setup
@@ -226,30 +227,17 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   return [[WBTheme sharedTheme] backgroundImage];
 }
 
-#pragma mark - UIScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-  CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
-  CGFloat scrollViewHeight = scrollView.bounds.size.height;
+- (void)setupRefreshControl {
+  // Create the refresh control
+  self.refreshControl = [[UIRefreshControl alloc] init];
+  // Set the action
+  [self.refreshControl addTarget:self action:@selector(refreshPhotos) forControlEvents:UIControlEventValueChanged];
   
-  CGFloat offsetY = screenHeight - scrollViewHeight + scrollView.contentOffset.y;
-  
-#warning Magic number, change this
-  if(offsetY <= -150.f){
-    [self scrollViewDidPullToRefresh:scrollView];
-  }
+  self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Updating data..."];
+  [self.tableView addSubview:self.refreshControl];
+
 }
 
-#pragma mark - Refresh
-- (void)scrollViewDidPullToRefresh:(UIScrollView *)scrollView {
-  // Don't scroll if it's loading
-  if(self.isLoading){
-    return;
-  }
-  
-  self.isLoading = YES;
-  NSLog(@"Refreshing...");
-  [self refreshPhotos];
-}
 
 - (void)refreshPhotos {
   [[WBDataSource sharedInstance] latestPhotos:^(NSArray *photos) {
@@ -262,7 +250,8 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
     }else{
       self.loadMore = YES;
     }
-    
+    [self.refreshControl endRefreshing];
+
     [self.tableView reloadData];
     self.isLoading = NO;
     
@@ -274,6 +263,8 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     [alert show];
+    [self.refreshControl endRefreshing];
+
     self.isLoading = NO;
   }];
 }

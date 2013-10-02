@@ -17,6 +17,8 @@
  */
 @property (nonatomic, weak) IBOutlet UITableView *tableView;
 
+@property (nonatomic, strong) UIRefreshControl *refreshControl;
+
 /**
  This array contains the Photo objects to be displayed in the
  */

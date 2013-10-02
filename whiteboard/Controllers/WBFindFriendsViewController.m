@@ -96,10 +96,6 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
   return NSStringFromClass([WBInviteFriendsCell class]);
 }
 
-- (void)dummyData {
-  self.users = @[@"Thibault", @"Sacha", @"Petter", @"German"];
-}
-
 - (void)getSuggestedUsers {
   NSString *lastUpdated = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"LastUpdated", @"Last updated on"), [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterMediumStyle]];
   

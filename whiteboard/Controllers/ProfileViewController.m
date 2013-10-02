@@ -72,7 +72,7 @@
                                       }else{
                                         self.loadMore = YES;
                                       }
-                                      
+                                      [self.refreshControl endRefreshing];
                                       [self.tableView reloadData];
                                       self.isLoading = NO;
 
@@ -82,6 +82,7 @@
                                                                                      delegate:nil
                                                                             cancelButtonTitle:@"OK"
                                                                             otherButtonTitles:nil];
+                                      [self.refreshControl endRefreshing];
                                       [alert show];
                                       self.isLoading = NO;
 
