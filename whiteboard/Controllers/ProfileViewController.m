@@ -9,6 +9,7 @@
 #import "ProfileViewController.h"
 #import "MainFeedCell.h"
 #import "WBProfileHeaderView.h"
+#import "WBPhotoDetailsViewController.h"
 
 @interface ProfileViewController () {
   WBProfileHeaderView *headerView;
@@ -33,7 +34,6 @@
   }
   
   self.tableView.tableHeaderView = headerView;
-  
 }
 
 - (void)setupDataForUser:(WBUser *)user {
@@ -86,6 +86,13 @@
                                       self.isLoading = NO;
 
                                     }];
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath { 
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
+  WBPhotoDetailsViewController *photoDetailsVC = [[WBPhotoDetailsViewController alloc] init];
+  photoDetailsVC.photo = photo;
+  [self.navigationController pushViewController:photoDetailsVC animated:YES];
 }
 
 @end

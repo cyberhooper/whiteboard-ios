@@ -26,6 +26,7 @@
 - (void)registerForNotifications {
   [self registerForDidLikePhoto];
   [self registerForDidFollowUsers];
+  [self registerForDidCommentPhoto];
 }
 
 - (void)unRegisterForNotifications {
@@ -60,8 +61,7 @@
     for (WBUser *u in followedUsers) {
       [channels addObject:[NSString stringWithFormat:@"user_%@",u.userID]];
     }
-    
-    [channels addObject:[NSString stringWithFormat:@"user_%@",user.userID]];
+  
     [self sendNotificationWithPayload:payload onChannels:channels];
   }];
 }

@@ -140,7 +140,7 @@
   
   self.likeButton.hidden = NO;
   self.likeButton.numberLabel.text = [NSString stringWithFormat:@"%d", numberOfLikes.intValue];
-  self.displayNameLabel.frame = CGRectMake(48, 7, 124, 21);
+  self.displayNameLabel.frame = CGRectMake(48, 7, 144, 21);
 }
 
 - (void)setNumberOfComments:(NSNumber *)numberOfComments {

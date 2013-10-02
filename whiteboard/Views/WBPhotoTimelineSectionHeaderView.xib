@@ -34,12 +34,12 @@
                             <nil key="highlightedColor"/>
                         </label>
                         <view contentMode="scaleToFill" id="CpD-Et-oiJ" userLabel="Like View" customClass="WBPhotoTimelineSectionHeaderButton">
-                            <rect key="frame" x="180" y="0.0" width="44" height="44"/>
+                            <rect key="frame" x="199" y="0.0" width="44" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
                         <view contentMode="scaleToFill" id="E8F-81-5PH" userLabel="Comment View" customClass="WBPhotoTimelineSectionHeaderButton">
-                            <rect key="frame" x="230" y="0.0" width="44" height="44"/>
+                            <rect key="frame" x="235" y="0.0" width="44" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" heightSizable="YES"/>
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         </view>
