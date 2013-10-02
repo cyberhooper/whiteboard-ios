@@ -100,7 +100,7 @@ static Class DataSourceSubclass = nil;
 
 - (void)likePhoto:(WBPhoto *)photo
          withUser:(WBUser *)user
-          success:(void(^)(NSArray *likes))success
+          success:(void(^)(void))success
           failure:(void(^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }

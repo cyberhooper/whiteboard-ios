@@ -316,7 +316,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 
 - (void)likePhoto:(WBPhoto *)photo completion:(void(^)(void))completion {
   [self addLikeOnPhoto:photo];
-  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^(NSArray *likes) {
+  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^{
     completion();
   } failure:^(NSError *error) {
     [self removeLikeOnPhoto:photo];

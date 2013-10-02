@@ -184,16 +184,15 @@
 
 - (void)likePhoto:(WBPhoto *)photo
         withUser:(WBUser *)user
-         success:(void (^)(NSArray *likes))success
+         success:(void (^)(void))success
          failure:(void (^)(NSError *))failure {
   PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
   PFObject *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
   [parsePhoto addUniqueObject:parseUser forKey:@"likes"];
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success) {
-      WBPhoto *responsePhoto = [parsePhoto WBPhoto];
-      success(responsePhoto.likes);
-      [self createLikeActivityForPhoto:parsePhoto];
+      success();
+      [self createLikeActivityForPhoto:photo];
       [[NSNotificationCenter defaultCenter] postNotificationName:@"didLikePhoto" object:nil userInfo:@{@"user": user, @"photo": photo}];
     } else if (failure) {
       failure(error);
@@ -445,12 +444,14 @@
 
 #pragma mark - Activities
 
-- (void)createLikeActivityForPhoto:(PFObject *)photo {
+- (void)createLikeActivityForPhoto:(WBPhoto *)photo {
   PFObject *activity = [PFObject objectWithClassName:@"Activity"];
   [activity setObject:kActivityTypeLike forKey:kActivityTypeKey];
   [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
-  [activity setObject:[photo objectForKey:@"user"] forKey:kActivityToUserKey];
-  [activity setObject:photo forKey:kActivityPhotoKey];
+  PFObject *pfPhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  PFObject *author = [PFObject objectWithoutDataWithClassName:@"_User" objectId:photo.author.userID];
+  [activity setObject:author forKey:kActivityToUserKey];
+  [activity setObject:pfPhoto forKey:kActivityPhotoKey];
   [activity saveInBackground];
 }
 

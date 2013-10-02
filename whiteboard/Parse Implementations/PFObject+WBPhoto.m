@@ -13,36 +13,35 @@
 @implementation PFObject (WBPhoto)
 
 - (WBPhoto *)WBPhoto {
-  //[self fetchIfNeeded];
   WBPhoto *wbPhoto = [[WBPhoto alloc] init];
-  // Set ID
   wbPhoto.photoID = self.objectId;
-  //[self fetchIfNeeded];
-  // Set image
-  PFFile *imageFile = [self objectForKey:@"imageFile"];
-  wbPhoto.url = [NSURL URLWithString:[imageFile url]];
   
-  // Set author
-  PFUser *user = [self objectForKey:@"user"];
-  wbPhoto.author = [user WBUser];
-  
-  // Set created at date
-  wbPhoto.createdAt = self.createdAt;
-  
-  // Set likes
-  NSMutableArray *likes = [NSMutableArray array];
-  for (PFUser *pfUser in [self objectForKey:@"likes"]) {
-    [likes addObject:[pfUser WBUser]];
+  if (self.isDataAvailable) {
+    // Set image
+    PFFile *imageFile = [self objectForKey:@"imageFile"];
+    wbPhoto.url = [NSURL URLWithString:[imageFile url]];
+    
+    // Set author
+    PFUser *user = [self objectForKey:@"user"];
+    wbPhoto.author = [user WBUser];
+    
+    // Set created at date
+    wbPhoto.createdAt = self.createdAt;
+    
+    // Set likes
+    NSMutableArray *likes = [NSMutableArray array];
+    for (PFUser *pfUser in [self objectForKey:@"likes"]) {
+      [likes addObject:[pfUser WBUser]];
+    }
+    wbPhoto.likes = [NSArray arrayWithArray:likes];
+    
+    // Set comments
+    NSMutableArray *comments = [@[] mutableCopy];
+    for (PFObject *parseComment in [self objectForKey:@"comments"]) {
+      [comments addObject:[parseComment WBComment]];
+    }
+    wbPhoto.comments = comments;
   }
-  wbPhoto.likes = [NSArray arrayWithArray:likes];
-  
-  // Set comments
-  NSMutableArray *comments = [@[] mutableCopy];
-  for (PFObject *parseComment in [self objectForKey:@"comments"]) {
-    [comments addObject:[parseComment WBComment]];
-  }
-  wbPhoto.comments = comments;
-  
   return wbPhoto;
 }
 

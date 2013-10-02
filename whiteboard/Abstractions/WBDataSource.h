@@ -96,7 +96,7 @@
 
 - (void)likePhoto:(WBPhoto *)photo
          withUser:(WBUser *)user
-          success:(void(^)(NSArray *likes))success
+          success:(void(^)(void))success
           failure:(void(^)(NSError *error))failure;
 
 - (void)unlikePhoto:(WBPhoto *)photo
