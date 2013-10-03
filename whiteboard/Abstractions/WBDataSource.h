@@ -19,6 +19,7 @@
 #pragma mark - User
 
 @property (nonatomic, strong) WBUser *currentUser;
+//@property (nonatomic, strong) NSMutableArray *followingIds;
 @property (nonatomic, strong) NSArray *facebookFriends;
 
 /**
@@ -135,6 +136,10 @@
 - (void)unFollowUsers:(NSArray *)wbUsers
              success:(void(^)(void))success
               failure:(void(^)(NSError *error))failure;
+
+- (void)isFollowed:(WBUser *)user
+           success:(void(^)(BOOL isFollowed))success
+           failure:(void(^)(NSError *error))failure;
 
 #pragma mark - Set Up
 

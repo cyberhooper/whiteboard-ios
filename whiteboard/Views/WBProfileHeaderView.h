@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "WBDataSource.h"
 
 @interface WBProfileHeaderView : UIView
 
@@ -20,7 +19,6 @@
 @property (weak, nonatomic) IBOutlet UIImageView *followImage;
 @property (weak, nonatomic) IBOutlet UIImageView *strokeImage;
 
-- (void)setUpViewWithUser:(WBUser *)user;
-
++ (id)view;
 
 @end

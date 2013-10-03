@@ -20,6 +20,7 @@
 #import "WBActivity.h"
 #import "WBParsePushNotificationCreator.h"
 
+
 @implementation WBParseDataSource {
   WBParsePushNotificationCreator *pushNotificationCreator;
 }
@@ -393,19 +394,21 @@
   }];
 }
 
-#pragma mark - Profile
-
-- (void)profileForUser:(WBUser *)wbUser
-               success:(void(^)(WBUser *user))success
-               failure:(void(^)(NSError *error))failure {
-  PFQuery *query = [PFQuery queryWithClassName:@"_User"];
-  [query getObjectInBackgroundWithId:wbUser.userID block:^(PFObject *user, NSError *error) {
-    if (!error && success)
-      success([(PFUser*)user WBUser]);
-    else if (failure)
-      failure(error);
+- (void)isFollowed:(WBUser *)user
+           success:(void(^)(BOOL isFollowed))success
+           failure:(void(^)(NSError *error))failure {
+  PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
+  [[followingRelation query] findObjectsInBackgroundWithBlock:^(NSArray *followedUsers, NSError *error) {
+    NSMutableArray *followingIds = [@[] mutableCopy];
+    for (PFUser *u in followedUsers) {
+      [followingIds addObject:u.objectId];
+    }    
+    user.isFollowed = [followingIds containsObject:user.userID];
+    success(user.isFollowed);
   }];
 }
+
+#pragma mark - Profile
 
 - (void)numberOfPhotosForUser:(WBUser *)user
                       success:(void(^)(int numberOfPhotos))success
