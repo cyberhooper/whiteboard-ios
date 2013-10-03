@@ -13,6 +13,7 @@
 @class WBPhotoTimelineSectionHeaderView;
 
 @protocol WBPhotoTimelineSectionHeaderViewDelegate <NSObject>
+@optional
 - (void)sectionHeaderCommentsButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView;
 - (void)sectionHeaderLikesButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView;
 - (void)sectionHeaderPressed:(WBUser *)author;
@@ -51,6 +52,7 @@
 @property (nonatomic, weak) id<WBPhotoTimelineSectionHeaderViewDelegate> delegate;
 
 @property (nonatomic, strong) NSNumber *sectionIndex;
+
 @property (nonatomic) BOOL isLiked;
 
 @property (nonatomic, weak) IBOutlet WBPhotoTimelineSectionHeaderButton *likeButton;

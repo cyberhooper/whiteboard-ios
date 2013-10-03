@@ -1,7 +1,6 @@
 <map id="WBLoginViewController.m" name="WBLoginViewController.m">
 <area shape="rect" id="node2" href="$_w_b_login_view_controller_8h.html" title="WBLoginViewController.h" alt="" coords="5,80,168,107"/>
-<area shape="rect" id="node4" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="392,80,515,107"/>
-<area shape="rect" id="node8" href="$_w_b_signup_view_controller_8h.html" title="WBSignupViewController.h" alt="" coords="193,80,367,107"/>
-<area shape="rect" id="node6" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="428,229,508,256"/>
-<area shape="rect" id="node7" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="491,155,577,181"/>
+<area shape="rect" id="node4" href="$_w_b_account_manager_8h.html" title="WBAccountManager.h" alt="" coords="391,80,541,107"/>
+<area shape="rect" id="node7" href="$_w_b_signup_view_controller_8h.html" title="WBSignupViewController.h" alt="" coords="193,80,367,107"/>
+<area shape="rect" id="node6" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="465,155,545,181"/>
 </map>

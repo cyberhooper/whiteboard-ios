@@ -1,0 +1,5 @@
+<map id="&#45;[WBTheme detailsCommentsMessageFont]" name="&#45;[WBTheme detailsCommentsMessageFont]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_details_cell_comment.html#ac7bd2de923f6dc5aab710ae632efad5f" title="&#45;[WBPhotoDetailsCellComment\l setupView]" alt="" coords="247,5,446,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_photo_details_cell_comment.html#a96a1030c1066b4ef02f9eba921c64c16" title="+[WBPhotoDetailsCellComment\l cellHeightWithMessage:]" alt="" coords="245,70,448,111"/>
+<area shape="rect" id="node4" href="$interface_w_b_photo_details_view_controller.html#a7f7fb82c045d1f66ac8457f703699640" title="&#45;[WBPhotoDetailsViewController\l tableView:heightForRowAtIndexPath:]" alt="" coords="496,70,736,111"/>
+</map>

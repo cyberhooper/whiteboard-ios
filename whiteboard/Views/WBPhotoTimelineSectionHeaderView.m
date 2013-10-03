@@ -13,12 +13,6 @@
 @interface WBPhotoTimelineSectionHeaderView() <WBPhotoTimelineSectionHeaderButtonDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *displayNameLabel;
 @property (nonatomic, weak) IBOutlet UILabel *dateLabel;
-
-//@property (nonatomic, weak) IBOutlet UIButton *likeButton;
-//@property (nonatomic, weak) IBOutlet UILabel *likeNumberLabel;
-//@property (nonatomic, weak) IBOutlet UIButton *commentButton;
-//@property (nonatomic, weak) IBOutlet UILabel *commentNumberLabel;
-
 @property (nonatomic, weak) IBOutlet WBPhotoTimelineSectionHeaderButton *commentButton;
 @end
 
@@ -35,7 +29,6 @@
 
 - (void)awakeFromNib {
   [super awakeFromNib];
-  
   [self setupView];
 }
 
@@ -48,14 +41,10 @@
   [self setUpLikeButton];
 
   // Comment button
-  self.commentButton.numberLabel.font = [[WBTheme sharedTheme] sectionCommentFont];
-  self.commentButton.numberLabel.textColor = [[WBTheme sharedTheme] sectionCommentFontColor];
+  [self setUpCommentButton];
 
-  self.commentButton.normalImage = [self commentButtonImage];
-  self.commentButton.highlightedImage = [self commentButtonImageHighlighted];
-  self.commentButton.selectedImage = [self commentButtonImageSelected];
+  self.likeButton.hidden = YES;
 
-  
   // Display name label
   self.displayNameLabel.textColor = [[WBTheme sharedTheme] sectionDisplayNameFontColor];
   self.displayNameLabel.font = [[WBTheme sharedTheme] sectionDisplayNameFont];
@@ -68,6 +57,16 @@
   reconizer.numberOfTapsRequired = 1;
     [self addGestureRecognizer:reconizer];
   
+}
+
+- (void)setUpCommentButton {
+  self.commentButton.numberLabel.font = [[WBTheme sharedTheme] sectionCommentFont];
+  self.commentButton.numberLabel.textColor = [[WBTheme sharedTheme] sectionCommentFontColor];
+  self.commentButton.hidden = YES;
+  
+  self.commentButton.normalImage = [self commentButtonImage];
+  self.commentButton.highlightedImage = [self commentButtonImageHighlighted];
+  self.commentButton.selectedImage = [self commentButtonImageSelected];
 }
 
 - (void)setUpLikeButton {
@@ -143,12 +142,15 @@
 - (void)setNumberOfLikes:(NSNumber *)numberOfLikes {
   _numberOfLikes = numberOfLikes;
   
+  self.likeButton.hidden = NO;
   self.likeButton.numberLabel.text = [NSString stringWithFormat:@"%d", numberOfLikes.intValue];
+  self.displayNameLabel.frame = CGRectMake(48, 7, 144, 21);
 }
 
 - (void)setNumberOfComments:(NSNumber *)numberOfComments {
   _numberOfComments = numberOfComments;
 
+  self.commentButton.hidden = NO;
   self.commentButton.numberLabel.text = [NSString stringWithFormat:@"%d", numberOfComments.intValue];
 }
 
@@ -156,9 +158,12 @@
   _isLiked = isLiked;
   [self setUpLikeButton];
 }
+
 #pragma mark - IBActions
 - (void)wbPhotoTimelineSectionHeaderTap {
-  [self.delegate sectionHeaderPressed:_author];
+  if ([_delegate respondsToSelector:@selector(sectionHeaderPressed:)]) {
+    [self.delegate sectionHeaderPressed:_author];
+  }
 }
 
 - (void)wbPhotoTimelineSectionHeaderButtonPressed:(WBPhotoTimelineSectionHeaderButton *)button {

@@ -15,6 +15,7 @@
 #import "WBLoadMoreCell.h"
 #import "ProfileViewController.h"
 #import "WBPhoto+Utils.h"
+#import "WBPhotoDetailsViewController.h"
 
 @interface WBPhotoTimelineViewController () <WBPhotoTimelineSectionHeaderViewDelegate>
 @property (nonatomic, strong) NSMutableArray *photosBeeingLiked;
@@ -30,6 +31,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   
   [self setupView];
   [self refreshPhotos];
+  [self setupRefreshControl];
 }
 
 #pragma mark - Setup
@@ -147,7 +149,18 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   if ([self isLoadMoreCell:indexPath.section]) {
     // Load More Cell
     [self loadNextPage];
+    return;
   }
+  
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
+  
+  [self pushPhotoDetailsViewWithPhoto:photo];
+}
+
+- (void)pushPhotoDetailsViewWithPhoto:(WBPhoto *)photo {
+  WBPhotoDetailsViewController *photoDetailsVC = [[WBPhotoDetailsViewController alloc] init];
+  photoDetailsVC.photo = photo;
+  [self.navigationController pushViewController:photoDetailsVC animated:YES];
 }
 
 - (void)tableView:(UITableView *)tableView
@@ -218,30 +231,17 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   return [[WBTheme sharedTheme] backgroundImage];
 }
 
-#pragma mark - UIScrollViewDelegate
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-  CGFloat screenHeight = [UIScreen mainScreen].bounds.size.height;
-  CGFloat scrollViewHeight = scrollView.bounds.size.height;
+- (void)setupRefreshControl {
+  // Create the refresh control
+  self.refreshControl = [[UIRefreshControl alloc] init];
+  // Set the action
+  [self.refreshControl addTarget:self action:@selector(refreshPhotos) forControlEvents:UIControlEventValueChanged];
   
-  CGFloat offsetY = screenHeight - scrollViewHeight + scrollView.contentOffset.y;
-  
-#warning Magic number, change this
-  if(offsetY <= -150.f){
-    [self scrollViewDidPullToRefresh:scrollView];
-  }
+  self.refreshControl.attributedTitle = [[NSAttributedString alloc] initWithString:@"Updating data..."];
+  [self.tableView addSubview:self.refreshControl];
+
 }
 
-#pragma mark - Refresh
-- (void)scrollViewDidPullToRefresh:(UIScrollView *)scrollView {
-  // Don't scroll if it's loading
-  if(self.isLoading){
-    return;
-  }
-  
-  self.isLoading = YES;
-  NSLog(@"Refreshing...");
-  [self refreshPhotos];
-}
 
 - (void)refreshPhotos {
   [[WBDataSource sharedInstance] latestPhotos:^(NSArray *photos) {
@@ -254,7 +254,8 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
     }else{
       self.loadMore = YES;
     }
-    
+    [self.refreshControl endRefreshing];
+
     [self.tableView reloadData];
     self.isLoading = NO;
     
@@ -266,6 +267,8 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
     [alert show];
+    [self.refreshControl endRefreshing];
+
     self.isLoading = NO;
   }];
 }
@@ -273,6 +276,10 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 #pragma mark - WBPhotoTimelineSectionHeaderViewDelegate
 - (void)sectionHeaderCommentsButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
   NSLog(@"Comments pressed");
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:[sectionView.sectionIndex integerValue]]);
+  
+  [self pushPhotoDetailsViewWithPhoto:photo];
+
 }
 
 - (void)sectionHeaderPressed:(WBUser *)author {
@@ -308,7 +315,7 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 
 - (void)likePhoto:(WBPhoto *)photo completion:(void(^)(void))completion {
   [self addLikeOnPhoto:photo];
-  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^(NSArray *likes) {
+  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^{
     completion();
   } failure:^(NSError *error) {
     [self removeLikeOnPhoto:photo];

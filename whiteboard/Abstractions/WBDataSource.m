@@ -2,7 +2,7 @@
 //  WBDataSource.m
 //  whiteboard
 //
-//  Created by Sacha Durand Saint Omer on 9/10/13.
+//  Created by sad-fueled on 9/10/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
@@ -100,7 +100,7 @@ static Class DataSourceSubclass = nil;
 
 - (void)likePhoto:(WBPhoto *)photo
          withUser:(WBUser *)user
-          success:(void(^)(NSArray *likes))success
+          success:(void(^)(void))success
           failure:(void(^)(NSError *error))failure {
   [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }

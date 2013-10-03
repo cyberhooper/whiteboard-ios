@@ -2,7 +2,7 @@
 //  KeyboardAnimationTableView.m
 //  whiteboard
 //
-//  Created by Petter Samuelsen on 31.08.13.
+//  Created by prs-fueled on 31.08.13.
 //  Copyright (c) 2013 Feldmann Samuelsen. All rights reserved.
 //
 

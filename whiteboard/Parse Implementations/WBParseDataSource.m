@@ -1,7 +1,7 @@
 //  ParseDataSource.m
 //  whiteboard
 //
-//  Created by Sacha Durand Saint Omer on 9/10/13.
+//  Created by sad-fueled on 9/10/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
@@ -14,14 +14,29 @@
 #import "PFObject+WBPhoto.h"
 #import "WBComment+PFObject.h"
 #import "PFObject+WBComment.h"
+#import "PFObject+WBActivity.h"
 #import "WBAccountManager.h"
 #import "WBParseConstants.h"
 #import "WBActivity.h"
+#import "WBParsePushNotificationCreator.h"
 
-@implementation WBParseDataSource
+@implementation WBParseDataSource {
+  WBParsePushNotificationCreator *pushNotificationCreator;
+}
 
 @synthesize currentUser = _currentUser;
 @synthesize facebookFriends = _facebookFriends;
+
+- (id)init {
+  if (self = [super init]) {
+    pushNotificationCreator = [[WBParsePushNotificationCreator alloc] init];
+  }
+  return self;
+}
+
+- (void)dealloc {
+  pushNotificationCreator = nil;
+}
 
 - (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
   [Parse setApplicationId:[self applicationId]
@@ -97,6 +112,8 @@
 - (PFACL *)photoACL {
   PFACL *acl = [PFACL ACLWithUser:[PFUser currentUser]];
   [acl setPublicReadAccess:YES];
+  ///
+  [acl setPublicWriteAccess:YES];
   return acl;
 }
 
@@ -167,16 +184,16 @@
 
 - (void)likePhoto:(WBPhoto *)photo
         withUser:(WBUser *)user
-         success:(void (^)(NSArray *likes))success
+         success:(void (^)(void))success
          failure:(void (^)(NSError *))failure {
   PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
   PFObject *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
   [parsePhoto addUniqueObject:parseUser forKey:@"likes"];
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success) {
-      WBPhoto *responsePhoto = [parsePhoto WBPhoto];
-      success(responsePhoto.likes);
-      [self createLikeActivityForPhoto:parsePhoto];
+      success();
+      [self createLikeActivityForPhoto:photo];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"didLikePhoto" object:nil userInfo:@{@"user": user, @"photo": photo}];
     } else if (failure) {
       failure(error);
     }
@@ -204,8 +221,9 @@
            success:(void(^)(WBPhoto *fetchedPhoto))success
            failure:(void(^)(NSError *error))failure {
   PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  [query includeKey:@"user"];
   [query includeKey:@"likes"];
-  [query includeKey:@"comments"];
+  [query includeKey:@"comments.user"];
   [query getObjectInBackgroundWithId:photo.photoID block:^(PFObject *parsePhoto, NSError *error) {
     if (!error && success) {
       success([parsePhoto WBPhoto]);
@@ -250,26 +268,16 @@
            onPhoto:(WBPhoto *)photo
            success:(void(^)(void))success
            failure:(void(^)(NSError *error))failure {
-  
-  if (![PFUser currentUser]) {
-    if (failure) {
-      NSError *e = [NSError errorWithDomain:@"" code:0 userInfo:@{@"mesages" : @"You need to be logged in to post a comment"}];
-      failure(e);
-    }
-    return;
-  }
-  
-  PFObject *parseComment = [PFObject objectWithClassName:@"Comment"];
-  [parseComment setObject:comment forKey:@"text"];
-  [parseComment setObject:[PFUser currentUser] forKey:@"user"];
-  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
-  [parsePhoto addObject:parseComment forKey:@"comments"];
-  
-  [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-    if (!error && success)
+  NSDictionary * params = @{@"comment" : comment, @"photoId" : photo.photoID };
+  [PFCloud callFunctionInBackground:@"addCommentToPhoto" withParameters:params block:^(id object, NSError *error) {
+    if (!error && success) {
       success();
-    else if (failure)
+     [self createCommentActivityForPhoto:object];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"didCommentPhoto" object:nil userInfo:@{@"user": [self currentUser], @"photo": photo}];
+    }
+    else if (failure) {
       failure(error);
+    }
   }];
 }
 
@@ -341,8 +349,12 @@
   }
   [currentUser saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success) {
+      for (WBUser *u in wbUsers) {
+        u.isFollowed = YES;
+      }
       success();
       [self createFollowActivityForUsers:parseUsers];
+      [[NSNotificationCenter defaultCenter] postNotificationName:@"didFollowUsers" object:nil userInfo:@{@"user" : [self currentUser] ,@"followedUsers": wbUsers}];
     }
     else if (failure) {
       failure(error);
@@ -369,6 +381,9 @@
   }
   [[PFUser currentUser] saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (!error && success) {
+      for (WBUser *u in wbUsers) {
+        u.isFollowed = NO;
+      }
       success();
       [self deletePossiblePreviousFollowActivityForUsers:parseUsers];
     }
@@ -396,10 +411,9 @@
                       success:(void(^)(int numberOfPhotos))success
                       failure:(void(^)(NSError *error))failure {
   PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
-  PFQuery *queryPhotoCount = [PFQuery queryWithClassName:@"Photo"];
-  [queryPhotoCount whereKey:@"user" equalTo:parseUser];
-  queryPhotoCount.cachePolicy = kPFCachePolicyCacheElseNetwork;
-  [queryPhotoCount countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
+  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  [query whereKey:@"user" equalTo:parseUser];
+  [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
       success(number);
     else if (failure)
@@ -410,9 +424,9 @@
 - (void)numberOfFollowersForUser:(WBUser *)user
                          success:(void(^)(int numberOfFollowers))success
                          failure:(void(^)(NSError *error))failure {
-  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFUser *pfUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
   PFQuery *query = [PFQuery queryWithClassName:@"_User"];
-  [query whereKey:@"following" equalTo:parseUser];
+  [query whereKey:@"following" equalTo:pfUser];
   [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
       success(number);
@@ -424,8 +438,8 @@
 - (void)numberOfFollowingsForUser:(WBUser *)user
                           success:(void(^)(int numberOfFollowings))success
                           failure:(void(^)(NSError *error))failure {
-  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
-  PFRelation *followingRelation = [parseUser relationforKey:@"following"];
+  PFUser *pfUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFRelation *followingRelation = [pfUser relationforKey:@"following"];
   [[followingRelation query] countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
       success(number);
@@ -436,12 +450,14 @@
 
 #pragma mark - Activities
 
-- (void)createLikeActivityForPhoto:(PFObject *)photo {
+- (void)createLikeActivityForPhoto:(WBPhoto *)photo {
   PFObject *activity = [PFObject objectWithClassName:@"Activity"];
   [activity setObject:kActivityTypeLike forKey:kActivityTypeKey];
   [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
-  [activity setObject:[photo objectForKey:@"user"] forKey:kActivityToUserKey];
-  [activity setObject:photo forKey:kActivityPhotoKey];
+  PFObject *pfPhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  PFObject *author = [PFObject objectWithoutDataWithClassName:@"_User" objectId:photo.author.userID];
+  [activity setObject:author forKey:kActivityToUserKey];
+  [activity setObject:pfPhoto forKey:kActivityPhotoKey];
   [activity saveInBackground];
 }
 
@@ -481,6 +497,15 @@
   }
 }
 
+- (void)createCommentActivityForPhoto:(PFObject *)photo {
+  PFObject *activity = [PFObject objectWithClassName:@"Activity"];
+  [activity setObject:kActivityTypeComment forKey:kActivityTypeKey];
+  [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
+  [activity setObject:[photo objectForKey:@"user"] forKey:kActivityToUserKey];
+  [activity setObject:photo forKey:kActivityPhotoKey];
+  [activity saveInBackground];
+}
+
 #pragma mark - Activity feed
 
 - (void)recentActivities:(void(^)(NSArray *activities))success
@@ -499,9 +524,8 @@
 
 - (NSArray *)wbActivitiesFromActivities:(NSArray *)activities {
   NSMutableArray *wbActivities = [@[] mutableCopy];
-  for (PFObject *activity in activities) {
-    WBActivity *wbActivity = [self wbActivityfromActivity:activity];
-    [wbActivities addObject:wbActivity];
+  for (PFObject *a in activities) {
+    [wbActivities addObject:[a WBActivity]];
   }
   return [NSArray arrayWithArray:wbActivities];
 }

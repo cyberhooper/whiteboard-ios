@@ -1,0 +1,5 @@
+<map id="&#45;[WBPhotoDetailsViewController tableView:cellForRowAtIndexPath:]" name="&#45;[WBPhotoDetailsViewController tableView:cellForRowAtIndexPath:]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_details_view_controller.html#ad80c18807f6084eddeecfee2474c897b" title="&#45;[WBPhotoDetailsViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="277,27,493,69"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="545,5,722,32"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#a0aeefa2b32b5730ddab2e5c0c0c68550" title="&#45;[WBTheme feedPlaceholder\lImage]" alt="" coords="542,57,725,98"/>
+</map>

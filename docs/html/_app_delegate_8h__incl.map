@@ -1,11 +1,12 @@
 <map id="AppDelegate.h" name="AppDelegate.h">
-<area shape="rect" id="node3" href="$_w_b_tab_bar_controller_8h.html" title="WBTabBarController.h" alt="" coords="231,80,379,107"/>
+<area shape="rect" id="node3" href="$_w_b_tab_bar_controller_8h.html" title="WBTabBarController.h" alt="" coords="293,80,440,107"/>
 <area shape="rect" id="node4" href="$_main_feed_view_controller_8h.html" title="MainFeedViewController.h" alt="" coords="283,155,451,181"/>
-<area shape="rect" id="node7" href="$_w_b_theme_8h.html" title="WBTheme.h" alt="" coords="449,379,540,405"/>
-<area shape="rect" id="node9" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="579,229,701,256"/>
-<area shape="rect" id="node12" href="$_w_b_navigation_controller_8h.html" title="WBNavigationController.h" alt="" coords="43,155,208,181"/>
-<area shape="rect" id="node5" href="$_w_b_photo_timeline_view_controller_8h.html" title="WBPhotoTimelineViewController.h" alt="" coords="261,229,472,256"/>
-<area shape="rect" id="node6" href="$_w_b_view_controller_8h.html" title="WBViewController.h" alt="" coords="313,304,447,331"/>
-<area shape="rect" id="node10" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="616,379,696,405"/>
-<area shape="rect" id="node11" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="547,304,633,331"/>
+<area shape="rect" id="node7" href="$_w_b_theme_8h.html" title="WBTheme.h" alt="" coords="489,379,580,405"/>
+<area shape="rect" id="node9" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="607,229,729,256"/>
+<area shape="rect" id="node12" href="$_w_b_navigation_controller_8h.html" title="WBNavigationController.h" alt="" coords="93,155,259,181"/>
+<area shape="rect" id="node13" href="$_activity_view_controller_8h.html" title="ActivityViewController.h" alt="" coords="379,229,529,256"/>
+<area shape="rect" id="node5" href="$_w_b_photo_timeline_view_controller_8h.html" title="WBPhotoTimelineViewController.h" alt="" coords="144,229,355,256"/>
+<area shape="rect" id="node6" href="$_w_b_view_controller_8h.html" title="WBViewController.h" alt="" coords="363,304,497,331"/>
+<area shape="rect" id="node10" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="656,379,736,405"/>
+<area shape="rect" id="node11" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="707,304,793,331"/>
 </map>

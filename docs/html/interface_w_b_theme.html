@@ -72,7 +72,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -133,6 +133,10 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a4304a83fbd381be1856c98b0d1bd80f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af85a9a68b8cd29e4cddbadcfa9f30309"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#af85a9a68b8cd29e4cddbadcfa9f30309">sectionCommentFontColor</a></td></tr>
 <tr class="separator:af85a9a68b8cd29e4cddbadcfa9f30309"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a538042bd2c6e4319ea9f1aa6aaf029f1"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a538042bd2c6e4319ea9f1aa6aaf029f1">feedLoadMoreSeperatorTopImage</a></td></tr>
+<tr class="separator:a538042bd2c6e4319ea9f1aa6aaf029f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3589d81555ebc35bc0270f6a943b3ec8"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a3589d81555ebc35bc0270f6a943b3ec8">feedLoadMoreImage</a></td></tr>
+<tr class="separator:a3589d81555ebc35bc0270f6a943b3ec8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac89ae56c1ec5393974fe3b2d189a301a"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#ac89ae56c1ec5393974fe3b2d189a301a">tabBarHomeButtonNormalImage</a></td></tr>
 <tr class="separator:ac89ae56c1ec5393974fe3b2d189a301a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a041689263438c535bef635d67301f507"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a041689263438c535bef635d67301f507">tabBarHomeButtonSelectedImage</a></td></tr>
@@ -167,6 +171,66 @@ Instance Methods</h2></td></tr>
 <tr class="separator:a9607da91e022be138db5b7dafefe707c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0aeefa2b32b5730ddab2e5c0c0c68550"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a0aeefa2b32b5730ddab2e5c0c0c68550">feedPlaceholderImage</a></td></tr>
 <tr class="separator:a0aeefa2b32b5730ddab2e5c0c0c68550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad071d9b4937453fd247d5c077302703c"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#ad071d9b4937453fd247d5c077302703c">findFriendsCellBackgroundImage</a></td></tr>
+<tr class="separator:ad071d9b4937453fd247d5c077302703c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a85c31e62c3ba8119d4fa14c62b331add"><td class="memItemLeft" align="right" valign="top">(UIFont *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a85c31e62c3ba8119d4fa14c62b331add">findFriendsNameFont</a></td></tr>
+<tr class="separator:a85c31e62c3ba8119d4fa14c62b331add"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abbfe7afcb4f724c6ef3f650898582840"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#abbfe7afcb4f724c6ef3f650898582840">findFriendsNameFontColor</a></td></tr>
+<tr class="separator:abbfe7afcb4f724c6ef3f650898582840"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf1b15f8ece5d949beb81f9cac6ba0bf"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#adf1b15f8ece5d949beb81f9cac6ba0bf">findFriendsNameShadowColor</a></td></tr>
+<tr class="separator:adf1b15f8ece5d949beb81f9cac6ba0bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6fba25dbc5e5b99d7f4bbd04fcc6b032"><td class="memItemLeft" align="right" valign="top">(UIFont *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a6fba25dbc5e5b99d7f4bbd04fcc6b032">findFriendsNumPhotosFont</a></td></tr>
+<tr class="separator:a6fba25dbc5e5b99d7f4bbd04fcc6b032"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5dd9621f12a5dfbea1ff186b3d85197"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#af5dd9621f12a5dfbea1ff186b3d85197">findFriendsNumPhotosFontColor</a></td></tr>
+<tr class="separator:af5dd9621f12a5dfbea1ff186b3d85197"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:accdbac0ea45fb400012d34570b60fdbc"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#accdbac0ea45fb400012d34570b60fdbc">findFriendsNumPhotosShadowColor</a></td></tr>
+<tr class="separator:accdbac0ea45fb400012d34570b60fdbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a21864f1339fa645b5d8eb4c4dd2001c4"><td class="memItemLeft" align="right" valign="top">(UIFont *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a21864f1339fa645b5d8eb4c4dd2001c4">findFriendsFollowButtonFont</a></td></tr>
+<tr class="separator:a21864f1339fa645b5d8eb4c4dd2001c4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac019ef1026c1d49fe1bd9f0799fd96eb"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#ac019ef1026c1d49fe1bd9f0799fd96eb">findFriendsFollowButtonNormalFontColor</a></td></tr>
+<tr class="separator:ac019ef1026c1d49fe1bd9f0799fd96eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af585405f60e25458af145876b9464797"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#af585405f60e25458af145876b9464797">findFriendsFollowButtonSelectedFontColor</a></td></tr>
+<tr class="separator:af585405f60e25458af145876b9464797"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32085ad4c1e6d37d746d2fd9d4289c7e"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a32085ad4c1e6d37d746d2fd9d4289c7e">findFriendsFollowButtonNormalShadowColor</a></td></tr>
+<tr class="separator:a32085ad4c1e6d37d746d2fd9d4289c7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad252a027646ed802e117a563810a572d"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#ad252a027646ed802e117a563810a572d">findFriendsFollowButtonSelectedShadowColor</a></td></tr>
+<tr class="separator:ad252a027646ed802e117a563810a572d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aef4d881cf1d45a0451fdeac3ae3e9546"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#aef4d881cf1d45a0451fdeac3ae3e9546">findFriendsFollowButtonNormalBackgroundImage</a></td></tr>
+<tr class="separator:aef4d881cf1d45a0451fdeac3ae3e9546"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a67bcad423224f82420528c43e0287672"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a67bcad423224f82420528c43e0287672">findFriendsFollowButtonSelectedBackgroundImage</a></td></tr>
+<tr class="separator:a67bcad423224f82420528c43e0287672"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3788b8c0d05bafb52a35965c4400328"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#ad3788b8c0d05bafb52a35965c4400328">findFriendsFollowButtonSelectedImage</a></td></tr>
+<tr class="separator:ad3788b8c0d05bafb52a35965c4400328"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad20f4f58ec246fba089eea46717fdba6"><td class="memItemLeft" align="right" valign="top">(UIFont *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#ad20f4f58ec246fba089eea46717fdba6">findFriendsInviteFriendsFont</a></td></tr>
+<tr class="separator:ad20f4f58ec246fba089eea46717fdba6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa3383edf143dcf0866db7e9826f68dda"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#aa3383edf143dcf0866db7e9826f68dda">findFriendsInviteFriendsFontColor</a></td></tr>
+<tr class="separator:aa3383edf143dcf0866db7e9826f68dda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1d30b0f18910e9ce294d92c7f613968"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#af1d30b0f18910e9ce294d92c7f613968">findFriendsTitleImage</a></td></tr>
+<tr class="separator:af1d30b0f18910e9ce294d92c7f613968"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af20525311da02332fd0f2bd39f55b837"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#af20525311da02332fd0f2bd39f55b837">strokeProfilePictureImage</a></td></tr>
+<tr class="separator:af20525311da02332fd0f2bd39f55b837"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aec3343a62ff272c526fca282de1c487f"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#aec3343a62ff272c526fca282de1c487f">pictoPhotoImage</a></td></tr>
+<tr class="separator:aec3343a62ff272c526fca282de1c487f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a47c982ac14d247e182c86e587d64e6"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a2a47c982ac14d247e182c86e587d64e6">pictoFollowImage</a></td></tr>
+<tr class="separator:a2a47c982ac14d247e182c86e587d64e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae2a29f6d21deb915c2863e47202ef586"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#ae2a29f6d21deb915c2863e47202ef586">detailsTextfieldBackgroundImage</a></td></tr>
+<tr class="separator:ae2a29f6d21deb915c2863e47202ef586"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55128d70aa677b2db5ecdedc996b09f0"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a55128d70aa677b2db5ecdedc996b09f0">detailsAddCommentIconImage</a></td></tr>
+<tr class="separator:a55128d70aa677b2db5ecdedc996b09f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cba381bd8768c1160a48f621b0e80b"><td class="memItemLeft" align="right" valign="top">(UIImage *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a36cba381bd8768c1160a48f621b0e80b">detailsCommentsSeperatorImage</a></td></tr>
+<tr class="separator:a36cba381bd8768c1160a48f621b0e80b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18d14fe8ea8032bb34169c17e229ab79"><td class="memItemLeft" align="right" valign="top">(UIFont *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a18d14fe8ea8032bb34169c17e229ab79">detailsCommentsNameFont</a></td></tr>
+<tr class="separator:a18d14fe8ea8032bb34169c17e229ab79"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92d40fc5e5b6d71b0972814accb64380"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a92d40fc5e5b6d71b0972814accb64380">detailsCommentsNameFontColor</a></td></tr>
+<tr class="separator:a92d40fc5e5b6d71b0972814accb64380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a59294278dacb667ba82485b4e1e38550"><td class="memItemLeft" align="right" valign="top">(UIFont *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a59294278dacb667ba82485b4e1e38550">detailsCommentsMessageFont</a></td></tr>
+<tr class="separator:a59294278dacb667ba82485b4e1e38550"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a986a69f7d11ee3454ee7bf6f095faaa5"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a986a69f7d11ee3454ee7bf6f095faaa5">detailsCommentsMessageFontColor</a></td></tr>
+<tr class="separator:a986a69f7d11ee3454ee7bf6f095faaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad3f4e2263487ed05114c30f5c4ca8f08"><td class="memItemLeft" align="right" valign="top">(UIFont *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#ad3f4e2263487ed05114c30f5c4ca8f08">detailsCommentsDateFont</a></td></tr>
+<tr class="separator:ad3f4e2263487ed05114c30f5c4ca8f08"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a904d4579c006e696ca215253d543c769"><td class="memItemLeft" align="right" valign="top">(UIColor *)&#160;</td><td class="memItemRight" valign="bottom">- <a class="el" href="interface_w_b_theme.html#a904d4579c006e696ca215253d543c769">detailsCommentsDateFontColor</a></td></tr>
+<tr class="separator:a904d4579c006e696ca215253d543c769"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Class Methods</h2></td></tr>
@@ -203,7 +267,271 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_theme_aa36717901832ca032d31d81bc4c1287c_icgraph.png" border="0" usemap="#interface_w_b_theme_aa36717901832ca032d31d81bc4c1287c_icgraph" alt=""/></div>
 <map name="interface_w_b_theme_aa36717901832ca032d31d81bc4c1287c_icgraph" id="interface_w_b_theme_aa36717901832ca032d31d81bc4c1287c_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_photo_timeline_view_controller.html#ab79de764d090c7a7c615f2be31b2f7d4" title="&#45;[WBPhotoTimelineViewController\l backgroundImage]" alt="" coords="251,5,459,46"/></map>
+<area shape="rect" id="node2" href="interface_activity_view_controller.html#a812037513a1fd7d7ad9e26a2d2a5d84a" title="&#45;[ActivityViewController\l backgroundImage]" alt="" coords="281,5,429,46"/><area shape="rect" id="node3" href="interface_w_b_find_friends_view_controller.html#a5e3cd19662ec054c244033f885e340c2" title="&#45;[WBFindFriendsViewController\l setUpView]" alt="" coords="257,70,452,111"/><area shape="rect" id="node5" href="interface_w_b_photo_details_view_controller.html#a4e653fdae2be3c0e4d75140b94858081" title="&#45;[WBPhotoDetailsViewController\l backgroundImage]" alt="" coords="253,135,456,177"/><area shape="rect" id="node6" href="interface_w_b_photo_timeline_view_controller.html#ab79de764d090c7a7c615f2be31b2f7d4" title="&#45;[WBPhotoTimelineViewController\l backgroundImage]" alt="" coords="251,201,459,242"/><area shape="rect" id="node4" href="interface_w_b_find_friends_view_controller.html#ae34ffb81fa776a5d79cecbb2213587f8" title="&#45;[WBFindFriendsViewController\l viewDidLoad]" alt="" coords="507,70,701,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a55128d70aa677b2db5ecdedc996b09f0"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) detailsAddCommentIconImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a55128d70aa677b2db5ecdedc996b09f0_icgraph.png" border="0" usemap="#interface_w_b_theme_a55128d70aa677b2db5ecdedc996b09f0_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a55128d70aa677b2db5ecdedc996b09f0_icgraph" id="interface_w_b_theme_a55128d70aa677b2db5ecdedc996b09f0_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_add_comment.html#a4ce2f3ddb8460c12f5efdcd3ce3b8e08" title="&#45;[WBPhotoDetailsCellAddComment\l setupView]" alt="" coords="261,5,483,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3f4e2263487ed05114c30f5c4ca8f08"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIFont *) detailsCommentsDateFont </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_ad3f4e2263487ed05114c30f5c4ca8f08_icgraph.png" border="0" usemap="#interface_w_b_theme_ad3f4e2263487ed05114c30f5c4ca8f08_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_ad3f4e2263487ed05114c30f5c4ca8f08_icgraph" id="interface_w_b_theme_ad3f4e2263487ed05114c30f5c4ca8f08_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_comment.html#ac7bd2de923f6dc5aab710ae632efad5f" title="&#45;[WBPhotoDetailsCellComment\l setupView]" alt="" coords="246,5,445,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a904d4579c006e696ca215253d543c769"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) detailsCommentsDateFontColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a904d4579c006e696ca215253d543c769_icgraph.png" border="0" usemap="#interface_w_b_theme_a904d4579c006e696ca215253d543c769_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a904d4579c006e696ca215253d543c769_icgraph" id="interface_w_b_theme_a904d4579c006e696ca215253d543c769_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_comment.html#ac7bd2de923f6dc5aab710ae632efad5f" title="&#45;[WBPhotoDetailsCellComment\l setupView]" alt="" coords="246,5,445,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a59294278dacb667ba82485b4e1e38550"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIFont *) detailsCommentsMessageFont </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a59294278dacb667ba82485b4e1e38550_icgraph.png" border="0" usemap="#interface_w_b_theme_a59294278dacb667ba82485b4e1e38550_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a59294278dacb667ba82485b4e1e38550_icgraph" id="interface_w_b_theme_a59294278dacb667ba82485b4e1e38550_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_comment.html#ac7bd2de923f6dc5aab710ae632efad5f" title="&#45;[WBPhotoDetailsCellComment\l setupView]" alt="" coords="247,5,446,46"/><area shape="rect" id="node3" href="interface_w_b_photo_details_cell_comment.html#a96a1030c1066b4ef02f9eba921c64c16" title="+[WBPhotoDetailsCellComment\l cellHeightWithMessage:]" alt="" coords="245,70,448,111"/><area shape="rect" id="node4" href="interface_w_b_photo_details_view_controller.html#a7f7fb82c045d1f66ac8457f703699640" title="&#45;[WBPhotoDetailsViewController\l tableView:heightForRowAtIndexPath:]" alt="" coords="496,70,736,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a986a69f7d11ee3454ee7bf6f095faaa5"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) detailsCommentsMessageFontColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a986a69f7d11ee3454ee7bf6f095faaa5_icgraph.png" border="0" usemap="#interface_w_b_theme_a986a69f7d11ee3454ee7bf6f095faaa5_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a986a69f7d11ee3454ee7bf6f095faaa5_icgraph" id="interface_w_b_theme_a986a69f7d11ee3454ee7bf6f095faaa5_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_comment.html#ac7bd2de923f6dc5aab710ae632efad5f" title="&#45;[WBPhotoDetailsCellComment\l setupView]" alt="" coords="246,5,445,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a18d14fe8ea8032bb34169c17e229ab79"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIFont *) detailsCommentsNameFont </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a18d14fe8ea8032bb34169c17e229ab79_icgraph.png" border="0" usemap="#interface_w_b_theme_a18d14fe8ea8032bb34169c17e229ab79_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a18d14fe8ea8032bb34169c17e229ab79_icgraph" id="interface_w_b_theme_a18d14fe8ea8032bb34169c17e229ab79_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_comment.html#ac7bd2de923f6dc5aab710ae632efad5f" title="&#45;[WBPhotoDetailsCellComment\l setupView]" alt="" coords="246,5,445,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a92d40fc5e5b6d71b0972814accb64380"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) detailsCommentsNameFontColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a92d40fc5e5b6d71b0972814accb64380_icgraph.png" border="0" usemap="#interface_w_b_theme_a92d40fc5e5b6d71b0972814accb64380_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a92d40fc5e5b6d71b0972814accb64380_icgraph" id="interface_w_b_theme_a92d40fc5e5b6d71b0972814accb64380_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_comment.html#ac7bd2de923f6dc5aab710ae632efad5f" title="&#45;[WBPhotoDetailsCellComment\l setupView]" alt="" coords="246,5,445,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a36cba381bd8768c1160a48f621b0e80b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) detailsCommentsSeperatorImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a36cba381bd8768c1160a48f621b0e80b_icgraph.png" border="0" usemap="#interface_w_b_theme_a36cba381bd8768c1160a48f621b0e80b_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a36cba381bd8768c1160a48f621b0e80b_icgraph" id="interface_w_b_theme_a36cba381bd8768c1160a48f621b0e80b_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell.html#ad09b81c24d5bc4f9c78e07bbe20f76f1" title="&#45;[WBPhotoDetailsCell\l seperatorBottomImageView]" alt="" coords="246,5,431,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ae2a29f6d21deb915c2863e47202ef586"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) detailsTextfieldBackgroundImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_ae2a29f6d21deb915c2863e47202ef586_icgraph.png" border="0" usemap="#interface_w_b_theme_ae2a29f6d21deb915c2863e47202ef586_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_ae2a29f6d21deb915c2863e47202ef586_icgraph" id="interface_w_b_theme_ae2a29f6d21deb915c2863e47202ef586_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_add_comment.html#a4ce2f3ddb8460c12f5efdcd3ce3b8e08" title="&#45;[WBPhotoDetailsCellAddComment\l setupView]" alt="" coords="229,5,451,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a3589d81555ebc35bc0270f6a943b3ec8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) feedLoadMoreImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a3589d81555ebc35bc0270f6a943b3ec8_icgraph.png" border="0" usemap="#interface_w_b_theme_a3589d81555ebc35bc0270f6a943b3ec8_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a3589d81555ebc35bc0270f6a943b3ec8_icgraph" id="interface_w_b_theme_a3589d81555ebc35bc0270f6a943b3ec8_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_find_friends_view_controller.html#a92191d126bfa15ced74a8371e958ae43" title="&#45;[WBFindFriendsViewController\l configureLoadMoreCell:forRowAtIndex\lPath:]" alt="" coords="284,5,524,61"/><area shape="rect" id="node5" href="interface_w_b_photo_timeline_view_controller.html#a02d3d78879f0ea414733e092c92b84ab" title="&#45;[WBPhotoTimelineViewController\l configureLoadMoreCell:forRowAtIndexPath:]" alt="" coords="267,86,541,127"/><area shape="rect" id="node3" href="interface_w_b_find_friends_view_controller.html#af63b1a1eaa155b804d6b4fce75579a5c" title="&#45;[WBFindFriendsViewController\l tableView:cellForLoadMoreAtIndex\lPath:]" alt="" coords="606,5,826,61"/><area shape="rect" id="node4" href="interface_w_b_find_friends_view_controller.html#acc6e8afb45c5cabb7c2b5427bf82a37e" title="&#45;[WBFindFriendsViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="891,13,1115,54"/><area shape="rect" id="node6" href="interface_w_b_photo_timeline_view_controller.html#aa985928c3cdee17f198f01834bf51c3d" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForLoadMoreAtIndexPath:]" alt="" coords="589,86,843,127"/><area shape="rect" id="node7" href="interface_w_b_photo_timeline_view_controller.html#a335d3cc0617bf17dc451e7c53031ee0b" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="891,86,1115,127"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a538042bd2c6e4319ea9f1aa6aaf029f1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) feedLoadMoreSeperatorTopImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a538042bd2c6e4319ea9f1aa6aaf029f1_icgraph.png" border="0" usemap="#interface_w_b_theme_a538042bd2c6e4319ea9f1aa6aaf029f1_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a538042bd2c6e4319ea9f1aa6aaf029f1_icgraph" id="interface_w_b_theme_a538042bd2c6e4319ea9f1aa6aaf029f1_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_find_friends_view_controller.html#a92191d126bfa15ced74a8371e958ae43" title="&#45;[WBFindFriendsViewController\l configureLoadMoreCell:forRowAtIndex\lPath:]" alt="" coords="300,5,540,61"/><area shape="rect" id="node5" href="interface_w_b_photo_timeline_view_controller.html#a02d3d78879f0ea414733e092c92b84ab" title="&#45;[WBPhotoTimelineViewController\l configureLoadMoreCell:forRowAtIndexPath:]" alt="" coords="283,86,557,127"/><area shape="rect" id="node3" href="interface_w_b_find_friends_view_controller.html#af63b1a1eaa155b804d6b4fce75579a5c" title="&#45;[WBFindFriendsViewController\l tableView:cellForLoadMoreAtIndex\lPath:]" alt="" coords="622,5,842,61"/><area shape="rect" id="node4" href="interface_w_b_find_friends_view_controller.html#acc6e8afb45c5cabb7c2b5427bf82a37e" title="&#45;[WBFindFriendsViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="907,13,1131,54"/><area shape="rect" id="node6" href="interface_w_b_photo_timeline_view_controller.html#aa985928c3cdee17f198f01834bf51c3d" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForLoadMoreAtIndexPath:]" alt="" coords="605,86,859,127"/><area shape="rect" id="node7" href="interface_w_b_photo_timeline_view_controller.html#a335d3cc0617bf17dc451e7c53031ee0b" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="907,86,1131,127"/></map>
 </div>
 </p>
 
@@ -227,7 +555,439 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_theme_a0aeefa2b32b5730ddab2e5c0c0c68550_icgraph.png" border="0" usemap="#interface_w_b_theme_a0aeefa2b32b5730ddab2e5c0c0c68550_icgraph" alt=""/></div>
 <map name="interface_w_b_theme_a0aeefa2b32b5730ddab2e5c0c0c68550_icgraph" id="interface_w_b_theme_a0aeefa2b32b5730ddab2e5c0c0c68550_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_photo_timeline_view_controller.html#aef7c65b7145eb586c9a00bfe80a60482" title="&#45;[WBPhotoTimelineViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="237,5,453,46"/><area shape="rect" id="node3" href="interface_w_b_photo_timeline_view_controller.html#a335d3cc0617bf17dc451e7c53031ee0b" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="501,5,725,46"/></map>
+<area shape="rect" id="node2" href="interface_w_b_photo_details_view_controller.html#ad80c18807f6084eddeecfee2474c897b" title="&#45;[WBPhotoDetailsViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="237,5,453,46"/><area shape="rect" id="node4" href="interface_w_b_photo_timeline_view_controller.html#aef7c65b7145eb586c9a00bfe80a60482" title="&#45;[WBPhotoTimelineViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="237,70,453,111"/><area shape="rect" id="node3" href="interface_w_b_photo_details_view_controller.html#a32989eab25bf9ab6d050e031a6756d87" title="&#45;[WBPhotoDetailsViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="501,5,725,46"/><area shape="rect" id="node5" href="interface_w_b_photo_timeline_view_controller.html#a335d3cc0617bf17dc451e7c53031ee0b" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="501,70,725,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad071d9b4937453fd247d5c077302703c"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) findFriendsCellBackgroundImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_ad071d9b4937453fd247d5c077302703c_icgraph.png" border="0" usemap="#interface_w_b_theme_ad071d9b4937453fd247d5c077302703c_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_ad071d9b4937453fd247d5c077302703c_icgraph" id="interface_w_b_theme_ad071d9b4937453fd247d5c077302703c_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="227,71,402,97"/><area shape="rect" id="node5" href="interface_w_b_invite_friends_cell.html#a5ae4329d86943625055b535f32f7cfca" title="&#45;[WBInviteFriendsCell\l setUpView]" alt="" coords="244,122,385,163"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="463,5,639,46"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="451,71,650,97"/><area shape="rect" id="node6" href="interface_w_b_invite_friends_cell.html#a4fa4cc5e2feb55a84d285b273ccfb729" title="&#45;[WBInviteFriendsCell\l initWithStyle:reuseIdentifier:]" alt="" coords="462,122,639,163"/><area shape="rect" id="node7" href="interface_w_b_invite_friends_cell.html#a719d5fa25ea425162007e7686d7a8317" title="&#45;[WBInviteFriendsCell\l awakeFromNib]" alt="" coords="480,187,621,229"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a21864f1339fa645b5d8eb4c4dd2001c4"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIFont *) findFriendsFollowButtonFont </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a21864f1339fa645b5d8eb4c4dd2001c4_icgraph.png" border="0" usemap="#interface_w_b_theme_a21864f1339fa645b5d8eb4c4dd2001c4_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a21864f1339fa645b5d8eb4c4dd2001c4_icgraph" id="interface_w_b_theme_a21864f1339fa645b5d8eb4c4dd2001c4_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="243,34,421,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="470,41,645,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="705,5,881,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="694,71,893,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aef4d881cf1d45a0451fdeac3ae3e9546"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) findFriendsFollowButtonNormalBackgroundImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_aef4d881cf1d45a0451fdeac3ae3e9546_icgraph.png" border="0" usemap="#interface_w_b_theme_aef4d881cf1d45a0451fdeac3ae3e9546_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_aef4d881cf1d45a0451fdeac3ae3e9546_icgraph" id="interface_w_b_theme_aef4d881cf1d45a0451fdeac3ae3e9546_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="256,34,435,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="483,41,658,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="719,5,895,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="707,71,906,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ac019ef1026c1d49fe1bd9f0799fd96eb"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) findFriendsFollowButtonNormalFontColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_ac019ef1026c1d49fe1bd9f0799fd96eb_icgraph.png" border="0" usemap="#interface_w_b_theme_ac019ef1026c1d49fe1bd9f0799fd96eb_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_ac019ef1026c1d49fe1bd9f0799fd96eb_icgraph" id="interface_w_b_theme_ac019ef1026c1d49fe1bd9f0799fd96eb_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="243,34,421,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="470,41,645,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="705,5,881,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="694,71,893,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a32085ad4c1e6d37d746d2fd9d4289c7e"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) findFriendsFollowButtonNormalShadowColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a32085ad4c1e6d37d746d2fd9d4289c7e_icgraph.png" border="0" usemap="#interface_w_b_theme_a32085ad4c1e6d37d746d2fd9d4289c7e_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a32085ad4c1e6d37d746d2fd9d4289c7e_icgraph" id="interface_w_b_theme_a32085ad4c1e6d37d746d2fd9d4289c7e_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="243,34,421,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="470,41,645,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="705,5,881,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="694,71,893,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a67bcad423224f82420528c43e0287672"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) findFriendsFollowButtonSelectedBackgroundImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a67bcad423224f82420528c43e0287672_icgraph.png" border="0" usemap="#interface_w_b_theme_a67bcad423224f82420528c43e0287672_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a67bcad423224f82420528c43e0287672_icgraph" id="interface_w_b_theme_a67bcad423224f82420528c43e0287672_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="264,34,443,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="491,41,666,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="727,5,903,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="715,71,914,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af585405f60e25458af145876b9464797"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) findFriendsFollowButtonSelectedFontColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_af585405f60e25458af145876b9464797_icgraph.png" border="0" usemap="#interface_w_b_theme_af585405f60e25458af145876b9464797_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_af585405f60e25458af145876b9464797_icgraph" id="interface_w_b_theme_af585405f60e25458af145876b9464797_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="243,34,421,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="470,41,645,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="705,5,881,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="694,71,893,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad3788b8c0d05bafb52a35965c4400328"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) findFriendsFollowButtonSelectedImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_ad3788b8c0d05bafb52a35965c4400328_icgraph.png" border="0" usemap="#interface_w_b_theme_ad3788b8c0d05bafb52a35965c4400328_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_ad3788b8c0d05bafb52a35965c4400328_icgraph" id="interface_w_b_theme_ad3788b8c0d05bafb52a35965c4400328_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="243,34,421,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="470,41,645,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="705,5,881,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="694,71,893,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad252a027646ed802e117a563810a572d"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) findFriendsFollowButtonSelectedShadowColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_ad252a027646ed802e117a563810a572d_icgraph.png" border="0" usemap="#interface_w_b_theme_ad252a027646ed802e117a563810a572d_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_ad252a027646ed802e117a563810a572d_icgraph" id="interface_w_b_theme_ad252a027646ed802e117a563810a572d_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="243,34,421,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="470,41,645,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="705,5,881,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="694,71,893,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="ad20f4f58ec246fba089eea46717fdba6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIFont *) findFriendsInviteFriendsFont </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_ad20f4f58ec246fba089eea46717fdba6_icgraph.png" border="0" usemap="#interface_w_b_theme_ad20f4f58ec246fba089eea46717fdba6_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_ad20f4f58ec246fba089eea46717fdba6_icgraph" id="interface_w_b_theme_ad20f4f58ec246fba089eea46717fdba6_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_invite_friends_cell.html#a5ae4329d86943625055b535f32f7cfca" title="&#45;[WBInviteFriendsCell\l setUpView]" alt="" coords="235,38,376,79"/><area shape="rect" id="node3" href="interface_w_b_invite_friends_cell.html#a4fa4cc5e2feb55a84d285b273ccfb729" title="&#45;[WBInviteFriendsCell\l initWithStyle:reuseIdentifier:]" alt="" coords="425,5,602,46"/><area shape="rect" id="node4" href="interface_w_b_invite_friends_cell.html#a719d5fa25ea425162007e7686d7a8317" title="&#45;[WBInviteFriendsCell\l awakeFromNib]" alt="" coords="443,70,584,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aa3383edf143dcf0866db7e9826f68dda"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) findFriendsInviteFriendsFontColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_aa3383edf143dcf0866db7e9826f68dda_icgraph.png" border="0" usemap="#interface_w_b_theme_aa3383edf143dcf0866db7e9826f68dda_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_aa3383edf143dcf0866db7e9826f68dda_icgraph" id="interface_w_b_theme_aa3383edf143dcf0866db7e9826f68dda_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_invite_friends_cell.html#a5ae4329d86943625055b535f32f7cfca" title="&#45;[WBInviteFriendsCell\l setUpView]" alt="" coords="235,38,376,79"/><area shape="rect" id="node3" href="interface_w_b_invite_friends_cell.html#a4fa4cc5e2feb55a84d285b273ccfb729" title="&#45;[WBInviteFriendsCell\l initWithStyle:reuseIdentifier:]" alt="" coords="425,5,602,46"/><area shape="rect" id="node4" href="interface_w_b_invite_friends_cell.html#a719d5fa25ea425162007e7686d7a8317" title="&#45;[WBInviteFriendsCell\l awakeFromNib]" alt="" coords="443,70,584,111"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a85c31e62c3ba8119d4fa14c62b331add"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIFont *) findFriendsNameFont </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a85c31e62c3ba8119d4fa14c62b331add_icgraph.png" border="0" usemap="#interface_w_b_theme_a85c31e62c3ba8119d4fa14c62b331add_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a85c31e62c3ba8119d4fa14c62b331add_icgraph" id="interface_w_b_theme_a85c31e62c3ba8119d4fa14c62b331add_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a604731a38a9614b8c3023f30d36ecb3f" title="&#45;[WBFriendCell setUpName\lButton]" alt="" coords="241,34,418,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="467,41,642,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="703,5,879,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="691,71,890,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="abbfe7afcb4f724c6ef3f650898582840"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) findFriendsNameFontColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_abbfe7afcb4f724c6ef3f650898582840_icgraph.png" border="0" usemap="#interface_w_b_theme_abbfe7afcb4f724c6ef3f650898582840_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_abbfe7afcb4f724c6ef3f650898582840_icgraph" id="interface_w_b_theme_abbfe7afcb4f724c6ef3f650898582840_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a604731a38a9614b8c3023f30d36ecb3f" title="&#45;[WBFriendCell setUpName\lButton]" alt="" coords="241,34,418,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="467,41,642,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="703,5,879,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="691,71,890,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="adf1b15f8ece5d949beb81f9cac6ba0bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) findFriendsNameShadowColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_adf1b15f8ece5d949beb81f9cac6ba0bf_icgraph.png" border="0" usemap="#interface_w_b_theme_adf1b15f8ece5d949beb81f9cac6ba0bf_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_adf1b15f8ece5d949beb81f9cac6ba0bf_icgraph" id="interface_w_b_theme_adf1b15f8ece5d949beb81f9cac6ba0bf_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a604731a38a9614b8c3023f30d36ecb3f" title="&#45;[WBFriendCell setUpName\lButton]" alt="" coords="241,34,418,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="467,41,642,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="703,5,879,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="691,71,890,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6fba25dbc5e5b99d7f4bbd04fcc6b032"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIFont *) findFriendsNumPhotosFont </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a6fba25dbc5e5b99d7f4bbd04fcc6b032_icgraph.png" border="0" usemap="#interface_w_b_theme_a6fba25dbc5e5b99d7f4bbd04fcc6b032_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a6fba25dbc5e5b99d7f4bbd04fcc6b032_icgraph" id="interface_w_b_theme_a6fba25dbc5e5b99d7f4bbd04fcc6b032_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a87657e6d706e6dde4d631f789701ffd4" title="&#45;[WBFriendCell setUpNumPhotos\lLabel]" alt="" coords="233,34,442,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="491,41,666,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="727,5,903,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="715,71,914,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af5dd9621f12a5dfbea1ff186b3d85197"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) findFriendsNumPhotosFontColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_af5dd9621f12a5dfbea1ff186b3d85197_icgraph.png" border="0" usemap="#interface_w_b_theme_af5dd9621f12a5dfbea1ff186b3d85197_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_af5dd9621f12a5dfbea1ff186b3d85197_icgraph" id="interface_w_b_theme_af5dd9621f12a5dfbea1ff186b3d85197_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a87657e6d706e6dde4d631f789701ffd4" title="&#45;[WBFriendCell setUpNumPhotos\lLabel]" alt="" coords="233,34,442,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="491,41,666,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="727,5,903,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="715,71,914,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="accdbac0ea45fb400012d34570b60fdbc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIColor *) findFriendsNumPhotosShadowColor </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_accdbac0ea45fb400012d34570b60fdbc_icgraph.png" border="0" usemap="#interface_w_b_theme_accdbac0ea45fb400012d34570b60fdbc_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_accdbac0ea45fb400012d34570b60fdbc_icgraph" id="interface_w_b_theme_accdbac0ea45fb400012d34570b60fdbc_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_friend_cell.html#a87657e6d706e6dde4d631f789701ffd4" title="&#45;[WBFriendCell setUpNumPhotos\lLabel]" alt="" coords="233,34,442,75"/><area shape="rect" id="node3" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="491,41,666,68"/><area shape="rect" id="node4" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="727,5,903,46"/><area shape="rect" id="node5" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="715,71,914,97"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af1d30b0f18910e9ce294d92c7f613968"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) findFriendsTitleImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_af1d30b0f18910e9ce294d92c7f613968_icgraph.png" border="0" usemap="#interface_w_b_theme_af1d30b0f18910e9ce294d92c7f613968_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_af1d30b0f18910e9ce294d92c7f613968_icgraph" id="interface_w_b_theme_af1d30b0f18910e9ce294d92c7f613968_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_find_friends_view_controller.html#a5e3cd19662ec054c244033f885e340c2" title="&#45;[WBFindFriendsViewController\l setUpView]" alt="" coords="227,5,421,46"/><area shape="rect" id="node3" href="interface_w_b_find_friends_view_controller.html#ae34ffb81fa776a5d79cecbb2213587f8" title="&#45;[WBFindFriendsViewController\l viewDidLoad]" alt="" coords="469,5,664,46"/></map>
 </div>
 </p>
 
@@ -372,6 +1132,54 @@ Here is the caller graph for this function:</div>
 <div class="center"><img src="interface_w_b_theme_a9607da91e022be138db5b7dafefe707c_icgraph.png" border="0" usemap="#interface_w_b_theme_a9607da91e022be138db5b7dafefe707c_icgraph" alt=""/></div>
 <map name="interface_w_b_theme_a9607da91e022be138db5b7dafefe707c_icgraph" id="interface_w_b_theme_a9607da91e022be138db5b7dafefe707c_icgraph">
 <area shape="rect" id="node2" href="interface_w_b_navigation_controller.html#a0cd89a4dc9367f73f61da7bb307386a7" title="&#45;[WBNavigationController\l setUpView]" alt="" coords="235,5,397,46"/><area shape="rect" id="node3" href="interface_w_b_navigation_controller.html#a2a4de4f8da908c2b0ed867d9e17cd9a2" title="&#45;[WBNavigationController\l viewWillAppear:]" alt="" coords="445,5,608,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a2a47c982ac14d247e182c86e587d64e6"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) pictoFollowImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_a2a47c982ac14d247e182c86e587d64e6_icgraph.png" border="0" usemap="#interface_w_b_theme_a2a47c982ac14d247e182c86e587d64e6_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_a2a47c982ac14d247e182c86e587d64e6_icgraph" id="interface_w_b_theme_a2a47c982ac14d247e182c86e587d64e6_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_profile_header_view.html#a1083e214f9a2dae6e231813ef44baab4" title="&#45;[WBProfileHeaderView\l setUpViewWithUser:]" alt="" coords="248,5,403,46"/><area shape="rect" id="node3" href="interface_profile_view_controller.html#a5ecc9494341132b7949656681e7db17e" title="&#45;[ProfileViewController\l setupDataForUser:]" alt="" coords="451,5,594,46"/><area shape="rect" id="node4" href="interface_profile_view_controller.html#af0251dcd86ba860f7744c6e757269001" title="&#45;[ProfileViewController\l viewDidLoad]" alt="" coords="643,5,786,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="aec3343a62ff272c526fca282de1c487f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) pictoPhotoImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_aec3343a62ff272c526fca282de1c487f_icgraph.png" border="0" usemap="#interface_w_b_theme_aec3343a62ff272c526fca282de1c487f_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_aec3343a62ff272c526fca282de1c487f_icgraph" id="interface_w_b_theme_aec3343a62ff272c526fca282de1c487f_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_profile_header_view.html#a1083e214f9a2dae6e231813ef44baab4" title="&#45;[WBProfileHeaderView\l setUpViewWithUser:]" alt="" coords="245,5,400,46"/><area shape="rect" id="node3" href="interface_profile_view_controller.html#a5ecc9494341132b7949656681e7db17e" title="&#45;[ProfileViewController\l setupDataForUser:]" alt="" coords="449,5,591,46"/><area shape="rect" id="node4" href="interface_profile_view_controller.html#af0251dcd86ba860f7744c6e757269001" title="&#45;[ProfileViewController\l viewDidLoad]" alt="" coords="641,5,783,46"/></map>
 </div>
 </p>
 
@@ -569,7 +1377,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_theme_a11c9bbd646b2236fc8f2d72da6dfddb1_icgraph.png" border="0" usemap="#interface_w_b_theme_a11c9bbd646b2236fc8f2d72da6dfddb1_icgraph" alt=""/></div>
 <map name="interface_w_b_theme_a11c9bbd646b2236fc8f2d72da6dfddb1_icgraph" id="interface_w_b_theme_a11c9bbd646b2236fc8f2d72da6dfddb1_icgraph">
-<area shape="rect" id="node2" href="class_w_b_photo_timeline_section_header_view.html#a6b37262b7c9abfdda5af271a4fcda675" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImage]" alt="" coords="245,70,432,111"/><area shape="rect" id="node3" href="class_w_b_photo_timeline_section_header_view.html#a18d7ef8a5876ce56afc030365737e919" title="&#45;[WBPhotoTimelineSection\lHeaderView setUpLikeButton]" alt="" coords="481,70,671,111"/><area shape="rect" id="node4" href="class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="721,37,890,78"/><area shape="rect" id="node7" href="class_w_b_photo_timeline_section_header_view.html#a8405afa346e0d90265c02e579f3d581a" title="&#45;[WBPhotoTimelineSection\lHeaderView setIsLiked:]" alt="" coords="721,102,890,143"/><area shape="rect" id="node5" href="class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="944,5,1120,46"/><area shape="rect" id="node6" href="class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="939,70,1125,111"/></map>
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_likes.html#a0cf5a749968bba033ea9fa90e2b4b425" title="&#45;[WBPhotoDetailsCellLikes\l setupView]" alt="" coords="252,5,425,46"/><area shape="rect" id="node3" href="class_w_b_photo_timeline_section_header_view.html#a6b37262b7c9abfdda5af271a4fcda675" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImage]" alt="" coords="245,70,432,111"/><area shape="rect" id="node4" href="class_w_b_photo_timeline_section_header_view.html#a18d7ef8a5876ce56afc030365737e919" title="&#45;[WBPhotoTimelineSection\lHeaderView setUpLikeButton]" alt="" coords="481,70,671,111"/><area shape="rect" id="node5" href="class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="721,37,890,78"/><area shape="rect" id="node8" href="class_w_b_photo_timeline_section_header_view.html#a8405afa346e0d90265c02e579f3d581a" title="&#45;[WBPhotoTimelineSection\lHeaderView setIsLiked:]" alt="" coords="721,102,890,143"/><area shape="rect" id="node6" href="class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="944,5,1120,46"/><area shape="rect" id="node7" href="class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="939,70,1125,111"/></map>
 </div>
 </p>
 
@@ -595,7 +1403,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_theme_a7d6aba2e77ad2541bcd95e27e734d916_icgraph.png" border="0" usemap="#interface_w_b_theme_a7d6aba2e77ad2541bcd95e27e734d916_icgraph" alt=""/></div>
 <map name="interface_w_b_theme_a7d6aba2e77ad2541bcd95e27e734d916_icgraph" id="interface_w_b_theme_a7d6aba2e77ad2541bcd95e27e734d916_icgraph">
-<area shape="rect" id="node2" href="class_w_b_photo_timeline_section_header_view.html#abdec4a2a3fcbce45fe1310f9a1b44d5d" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageHighlighted]" alt="" coords="246,37,493,78"/><area shape="rect" id="node8" href="class_w_b_photo_timeline_section_header_view.html#ab51bbadddc3d4a03dde3534cd1868452" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageSelected]" alt="" coords="252,102,487,143"/><area shape="rect" id="node3" href="class_w_b_photo_timeline_section_header_view.html#a18d7ef8a5876ce56afc030365737e919" title="&#45;[WBPhotoTimelineSection\lHeaderView setUpLikeButton]" alt="" coords="542,70,733,111"/><area shape="rect" id="node4" href="class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="782,37,951,78"/><area shape="rect" id="node7" href="class_w_b_photo_timeline_section_header_view.html#a8405afa346e0d90265c02e579f3d581a" title="&#45;[WBPhotoTimelineSection\lHeaderView setIsLiked:]" alt="" coords="782,102,951,143"/><area shape="rect" id="node5" href="class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="1005,5,1181,46"/><area shape="rect" id="node6" href="class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="1001,70,1186,111"/></map>
+<area shape="rect" id="node2" href="interface_w_b_photo_details_cell_likes.html#a0cf5a749968bba033ea9fa90e2b4b425" title="&#45;[WBPhotoDetailsCellLikes\l setupView]" alt="" coords="283,5,456,46"/><area shape="rect" id="node3" href="class_w_b_photo_timeline_section_header_view.html#abdec4a2a3fcbce45fe1310f9a1b44d5d" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageHighlighted]" alt="" coords="246,70,493,111"/><area shape="rect" id="node9" href="class_w_b_photo_timeline_section_header_view.html#ab51bbadddc3d4a03dde3534cd1868452" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageSelected]" alt="" coords="252,135,487,177"/><area shape="rect" id="node4" href="class_w_b_photo_timeline_section_header_view.html#a18d7ef8a5876ce56afc030365737e919" title="&#45;[WBPhotoTimelineSection\lHeaderView setUpLikeButton]" alt="" coords="542,103,733,145"/><area shape="rect" id="node5" href="class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="782,70,951,111"/><area shape="rect" id="node8" href="class_w_b_photo_timeline_section_header_view.html#a8405afa346e0d90265c02e579f3d581a" title="&#45;[WBPhotoTimelineSection\lHeaderView setIsLiked:]" alt="" coords="782,135,951,177"/><area shape="rect" id="node6" href="class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="1005,38,1181,79"/><area shape="rect" id="node7" href="class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="1001,103,1186,145"/></map>
 </div>
 </p>
 
@@ -662,15 +1470,6 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="interface_w_b_theme_a7b2cfbb273a805af0b8820a09b400f79_icgraph.png" border="0" usemap="#interface_w_b_theme_a7b2cfbb273a805af0b8820a09b400f79_icgraph" alt=""/></div>
-<map name="interface_w_b_theme_a7b2cfbb273a805af0b8820a09b400f79_icgraph" id="interface_w_b_theme_a7b2cfbb273a805af0b8820a09b400f79_icgraph">
-<area shape="rect" id="node2" href="class_w_b_photo_timeline_section_header_view.html#a18d7ef8a5876ce56afc030365737e919" title="&#45;[WBPhotoTimelineSection\lHeaderView setUpLikeButton]" alt="" coords="270,70,461,111"/><area shape="rect" id="node3" href="class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="510,37,679,78"/><area shape="rect" id="node6" href="class_w_b_photo_timeline_section_header_view.html#a8405afa346e0d90265c02e579f3d581a" title="&#45;[WBPhotoTimelineSection\lHeaderView setIsLiked:]" alt="" coords="510,102,679,143"/><area shape="rect" id="node4" href="class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="733,5,909,46"/><area shape="rect" id="node5" href="class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="729,70,914,111"/></map>
-</div>
-</p>
-
 </div>
 </div>
 <a class="anchor" id="ac34ebf79ff51317f2fe4b8f27142cb11"></a>
@@ -693,7 +1492,31 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="interface_w_b_theme_ac34ebf79ff51317f2fe4b8f27142cb11_icgraph.png" border="0" usemap="#interface_w_b_theme_ac34ebf79ff51317f2fe4b8f27142cb11_icgraph" alt=""/></div>
 <map name="interface_w_b_theme_ac34ebf79ff51317f2fe4b8f27142cb11_icgraph" id="interface_w_b_theme_ac34ebf79ff51317f2fe4b8f27142cb11_icgraph">
-<area shape="rect" id="node2" href="interface_w_b_navigation_controller.html#a0cd89a4dc9367f73f61da7bb307386a7" title="&#45;[WBNavigationController\l setUpView]" alt="" coords="275,5,437,46"/><area shape="rect" id="node4" href="class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="801,325,970,366"/><area shape="rect" id="node7" href="class_w_b_photo_timeline_section_header_view.html#a18d7ef8a5876ce56afc030365737e919" title="&#45;[WBPhotoTimelineSection\lHeaderView setUpLikeButton]" alt="" coords="545,178,735,219"/><area shape="rect" id="node9" href="class_w_b_photo_timeline_section_header_view.html#a6b37262b7c9abfdda5af271a4fcda675" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImage]" alt="" coords="263,122,449,163"/><area shape="rect" id="node10" href="class_w_b_photo_timeline_section_header_view.html#abdec4a2a3fcbce45fe1310f9a1b44d5d" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageHighlighted]" alt="" coords="233,187,479,229"/><area shape="rect" id="node11" href="class_w_b_photo_timeline_section_header_view.html#ab51bbadddc3d4a03dde3534cd1868452" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageSelected]" alt="" coords="239,253,473,294"/><area shape="rect" id="node12" href="class_w_b_photo_timeline_section_header_view.html#a4b8abbd078fdf681543ad2f6e13238d4" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage]" alt="" coords="530,325,750,366"/><area shape="rect" id="node13" href="class_w_b_photo_timeline_section_header_view.html#a17c47111b3e705bb98eb34140988ef24" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage\lHighlighted]" alt="" coords="531,391,749,447"/><area shape="rect" id="node14" href="class_w_b_photo_timeline_section_header_view.html#a209a46aec915460eaeb502597fdb6a50" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage\lSelected]" alt="" coords="531,244,749,300"/><area shape="rect" id="node15" href="class_w_b_photo_timeline_section_header_view.html#a8b121201458e4c30190dacb390a7ac1c" title="&#45;[WBPhotoTimelineSection\lHeaderView displayNameFont]" alt="" coords="257,522,455,563"/><area shape="rect" id="node16" href="interface_w_b_photo_timeline_view_controller.html#aef7c65b7145eb586c9a00bfe80a60482" title="&#45;[WBPhotoTimelineViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="248,587,464,629"/><area shape="rect" id="node18" href="interface_w_b_photo_timeline_view_controller.html#ab79de764d090c7a7c615f2be31b2f7d4" title="&#45;[WBPhotoTimelineViewController\l backgroundImage]" alt="" coords="252,653,460,694"/><area shape="rect" id="node19" href="interface_w_b_tab_bar_controller.html#ac1dfa6c039744da032dc7f8189a41892" title="&#45;[WBTabBarController\l setUpTabBarBackground]" alt="" coords="269,783,443,825"/><area shape="rect" id="node21" href="interface_w_b_tab_bar_controller.html#a113d562a12d2ade2f8a53cd2effec504" title="&#45;[WBTabBarController\l setUpHomeViewController]" alt="" coords="268,849,444,890"/><area shape="rect" id="node22" href="interface_w_b_tab_bar_controller.html#ad1612cc1b053ee86c80e98e416d7d656" title="&#45;[WBTabBarController\l setUpActivityViewController]" alt="" coords="265,718,447,759"/><area shape="rect" id="node23" href="interface_w_b_tab_bar_controller.html#a3adfce89715c6185bb869069c7f7fe24" title="&#45;[WBTabBarController\l setViewControllers:animated:]" alt="" coords="261,914,451,955"/><area shape="rect" id="node3" href="interface_w_b_navigation_controller.html#a2a4de4f8da908c2b0ed867d9e17cd9a2" title="&#45;[WBNavigationController\l viewWillAppear:]" alt="" coords="559,5,721,46"/><area shape="rect" id="node5" href="class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="1024,291,1200,333"/><area shape="rect" id="node6" href="class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="1019,357,1205,398"/><area shape="rect" id="node8" href="class_w_b_photo_timeline_section_header_view.html#a8405afa346e0d90265c02e579f3d581a" title="&#45;[WBPhotoTimelineSection\lHeaderView setIsLiked:]" alt="" coords="801,178,970,219"/><area shape="rect" id="node17" href="interface_w_b_photo_timeline_view_controller.html#a335d3cc0617bf17dc451e7c53031ee0b" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="528,587,752,629"/><area shape="rect" id="node20" href="interface_w_b_tab_bar_controller.html#a69ce52131244806ade9966e4ec0cb425" title="&#45;[WBTabBarController\l viewDidLoad]" alt="" coords="567,783,713,825"/></map>
+<area shape="rect" id="node2" href="interface_activity_view_controller.html#a812037513a1fd7d7ad9e26a2d2a5d84a" title="&#45;[ActivityViewController\l backgroundImage]" alt="" coords="295,5,443,46"/><area shape="rect" id="node3" href="interface_w_b_find_friends_view_controller.html#a5e3cd19662ec054c244033f885e340c2" title="&#45;[WBFindFriendsViewController\l setUpView]" alt="" coords="272,70,467,111"/><area shape="rect" id="node5" href="interface_w_b_find_friends_view_controller.html#a92191d126bfa15ced74a8371e958ae43" title="&#45;[WBFindFriendsViewController\l configureLoadMoreCell:forRowAtIndex\lPath:]" alt="" coords="249,136,489,192"/><area shape="rect" id="node7" href="interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="594,312,769,339"/><area shape="rect" id="node10" href="interface_w_b_friend_cell.html#a604731a38a9614b8c3023f30d36ecb3f" title="&#45;[WBFriendCell setUpName\lButton]" alt="" coords="281,334,458,375"/><area shape="rect" id="node11" href="interface_w_b_friend_cell.html#a87657e6d706e6dde4d631f789701ffd4" title="&#45;[WBFriendCell setUpNumPhotos\lLabel]" alt="" coords="265,399,474,441"/><area shape="rect" id="node12" href="interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="280,217,459,258"/><area shape="rect" id="node13" href="interface_w_b_invite_friends_cell.html#a5ae4329d86943625055b535f32f7cfca" title="&#45;[WBInviteFriendsCell\l setUpView]" alt="" coords="299,465,440,506"/><area shape="rect" id="node16" href="interface_w_b_navigation_controller.html#a0cd89a4dc9367f73f61da7bb307386a7" title="&#45;[WBNavigationController\l setUpView]" alt="" coords="288,530,451,571"/><area shape="rect" id="node18" href="interface_w_b_photo_details_cell.html#ad09b81c24d5bc4f9c78e07bbe20f76f1" title="&#45;[WBPhotoDetailsCell\l seperatorBottomImageView]" alt="" coords="277,595,462,637"/><area shape="rect" id="node19" href="interface_w_b_photo_details_cell_add_comment.html#a4ce2f3ddb8460c12f5efdcd3ce3b8e08" title="&#45;[WBPhotoDetailsCellAddComment\l setupView]" alt="" coords="259,661,480,702"/><area shape="rect" id="node20" href="interface_w_b_photo_details_cell_comment.html#ac7bd2de923f6dc5aab710ae632efad5f" title="&#45;[WBPhotoDetailsCellComment\l setupView]" alt="" coords="270,726,469,767"/><area shape="rect" id="node21" href="interface_w_b_photo_details_cell_comment.html#a96a1030c1066b4ef02f9eba921c64c16" title="+[WBPhotoDetailsCellComment\l cellHeightWithMessage:]" alt="" coords="268,791,471,833"/><area shape="rect" id="node23" href="interface_w_b_photo_details_cell_likes.html#a0cf5a749968bba033ea9fa90e2b4b425" title="&#45;[WBPhotoDetailsCellLikes\l setupView]" alt="" coords="283,857,456,898"/><area shape="rect" id="node24" href="interface_w_b_photo_details_view_controller.html#ad80c18807f6084eddeecfee2474c897b" title="&#45;[WBPhotoDetailsViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="261,922,477,963"/><area shape="rect" id="node26" href="interface_w_b_photo_details_view_controller.html#a4e653fdae2be3c0e4d75140b94858081" title="&#45;[WBPhotoDetailsViewController\l backgroundImage]" alt="" coords="268,987,471,1029"/><area shape="rect" id="node27" href="class_w_b_photo_timeline_section_header_view.html#abe9439c2228e066d2e5e8d6ff42394e2" title="&#45;[WBPhotoTimelineSection\lHeaderView setupView]" alt="" coords="883,1346,1053,1387"/><area shape="rect" id="node30" href="class_w_b_photo_timeline_section_header_view.html#a18d7ef8a5876ce56afc030365737e919" title="&#45;[WBPhotoTimelineSection\lHeaderView setUpLikeButton]" alt="" coords="586,1170,777,1211"/><area shape="rect" id="node32" href="class_w_b_photo_timeline_section_header_view.html#a6b37262b7c9abfdda5af271a4fcda675" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImage]" alt="" coords="276,1170,463,1211"/><area shape="rect" id="node33" href="class_w_b_photo_timeline_section_header_view.html#abdec4a2a3fcbce45fe1310f9a1b44d5d" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageHighlighted]" alt="" coords="246,1235,493,1277"/><area shape="rect" id="node34" href="class_w_b_photo_timeline_section_header_view.html#ab51bbadddc3d4a03dde3534cd1868452" title="&#45;[WBPhotoTimelineSection\lHeaderView likeButtonImageSelected]" alt="" coords="252,1053,487,1094"/><area shape="rect" id="node35" href="class_w_b_photo_timeline_section_header_view.html#a4b8abbd078fdf681543ad2f6e13238d4" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage]" alt="" coords="571,1419,791,1461"/><area shape="rect" id="node36" href="class_w_b_photo_timeline_section_header_view.html#a17c47111b3e705bb98eb34140988ef24" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage\lHighlighted]" alt="" coords="573,1485,790,1541"/><area shape="rect" id="node37" href="class_w_b_photo_timeline_section_header_view.html#a209a46aec915460eaeb502597fdb6a50" title="&#45;[WBPhotoTimelineSection\lHeaderView commentButtonImage\lSelected]" alt="" coords="573,1339,790,1395"/><area shape="rect" id="node38" href="class_w_b_photo_timeline_section_header_view.html#a8b121201458e4c30190dacb390a7ac1c" title="&#45;[WBPhotoTimelineSection\lHeaderView displayNameFont]" alt="" coords="270,1505,469,1546"/><area shape="rect" id="node39" href="interface_w_b_photo_timeline_view_controller.html#aef7c65b7145eb586c9a00bfe80a60482" title="&#45;[WBPhotoTimelineViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="573,1634,789,1675"/><area shape="rect" id="node41" href="interface_w_b_photo_timeline_view_controller.html#a02d3d78879f0ea414733e092c92b84ab" title="&#45;[WBPhotoTimelineViewController\l configureLoadMoreCell:forRowAtIndexPath:]" alt="" coords="233,1570,506,1611"/><area shape="rect" id="node43" href="interface_w_b_photo_timeline_view_controller.html#ab79de764d090c7a7c615f2be31b2f7d4" title="&#45;[WBPhotoTimelineViewController\l backgroundImage]" alt="" coords="265,1687,473,1729"/><area shape="rect" id="node44" href="interface_w_b_profile_header_view.html#a1083e214f9a2dae6e231813ef44baab4" title="&#45;[WBProfileHeaderView\l setUpViewWithUser:]" alt="" coords="292,1753,447,1794"/><area shape="rect" id="node46" href="interface_w_b_tab_bar_controller.html#ac1dfa6c039744da032dc7f8189a41892" title="&#45;[WBTabBarController\l setUpTabBarBackground]" alt="" coords="283,1818,456,1859"/><area shape="rect" id="node48" href="interface_w_b_tab_bar_controller.html#a113d562a12d2ade2f8a53cd2effec504" title="&#45;[WBTabBarController\l setUpHomeViewController]" alt="" coords="281,1883,457,1925"/><area shape="rect" id="node49" href="interface_w_b_tab_bar_controller.html#ad1612cc1b053ee86c80e98e416d7d656" title="&#45;[WBTabBarController\l setUpActivityViewController]" alt="" coords="278,1949,461,1990"/><area shape="rect" id="node50" href="interface_w_b_tab_bar_controller.html#a3adfce89715c6185bb869069c7f7fe24" title="&#45;[WBTabBarController\l setViewControllers:animated:]" alt="" coords="274,2014,465,2055"/><area shape="rect" id="node4" href="interface_w_b_find_friends_view_controller.html#ae34ffb81fa776a5d79cecbb2213587f8" title="&#45;[WBFindFriendsViewController\l viewDidLoad]" alt="" coords="584,70,779,111"/><area shape="rect" id="node6" href="interface_w_b_find_friends_view_controller.html#af63b1a1eaa155b804d6b4fce75579a5c" title="&#45;[WBFindFriendsViewController\l tableView:cellForLoadMoreAtIndex\lPath:]" alt="" coords="571,136,791,192"/><area shape="rect" id="node8" href="interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="880,334,1056,375"/><area shape="rect" id="node9" href="interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="869,283,1067,309"/><area shape="rect" id="node14" href="interface_w_b_invite_friends_cell.html#a4fa4cc5e2feb55a84d285b273ccfb729" title="&#45;[WBInviteFriendsCell\l initWithStyle:reuseIdentifier:]" alt="" coords="593,465,770,506"/><area shape="rect" id="node15" href="interface_w_b_invite_friends_cell.html#a719d5fa25ea425162007e7686d7a8317" title="&#45;[WBInviteFriendsCell\l awakeFromNib]" alt="" coords="611,399,752,441"/><area shape="rect" id="node17" href="interface_w_b_navigation_controller.html#a2a4de4f8da908c2b0ed867d9e17cd9a2" title="&#45;[WBNavigationController\l viewWillAppear:]" alt="" coords="600,530,763,571"/><area shape="rect" id="node22" href="interface_w_b_photo_details_view_controller.html#a7f7fb82c045d1f66ac8457f703699640" title="&#45;[WBPhotoDetailsViewController\l tableView:heightForRowAtIndexPath:]" alt="" coords="561,791,801,833"/><area shape="rect" id="node25" href="interface_w_b_photo_details_view_controller.html#a32989eab25bf9ab6d050e031a6756d87" title="&#45;[WBPhotoDetailsViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="569,922,793,963"/><area shape="rect" id="node28" href="class_w_b_photo_timeline_section_header_view.html#a4b361ebcdb5dc0463a98610281d5c958" title="&#45;[WBPhotoTimelineSection\lHeaderView initWithFrame:]" alt="" coords="1133,1313,1309,1354"/><area shape="rect" id="node29" href="class_w_b_photo_timeline_section_header_view.html#a557955e065a84b4d32b17bee2890d3b3" title="&#45;[WBPhotoTimelineSection\lHeaderView awakeFromNib]" alt="" coords="1129,1378,1314,1419"/><area shape="rect" id="node31" href="class_w_b_photo_timeline_section_header_view.html#a8405afa346e0d90265c02e579f3d581a" title="&#45;[WBPhotoTimelineSection\lHeaderView setIsLiked:]" alt="" coords="883,1170,1053,1211"/><area shape="rect" id="node40" href="interface_w_b_photo_timeline_view_controller.html#a335d3cc0617bf17dc451e7c53031ee0b" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="856,1601,1080,1642"/><area shape="rect" id="node42" href="interface_w_b_photo_timeline_view_controller.html#aa985928c3cdee17f198f01834bf51c3d" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForLoadMoreAtIndexPath:]" alt="" coords="555,1569,808,1610"/><area shape="rect" id="node45" href="interface_profile_view_controller.html#a5ecc9494341132b7949656681e7db17e" title="&#45;[ProfileViewController\l setupDataForUser:]" alt="" coords="610,1753,753,1794"/><area shape="rect" id="node47" href="interface_w_b_tab_bar_controller.html#a69ce52131244806ade9966e4ec0cb425" title="&#45;[WBTabBarController\l viewDidLoad]" alt="" coords="609,1883,754,1925"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="af20525311da02332fd0f2bd39f55b837"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">- (UIImage *) strokeProfilePictureImage </td>
+          <td></td>
+          <td class="paramname"></td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="interface_w_b_theme_af20525311da02332fd0f2bd39f55b837_icgraph.png" border="0" usemap="#interface_w_b_theme_af20525311da02332fd0f2bd39f55b837_icgraph" alt=""/></div>
+<map name="interface_w_b_theme_af20525311da02332fd0f2bd39f55b837_icgraph" id="interface_w_b_theme_af20525311da02332fd0f2bd39f55b837_icgraph">
+<area shape="rect" id="node2" href="interface_w_b_profile_header_view.html#a1083e214f9a2dae6e231813ef44baab4" title="&#45;[WBProfileHeaderView\l setUpViewWithUser:]" alt="" coords="251,5,405,46"/><area shape="rect" id="node3" href="interface_profile_view_controller.html#a5ecc9494341132b7949656681e7db17e" title="&#45;[ProfileViewController\l setupDataForUser:]" alt="" coords="454,5,597,46"/><area shape="rect" id="node4" href="interface_profile_view_controller.html#af0251dcd86ba860f7744c6e757269001" title="&#45;[ProfileViewController\l viewDidLoad]" alt="" coords="646,5,789,46"/></map>
 </div>
 </p>
 
@@ -969,7 +1792,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 17 2013 18:24:21 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 26 2013 15:01:44 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

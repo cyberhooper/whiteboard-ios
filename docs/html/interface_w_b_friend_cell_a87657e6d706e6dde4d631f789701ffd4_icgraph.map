@@ -1,0 +1,5 @@
+<map id="&#45;[WBFriendCell setUpNumPhotosLabel]" name="&#45;[WBFriendCell setUpNumPhotosLabel]">
+<area shape="rect" id="node2" href="$interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="265,41,439,68"/>
+<area shape="rect" id="node3" href="$interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="500,5,676,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="489,71,687,97"/>
+</map>

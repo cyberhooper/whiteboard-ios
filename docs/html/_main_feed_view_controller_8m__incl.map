@@ -1,11 +1,12 @@
 <map id="MainFeedViewController.m" name="MainFeedViewController.m">
-<area shape="rect" id="node2" href="$_main_feed_view_controller_8h.html" title="MainFeedViewController.h" alt="" coords="63,80,231,107"/>
-<area shape="rect" id="node8" href="$_main_feed_cell_8h.html" title="MainFeedCell.h" alt="" coords="255,80,364,107"/>
-<area shape="rect" id="node10" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="368,155,491,181"/>
-<area shape="rect" id="node3" href="$_w_b_photo_timeline_view_controller_8h.html" title="WBPhotoTimelineViewController.h" alt="" coords="41,155,252,181"/>
-<area shape="rect" id="node5" href="$_w_b_view_controller_8h.html" title="WBViewController.h" alt="" coords="5,229,139,256"/>
-<area shape="rect" id="node6" href="$_w_b_theme_8h.html" title="WBTheme.h" alt="" coords="26,304,117,331"/>
-<area shape="rect" id="node9" href="$_w_b_photo_timeline_cell_8h.html" title="WBPhotoTimelineCell.h" alt="" coords="215,229,367,256"/>
-<area shape="rect" id="node11" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="441,304,521,331"/>
-<area shape="rect" id="node12" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="493,229,579,256"/>
+<area shape="rect" id="node2" href="$_main_feed_view_controller_8h.html" title="MainFeedViewController.h" alt="" coords="220,80,388,107"/>
+<area shape="rect" id="node8" href="$_main_feed_cell_8h.html" title="MainFeedCell.h" alt="" coords="65,80,175,107"/>
+<area shape="rect" id="node10" href="$_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="416,155,539,181"/>
+<area shape="rect" id="node13" href="$_w_b_account_manager_8h.html" title="WBAccountManager.h" alt="" coords="593,229,743,256"/>
+<area shape="rect" id="node3" href="$_w_b_photo_timeline_view_controller_8h.html" title="WBPhotoTimelineViewController.h" alt="" coords="181,155,392,181"/>
+<area shape="rect" id="node5" href="$_w_b_view_controller_8h.html" title="WBViewController.h" alt="" coords="219,229,353,256"/>
+<area shape="rect" id="node6" href="$_w_b_theme_8h.html" title="WBTheme.h" alt="" coords="257,304,348,331"/>
+<area shape="rect" id="node9" href="$_w_b_photo_timeline_cell_8h.html" title="WBPhotoTimelineCell.h" alt="" coords="5,155,157,181"/>
+<area shape="rect" id="node11" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="512,304,592,331"/>
+<area shape="rect" id="node12" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="430,229,516,256"/>
 </map>

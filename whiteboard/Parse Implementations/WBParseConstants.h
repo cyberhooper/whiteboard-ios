@@ -2,7 +2,7 @@
 //  WBParseConstants.h
 //  whiteboard
 //
-//  Created by Sacha Durand Saint Omer on 9/24/13.
+//  Created by sad-fueled on 9/24/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 

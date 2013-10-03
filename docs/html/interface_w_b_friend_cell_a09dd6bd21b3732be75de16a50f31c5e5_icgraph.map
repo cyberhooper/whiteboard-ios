@@ -1,0 +1,5 @@
+<map id="&#45;[WBFriendCell setUpFollowButton]" name="&#45;[WBFriendCell setUpFollowButton]">
+<area shape="rect" id="node2" href="$interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="233,41,407,68"/>
+<area shape="rect" id="node3" href="$interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="468,5,644,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="457,71,655,97"/>
+</map>

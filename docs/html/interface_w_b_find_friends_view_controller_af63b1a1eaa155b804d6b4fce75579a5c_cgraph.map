@@ -1,0 +1,6 @@
+<map id="&#45;[WBFindFriendsViewController tableView:cellForLoadMoreAtIndexPath:]" name="&#45;[WBFindFriendsViewController tableView:cellForLoadMoreAtIndexPath:]">
+<area shape="rect" id="node2" href="$interface_w_b_find_friends_view_controller.html#a92191d126bfa15ced74a8371e958ae43" title="&#45;[WBFindFriendsViewController\l configureLoadMoreCell:forRowAtIndex\lPath:]" alt="" coords="275,41,515,97"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="589,5,766,32"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#a3589d81555ebc35bc0270f6a943b3ec8" title="&#45;[WBTheme feedLoadMoreImage]" alt="" coords="571,56,783,83"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#a538042bd2c6e4319ea9f1aa6aaf029f1" title="&#45;[WBTheme feedLoadMoreSeperator\lTopImage]" alt="" coords="563,107,792,149"/>
+</map>

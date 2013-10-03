@@ -1,4 +1,6 @@
 <map id="&#45;[WBTheme feedPlaceholderImage]" name="&#45;[WBTheme feedPlaceholderImage]">
-<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#aef7c65b7145eb586c9a00bfe80a60482" title="&#45;[WBPhotoTimelineViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="237,5,453,46"/>
-<area shape="rect" id="node3" href="$interface_w_b_photo_timeline_view_controller.html#a335d3cc0617bf17dc451e7c53031ee0b" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="501,5,725,46"/>
+<area shape="rect" id="node2" href="$interface_w_b_photo_details_view_controller.html#ad80c18807f6084eddeecfee2474c897b" title="&#45;[WBPhotoDetailsViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="237,5,453,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_photo_timeline_view_controller.html#aef7c65b7145eb586c9a00bfe80a60482" title="&#45;[WBPhotoTimelineViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="237,70,453,111"/>
+<area shape="rect" id="node3" href="$interface_w_b_photo_details_view_controller.html#a32989eab25bf9ab6d050e031a6756d87" title="&#45;[WBPhotoDetailsViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="501,5,725,46"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_timeline_view_controller.html#a335d3cc0617bf17dc451e7c53031ee0b" title="&#45;[WBPhotoTimelineViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="501,70,725,111"/>
 </map>

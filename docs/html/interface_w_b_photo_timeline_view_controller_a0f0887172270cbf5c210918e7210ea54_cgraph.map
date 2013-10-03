@@ -1,0 +1,7 @@
+<map id="&#45;[WBPhotoTimelineViewController likePhoto:completion:]" name="&#45;[WBPhotoTimelineViewController likePhoto:completion:]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#aae2beef16db05e8bed08b7e23288703c" title="&#45;[WBPhotoTimelineViewController\l addLikeOnPhoto:]" alt="" coords="261,5,469,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="518,71,735,97"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#a210d063f58522c324d173cdf67caf26d" title="&#45;[WBDataSource likePhoto\l:withUser:success:failure:]" alt="" coords="279,122,452,163"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_timeline_view_controller.html#a6821927c1a6dcb3dbf6f0cab2dd1bea6" title="&#45;[WBPhotoTimelineViewController\l removeLikeOnPhoto:]" alt="" coords="261,187,469,229"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo_timeline_view_controller.html#a4163ee7f64372d455156018ce770541b" title="&#45;[WBPhotoTimelineViewController\l likeFailedWithError:]" alt="" coords="261,253,469,294"/>
+</map>

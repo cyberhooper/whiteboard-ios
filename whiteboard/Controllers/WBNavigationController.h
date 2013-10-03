@@ -9,5 +9,8 @@
 #import <UIKit/UIKit.h>
 
 @interface WBNavigationController : UINavigationController <UIActionSheetDelegate>
+@property BOOL showSettingsButton;
+- (void)setUpSettingsButton;
+- (void)showSettingsButton:(BOOL)value;
 
 @end

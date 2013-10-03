@@ -1,4 +1,4 @@
 <map id="&#45;[WBSignupViewController signupAction:]" name="&#45;[WBSignupViewController signupAction:]">
-<area shape="rect" id="node2" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="225,29,442,56"/>
-<area shape="rect" id="node3" href="$interface_w_b_data_source.html#a1b3d7f47062635a61374e60a5c38e41c" title="&#45;[WBDataSource signupWith\lInfo:success:failure:]" alt="" coords="240,81,427,122"/>
+<area shape="rect" id="node2" href="$interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6" title="+[WBAccountManager\l sharedInstance]" alt="" coords="229,5,379,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_account_manager.html#ab770ea3a7610126e34986cbcf12f0fea" title="&#45;[WBAccountManager\l signupWithInfo:success\l:failure:]" alt="" coords="225,71,383,127"/>
 </map>

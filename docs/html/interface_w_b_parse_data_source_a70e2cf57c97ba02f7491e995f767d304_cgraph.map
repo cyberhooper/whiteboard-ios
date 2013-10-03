@@ -1,0 +1,6 @@
+<map id="&#45;[WBParseDataSource suggestedUsers:failure:]" name="&#45;[WBParseDataSource suggestedUsers:failure:]">
+<area shape="rect" id="node2" href="$interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6" title="+[WBAccountManager\l sharedInstance]" alt="" coords="247,5,398,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_account_manager.html#a8bb117b68fd914a4d00c6fdd30e6b2dd" title="&#45;[WBAccountManager\l getFacebookFriends\l:failure:]" alt="" coords="249,71,396,127"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="214,151,431,177"/>
+<area shape="rect" id="node5" href="$interface_w_b_parse_data_source.html#a2d897439ca8b96f1c7af80a8bc2a5342" title="&#45;[WBParseDataSource\l tagUsersAsFollowed\l:success:failure:]" alt="" coords="246,201,399,257"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="&#45;[ActivityViewController viewDidLoad]" name="&#45;[ActivityViewController viewDidLoad]">
+<area shape="rect" id="node2" href="$interface_w_b_view_controller.html#af9790a37244b6c14923028d44fe72013" title="&#45;[WBViewController\l viewDidLoad]" alt="" coords="247,5,377,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="203,71,421,97"/>
+<area shape="rect" id="node5" href="$interface_w_b_data_source.html#aaa9c5ea54abcaa27eecd0024b607ca1d" title="&#45;[WBDataSource recentActivities\l:failure:]" alt="" coords="210,122,414,163"/>
+<area shape="rect" id="node3" href="$interface_w_b_view_controller.html#a94978608a19a215066d39da41fa2b359" title="&#45;[WBViewController\l backgroundImage]" alt="" coords="469,5,600,46"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="&#45;[WBTheme findFriendsNameFontColor]" name="&#45;[WBTheme findFriendsNameFontColor]">
+<area shape="rect" id="node2" href="$interface_w_b_friend_cell.html#a604731a38a9614b8c3023f30d36ecb3f" title="&#45;[WBFriendCell setUpName\lButton]" alt="" coords="241,34,418,75"/>
+<area shape="rect" id="node3" href="$interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="467,41,642,68"/>
+<area shape="rect" id="node4" href="$interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="703,5,879,46"/>
+<area shape="rect" id="node5" href="$interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="691,71,890,97"/>
+</map>

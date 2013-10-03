@@ -1,4 +1,11 @@
 <map id="UIImageView+RoundedCorners.h" name="UIImageView+RoundedCorners.h">
-<area shape="rect" id="node2" href="$_u_i_image_view_09_rounded_corners_8m.html" title="UIImageView+RoundedCorners.m" alt="" coords="5,88,219,115"/>
-<area shape="rect" id="node3" href="$_w_b_photo_timeline_section_header_view_8m.html" title="WBPhotoTimelineSectionHeader\lView.m" alt="" coords="244,81,447,122"/>
+<area shape="rect" id="node2" href="$_u_i_image_view_09_rounded_corners_8m.html" title="UIImageView+RoundedCorners.m" alt="" coords="6,88,220,115"/>
+<area shape="rect" id="node3" href="$_w_b_friend_cell_8h.html" title="WBFriendCell.h" alt="" coords="245,88,352,115"/>
+<area shape="rect" id="node8" href="$_w_b_photo_details_cell_comment_8m.html" title="WBPhotoDetailsCellComment.m" alt="" coords="377,88,580,115"/>
+<area shape="rect" id="node9" href="$_w_b_photo_details_cell_likes_8m.html" title="WBPhotoDetailsCellLikes.m" alt="" coords="605,88,784,115"/>
+<area shape="rect" id="node10" href="$_w_b_photo_timeline_section_header_view_8m.html" title="WBPhotoTimelineSectionHeader\lView.m" alt="" coords="808,81,1011,122"/>
+<area shape="rect" id="node4" href="$_w_b_find_friends_view_controller_8h.html" title="WBFindFriendsViewController.h" alt="" coords="111,171,308,197"/>
+<area shape="rect" id="node7" href="$_w_b_friend_cell_8m.html" title="WBFriendCell.m" alt="" coords="333,171,443,197"/>
+<area shape="rect" id="node5" href="$_w_b_find_friends_view_controller_8m.html" title="WBFindFriendsViewController.m" alt="" coords="5,245,205,272"/>
+<area shape="rect" id="node6" href="$_w_b_navigation_controller_8m.html" title="WBNavigationController.m" alt="" coords="229,245,397,272"/>
 </map>

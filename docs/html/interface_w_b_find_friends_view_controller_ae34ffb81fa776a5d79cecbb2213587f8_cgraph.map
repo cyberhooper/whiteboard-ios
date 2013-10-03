@@ -1,0 +1,14 @@
+<map id="&#45;[WBFindFriendsViewController viewDidLoad]" name="&#45;[WBFindFriendsViewController viewDidLoad]">
+<area shape="rect" id="node2" href="$interface_w_b_find_friends_view_controller.html#a5e3cd19662ec054c244033f885e340c2" title="&#45;[WBFindFriendsViewController\l setUpView]" alt="" coords="248,187,443,229"/>
+<area shape="rect" id="node9" href="$interface_w_b_find_friends_view_controller.html#a0d9fed2f45d0fd9e867e837bdcb18c1b" title="&#45;[WBFindFriendsViewController\l setupRefreshControl]" alt="" coords="248,279,443,321"/>
+<area shape="rect" id="node10" href="$interface_w_b_find_friends_view_controller.html#a9e7c9c3dce64b52bb93a8363b4b0b020" title="&#45;[WBFindFriendsViewController\l getSuggestedUsers]" alt="" coords="248,395,443,437"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="511,5,689,32"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#af1d30b0f18910e9ce294d92c7f613968" title="&#45;[WBTheme findFriendsTitle\lImage]" alt="" coords="513,57,687,98"/>
+<area shape="rect" id="node5" href="$interface_w_b_find_friends_view_controller.html#aa61a29c360bd31d5e87e4d0781ff49eb" title="&#45;[WBFindFriendsViewController\l tableCellNib]" alt="" coords="503,122,697,163"/>
+<area shape="rect" id="node6" href="$interface_w_b_find_friends_view_controller.html#a75a2be4d6282ff6916be7185e233e6d5" title="&#45;[WBFindFriendsViewController\l loadMoreTableCellNib]" alt="" coords="503,187,697,229"/>
+<area shape="rect" id="node7" href="$interface_w_b_find_friends_view_controller.html#aa12c44e594790e87867ee888bbb715e5" title="&#45;[WBFindFriendsViewController\l inviteFriendsTableCellNib]" alt="" coords="503,253,697,294"/>
+<area shape="rect" id="node8" href="$interface_w_b_theme.html#aa36717901832ca032d31d81bc4c1287c" title="&#45;[WBTheme backgroundImage]" alt="" coords="501,319,699,345"/>
+<area shape="rect" id="node11" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="491,369,709,396"/>
+<area shape="rect" id="node12" href="$interface_w_b_data_source.html#a42bd31035b65471fb4eecab80b9545ae" title="&#45;[WBDataSource suggested\lUsers:failure:]" alt="" coords="509,421,691,462"/>
+<area shape="rect" id="node13" href="$interface_w_b_find_friends_view_controller.html#a4898628da359d9d30f478445c7a06e7f" title="&#45;[WBFindFriendsViewController\l configureBarButton]" alt="" coords="503,486,697,527"/>
+</map>

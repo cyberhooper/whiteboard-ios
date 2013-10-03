@@ -1,0 +1,6 @@
+<map id="&#45;[WBTheme findFriendsFollowButtonNormalBackgroundImage]" name="&#45;[WBTheme findFriendsFollowButtonNormalBackgroundImage]">
+<area shape="rect" id="node2" href="$interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="256,34,435,75"/>
+<area shape="rect" id="node3" href="$interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="483,41,658,68"/>
+<area shape="rect" id="node4" href="$interface_w_b_friend_cell.html#a38802e9157e9b120a04107bedb5cd385" title="&#45;[WBFriendCell initWithStyle\l:reuseIdentifier:]" alt="" coords="719,5,895,46"/>
+<area shape="rect" id="node5" href="$interface_w_b_friend_cell.html#af3cb46835207331a73b68463a7f6c1fa" title="&#45;[WBFriendCell awakeFromNib]" alt="" coords="707,71,906,97"/>
+</map>

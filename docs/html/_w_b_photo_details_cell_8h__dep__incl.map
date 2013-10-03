@@ -1,0 +1,12 @@
+<map id="WBPhotoDetailsCell.h" name="WBPhotoDetailsCell.h">
+<area shape="rect" id="node2" href="$_w_b_photo_details_cell_8m.html" title="WBPhotoDetailsCell.m" alt="" coords="5,80,155,107"/>
+<area shape="rect" id="node3" href="$_w_b_photo_details_cell_add_comment_8h.html" title="WBPhotoDetailsCellAddComment.h" alt="" coords="811,80,1035,107"/>
+<area shape="rect" id="node6" href="$_w_b_photo_details_cell_comment_8h.html" title="WBPhotoDetailsCellComment.h" alt="" coords="179,80,380,107"/>
+<area shape="rect" id="node8" href="$_w_b_photo_details_cell_likes_8h.html" title="WBPhotoDetailsCellLikes.h" alt="" coords="405,80,581,107"/>
+<area shape="rect" id="node10" href="$_w_b_photo_details_cell_photo_8h.html" title="WBPhotoDetailsCellPhoto.h" alt="" coords="606,80,785,107"/>
+<area shape="rect" id="node4" href="$_w_b_photo_details_view_controller_8m.html" title="WBPhotoDetailsViewController.m" alt="" coords="490,155,699,181"/>
+<area shape="rect" id="node5" href="$_w_b_photo_details_cell_add_comment_8m.html" title="WBPhotoDetailsCellAddComment.m" alt="" coords="931,155,1157,181"/>
+<area shape="rect" id="node7" href="$_w_b_photo_details_cell_comment_8m.html" title="WBPhotoDetailsCellComment.m" alt="" coords="58,155,261,181"/>
+<area shape="rect" id="node9" href="$_w_b_photo_details_cell_likes_8m.html" title="WBPhotoDetailsCellLikes.m" alt="" coords="287,155,465,181"/>
+<area shape="rect" id="node11" href="$_w_b_photo_details_cell_photo_8m.html" title="WBPhotoDetailsCellPhoto.m" alt="" coords="723,155,905,181"/>
+</map>

@@ -1,5 +1,12 @@
 <map id="&#45;[WBParseDataSource currentUser]" name="&#45;[WBParseDataSource currentUser]">
-<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#aa632fee89c29f98a990ea71927970896" title="&#45;[WBParseDataSource\l loginWithUsername:andPass\lWord:success:failure:]" alt="" coords="209,5,399,61"/>
-<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c" title="&#45;[WBParseDataSource\l addComment:onPhoto\l:success:failure:]" alt="" coords="227,85,381,141"/>
-<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#a3c835bc612c784e69c8ca48cde429537" title="&#45;[WBParseDataSource\l signupWithInfo:success\l:failure:]" alt="" coords="449,5,607,61"/>
+<area shape="rect" id="node2" href="$interface_w_b_parse_data_source.html#a3db7f3649a0c14cc72d64cf8a2e63686" title="&#45;[WBParseDataSource\l queryForcurrentUserPhotos]" alt="" coords="225,5,404,46"/>
+<area shape="rect" id="node5" href="$interface_w_b_parse_data_source.html#ac470127e3944c6b0c80a164f302aa88b" title="&#45;[WBParseDataSource\l queryForCurentUserFriendPhotos]" alt="" coords="208,70,421,111"/>
+<area shape="rect" id="node6" href="$interface_w_b_parse_data_source.html#a29d4c9574727b83ae0fb05646041f92c" title="&#45;[WBParseDataSource\l addComment:onPhoto\l:success:failure:]" alt="" coords="238,136,391,192"/>
+<area shape="rect" id="node7" href="$interface_w_b_parse_data_source.html#ae506035597e9305ca3f7d232a8b750b0" title="&#45;[WBParseDataSource\l followUsers:success\l:failure:]" alt="" coords="238,216,391,272"/>
+<area shape="rect" id="node10" href="$interface_w_b_parse_data_source.html#a4a60ac2be60ce1d7469b73e4b36087b6" title="&#45;[WBParseDataSource\l unFollowUsers:success\l:failure:]" alt="" coords="235,296,394,352"/>
+<area shape="rect" id="node3" href="$interface_w_b_parse_data_source.html#a4332b23ddd0d539c4c4fa599afaab7cf" title="&#45;[WBParseDataSource\l latestPhotosWithOffset\l:success:failure:]" alt="" coords="469,31,624,87"/>
+<area shape="rect" id="node4" href="$interface_w_b_parse_data_source.html#abb2644696621cf533e6464d5c4ed7fdc" title="&#45;[WBParseDataSource\l latestPhotos:failure:]" alt="" coords="673,38,826,79"/>
+<area shape="rect" id="node8" href="$interface_w_b_parse_data_source.html#a6509410d0c5155c5e19aa3fe2a182ba6" title="&#45;[WBParseDataSource\l followUser:success\l:failure:]" alt="" coords="470,216,623,272"/>
+<area shape="rect" id="node9" href="$interface_w_b_parse_data_source.html#aa8f7be63ed60c874e7bbf22475ac6892" title="&#45;[WBParseDataSource\l toggleFollowForUser\l:success:failure:]" alt="" coords="673,256,826,312"/>
+<area shape="rect" id="node11" href="$interface_w_b_parse_data_source.html#ac93de296286b2cbd750c3035c4852c3f" title="&#45;[WBParseDataSource\l unFollowUser:success\l:failure:]" alt="" coords="470,296,623,352"/>
 </map>

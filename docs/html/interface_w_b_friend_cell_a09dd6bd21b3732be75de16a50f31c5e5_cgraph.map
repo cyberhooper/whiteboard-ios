@@ -1,0 +1,11 @@
+<map id="&#45;[WBFriendCell setUpFollowButton]" name="&#45;[WBFriendCell setUpFollowButton]">
+<area shape="rect" id="node2" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="249,5,426,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#a21864f1339fa645b5d8eb4c4dd2001c4" title="&#45;[WBTheme findFriendsFollow\lButtonFont]" alt="" coords="243,57,431,98"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#aef4d881cf1d45a0451fdeac3ae3e9546" title="&#45;[WBTheme findFriendsFollow\lButtonNormalBackgroundImage]" alt="" coords="236,122,439,163"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#a67bcad423224f82420528c43e0287672" title="&#45;[WBTheme findFriendsFollow\lButtonSelectedBackgroundImage]" alt="" coords="232,187,443,229"/>
+<area shape="rect" id="node6" href="$interface_w_b_theme.html#ad3788b8c0d05bafb52a35965c4400328" title="&#45;[WBTheme findFriendsFollow\lButtonSelectedImage]" alt="" coords="243,253,431,294"/>
+<area shape="rect" id="node7" href="$interface_w_b_theme.html#ac019ef1026c1d49fe1bd9f0799fd96eb" title="&#45;[WBTheme findFriendsFollow\lButtonNormalFontColor]" alt="" coords="243,318,431,359"/>
+<area shape="rect" id="node8" href="$interface_w_b_theme.html#af585405f60e25458af145876b9464797" title="&#45;[WBTheme findFriendsFollow\lButtonSelectedFontColor]" alt="" coords="243,383,431,425"/>
+<area shape="rect" id="node9" href="$interface_w_b_theme.html#a32085ad4c1e6d37d746d2fd9d4289c7e" title="&#45;[WBTheme findFriendsFollow\lButtonNormalShadowColor]" alt="" coords="243,449,431,490"/>
+<area shape="rect" id="node10" href="$interface_w_b_theme.html#ad252a027646ed802e117a563810a572d" title="&#45;[WBTheme findFriendsFollow\lButtonSelectedShadowColor]" alt="" coords="243,514,431,555"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="&#45;[WBPhotoDetailsViewController tableView:heightForRowAtIndexPath:]" name="&#45;[WBPhotoDetailsViewController tableView:heightForRowAtIndexPath:]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_details_cell_photo.html#ab87ad515a36b4f1f9a40830a91ed1c36" title="+[WBPhotoDetailsCellPhoto\l cellHeight]" alt="" coords="316,5,497,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_photo_details_cell_likes.html#a3b502bc87ba2969993b14324580b2e54" title="+[WBPhotoDetailsCellLikes\l cellHeight]" alt="" coords="318,70,495,111"/>
+<area shape="rect" id="node4" href="$interface_w_b_photo_details_cell_comment.html#a96a1030c1066b4ef02f9eba921c64c16" title="+[WBPhotoDetailsCellComment\l cellHeightWithMessage:]" alt="" coords="305,135,508,177"/>
+<area shape="rect" id="node7" href="$interface_w_b_photo_details_cell_add_comment.html#ab88a75a98bb8333d1037996d43454339" title="+[WBPhotoDetailsCellAddComment\l cellHeight]" alt="" coords="294,201,519,242"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="575,113,753,140"/>
+<area shape="rect" id="node6" href="$interface_w_b_theme.html#a59294278dacb667ba82485b4e1e38550" title="&#45;[WBTheme detailsComments\lMessageFont]" alt="" coords="569,165,759,206"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="ProfileViewController" name="ProfileViewController">
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html" title="WBPhotoTimelineViewController" alt="" coords="433,107,634,133"/>
+<area shape="rect" id="node3" href="$interface_w_b_view_controller.html" title="WBViewController" alt="" coords="214,5,338,32"/>
+<area shape="rect" id="node7" href="$protocol_w_b_photo_timeline_section_header_view_delegate-p.html" title="\&lt;WBPhotoTimelineSectionHeader\lViewDelegate\&gt;" alt="" coords="171,158,381,199"/>
+<area shape="rect" id="node9" href="$interface_w_b_user.html" title="WBUser" alt="" coords="498,191,569,217"/>
+</map>

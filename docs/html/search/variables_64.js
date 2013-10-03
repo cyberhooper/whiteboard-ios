@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['datasourcesubclass',['DataSourceSubclass',['../_w_b_data_source_8m.html#a0478210f3dc7f036440389bbcf2584a3',1,'WBDataSource.m']]]
+  ['dataprofilepicture',['dataProfilePicture',['../interface_w_b_parse_account_manager.html#acceb449eec8ff3e93054e0b6fa6dd486',1,'WBParseAccountManager']]]
 ];

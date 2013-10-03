@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment">//  WBPhoto.h</span></div>
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment">//  whiteboard</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment">//</span></div>
-<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by Sacha Durand Saint Omer on 9/13/13.</span></div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment">//  Created by sad-fueled on 9/13/13.</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment">//  Copyright (c) 2013 Fueled. All rights reserved.</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment">//</span></div>
 <div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div>
@@ -107,7 +107,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="interface_w_b_photo.html#a2f5d6bb135e18c2ae08a82b8255218e5">   16</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) <a class="code" href="interface_w_b_user.html">WBUser</a> *<a class="code" href="interface_w_b_photo.html#a2f5d6bb135e18c2ae08a82b8255218e5">author</a>;</div>
 <div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="interface_w_b_photo.html#a2da39db2b667a47878a12f06d6b71634">   17</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSDate *<a class="code" href="interface_w_b_photo.html#a2da39db2b667a47878a12f06d6b71634">createdAt</a>;</div>
 <div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="interface_w_b_photo.html#a86cd64b38274d9db3088524132006baa">   18</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSURL *<a class="code" href="interface_w_b_photo.html#a86cd64b38274d9db3088524132006baa">url</a>;</div>
-<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="interface_w_b_photo.html#a2034a52b12ab414fbdfa691428202edf">   19</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray *<a class="code" href="interface_w_b_photo.html#a2034a52b12ab414fbdfa691428202edf">likes</a>; <span class="comment">// contains user Ids of the user who liked.</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno"><a class="line" href="interface_w_b_photo.html#a2034a52b12ab414fbdfa691428202edf">   19</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray *<a class="code" href="interface_w_b_photo.html#a2034a52b12ab414fbdfa691428202edf">likes</a>; <span class="comment">// contains users who liked.</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="interface_w_b_photo.html#ac331229871edd438caf85fb80daea943">   20</a></span>&#160;<span class="keyword">@property</span> (nonatomic, strong) NSArray *<a class="code" href="interface_w_b_photo.html#ac331229871edd438caf85fb80daea943">comments</a>;</div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div>
 <div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">@end</span></div>
@@ -124,7 +124,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 17 2013 18:24:20 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 26 2013 15:01:41 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

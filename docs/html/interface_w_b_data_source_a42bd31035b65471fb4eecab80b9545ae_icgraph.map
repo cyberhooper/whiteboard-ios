@@ -1,0 +1,6 @@
+<map id="&#45;[WBDataSource suggestedUsers:failure:]" name="&#45;[WBDataSource suggestedUsers:failure:]">
+<area shape="rect" id="node2" href="$interface_w_b_find_friends_view_controller.html#a9e7c9c3dce64b52bb93a8363b4b0b020" title="&#45;[WBFindFriendsViewController\l getSuggestedUsers]" alt="" coords="237,70,432,111"/>
+<area shape="rect" id="node3" href="$interface_w_b_find_friends_view_controller.html#ae34ffb81fa776a5d79cecbb2213587f8" title="&#45;[WBFindFriendsViewController\l viewDidLoad]" alt="" coords="480,5,675,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_find_friends_view_controller.html#a2f56c3a0b6afe6011845fdda543d2cb3" title="&#45;[WBFindFriendsViewController\l followAll]" alt="" coords="480,70,675,111"/>
+<area shape="rect" id="node5" href="$interface_w_b_find_friends_view_controller.html#a09a55116a10e444405e63f184b0205ac" title="&#45;[WBFindFriendsViewController\l unfollowAll]" alt="" coords="480,135,675,177"/>
+</map>

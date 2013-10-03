@@ -1,5 +1,8 @@
 <map id="&#45;[WBViewController backgroundImage]" name="&#45;[WBViewController backgroundImage]">
-<area shape="rect" id="node2" href="$interface_w_b_view_controller.html#af9790a37244b6c14923028d44fe72013" title="&#45;[WBViewController\l viewDidLoad]" alt="" coords="184,5,315,46"/>
-<area shape="rect" id="node3" href="$interface_w_b_photo_timeline_view_controller.html#a0b6d769b23f74af3a7c9b379fc02bdae" title="&#45;[WBPhotoTimelineViewController\l viewDidLoad]" alt="" coords="363,5,571,46"/>
-<area shape="rect" id="node4" href="$interface_main_feed_view_controller.html#adc032cd6b577ce279cfce26fe7b140d8" title="&#45;[MainFeedViewController\l viewDidLoad]" alt="" coords="619,5,784,46"/>
+<area shape="rect" id="node2" href="$interface_w_b_view_controller.html#af9790a37244b6c14923028d44fe72013" title="&#45;[WBViewController\l viewDidLoad]" alt="" coords="184,70,315,111"/>
+<area shape="rect" id="node3" href="$interface_activity_view_controller.html#a8473ed013cc80fb557079ac0d649fccc" title="&#45;[ActivityViewController\l viewDidLoad]" alt="" coords="393,5,541,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_photo_details_view_controller.html#acad4e21fab54201ac1d15dee9a83cd13" title="&#45;[WBPhotoDetailsViewController\l viewDidLoad]" alt="" coords="365,70,568,111"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_timeline_view_controller.html#a0b6d769b23f74af3a7c9b379fc02bdae" title="&#45;[WBPhotoTimelineViewController\l viewDidLoad]" alt="" coords="363,135,571,177"/>
+<area shape="rect" id="node6" href="$interface_main_feed_view_controller.html#adc032cd6b577ce279cfce26fe7b140d8" title="&#45;[MainFeedViewController\l viewDidLoad]" alt="" coords="619,102,784,143"/>
+<area shape="rect" id="node7" href="$interface_profile_view_controller.html#af0251dcd86ba860f7744c6e757269001" title="&#45;[ProfileViewController\l viewDidLoad]" alt="" coords="630,167,773,209"/>
 </map>

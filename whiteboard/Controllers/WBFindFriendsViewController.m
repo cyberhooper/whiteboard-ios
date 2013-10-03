@@ -2,7 +2,7 @@
 //  WBFindFriendsViewController.m
 //  whiteboard
 //
-//  Created by Lauren Frazier | Fueled on 9/18/13.
+//  Created by lnf-fueled on 9/18/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
@@ -96,10 +96,6 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
   return NSStringFromClass([WBInviteFriendsCell class]);
 }
 
-- (void)dummyData {
-  self.users = @[@"Thibault", @"Sacha", @"Petter", @"German"];
-}
-
 - (void)getSuggestedUsers {
   NSString *lastUpdated = [NSString stringWithFormat:@"%@ %@", NSLocalizedString(@"LastUpdated", @"Last updated on"), [NSDateFormatter localizedStringFromDate:[NSDate date] dateStyle:NSDateFormatterMediumStyle timeStyle:NSDateFormatterMediumStyle]];
   
@@ -118,12 +114,6 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
                      otherButtonTitles:nil] show];
   }];
   [self.refreshControl endRefreshing];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - Table view data source

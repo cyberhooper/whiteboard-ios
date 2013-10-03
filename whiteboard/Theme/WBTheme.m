@@ -93,47 +93,47 @@
 }
 
 - (UIImage *)tabBarHomeButtonNormalImage {
-  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarHomeButtonImage-Normal"]];
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_homeButtonImage-Normal"]];
   return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 - (UIImage *)tabBarHomeButtonSelectedImage {
-  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarHomeButtonImage-Selected"]];
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_homeButtonImage-Selected"]];
   return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 - (UIImage *)tabBarActivityButtonNormalImage {
-  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarActivityButtonImage-Normal"]];
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_activityButtonImage-Normal"]];
   return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 - (UIImage *)tabBarActivityButtonSelectedImage {
-  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarActivityButtonImage-Selected"]];
+  UIImage *image = [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_activityButtonImage-Selected"]];
   return [image imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
 }
 
 - (UIImage *)tabBarBackgroundImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarBackgroundImage"]];
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_backgroundImage"]];
 }
 
 - (UIImage *)tabBarSelectedItemImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarSelectedItemImage"]];
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_selectedItemImage"]];
 }
 
 - (UIImage *)tabBarCameraButtonNormalImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarCameraButtonImage-Normal"]];
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_cameraButtonImage-Normal"]];
 }
 
 - (UIImage *)tabBarCameraButtonSelectedImage {
-  return [UIImage imageNamed:[self.themeDict objectForKey:@"tabBarCameraButtonImage-Selected"]];
+  return [UIImage imageNamed:[self.themeDict objectForKey:@"TABBAR_cameraButtonImage-Selected"]];
 }
 
 - (UIColor *)tabBarNormalFontColor {
-  return [UIColor colorWithHex:[self.themeDict objectForKey:@"tabBarTextColor-Normal"]];
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"TABBAR_textColor-Normal"]];
 }
 
 - (UIColor *)tabBarSelectedFontColor {
-  return [UIColor colorWithHex:[self.themeDict objectForKey:@"tabBarTextColor-Selected"]];
+  return [UIColor colorWithHex:[self.themeDict objectForKey:@"TABBAR_textColor-Selected"]];
 }
 
 - (UIImage *)navBarBackgroundImage {
@@ -153,7 +153,8 @@
 }
 
 - (UIFont *)navBarTitleFont {
-  return [UIFont fontWithName:[self.themeDict objectForKey:@"NAVBAR_titleFont"] size:[[self.themeDict objectForKey:@"NAVBAR_titleFontSize"] floatValue]];
+  return [UIFont fontWithName:[self.themeDict objectForKey:@"NAVBAR_titleFont"]
+                         size:[[self.themeDict objectForKey:@"NAVBAR_titleFontSize"] floatValue]];
 }
 
 - (UIColor *)navBarTitleFontColor {
@@ -169,7 +170,8 @@
 }
 
 - (UIFont *)findFriendsNameFont {
-  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_nameFont"] size:[self.themeDict[@"FINDFRIENDS_nameFontSize"] floatValue]];
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_nameFont"]
+                         size:[self.themeDict[@"FINDFRIENDS_nameFontSize"] floatValue]];
 }
 
 - (UIColor *)findFriendsNameFontColor {
@@ -181,7 +183,8 @@
 }
 
 - (UIFont *)findFriendsNumPhotosFont {
-  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_numPhotosFont"] size:[self.themeDict[@"FINDFRIENDS_numPhotosFontSize"] floatValue]];
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_numPhotosFont"]
+                         size:[self.themeDict[@"FINDFRIENDS_numPhotosFontSize"] floatValue]];
 }
 
 - (UIColor *)findFriendsNumPhotosFontColor {
@@ -189,11 +192,13 @@
 }
 
 - (UIColor *)findFriendsNumPhotosShadowColor {
-  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_numPhotosShadowColor"] andAlpha:[self.themeDict[@"FINDFRIENDS_numPhotosShadowAlpha"] floatValue]];
+  return [UIColor colorWithHex:self.themeDict[@"FINDFRIENDS_numPhotosShadowColor"]
+                      andAlpha:[self.themeDict[@"FINDFRIENDS_numPhotosShadowAlpha"] floatValue]];
 }
 
 - (UIFont *)findFriendsFollowButtonFont {
-  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_followButtonFont"] size:[self.themeDict[@"FINDFRIENDS_followButtonFontSize"] floatValue]];
+  return [UIFont fontWithName:self.themeDict[@"FINDFRIENDS_followButtonFont"]
+                         size:[self.themeDict[@"FINDFRIENDS_followButtonFontSize"] floatValue]];
 }
 
 - (UIColor *)findFriendsFollowButtonNormalFontColor {
@@ -246,6 +251,46 @@
 
 - (UIImage *)pictoFollowImage {
   return [UIImage imageNamed:[self.themeDict objectForKey:@"pictoFollowImage"]];
+}
+
+#pragma mark - Details
+- (UIImage *)detailsTextfieldBackgroundImage {
+  return [UIImage imageNamed:self.themeDict[@"DETAILS_textfieldBackgroundImage"]];
+}
+
+- (UIImage *)detailsAddCommentIconImage {
+  return [UIImage imageNamed:self.themeDict[@"DETAILS_addCommentIconImage"]];
+}
+
+- (UIImage *)detailsCommentsSeperatorImage {
+  return [UIImage imageNamed:self.themeDict[@"DETAILS_commentsSeperatorImage"]];
+}
+
+- (UIFont *)detailsCommentsNameFont {
+  return [UIFont fontWithName:self.themeDict[@"DETAILS_commentNameFont"]
+                         size:[self.themeDict[@"DETAILS_commentNameFontSize"] floatValue]];
+}
+
+- (UIColor *)detailsCommentsNameFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"DETAILS_commentNameFontColor"]];
+}
+
+- (UIFont *)detailsCommentsMessageFont {
+  return [UIFont fontWithName:self.themeDict[@"DETAILS_commentMessageFont"]
+                         size:[self.themeDict[@"DETAILS_commentMessageFontSize"] floatValue]];
+}
+
+- (UIColor *)detailsCommentsMessageFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"DETAILS_commentMessageFontColor"]];
+}
+
+- (UIFont *)detailsCommentsDateFont {
+  return [UIFont fontWithName:self.themeDict[@"DETAILS_commentDateFont"]
+                         size:[self.themeDict[@"DETAILS_commentDateFontSize"] floatValue]];
+}
+
+- (UIColor *)detailsCommentsDateFontColor {
+  return [UIColor colorWithHex:self.themeDict[@"DETAILS_commentDateFontColor"]];
 }
 
 @end

@@ -1,0 +1,6 @@
+<map id="&#45;[WBInviteFriendsCell setUpView]" name="&#45;[WBInviteFriendsCell setUpView]">
+<area shape="rect" id="node2" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="197,5,374,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ad071d9b4937453fd247d5c077302703c" title="&#45;[WBTheme findFriendsCell\lBackgroundImage]" alt="" coords="199,57,372,98"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#ad20f4f58ec246fba089eea46717fdba6" title="&#45;[WBTheme findFriendsInvite\lFriendsFont]" alt="" coords="195,122,376,163"/>
+<area shape="rect" id="node5" href="$interface_w_b_theme.html#aa3383edf143dcf0866db7e9826f68dda" title="&#45;[WBTheme findFriendsInvite\lFriendsFontColor]" alt="" coords="195,187,376,229"/>
+</map>

@@ -1,4 +1,4 @@
 <map id="&#45;[WBNavigationController actionSheet:clickedButtonAtIndex:]" name="&#45;[WBNavigationController actionSheet:clickedButtonAtIndex:]">
-<area shape="rect" id="node2" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="270,29,487,56"/>
-<area shape="rect" id="node3" href="$interface_w_b_data_source.html#a2c7474f43fb53a95d3bff899b0fcabd9" title="&#45;[WBDataSource logoutUser\l:success:failure:]" alt="" coords="287,81,470,122"/>
+<area shape="rect" id="node2" href="$interface_w_b_account_manager.html#a96545ecf6e96c7f02a9d1eae5b98baa6" title="+[WBAccountManager\l sharedInstance]" alt="" coords="270,5,421,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_account_manager.html#a8a46c3ee8c71e9ed1aaca2647a169f3d" title="&#45;[WBAccountManager\l logoutUser:success\l:failure:]" alt="" coords="272,71,419,127"/>
 </map>

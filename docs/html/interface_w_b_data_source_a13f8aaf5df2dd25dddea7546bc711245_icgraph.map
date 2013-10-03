@@ -1,0 +1,7 @@
+<map id="&#45;[WBDataSource numberOfPhotosForUser:success:failure:]" name="&#45;[WBDataSource numberOfPhotosForUser:success:failure:]">
+<area shape="rect" id="node2" href="$interface_w_b_find_friends_view_controller.html#abc69c67cb6af44911ea9347e58b7073b" title="&#45;[WBFindFriendsViewController\l configureCell:forRowAtIndexPath:]" alt="" coords="272,5,488,46"/>
+<area shape="rect" id="node4" href="$interface_w_b_profile_header_view.html#a1083e214f9a2dae6e231813ef44baab4" title="&#45;[WBProfileHeaderView\l setUpViewWithUser:]" alt="" coords="303,70,457,111"/>
+<area shape="rect" id="node3" href="$interface_w_b_find_friends_view_controller.html#acc6e8afb45c5cabb7c2b5427bf82a37e" title="&#45;[WBFindFriendsViewController\l tableView:cellForRowAtIndexPath:]" alt="" coords="536,5,760,46"/>
+<area shape="rect" id="node5" href="$interface_profile_view_controller.html#a5ecc9494341132b7949656681e7db17e" title="&#45;[ProfileViewController\l setupDataForUser:]" alt="" coords="577,70,719,111"/>
+<area shape="rect" id="node6" href="$interface_profile_view_controller.html#af0251dcd86ba860f7744c6e757269001" title="&#45;[ProfileViewController\l viewDidLoad]" alt="" coords="809,70,951,111"/>
+</map>

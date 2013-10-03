@@ -1,0 +1,17 @@
+<map id="WBPhotoDetailsViewController.m" name="WBPhotoDetailsViewController.m">
+<area shape="rect" id="node2" href="$_w_b_photo_details_view_controller_8h.html" title="WBPhotoDetailsViewController.h" alt="" coords="189,88,395,115"/>
+<area shape="rect" id="node8" href="$_w_b_user_8h.html" title="WBUser.h" alt="" coords="115,261,195,288"/>
+<area shape="rect" id="node9" href="$_w_b_photo_timeline_section_header_view_8h.html" title="WBPhotoTimelineSectionHeader\lView.h" alt="" coords="1496,81,1699,122"/>
+<area shape="rect" id="node11" href="$_u_i_image_view_09_w_b_image_loader_8h.html" title="UIImageView+WBImageLoader.h" alt="" coords="1683,179,1895,205"/>
+<area shape="rect" id="node12" href="$_keyboard_animation_view_8h.html" title="KeyboardAnimationView.h" alt="" coords="669,88,840,115"/>
+<area shape="rect" id="node13" href="$_w_b_photo_details_cell_photo_8h.html" title="WBPhotoDetailsCellPhoto.h" alt="" coords="1291,88,1471,115"/>
+<area shape="rect" id="node15" href="$_w_b_photo_details_cell_likes_8h.html" title="WBPhotoDetailsCellLikes.h" alt="" coords="865,88,1041,115"/>
+<area shape="rect" id="node16" href="$_w_b_photo_details_cell_comment_8h.html" title="WBPhotoDetailsCellComment.h" alt="" coords="1066,88,1267,115"/>
+<area shape="rect" id="node17" href="$_w_b_photo_details_cell_add_comment_8h.html" title="WBPhotoDetailsCellAddComment.h" alt="" coords="420,88,644,115"/>
+<area shape="rect" id="node18" href="$_w_b_comment_8h.html" title="WBComment.h" alt="" coords="5,179,112,205"/>
+<area shape="rect" id="node3" href="$_w_b_view_controller_8h.html" title="WBViewController.h" alt="" coords="299,179,433,205"/>
+<area shape="rect" id="node7" href="$_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="189,179,275,205"/>
+<area shape="rect" id="node5" href="$_w_b_theme_8h.html" title="WBTheme.h" alt="" coords="295,261,387,288"/>
+<area shape="rect" id="node10" href="$_w_b_photo_timeline_section_header_button_8h.html" title="WBPhotoTimelineSectionHeader\lButton.h" alt="" coords="1456,171,1659,213"/>
+<area shape="rect" id="node14" href="$_w_b_photo_details_cell_8h.html" title="WBPhotoDetailsCell.h" alt="" coords="1093,179,1240,205"/>
+</map>

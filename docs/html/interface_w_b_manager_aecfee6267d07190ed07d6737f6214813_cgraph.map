@@ -1,6 +1,8 @@
 <map id="+[WBManager setUpWithLauchOptions:]" name="+[WBManager setUpWithLauchOptions:]">
 <area shape="rect" id="node2" href="$interface_w_b_manager.html#a0f5d3c88c589b705402f305dbb0ec15f" title="+[WBManager dataSourceSubclass]" alt="" coords="259,5,491,32"/>
 <area shape="rect" id="node3" href="$interface_w_b_data_source.html#adb11eda36c7bd1d99df0c86be03ca08f" title="+[WBDataSource setDataSource\lSubclass:]" alt="" coords="269,57,481,98"/>
-<area shape="rect" id="node4" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="266,147,483,173"/>
-<area shape="rect" id="node5" href="$interface_w_b_data_source.html#a7a8ae37b4d14683c5b4dd16534d960ad" title="&#45;[WBDataSource setUpWith\lLauchOptions:]" alt="" coords="283,198,466,239"/>
+<area shape="rect" id="node4" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="266,123,483,149"/>
+<area shape="rect" id="node5" href="$interface_w_b_data_source.html#a7a8ae37b4d14683c5b4dd16534d960ad" title="&#45;[WBDataSource setUpWith\lLauchOptions:]" alt="" coords="283,174,466,215"/>
+<area shape="rect" id="node6" href="$interface_w_b_manager.html#a38ebb9908414c23fb2a7bb0d21fbda29" title="+[WBManager accountManager\lSubclass]" alt="" coords="272,239,477,281"/>
+<area shape="rect" id="node7" href="$interface_w_b_account_manager.html#aa5a7a17253ccd241dbf9a35420cea1f6" title="+[WBAccountManager\l setAccountManagerSubclass:]" alt="" coords="275,305,474,346"/>
 </map>

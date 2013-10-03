@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$interface_email_validator.html" title="EmailValidator" alt="" coords="179,56,282,83"/>
+<area shape="rect" id="node3" href="$interface_w_b_account_manager.html" title="WBAccountManager" alt="" coords="161,461,301,488"/>
+<area shape="rect" id="node5" href="$interface_w_b_activity.html" title="WBActivity" alt="" coords="189,157,272,184"/>
+<area shape="rect" id="node6" href="$interface_w_b_comment.html" title="WBComment" alt="" coords="181,208,280,235"/>
+<area shape="rect" id="node7" href="$interface_w_b_data_source.html" title="WBDataSource" alt="" coords="175,107,287,133"/>
+<area shape="rect" id="node9" href="$interface_w_b_manager.html" title="WBManager" alt="" coords="183,309,278,336"/>
+<area shape="rect" id="node10" href="$interface_w_b_photo.html" title="WBPhoto" alt="" coords="192,360,269,387"/>
+<area shape="rect" id="node11" href="$interface_w_b_theme.html" title="WBTheme" alt="" coords="189,411,272,437"/>
+<area shape="rect" id="node12" href="$interface_w_b_user.html" title="WBUser" alt="" coords="195,5,266,32"/>
+<area shape="rect" id="node4" href="$interface_w_b_parse_account_manager.html" title="WBParseAccountManager" alt="" coords="377,360,551,387"/>
+<area shape="rect" id="node8" href="$interface_w_b_parse_data_source.html" title="WBParseDataSource" alt="" coords="391,107,537,133"/>
+</map>

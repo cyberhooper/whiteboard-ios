@@ -70,7 +70,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
      onmouseover="return searchBox.OnSearchSelectShow()"
      onmouseout="return searchBox.OnSearchSelectHide()"
      onkeydown="return searchBox.OnSearchSelectKey(event)">
-<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Pages</a></div>
+<a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(0)"><span class="SelectionMark">&#160;</span>All</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(1)"><span class="SelectionMark">&#160;</span>Classes</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(2)"><span class="SelectionMark">&#160;</span>Files</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(3)"><span class="SelectionMark">&#160;</span>Functions</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(4)"><span class="SelectionMark">&#160;</span>Variables</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(5)"><span class="SelectionMark">&#160;</span>Enumerations</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(6)"><span class="SelectionMark">&#160;</span>Enumerator</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(7)"><span class="SelectionMark">&#160;</span>Properties</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(8)"><span class="SelectionMark">&#160;</span>Macros</a><a class="SelectItem" href="javascript:void(0)" onclick="searchBox.OnSelectItem(9)"><span class="SelectionMark">&#160;</span>Pages</a></div>
 
 <!-- iframe showing the search results (closed by default) -->
 <div id="MSearchResultsWindow">
@@ -85,8 +85,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div>
 </div><!-- top -->
 <div class="header">
-  <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">MainFeedViewController.m File Reference</div>  </div>
 </div><!--header-->
@@ -94,25 +92,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="textblock"><code>#import &quot;<a class="el" href="_main_feed_view_controller_8h_source.html">MainFeedViewController.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_main_feed_cell_8h_source.html">MainFeedCell.h</a>&quot;</code><br/>
 <code>#import &quot;<a class="el" href="_w_b_data_source_8h_source.html">WBDataSource.h</a>&quot;</code><br/>
+<code>#import &quot;<a class="el" href="_w_b_account_manager_8h_source.html">WBAccountManager.h</a>&quot;</code><br/>
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for MainFeedViewController.m:</div>
 <div class="dyncontent">
 <div class="center"><img src="_main_feed_view_controller_8m__incl.png" border="0" usemap="#_main_feed_view_controller_8m" alt=""/></div>
 <map name="_main_feed_view_controller_8m" id="_main_feed_view_controller_8m">
-<area shape="rect" id="node2" href="_main_feed_view_controller_8h.html" title="MainFeedViewController.h" alt="" coords="63,80,231,107"/><area shape="rect" id="node8" href="_main_feed_cell_8h.html" title="MainFeedCell.h" alt="" coords="255,80,364,107"/><area shape="rect" id="node10" href="_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="368,155,491,181"/><area shape="rect" id="node3" href="_w_b_photo_timeline_view_controller_8h.html" title="WBPhotoTimelineViewController.h" alt="" coords="41,155,252,181"/><area shape="rect" id="node5" href="_w_b_view_controller_8h.html" title="WBViewController.h" alt="" coords="5,229,139,256"/><area shape="rect" id="node6" href="_w_b_theme_8h.html" title="WBTheme.h" alt="" coords="26,304,117,331"/><area shape="rect" id="node9" href="_w_b_photo_timeline_cell_8h.html" title="WBPhotoTimelineCell.h" alt="" coords="215,229,367,256"/><area shape="rect" id="node11" href="_w_b_user_8h.html" title="WBUser.h" alt="" coords="441,304,521,331"/><area shape="rect" id="node12" href="_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="493,229,579,256"/></map>
+<area shape="rect" id="node2" href="_main_feed_view_controller_8h.html" title="MainFeedViewController.h" alt="" coords="220,80,388,107"/><area shape="rect" id="node8" href="_main_feed_cell_8h.html" title="MainFeedCell.h" alt="" coords="65,80,175,107"/><area shape="rect" id="node10" href="_w_b_data_source_8h.html" title="WBDataSource.h" alt="" coords="416,155,539,181"/><area shape="rect" id="node13" href="_w_b_account_manager_8h.html" title="WBAccountManager.h" alt="" coords="593,229,743,256"/><area shape="rect" id="node3" href="_w_b_photo_timeline_view_controller_8h.html" title="WBPhotoTimelineViewController.h" alt="" coords="181,155,392,181"/><area shape="rect" id="node5" href="_w_b_view_controller_8h.html" title="WBViewController.h" alt="" coords="219,229,353,256"/><area shape="rect" id="node6" href="_w_b_theme_8h.html" title="WBTheme.h" alt="" coords="257,304,348,331"/><area shape="rect" id="node9" href="_w_b_photo_timeline_cell_8h.html" title="WBPhotoTimelineCell.h" alt="" coords="5,155,157,181"/><area shape="rect" id="node11" href="_w_b_user_8h.html" title="WBUser.h" alt="" coords="512,304,592,331"/><area shape="rect" id="node12" href="_w_b_photo_8h.html" title="WBPhoto.h" alt="" coords="430,229,516,256"/></map>
 </div>
 </div>
 <p><a href="_main_feed_view_controller_8m_source.html">Go to the source code of this file.</a></p>
-<table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
-Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interface_test_object.html">TestObject</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Sep 17 2013 18:24:20 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Sep 26 2013 15:01:42 for Whiteboard by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.5
 </small></address>

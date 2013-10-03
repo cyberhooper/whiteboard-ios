@@ -1,3 +1,7 @@
 <map id="&#45;[WBTheme backgroundImage]" name="&#45;[WBTheme backgroundImage]">
-<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#ab79de764d090c7a7c615f2be31b2f7d4" title="&#45;[WBPhotoTimelineViewController\l backgroundImage]" alt="" coords="251,5,459,46"/>
+<area shape="rect" id="node2" href="$interface_activity_view_controller.html#a812037513a1fd7d7ad9e26a2d2a5d84a" title="&#45;[ActivityViewController\l backgroundImage]" alt="" coords="281,5,429,46"/>
+<area shape="rect" id="node3" href="$interface_w_b_find_friends_view_controller.html#a5e3cd19662ec054c244033f885e340c2" title="&#45;[WBFindFriendsViewController\l setUpView]" alt="" coords="257,70,452,111"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_details_view_controller.html#a4e653fdae2be3c0e4d75140b94858081" title="&#45;[WBPhotoDetailsViewController\l backgroundImage]" alt="" coords="253,135,456,177"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo_timeline_view_controller.html#ab79de764d090c7a7c615f2be31b2f7d4" title="&#45;[WBPhotoTimelineViewController\l backgroundImage]" alt="" coords="251,201,459,242"/>
+<area shape="rect" id="node4" href="$interface_w_b_find_friends_view_controller.html#ae34ffb81fa776a5d79cecbb2213587f8" title="&#45;[WBFindFriendsViewController\l viewDidLoad]" alt="" coords="507,70,701,111"/>
 </map>

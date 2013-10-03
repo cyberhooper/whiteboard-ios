@@ -1,4 +1,4 @@
 <map id="&#45;[WBPhotoTimelineViewController refreshPhotos]" name="&#45;[WBPhotoTimelineViewController refreshPhotos]">
-<area shape="rect" id="node2" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="262,29,479,56"/>
-<area shape="rect" id="node3" href="$interface_w_b_data_source.html#a2528cabb4b4a6919d26ba9c4c8546e50" title="&#45;[WBDataSource latestPhotos\l:failure:]" alt="" coords="274,81,467,122"/>
+<area shape="rect" id="node2" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="262,5,479,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#a2528cabb4b4a6919d26ba9c4c8546e50" title="&#45;[WBDataSource latestPhotos\l:failure:]" alt="" coords="274,57,467,98"/>
 </map>

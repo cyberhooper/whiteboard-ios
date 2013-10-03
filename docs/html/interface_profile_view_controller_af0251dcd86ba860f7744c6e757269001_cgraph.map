@@ -1,0 +1,20 @@
+<map id="&#45;[ProfileViewController viewDidLoad]" name="&#45;[ProfileViewController viewDidLoad]">
+<area shape="rect" id="node2" href="$interface_w_b_photo_timeline_view_controller.html#a0b6d769b23f74af3a7c9b379fc02bdae" title="&#45;[WBPhotoTimelineViewController\l viewDidLoad]" alt="" coords="197,169,405,210"/>
+<area shape="rect" id="node11" href="$interface_profile_view_controller.html#a5ecc9494341132b7949656681e7db17e" title="&#45;[ProfileViewController\l setupDataForUser:]" alt="" coords="230,314,373,355"/>
+<area shape="rect" id="node3" href="$interface_w_b_view_controller.html#af9790a37244b6c14923028d44fe72013" title="&#45;[WBViewController\l viewDidLoad]" alt="" coords="492,38,623,79"/>
+<area shape="rect" id="node5" href="$interface_w_b_photo_timeline_view_controller.html#acacefb7adc84f5318d85d27ae20c3c97" title="&#45;[WBPhotoTimelineViewController\l setupView]" alt="" coords="453,135,661,177"/>
+<area shape="rect" id="node8" href="$interface_w_b_photo_timeline_view_controller.html#af4788542079abbbdf68aacc9feab264f" title="&#45;[WBPhotoTimelineViewController\l refreshPhotos]" alt="" coords="453,201,661,242"/>
+<area shape="rect" id="node4" href="$interface_w_b_view_controller.html#a94978608a19a215066d39da41fa2b359" title="&#45;[WBViewController\l backgroundImage]" alt="" coords="764,5,895,46"/>
+<area shape="rect" id="node6" href="$interface_w_b_photo_timeline_view_controller.html#a65e736558de72fc88a7b77924e0cc4f1" title="&#45;[WBPhotoTimelineViewController\l tableCellNib]" alt="" coords="725,70,933,111"/>
+<area shape="rect" id="node7" href="$interface_w_b_photo_timeline_view_controller.html#a89d8c8301d0986a9f6072f802abfa410" title="&#45;[WBPhotoTimelineViewController\l loadMoreTableCellNib]" alt="" coords="725,135,933,177"/>
+<area shape="rect" id="node9" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="721,267,938,293"/>
+<area shape="rect" id="node10" href="$interface_w_b_data_source.html#a2528cabb4b4a6919d26ba9c4c8546e50" title="&#45;[WBDataSource latestPhotos\l:failure:]" alt="" coords="733,201,926,242"/>
+<area shape="rect" id="node12" href="$interface_w_b_profile_header_view.html#a1083e214f9a2dae6e231813ef44baab4" title="&#45;[WBProfileHeaderView\l setUpViewWithUser:]" alt="" coords="480,427,635,469"/>
+<area shape="rect" id="node13" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="741,317,918,344"/>
+<area shape="rect" id="node14" href="$interface_w_b_theme.html#af20525311da02332fd0f2bd39f55b837" title="&#45;[WBTheme strokeProfilePicture\lImage]" alt="" coords="731,369,927,410"/>
+<area shape="rect" id="node15" href="$interface_w_b_theme.html#a2a47c982ac14d247e182c86e587d64e6" title="&#45;[WBTheme pictoFollowImage]" alt="" coords="733,435,926,461"/>
+<area shape="rect" id="node16" href="$interface_w_b_theme.html#aec3343a62ff272c526fca282de1c487f" title="&#45;[WBTheme pictoPhotoImage]" alt="" coords="734,485,925,512"/>
+<area shape="rect" id="node17" href="$interface_w_b_data_source.html#a28d0b1cf76aaf8c4cda89f72a1f3db90" title="&#45;[WBDataSource numberOfFollowers\lForUser:success:failure:]" alt="" coords="713,537,945,578"/>
+<area shape="rect" id="node18" href="$interface_w_b_data_source.html#a12fc47cf9216e528657c1a8097918362" title="&#45;[WBDataSource numberOfFollowings\lForUser:success:failure:]" alt="" coords="710,602,949,643"/>
+<area shape="rect" id="node19" href="$interface_w_b_data_source.html#a13f8aaf5df2dd25dddea7546bc711245" title="&#45;[WBDataSource numberOfPhotos\lForUser:success:failure:]" alt="" coords="720,667,939,709"/>
+</map>

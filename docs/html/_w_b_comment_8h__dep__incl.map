@@ -1,4 +1,11 @@
 <map id="WBComment.h" name="WBComment.h">
 <area shape="rect" id="node2" href="$_w_b_comment_8m.html" title="WBComment.m" alt="" coords="5,80,115,107"/>
-<area shape="rect" id="node3" href="$_w_b_parse_data_source_8m.html" title="WBParseDataSource.m" alt="" coords="139,80,297,107"/>
+<area shape="rect" id="node3" href="$_w_b_photo_details_view_controller_8m.html" title="WBPhotoDetailsViewController.m" alt="" coords="139,80,348,107"/>
+<area shape="rect" id="node4" href="$_p_f_object_09_w_b_comment_8h.html" title="PFObject+WBComment.h" alt="" coords="373,80,544,107"/>
+<area shape="rect" id="node7" href="$_w_b_parse_data_source_8m.html" title="WBParseDataSource.m" alt="" coords="502,155,660,181"/>
+<area shape="rect" id="node8" href="$_w_b_comment_09_p_f_object_8h.html" title="WBComment+PFObject.h" alt="" coords="653,80,824,107"/>
+<area shape="rect" id="node5" href="$_p_f_object_09_w_b_comment_8m.html" title="PFObject+WBComment.m" alt="" coords="128,155,301,181"/>
+<area shape="rect" id="node6" href="$_p_f_object_09_w_b_photo_8m.html" title="PFObject+WBPhoto.m" alt="" coords="325,155,477,181"/>
+<area shape="rect" id="node9" href="$_w_b_comment_09_p_f_object_8m.html" title="WBComment+PFObject.m" alt="" coords="685,155,859,181"/>
+<area shape="rect" id="node10" href="$_w_b_photo_09_p_f_object_8m.html" title="WBPhoto+PFObject.m" alt="" coords="883,155,1035,181"/>
 </map>

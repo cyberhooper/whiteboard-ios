@@ -1,0 +1,4 @@
+<map id="&#45;[WBPhotoTimelineViewController loadNextPage]" name="&#45;[WBPhotoTimelineViewController loadNextPage]">
+<area shape="rect" id="node2" href="$interface_w_b_data_source.html#adcfb7daf5420b88632fc9ad53b1cf5cb" title="+[WBDataSource sharedInstance]" alt="" coords="262,5,479,32"/>
+<area shape="rect" id="node3" href="$interface_w_b_data_source.html#a6d431e142550c1e0f0e56d7872b72963" title="&#45;[WBDataSource latestPhotos\lWithOffset:success:failure:]" alt="" coords="274,57,467,98"/>
+</map>

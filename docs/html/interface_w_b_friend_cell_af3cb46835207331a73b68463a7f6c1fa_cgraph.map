@@ -1,0 +1,23 @@
+<map id="&#45;[WBFriendCell awakeFromNib]" name="&#45;[WBFriendCell awakeFromNib]">
+<area shape="rect" id="node2" href="$interface_w_b_friend_cell.html#abeb4c27e5874967dd9f89a21f11bafbe" title="&#45;[WBFriendCell setUpView]" alt="" coords="254,456,429,483"/>
+<area shape="rect" id="node3" href="$interface_w_b_theme.html#ac34ebf79ff51317f2fe4b8f27142cb11" title="+[WBTheme sharedTheme]" alt="" coords="753,201,930,228"/>
+<area shape="rect" id="node4" href="$interface_w_b_theme.html#ad071d9b4937453fd247d5c077302703c" title="&#45;[WBTheme findFriendsCell\lBackgroundImage]" alt="" coords="496,611,669,653"/>
+<area shape="rect" id="node5" href="$interface_w_b_friend_cell.html#a3f610e033351c8ba32477f0068a4334a" title="&#45;[WBFriendCell setUpAvatar]" alt="" coords="491,677,675,704"/>
+<area shape="rect" id="node6" href="$interface_w_b_friend_cell.html#a604731a38a9614b8c3023f30d36ecb3f" title="&#45;[WBFriendCell setUpName\lButton]" alt="" coords="494,135,671,177"/>
+<area shape="rect" id="node10" href="$interface_w_b_friend_cell.html#a87657e6d706e6dde4d631f789701ffd4" title="&#45;[WBFriendCell setUpNumPhotos\lLabel]" alt="" coords="478,318,687,359"/>
+<area shape="rect" id="node14" href="$interface_w_b_friend_cell.html#a09dd6bd21b3732be75de16a50f31c5e5" title="&#45;[WBFriendCell setUpFollow\lButton]" alt="" coords="493,546,672,587"/>
+<area shape="rect" id="node7" href="$interface_w_b_theme.html#a85c31e62c3ba8119d4fa14c62b331add" title="&#45;[WBTheme findFriendsName\lFont]" alt="" coords="748,5,935,46"/>
+<area shape="rect" id="node8" href="$interface_w_b_theme.html#abbfe7afcb4f724c6ef3f650898582840" title="&#45;[WBTheme findFriendsName\lFontColor]" alt="" coords="748,70,935,111"/>
+<area shape="rect" id="node9" href="$interface_w_b_theme.html#adf1b15f8ece5d949beb81f9cac6ba0bf" title="&#45;[WBTheme findFriendsName\lShadowColor]" alt="" coords="748,135,935,177"/>
+<area shape="rect" id="node11" href="$interface_w_b_theme.html#a6fba25dbc5e5b99d7f4bbd04fcc6b032" title="&#45;[WBTheme findFriendsNum\lPhotosFont]" alt="" coords="752,253,931,294"/>
+<area shape="rect" id="node12" href="$interface_w_b_theme.html#af5dd9621f12a5dfbea1ff186b3d85197" title="&#45;[WBTheme findFriendsNum\lPhotosFontColor]" alt="" coords="752,318,931,359"/>
+<area shape="rect" id="node13" href="$interface_w_b_theme.html#accdbac0ea45fb400012d34570b60fdbc" title="&#45;[WBTheme findFriendsNum\lPhotosShadowColor]" alt="" coords="752,383,931,425"/>
+<area shape="rect" id="node15" href="$interface_w_b_theme.html#a21864f1339fa645b5d8eb4c4dd2001c4" title="&#45;[WBTheme findFriendsFollow\lButtonFont]" alt="" coords="747,775,935,817"/>
+<area shape="rect" id="node16" href="$interface_w_b_theme.html#aef4d881cf1d45a0451fdeac3ae3e9546" title="&#45;[WBTheme findFriendsFollow\lButtonNormalBackgroundImage]" alt="" coords="740,841,943,882"/>
+<area shape="rect" id="node17" href="$interface_w_b_theme.html#a67bcad423224f82420528c43e0287672" title="&#45;[WBTheme findFriendsFollow\lButtonSelectedBackgroundImage]" alt="" coords="736,906,947,947"/>
+<area shape="rect" id="node18" href="$interface_w_b_theme.html#ad3788b8c0d05bafb52a35965c4400328" title="&#45;[WBTheme findFriendsFollow\lButtonSelectedImage]" alt="" coords="747,449,935,490"/>
+<area shape="rect" id="node19" href="$interface_w_b_theme.html#ac019ef1026c1d49fe1bd9f0799fd96eb" title="&#45;[WBTheme findFriendsFollow\lButtonNormalFontColor]" alt="" coords="747,514,935,555"/>
+<area shape="rect" id="node20" href="$interface_w_b_theme.html#af585405f60e25458af145876b9464797" title="&#45;[WBTheme findFriendsFollow\lButtonSelectedFontColor]" alt="" coords="747,579,935,621"/>
+<area shape="rect" id="node21" href="$interface_w_b_theme.html#a32085ad4c1e6d37d746d2fd9d4289c7e" title="&#45;[WBTheme findFriendsFollow\lButtonNormalShadowColor]" alt="" coords="747,645,935,686"/>
+<area shape="rect" id="node22" href="$interface_w_b_theme.html#ad252a027646ed802e117a563810a572d" title="&#45;[WBTheme findFriendsFollow\lButtonSelectedShadowColor]" alt="" coords="747,710,935,751"/>
+</map>
