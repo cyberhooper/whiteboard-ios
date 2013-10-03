@@ -512,6 +512,8 @@
                  failure:(void(^)(NSError *error))failure {
   PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
   [query whereKey:kActivityToUserKey equalTo:[PFUser currentUser]];
+  [query includeKey:kActivityFromUserKey];
+  [query includeKey:kActivityPhotoKey];
   [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
     if (!error && success) {
       success([self wbActivitiesFromActivities:objects]);

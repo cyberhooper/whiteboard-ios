@@ -44,19 +44,16 @@ static NSString *tableCellIdentifier = @"WBActivityCell";
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-  WBActivityCell *cell = [tableView dequeueReusableCellWithIdentifier:tableCellIdentifier];
+   return [self configureCell:[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier]
+    forRowAtIndexPath:indexPath];
 
-  [self configureCell:cell forRowAtIndexPath:indexPath];
-
-  return cell;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
   return 66;
 }
 
-- (void)configureCell:(WBActivityCell *)cell
-    forRowAtIndexPath:(NSIndexPath *)indexPath {
+- (WBActivityCell *)configureCell:(WBActivityCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
   
   WBActivity *activity = ((WBActivity *)[self.activities objectAtIndex:indexPath.row]);
   [cell.nameButton setTitle:activity.fromUser.displayName forState:UIControlStateNormal];
@@ -65,6 +62,7 @@ static NSString *tableCellIdentifier = @"WBActivityCell";
   layer.masksToBounds = YES;
   [cell setDate:activity.createdAt];
 
+  
   [cell.avatarImageView setImageWithPath:activity.fromUser.avatar.absoluteString
                              placeholder:nil];
   if (activity.photo) {
@@ -74,7 +72,42 @@ static NSString *tableCellIdentifier = @"WBActivityCell";
   
   [cell.contentLabel setText:[self contentTextForActivityType:activity.type]];
   
-  [cell setUpCell];
+  [cell.nameButton.titleLabel setFont:[UIFont boldSystemFontOfSize:13]];
+  [cell.nameButton.titleLabel setLineBreakMode:NSLineBreakByTruncatingTail];
+  
+//  CGSize nameSize = [cell.nameButton.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:13.0f]}];
+//  
+//  [cell.nameButton setFrame:CGRectMake(46.0,
+//                                       8.0,
+//                                       nameSize.width,
+//                                       nameSize.height)];
+//  if (nameSize.width <= 200) {
+//    // Layout the content
+//    CGSize contentSize = [cell.contentLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13.0f]}];
+//    [cell.contentLabel setNumberOfLines:1];
+//    [cell.contentLabel setFrame:CGRectMake(nameSize.width + 50,
+//                                           7.0,
+//                                           contentSize.width,
+//                                           contentSize.height)];
+//  }
+//  else {
+//    CGSize contentSize = [cell.contentLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13.0f]}];
+//    [cell.contentLabel setNumberOfLines:2];
+//    [cell.contentLabel setFrame:CGRectMake(nameSize.width,
+//                                           7.0,
+//                                           contentSize.width,
+//                                           contentSize.height)];
+//  }
+//  
+//  // Layout the timestamp label
+//  CGSize timeSize = [cell.timeLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:11.0f]}];
+//  [cell.timeLabel setFrame:CGRectMake(46,
+//                                      cell.contentLabel.frame.origin.y + cell.contentLabel.frame.size.height,
+//                                      timeSize.width,
+//                                      timeSize.height)];
+  [cell setNeedsDisplay];
+
+  return cell;
 }
 
 - (NSString *)contentTextForActivityType:(NSString *)type {
