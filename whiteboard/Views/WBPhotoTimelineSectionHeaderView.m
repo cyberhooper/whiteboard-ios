@@ -41,13 +41,7 @@
   [self setUpLikeButton];
 
   // Comment button
-  self.commentButton.numberLabel.font = [[WBTheme sharedTheme] sectionCommentFont];
-  self.commentButton.numberLabel.textColor = [[WBTheme sharedTheme] sectionCommentFontColor];
-  self.commentButton.hidden = YES;
-
-  self.commentButton.normalImage = [self commentButtonImage];
-  self.commentButton.highlightedImage = [self commentButtonImageHighlighted];
-  self.commentButton.selectedImage = [self commentButtonImageSelected];
+  [self setUpCommentButton];
 
   self.likeButton.hidden = YES;
 
@@ -63,6 +57,16 @@
   reconizer.numberOfTapsRequired = 1;
     [self addGestureRecognizer:reconizer];
   
+}
+
+- (void)setUpCommentButton {
+  self.commentButton.numberLabel.font = [[WBTheme sharedTheme] sectionCommentFont];
+  self.commentButton.numberLabel.textColor = [[WBTheme sharedTheme] sectionCommentFontColor];
+  self.commentButton.hidden = YES;
+  
+  self.commentButton.normalImage = [self commentButtonImage];
+  self.commentButton.highlightedImage = [self commentButtonImageHighlighted];
+  self.commentButton.selectedImage = [self commentButtonImageSelected];
 }
 
 - (void)setUpLikeButton {
@@ -154,6 +158,7 @@
   _isLiked = isLiked;
   [self setUpLikeButton];
 }
+
 #pragma mark - IBActions
 - (void)wbPhotoTimelineSectionHeaderTap {
   if ([_delegate respondsToSelector:@selector(sectionHeaderPressed:)]) {

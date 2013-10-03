@@ -154,6 +154,10 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
   
   WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:indexPath.section]);
   
+  [self pushPhotoDetailsViewWithPhoto:photo];
+}
+
+- (void)pushPhotoDetailsViewWithPhoto:(WBPhoto *)photo {
   WBPhotoDetailsViewController *photoDetailsVC = [[WBPhotoDetailsViewController alloc] init];
   photoDetailsVC.photo = photo;
   [self.navigationController pushViewController:photoDetailsVC animated:YES];
@@ -272,6 +276,10 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 #pragma mark - WBPhotoTimelineSectionHeaderViewDelegate
 - (void)sectionHeaderCommentsButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
   NSLog(@"Comments pressed");
+  WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:[sectionView.sectionIndex integerValue]]);
+  
+  [self pushPhotoDetailsViewWithPhoto:photo];
+
 }
 
 - (void)sectionHeaderPressed:(WBUser *)author {
