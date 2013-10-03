@@ -7,6 +7,7 @@
 //
 
 #import "PFUser+WBUser.h"
+#import "WBDataSource.h"
 
 @implementation PFUser (WBUser)
 
@@ -19,7 +20,7 @@
     wbUser.username = self.username;
     wbUser.firstName = [self objectForKey:@"firstname"];
     wbUser.lastName = [self objectForKey:@"lastname"];
-    wbUser.email = [self email];
+    wbUser.email = self.email;
     PFFile *avatar = [self objectForKey:@"avatar"];
     wbUser.avatar = [NSURL URLWithString:[avatar url]];
     wbUser.createdAt = self.createdAt;
