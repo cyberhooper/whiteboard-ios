@@ -7,7 +7,24 @@
 //
 
 #import "WBActivityCell.h"
+#import "TTTTimeIntervalFormatter.h"
+
+static TTTTimeIntervalFormatter *timeFormatter;
 
 @implementation WBActivityCell
+
+- (void)setUpCell {
+  
+   [self setNeedsDisplay];
+
+}
+
+- (void)setDate:(NSDate *)date {
+  if (!timeFormatter) {
+    timeFormatter = [[TTTTimeIntervalFormatter alloc]init];
+  }
+  [self.timeLabel setText:[timeFormatter stringForTimeIntervalFromDate:[NSDate date]
+                                                                toDate:date]];
+}
 
 @end

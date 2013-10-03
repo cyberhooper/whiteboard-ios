@@ -515,6 +515,8 @@
                  failure:(void(^)(NSError *error))failure {
   PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
   [query whereKey:kActivityToUserKey equalTo:[PFUser currentUser]];
+  [query includeKey:kActivityFromUserKey];
+  [query includeKey:kActivityPhotoKey];
   [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
     if (!error && success) {
       success([self wbActivitiesFromActivities:objects]);
@@ -533,4 +535,18 @@
   return [NSArray arrayWithArray:wbActivities];
 }
               
+- (WBActivity *)wbActivityfromActivity:(PFObject *)object {
+  WBActivity *activity = [[WBActivity alloc] init];
+  activity.type = [object objectForKey:kActivityTypeKey];
+  PFUser *fromUser = [object objectForKey:kActivityFromUserKey];
+  activity.fromUser = [fromUser WBUser];
+  activity.createdAt = object.createdAt;
+  
+  if ([activity.type isEqualToString:kActivityTypeLike] || [activity.type isEqualToString:kActivityTypeComment]) {
+    PFObject *photo = [object objectForKey:@"photo"];
+    activity.photo = [photo WBPhoto];
+  }
+  return activity;
+}
+
 @end

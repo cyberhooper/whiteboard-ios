@@ -76,23 +76,34 @@ static const float kFooterHeight = 30.0f;
 }
 
 - (void)refreshPhotos {
-  [[WBDataSource sharedInstance] photosForUser:self.user withOffset:0 success:^(NSArray *photos) {
-    self.photoOffset = photos.count;
-    self.photos = photos;
-    self.loadMore = (photos.count == [[WBDataSource sharedInstance] photoLimit]);
-    [self.refreshControl endRefreshing];
-    [self.tableView reloadData];
-    self.isLoading = NO;
-  } failure:^(NSError *error) {
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Refresh Failed"
-                                                    message:[error description]
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [self.refreshControl endRefreshing];
-    [alert show];
-    self.isLoading = NO;
-  }];
+
+  [[WBDataSource sharedInstance] photosForUser:[self user]
+                                    withOffset:0
+                                       success:^(NSArray *photos) {
+                                      self.photoOffset = photos.count;
+                                      self.photos = photos;
+                                      
+                                      // If the number of returned objects is less than the photoLimit then don't show the loadMore cell
+                                      if(photos.count < [[WBDataSource sharedInstance] photoLimit]){
+                                        self.loadMore = NO;
+                                      }else{
+                                        self.loadMore = YES;
+                                      }
+                                      [self.refreshControl endRefreshing];
+                                      [self.tableView reloadData];
+                                      self.isLoading = NO;
+
+                                    } failure:^(NSError *error) {
+                                      UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Refresh Failed"
+                                                                                      message:[error description]
+                                                                                     delegate:nil
+                                                                            cancelButtonTitle:@"OK"
+                                                                            otherButtonTitles:nil];
+                                      [self.refreshControl endRefreshing];
+                                      [alert show];
+                                      self.isLoading = NO;
+
+                                    }];
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

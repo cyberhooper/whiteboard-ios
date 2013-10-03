@@ -16,8 +16,8 @@
 - (WBActivity *)WBActivity {
   WBActivity *activity = [[WBActivity alloc] init];
   activity.type = [self objectForKey:kActivityTypeKey];
-  PFUser *toUser = [self objectForKey:kActivityToUserKey];
-  activity.toUser = [toUser WBUser];
+  PFUser *fromUser = [self objectForKey:kActivityFromUserKey];
+  activity.fromUser = [fromUser WBUser];
   activity.createdAt = self.createdAt;
   
   if ([activity.type isEqualToString:kActivityTypeLike] || [activity.type isEqualToString:kActivityTypeComment]) {
