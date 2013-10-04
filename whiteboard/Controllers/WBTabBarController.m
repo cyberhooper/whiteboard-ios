@@ -17,19 +17,8 @@
 static int kCameraIndex = 0;
 static int kLibraryIndex = 1;
 
-- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view.
+- (void)viewDidLoad {
+  [super viewDidLoad];
   
   [self setUpTabBarBackground];
   [self setUpHomeViewController];

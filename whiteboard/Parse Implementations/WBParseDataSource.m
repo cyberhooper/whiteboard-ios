@@ -120,7 +120,7 @@
 
 - (PFObject *)parsePhotoWithImageFile:(PFFile *)imageFile {
   // Create a PFObject around a PFFile and associate it with the current user
-  PFObject *photo = [PFObject objectWithClassName:@"Photo"];
+  PFObject *photo = [PFObject objectWithClassName:kPhotoClass];
   [photo setObject:imageFile forKey:@"imageFile"];
   PFUser *user = [PFUser currentUser];
   [photo setObject:user forKey:@"user"];
@@ -149,14 +149,14 @@
 }
 
 - (PFQuery*)queryForcurrentUserPhotos {
-  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  PFQuery *query = [PFQuery queryWithClassName:kPhotoClass];
   if ([PFUser currentUser])
     [query whereKey:@"user" equalTo:[PFUser currentUser]];
   return query;
 }
 
 - (PFQuery *)queryForCurentUserFriendPhotos {
-  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  PFQuery *query = [PFQuery queryWithClassName:kPhotoClass];
   if ([PFUser currentUser]) {
     PFRelation *followingRelation = [[PFUser currentUser] relationforKey:@"following"];
     [query whereKey:@"user" matchesQuery:[followingRelation query]];
@@ -168,12 +168,12 @@
           withOffset:(int)offset
               success:(void(^)(NSArray *photos))success
               failure:(void(^)(NSError *error))failure {
-  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  PFQuery *query = [PFQuery queryWithClassName:kPhotoClass];
   query.limit = 100;
   query.skip = offset;
   [query orderByDescending:@"createdAt"];
   [query includeKey:@"user"];
-  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:wbUser.userID];
+  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:kUserClass objectId:wbUser.userID];
   [query whereKey:@"user" equalTo:parseUser];
   [query findObjectsInBackgroundWithBlock:^(NSArray *photos, NSError *error) {
     if (!error && success)
@@ -187,8 +187,8 @@
         withUser:(WBUser *)user
          success:(void (^)(void))success
          failure:(void (^)(NSError *))failure {
-  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
-  PFObject *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:kPhotoClass objectId:photo.photoID];
+  PFObject *parseUser = [PFUser objectWithoutDataWithClassName:kUserClass objectId:user.userID];
   [parsePhoto addUniqueObject:parseUser forKey:@"likes"];
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success) {
@@ -205,8 +205,8 @@
            withUser:(WBUser *)user
             success:(void(^)(void))success
             failure:(void(^)(NSError *error))failure {
-  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
-  PFObject *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFObject *parsePhoto = [PFObject objectWithoutDataWithClassName:kPhotoClass objectId:photo.photoID];
+  PFObject *parseUser = [PFUser objectWithoutDataWithClassName:kUserClass objectId:user.userID];
   [parsePhoto removeObject:parseUser forKey:@"likes"];
   [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success) {
@@ -221,7 +221,7 @@
 - (void)fetchPhoto:(WBPhoto *)photo
            success:(void(^)(WBPhoto *fetchedPhoto))success
            failure:(void(^)(NSError *error))failure {
-  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  PFQuery *query = [PFQuery queryWithClassName:kPhotoClass];
   [query includeKey:@"user"];
   [query includeKey:@"likes"];
   [query includeKey:@"comments.user"];
@@ -254,7 +254,7 @@
 - (void)deletePhoto:(WBPhoto *)photo
             success:(void(^)(void))success
             failure:(void(^)(NSError *error))failure {  
-  PFObject *photoToDelete = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
+  PFObject *photoToDelete = [PFObject objectWithoutDataWithClassName:kPhotoClass objectId:photo.photoID];
   [photoToDelete deleteInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
     if (succeeded && success)
       success();
@@ -344,7 +344,7 @@
   PFRelation *followingRelation = [currentUser relationforKey:@"following"];
   NSMutableArray *parseUsers = [@[]mutableCopy];
   for (WBUser *wbUser in wbUsers) {
-    PFUser *userToFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:wbUser.userID];
+    PFUser *userToFollow = [PFUser objectWithoutDataWithClassName:kUserClass objectId:wbUser.userID];
     [followingRelation addObject:userToFollow];
     [parseUsers addObject:userToFollow];
   }
@@ -376,7 +376,7 @@
   PFRelation *followingRelation = [currentUser relationforKey:@"following"];
   NSMutableArray *parseUsers = [@[]mutableCopy];
   for (WBUser *wbUser in wbUsers) {
-    PFUser *userToUnFollow = [PFUser objectWithoutDataWithClassName:@"_User" objectId:wbUser.userID];
+    PFUser *userToUnFollow = [PFUser objectWithoutDataWithClassName:kUserClass objectId:wbUser.userID];
     [followingRelation removeObject:userToUnFollow];
     [parseUsers addObject:userToUnFollow];
   }
@@ -413,8 +413,8 @@
 - (void)numberOfPhotosForUser:(WBUser *)user
                       success:(void(^)(int numberOfPhotos))success
                       failure:(void(^)(NSError *error))failure {
-  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
-  PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
+  PFUser *parseUser = [PFUser objectWithoutDataWithClassName:kUserClass objectId:user.userID];
+  PFQuery *query = [PFQuery queryWithClassName:kPhotoClass];
   [query whereKey:@"user" equalTo:parseUser];
   [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
@@ -427,8 +427,8 @@
 - (void)numberOfFollowersForUser:(WBUser *)user
                          success:(void(^)(int numberOfFollowers))success
                          failure:(void(^)(NSError *error))failure {
-  PFUser *pfUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
-  PFQuery *query = [PFQuery queryWithClassName:@"_User"];
+  PFUser *pfUser = [PFUser objectWithoutDataWithClassName:kUserClass objectId:user.userID];
+  PFQuery *query = [PFQuery queryWithClassName:kUserClass];
   [query whereKey:@"following" equalTo:pfUser];
   [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
@@ -441,7 +441,7 @@
 - (void)numberOfFollowingsForUser:(WBUser *)user
                           success:(void(^)(int numberOfFollowings))success
                           failure:(void(^)(NSError *error))failure {
-  PFUser *pfUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
+  PFUser *pfUser = [PFUser objectWithoutDataWithClassName:kUserClass objectId:user.userID];
   PFRelation *followingRelation = [pfUser relationforKey:@"following"];
   [[followingRelation query] countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
     if (!error && success)
@@ -454,21 +454,23 @@
 #pragma mark - Activities
 
 - (void)createLikeActivityForPhoto:(WBPhoto *)photo {
-  PFObject *activity = [PFObject objectWithClassName:@"Activity"];
-  [activity setObject:kActivityTypeLike forKey:kActivityTypeKey];
-  [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
-  PFObject *pfPhoto = [PFObject objectWithoutDataWithClassName:@"Photo" objectId:photo.photoID];
-  PFObject *author = [PFObject objectWithoutDataWithClassName:@"_User" objectId:photo.author.userID];
-  [activity setObject:author forKey:kActivityToUserKey];
-  [activity setObject:pfPhoto forKey:kActivityPhotoKey];
-  [activity saveInBackground];
+  if (![photo.author isEqual:[self currentUser]]) {
+    PFObject *activity = [PFObject objectWithClassName:kActivityClass];
+    [activity setObject:kActivityTypeLike forKey:kActivityTypeKey];
+    [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
+    PFObject *pfPhoto = [PFObject objectWithoutDataWithClassName:kPhotoClass objectId:photo.photoID];
+    PFObject *author = [PFObject objectWithoutDataWithClassName:kUserClass objectId:photo.author.userID];
+    [activity setObject:author forKey:kActivityToUserKey];
+    [activity setObject:pfPhoto forKey:kActivityPhotoKey];
+    [activity saveInBackground];
+  }
 }
 
 - (void)deletePossiblePreviouslikeActivityForPhoto:(PFObject *)photo {
-  PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
+  PFQuery *query = [PFQuery queryWithClassName:kActivityClass];
   [query whereKey:kActivityTypeKey equalTo:kActivityTypeLike];
-  [query whereKey:@"fromUser" equalTo:[PFUser currentUser]];
-  [query whereKey:@"photo" equalTo:photo];
+  [query whereKey:kActivityFromUserKey equalTo:[PFUser currentUser]];
+  [query whereKey:kActivityPhotoKey equalTo:photo];
   [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
     for (PFObject *o in objects) {
       [o deleteInBackground];
@@ -478,7 +480,7 @@
 
 - (void)createFollowActivityForUsers:(NSArray *)users {
   for (PFObject *user in users) {
-    PFObject *activity = [PFObject objectWithClassName:@"Activity"];
+    PFObject *activity = [PFObject objectWithClassName:kActivityClass];
     [activity setObject:kActivityTypeFollow forKey:kActivityTypeKey];
     [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
     [activity setObject:user forKey:kActivityToUserKey];
@@ -488,7 +490,7 @@
 
 - (void)deletePossiblePreviousFollowActivityForUsers:(NSArray *)users {
   for (PFObject *user in users) {
-    PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
+    PFQuery *query = [PFQuery queryWithClassName:kActivityClass];
     [query whereKey:kActivityTypeKey equalTo:kActivityTypeFollow];
     [query whereKey:kActivityFromUserKey equalTo:[PFUser currentUser]];
     [query whereKey:kActivityToUserKey equalTo:user];
@@ -501,19 +503,23 @@
 }
 
 - (void)createCommentActivityForPhoto:(PFObject *)photo {
-  PFObject *activity = [PFObject objectWithClassName:@"Activity"];
-  [activity setObject:kActivityTypeComment forKey:kActivityTypeKey];
-  [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
-  [activity setObject:[photo objectForKey:@"user"] forKey:kActivityToUserKey];
-  [activity setObject:photo forKey:kActivityPhotoKey];
-  [activity saveInBackground];
+  PFObject *author = [photo objectForKey:@"user"];
+  
+  if (![author.objectId isEqualToString:[self currentUser].userID]) {
+    PFObject *activity = [PFObject objectWithClassName:kActivityClass];
+    [activity setObject:kActivityTypeComment forKey:kActivityTypeKey];
+    [activity setObject:[PFUser currentUser] forKey:kActivityFromUserKey];
+    [activity setObject:[photo objectForKey:@"user"] forKey:kActivityToUserKey];
+    [activity setObject:photo forKey:kActivityPhotoKey];
+    [activity saveInBackground];
+  }
 }
 
 #pragma mark - Activity feed
 
 - (void)recentActivities:(void(^)(NSArray *activities))success
                  failure:(void(^)(NSError *error))failure {
-  PFQuery *query = [PFQuery queryWithClassName:@"Activity"];
+  PFQuery *query = [PFQuery queryWithClassName:kActivityClass];
   [query whereKey:kActivityToUserKey equalTo:[PFUser currentUser]];
   [query includeKey:kActivityFromUserKey];
   [query includeKey:kActivityPhotoKey];

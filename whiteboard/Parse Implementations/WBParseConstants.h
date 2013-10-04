@@ -18,3 +18,7 @@ extern NSString *const kActivityTypeKey;
 extern NSString *const kActivityFromUserKey;
 extern NSString *const kActivityToUserKey;
 extern NSString *const kActivityPhotoKey;
+
+extern NSString *const kUserClass;
+extern NSString *const kActivityClass;
+extern NSString *const kPhotoClass;

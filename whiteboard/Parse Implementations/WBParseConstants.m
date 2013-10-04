@@ -12,8 +12,11 @@ NSString *const kActivityTypeLike = @"like";
 NSString *const kActivityTypeFollow = @"follow";
 NSString *const kActivityTypeComment = @"comment";
 
-
 NSString *const kActivityTypeKey =      @"type";
 NSString *const kActivityFromUserKey =  @"fromUser";
 NSString *const kActivityToUserKey =    @"toUser";
 NSString *const kActivityPhotoKey =     @"photo";
+
+NSString *const kUserClass =      @"_User";
+NSString *const kActivityClass =  @"Activity";
+NSString *const kPhotoClass =     @"Photo";

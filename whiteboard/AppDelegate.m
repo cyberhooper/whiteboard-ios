@@ -7,10 +7,12 @@
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
+//#import <Parse/Parse.h>
 #import "WBManager.h"
 #import "WBTheme.h"
 #import "WBAccountManager.h"
+#import "WBPhotoDetailsViewController.h"
+#import "ProfileViewController.h"
 
 @implementation AppDelegate
 
@@ -20,6 +22,11 @@
   [application registerForRemoteNotificationTypes:  UIRemoteNotificationTypeAlert |
                                                     UIRemoteNotificationTypeBadge |
                                                     UIRemoteNotificationTypeSound];
+  
+  // Extract the notification payload dictionary
+  NSDictionary *remoteNotificationPayload = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+  if (remoteNotificationPayload)
+    [self hanldePushWithOptions:remoteNotificationPayload];
   return YES;
 }
 
@@ -34,6 +41,8 @@
 }
 
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+  
+  
   [PFPush storeDeviceToken:deviceToken];
   
   if (application.applicationIconBadgeNumber != 0) {
@@ -59,9 +68,39 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-  [PFPush handlePush:userInfo];
+  UIApplicationState state = [application applicationState];
+  if (state != UIApplicationStateActive) {
+    [self hanldePushWithOptions:userInfo];
+  }
 }
 
-
+- (void)hanldePushWithOptions:(NSDictionary *)userInfo {
+  if ([PFUser currentUser]) {
+    NSString *type = userInfo[@"type"];
+    NSString *photoId = userInfo[@"photoId"];
+    NSString *userId = userInfo[@"fromUser"];
+    
+    if ([type isEqualToString:@"like"] || [type isEqualToString:@"comment"]) {
+      WBTabBarController *tabBarVC = (WBTabBarController*) self.window.rootViewController;
+      WBNavigationController *navVC = (WBNavigationController*) tabBarVC.homeNavigationController;
+      [tabBarVC setSelectedViewController:navVC];
+      WBPhotoDetailsViewController *photoDetailVC = [[WBPhotoDetailsViewController alloc] init];
+      WBPhoto *photo = [[WBPhoto alloc] init];
+      photo.photoID = photoId;
+      photoDetailVC.photo = photo;
+      [navVC pushViewController:photoDetailVC animated:YES];
+    }
+    else if ([type isEqualToString:@"follow"]) {
+      WBTabBarController *tabBarVC = (WBTabBarController*) self.window.rootViewController;
+      WBNavigationController *navVC = (WBNavigationController*) tabBarVC.homeNavigationController;
+      [tabBarVC setSelectedViewController:navVC];
+      ProfileViewController *profileVC = [[ProfileViewController alloc] init];
+      WBUser *user = [[WBUser alloc] init];
+      user.userID = userId;
+      profileVC.user = user;
+      [navVC pushViewController:profileVC animated:YES];
+    }
+  }
+}
 
 @end
