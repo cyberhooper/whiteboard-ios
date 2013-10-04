@@ -11,7 +11,8 @@
 #import "WBDataSource.h"
 #import "WBActivityCell.h"
 #import "WBActivity.h"
-
+#import "WBPhotoDetailsViewController.h"
+#import "ProfileViewController.h"
 
 @interface ActivityViewController ()
 @property NSArray *activities;
@@ -25,7 +26,8 @@ static NSString *tableCellIdentifier = @"WBActivityCell";
   [self.tableView setDelegate:self];
   [self.tableView setDataSource:self];
   UINib *tableCellNib = [UINib nibWithNibName:[self tableCellNib] bundle:nil];
-  [self.tableView registerNib:tableCellNib forCellReuseIdentifier:tableCellIdentifier];
+  [self.tableView registerNib:tableCellNib
+       forCellReuseIdentifier:tableCellIdentifier];
   [self.tableView setBackgroundColor:[UIColor clearColor]];
   
   self.activities = [[NSArray alloc]init];
@@ -43,28 +45,31 @@ static NSString *tableCellIdentifier = @"WBActivityCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView
          cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-
-   return [self configureCell:[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier]
-    forRowAtIndexPath:indexPath];
-
+   return [self configureCell:[tableView dequeueReusableCellWithIdentifier:tableCellIdentifier] forRowAtIndexPath:indexPath];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+#warning MAGIC NUMBER
   return 66;
 }
 
 - (WBActivityCell *)configureCell:(WBActivityCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
-  
   WBActivity *activity = ((WBActivity *)[self.activities objectAtIndex:indexPath.row]);
   [cell.nameButton setTitle:activity.fromUser.displayName forState:UIControlStateNormal];
   CALayer *layer = [cell.avatarImageView layer];
   layer.cornerRadius = 3.0f;
   layer.masksToBounds = YES;
+  [cell setDelegate:self];
   [cell setDate:activity.createdAt];
 
-  
+  if (activity.fromUser.avatar == nil) {
+    cell.avatarImageView.image = nil;
+  }
+  else {
   [cell.avatarImageView setImageWithPath:activity.fromUser.avatar.absoluteString
                              placeholder:nil];
+  }
+  
   if (activity.photo) {
     [cell.photoImageView setImageWithPath:activity.photo.url.absoluteString
                               placeholder:nil];
@@ -75,39 +80,35 @@ static NSString *tableCellIdentifier = @"WBActivityCell";
   [cell.nameButton.titleLabel setFont:[UIFont boldSystemFontOfSize:13]];
   [cell.nameButton.titleLabel setLineBreakMode:NSLineBreakByTruncatingTail];
   
-//  CGSize nameSize = [cell.nameButton.titleLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:13.0f]}];
-//  
-//  [cell.nameButton setFrame:CGRectMake(46.0,
-//                                       8.0,
-//                                       nameSize.width,
-//                                       nameSize.height)];
-//  if (nameSize.width <= 200) {
-//    // Layout the content
-//    CGSize contentSize = [cell.contentLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13.0f]}];
-//    [cell.contentLabel setNumberOfLines:1];
-//    [cell.contentLabel setFrame:CGRectMake(nameSize.width + 50,
-//                                           7.0,
-//                                           contentSize.width,
-//                                           contentSize.height)];
-//  }
-//  else {
-//    CGSize contentSize = [cell.contentLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:13.0f]}];
-//    [cell.contentLabel setNumberOfLines:2];
-//    [cell.contentLabel setFrame:CGRectMake(nameSize.width,
-//                                           7.0,
-//                                           contentSize.width,
-//                                           contentSize.height)];
-//  }
-//  
-//  // Layout the timestamp label
-//  CGSize timeSize = [cell.timeLabel.text sizeWithAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:11.0f]}];
-//  [cell.timeLabel setFrame:CGRectMake(46,
-//                                      cell.contentLabel.frame.origin.y + cell.contentLabel.frame.size.height,
-//                                      timeSize.width,
-//                                      timeSize.height)];
-  [cell setNeedsDisplay];
-
   return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  WBActivity *activity = ((WBActivity *)[self.activities objectAtIndex:indexPath.row]);
+  if ([activity.type isEqualToString:@"like"] || [activity.type isEqualToString:@"comment"]) {
+    [self pushPhotoDetailViewWhithPhoto:[activity photo]];
+  }
+  else if ([activity.type isEqualToString:@"follow"]) {
+    [self pushProfileViewWithUser:[activity fromUser]];
+  }
+}
+
+- (void)fromUserProfilePressed:(WBActivityCell *)cell {
+  WBActivity *activity = ((WBActivity *)[self.activities objectAtIndex:[self.tableView indexPathForCell:cell].row]);
+  [self pushProfileViewWithUser:[activity fromUser]];
+
+}
+
+- (void)pushProfileViewWithUser:(WBUser *)user {
+  ProfileViewController *profileVC = [[ProfileViewController alloc] init];
+  profileVC.user = user;
+  [self.navigationController pushViewController:profileVC animated:YES];
+}
+
+- (void)pushPhotoDetailViewWhithPhoto:(WBPhoto *)photo {
+  WBPhotoDetailsViewController *photoDetailsVC = [[WBPhotoDetailsViewController alloc] init];
+  photoDetailsVC.photo = photo;
+  [self.navigationController pushViewController:photoDetailsVC animated:YES];
 }
 
 - (NSString *)contentTextForActivityType:(NSString *)type {

@@ -13,11 +13,14 @@ static TTTTimeIntervalFormatter *timeFormatter;
 
 @implementation WBActivityCell
 
-- (void)setUpCell {
-  
-   [self setNeedsDisplay];
-
+- (IBAction)pictureTouch {
+  [self.delegate fromUserProfilePressed:self];
 }
+
+- (IBAction)nameTouch:(id)sender {
+  [self.delegate fromUserProfilePressed:self];
+}
+
 
 - (void)setDate:(NSDate *)date {
   if (!timeFormatter) {

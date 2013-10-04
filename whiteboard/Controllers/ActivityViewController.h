@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 #import "WBViewController.h"
+#import "WBActivityCell.h"
 
-@interface ActivityViewController : WBViewController <UITableViewDelegate, UITableViewDataSource>
+@interface ActivityViewController : WBViewController <UITableViewDelegate, UITableViewDataSource, WBActivitycellDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 
