@@ -28,11 +28,16 @@
                                password:password
                                   block:^(PFUser *user, NSError *error) {
                                     if (user) {
+                                      LOG_GENERAL(0, @"User %@ connected with success",username);
+                                      LOG_NETWORK(0, @"User received: %@", user);
+                                      
                                       [user WBUser];
                                       success([[WBDataSource sharedInstance] currentUser]);
                                       [self subscribeUserToPrivatePushChannel:user];
-                                    }
-                                    else {
+                                    } else {
+                                      LOG_GENERAL(0, @"Failed to connect user %@ with provided credentials",username);
+                                      LOG_NETWORK(0, @"-> Error: %@",error);
+                                      
                                       failure (error);
                                     }
                                   }];
@@ -135,9 +140,13 @@
   [PFFacebookUtils logInWithPermissions:permissionsArray
                                   block:^(PFUser *user, NSError *error) {
                                     if (!user) {
+                                      LOG_GENERAL(0, @"Failed to connect user with facebook");
+                                      LOG_NETWORK(0, @"-> Error: %@",error);
+                                      
                                       failure(error);
-                                    }
-                                    else {
+                                    } else {
+                                      LOG_GENERAL(0, @"User connected with success with facebook");
+                                      
                                       success();
                                       [self subscribeUserToPrivatePushChannel:user];
                                       // Create request for user's Facebook data

@@ -97,10 +97,18 @@
       PFObject *parsePhoto = [self parsePhotoWithImageFile:imageFile];
       parsePhoto.ACL = [self photoACL];
       [parsePhoto saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        if (!error && success)
+        if (!error && success) {
+          LOG_GENERAL(0, @"Uploaded photo with success");
+          LOG_NETWORK(0, @"-> Photo: %@", photo);
+          
           success();
-        else if (failure)
+        } else if (failure) {
+          LOG_GENERAL(0, @"Failed to upload photo with provided credentials");
+          LOG_NETWORK(0, @"-> Photo: %@", photo);
+          LOG_NETWORK(0, @"-> Error: %@", error);
+          
           failure(error);
+        }
       }];
     }
     else
@@ -417,10 +425,17 @@
   PFQuery *query = [PFQuery queryWithClassName:@"Photo"];
   [query whereKey:@"user" equalTo:parseUser];
   [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
-    if (!error && success)
+    if (!error && success) {
+      LOG_GENERAL(0, @"Number of photos retrieved");
+      LOG_NETWORK(0, @"-> Number of photos: %d", number);
+      
       success(number);
-    else if (failure)
+    } else if (failure) {
+      LOG_GENERAL(0, @"Couldn't retrieve number of photos");
+      LOG_NETWORK(0, @"-> Error: %@", error);
+      
       failure(error);
+    }
   }];
 }
 
@@ -431,10 +446,18 @@
   PFQuery *query = [PFQuery queryWithClassName:@"_User"];
   [query whereKey:@"following" equalTo:pfUser];
   [query countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
-    if (!error && success)
+    if (!error && success) {
+      LOG_GENERAL(0, @"Number of followers for user retrieved");
+      LOG_NETWORK(0, @"-> Number of followers: %d", number);
+      
       success(number);
-    else if (failure)
+    } else if (failure) {
+      LOG_GENERAL(0, @"Couldn't retrieve number of followers for user");
+      LOG_GENERAL(0, @"-> User: %@", user);
+      LOG_NETWORK(0, @"-> Error: %@", error);
+      
       failure(error);
+    }
   }];
 }
 
@@ -444,10 +467,18 @@
   PFUser *pfUser = [PFUser objectWithoutDataWithClassName:@"_User" objectId:user.userID];
   PFRelation *followingRelation = [pfUser relationforKey:@"following"];
   [[followingRelation query] countObjectsInBackgroundWithBlock:^(int number, NSError *error) {
-    if (!error && success)
+    if (!error && success) {
+      LOG_GENERAL(0, @"Number of following for user for user retrieved");
+      LOG_NETWORK(0, @"-> Number of followers: %d", number);
+      
       success(number);
-    else if (failure)
+    } else if (failure) {
+      LOG_GENERAL(0, @"Couldn't retrieve number of following for user");
+      LOG_GENERAL(0, @"-> User: %@", user);
+      LOG_NETWORK(0, @"-> Error: %@", error);
+      
       failure(error);
+    }
   }];
 }
 

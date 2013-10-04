@@ -281,6 +281,7 @@
 		DDAC836417F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsCellAddComment.m; sourceTree = "<group>"; };
 		DDAC836617F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoDetailsCellAddComment.xib; sourceTree = "<group>"; };
 		DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoadMoreCell.xib; sourceTree = "<group>"; };
+		F4347D7817FEE5D5007027F2 /* LogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogUtils.h; path = "../../Profilic Library/Prolific Library/Helpers/LogUtils.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -554,6 +555,7 @@
 				DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */,
 				99A1407E17F09E5E00F1378D /* WBPhoto+Utils.h */,
 				99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */,
+				F4347D7817FEE5D5007027F2 /* LogUtils.h */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";

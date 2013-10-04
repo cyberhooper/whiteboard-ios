@@ -41,28 +41,28 @@
 }
 
 - (void)loginUser {
-  [[WBAccountManager sharedInstance]loginWithUsername:self.usernameTextField.text
-                                      andPassWord:self.passwordTextField.text
-                                          success:^(WBUser *user) {
-                                            [self dismissViewControllerAnimated:YES completion:nil];
-                                          } failure:^(NSError *error) {
-                                            [[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Wrong creditentials", @"Wrong creditentials")
-                                                                       message:NSLocalizedString(@"Please try again", @"Please try again")
-                                                                      delegate:nil
-                                                             cancelButtonTitle:nil
-                                                             otherButtonTitles:NSLocalizedString(@"Ok", @"Ok"), nil]show ];
-                                          }];
+  [[WBAccountManager sharedInstance] loginWithUsername:self.usernameTextField.text
+                                           andPassWord:self.passwordTextField.text
+                                               success:^(WBUser *user) {
+                                                 [self dismissViewControllerAnimated:YES completion:nil];
+                                               } failure:^(NSError *error) {
+                                                 [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Wrong credentials", @"Wrong credentials")
+                                                                             message:NSLocalizedString(@"Please try again", @"Please try again")
+                                                                            delegate:nil
+                                                                   cancelButtonTitle:nil
+                                                                   otherButtonTitles:NSLocalizedString(@"Ok", @"Ok"), nil] show];
+                                               }];
 }
 - (IBAction)loginWithFacebookAction:(id)sender {
-    [[WBAccountManager sharedInstance]loginWithFacebook:^{
-      [self dismissViewControllerAnimated:YES completion:nil];
-    } failure:^(NSError *error) {
-      [[[UIAlertView alloc]initWithTitle:NSLocalizedString(@"Wrong creditentials", @"Wrong creditentials")
-                                 message:NSLocalizedString(@"Please try again", @"Please try again")
-                                delegate:nil
-                       cancelButtonTitle:nil
-                       otherButtonTitles:NSLocalizedString(@"Ok", @"Ok"), nil]show ];
-    }];
+  [[WBAccountManager sharedInstance] loginWithFacebook:^{
+    [self dismissViewControllerAnimated:YES completion:nil];
+  } failure:^(NSError *error) {
+    [[[UIAlertView alloc] initWithTitle:NSLocalizedString(@"Wrong credentials", @"Wrong credentials")
+                                message:NSLocalizedString(@"Please try again", @"Please try again")
+                               delegate:nil
+                      cancelButtonTitle:nil
+                      otherButtonTitles:NSLocalizedString(@"Ok", @"Ok"), nil] show];
+  }];
 }
 
 - (IBAction)registerAction:(id)sender {
