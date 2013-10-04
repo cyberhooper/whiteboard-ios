@@ -20,6 +20,10 @@
   [application registerForRemoteNotificationTypes:  UIRemoteNotificationTypeAlert |
                                                     UIRemoteNotificationTypeBadge |
                                                     UIRemoteNotificationTypeSound];
+  
+  //add 
+  [DDLog addLogger:[DDASLLogger sharedInstance]];
+  [DDLog addLogger:[DDTTYLogger sharedInstance]];
   return YES;
 }
 
@@ -46,7 +50,7 @@
     // Make sure they are subscribed to their private push channel
     NSString *privateChannelName = [[PFUser currentUser] objectForKey:@"channel"];
     if (privateChannelName && privateChannelName.length > 0) {
-      NSLog(@"Subscribing user to %@", privateChannelName);
+      DDLogVerbose(@"Subscribing user to : %@", privateChannelName);
       [[PFInstallation currentInstallation] addUniqueObject:privateChannelName forKey:@"channels"];
     }
   }
@@ -55,7 +59,7 @@
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
-  NSLog(@"Failed to register for push notification : %@", error);
+  DDLogError(@"Failed to register for push notification : %@", error);
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
