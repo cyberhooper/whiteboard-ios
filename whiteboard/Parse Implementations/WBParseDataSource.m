@@ -555,4 +555,26 @@
   return activity;
 }
 
+#pragma mark - Push Notifications.
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+  [PFPush storeDeviceToken:deviceToken];
+  
+  if (application.applicationIconBadgeNumber != 0) {
+    application.applicationIconBadgeNumber = 0;
+  }
+  
+  [[PFInstallation currentInstallation] addUniqueObject:@"" forKey:@"channels"];
+  
+  if ([PFUser currentUser]) {
+    // Make sure they are subscribed to their private push channel
+    NSString *privateChannelName = [[PFUser currentUser] objectForKey:@"channel"];
+    if (privateChannelName && privateChannelName.length > 0) {
+      NSLog(@"Subscribing user to %@", privateChannelName);
+      [[PFInstallation currentInstallation] addUniqueObject:privateChannelName forKey:@"channels"];
+    }
+  }
+  // Save the added channel(s)
+  [[PFInstallation currentInstallation] saveEventually];
+}
 @end

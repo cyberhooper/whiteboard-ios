@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-//#import <Parse/Parse.h>
 #import "WBManager.h"
 #import "WBTheme.h"
 #import "WBAccountManager.h"
@@ -40,27 +39,10 @@
   return [[WBAccountManager sharedInstance]facebookReturnHandleURL:url];
 }
 
+#pragma mark - Push Notifications
+
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-  
-  
-  [PFPush storeDeviceToken:deviceToken];
-  
-  if (application.applicationIconBadgeNumber != 0) {
-    application.applicationIconBadgeNumber = 0;
-  }
-  
-  [[PFInstallation currentInstallation] addUniqueObject:@"" forKey:@"channels"];
-  
-  if ([PFUser currentUser]) {
-    // Make sure they are subscribed to their private push channel
-    NSString *privateChannelName = [[PFUser currentUser] objectForKey:@"channel"];
-    if (privateChannelName && privateChannelName.length > 0) {
-      NSLog(@"Subscribing user to %@", privateChannelName);
-      [[PFInstallation currentInstallation] addUniqueObject:privateChannelName forKey:@"channels"];
-    }
-  }
-  // Save the added channel(s)
-  [[PFInstallation currentInstallation] saveEventually];
+  [[WBDataSource sharedInstance] application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
@@ -75,32 +57,38 @@
 }
 
 - (void)hanldePushWithOptions:(NSDictionary *)userInfo {
-  if ([PFUser currentUser]) {
+  if ([[WBDataSource sharedInstance] currentUser]) {
     NSString *type = userInfo[@"type"];
     NSString *photoId = userInfo[@"photoId"];
     NSString *userId = userInfo[@"fromUser"];
     
+    WBTabBarController *tabBarVC = (WBTabBarController*) self.window.rootViewController;
+    WBNavigationController *navVC = (WBNavigationController*) tabBarVC.homeNavigationController;
+    [tabBarVC setSelectedViewController:navVC];
+    
     if ([type isEqualToString:@"like"] || [type isEqualToString:@"comment"]) {
-      WBTabBarController *tabBarVC = (WBTabBarController*) self.window.rootViewController;
-      WBNavigationController *navVC = (WBNavigationController*) tabBarVC.homeNavigationController;
-      [tabBarVC setSelectedViewController:navVC];
-      WBPhotoDetailsViewController *photoDetailVC = [[WBPhotoDetailsViewController alloc] init];
-      WBPhoto *photo = [[WBPhoto alloc] init];
-      photo.photoID = photoId;
-      photoDetailVC.photo = photo;
-      [navVC pushViewController:photoDetailVC animated:YES];
+      [navVC pushViewController:[self photoDetailVCWithPhotoId:photoId] animated:YES];
     }
     else if ([type isEqualToString:@"follow"]) {
-      WBTabBarController *tabBarVC = (WBTabBarController*) self.window.rootViewController;
-      WBNavigationController *navVC = (WBNavigationController*) tabBarVC.homeNavigationController;
-      [tabBarVC setSelectedViewController:navVC];
-      ProfileViewController *profileVC = [[ProfileViewController alloc] init];
-      WBUser *user = [[WBUser alloc] init];
-      user.userID = userId;
-      profileVC.user = user;
-      [navVC pushViewController:profileVC animated:YES];
+      [navVC pushViewController:[self profileVCWithUserId:userId] animated:YES];
     }
   }
+}
+
+- (WBPhotoDetailsViewController *)photoDetailVCWithPhotoId:(NSString *)photoId {
+  WBPhotoDetailsViewController *vc = [[WBPhotoDetailsViewController alloc] init];
+  WBPhoto *photo = [[WBPhoto alloc] init];
+  photo.photoID = photoId;
+  vc.photo = photo;
+  return vc;
+}
+
+- (ProfileViewController *)profileVCWithUserId:(NSString *)userId {
+  ProfileViewController *vc = [[ProfileViewController alloc] init];
+  WBUser *user = [[WBUser alloc] init];
+  user.userID = userId;
+  vc.user = user;
+  return vc;
 }
 
 @end
