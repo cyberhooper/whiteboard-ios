@@ -182,6 +182,7 @@
 		9922AB5C17E107F800D1B18A /* WBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBManager.h; sourceTree = "<group>"; };
 		9922AB5D17E107F800D1B18A /* WBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBManager.m; sourceTree = "<group>"; };
 		9940D16717DF62F1008B2825 /* WBDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDatasourceTests.m; sourceTree = "<group>"; };
+		9948A34C180307B9004F7FB7 /* LogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogUtils.h; path = Helpers/LogUtils.h; sourceTree = "<group>"; };
 		994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParseConfiguration.plist; sourceTree = "<group>"; };
 		994FF11617F336BC0020CDBA /* PFObject+WBActivity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PFObject+WBActivity.h"; sourceTree = "<group>"; };
 		994FF11717F336BC0020CDBA /* PFObject+WBActivity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PFObject+WBActivity.m"; sourceTree = "<group>"; };
@@ -281,7 +282,6 @@
 		DDAC836417F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsCellAddComment.m; sourceTree = "<group>"; };
 		DDAC836617F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoDetailsCellAddComment.xib; sourceTree = "<group>"; };
 		DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoadMoreCell.xib; sourceTree = "<group>"; };
-		F4347D7B17FF1131007027F2 /* LogUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LogUtils.h; path = Helpers/LogUtils.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -555,7 +555,7 @@
 				DD6F1E8E17E39FD30099866F /* UIColor+Hex.m */,
 				99A1407E17F09E5E00F1378D /* WBPhoto+Utils.h */,
 				99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */,
-				F4347D7B17FF1131007027F2 /* LogUtils.h */,
+				9948A34C180307B9004F7FB7 /* LogUtils.h */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
