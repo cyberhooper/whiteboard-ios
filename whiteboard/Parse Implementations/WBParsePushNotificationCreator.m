@@ -10,6 +10,7 @@
 #import <Parse/Parse.h>
 #import "WBUser.h"
 #import "WBPhoto.h"
+#import "WBDataSource.h"
 
 @implementation WBParsePushNotificationCreator
 
@@ -38,13 +39,15 @@
     WBUser *user = [note userInfo][@"user"];
     WBPhoto *photo = [note userInfo][@"photo"];
     
-    NSString *message = [NSString stringWithFormat:@"%@ likes your photo",user.displayName];
-    NSDictionary *payload = @{@"alert" : message,
-                              @"type" : @"like",
-                              @"fromUser": user.userID,
-                              @"photoId" : photo.photoID};
-    NSString *authorChannel = [NSString stringWithFormat:@"user_%@",photo.author.userID];
-    [self sendNotificationWithPayload:payload onChannels:@[authorChannel]];
+    if (![photo.author isEqual:[WBDataSource sharedInstance].currentUser]) {
+      NSString *message = [NSString stringWithFormat:@"%@ likes your photo",user.displayName];
+      NSDictionary *payload = @{@"alert" : message,
+                                @"type" : @"like",
+                                @"fromUser": user.userID,
+                                @"photoId" : photo.photoID};
+      NSString *authorChannel = [NSString stringWithFormat:@"user_%@",photo.author.userID];
+      [self sendNotificationWithPayload:payload onChannels:@[authorChannel]];
+    }
   }];
 }
 
@@ -71,13 +74,16 @@
     WBUser *user = [note userInfo][@"user"];
     WBPhoto *photo = [note userInfo][@"photo"];
     
-    NSString *message = [NSString stringWithFormat:@"%@ commented on your photo",user.displayName];
-    NSDictionary *payload = @{@"alert" : message,
-                              @"type" : @"comment",
-                              @"fromUser": user.userID,
-                              @"photoId" : photo.photoID};
-    NSString *authorChannel = [NSString stringWithFormat:@"user_%@",photo.author.userID];
-    [self sendNotificationWithPayload:payload onChannels:@[authorChannel]];
+    
+    if (![photo.author isEqual:[WBDataSource sharedInstance].currentUser]) {
+      NSString *message = [NSString stringWithFormat:@"%@ commented on your photo",user.displayName];
+      NSDictionary *payload = @{@"alert" : message,
+                                @"type" : @"comment",
+                                @"fromUser": user.userID,
+                                @"photoId" : photo.photoID};
+      NSString *authorChannel = [NSString stringWithFormat:@"user_%@",photo.author.userID];
+      [self sendNotificationWithPayload:payload onChannels:@[authorChannel]];
+    }
   }];
 }
 

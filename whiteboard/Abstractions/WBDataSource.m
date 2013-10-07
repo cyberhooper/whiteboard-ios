@@ -191,4 +191,8 @@ static Class DataSourceSubclass = nil;
     [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
 }
 
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+  [NSException raise:@"You should override in a WBDataSource subclass" format:nil];
+}
+
 @end

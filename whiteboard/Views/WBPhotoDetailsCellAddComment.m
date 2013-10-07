@@ -22,6 +22,7 @@
   // Textfield
   self.commentTextField.background = [[WBTheme sharedTheme] detailsTextfieldBackgroundImage];
   self.commentTextField.delegate = self;
+  self.commentTextField.returnKeyType = UIReturnKeySend;
   
   // Icon
   self.addCommentIconImageView.image = [[WBTheme sharedTheme] detailsAddCommentIconImage];

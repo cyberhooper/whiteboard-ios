@@ -7,10 +7,11 @@
 //
 
 #import "AppDelegate.h"
-#import <Parse/Parse.h>
 #import "WBManager.h"
 #import "WBTheme.h"
 #import "WBAccountManager.h"
+#import "WBPhotoDetailsViewController.h"
+#import "ProfileViewController.h"
 
 @implementation AppDelegate
 
@@ -20,6 +21,11 @@
   [application registerForRemoteNotificationTypes:  UIRemoteNotificationTypeAlert |
                                                     UIRemoteNotificationTypeBadge |
                                                     UIRemoteNotificationTypeSound];
+  
+  // Extract the notification payload dictionary
+  NSDictionary *remoteNotificationPayload = [launchOptions objectForKey:UIApplicationLaunchOptionsRemoteNotificationKey];
+  if (remoteNotificationPayload)
+    [self hanldePushWithOptions:remoteNotificationPayload];
   return YES;
 }
 
@@ -33,25 +39,10 @@
   return [[WBAccountManager sharedInstance]facebookReturnHandleURL:url];
 }
 
+#pragma mark - Push Notifications
+
 - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-  [PFPush storeDeviceToken:deviceToken];
-  
-  if (application.applicationIconBadgeNumber != 0) {
-    application.applicationIconBadgeNumber = 0;
-  }
-  
-  [[PFInstallation currentInstallation] addUniqueObject:@"" forKey:@"channels"];
-  
-  if ([PFUser currentUser]) {
-    // Make sure they are subscribed to their private push channel
-    NSString *privateChannelName = [[PFUser currentUser] objectForKey:@"channel"];
-    if (privateChannelName && privateChannelName.length > 0) {
-      NSLog(@"Subscribing user to %@", privateChannelName);
-      [[PFInstallation currentInstallation] addUniqueObject:privateChannelName forKey:@"channels"];
-    }
-  }
-  // Save the added channel(s)
-  [[PFInstallation currentInstallation] saveEventually];
+  [[WBDataSource sharedInstance] application:application didRegisterForRemoteNotificationsWithDeviceToken:deviceToken];
 }
 
 - (void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error {
@@ -59,9 +50,45 @@
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-  [PFPush handlePush:userInfo];
+  UIApplicationState state = [application applicationState];
+  if (state != UIApplicationStateActive) {
+    [self hanldePushWithOptions:userInfo];
+  }
 }
 
+- (void)hanldePushWithOptions:(NSDictionary *)userInfo {
+  if ([[WBDataSource sharedInstance] currentUser]) {
+    NSString *type = userInfo[@"type"];
+    NSString *photoId = userInfo[@"photoId"];
+    NSString *userId = userInfo[@"fromUser"];
+    
+    WBTabBarController *tabBarVC = (WBTabBarController*) self.window.rootViewController;
+    WBNavigationController *navVC = (WBNavigationController*) tabBarVC.homeNavigationController;
+    [tabBarVC setSelectedViewController:navVC];
+    
+    if ([type isEqualToString:@"like"] || [type isEqualToString:@"comment"]) {
+      [navVC pushViewController:[self photoDetailVCWithPhotoId:photoId] animated:YES];
+    }
+    else if ([type isEqualToString:@"follow"]) {
+      [navVC pushViewController:[self profileVCWithUserId:userId] animated:YES];
+    }
+  }
+}
 
+- (WBPhotoDetailsViewController *)photoDetailVCWithPhotoId:(NSString *)photoId {
+  WBPhotoDetailsViewController *vc = [[WBPhotoDetailsViewController alloc] init];
+  WBPhoto *photo = [[WBPhoto alloc] init];
+  photo.photoID = photoId;
+  vc.photo = photo;
+  return vc;
+}
+
+- (ProfileViewController *)profileVCWithUserId:(NSString *)userId {
+  ProfileViewController *vc = [[ProfileViewController alloc] init];
+  WBUser *user = [[WBUser alloc] init];
+  user.userID = userId;
+  vc.user = user;
+  return vc;
+}
 
 @end

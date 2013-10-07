@@ -168,5 +168,7 @@
 - (void)recentActivities:(void(^)(NSArray *activities))success
                  failure:(void(^)(NSError *error))failure;
 
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken;
 @end
 
