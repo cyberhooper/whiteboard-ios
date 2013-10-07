@@ -119,14 +119,12 @@
   if (self.delegate && [self.delegate respondsToSelector:@selector(cell:didTapUserButtonAtIndex:)]) {
     [self.delegate cell:self didTapUserButtonAtIndex:self.userIndex];
   }
-  NSLog(@"User button tapped");
 }
 
 - (void)didTapFollowButtonAction:(id)sender {
   if (self.delegate && [self.delegate respondsToSelector:@selector(cell:didTapFollowButtonAtIndex:)]) {
     [self.delegate cell:self didTapFollowButtonAtIndex:self.userIndex];
   }
-  NSLog(@"Follow button tapped");
 }
 
 

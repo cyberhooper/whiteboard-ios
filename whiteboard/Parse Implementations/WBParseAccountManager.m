@@ -29,10 +29,12 @@
                                   block:^(PFUser *user, NSError *error) {
                                     if (user) {
                                       [user WBUser];
+                                      DDLogInfo(@"login with username and pwd succedeed");
                                       success([[WBDataSource sharedInstance] currentUser]);
                                       [self subscribeUserToPrivatePushChannel:user];
                                     }
                                     else {
+                                      DDLogError(@"login Failed : %@", error);
                                       failure (error);
                                     }
                                   }];
@@ -46,8 +48,9 @@
   [WBDataSource sharedInstance].facebookFriends = nil;
   [self unsubscribeUserFromPrivatePushChannel:[PFUser currentUser]];
   [PFUser logOut];
+  // no failure handeling with Parse, because the account is stored locally.
+  DDLogInfo(@"logout succedeed");
   success();
-#warning  no failure handeling??
 }
 
 - (void)subscribeUserToPrivatePushChannel:(PFUser *)user {

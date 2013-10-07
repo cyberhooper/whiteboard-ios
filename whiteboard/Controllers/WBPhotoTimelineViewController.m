@@ -194,8 +194,6 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 }
 
 - (void)loadNextPage {
-  NSLog(@"Load next page here");
-  
   [[WBDataSource sharedInstance] latestPhotosWithOffset:self.photoOffset success:^(NSArray *photos) {
     // If we receive nothing in return then set loadMore to NO.
     if(photos.count == 0){
@@ -259,7 +257,6 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
     [self.tableView reloadData];
     self.isLoading = NO;
     
-    NSLog(@"%@", photos);
   } failure:^(NSError *error) {
     UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Refresh Failed"
                                                     message:[error description]
@@ -275,7 +272,6 @@ static NSString *loadMoreCellIdentifier = @"WBLoadMoreCell";
 
 #pragma mark - WBPhotoTimelineSectionHeaderViewDelegate
 - (void)sectionHeaderCommentsButtonPressed:(WBPhotoTimelineSectionHeaderView *)sectionView {
-  NSLog(@"Comments pressed");
   WBPhoto *photo = ((WBPhoto *)[self.photos objectAtIndex:[sectionView.sectionIndex integerValue]]);
   
   [self pushPhotoDetailsViewWithPhoto:photo];

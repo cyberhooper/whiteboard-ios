@@ -55,7 +55,7 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
     [self.tableView reloadData];
     [self.photo setImage:[UIImage imageWithData:[NSData dataWithContentsOfURL:self.photo.url]]];
   } failure:^(NSError *error) {
-    NSLog(@"Failed");
+    DDLogError(@"Failed");
   }];
 }
 
