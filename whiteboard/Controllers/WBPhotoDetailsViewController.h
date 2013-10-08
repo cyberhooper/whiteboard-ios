@@ -7,7 +7,7 @@
 //
 
 #import "WBViewController.h"
-#import "WBPhoto.h"
+#import <WBFramework/WBFramework.h>
 
 @interface WBPhotoDetailsViewController : WBViewController
 

@@ -7,9 +7,8 @@
 //
 
 #import "WBNavigationController.h"
-#import "WBDataSource.h"
+#import <WBFramework/WBFramework.h>
 #import "WBPhotoTimelineViewController.h"
-#import "WBAccountManager.h"
 #import "ProfileViewController.h"
 #import "WBFindFriendsViewController.h"
 

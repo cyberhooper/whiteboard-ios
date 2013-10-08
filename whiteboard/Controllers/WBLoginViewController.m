@@ -7,7 +7,7 @@
 //
 
 #import "WBLoginViewController.h"
-#import "WBAccountManager.h"
+#import <WBFramework/WBFramework.h>
 #import "WBSignupViewController.h"
 
 @interface WBLoginViewController () <UITextFieldDelegate>

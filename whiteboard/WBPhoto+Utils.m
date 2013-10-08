@@ -7,7 +7,7 @@
 //
 
 #import "WBPhoto+Utils.h"
-#import "WBDataSource.h"
+#import <WBFramework/WBFramework.h>
 
 @implementation WBPhoto (Utils)
 

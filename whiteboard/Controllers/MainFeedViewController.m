@@ -8,8 +8,7 @@
 
 #import "MainFeedViewController.h"
 #import "MainFeedCell.h"
-#import "WBDataSource.h"
-#import "WBAccountManager.h"
+#import <WBFramework/WBFramework.h>
 
 @implementation MainFeedViewController
 

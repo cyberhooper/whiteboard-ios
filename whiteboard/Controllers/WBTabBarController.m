@@ -7,6 +7,7 @@
 //
 
 #import "WBTabBarController.h"
+#import <WBFramework/WBFramework.h>
 
 @interface WBTabBarController ()
 

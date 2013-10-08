@@ -16,9 +16,7 @@
 #import "WBPhotoDetailsCellComment.h"
 #import "WBPhotoDetailsCellAddComment.h"
 
-#import "WBComment.h"
-#import "WBUser.h"
-#import "WBDataSource.h"
+#import <WBFramework/WBFramework.h>
 #import "ProfileViewController.h"
 
 @interface WBPhotoDetailsViewController () <UITableViewDataSource, UITableViewDelegate, WBPhotoTimelineSectionHeaderViewDelegate, WBPhotoDetailsCellLikesDelegate, WBPhotoDetailsCellAddCommentDelegate>

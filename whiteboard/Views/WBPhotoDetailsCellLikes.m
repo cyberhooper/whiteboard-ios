@@ -10,7 +10,7 @@
 #import "WBPhotoTimelineSectionHeaderButton.h"
 #import "UIImageView+WBImageLoader.h"
 #import "UIImageView+RoundedCorners.h"
-#import "WBUser.h"
+#import <WBFramework/WBFramework.h>
 
 #define kMaxNumberOfDisplayedLikers 7
 #define kLikerImageViewSize 29.f

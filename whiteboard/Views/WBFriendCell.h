@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIImageView+RoundedCorners.h"
-#import "WBUser.h"
+#import <WBFramework/WBFramework.h>
 
 @protocol WBFriendCellDelegate;
 
