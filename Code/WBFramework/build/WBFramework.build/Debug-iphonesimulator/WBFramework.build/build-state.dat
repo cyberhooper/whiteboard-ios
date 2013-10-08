@@ -1,0 +1,127 @@
+TWBFramework
+v6
+r1
+cCheck dependencies
+cProcessPCH /var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch.pch WBFramework/WBFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.o /Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+cLibtool /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/libWBFramework.a normal i386
+cPBXCp WBFramework/WBFramework.h /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include/WBFramework/WBFramework.h
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk
+c00000000521BCCE50000000000000176
+t1377553637
+s374
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/SDKSettings.plist
+c0000000052515F6C00000000000003B5
+t1381064556
+s949
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000052515F7A000000000000019E
+t1381064570
+s414
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c0000000052515F81000000000088B570
+t1381064577
+s8959344
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.0/include/module.map
+c0000000052515FBB0000000000000AC9
+t1381064635
+s2761
+
+N/Users/sacha/Desktop/WBFramework/WBFramework/WBFramework-Prefix.pch
+c0000000052531BA100000000000000B4
+t1381178273
+s180
+
+N/Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.h
+c0000000052531BA100000000000000DE
+t1381178273
+s222
+
+N/Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.m
+c0000000052531BA100000000000000CE
+t1381178273
+s206
+
+N/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.LinkFileList
+c000000005253234C0000000000000083
+t1381180236
+s131
+
+N/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.o
+t1381180237
+s3312
+
+N/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include/WBFramework/WBFramework.h
+t2
+s0
+
+N/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/libWBFramework.a
+t2
+s0
+
+N/var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch.pch
+t1381180237
+s107072
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies302af9cb5a03b841^7a3607cc5a03b841^---0#1#1#--18"Check dependencies36"8B5FAE3B-9222-410F-840A-E1611E03B4E9-
+
+CCompileC build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.o /Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402873037.054773
+e402873037.108172
+r1
+xCompileC
+xbuild/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.o
+x/Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.m
+d/Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection66"Compile /Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.m200"CompileC build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.o WBFramework/WBFramework.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler8a560ecd5a03b841^63b31bcd5a03b841^---0#0#1#-19%DVTDocumentLocation2@74"file://localhost/Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.m0000000000000000^4444"CompileC build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.o WBFramework/WBFramework.m normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sacha/Desktop/WBFramework    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/WBFramework-generated-files.hmap -I/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/WBFramework-own-target-headers.hmap -I/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/WBFramework-all-target-headers.hmap -iquote /Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/WBFramework-project-headers.hmap -I/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/DerivedSources/i386 -I/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/DerivedSources -F/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator -include /var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch -MMD -MT dependencies -MF /Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.d --serialize-diagnostics /Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.dia -c /Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.m -o /Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.o36"C8538653-A779-4310-BBD4-BD2C1D52DA4F-
+b83FA7F5F-5EC3-4074-B98E-A54A4CB905F9
+
+CLibtool /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/libWBFramework.a normal i386
+s402873037.116564
+e402873037.126905
+r1
+xLibtool
+x/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/libWBFramework.a
+xnormal
+xi386
+o/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC 
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection163"Libtool /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/libWBFramework.a normal i386163"Libtool /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/libWBFramework.a normal i38601341ecd5a03b841^aa7f20cd5a03b841^-159"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool: -dynamic not specified the following flags are invalid: -ObjC -0#0#1#--1831"Libtool /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/libWBFramework.a normal i386    cd /Users/sacha/Desktop/WBFramework    setenv IPHONEOS_DEPLOYMENT_TARGET 7.0    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/libtool -static -arch_only i386 -syslibroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -L/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator -filelist /Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/Objects-normal/i386/WBFramework.LinkFileList -ObjC -framework Foundation -o /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/libWBFramework.a36"832FE6E1-98B4-4FB2-AF0E-C19903309D27-
+b83FA7F5F-5EC3-4074-B98E-A54A4CB905F9
+
+CPBXCp WBFramework/WBFramework.h /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include/WBFramework/WBFramework.h
+s402873037.135365
+e402873037.139051
+r1
+xPBXCp
+xWBFramework/WBFramework.h
+x/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include/WBFramework/WBFramework.h
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection165"Copy /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include/WBFramework/WBFramework.h192"PBXCp WBFramework/WBFramework.h /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include/WBFramework/WBFramework.h11fd22cd5a03b841^4e9923cd5a03b841^---0#0#1#-19%DVTDocumentLocation2@176"file://localhost/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include/WBFramework/WBFramework.h0038f07dddffdf42^1429"PBXCp WBFramework/WBFramework.h /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include/WBFramework/WBFramework.h    cd /Users/sacha/Desktop/WBFramework    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks /Users/sacha/Desktop/WBFramework/WBFramework/WBFramework.h /Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include/WBFramework36"D433A8E7-0FE1-4E29-BF8B-5354891B541A-
+b83FA7F5F-5EC3-4074-B98E-A54A4CB905F9
+
+CProcessPCH /var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch.pch WBFramework/WBFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler
+s402873036.035406
+e402873037.046207
+r1
+xProcessPCH
+x/var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch.pch
+xWBFramework/WBFramework-Prefix.pch
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/sacha/Desktop/WBFramework/WBFramework/WBFramework-Prefix.pch
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection45"Precompile WBFramework/WBFramework-Prefix.pch321"ProcessPCH /var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch.pch WBFramework/WBFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler08e909cc5a03b841^e9d20bcd5a03b841^---0#0#1#-19%DVTDocumentLocation2@83"file://localhost/Users/sacha/Desktop/WBFramework/WBFramework/WBFramework-Prefix.pch0000000000000000^4595"ProcessPCH /var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch.pch WBFramework/WBFramework-Prefix.pch normal i386 objective-c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/sacha/Desktop/WBFramework    setenv LANG en_US.US-ASCII    setenv PATH "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin:/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/libexec:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/bin:/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/usr/local/bin:/Applications/Xcode.app/Contents/Developer/usr/bin:/Applications/Xcode.app/Contents/Developer/usr/local/bin:/Applications/Xcode.app/Contents/Developer/Tools:/usr/bin:/bin:/usr/sbin:/sbin"    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x objective-c-header -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fobjc-arc -fmodules -fmodules-cache-path=/var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/ModuleCache -Wno-trigraphs -fpascal-strings -O0 -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Wno-implicit-atomic-properties -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-receiver-is-weak -Wno-arc-repeated-use-of-weak -Wduplicate-method-match -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wuninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector -Wno-deprecated-implementations -DDEBUG=1 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.0.sdk -fexceptions -fasm-blocks -fstrict-aliasing -Wprotocol -Wdeprecated-declarations -g -Wno-sign-conversion -fobjc-abi-version=2 -fobjc-legacy-dispatch -mios-simulator-version-min=7.0 -iquote /Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/WBFramework-generated-files.hmap -I/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/WBFramework-own-target-headers.hmap -I/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/WBFramework-all-target-headers.hmap -iquote /Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/WBFramework-project-headers.hmap -I/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/DerivedSources/i386 -I/Users/sacha/Desktop/WBFramework/build/WBFramework.build/Debug-iphonesimulator/WBFramework.build/DerivedSources -F/Users/sacha/Library/Developer/Xcode/DerivedData/WBFramework-bcvdcprsommuawakhkfikvuvfozw/Build/Products/Debug-iphonesimulator --serialize-diagnostics /var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch.dia -MMD -MT dependencies -MF /var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch.d -c /Users/sacha/Desktop/WBFramework/WBFramework/WBFramework-Prefix.pch -o /var/folders/2_/p69bcrjs7h79ssh44_w5x8zw0000gn/C/com.apple.DeveloperTools/5.0-5A1413/Xcode/5.0-5A1413/Xcode/SharedPrecompiledHeaders/WBFramework-Prefix-fivkgdgwqyfddxeflledzgvmolvt/WBFramework-Prefix.pch.pch36"79991FE6-3BC3-457D-B3EE-F732D872618A-
+b83FA7F5F-5EC3-4074-B98E-A54A4CB905F9
+
