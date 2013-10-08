@@ -7,7 +7,6 @@
 //
 
 #import <Parse/Parse.h>
-#import "WBPhoto.h"
 
 @interface PFObject (WBPhoto)
 

@@ -7,10 +7,10 @@
 //
 
 #import "WBSignupViewController.h"
-#import "WBDataSource.h"
-#import "WBAccountManager.h"
 #import "EmailValidator.h"
 #import "KeyboardAnimationView.h"
+#import <WBFramework/WBFramework.h>
+
 
 @interface WBSignupViewController () <UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;

@@ -9,7 +9,6 @@
 #import <UIKit/UIKit.h>
 #import "MainFeedViewController.h"
 #import "WBTheme.h"
-#import "WBDataSource.h"
 #import "WBNavigationController.h"
 #import "ActivityViewController.h"
 
