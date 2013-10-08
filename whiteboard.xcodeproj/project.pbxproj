@@ -91,6 +91,7 @@
 		DDAC836517F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.m in Sources */ = {isa = PBXBuildFile; fileRef = DDAC836417F0A9A800E91B9A /* WBPhotoDetailsCellAddComment.m */; };
 		DDAC836717F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAC836617F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib */; };
 		DDECB94B17EA521B00407255 /* WBLoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */; };
+		F4B0E5781804B271000A948B /* libWBFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EF36FE1804A35600C1866B /* libWBFramework.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -249,6 +250,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F4B0E5781804B271000A948B /* libWBFramework.a in Frameworks */,
 				BED03EC517EB9ADC00EEEACC /* MessageUI.framework in Frameworks */,
 				BED03EC317EB9AD500EEEACC /* AddressBook.framework in Frameworks */,
 				BED03EC117EB9ABE00EEEACC /* AddressBookUI.framework in Frameworks */,
