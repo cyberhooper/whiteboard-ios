@@ -92,6 +92,7 @@
 		DDAC836717F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDAC836617F0A9B300E91B9A /* WBPhotoDetailsCellAddComment.xib */; };
 		DDECB94B17EA521B00407255 /* WBLoadMoreCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DDECB94A17EA521B00407255 /* WBLoadMoreCell.xib */; };
 		F4B0E5781804B271000A948B /* libWBFramework.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99EF36FE1804A35600C1866B /* libWBFramework.a */; };
+		F4B0E5911804B5BA000A948B /* WBFramework.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F4B0E5901804B58A000A948B /* WBFramework.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -115,6 +116,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 99CF7A09180353220095500B;
 			remoteInfo = WBFrameworkTests;
+		};
+		F4B0E58C1804B58A000A948B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EF36F71804A35600C1866B /* WBFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B0E57C1804B44E000A948B;
+			remoteInfo = FrameworkResources;
+		};
+		F4B0E58F1804B58A000A948B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99EF36F71804A35600C1866B /* WBFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F4B0E57D1804B44E000A948B;
+			remoteInfo = FrameworkResources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -387,6 +402,7 @@
 			children = (
 				99EF36FE1804A35600C1866B /* libWBFramework.a */,
 				99EF37001804A35600C1866B /* WBFrameworkTests.xctest */,
+				F4B0E5901804B58A000A948B /* WBFramework.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -546,6 +562,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F4B0E58D1804B58A000A948B /* PBXTargetDependency */,
 			);
 			name = whiteboard;
 			productName = whiteboard;
@@ -625,6 +642,13 @@
 			remoteRef = 99EF36FF1804A35600C1866B /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		F4B0E5901804B58A000A948B /* WBFramework.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WBFramework.bundle;
+			remoteRef = F4B0E58F1804B58A000A948B /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -656,6 +680,7 @@
 				DDAC836217F0A4D800E91B9A /* WBPhotoDetailsCellComment.xib in Resources */,
 				BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 				218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */,
+				F4B0E5911804B5BA000A948B /* WBFramework.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -761,6 +786,11 @@
 			isa = PBXTargetDependency;
 			target = 9919151D17DA7B2A005DA25C /* whiteboard */;
 			targetProxy = 9919154417DA7B2A005DA25C /* PBXContainerItemProxy */;
+		};
+		F4B0E58D1804B58A000A948B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FrameworkResources;
+			targetProxy = F4B0E58C1804B58A000A948B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

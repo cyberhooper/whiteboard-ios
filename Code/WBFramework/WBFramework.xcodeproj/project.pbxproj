@@ -14,6 +14,7 @@
 				F4B0E5731804B07A000A948B /* ShellScript */,
 			);
 			dependencies = (
+				F4B0E58B1804B51B000A948B /* PBXTargetDependency */,
 				F4B0E5721804B065000A948B /* PBXTargetDependency */,
 			);
 			name = Framework;
@@ -95,6 +96,8 @@
 		F4B0E5691804A946000A948B /* WBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7C0518044FEF0095500B /* WBManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4B0E56A1804A946000A948B /* WBPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7C0718044FEF0095500B /* WBPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4B0E56B1804A946000A948B /* WBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7C0918044FEF0095500B /* WBUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B0E57F1804B44E000A948B /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4B0E57E1804B44E000A948B /* CoreFoundation.framework */; };
+		F4B0E5851804B44F000A948B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F4B0E5831804B44F000A948B /* InfoPlist.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,6 +114,13 @@
 			proxyType = 1;
 			remoteGlobalIDString = 99CF79F8180353210095500B;
 			remoteInfo = WBFramework;
+		};
+		F4B0E58A1804B51B000A948B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CF79F1180353210095500B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4B0E57C1804B44E000A948B;
+			remoteInfo = FrameworkResources;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -204,6 +214,11 @@
 		99CF7C0918044FEF0095500B /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
 		99CF7C0A18044FEF0095500B /* WBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUser.m; sourceTree = "<group>"; };
 		99CF7C1C180451090095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F4B0E57D1804B44E000A948B /* WBFramework.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBFramework.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B0E57E1804B44E000A948B /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		F4B0E5821804B44F000A948B /* FrameworkResources-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FrameworkResources-Info.plist"; sourceTree = "<group>"; };
+		F4B0E5841804B44F000A948B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F4B0E5861804B44F000A948B /* FrameworkResources-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FrameworkResources-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,6 +251,14 @@
 				99CF7A11180353220095500B /* libWBFramework.a in Frameworks */,
 				99CF7A0E180353220095500B /* UIKit.framework in Frameworks */,
 				99CF7A0C180353220095500B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B0E57A1804B44E000A948B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B0E57F1804B44E000A948B /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,6 +299,7 @@
 			children = (
 				99CF79FE180353210095500B /* WBFramework */,
 				99CF7A12180353220095500B /* WBFrameworkTests */,
+				F4B0E5801804B44E000A948B /* FrameworkResources */,
 				99CF79FB180353210095500B /* Frameworks */,
 				99CF79FA180353210095500B /* Products */,
 			);
@@ -286,6 +310,7 @@
 			children = (
 				99CF79F9180353210095500B /* libWBFramework.a */,
 				99CF7A09180353220095500B /* WBFrameworkTests.xctest */,
+				F4B0E57D1804B44E000A948B /* WBFramework.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -309,6 +334,7 @@
 				99CF79FC180353210095500B /* Foundation.framework */,
 				99CF7A0A180353220095500B /* XCTest.framework */,
 				99CF7A0D180353220095500B /* UIKit.framework */,
+				F4B0E57E1804B44E000A948B /* CoreFoundation.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -370,6 +396,24 @@
 				99CF7C0A18044FEF0095500B /* WBUser.m */,
 			);
 			path = Abstractions;
+			sourceTree = "<group>";
+		};
+		F4B0E5801804B44E000A948B /* FrameworkResources */ = {
+			isa = PBXGroup;
+			children = (
+				F4B0E5811804B44F000A948B /* Supporting Files */,
+			);
+			path = FrameworkResources;
+			sourceTree = "<group>";
+		};
+		F4B0E5811804B44F000A948B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4B0E5821804B44F000A948B /* FrameworkResources-Info.plist */,
+				F4B0E5831804B44F000A948B /* InfoPlist.strings */,
+				F4B0E5861804B44F000A948B /* FrameworkResources-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,6 +486,23 @@
 			productReference = 99CF7A09180353220095500B /* WBFrameworkTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F4B0E57C1804B44E000A948B /* FrameworkResources */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B0E5871804B44F000A948B /* Build configuration list for PBXNativeTarget "FrameworkResources" */;
+			buildPhases = (
+				F4B0E5791804B44E000A948B /* Sources */,
+				F4B0E57A1804B44E000A948B /* Frameworks */,
+				F4B0E57B1804B44E000A948B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FrameworkResources;
+			productName = FrameworkResources;
+			productReference = F4B0E57D1804B44E000A948B /* WBFramework.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -466,6 +527,7 @@
 				99CF79F8180353210095500B /* WBFramework */,
 				99CF7A08180353220095500B /* WBFrameworkTests */,
 				F4B0E56D1804B058000A948B /* Framework */,
+				F4B0E57C1804B44E000A948B /* FrameworkResources */,
 			);
 		};
 /* End PBXProject section */
@@ -476,6 +538,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				99CF7A17180353220095500B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4B0E57B1804B44E000A948B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B0E5851804B44F000A948B /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -553,6 +623,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F4B0E5791804B44E000A948B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -566,6 +643,11 @@
 			target = 99CF79F8180353210095500B /* WBFramework */;
 			targetProxy = F4B0E5711804B065000A948B /* PBXContainerItemProxy */;
 		};
+		F4B0E58B1804B51B000A948B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4B0E57C1804B44E000A948B /* FrameworkResources */;
+			targetProxy = F4B0E58A1804B51B000A948B /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -573,6 +655,14 @@
 			isa = PBXVariantGroup;
 			children = (
 				99CF7A16180353220095500B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F4B0E5831804B44F000A948B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B0E5841804B44F000A948B /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -750,6 +840,45 @@
 			};
 			name = Release;
 		};
+		F4B0E5881804B44F000A948B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrameworkResources/FrameworkResources-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FrameworkResources/FrameworkResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = WBFramework;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		F4B0E5891804B44F000A948B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FrameworkResources/FrameworkResources-Prefix.pch";
+				INFOPLIST_FILE = "FrameworkResources/FrameworkResources-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				PRODUCT_NAME = WBFramework;
+				SDKROOT = iphoneos;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -785,6 +914,14 @@
 			buildConfigurations = (
 				F4B0E56F1804B058000A948B /* Debug */,
 				F4B0E5701804B058000A948B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F4B0E5871804B44F000A948B /* Build configuration list for PBXNativeTarget "FrameworkResources" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B0E5881804B44F000A948B /* Debug */,
+				F4B0E5891804B44F000A948B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
