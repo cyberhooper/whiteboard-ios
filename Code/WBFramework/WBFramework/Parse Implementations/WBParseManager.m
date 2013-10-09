@@ -7,11 +7,9 @@
 //
 
 #import "WBParseManager.h"
-#import <Parse/Parse.h>
-#import "WBUser+PFUser.h"
-#import "WBPhoto+PFObject.h"
-#import "WBComment+PFObject.h"
-#import "WBParseConstants.h"
+#import "WBUser.h"
+#import "WBPhoto.h"
+#import "WBComment.h"
 #import "WBParsePushNotificationCreator.h"
 #import "WBParseAccountManager.h"
 #import "WBParseDataSource.h"
@@ -19,10 +17,9 @@
 @implementation WBParseManager
 
 + (void)initParse {
-  [[FBRequest alloc] init];
-  [[WBPhoto alloc] init];
-  [[WBComment alloc] init];
-  [[WBParsePushNotificationCreator alloc] init];
+  // Any classes that is dynamically loaded at runtime (Via NSClassFromString() for example)
+  // has to have been used at least once, otherwise it won't exist yet.
+  // This is the case for the classes below
   [[WBParseAccountManager alloc] init];
   [[WBParseDataSource alloc] init];
 }

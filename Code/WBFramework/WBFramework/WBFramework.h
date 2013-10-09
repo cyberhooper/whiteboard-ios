@@ -19,6 +19,3 @@
 #import "WBPhoto.h"
 #import "WBComment.h"
 #import "WBActivity.h"
-
-// Parse details
-#import "WBParseManager.h"
