@@ -54,27 +54,14 @@
 		99CF7A17180353220095500B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99CF7A15180353220095500B /* InfoPlist.strings */; };
 		99CF7A19180353220095500B /* WBFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7A18180353220095500B /* WBFrameworkTests.m */; };
 		99CF7C0B18044FEF0095500B /* WBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7BFE18044FEF0095500B /* WBAccountManager.m */; };
-		99CF7C0C18044FEF0095500B /* WBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7BFE18044FEF0095500B /* WBAccountManager.m */; };
 		99CF7C0D18044FEF0095500B /* WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0018044FEF0095500B /* WBActivity.m */; };
-		99CF7C0E18044FEF0095500B /* WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0018044FEF0095500B /* WBActivity.m */; };
 		99CF7C0F18044FEF0095500B /* WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0218044FEF0095500B /* WBComment.m */; };
-		99CF7C1018044FEF0095500B /* WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0218044FEF0095500B /* WBComment.m */; };
 		99CF7C1118044FEF0095500B /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0418044FEF0095500B /* WBDataSource.m */; };
-		99CF7C1218044FEF0095500B /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0418044FEF0095500B /* WBDataSource.m */; };
 		99CF7C1318044FEF0095500B /* WBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0618044FEF0095500B /* WBManager.m */; };
-		99CF7C1418044FEF0095500B /* WBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0618044FEF0095500B /* WBManager.m */; };
 		99CF7C1518044FEF0095500B /* WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0818044FEF0095500B /* WBPhoto.m */; };
-		99CF7C1618044FEF0095500B /* WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0818044FEF0095500B /* WBPhoto.m */; };
 		99CF7C1718044FEF0095500B /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0A18044FEF0095500B /* WBUser.m */; };
-		99CF7C1818044FEF0095500B /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0A18044FEF0095500B /* WBUser.m */; };
 		99CF7C1D180451090095500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7C1C180451090095500B /* UIKit.framework */; };
-		99CF7C7218045C620095500B /* WBAccountManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7BFD18044FEF0095500B /* WBAccountManager.h */; };
-		99CF7C7318045C620095500B /* WBActivity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7BFF18044FEF0095500B /* WBActivity.h */; };
-		99CF7C7418045C620095500B /* WBComment.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0118044FEF0095500B /* WBComment.h */; };
-		99CF7C7518045C620095500B /* WBDataSource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0318044FEF0095500B /* WBDataSource.h */; };
-		99CF7C7618045C620095500B /* WBManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0518044FEF0095500B /* WBManager.h */; };
-		99CF7C7718045C620095500B /* WBPhoto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0718044FEF0095500B /* WBPhoto.h */; };
-		99CF7C7818045C620095500B /* WBUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0918044FEF0095500B /* WBUser.h */; };
+		99D6DE4F1805ABAD00AF1D7F /* MyNewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D6DE4E1805ABAD00AF1D7F /* MyNewClass.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,13 +90,6 @@
 			dstPath = "include/$(PRODUCT_NAME)";
 			dstSubfolderSpec = 16;
 			files = (
-				99CF7C7218045C620095500B /* WBAccountManager.h in CopyFiles */,
-				99CF7C7318045C620095500B /* WBActivity.h in CopyFiles */,
-				99CF7C7418045C620095500B /* WBComment.h in CopyFiles */,
-				99CF7C7518045C620095500B /* WBDataSource.h in CopyFiles */,
-				99CF7C7618045C620095500B /* WBManager.h in CopyFiles */,
-				99CF7C7718045C620095500B /* WBPhoto.h in CopyFiles */,
-				99CF7C7818045C620095500B /* WBUser.h in CopyFiles */,
 				99CF7A02180353210095500B /* WBFramework.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -177,6 +157,8 @@
 		99CF7C0918044FEF0095500B /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
 		99CF7C0A18044FEF0095500B /* WBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUser.m; sourceTree = "<group>"; };
 		99CF7C1C180451090095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		99D6DE4D1805ABAD00AF1D7F /* MyNewClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyNewClass.h; sourceTree = "<group>"; };
+		99D6DE4E1805ABAD00AF1D7F /* MyNewClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyNewClass.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -291,6 +273,8 @@
 			children = (
 				99CF7A01180353210095500B /* WBFramework.h */,
 				99CF7A03180353210095500B /* WBFramework.m */,
+				99D6DE4D1805ABAD00AF1D7F /* MyNewClass.h */,
+				99D6DE4E1805ABAD00AF1D7F /* MyNewClass.m */,
 				99833014180482FC003800C0 /* Parse Implementations */,
 				99CF7BFC18044FEF0095500B /* Abstractions */,
 				99CF79FF180353210095500B /* Supporting Files */,
@@ -449,6 +433,7 @@
 				99833034180482FC003800C0 /* WBPhoto+PFObject.m in Sources */,
 				9983302E180482FC003800C0 /* PFUser+WBUser.m in Sources */,
 				99CF7C0B18044FEF0095500B /* WBAccountManager.m in Sources */,
+				99D6DE4F1805ABAD00AF1D7F /* MyNewClass.m in Sources */,
 				99833031180482FC003800C0 /* WBParseConstants.m in Sources */,
 				99833030180482FC003800C0 /* WBParseAccountManager.m in Sources */,
 				9983302B180482FC003800C0 /* PFObject+WBActivity.m in Sources */,
@@ -470,14 +455,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99CF7C1618044FEF0095500B /* WBPhoto.m in Sources */,
-				99CF7C1418044FEF0095500B /* WBManager.m in Sources */,
-				99CF7C0C18044FEF0095500B /* WBAccountManager.m in Sources */,
-				99CF7C1818044FEF0095500B /* WBUser.m in Sources */,
 				99CF7A19180353220095500B /* WBFrameworkTests.m in Sources */,
-				99CF7C1018044FEF0095500B /* WBComment.m in Sources */,
-				99CF7C0E18044FEF0095500B /* WBActivity.m in Sources */,
-				99CF7C1218044FEF0095500B /* WBDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,10 +563,11 @@
 				GCC_PREFIX_HEADER = "WBFramework/WBFramework-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
+					"$(SRCROOT)/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = $TARGET_NAME;
 				SKIP_INSTALL = YES;
 			};
 			name = Debug;
@@ -605,10 +584,11 @@
 				GCC_PREFIX_HEADER = "WBFramework/WBFramework-Prefix.pch";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(SRCROOT)",
+					"$(SRCROOT)/**",
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = $TARGET_NAME;
 				SKIP_INSTALL = YES;
 			};
 			name = Release;

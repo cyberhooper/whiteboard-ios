@@ -8,18 +8,16 @@
 
 #import <Foundation/Foundation.h>
 
+//// Services
 #import "WBManager.h"
-
-// Services
 #import "WBDataSource.h"
 #import "WBAccountManager.h"
 
-// Models
+//// Models
 #import "WBUser.h"
 #import "WBPhoto.h"
 #import "WBComment.h"
 #import "WBActivity.h"
-
 
 @interface WBFramework : NSObject
 
