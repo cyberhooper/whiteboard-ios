@@ -11,7 +11,7 @@
 			isa = PBXAggregateTarget;
 			buildConfigurationList = F4B0E56E1804B058000A948B /* Build configuration list for PBXAggregateTarget "Framework" */;
 			buildPhases = (
-				F4B0E5731804B07A000A948B /* ShellScript */,
+				F4B0E5731804B07A000A948B /* Build Framework */,
 			);
 			dependencies = (
 				F4B0E5721804B065000A948B /* PBXTargetDependency */,
@@ -29,7 +29,6 @@
 		9983302F180482FC003800C0 /* WBComment+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9983301E180482FC003800C0 /* WBComment+PFObject.m */; };
 		99833030180482FC003800C0 /* WBParseAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833020180482FC003800C0 /* WBParseAccountManager.m */; };
 		99833031180482FC003800C0 /* WBParseConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833022180482FC003800C0 /* WBParseConstants.m */; };
-		99833032180482FC003800C0 /* WBParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833024180482FC003800C0 /* WBParseDataSource.m */; };
 		99833033180482FC003800C0 /* WBParsePushNotificationCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833026180482FC003800C0 /* WBParsePushNotificationCreator.m */; };
 		99833034180482FC003800C0 /* WBPhoto+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833028180482FC003800C0 /* WBPhoto+PFObject.m */; };
 		99833035180482FC003800C0 /* WBUser+PFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9983302A180482FC003800C0 /* WBUser+PFUser.m */; };
@@ -47,7 +46,6 @@
 		99BA2A8E18048D3A00999FBC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A8D18048D3A00999FBC /* FacebookSDK.framework */; };
 		99CF79FD180353210095500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79FC180353210095500B /* Foundation.framework */; };
 		99CF7A02180353210095500B /* WBFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7A01180353210095500B /* WBFramework.h */; };
-		99CF7A04180353210095500B /* WBFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7A03180353210095500B /* WBFramework.m */; };
 		99CF7A0B180353220095500B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7A0A180353220095500B /* XCTest.framework */; };
 		99CF7A0C180353220095500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79FC180353210095500B /* Foundation.framework */; };
 		99CF7A0E180353220095500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7A0D180353220095500B /* UIKit.framework */; };
@@ -76,6 +74,9 @@
 		99CF7C7618045C620095500B /* WBManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0518044FEF0095500B /* WBManager.h */; };
 		99CF7C7718045C620095500B /* WBPhoto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0718044FEF0095500B /* WBPhoto.h */; };
 		99CF7C7818045C620095500B /* WBUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0918044FEF0095500B /* WBUser.h */; };
+		F463CF881804CDE800A682AD /* WBParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833024180482FC003800C0 /* WBParseDataSource.m */; };
+		F463CF8B1804CF5800A682AD /* WBParseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F463CF891804CF5800A682AD /* WBParseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F463CF8C1804CF5800A682AD /* WBParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F463CF8A1804CF5800A682AD /* WBParseManager.m */; };
 		F4B0E5591804A913000A948B /* WBFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7A01180353210095500B /* WBFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4B0E55A1804A939000A948B /* PFObject+WBActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833015180482FC003800C0 /* PFObject+WBActivity.h */; };
 		F4B0E55B1804A939000A948B /* PFObject+WBComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833017180482FC003800C0 /* PFObject+WBComment.h */; };
@@ -182,7 +183,6 @@
 		99CF79FC180353210095500B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99CF7A00180353210095500B /* WBFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WBFramework-Prefix.pch"; sourceTree = "<group>"; };
 		99CF7A01180353210095500B /* WBFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBFramework.h; sourceTree = "<group>"; };
-		99CF7A03180353210095500B /* WBFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBFramework.m; sourceTree = "<group>"; };
 		99CF7A09180353220095500B /* WBFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CF7A0A180353220095500B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		99CF7A0D180353220095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -204,6 +204,8 @@
 		99CF7C0918044FEF0095500B /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
 		99CF7C0A18044FEF0095500B /* WBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUser.m; sourceTree = "<group>"; };
 		99CF7C1C180451090095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F463CF891804CF5800A682AD /* WBParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBParseManager.h; sourceTree = "<group>"; };
+		F463CF8A1804CF5800A682AD /* WBParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBParseManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -267,6 +269,8 @@
 				99833028180482FC003800C0 /* WBPhoto+PFObject.m */,
 				99833029180482FC003800C0 /* WBUser+PFUser.h */,
 				9983302A180482FC003800C0 /* WBUser+PFUser.m */,
+				F463CF891804CF5800A682AD /* WBParseManager.h */,
+				F463CF8A1804CF5800A682AD /* WBParseManager.m */,
 			);
 			path = "Parse Implementations";
 			sourceTree = "<group>";
@@ -317,7 +321,6 @@
 			isa = PBXGroup;
 			children = (
 				99CF7A01180353210095500B /* WBFramework.h */,
-				99CF7A03180353210095500B /* WBFramework.m */,
 				99833014180482FC003800C0 /* Parse Implementations */,
 				99CF7BFC18044FEF0095500B /* Abstractions */,
 				99CF79FF180353210095500B /* Supporting Files */,
@@ -392,6 +395,7 @@
 				F4B0E5631804A939000A948B /* WBPhoto+PFObject.h in Headers */,
 				F4B0E5641804A939000A948B /* WBUser+PFUser.h in Headers */,
 				F4B0E5651804A946000A948B /* WBAccountManager.h in Headers */,
+				F463CF8B1804CF5800A682AD /* WBParseManager.h in Headers */,
 				F4B0E5661804A946000A948B /* WBActivity.h in Headers */,
 				F4B0E5671804A946000A948B /* WBComment.h in Headers */,
 				F4B0E5681804A946000A948B /* WBDataSource.h in Headers */,
@@ -496,13 +500,14 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
 		};
-		F4B0E5731804B07A000A948B /* ShellScript */ = {
+		F4B0E5731804B07A000A948B /* Build Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Build Framework";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,12 +533,12 @@
 				99833033180482FC003800C0 /* WBParsePushNotificationCreator.m in Sources */,
 				99833035180482FC003800C0 /* WBUser+PFUser.m in Sources */,
 				99CF7C1718044FEF0095500B /* WBUser.m in Sources */,
-				99CF7A04180353210095500B /* WBFramework.m in Sources */,
 				99CF7C0F18044FEF0095500B /* WBComment.m in Sources */,
+				F463CF8C1804CF5800A682AD /* WBParseManager.m in Sources */,
 				9983302C180482FC003800C0 /* PFObject+WBComment.m in Sources */,
 				9983302F180482FC003800C0 /* WBComment+PFObject.m in Sources */,
-				99833032180482FC003800C0 /* WBParseDataSource.m in Sources */,
 				99CF7C0D18044FEF0095500B /* WBActivity.m in Sources */,
+				F463CF881804CDE800A682AD /* WBParseDataSource.m in Sources */,
 				99CF7C1118044FEF0095500B /* WBDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -670,6 +675,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Header";
 				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
@@ -694,6 +700,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Header";
 				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";
 			};
 			name = Release;
@@ -739,14 +746,21 @@
 		F4B0E56F1804B058000A948B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
 		F4B0E5701804B058000A948B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -787,6 +801,7 @@
 				F4B0E5701804B058000A948B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
