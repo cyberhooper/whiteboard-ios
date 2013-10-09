@@ -75,8 +75,6 @@
 		99CF7C7718045C620095500B /* WBPhoto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0718044FEF0095500B /* WBPhoto.h */; };
 		99CF7C7818045C620095500B /* WBUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0918044FEF0095500B /* WBUser.h */; };
 		F463CF881804CDE800A682AD /* WBParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833024180482FC003800C0 /* WBParseDataSource.m */; };
-		F463CF8B1804CF5800A682AD /* WBParseManager.h in Headers */ = {isa = PBXBuildFile; fileRef = F463CF891804CF5800A682AD /* WBParseManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F463CF8C1804CF5800A682AD /* WBParseManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F463CF8A1804CF5800A682AD /* WBParseManager.m */; };
 		F4B0E5591804A913000A948B /* WBFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7A01180353210095500B /* WBFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F4B0E55A1804A939000A948B /* PFObject+WBActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833015180482FC003800C0 /* PFObject+WBActivity.h */; };
 		F4B0E55B1804A939000A948B /* PFObject+WBComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833017180482FC003800C0 /* PFObject+WBComment.h */; };
@@ -204,8 +202,6 @@
 		99CF7C0918044FEF0095500B /* WBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBUser.h; sourceTree = "<group>"; };
 		99CF7C0A18044FEF0095500B /* WBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUser.m; sourceTree = "<group>"; };
 		99CF7C1C180451090095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		F463CF891804CF5800A682AD /* WBParseManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBParseManager.h; sourceTree = "<group>"; };
-		F463CF8A1804CF5800A682AD /* WBParseManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBParseManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,8 +265,6 @@
 				99833028180482FC003800C0 /* WBPhoto+PFObject.m */,
 				99833029180482FC003800C0 /* WBUser+PFUser.h */,
 				9983302A180482FC003800C0 /* WBUser+PFUser.m */,
-				F463CF891804CF5800A682AD /* WBParseManager.h */,
-				F463CF8A1804CF5800A682AD /* WBParseManager.m */,
 			);
 			path = "Parse Implementations";
 			sourceTree = "<group>";
@@ -395,7 +389,6 @@
 				F4B0E5631804A939000A948B /* WBPhoto+PFObject.h in Headers */,
 				F4B0E5641804A939000A948B /* WBUser+PFUser.h in Headers */,
 				F4B0E5651804A946000A948B /* WBAccountManager.h in Headers */,
-				F463CF8B1804CF5800A682AD /* WBParseManager.h in Headers */,
 				F4B0E5661804A946000A948B /* WBActivity.h in Headers */,
 				F4B0E5671804A946000A948B /* WBComment.h in Headers */,
 				F4B0E5681804A946000A948B /* WBDataSource.h in Headers */,
@@ -534,7 +527,6 @@
 				99833035180482FC003800C0 /* WBUser+PFUser.m in Sources */,
 				99CF7C1718044FEF0095500B /* WBUser.m in Sources */,
 				99CF7C0F18044FEF0095500B /* WBComment.m in Sources */,
-				F463CF8C1804CF5800A682AD /* WBParseManager.m in Sources */,
 				9983302C180482FC003800C0 /* PFObject+WBComment.m in Sources */,
 				9983302F180482FC003800C0 /* WBComment+PFObject.m in Sources */,
 				99CF7C0D18044FEF0095500B /* WBActivity.m in Sources */,
