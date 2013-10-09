@@ -7,16 +7,17 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
-		99CF7A22180357A20095500B /* UniversalLib */ = {
+		F4B0E56D1804B058000A948B /* Framework */ = {
 			isa = PBXAggregateTarget;
-			buildConfigurationList = 99CF7A23180357A20095500B /* Build configuration list for PBXAggregateTarget "UniversalLib" */;
+			buildConfigurationList = F4B0E56E1804B058000A948B /* Build configuration list for PBXAggregateTarget "Framework" */;
 			buildPhases = (
-				99CF7A261803581A0095500B /* ShellScript */,
+				F4B0E5731804B07A000A948B /* Build Framework */,
 			);
 			dependencies = (
+				F4B0E5721804B065000A948B /* PBXTargetDependency */,
 			);
-			name = UniversalLib;
-			productName = UniversalLib;
+			name = Framework;
+			productName = Framework;
 		};
 /* End PBXAggregateTarget section */
 
@@ -28,7 +29,6 @@
 		9983302F180482FC003800C0 /* WBComment+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 9983301E180482FC003800C0 /* WBComment+PFObject.m */; };
 		99833030180482FC003800C0 /* WBParseAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833020180482FC003800C0 /* WBParseAccountManager.m */; };
 		99833031180482FC003800C0 /* WBParseConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833022180482FC003800C0 /* WBParseConstants.m */; };
-		99833032180482FC003800C0 /* WBParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833024180482FC003800C0 /* WBParseDataSource.m */; };
 		99833033180482FC003800C0 /* WBParsePushNotificationCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833026180482FC003800C0 /* WBParsePushNotificationCreator.m */; };
 		99833034180482FC003800C0 /* WBPhoto+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833028180482FC003800C0 /* WBPhoto+PFObject.m */; };
 		99833035180482FC003800C0 /* WBUser+PFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 9983302A180482FC003800C0 /* WBUser+PFUser.m */; };
@@ -46,7 +46,6 @@
 		99BA2A8E18048D3A00999FBC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A8D18048D3A00999FBC /* FacebookSDK.framework */; };
 		99CF79FD180353210095500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79FC180353210095500B /* Foundation.framework */; };
 		99CF7A02180353210095500B /* WBFramework.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7A01180353210095500B /* WBFramework.h */; };
-		99CF7A04180353210095500B /* WBFramework.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7A03180353210095500B /* WBFramework.m */; };
 		99CF7A0B180353220095500B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7A0A180353220095500B /* XCTest.framework */; };
 		99CF7A0C180353220095500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79FC180353210095500B /* Foundation.framework */; };
 		99CF7A0E180353220095500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7A0D180353220095500B /* UIKit.framework */; };
@@ -61,11 +60,44 @@
 		99CF7C1518044FEF0095500B /* WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0818044FEF0095500B /* WBPhoto.m */; };
 		99CF7C1718044FEF0095500B /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7C0A18044FEF0095500B /* WBUser.m */; };
 		99CF7C1D180451090095500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7C1C180451090095500B /* UIKit.framework */; };
-		99D6DE4F1805ABAD00AF1D7F /* MyNewClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D6DE4E1805ABAD00AF1D7F /* MyNewClass.m */; };
+		99CF7C7218045C620095500B /* WBAccountManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7BFD18044FEF0095500B /* WBAccountManager.h */; };
+		99CF7C7318045C620095500B /* WBActivity.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7BFF18044FEF0095500B /* WBActivity.h */; };
+		99CF7C7418045C620095500B /* WBComment.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0118044FEF0095500B /* WBComment.h */; };
+		99CF7C7518045C620095500B /* WBDataSource.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0318044FEF0095500B /* WBDataSource.h */; };
+		99CF7C7618045C620095500B /* WBManager.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0518044FEF0095500B /* WBManager.h */; };
+		99CF7C7718045C620095500B /* WBPhoto.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0718044FEF0095500B /* WBPhoto.h */; };
+		99CF7C7818045C620095500B /* WBUser.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 99CF7C0918044FEF0095500B /* WBUser.h */; };
+		F463CF881804CDE800A682AD /* WBParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 99833024180482FC003800C0 /* WBParseDataSource.m */; };
+		F4B0E5591804A913000A948B /* WBFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7A01180353210095500B /* WBFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B0E55A1804A939000A948B /* PFObject+WBActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833015180482FC003800C0 /* PFObject+WBActivity.h */; };
+		F4B0E55B1804A939000A948B /* PFObject+WBComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833017180482FC003800C0 /* PFObject+WBComment.h */; };
+		F4B0E55C1804A939000A948B /* PFObject+WBPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833019180482FC003800C0 /* PFObject+WBPhoto.h */; };
+		F4B0E55D1804A939000A948B /* PFUser+WBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 9983301B180482FC003800C0 /* PFUser+WBUser.h */; };
+		F4B0E55E1804A939000A948B /* WBComment+PFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 9983301D180482FC003800C0 /* WBComment+PFObject.h */; };
+		F4B0E55F1804A939000A948B /* WBParseAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9983301F180482FC003800C0 /* WBParseAccountManager.h */; };
+		F4B0E5601804A939000A948B /* WBParseConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833021180482FC003800C0 /* WBParseConstants.h */; };
+		F4B0E5611804A939000A948B /* WBParseDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833023180482FC003800C0 /* WBParseDataSource.h */; };
+		F4B0E5621804A939000A948B /* WBParsePushNotificationCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833025180482FC003800C0 /* WBParsePushNotificationCreator.h */; };
+		F4B0E5631804A939000A948B /* WBPhoto+PFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833027180482FC003800C0 /* WBPhoto+PFObject.h */; };
+		F4B0E5641804A939000A948B /* WBUser+PFUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 99833029180482FC003800C0 /* WBUser+PFUser.h */; };
+		F4B0E5651804A946000A948B /* WBAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7BFD18044FEF0095500B /* WBAccountManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B0E5661804A946000A948B /* WBActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7BFF18044FEF0095500B /* WBActivity.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B0E5671804A946000A948B /* WBComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7C0118044FEF0095500B /* WBComment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B0E5681804A946000A948B /* WBDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7C0318044FEF0095500B /* WBDataSource.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B0E5691804A946000A948B /* WBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7C0518044FEF0095500B /* WBManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B0E56A1804A946000A948B /* WBPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7C0718044FEF0095500B /* WBPhoto.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B0E56B1804A946000A948B /* WBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 99CF7C0918044FEF0095500B /* WBUser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		99CF7A0F180353220095500B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 99CF79F1180353210095500B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CF79F8180353210095500B;
+			remoteInfo = WBFramework;
+		};
+		F4B0E5711804B065000A948B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 99CF79F1180353210095500B /* Project object */;
 			proxyType = 1;
@@ -135,7 +167,6 @@
 		99CF79FC180353210095500B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		99CF7A00180353210095500B /* WBFramework-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WBFramework-Prefix.pch"; sourceTree = "<group>"; };
 		99CF7A01180353210095500B /* WBFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WBFramework.h; sourceTree = "<group>"; };
-		99CF7A03180353210095500B /* WBFramework.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBFramework.m; sourceTree = "<group>"; };
 		99CF7A09180353220095500B /* WBFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CF7A0A180353220095500B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		99CF7A0D180353220095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -272,9 +303,6 @@
 			isa = PBXGroup;
 			children = (
 				99CF7A01180353210095500B /* WBFramework.h */,
-				99CF7A03180353210095500B /* WBFramework.m */,
-				99D6DE4D1805ABAD00AF1D7F /* MyNewClass.h */,
-				99D6DE4E1805ABAD00AF1D7F /* MyNewClass.m */,
 				99833014180482FC003800C0 /* Parse Implementations */,
 				99CF7BFC18044FEF0095500B /* Abstractions */,
 				99CF79FF180353210095500B /* Supporting Files */,
@@ -331,6 +359,35 @@
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		F4B0E5581804A8DD000A948B /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B0E5591804A913000A948B /* WBFramework.h in Headers */,
+				F4B0E55A1804A939000A948B /* PFObject+WBActivity.h in Headers */,
+				F4B0E55B1804A939000A948B /* PFObject+WBComment.h in Headers */,
+				F4B0E55C1804A939000A948B /* PFObject+WBPhoto.h in Headers */,
+				F4B0E55D1804A939000A948B /* PFUser+WBUser.h in Headers */,
+				F4B0E55E1804A939000A948B /* WBComment+PFObject.h in Headers */,
+				F4B0E55F1804A939000A948B /* WBParseAccountManager.h in Headers */,
+				F4B0E5601804A939000A948B /* WBParseConstants.h in Headers */,
+				F4B0E5611804A939000A948B /* WBParseDataSource.h in Headers */,
+				F4B0E5621804A939000A948B /* WBParsePushNotificationCreator.h in Headers */,
+				F4B0E5631804A939000A948B /* WBPhoto+PFObject.h in Headers */,
+				F4B0E5641804A939000A948B /* WBUser+PFUser.h in Headers */,
+				F4B0E5651804A946000A948B /* WBAccountManager.h in Headers */,
+				F4B0E5661804A946000A948B /* WBActivity.h in Headers */,
+				F4B0E5671804A946000A948B /* WBComment.h in Headers */,
+				F4B0E5681804A946000A948B /* WBDataSource.h in Headers */,
+				F4B0E5691804A946000A948B /* WBManager.h in Headers */,
+				F4B0E56A1804A946000A948B /* WBPhoto.h in Headers */,
+				F4B0E56B1804A946000A948B /* WBUser.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
 		99CF79F8180353210095500B /* WBFramework */ = {
 			isa = PBXNativeTarget;
@@ -340,6 +397,8 @@
 				99CF79F6180353210095500B /* Frameworks */,
 				99CF79F7180353210095500B /* CopyFiles */,
 				9983303718048482003800C0 /* CopyFiles */,
+				F4B0E5581804A8DD000A948B /* Headers */,
+				F4B0E56C1804AF6A000A948B /* Prepare Framework */,
 			);
 			buildRules = (
 			);
@@ -391,7 +450,7 @@
 			targets = (
 				99CF79F8180353210095500B /* WBFramework */,
 				99CF7A08180353220095500B /* WBFrameworkTests */,
-				99CF7A22180357A20095500B /* UniversalLib */,
+				F4B0E56D1804B058000A948B /* Framework */,
 			);
 		};
 /* End PBXProject section */
@@ -408,18 +467,33 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		99CF7A261803581A0095500B /* ShellScript */ = {
+		F4B0E56C1804AF6A000A948B /* Prepare Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Prepare Framework";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# define output folder environment variable\nUNIVERSAL_OUTPUTFOLDER=${BUILD_DIR}/${CONFIGURATION}-universal\n\n# Step 1. Build Device and Simulator versions\nxcodebuild -target WBFramework ONLY_ACTIVE_ARCH=NO -configuration ${CONFIGURATION} -sdk iphoneos  BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\nxcodebuild -target WBFramework -configuration ${CONFIGURATION} -sdk iphonesimulator -arch i386 BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\"\n\n# make sure the output directory exists\nmkdir -p \"${UNIVERSAL_OUTPUTFOLDER}\"\n\n# Step 2. Create universal binary file using lipo\nlipo -create -output \"${UNIVERSAL_OUTPUTFOLDER}/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/lib${PROJECT_NAME}.a\" \"${BUILD_DIR}/${CONFIGURATION}-iphonesimulator/lib${PROJECT_NAME}.a\"\n\n# Last touch. copy the header files. Just for convenience\ncp -R \"${BUILD_DIR}/${CONFIGURATION}-iphoneos/include\" \"${UNIVERSAL_OUTPUTFOLDER}/\"";
+			shellScript = "set -e\n\nmkdir -p \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n\n# Link the \"Current\" version to \"A\"\n/bin/ln -sfh A \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/Current\"\n/bin/ln -sfh Versions/Current/Headers \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Headers\"\n/bin/ln -sfh \"Versions/Current/${PRODUCT_NAME}\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/${PRODUCT_NAME}\"\n\n# The -a ensures that the headers maintain the source modification date so that we don't constantly\n# cause propagating rebuilds of files that import these headers.\n/bin/cp -a \"${TARGET_BUILD_DIR}/${PUBLIC_HEADERS_FOLDER_PATH}/\" \"${BUILT_PRODUCTS_DIR}/${PRODUCT_NAME}.framework/Versions/A/Headers\"\n";
+		};
+		F4B0E5731804B07A000A948B /* Build Framework */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Build Framework";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e\nset +u\n# Avoid recursively calling this script.\nif [[ $SF_MASTER_SCRIPT_RUNNING ]]\nthen\nexit 0\nfi\nset -u\nexport SF_MASTER_SCRIPT_RUNNING=1\n\nSF_TARGET_NAME=${PROJECT_NAME}\nSF_EXECUTABLE_PATH=\"lib${SF_TARGET_NAME}.a\"\nSF_WRAPPER_NAME=\"${SF_TARGET_NAME}.framework\"\n\n# The following conditionals come from\n# https://github.com/kstenerud/iOS-Universal-Framework\n\nif [[ \"$SDK_NAME\" =~ ([A-Za-z]+) ]]\nthen\nSF_SDK_PLATFORM=${BASH_REMATCH[1]}\nelse\necho \"Could not find platform name from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SDK_NAME\" =~ ([0-9]+.*$) ]]\nthen\nSF_SDK_VERSION=${BASH_REMATCH[1]}\nelse\necho \"Could not find sdk version from SDK_NAME: $SDK_NAME\"\nexit 1\nfi\n\nif [[ \"$SF_SDK_PLATFORM\" = \"iphoneos\" ]]\nthen\nSF_OTHER_PLATFORM=iphonesimulator\nelse\nSF_OTHER_PLATFORM=iphoneos\nfi\n\nif [[ \"$BUILT_PRODUCTS_DIR\" =~ (.*)$SF_SDK_PLATFORM$ ]]\nthen\nSF_OTHER_BUILT_PRODUCTS_DIR=\"${BASH_REMATCH[1]}${SF_OTHER_PLATFORM}\"\nelse\necho \"Could not find platform name from build products directory: $BUILT_PRODUCTS_DIR\"\nexit 1\nfi\n\n# Build the other platform.\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -target \"${TARGET_NAME}\" -configuration \"${CONFIGURATION}\" -sdk ${SF_OTHER_PLATFORM}${SF_SDK_VERSION} BUILD_DIR=\"${BUILD_DIR}\" OBJROOT=\"${OBJROOT}\" BUILD_ROOT=\"${BUILD_ROOT}\" SYMROOT=\"${SYMROOT}\" $ACTION\n\n# Smash the two static libraries into one fat binary and store it in the .framework\nlipo -create \"${BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_EXECUTABLE_PATH}\" -output \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n\n# Copy the binary to the other architecture folder to have a complete framework in both.\ncp -a \"${BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\" \"${SF_OTHER_BUILT_PRODUCTS_DIR}/${SF_WRAPPER_NAME}/Versions/A/${SF_TARGET_NAME}\"\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -441,12 +515,11 @@
 				99833033180482FC003800C0 /* WBParsePushNotificationCreator.m in Sources */,
 				99833035180482FC003800C0 /* WBUser+PFUser.m in Sources */,
 				99CF7C1718044FEF0095500B /* WBUser.m in Sources */,
-				99CF7A04180353210095500B /* WBFramework.m in Sources */,
 				99CF7C0F18044FEF0095500B /* WBComment.m in Sources */,
 				9983302C180482FC003800C0 /* PFObject+WBComment.m in Sources */,
 				9983302F180482FC003800C0 /* WBComment+PFObject.m in Sources */,
-				99833032180482FC003800C0 /* WBParseDataSource.m in Sources */,
 				99CF7C0D18044FEF0095500B /* WBActivity.m in Sources */,
+				F463CF881804CDE800A682AD /* WBParseDataSource.m in Sources */,
 				99CF7C1118044FEF0095500B /* WBDataSource.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -466,6 +539,11 @@
 			isa = PBXTargetDependency;
 			target = 99CF79F8180353210095500B /* WBFramework */;
 			targetProxy = 99CF7A0F180353220095500B /* PBXContainerItemProxy */;
+		};
+		F4B0E5721804B065000A948B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99CF79F8180353210095500B /* WBFramework */;
+			targetProxy = F4B0E5711804B065000A948B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -554,6 +632,8 @@
 		99CF7A1D180353220095500B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/WBFramework.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -567,14 +647,18 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = $TARGET_NAME;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Header";
 				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
 			};
 			name = Debug;
 		};
 		99CF7A1E180353220095500B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/WBFramework.dst;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -588,8 +672,10 @@
 				);
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = $TARGET_NAME;
+				PUBLIC_HEADERS_FOLDER_PATH = "$(PROJECT_NAME)Header";
 				SKIP_INSTALL = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				STRIP_STYLE = "non-global";
 			};
 			name = Release;
 		};
@@ -631,17 +717,24 @@
 			};
 			name = Release;
 		};
-		99CF7A24180357A20095500B /* Debug */ = {
+		F4B0E56F1804B058000A948B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Debug;
 		};
-		99CF7A25180357A20095500B /* Release */ = {
+		F4B0E5701804B058000A948B /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
 			};
 			name = Release;
 		};
@@ -675,11 +768,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99CF7A23180357A20095500B /* Build configuration list for PBXAggregateTarget "UniversalLib" */ = {
+		F4B0E56E1804B058000A948B /* Build configuration list for PBXAggregateTarget "Framework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				99CF7A24180357A20095500B /* Debug */,
-				99CF7A25180357A20095500B /* Release */,
+				F4B0E56F1804B058000A948B /* Debug */,
+				F4B0E5701804B058000A948B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

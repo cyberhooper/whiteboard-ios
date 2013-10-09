@@ -19,8 +19,3 @@
 #import "WBComment.h"
 #import "WBActivity.h"
 
-@interface WBFramework : NSObject
-
-- (void)thisIsMyMethod;
-
-@end
