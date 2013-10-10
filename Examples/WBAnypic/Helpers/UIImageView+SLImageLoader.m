@@ -7,7 +7,7 @@
 //
 
 #import "UIImageView+SLImageLoader.h"
-#import <AFNetworking/UIImageView+AFNetworking.h>
+#import "AFNetworking/UIImageView+AFNetworking.h"
 
 @implementation UIImageView (WBImageLoader)
 
