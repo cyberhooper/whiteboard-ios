@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9919151D17DA7B2A005DA25C"
-               BuildableName = "whiteboard.app"
-               BlueprintName = "whiteboard"
-               ReferencedContainer = "container:whiteboard.xcodeproj">
+               BlueprintIdentifier = "99CF79F8180353210095500B"
+               BuildableName = "libWhiteboard.a"
+               BlueprintName = "Whiteboard"
+               ReferencedContainer = "container:Whiteboard.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -32,22 +32,13 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "9919153E17DA7B2A005DA25C"
-               BuildableName = "whiteboardTests.xctest"
-               BlueprintName = "whiteboardTests"
-               ReferencedContainer = "container:whiteboard.xcodeproj">
+               BlueprintIdentifier = "99CF7A08180353220095500B"
+               BuildableName = "WhiteboardTests.xctest"
+               BlueprintName = "WhiteboardTests"
+               ReferencedContainer = "container:Whiteboard.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9919151D17DA7B2A005DA25C"
-            BuildableName = "whiteboard.app"
-            BlueprintName = "whiteboard"
-            ReferencedContainer = "container:whiteboard.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </TestAction>
    <LaunchAction
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
@@ -58,21 +49,7 @@
       ignoresPersistentStateOnLaunch = "NO"
       debugDocumentVersioning = "YES"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9919151D17DA7B2A005DA25C"
-            BuildableName = "whiteboard.app"
-            BlueprintName = "whiteboard"
-            ReferencedContainer = "container:whiteboard.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
       <AdditionalOptions>
-         <AdditionalOption
-            key = "NSZombieEnabled"
-            value = "YES"
-            isEnabled = "YES">
-         </AdditionalOption>
       </AdditionalOptions>
    </LaunchAction>
    <ProfileAction
@@ -81,15 +58,6 @@
       useCustomWorkingDirectory = "NO"
       buildConfiguration = "Release"
       debugDocumentVersioning = "YES">
-      <BuildableProductRunnable>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "9919151D17DA7B2A005DA25C"
-            BuildableName = "whiteboard.app"
-            BlueprintName = "whiteboard"
-            ReferencedContainer = "container:whiteboard.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
