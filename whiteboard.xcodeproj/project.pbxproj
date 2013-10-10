@@ -730,11 +730,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Whiteboard-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/AFNetworking\"",
-					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/CocoaLumberjack\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/Facebook-iOS-SDK\"",
-					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/Facebook-iOS-SDK/FacebookSDK\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/FormatterKit\"",
-				);
+				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",
@@ -761,11 +757,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Whiteboard-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/AFNetworking\"",
-					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/CocoaLumberjack\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/Facebook-iOS-SDK\"",
-					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/Facebook-iOS-SDK/FacebookSDK\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/FormatterKit\"",
-				);
+				HEADER_SEARCH_PATHS = "";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",

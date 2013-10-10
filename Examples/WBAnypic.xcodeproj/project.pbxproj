@@ -864,7 +864,7 @@
 				);
 				PRODUCT_NAME = WBAnypic;
 				PROVISIONING_PROFILE = "BEFAEE8E-7BD1-4FE4-B72B-16E9BD25C772";
-				USER_HEADER_SEARCH_PATHS = "/Users/sacha/Projects/whiteboard-ios-2/Code/** /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/AFNetworking /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/CocoaLumberjack /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/FormatterKit";
+				USER_HEADER_SEARCH_PATHS = "../Code/** ../Pods/Headers ../Pods/Headers/AFNetworking ../Pods/Headers/CocoaLumberjack ../Pods/Headers/FormatterKit";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -897,7 +897,7 @@
 				);
 				PRODUCT_NAME = WBAnypic;
 				PROVISIONING_PROFILE = "BEFAEE8E-7BD1-4FE4-B72B-16E9BD25C772";
-				USER_HEADER_SEARCH_PATHS = "/Users/sacha/Projects/whiteboard-ios-2/Code/** /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/AFNetworking /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/CocoaLumberjack /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/FormatterKit";
+				USER_HEADER_SEARCH_PATHS = "../Code/** ../Pods/Headers ../Pods/Headers/AFNetworking ../Pods/Headers/CocoaLumberjack ../Pods/Headers/FormatterKit";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
