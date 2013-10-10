@@ -83,6 +83,8 @@
 		991B64391805F5E4009F7F30 /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B64371805F5E4009F7F30 /* Model.h */; };
 		991B643E1805F6A8009F7F30 /* Datasource.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B643C1805F6A8009F7F30 /* Datasource.h */; };
 		991B64431805F6F3009F7F30 /* Parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B64411805F6F3009F7F30 /* Parse.h */; };
+		999D8EAF18074A5700981101 /* WBFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 999D8EAB18074A5700981101 /* WBFrameworkTests.m */; };
+		999D8EB018074A5700981101 /* WhiteboardTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 999D8EAC18074A5700981101 /* WhiteboardTests-Info.plist */; };
 		99BA2A77180485F400999FBC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A76180485F400999FBC /* AudioToolbox.framework */; };
 		99BA2A79180485FA00999FBC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A78180485FA00999FBC /* CFNetwork.framework */; };
 		99BA2A7B1804860300999FBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A7A1804860300999FBC /* CoreGraphics.framework */; };
@@ -100,8 +102,6 @@
 		99CF7A0C180353220095500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79FC180353210095500B /* Foundation.framework */; };
 		99CF7A0E180353220095500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7A0D180353220095500B /* UIKit.framework */; };
 		99CF7A11180353220095500B /* libWhiteboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79F9180353210095500B /* libWhiteboard.a */; };
-		99CF7A17180353220095500B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 99CF7A15180353220095500B /* InfoPlist.strings */; };
-		99CF7A19180353220095500B /* WBFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99CF7A18180353220095500B /* WBFrameworkTests.m */; };
 		99CF7C1D180451090095500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7C1C180451090095500B /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -188,6 +188,9 @@
 		991B64371805F5E4009F7F30 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		991B643C1805F6A8009F7F30 /* Datasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource.h; sourceTree = "<group>"; };
 		991B64411805F6F3009F7F30 /* Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parse.h; sourceTree = "<group>"; };
+		999D8EAA18074A5700981101 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		999D8EAB18074A5700981101 /* WBFrameworkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBFrameworkTests.m; sourceTree = "<group>"; };
+		999D8EAC18074A5700981101 /* WhiteboardTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WhiteboardTests-Info.plist"; sourceTree = "<group>"; };
 		99BA2A76180485F400999FBC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		99BA2A78180485FA00999FBC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		99BA2A7A1804860300999FBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -205,9 +208,6 @@
 		99CF7A09180353220095500B /* WhiteboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CF7A0A180353220095500B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		99CF7A0D180353220095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		99CF7A14180353220095500B /* WhiteboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhiteboardTests-Info.plist"; sourceTree = "<group>"; };
-		99CF7A16180353220095500B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		99CF7A18180353220095500B /* WBFrameworkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WBFrameworkTests.m; sourceTree = "<group>"; };
 		99CF7C1C180451090095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
@@ -329,11 +329,29 @@
 			path = Parse;
 			sourceTree = "<group>";
 		};
+		999D8EA818074A5700981101 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				999D8EAB18074A5700981101 /* WBFrameworkTests.m */,
+				999D8EB118074A7200981101 /* Supporting Files */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		999D8EB118074A7200981101 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				999D8EA918074A5700981101 /* InfoPlist.strings */,
+				999D8EAC18074A5700981101 /* WhiteboardTests-Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		99CF79F0180353210095500B = {
 			isa = PBXGroup;
 			children = (
 				991B63CD1805F418009F7F30 /* Code */,
-				99CF7A12180353220095500B /* WBFrameworkTests */,
+				999D8EA818074A5700981101 /* Tests */,
 				99CF79FB180353210095500B /* Frameworks */,
 				99CF79FA180353210095500B /* Products */,
 				59B29261B8C74611B37A425A /* Pods.xcconfig */,
@@ -371,24 +389,6 @@
 				2267FD231DF54A8C9937DC62 /* libPods.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		99CF7A12180353220095500B /* WBFrameworkTests */ = {
-			isa = PBXGroup;
-			children = (
-				99CF7A18180353220095500B /* WBFrameworkTests.m */,
-				99CF7A13180353220095500B /* Supporting Files */,
-			);
-			path = WBFrameworkTests;
-			sourceTree = "<group>";
-		};
-		99CF7A13180353220095500B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				99CF7A14180353220095500B /* WhiteboardTests-Info.plist */,
-				99CF7A15180353220095500B /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -501,7 +501,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99CF7A17180353220095500B /* InfoPlist.strings in Resources */,
+				999D8EB018074A5700981101 /* WhiteboardTests-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -599,13 +599,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				991B64091805F418009F7F30 /* WBPhoto.m in Sources */,
-				99CF7A19180353220095500B /* WBFrameworkTests.m in Sources */,
 				991B642A1805F418009F7F30 /* WBPhoto+PFObject.m in Sources */,
 				991B64181805F418009F7F30 /* PFUser+WBUser.m in Sources */,
 				991B63FA1805F418009F7F30 /* WBDataSource.m in Sources */,
 				991B64211805F418009F7F30 /* WBParseConstants.m in Sources */,
 				991B641E1805F418009F7F30 /* WBParseAccountManager.m in Sources */,
 				991B640F1805F418009F7F30 /* PFObject+WBActivity.m in Sources */,
+				999D8EAF18074A5700981101 /* WBFrameworkTests.m in Sources */,
 				991B64151805F418009F7F30 /* PFObject+WBPhoto.m in Sources */,
 				991B64271805F418009F7F30 /* WBParsePushNotificationCreator.m in Sources */,
 				991B642D1805F418009F7F30 /* WBUser+PFUser.m in Sources */,
@@ -636,10 +636,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		99CF7A15180353220095500B /* InfoPlist.strings */ = {
+		999D8EA918074A5700981101 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				99CF7A16180353220095500B /* en */,
+				999D8EAA18074A5700981101 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
