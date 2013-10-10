@@ -43,6 +43,7 @@
 		994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */; };
 		995D6C2517E78AEA00550634 /* WBCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2417E78AEA00550634 /* WBCommentTests.m */; };
 		9986F2EA1806F99E00A93A82 /* libWhiteboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9986F2E51806F96400A93A82 /* libWhiteboard.a */; };
+		999D8EA11807384000981101 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 999D8EA01807384000981101 /* Settings.bundle */; };
 		99A1408017F09E5E00F1378D /* WBPhoto+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
 		99F9609617E390D7005D27EB /* WBPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9609517E390D7005D27EB /* WBPhotoTests.m */; };
@@ -172,6 +173,7 @@
 		994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParseConfiguration.plist; sourceTree = "<group>"; };
 		995D6C2417E78AEA00550634 /* WBCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommentTests.m; sourceTree = "<group>"; };
 		9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Whiteboard.xcodeproj; path = ../Whiteboard.xcodeproj; sourceTree = "<group>"; };
+		999D8EA01807384000981101 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		99A1407E17F09E5E00F1378D /* WBPhoto+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBPhoto+Utils.h"; sourceTree = "<group>"; };
 		99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBPhoto+Utils.m"; sourceTree = "<group>"; };
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
@@ -351,6 +353,7 @@
 		9919152817DA7B2A005DA25C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				999D8EA01807384000981101 /* Settings.bundle */,
 				9919152917DA7B2A005DA25C /* WBAnypic-Info.plist */,
 				994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */,
 				BE1B3FC417E27420003494CD /* WBTheme.plist */,
@@ -541,6 +544,7 @@
 				9919151A17DA7B2A005DA25C /* Sources */,
 				9919151B17DA7B2A005DA25C /* Frameworks */,
 				9919151C17DA7B2A005DA25C /* Resources */,
+				999D8EA21807386300981101 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -654,6 +658,7 @@
 				BE1B3FC517E27420003494CD /* WBTheme.plist in Resources */,
 				BED03EB217E91EFB00EEEACC /* WBProfileHeaderView.xib in Resources */,
 				DDAC836217F0A4D800E91B9A /* WBPhotoDetailsCellComment.xib in Resources */,
+				999D8EA11807384000981101 /* Settings.bundle in Resources */,
 				BE1B3F7117E22117003494CD /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 				218D5A3317E7B2BE007D17DB /* WBLoginViewController.xib in Resources */,
 			);
@@ -668,6 +673,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		999D8EA21807386300981101 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "cd $PROJECT_DIR\ncd \"$BUILT_PRODUCTS_DIR/$PRODUCT_NAME.app\"\nRELEASE_VERSION=$(/usr/libexec/PlistBuddy -c \"Print CFBundleShortVersionString\" Info.plist)\nBUILD_VERSION=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" Info.plist)\nTZ='America/New_York'\nexport TZ\nBUILD_DATE=$(date +\"%a %l:%M %b %d, %Y\")\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:1:DefaultValue $RELEASE_VERSION\" Settings.bundle/Root.plist\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:2:DefaultValue $BUILD_VERSION\" Settings.bundle/Root.plist\n/usr/libexec/PlistBuddy -c \"Set :PreferenceSpecifiers:3:DefaultValue $BUILD_DATE\" Settings.bundle/Root.plist";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9919151A17DA7B2A005DA25C /* Sources */ = {
