@@ -7,7 +7,7 @@
 //
 
 #import "WBPhotoTimelineViewController.h"
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 
 @interface ProfileViewController : WBPhotoTimelineViewController
 

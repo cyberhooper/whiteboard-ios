@@ -9,7 +9,8 @@
 #import "WBSignupViewController.h"
 #import "EmailValidator.h"
 #import "KeyboardAnimationView.h"
-#import <WBFramework/WBFramework.h>
+
+#import "Whiteboard.h"
 
 
 @interface WBSignupViewController () <UITextFieldDelegate>

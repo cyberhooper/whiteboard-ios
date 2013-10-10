@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 #import "WBTheme.h"
 #import "WBPhotoDetailsViewController.h"
 #import "ProfileViewController.h"

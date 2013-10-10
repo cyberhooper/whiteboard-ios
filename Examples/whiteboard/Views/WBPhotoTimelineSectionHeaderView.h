@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "WBPhotoTimelineSectionHeaderButton.h"
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 
 @class WBPhotoTimelineSectionHeaderView;
 

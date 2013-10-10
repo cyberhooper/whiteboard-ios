@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "UIImageView+RoundedCorners.h"
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 
 @protocol WBFriendCellDelegate;
 

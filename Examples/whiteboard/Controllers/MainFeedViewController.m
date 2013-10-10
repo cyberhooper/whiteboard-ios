@@ -8,7 +8,7 @@
 
 #import "MainFeedViewController.h"
 #import "MainFeedCell.h"
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 
 @implementation MainFeedViewController
 

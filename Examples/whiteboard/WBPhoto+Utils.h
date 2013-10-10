@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 
 @interface WBPhoto (Utils)
 

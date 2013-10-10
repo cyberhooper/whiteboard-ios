@@ -8,7 +8,7 @@
 
 #import "ActivityViewController.h"
 #import "UIImageView+WBImageLoader.h"
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 #import "WBActivityCell.h"
 #import "WBPhotoDetailsViewController.h"
 #import "ProfileViewController.h"

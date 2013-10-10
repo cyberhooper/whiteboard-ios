@@ -19,7 +19,6 @@
 		21BD8AFC17ECAECE00AC1CD8 /* WBActivityCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 21BD8AFB17ECAECE00AC1CD8 /* WBActivityCell.m */; };
 		21BD8AFE17ECAF0000AC1CD8 /* WBActivityCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21BD8AFD17ECAF0000AC1CD8 /* WBActivityCell.xib */; };
 		5B6E5B767D2D48748780E8CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B0F30985C67F4305AE5B3F10 /* libPods.a */; };
-		990F99421806012400C2ECAF /* libWhiteboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 990F993D180600EE00C2ECAF /* libWhiteboard.a */; };
 		991614CA17DE813C007FF6B5 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614C917DE813C007FF6B5 /* AudioToolbox.framework */; };
 		991614CC17DE8161007FF6B5 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CB17DE8161007FF6B5 /* CFNetwork.framework */; };
 		991614CE17DE8172007FF6B5 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 991614CD17DE8172007FF6B5 /* CoreLocation.framework */; };
@@ -44,6 +43,7 @@
 		9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940D16717DF62F1008B2825 /* WBDatasourceTests.m */; };
 		994D6C3917E23EE9005CCADF /* ParseConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */; };
 		995D6C2517E78AEA00550634 /* WBCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2417E78AEA00550634 /* WBCommentTests.m */; };
+		9986F2EA1806F99E00A93A82 /* libWhiteboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9986F2E51806F96400A93A82 /* libWhiteboard.a */; };
 		99A1408017F09E5E00F1378D /* WBPhoto+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */; };
 		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
 		99F9609617E390D7005D27EB /* WBPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9609517E390D7005D27EB /* WBPhotoTests.m */; };
@@ -95,33 +95,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		990F993C180600EE00C2ECAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 990F9936180600ED00C2ECAF /* Whiteboard.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 99CF79F9180353210095500B;
-			remoteInfo = Whiteboard;
-		};
-		990F993E180600EE00C2ECAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 990F9936180600ED00C2ECAF /* Whiteboard.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 99CF7A09180353220095500B;
-			remoteInfo = WhiteboardTests;
-		};
-		990F99401806011E00C2ECAF /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 990F9936180600ED00C2ECAF /* Whiteboard.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 99CF79F8180353210095500B;
-			remoteInfo = Whiteboard;
-		};
 		9919154417DA7B2A005DA25C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9919151617DA7B2A005DA25C /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 9919151D17DA7B2A005DA25C;
 			remoteInfo = whiteboard;
+		};
+		9986F2E41806F96400A93A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99CF79F9180353210095500B;
+			remoteInfo = Whiteboard;
+		};
+		9986F2E61806F96400A93A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 99CF7A09180353220095500B;
+			remoteInfo = WhiteboardTests;
+		};
+		9986F2E81806F97300A93A82 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 99CF79F8180353210095500B;
+			remoteInfo = Whiteboard;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -144,7 +144,6 @@
 		21BD8AFA17ECAECE00AC1CD8 /* WBActivityCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBActivityCell.h; sourceTree = "<group>"; };
 		21BD8AFB17ECAECE00AC1CD8 /* WBActivityCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBActivityCell.m; sourceTree = "<group>"; };
 		21BD8AFD17ECAF0000AC1CD8 /* WBActivityCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBActivityCell.xib; sourceTree = "<group>"; };
-		990F9936180600ED00C2ECAF /* Whiteboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Whiteboard.xcodeproj; path = Code/WBFramework/Whiteboard.xcodeproj; sourceTree = "<group>"; };
 		991614C917DE813C007FF6B5 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		991614CB17DE8161007FF6B5 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		991614CD17DE8172007FF6B5 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -173,6 +172,7 @@
 		9940D16717DF62F1008B2825 /* WBDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDatasourceTests.m; sourceTree = "<group>"; };
 		994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParseConfiguration.plist; sourceTree = "<group>"; };
 		995D6C2417E78AEA00550634 /* WBCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommentTests.m; sourceTree = "<group>"; };
+		9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Whiteboard.xcodeproj; path = ../Whiteboard.xcodeproj; sourceTree = "<group>"; };
 		99A1407E17F09E5E00F1378D /* WBPhoto+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBPhoto+Utils.h"; sourceTree = "<group>"; };
 		99A1407F17F09E5E00F1378D /* WBPhoto+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBPhoto+Utils.m"; sourceTree = "<group>"; };
 		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
@@ -257,7 +257,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				990F99421806012400C2ECAF /* libWhiteboard.a in Frameworks */,
+				9986F2EA1806F99E00A93A82 /* libWhiteboard.a in Frameworks */,
 				BED03EC517EB9ADC00EEEACC /* MessageUI.framework in Frameworks */,
 				BED03EC317EB9AD500EEEACC /* AddressBook.framework in Frameworks */,
 				BED03EC117EB9ABE00EEEACC /* AddressBookUI.framework in Frameworks */,
@@ -291,19 +291,10 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		990F9937180600ED00C2ECAF /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				990F993D180600EE00C2ECAF /* libWhiteboard.a */,
-				990F993F180600EE00C2ECAF /* WhiteboardTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		9919151517DA7B2A005DA25C = {
 			isa = PBXGroup;
 			children = (
-				990F9936180600ED00C2ECAF /* Whiteboard.xcodeproj */,
+				9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */,
 				9919152717DA7B2A005DA25C /* whiteboard */,
 				9919154617DA7B2A005DA25C /* whiteboardTests */,
 				9919152017DA7B2A005DA25C /* Frameworks */,
@@ -396,6 +387,15 @@
 				9919154917DA7B2B005DA25C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9986F2DF1806F96400A93A82 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9986F2E51806F96400A93A82 /* libWhiteboard.a */,
+				9986F2E71806F96400A93A82 /* WhiteboardTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		BE1B3F6017E22117003494CD /* Views */ = {
@@ -553,7 +553,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				990F99411806011E00C2ECAF /* PBXTargetDependency */,
+				9986F2E91806F97300A93A82 /* PBXTargetDependency */,
 			);
 			name = whiteboard;
 			productName = whiteboard;
@@ -606,8 +606,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 990F9937180600ED00C2ECAF /* Products */;
-					ProjectRef = 990F9936180600ED00C2ECAF /* Whiteboard.xcodeproj */;
+					ProductGroup = 9986F2DF1806F96400A93A82 /* Products */;
+					ProjectRef = 9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -619,18 +619,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		990F993D180600EE00C2ECAF /* libWhiteboard.a */ = {
+		9986F2E51806F96400A93A82 /* libWhiteboard.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
 			path = libWhiteboard.a;
-			remoteRef = 990F993C180600EE00C2ECAF /* PBXContainerItemProxy */;
+			remoteRef = 9986F2E41806F96400A93A82 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		990F993F180600EE00C2ECAF /* WhiteboardTests.xctest */ = {
+		9986F2E71806F96400A93A82 /* WhiteboardTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = WhiteboardTests.xctest;
-			remoteRef = 990F993E180600EE00C2ECAF /* PBXContainerItemProxy */;
+			remoteRef = 9986F2E61806F96400A93A82 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -765,15 +765,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		990F99411806011E00C2ECAF /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Whiteboard;
-			targetProxy = 990F99401806011E00C2ECAF /* PBXContainerItemProxy */;
-		};
 		9919154517DA7B2A005DA25C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 9919151D17DA7B2A005DA25C /* whiteboard */;
 			targetProxy = 9919154417DA7B2A005DA25C /* PBXContainerItemProxy */;
+		};
+		9986F2E91806F97300A93A82 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Whiteboard;
+			targetProxy = 9986F2E81806F97300A93A82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

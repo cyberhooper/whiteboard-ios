@@ -10,7 +10,7 @@
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "WBPhotoTimelineCell.h"
 #import "UIImageView+WBImageLoader.h"
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 #import "WBLoginViewController.h"
 #import "WBLoadMoreCell.h"
 #import "ProfileViewController.h"

@@ -7,7 +7,7 @@
 //
 
 #import "WBTabBarController.h"
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 
 @interface WBTabBarController ()
 

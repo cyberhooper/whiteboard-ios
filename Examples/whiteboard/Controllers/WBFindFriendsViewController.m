@@ -7,7 +7,7 @@
 //
 
 #import "WBFindFriendsViewController.h"
-#import <WBFramework/WBFramework.h>
+#import "Whiteboard.h"
 #import "UIImageView+WBImageLoader.h"
 #import "ProfileViewController.h"
 
