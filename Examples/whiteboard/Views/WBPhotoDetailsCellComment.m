@@ -8,7 +8,7 @@
 
 #import "WBPhotoDetailsCellComment.h"
 #import "UIImageView+RoundedCorners.h"
-#import <FormatterKit/TTTTimeIntervalFormatter.h>
+#import "FormatterKit/TTTTimeIntervalFormatter.h"
 
 #define kMessageLabelWidth 220.f
 #define kMessageLabelBottomPadding 60.f

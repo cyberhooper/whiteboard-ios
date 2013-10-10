@@ -22,6 +22,7 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		64308489BA3D465D932E363A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2267FD231DF54A8C9937DC62 /* libPods.a */; };
 		991B63F81805F418009F7F30 /* WBDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63CF1805F418009F7F30 /* WBDataSource.h */; };
 		991B63F91805F418009F7F30 /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D01805F418009F7F30 /* WBDataSource.m */; };
 		991B63FA1805F418009F7F30 /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D01805F418009F7F30 /* WBDataSource.m */; };
@@ -143,6 +144,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2267FD231DF54A8C9937DC62 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B29261B8C74611B37A425A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		991B63CF1805F418009F7F30 /* WBDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataSource.h; sourceTree = "<group>"; };
 		991B63D01805F418009F7F30 /* WBDataSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDataSource.m; sourceTree = "<group>"; };
 		991B63D21805F418009F7F30 /* WBAccountManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBAccountManager.h; sourceTree = "<group>"; };
@@ -227,6 +230,7 @@
 				99CF7C1D180451090095500B /* UIKit.framework in Frameworks */,
 				99CF79FD180353210095500B /* Foundation.framework in Frameworks */,
 				99BA2A8E18048D3A00999FBC /* FacebookSDK.framework in Frameworks */,
+				64308489BA3D465D932E363A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +336,7 @@
 				99CF7A12180353220095500B /* WBFrameworkTests */,
 				99CF79FB180353210095500B /* Frameworks */,
 				99CF79FA180353210095500B /* Products */,
+				59B29261B8C74611B37A425A /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -363,6 +368,7 @@
 				99CF79FC180353210095500B /* Foundation.framework */,
 				99CF7A0A180353220095500B /* XCTest.framework */,
 				99CF7A0D180353220095500B /* UIKit.framework */,
+				2267FD231DF54A8C9937DC62 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -426,12 +432,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99CF7A1C180353220095500B /* Build configuration list for PBXNativeTarget "Whiteboard" */;
 			buildPhases = (
+				0D1A4081ADD840FA9802D2E8 /* Check Pods Manifest.lock */,
 				99CF79F5180353210095500B /* Sources */,
 				99CF79F6180353210095500B /* Frameworks */,
 				99CF79F7180353210095500B /* CopyFiles */,
 				9983303718048482003800C0 /* CopyFiles */,
 				F4B0E5581804A8DD000A948B /* Headers */,
 				F4B0E56C1804AF6A000A948B /* Prepare Framework */,
+				36C169B7B8CB4059B7BCF306 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -500,6 +508,36 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0D1A4081ADD840FA9802D2E8 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		36C169B7B8CB4059B7BCF306 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		F4B0E56C1804AF6A000A948B /* Prepare Framework */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -681,6 +719,7 @@
 		};
 		99CF7A1D180353220095500B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B29261B8C74611B37A425A /* Pods.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
@@ -691,6 +730,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Whiteboard-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/AFNetworking\"",
+					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/CocoaLumberjack\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/Facebook-iOS-SDK\"",
+					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/Facebook-iOS-SDK/FacebookSDK\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/FormatterKit\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",
@@ -706,6 +750,7 @@
 		};
 		99CF7A1E180353220095500B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B29261B8C74611B37A425A /* Pods.xcconfig */;
 			buildSettings = {
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
@@ -716,6 +761,11 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Whiteboard-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/AFNetworking\"",
+					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/CocoaLumberjack\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/Facebook-iOS-SDK\"",
+					"/Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/Facebook-iOS-SDK/FacebookSDK\" /Users/sacha/Projects/whiteboard-ios-2/Pods/Headers/FormatterKit\"",
+				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/**",

@@ -8,7 +8,7 @@
 
 #import "WBPhotoTimelineSectionHeaderView.h"
 #import "UIImageView+RoundedCorners.h"
-#import <FormatterKit/TTTTimeIntervalFormatter.h>
+#import "FormatterKit/TTTTimeIntervalFormatter.h"
 
 @interface WBPhotoTimelineSectionHeaderView() <WBPhotoTimelineSectionHeaderButtonDelegate>
 @property (nonatomic, weak) IBOutlet UILabel *displayNameLabel;
