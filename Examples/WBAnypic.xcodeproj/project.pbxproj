@@ -154,20 +154,20 @@
 		991614D717DE81A1007FF6B5 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		991614D917DE81AB007FF6B5 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		991614DB17DE82B4007FF6B5 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
-		9919151E17DA7B2A005DA25C /* whiteboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = whiteboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9919151E17DA7B2A005DA25C /* WBAnypic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBAnypic.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9919152117DA7B2A005DA25C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9919152317DA7B2A005DA25C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9919152517DA7B2A005DA25C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9919152917DA7B2A005DA25C /* whiteboard-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whiteboard-Info.plist"; sourceTree = "<group>"; };
+		9919152917DA7B2A005DA25C /* WBAnypic-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WBAnypic-Info.plist"; sourceTree = "<group>"; };
 		9919152B17DA7B2A005DA25C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9919152D17DA7B2A005DA25C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9919152F17DA7B2A005DA25C /* whiteboard-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "whiteboard-Prefix.pch"; sourceTree = "<group>"; };
+		9919152F17DA7B2A005DA25C /* WBAnypic-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WBAnypic-Prefix.pch"; sourceTree = "<group>"; };
 		9919153017DA7B2A005DA25C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9919153117DA7B2A005DA25C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		9919153917DA7B2A005DA25C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		9919153F17DA7B2A005DA25C /* whiteboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = whiteboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9919153F17DA7B2A005DA25C /* WBAnypicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBAnypicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9919154017DA7B2A005DA25C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9919154817DA7B2B005DA25C /* whiteboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "whiteboardTests-Info.plist"; sourceTree = "<group>"; };
+		9919154817DA7B2B005DA25C /* WBAnypicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WBAnypicTests-Info.plist"; sourceTree = "<group>"; };
 		9919154A17DA7B2B005DA25C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9940D16717DF62F1008B2825 /* WBDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDatasourceTests.m; sourceTree = "<group>"; };
 		994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParseConfiguration.plist; sourceTree = "<group>"; };
@@ -306,8 +306,8 @@
 		9919151F17DA7B2A005DA25C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9919151E17DA7B2A005DA25C /* whiteboard.app */,
-				9919153F17DA7B2A005DA25C /* whiteboardTests.xctest */,
+				9919151E17DA7B2A005DA25C /* WBAnypic.app */,
+				9919153F17DA7B2A005DA25C /* WBAnypicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -357,12 +357,12 @@
 		9919152817DA7B2A005DA25C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9919152917DA7B2A005DA25C /* whiteboard-Info.plist */,
+				9919152917DA7B2A005DA25C /* WBAnypic-Info.plist */,
 				994D6C3817E23EE9005CCADF /* ParseConfiguration.plist */,
 				BE1B3FC417E27420003494CD /* WBTheme.plist */,
 				9919152A17DA7B2A005DA25C /* InfoPlist.strings */,
 				9919152D17DA7B2A005DA25C /* main.m */,
-				9919152F17DA7B2A005DA25C /* whiteboard-Prefix.pch */,
+				9919152F17DA7B2A005DA25C /* WBAnypic-Prefix.pch */,
 				BED03EA417E8BDB300EEEACC /* Localizable.strings */,
 			);
 			name = "Supporting Files";
@@ -383,7 +383,7 @@
 		9919154717DA7B2B005DA25C /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				9919154817DA7B2B005DA25C /* whiteboardTests-Info.plist */,
+				9919154817DA7B2B005DA25C /* WBAnypicTests-Info.plist */,
 				9919154917DA7B2B005DA25C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -540,9 +540,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9919151D17DA7B2A005DA25C /* whiteboard */ = {
+		9919151D17DA7B2A005DA25C /* WBAnypic */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9919155017DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "whiteboard" */;
+			buildConfigurationList = 9919155017DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "WBAnypic" */;
 			buildPhases = (
 				31FEC07121E64B94ACAAF786 /* Check Pods Manifest.lock */,
 				9919151A17DA7B2A005DA25C /* Sources */,
@@ -555,14 +555,14 @@
 			dependencies = (
 				9986F2E91806F97300A93A82 /* PBXTargetDependency */,
 			);
-			name = whiteboard;
+			name = WBAnypic;
 			productName = whiteboard;
-			productReference = 9919151E17DA7B2A005DA25C /* whiteboard.app */;
+			productReference = 9919151E17DA7B2A005DA25C /* WBAnypic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9919153E17DA7B2A005DA25C /* whiteboardTests */ = {
+		9919153E17DA7B2A005DA25C /* WBAnypicTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9919155317DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "whiteboardTests" */;
+			buildConfigurationList = 9919155317DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "WBAnypicTests" */;
 			buildPhases = (
 				9919153B17DA7B2A005DA25C /* Sources */,
 				9919153C17DA7B2A005DA25C /* Frameworks */,
@@ -573,9 +573,9 @@
 			dependencies = (
 				9919154517DA7B2A005DA25C /* PBXTargetDependency */,
 			);
-			name = whiteboardTests;
+			name = WBAnypicTests;
 			productName = whiteboardTests;
-			productReference = 9919153F17DA7B2A005DA25C /* whiteboardTests.xctest */;
+			productReference = 9919153F17DA7B2A005DA25C /* WBAnypicTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -593,7 +593,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9919151917DA7B2A005DA25C /* Build configuration list for PBXProject "whiteboard" */;
+			buildConfigurationList = 9919151917DA7B2A005DA25C /* Build configuration list for PBXProject "WBAnypic" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -612,8 +612,8 @@
 			);
 			projectRoot = "";
 			targets = (
-				9919151D17DA7B2A005DA25C /* whiteboard */,
-				9919153E17DA7B2A005DA25C /* whiteboardTests */,
+				9919151D17DA7B2A005DA25C /* WBAnypic */,
+				9919153E17DA7B2A005DA25C /* WBAnypicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -767,7 +767,7 @@
 /* Begin PBXTargetDependency section */
 		9919154517DA7B2A005DA25C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 9919151D17DA7B2A005DA25C /* whiteboard */;
+			target = 9919151D17DA7B2A005DA25C /* WBAnypic */;
 			targetProxy = 9919154417DA7B2A005DA25C /* PBXContainerItemProxy */;
 		};
 		9986F2E91806F97300A93A82 /* PBXTargetDependency */ = {
@@ -887,9 +887,9 @@
 					$SRCROOT,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
+				GCC_PREFIX_HEADER = "whiteboard/WBAnypic-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
-				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
+				INFOPLIST_FILE = "whiteboard/WBAnypic-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
@@ -902,7 +902,7 @@
 					SystemConfiguration,
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WBAnypic;
 				PROVISIONING_PROFILE = "BEFAEE8E-7BD1-4FE4-B72B-16E9BD25C772";
 				USER_HEADER_SEARCH_PATHS = "/Users/sacha/Projects/whiteboard-ios-2/Code/**";
 				WRAPPER_EXTENSION = app;
@@ -921,9 +921,9 @@
 					$SRCROOT,
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
+				GCC_PREFIX_HEADER = "whiteboard/WBAnypic-Prefix.pch";
 				GCC_TREAT_WARNINGS_AS_ERRORS = NO;
-				INFOPLIST_FILE = "whiteboard/whiteboard-Info.plist";
+				INFOPLIST_FILE = "whiteboard/WBAnypic-Info.plist";
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"-framework",
@@ -936,7 +936,7 @@
 					SystemConfiguration,
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = WBAnypic;
 				PROVISIONING_PROFILE = "BEFAEE8E-7BD1-4FE4-B72B-16E9BD25C772";
 				USER_HEADER_SEARCH_PATHS = "/Users/sacha/Projects/whiteboard-ios-2/Code/**";
 				WRAPPER_EXTENSION = app;
@@ -958,8 +958,8 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "whiteboardTests/whiteboardTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "whiteboardTests/WBAnypicTests-Info.plist";
+				PRODUCT_NAME = WBAnypicTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -976,8 +976,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
-				INFOPLIST_FILE = "whiteboardTests/whiteboardTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				INFOPLIST_FILE = "whiteboardTests/WBAnypicTests-Info.plist";
+				PRODUCT_NAME = WBAnypicTests;
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
 			};
@@ -986,7 +986,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9919151917DA7B2A005DA25C /* Build configuration list for PBXProject "whiteboard" */ = {
+		9919151917DA7B2A005DA25C /* Build configuration list for PBXProject "WBAnypic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9919154E17DA7B2B005DA25C /* Debug */,
@@ -995,7 +995,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9919155017DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "whiteboard" */ = {
+		9919155017DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "WBAnypic" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9919155117DA7B2B005DA25C /* Debug */,
@@ -1004,7 +1004,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9919155317DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "whiteboardTests" */ = {
+		9919155317DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "WBAnypicTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9919155417DA7B2B005DA25C /* Debug */,
