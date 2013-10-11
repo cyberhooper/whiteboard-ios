@@ -20,10 +20,6 @@
 		9919152217DA7B2A005DA25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152117DA7B2A005DA25C /* Foundation.framework */; };
 		9919152417DA7B2A005DA25C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152317DA7B2A005DA25C /* CoreGraphics.framework */; };
 		9919152617DA7B2A005DA25C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152517DA7B2A005DA25C /* UIKit.framework */; };
-		9919154117DA7B2A005DA25C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919154017DA7B2A005DA25C /* XCTest.framework */; };
-		9919154217DA7B2A005DA25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152117DA7B2A005DA25C /* Foundation.framework */; };
-		9919154317DA7B2A005DA25C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152517DA7B2A005DA25C /* UIKit.framework */; };
-		9919154B17DA7B2B005DA25C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9919154917DA7B2B005DA25C /* InfoPlist.strings */; };
 		9940AE5C1807502B008881EB /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940ADED1807502B008881EB /* ActivityViewController.m */; };
 		9940AE5D1807502B008881EB /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9940ADEE1807502B008881EB /* ActivityViewController.xib */; };
 		9940AE5E1807502B008881EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940ADF01807502B008881EB /* AppDelegate.m */; };
@@ -87,7 +83,6 @@
 		9940AE981807502B008881EB /* WBPhoto+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE581807502B008881EB /* WBPhoto+Utils.m */; };
 		9940AE991807502B008881EB /* WBTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE591807502B008881EB /* WBTheme.plist */; };
 		9940AE9A1807502B008881EB /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE5B1807502B008881EB /* WBViewController.m */; };
-		9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940D16717DF62F1008B2825 /* WBDatasourceTests.m */; };
 		9986F2EA1806F99E00A93A82 /* libWhiteboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9986F2E51806F96400A93A82 /* libWhiteboard.a */; };
 		BED03EC117EB9ABE00EEEACC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */; };
 		BED03EC317EB9AD500EEEACC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC217EB9AD500EEEACC /* AddressBook.framework */; };
@@ -95,13 +90,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		9919154417DA7B2A005DA25C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9919151617DA7B2A005DA25C /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 9919151D17DA7B2A005DA25C;
-			remoteInfo = whiteboard;
-		};
 		9986F2E41806F96400A93A82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */;
@@ -140,10 +128,7 @@
 		9919152117DA7B2A005DA25C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		9919152317DA7B2A005DA25C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9919152517DA7B2A005DA25C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		9919153F17DA7B2A005DA25C /* WBAnypicTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBAnypicTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9919154017DA7B2A005DA25C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9919154817DA7B2B005DA25C /* WBAnypicTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WBAnypicTests-Info.plist"; sourceTree = "<group>"; };
-		9919154A17DA7B2B005DA25C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9940ADEC1807502B008881EB /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
 		9940ADED1807502B008881EB /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		9940ADEE1807502B008881EB /* ActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
@@ -243,7 +228,6 @@
 		9940AE591807502B008881EB /* WBTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WBTheme.plist; sourceTree = "<group>"; };
 		9940AE5A1807502B008881EB /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
 		9940AE5B1807502B008881EB /* WBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewController.m; sourceTree = "<group>"; };
-		9940D16717DF62F1008B2825 /* WBDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDatasourceTests.m; sourceTree = "<group>"; };
 		9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Whiteboard.xcodeproj; path = ../Whiteboard.xcodeproj; sourceTree = "<group>"; };
 		BE1B3FCF17E395A9003494CD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
@@ -276,16 +260,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9919153C17DA7B2A005DA25C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9919154117DA7B2A005DA25C /* XCTest.framework in Frameworks */,
-				9919154317DA7B2A005DA25C /* UIKit.framework in Frameworks */,
-				9919154217DA7B2A005DA25C /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -294,7 +268,6 @@
 			children = (
 				9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */,
 				9940ADEA1807502B008881EB /* WBAnypic */,
-				9919154617DA7B2A005DA25C /* whiteboardTests */,
 				9919152017DA7B2A005DA25C /* Frameworks */,
 				9919151F17DA7B2A005DA25C /* Products */,
 			);
@@ -304,7 +277,6 @@
 			isa = PBXGroup;
 			children = (
 				9919151E17DA7B2A005DA25C /* WBAnypic.app */,
-				9919153F17DA7B2A005DA25C /* WBAnypicTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -332,24 +304,6 @@
 				9919154017DA7B2A005DA25C /* XCTest.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9919154617DA7B2A005DA25C /* whiteboardTests */ = {
-			isa = PBXGroup;
-			children = (
-				9940D16717DF62F1008B2825 /* WBDatasourceTests.m */,
-				9919154717DA7B2B005DA25C /* Supporting Files */,
-			);
-			path = whiteboardTests;
-			sourceTree = "<group>";
-		};
-		9919154717DA7B2B005DA25C /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9919154817DA7B2B005DA25C /* WBAnypicTests-Info.plist */,
-				9919154917DA7B2B005DA25C /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9940ADEA1807502B008881EB /* WBAnypic */ = {
@@ -593,24 +547,6 @@
 			productReference = 9919151E17DA7B2A005DA25C /* WBAnypic.app */;
 			productType = "com.apple.product-type.application";
 		};
-		9919153E17DA7B2A005DA25C /* WBAnypicTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 9919155317DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "WBAnypicTests" */;
-			buildPhases = (
-				9919153B17DA7B2A005DA25C /* Sources */,
-				9919153C17DA7B2A005DA25C /* Frameworks */,
-				9919153D17DA7B2A005DA25C /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				9919154517DA7B2A005DA25C /* PBXTargetDependency */,
-			);
-			name = WBAnypicTests;
-			productName = whiteboardTests;
-			productReference = 9919153F17DA7B2A005DA25C /* WBAnypicTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -620,11 +556,6 @@
 				CLASSPREFIX = WB;
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Fueled;
-				TargetAttributes = {
-					9919153E17DA7B2A005DA25C = {
-						TestTargetID = 9919151D17DA7B2A005DA25C;
-					};
-				};
 			};
 			buildConfigurationList = 9919151917DA7B2A005DA25C /* Build configuration list for PBXProject "WBAnypic" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -646,7 +577,6 @@
 			projectRoot = "";
 			targets = (
 				9919151D17DA7B2A005DA25C /* WBAnypic */,
-				9919153E17DA7B2A005DA25C /* WBAnypicTests */,
 			);
 		};
 /* End PBXProject section */
@@ -700,14 +630,6 @@
 				9940AE8C1807502B008881EB /* WBPhotoDetailsCellComment.xib in Resources */,
 				9940AE5F1807502B008881EB /* InfoPlist.strings in Resources */,
 				9940AE6D1807502B008881EB /* WBLoginViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		9919153D17DA7B2A005DA25C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9919154B17DA7B2B005DA25C /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -773,22 +695,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		9919153B17DA7B2A005DA25C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		9919154517DA7B2A005DA25C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 9919151D17DA7B2A005DA25C /* WBAnypic */;
-			targetProxy = 9919154417DA7B2A005DA25C /* PBXContainerItemProxy */;
-		};
 		9986F2E91806F97300A93A82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Whiteboard;
@@ -797,14 +706,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9919154917DA7B2B005DA25C /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9919154A17DA7B2B005DA25C /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		9940ADF11807502B008881EB /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -960,46 +861,6 @@
 			};
 			name = Release;
 		};
-		9919155417DA7B2B005DA25C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/whiteboard.app/whiteboard";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "whiteboardTests/WBAnypicTests-Info.plist";
-				PRODUCT_NAME = WBAnypicTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		9919155517DA7B2B005DA25C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/whiteboard.app/whiteboard";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "whiteboard/whiteboard-Prefix.pch";
-				INFOPLIST_FILE = "whiteboardTests/WBAnypicTests-Info.plist";
-				PRODUCT_NAME = WBAnypicTests;
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1017,15 +878,6 @@
 			buildConfigurations = (
 				9919155117DA7B2B005DA25C /* Debug */,
 				9919155217DA7B2B005DA25C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		9919155317DA7B2B005DA25C /* Build configuration list for PBXNativeTarget "WBAnypicTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				9919155417DA7B2B005DA25C /* Debug */,
-				9919155517DA7B2B005DA25C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
