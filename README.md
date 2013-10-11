@@ -1,6 +1,8 @@
 # Whiteboard iOS
 
-Whiteboard provide a full data access thrue Parse to create a Intagram-like application. 
-That's mean upload picture, comment, like, add and remove follower. 
+Whiteboard is Fueled's standard starting project for photo sharing platforms. That's mean upload picture, comment, like, add and remove follower. 
+It was meant to be modular and easy to modify. Whiteboard comes with a data source/database built from Parse, but can be modified to use other backend services (such as a custom backend) or other methods of data storage (such as Core Data).
+
+## Documentation 
 
 
