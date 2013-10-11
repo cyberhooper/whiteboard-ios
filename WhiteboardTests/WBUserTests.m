@@ -20,6 +20,12 @@
 - (void)setUp {
   [super setUp];
   user = [[WBUser alloc] init];
+  user.userID = @"something34";
+  user.displayName = @"My name";
+  user.username = @"username";
+  user.firstName = @"John";
+  user.lastName = @"Smith";
+  user.email = @"john.smith@gmail.com";
 }
 
 - (void)tearDown{
@@ -32,32 +38,26 @@
 }
 
 - (void)testUserHasAUserID {
-  user.userID = @"something34";
   XCTAssertEqualObjects(user.userID, @"something34", @"A User should have a userID");
 }
 
 - (void)testUserHasADisplayName {
-  user.displayName = @"My name";
   XCTAssertEqualObjects(user.displayName, @"My name", @"A User should have a display name");
 }
 
 - (void)testUserHasAUserName {
-  user.username = @"username";
   XCTAssertEqualObjects(user.username, @"username", @"A User should have a username");
 }
 
 - (void)testUserHasAFirstName {
-  user.firstName = @"John";
   XCTAssertEqualObjects(user.firstName , @"John", @"A User should have a firstName");
 }
 
 - (void)testUserHasALastName {
-  user.lastName = @"Smith";
   XCTAssertEqualObjects(user.lastName , @"Smith", @"A User should have a lastName");
 }
 
 - (void)testUserHasAEmail {
-  user.email = @"john.smith@gmail.com";
   XCTAssertEqualObjects(user.email , @"john.smith@gmail.com", @"A User should have an email");
 }
 
@@ -89,6 +89,18 @@
   XCTAssertEqualObjects(user.numberFollowing, @26, @"User should have a number following");
 }
 
+- (void)testUserCanBeFollowed {
+  user.isFollowed = YES;
+  XCTAssertTrue(user.isFollowed, @"User should be able to be followed");
+}
+
+- (void)testUsersAreEqualIfTheyHaveTheSameID {
+  WBUser *user2 = [[WBUser alloc] init];
+  user2.userID = @"foo";
+  XCTAssertNotEqualObjects(user, user2, @"Users with different IDs should not be equal");
+  user2.userID = @"something34";
+  XCTAssertEqualObjects(user, user2, @"Users with same IDs should be equal");
+}
 
 @end
 

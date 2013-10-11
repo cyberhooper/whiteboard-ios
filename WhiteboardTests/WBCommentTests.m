@@ -1,8 +1,8 @@
 //
 //  WBCommentTests.m
-//  whiteboard
+//  Whiteboard
 //
-//  Created by Sacha Durand Saint Omer on 9/16/13.
+//  Created by Sacha Durand Saint Omer on 10/11/13.
 //  Copyright (c) 2013 Fueled. All rights reserved.
 //
 
@@ -50,11 +50,12 @@
   XCTAssertEqualObjects(user, comment.author, @"Comment should have an author");
 }
 
-- (void)testCommentHAsACreationDate {
-  XCTAssertEqualObjects(date, comment.createdAt, @"Comment should have a creation date");
-}
 - (void)testCommentHAsAText {
   XCTAssertEqualObjects(@"Super idée !", comment.text, @"Comment should have a text");
+}
+
+- (void)testCommentHAsACreationDate {
+  XCTAssertEqualObjects(date, comment.createdAt, @"Comment should have a creation date");
 }
 
 @end

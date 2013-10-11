@@ -88,10 +88,7 @@
 		9940AE991807502B008881EB /* WBTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE591807502B008881EB /* WBTheme.plist */; };
 		9940AE9A1807502B008881EB /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE5B1807502B008881EB /* WBViewController.m */; };
 		9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940D16717DF62F1008B2825 /* WBDatasourceTests.m */; };
-		995D6C2517E78AEA00550634 /* WBCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 995D6C2417E78AEA00550634 /* WBCommentTests.m */; };
 		9986F2EA1806F99E00A93A82 /* libWhiteboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9986F2E51806F96400A93A82 /* libWhiteboard.a */; };
-		99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99D80C7017DE0EA200809322 /* UserImplementationTests.m */; };
-		99F9609617E390D7005D27EB /* WBPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 99F9609517E390D7005D27EB /* WBPhotoTests.m */; };
 		BED03EC117EB9ABE00EEEACC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */; };
 		BED03EC317EB9AD500EEEACC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC217EB9AD500EEEACC /* AddressBook.framework */; };
 		BED03EC517EB9ADC00EEEACC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC417EB9ADC00EEEACC /* MessageUI.framework */; };
@@ -247,10 +244,7 @@
 		9940AE5A1807502B008881EB /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
 		9940AE5B1807502B008881EB /* WBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewController.m; sourceTree = "<group>"; };
 		9940D16717DF62F1008B2825 /* WBDatasourceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBDatasourceTests.m; sourceTree = "<group>"; };
-		995D6C2417E78AEA00550634 /* WBCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommentTests.m; sourceTree = "<group>"; };
 		9986F2DE1806F96400A93A82 /* Whiteboard.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Whiteboard.xcodeproj; path = ../Whiteboard.xcodeproj; sourceTree = "<group>"; };
-		99D80C7017DE0EA200809322 /* UserImplementationTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserImplementationTests.m; sourceTree = "<group>"; };
-		99F9609517E390D7005D27EB /* WBPhotoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTests.m; sourceTree = "<group>"; };
 		BE1B3FCF17E395A9003494CD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		BED03EC217EB9AD500EEEACC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -343,9 +337,6 @@
 		9919154617DA7B2A005DA25C /* whiteboardTests */ = {
 			isa = PBXGroup;
 			children = (
-				99D80C7017DE0EA200809322 /* UserImplementationTests.m */,
-				99F9609517E390D7005D27EB /* WBPhotoTests.m */,
-				995D6C2417E78AEA00550634 /* WBCommentTests.m */,
 				9940D16717DF62F1008B2825 /* WBDatasourceTests.m */,
 				9919154717DA7B2B005DA25C /* Supporting Files */,
 			);
@@ -786,9 +777,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99F9609617E390D7005D27EB /* WBPhotoTests.m in Sources */,
-				99D80C7117DE0EA200809322 /* UserImplementationTests.m in Sources */,
-				995D6C2517E78AEA00550634 /* WBCommentTests.m in Sources */,
 				9940D16817DF62F1008B2825 /* WBDatasourceTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

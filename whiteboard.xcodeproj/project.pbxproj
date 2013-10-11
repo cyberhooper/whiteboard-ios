@@ -72,6 +72,12 @@
 		9997DEAE18085F10000FD658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9997DEAC18085F10000FD658 /* InfoPlist.strings */; };
 		9997DEB818085F35000FD658 /* WBUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997DEB718085F35000FD658 /* WBUserTests.m */; };
 		9997DEB91808602E000FD658 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DE1805F418009F7F30 /* WBUser.m */; };
+		9997DEBC180861D3000FD658 /* WBPhotoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997DEBB180861D3000FD658 /* WBPhotoTests.m */; };
+		9997DEBD1808624E000FD658 /* WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DC1805F418009F7F30 /* WBPhoto.m */; };
+		9997DEBE18086252000FD658 /* WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DA1805F418009F7F30 /* WBComment.m */; };
+		9997DEC2180863AF000FD658 /* WBCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997DEC1180863AF000FD658 /* WBCommentTests.m */; };
+		9997DEC418086412000FD658 /* WBActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997DEC318086412000FD658 /* WBActivityTests.m */; };
+		9997DEC5180867EF000FD658 /* WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D81805F418009F7F30 /* WBActivity.m */; };
 		99BA2A77180485F400999FBC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A76180485F400999FBC /* AudioToolbox.framework */; };
 		99BA2A79180485FA00999FBC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A78180485FA00999FBC /* CFNetwork.framework */; };
 		99BA2A7B1804860300999FBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A7A1804860300999FBC /* CoreGraphics.framework */; };
@@ -176,6 +182,9 @@
 		9997DEAD18085F10000FD658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9997DEB118085F10000FD658 /* WhiteboardTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhiteboardTests-Prefix.pch"; sourceTree = "<group>"; };
 		9997DEB718085F35000FD658 /* WBUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUserTests.m; sourceTree = "<group>"; };
+		9997DEBB180861D3000FD658 /* WBPhotoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTests.m; sourceTree = "<group>"; };
+		9997DEC1180863AF000FD658 /* WBCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommentTests.m; sourceTree = "<group>"; };
+		9997DEC318086412000FD658 /* WBActivityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBActivityTests.m; sourceTree = "<group>"; };
 		99BA2A76180485F400999FBC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		99BA2A78180485FA00999FBC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		99BA2A7A1804860300999FBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -316,6 +325,9 @@
 			children = (
 				9997DEAA18085F10000FD658 /* Supporting Files */,
 				9997DEB718085F35000FD658 /* WBUserTests.m */,
+				9997DEBB180861D3000FD658 /* WBPhotoTests.m */,
+				9997DEC1180863AF000FD658 /* WBCommentTests.m */,
+				9997DEC318086412000FD658 /* WBActivityTests.m */,
 			);
 			path = WhiteboardTests;
 			sourceTree = "<group>";
@@ -561,8 +573,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9997DEBC180861D3000FD658 /* WBPhotoTests.m in Sources */,
 				9997DEB818085F35000FD658 /* WBUserTests.m in Sources */,
 				9997DEB91808602E000FD658 /* WBUser.m in Sources */,
+				9997DEBD1808624E000FD658 /* WBPhoto.m in Sources */,
+				9997DEC2180863AF000FD658 /* WBCommentTests.m in Sources */,
+				9997DEC5180867EF000FD658 /* WBActivity.m in Sources */,
+				9997DEC418086412000FD658 /* WBActivityTests.m in Sources */,
+				9997DEBE18086252000FD658 /* WBComment.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -813,6 +831,7 @@
 				9997DEB618085F10000FD658 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		99CF79F4180353210095500B /* Build configuration list for PBXProject "Whiteboard" */ = {
 			isa = XCConfigurationList;

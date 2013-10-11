@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) WBUser *fromUser;
 @property (nonatomic, strong) NSString *type;
-@property (nonatomic, strong) NSDate *createdAt;
 @property (nonatomic, strong) WBPhoto *photo;
+@property (nonatomic, strong) NSDate *createdAt;
 
 @end
