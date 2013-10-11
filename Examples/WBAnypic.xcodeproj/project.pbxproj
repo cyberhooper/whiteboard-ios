@@ -80,7 +80,6 @@
 		9940AE951807502B008881EB /* WBPhotoTimelineSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE521807502B008881EB /* WBPhotoTimelineSectionHeaderView.xib */; };
 		9940AE961807502B008881EB /* WBProfileHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE541807502B008881EB /* WBProfileHeaderView.m */; };
 		9940AE971807502B008881EB /* WBProfileHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE551807502B008881EB /* WBProfileHeaderView.xib */; };
-		9940AE981807502B008881EB /* WBPhoto+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE581807502B008881EB /* WBPhoto+Utils.m */; };
 		9940AE991807502B008881EB /* WBTheme.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE591807502B008881EB /* WBTheme.plist */; };
 		9940AE9A1807502B008881EB /* WBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE5B1807502B008881EB /* WBViewController.m */; };
 		9986F2EA1806F99E00A93A82 /* libWhiteboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9986F2E51806F96400A93A82 /* libWhiteboard.a */; };
@@ -223,8 +222,6 @@
 		9940AE541807502B008881EB /* WBProfileHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBProfileHeaderView.m; sourceTree = "<group>"; };
 		9940AE551807502B008881EB /* WBProfileHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBProfileHeaderView.xib; sourceTree = "<group>"; };
 		9940AE561807502B008881EB /* WBAnypic-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBAnypic-Prefix.pch"; sourceTree = "<group>"; };
-		9940AE571807502B008881EB /* WBPhoto+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBPhoto+Utils.h"; sourceTree = "<group>"; };
-		9940AE581807502B008881EB /* WBPhoto+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBPhoto+Utils.m"; sourceTree = "<group>"; };
 		9940AE591807502B008881EB /* WBTheme.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = WBTheme.plist; sourceTree = "<group>"; };
 		9940AE5A1807502B008881EB /* WBViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBViewController.h; sourceTree = "<group>"; };
 		9940AE5B1807502B008881EB /* WBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBViewController.m; sourceTree = "<group>"; };
@@ -325,8 +322,6 @@
 				9940AE2A1807502B008881EB /* Theme */,
 				9940AE2D1807502B008881EB /* Views */,
 				9940ADFC1807502B008881EB /* Helpers */,
-				9940AE571807502B008881EB /* WBPhoto+Utils.h */,
-				9940AE581807502B008881EB /* WBPhoto+Utils.m */,
 				9940AE5A1807502B008881EB /* WBViewController.h */,
 				9940AE5B1807502B008881EB /* WBViewController.m */,
 				9940AE0B1807502B008881EB /* Images.xcassets */,
@@ -688,7 +683,6 @@
 				9940AE691807502B008881EB /* UIImageView+SLImageLoader.m in Sources */,
 				9940AE801807502B008881EB /* WBActivityCell.m in Sources */,
 				9940AE651807502B008881EB /* KeyboardAnimationView.m in Sources */,
-				9940AE981807502B008881EB /* WBPhoto+Utils.m in Sources */,
 				9940AE6E1807502B008881EB /* main.m in Sources */,
 				9940AE7C1807502B008881EB /* WBTabBarController.m in Sources */,
 				9940AE681807502B008881EB /* UIImageView+RoundedCorners.m in Sources */,
@@ -800,7 +794,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sacha Durand Saint Omer (QT789KJF79)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					$SRCROOT,
@@ -822,7 +816,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = WBAnypic;
-				PROVISIONING_PROFILE = "1E584F4A-723B-4F7B-A99D-9B212CE472A9";
+				PROVISIONING_PROFILE = "BEFAEE8E-7BD1-4FE4-B72B-16E9BD25C772";
 				USER_HEADER_SEARCH_PATHS = "../Code/** ../Pods/Headers ../Pods/Headers/AFNetworking ../Pods/Headers/CocoaLumberjack ../Pods/Headers/FormatterKit";
 				WRAPPER_EXTENSION = app;
 			};
@@ -833,7 +827,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Sacha Durand Saint Omer (QT789KJF79)";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					$SRCROOT,
@@ -855,7 +849,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = WBAnypic;
-				PROVISIONING_PROFILE = "1E584F4A-723B-4F7B-A99D-9B212CE472A9";
+				PROVISIONING_PROFILE = "BEFAEE8E-7BD1-4FE4-B72B-16E9BD25C772";
 				USER_HEADER_SEARCH_PATHS = "../Code/** ../Pods/Headers ../Pods/Headers/AFNetworking ../Pods/Headers/CocoaLumberjack ../Pods/Headers/FormatterKit";
 				WRAPPER_EXTENSION = app;
 			};

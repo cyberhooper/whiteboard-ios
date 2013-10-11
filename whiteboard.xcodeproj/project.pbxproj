@@ -78,6 +78,8 @@
 		9997DEC2180863AF000FD658 /* WBCommentTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997DEC1180863AF000FD658 /* WBCommentTests.m */; };
 		9997DEC418086412000FD658 /* WBActivityTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997DEC318086412000FD658 /* WBActivityTests.m */; };
 		9997DEC5180867EF000FD658 /* WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D81805F418009F7F30 /* WBActivity.m */; };
+		9997DECC18087E3A000FD658 /* WBPhoto+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 9997DECA18087E3A000FD658 /* WBPhoto+Utils.h */; };
+		9997DECD18087E3A000FD658 /* WBPhoto+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997DECB18087E3A000FD658 /* WBPhoto+Utils.m */; };
 		99BA2A77180485F400999FBC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A76180485F400999FBC /* AudioToolbox.framework */; };
 		99BA2A79180485FA00999FBC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A78180485FA00999FBC /* CFNetwork.framework */; };
 		99BA2A7B1804860300999FBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A7A1804860300999FBC /* CoreGraphics.framework */; };
@@ -185,6 +187,8 @@
 		9997DEBB180861D3000FD658 /* WBPhotoTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoTests.m; sourceTree = "<group>"; };
 		9997DEC1180863AF000FD658 /* WBCommentTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBCommentTests.m; sourceTree = "<group>"; };
 		9997DEC318086412000FD658 /* WBActivityTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBActivityTests.m; sourceTree = "<group>"; };
+		9997DECA18087E3A000FD658 /* WBPhoto+Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "WBPhoto+Utils.h"; sourceTree = "<group>"; };
+		9997DECB18087E3A000FD658 /* WBPhoto+Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "WBPhoto+Utils.m"; sourceTree = "<group>"; };
 		99BA2A76180485F400999FBC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		99BA2A78180485FA00999FBC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		99BA2A7A1804860300999FBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -252,6 +256,7 @@
 				991B64411805F6F3009F7F30 /* Parse.h */,
 				991B63DF1805F418009F7F30 /* Parse */,
 				991B63F61805F418009F7F30 /* Whiteboard-Prefix.pch */,
+				9997DEC918087E3A000FD658 /* Helpers */,
 			);
 			path = Code;
 			sourceTree = "<group>";
@@ -342,6 +347,15 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		9997DEC918087E3A000FD658 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				9997DECA18087E3A000FD658 /* WBPhoto+Utils.h */,
+				9997DECB18087E3A000FD658 /* WBPhoto+Utils.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		99CF79F0180353210095500B = {
 			isa = PBXGroup;
 			children = (
@@ -404,6 +418,7 @@
 				991B64251805F418009F7F30 /* WBParsePushNotificationCreator.h in Headers */,
 				991B641C1805F418009F7F30 /* WBParseAccountManager.h in Headers */,
 				991B64191805F418009F7F30 /* WBComment+PFObject.h in Headers */,
+				9997DECC18087E3A000FD658 /* WBPhoto+Utils.h in Headers */,
 				991B640D1805F418009F7F30 /* PFObject+WBActivity.h in Headers */,
 				991B642B1805F418009F7F30 /* WBUser+PFUser.h in Headers */,
 				991B63FE1805F418009F7F30 /* WBManager.h in Headers */,
@@ -591,6 +606,7 @@
 				991B640B1805F418009F7F30 /* WBUser.m in Sources */,
 				991B64111805F418009F7F30 /* PFObject+WBComment.m in Sources */,
 				991B63FF1805F418009F7F30 /* WBManager.m in Sources */,
+				9997DECD18087E3A000FD658 /* WBPhoto+Utils.m in Sources */,
 				991B641D1805F418009F7F30 /* WBParseAccountManager.m in Sources */,
 				991B641A1805F418009F7F30 /* WBComment+PFObject.m in Sources */,
 				991B64081805F418009F7F30 /* WBPhoto.m in Sources */,

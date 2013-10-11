@@ -10,6 +10,8 @@
 #import "WBPhoto.h"
 #import "WBUser.h"
 #import "WBComment.h"
+#import "WBPhoto+Utils.h"
+#import "Whiteboard.h"
 
 @interface WBPhotoTests : XCTestCase
 
@@ -95,6 +97,11 @@
   XCTAssertNotEqualObjects(photo, photo2, @"Photos with different IDs should not be equal");
   photo2.photoID = @"14fgfq";
   XCTAssertEqualObjects(photo, photo2, @"Photos with same IDs should be equal");
+}
+
+- (void)testPhotoIsLikeWhenCurrentUserIsContainedInTheLikesArray {
+ WBUser *currentUser = [[WBDataSource sharedInstance] currentUser];
+  XCTAssertTrue([photo isLiked], @"Photo should be liked when a current user is in the likes array");
 }
 
 @end
