@@ -20,8 +20,6 @@
 		9919152217DA7B2A005DA25C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152117DA7B2A005DA25C /* Foundation.framework */; };
 		9919152417DA7B2A005DA25C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152317DA7B2A005DA25C /* CoreGraphics.framework */; };
 		9919152617DA7B2A005DA25C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9919152517DA7B2A005DA25C /* UIKit.framework */; };
-		9940ADC318088C9800B45510 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940ADC118088C9800B45510 /* ProfileViewController.m */; };
-		9940ADC418088C9800B45510 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9940ADC218088C9800B45510 /* ProfileViewController.xib */; };
 		9940AE5C1807502B008881EB /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940ADED1807502B008881EB /* ActivityViewController.m */; };
 		9940AE5D1807502B008881EB /* ActivityViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9940ADEE1807502B008881EB /* ActivityViewController.xib */; };
 		9940AE5E1807502B008881EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940ADF01807502B008881EB /* AppDelegate.m */; };
@@ -43,10 +41,6 @@
 		9940AE711807502B008881EB /* WBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE151807502B008881EB /* WBNavigationController.m */; };
 		9940AE721807502B008881EB /* WBPhotoDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE181807502B008881EB /* WBPhotoDetailsViewController.m */; };
 		9940AE731807502B008881EB /* WBPhotoDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE191807502B008881EB /* WBPhotoDetailsViewController.xib */; };
-		9940AE741807502B008881EB /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE1C1807502B008881EB /* ProfileViewController.m */; };
-		9940AE751807502B008881EB /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE1D1807502B008881EB /* ProfileViewController.xib */; };
-		9940AE761807502B008881EB /* WBSignupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE201807502B008881EB /* WBSignupViewController.m */; };
-		9940AE771807502B008881EB /* WBSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE211807502B008881EB /* WBSignupViewController.xib */; };
 		9940AE781807502B008881EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE231807502B008881EB /* Localizable.strings */; };
 		9940AE791807502B008881EB /* ParseConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE241807502B008881EB /* ParseConfiguration.plist */; };
 		9940AE7A1807502B008881EB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE251807502B008881EB /* Settings.bundle */; };
@@ -87,6 +81,8 @@
 		9997DEDF180882D8000FD658 /* WBSignupViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9997DEDD180882D8000FD658 /* WBSignupViewController.xib */; };
 		9997DEE3180882FF000FD658 /* WBLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997DEE1180882FF000FD658 /* WBLoginViewController.m */; };
 		9997DEE4180882FF000FD658 /* WBLoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9997DEE2180882FF000FD658 /* WBLoginViewController.xib */; };
+		99BD906B1808A5BB00AFB0B6 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 99BD90691808A5BB00AFB0B6 /* ProfileViewController.m */; };
+		99BD906C1808A5BB00AFB0B6 /* ProfileViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99BD906A1808A5BB00AFB0B6 /* ProfileViewController.xib */; };
 		BED03EC117EB9ABE00EEEACC /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */; };
 		BED03EC317EB9AD500EEEACC /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC217EB9AD500EEEACC /* AddressBook.framework */; };
 		BED03EC517EB9ADC00EEEACC /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BED03EC417EB9ADC00EEEACC /* MessageUI.framework */; };
@@ -132,9 +128,6 @@
 		9919152317DA7B2A005DA25C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		9919152517DA7B2A005DA25C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		9919154017DA7B2A005DA25C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		9940ADC018088C9800B45510 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		9940ADC118088C9800B45510 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		9940ADC218088C9800B45510 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		9940ADEC1807502B008881EB /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
 		9940ADED1807502B008881EB /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		9940ADEE1807502B008881EB /* ActivityViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ActivityViewController.xib; sourceTree = "<group>"; };
@@ -170,12 +163,6 @@
 		9940AE171807502B008881EB /* WBPhotoDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBPhotoDetailsViewController.h; sourceTree = "<group>"; };
 		9940AE181807502B008881EB /* WBPhotoDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBPhotoDetailsViewController.m; sourceTree = "<group>"; };
 		9940AE191807502B008881EB /* WBPhotoDetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBPhotoDetailsViewController.xib; sourceTree = "<group>"; };
-		9940AE1B1807502B008881EB /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
-		9940AE1C1807502B008881EB /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
-		9940AE1D1807502B008881EB /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
-		9940AE1F1807502B008881EB /* WBSignupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBSignupViewController.h; sourceTree = "<group>"; };
-		9940AE201807502B008881EB /* WBSignupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBSignupViewController.m; sourceTree = "<group>"; };
-		9940AE211807502B008881EB /* WBSignupViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBSignupViewController.xib; sourceTree = "<group>"; };
 		9940AE231807502B008881EB /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		9940AE241807502B008881EB /* ParseConfiguration.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = ParseConfiguration.plist; sourceTree = "<group>"; };
 		9940AE251807502B008881EB /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
@@ -236,6 +223,9 @@
 		9997DEE0180882FF000FD658 /* WBLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBLoginViewController.h; sourceTree = "<group>"; };
 		9997DEE1180882FF000FD658 /* WBLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBLoginViewController.m; sourceTree = "<group>"; };
 		9997DEE2180882FF000FD658 /* WBLoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WBLoginViewController.xib; sourceTree = "<group>"; };
+		99BD90681808A5BB00AFB0B6 /* ProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileViewController.h; sourceTree = "<group>"; };
+		99BD90691808A5BB00AFB0B6 /* ProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileViewController.m; sourceTree = "<group>"; };
+		99BD906A1808A5BB00AFB0B6 /* ProfileViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ProfileViewController.xib; sourceTree = "<group>"; };
 		BE1B3FCF17E395A9003494CD /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		BED03EC017EB9ABE00EEEACC /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		BED03EC217EB9AD500EEEACC /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -313,16 +303,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9940ADBF18088C9800B45510 /* Profile */ = {
-			isa = PBXGroup;
-			children = (
-				9940ADC018088C9800B45510 /* ProfileViewController.h */,
-				9940ADC118088C9800B45510 /* ProfileViewController.m */,
-				9940ADC218088C9800B45510 /* ProfileViewController.xib */,
-			);
-			path = Profile;
-			sourceTree = "<group>";
-		};
 		9940ADEA1807502B008881EB /* WBAnypic */ = {
 			isa = PBXGroup;
 			children = (
@@ -334,7 +314,7 @@
 				9940AE0C1807502B008881EB /* Login */,
 				9940ADEB1807502B008881EB /* Activity */,
 				9940ADF31807502B008881EB /* Feed */,
-				9940ADBF18088C9800B45510 /* Profile */,
+				99BD90671808A5BB00AFB0B6 /* Profile */,
 				9940ADF91807502B008881EB /* Find Friends */,
 				9940AE161807502B008881EB /* Photo Detail */,
 				9940AE131807502B008881EB /* Navigation */,
@@ -530,6 +510,16 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		99BD90671808A5BB00AFB0B6 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				99BD90681808A5BB00AFB0B6 /* ProfileViewController.h */,
+				99BD90691808A5BB00AFB0B6 /* ProfileViewController.m */,
+				99BD906A1808A5BB00AFB0B6 /* ProfileViewController.xib */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -617,7 +607,7 @@
 				9940AE8A1807502B008881EB /* WBPhotoDetailsCellAddComment.xib in Resources */,
 				9940AE781807502B008881EB /* Localizable.strings in Resources */,
 				9940AE951807502B008881EB /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
-				9940ADC418088C9800B45510 /* ProfileViewController.xib in Resources */,
+				99BD906C1808A5BB00AFB0B6 /* ProfileViewController.xib in Resources */,
 				9940AE611807502B008881EB /* MainFeedViewController.xib in Resources */,
 				9940AE7B1807502B008881EB /* WBAnypic-Info.plist in Resources */,
 				9940AE831807502B008881EB /* WBFriendCell.xib in Resources */,
@@ -665,7 +655,7 @@
 				9940AE821807502B008881EB /* WBFriendCell.m in Sources */,
 				9940AE8F1807502B008881EB /* WBPhotoDetailsCellPhoto.m in Sources */,
 				9940AE941807502B008881EB /* WBPhotoTimelineSectionHeaderView.m in Sources */,
-				9940ADC318088C9800B45510 /* ProfileViewController.m in Sources */,
+				99BD906B1808A5BB00AFB0B6 /* ProfileViewController.m in Sources */,
 				9940AE931807502B008881EB /* WBPhotoTimelineSectionHeaderButton.m in Sources */,
 				9997DEE3180882FF000FD658 /* WBLoginViewController.m in Sources */,
 				9997DEDA18088278000FD658 /* main.m in Sources */,
