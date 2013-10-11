@@ -25,66 +25,53 @@
 		64308489BA3D465D932E363A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2267FD231DF54A8C9937DC62 /* libPods.a */; };
 		991B63F81805F418009F7F30 /* WBDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63CF1805F418009F7F30 /* WBDataSource.h */; };
 		991B63F91805F418009F7F30 /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D01805F418009F7F30 /* WBDataSource.m */; };
-		991B63FA1805F418009F7F30 /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D01805F418009F7F30 /* WBDataSource.m */; };
 		991B63FB1805F418009F7F30 /* WBAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63D21805F418009F7F30 /* WBAccountManager.h */; };
 		991B63FC1805F418009F7F30 /* WBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D31805F418009F7F30 /* WBAccountManager.m */; };
-		991B63FD1805F418009F7F30 /* WBAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D31805F418009F7F30 /* WBAccountManager.m */; };
 		991B63FE1805F418009F7F30 /* WBManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63D41805F418009F7F30 /* WBManager.h */; };
 		991B63FF1805F418009F7F30 /* WBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D51805F418009F7F30 /* WBManager.m */; };
-		991B64001805F418009F7F30 /* WBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D51805F418009F7F30 /* WBManager.m */; };
 		991B64011805F418009F7F30 /* WBActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63D71805F418009F7F30 /* WBActivity.h */; };
 		991B64021805F418009F7F30 /* WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D81805F418009F7F30 /* WBActivity.m */; };
-		991B64031805F418009F7F30 /* WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D81805F418009F7F30 /* WBActivity.m */; };
 		991B64041805F418009F7F30 /* WBComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63D91805F418009F7F30 /* WBComment.h */; };
 		991B64051805F418009F7F30 /* WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DA1805F418009F7F30 /* WBComment.m */; };
-		991B64061805F418009F7F30 /* WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DA1805F418009F7F30 /* WBComment.m */; };
 		991B64071805F418009F7F30 /* WBPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63DB1805F418009F7F30 /* WBPhoto.h */; };
 		991B64081805F418009F7F30 /* WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DC1805F418009F7F30 /* WBPhoto.m */; };
-		991B64091805F418009F7F30 /* WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DC1805F418009F7F30 /* WBPhoto.m */; };
 		991B640A1805F418009F7F30 /* WBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63DD1805F418009F7F30 /* WBUser.h */; };
 		991B640B1805F418009F7F30 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DE1805F418009F7F30 /* WBUser.m */; };
-		991B640C1805F418009F7F30 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DE1805F418009F7F30 /* WBUser.m */; };
 		991B640D1805F418009F7F30 /* PFObject+WBActivity.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63E01805F418009F7F30 /* PFObject+WBActivity.h */; };
 		991B640E1805F418009F7F30 /* PFObject+WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E11805F418009F7F30 /* PFObject+WBActivity.m */; };
-		991B640F1805F418009F7F30 /* PFObject+WBActivity.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E11805F418009F7F30 /* PFObject+WBActivity.m */; };
 		991B64101805F418009F7F30 /* PFObject+WBComment.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63E21805F418009F7F30 /* PFObject+WBComment.h */; };
 		991B64111805F418009F7F30 /* PFObject+WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E31805F418009F7F30 /* PFObject+WBComment.m */; };
-		991B64121805F418009F7F30 /* PFObject+WBComment.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E31805F418009F7F30 /* PFObject+WBComment.m */; };
 		991B64131805F418009F7F30 /* PFObject+WBPhoto.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63E41805F418009F7F30 /* PFObject+WBPhoto.h */; };
 		991B64141805F418009F7F30 /* PFObject+WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E51805F418009F7F30 /* PFObject+WBPhoto.m */; };
-		991B64151805F418009F7F30 /* PFObject+WBPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E51805F418009F7F30 /* PFObject+WBPhoto.m */; };
 		991B64161805F418009F7F30 /* PFUser+WBUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63E61805F418009F7F30 /* PFUser+WBUser.h */; };
 		991B64171805F418009F7F30 /* PFUser+WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E71805F418009F7F30 /* PFUser+WBUser.m */; };
-		991B64181805F418009F7F30 /* PFUser+WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E71805F418009F7F30 /* PFUser+WBUser.m */; };
 		991B64191805F418009F7F30 /* WBComment+PFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63E81805F418009F7F30 /* WBComment+PFObject.h */; };
 		991B641A1805F418009F7F30 /* WBComment+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E91805F418009F7F30 /* WBComment+PFObject.m */; };
-		991B641B1805F418009F7F30 /* WBComment+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63E91805F418009F7F30 /* WBComment+PFObject.m */; };
 		991B641C1805F418009F7F30 /* WBParseAccountManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63EA1805F418009F7F30 /* WBParseAccountManager.h */; };
 		991B641D1805F418009F7F30 /* WBParseAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63EB1805F418009F7F30 /* WBParseAccountManager.m */; };
-		991B641E1805F418009F7F30 /* WBParseAccountManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63EB1805F418009F7F30 /* WBParseAccountManager.m */; };
 		991B641F1805F418009F7F30 /* WBParseConstants.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63EC1805F418009F7F30 /* WBParseConstants.h */; };
 		991B64201805F418009F7F30 /* WBParseConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63ED1805F418009F7F30 /* WBParseConstants.m */; };
-		991B64211805F418009F7F30 /* WBParseConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63ED1805F418009F7F30 /* WBParseConstants.m */; };
 		991B64221805F418009F7F30 /* WBParseDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63EE1805F418009F7F30 /* WBParseDataSource.h */; };
 		991B64231805F418009F7F30 /* WBParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63EF1805F418009F7F30 /* WBParseDataSource.m */; };
-		991B64241805F418009F7F30 /* WBParseDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63EF1805F418009F7F30 /* WBParseDataSource.m */; };
 		991B64251805F418009F7F30 /* WBParsePushNotificationCreator.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63F01805F418009F7F30 /* WBParsePushNotificationCreator.h */; };
 		991B64261805F418009F7F30 /* WBParsePushNotificationCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63F11805F418009F7F30 /* WBParsePushNotificationCreator.m */; };
-		991B64271805F418009F7F30 /* WBParsePushNotificationCreator.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63F11805F418009F7F30 /* WBParsePushNotificationCreator.m */; };
 		991B64281805F418009F7F30 /* WBPhoto+PFObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63F21805F418009F7F30 /* WBPhoto+PFObject.h */; };
 		991B64291805F418009F7F30 /* WBPhoto+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63F31805F418009F7F30 /* WBPhoto+PFObject.m */; };
-		991B642A1805F418009F7F30 /* WBPhoto+PFObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63F31805F418009F7F30 /* WBPhoto+PFObject.m */; };
 		991B642B1805F418009F7F30 /* WBUser+PFUser.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63F41805F418009F7F30 /* WBUser+PFUser.h */; };
 		991B642C1805F418009F7F30 /* WBUser+PFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63F51805F418009F7F30 /* WBUser+PFUser.m */; };
-		991B642D1805F418009F7F30 /* WBUser+PFUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63F51805F418009F7F30 /* WBUser+PFUser.m */; };
 		991B642E1805F418009F7F30 /* Whiteboard-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 991B63F61805F418009F7F30 /* Whiteboard-Prefix.pch */; };
 		991B642F1805F418009F7F30 /* Whiteboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63F71805F418009F7F30 /* Whiteboard.h */; };
 		991B64341805F4C1009F7F30 /* Manager.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B64321805F4C1009F7F30 /* Manager.h */; };
 		991B64391805F5E4009F7F30 /* Model.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B64371805F5E4009F7F30 /* Model.h */; };
 		991B643E1805F6A8009F7F30 /* Datasource.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B643C1805F6A8009F7F30 /* Datasource.h */; };
 		991B64431805F6F3009F7F30 /* Parse.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B64411805F6F3009F7F30 /* Parse.h */; };
-		999D8EAF18074A5700981101 /* WBFrameworkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 999D8EAB18074A5700981101 /* WBFrameworkTests.m */; };
-		999D8EB018074A5700981101 /* WhiteboardTests-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 999D8EAC18074A5700981101 /* WhiteboardTests-Info.plist */; };
+		9940AEA818085AB1008881EB /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9940AEA718085AB1008881EB /* Parse.framework */; };
+		9997DEA618085F0F000FD658 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7A0A180353220095500B /* XCTest.framework */; };
+		9997DEA718085F0F000FD658 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79FC180353210095500B /* Foundation.framework */; };
+		9997DEA818085F0F000FD658 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7C1C180451090095500B /* UIKit.framework */; };
+		9997DEAE18085F10000FD658 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9997DEAC18085F10000FD658 /* InfoPlist.strings */; };
+		9997DEB818085F35000FD658 /* WBUserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9997DEB718085F35000FD658 /* WBUserTests.m */; };
+		9997DEB91808602E000FD658 /* WBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63DE1805F418009F7F30 /* WBUser.m */; };
 		99BA2A77180485F400999FBC /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A76180485F400999FBC /* AudioToolbox.framework */; };
 		99BA2A79180485FA00999FBC /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A78180485FA00999FBC /* CFNetwork.framework */; };
 		99BA2A7B1804860300999FBC /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A7A1804860300999FBC /* CoreGraphics.framework */; };
@@ -95,23 +82,18 @@
 		99BA2A851804863800999FBC /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A841804863800999FBC /* Security.framework */; };
 		99BA2A871804864000999FBC /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A861804864000999FBC /* StoreKit.framework */; };
 		99BA2A891804864A00999FBC /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A881804864A00999FBC /* SystemConfiguration.framework */; };
-		99BA2A8C1804892300999FBC /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A8B1804892300999FBC /* Parse.framework */; };
 		99BA2A8E18048D3A00999FBC /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99BA2A8D18048D3A00999FBC /* FacebookSDK.framework */; };
 		99CF79FD180353210095500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79FC180353210095500B /* Foundation.framework */; };
-		99CF7A0B180353220095500B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7A0A180353220095500B /* XCTest.framework */; };
-		99CF7A0C180353220095500B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79FC180353210095500B /* Foundation.framework */; };
-		99CF7A0E180353220095500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7A0D180353220095500B /* UIKit.framework */; };
-		99CF7A11180353220095500B /* libWhiteboard.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF79F9180353210095500B /* libWhiteboard.a */; };
 		99CF7C1D180451090095500B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99CF7C1C180451090095500B /* UIKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		99CF7A0F180353220095500B /* PBXContainerItemProxy */ = {
+		9997DEB218085F10000FD658 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 99CF79F1180353210095500B /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 99CF79F8180353210095500B;
-			remoteInfo = WBFramework;
+			remoteInfo = Whiteboard;
 		};
 		F4B0E5711804B065000A948B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -188,9 +170,12 @@
 		991B64371805F5E4009F7F30 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
 		991B643C1805F6A8009F7F30 /* Datasource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Datasource.h; sourceTree = "<group>"; };
 		991B64411805F6F3009F7F30 /* Parse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Parse.h; sourceTree = "<group>"; };
-		999D8EAA18074A5700981101 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		999D8EAB18074A5700981101 /* WBFrameworkTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBFrameworkTests.m; sourceTree = "<group>"; };
-		999D8EAC18074A5700981101 /* WhiteboardTests-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "WhiteboardTests-Info.plist"; sourceTree = "<group>"; };
+		9940AEA718085AB1008881EB /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		9997DEA518085F0F000FD658 /* WhiteboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9997DEAB18085F10000FD658 /* WhiteboardTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WhiteboardTests-Info.plist"; sourceTree = "<group>"; };
+		9997DEAD18085F10000FD658 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		9997DEB118085F10000FD658 /* WhiteboardTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WhiteboardTests-Prefix.pch"; sourceTree = "<group>"; };
+		9997DEB718085F35000FD658 /* WBUserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WBUserTests.m; sourceTree = "<group>"; };
 		99BA2A76180485F400999FBC /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		99BA2A78180485FA00999FBC /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		99BA2A7A1804860300999FBC /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -201,17 +186,25 @@
 		99BA2A841804863800999FBC /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		99BA2A861804864000999FBC /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		99BA2A881804864A00999FBC /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		99BA2A8B1804892300999FBC /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		99BA2A8D18048D3A00999FBC /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		99CF79F9180353210095500B /* libWhiteboard.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libWhiteboard.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CF79FC180353210095500B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		99CF7A09180353220095500B /* WhiteboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WhiteboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		99CF7A0A180353220095500B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		99CF7A0D180353220095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		99CF7C1C180451090095500B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9997DEA218085F0F000FD658 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9997DEA618085F0F000FD658 /* XCTest.framework in Frameworks */,
+				9997DEA818085F0F000FD658 /* UIKit.framework in Frameworks */,
+				9997DEA718085F0F000FD658 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99CF79F6180353210095500B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -220,9 +213,9 @@
 				99BA2A871804864000999FBC /* StoreKit.framework in Frameworks */,
 				99BA2A851804863800999FBC /* Security.framework in Frameworks */,
 				99BA2A831804863000999FBC /* QuartzCore.framework in Frameworks */,
+				9940AEA818085AB1008881EB /* Parse.framework in Frameworks */,
 				99BA2A811804862800999FBC /* MobileCoreServices.framework in Frameworks */,
 				99BA2A7F1804861900999FBC /* libz.1.1.3.dylib in Frameworks */,
-				99BA2A8C1804892300999FBC /* Parse.framework in Frameworks */,
 				99BA2A7D1804860B00999FBC /* CoreLocation.framework in Frameworks */,
 				99BA2A7B1804860300999FBC /* CoreGraphics.framework in Frameworks */,
 				99BA2A79180485FA00999FBC /* CFNetwork.framework in Frameworks */,
@@ -231,17 +224,6 @@
 				99CF79FD180353210095500B /* Foundation.framework in Frameworks */,
 				99BA2A8E18048D3A00999FBC /* FacebookSDK.framework in Frameworks */,
 				64308489BA3D465D932E363A /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99CF7A06180353220095500B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				99CF7A0B180353220095500B /* XCTest.framework in Frameworks */,
-				99CF7A11180353220095500B /* libWhiteboard.a in Frameworks */,
-				99CF7A0E180353220095500B /* UIKit.framework in Frameworks */,
-				99CF7A0C180353220095500B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,20 +311,21 @@
 			path = Parse;
 			sourceTree = "<group>";
 		};
-		999D8EA818074A5700981101 /* Tests */ = {
+		9997DEA918085F0F000FD658 /* WhiteboardTests */ = {
 			isa = PBXGroup;
 			children = (
-				999D8EAB18074A5700981101 /* WBFrameworkTests.m */,
-				999D8EB118074A7200981101 /* Supporting Files */,
+				9997DEAA18085F10000FD658 /* Supporting Files */,
+				9997DEB718085F35000FD658 /* WBUserTests.m */,
 			);
-			path = Tests;
+			path = WhiteboardTests;
 			sourceTree = "<group>";
 		};
-		999D8EB118074A7200981101 /* Supporting Files */ = {
+		9997DEAA18085F10000FD658 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				999D8EA918074A5700981101 /* InfoPlist.strings */,
-				999D8EAC18074A5700981101 /* WhiteboardTests-Info.plist */,
+				9997DEAB18085F10000FD658 /* WhiteboardTests-Info.plist */,
+				9997DEAC18085F10000FD658 /* InfoPlist.strings */,
+				9997DEB118085F10000FD658 /* WhiteboardTests-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -351,7 +334,7 @@
 			isa = PBXGroup;
 			children = (
 				991B63CD1805F418009F7F30 /* Code */,
-				999D8EA818074A5700981101 /* Tests */,
+				9997DEA918085F0F000FD658 /* WhiteboardTests */,
 				99CF79FB180353210095500B /* Frameworks */,
 				99CF79FA180353210095500B /* Products */,
 				59B29261B8C74611B37A425A /* Pods.xcconfig */,
@@ -362,7 +345,7 @@
 			isa = PBXGroup;
 			children = (
 				99CF79F9180353210095500B /* libWhiteboard.a */,
-				99CF7A09180353220095500B /* WhiteboardTests.xctest */,
+				9997DEA518085F0F000FD658 /* WhiteboardTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -370,8 +353,8 @@
 		99CF79FB180353210095500B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				9940AEA718085AB1008881EB /* Parse.framework */,
 				99BA2A8D18048D3A00999FBC /* FacebookSDK.framework */,
-				99BA2A8B1804892300999FBC /* Parse.framework */,
 				99BA2A881804864A00999FBC /* SystemConfiguration.framework */,
 				99BA2A861804864000999FBC /* StoreKit.framework */,
 				99BA2A841804863800999FBC /* Security.framework */,
@@ -428,6 +411,24 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9997DEA418085F0F000FD658 /* WhiteboardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9997DEB418085F10000FD658 /* Build configuration list for PBXNativeTarget "WhiteboardTests" */;
+			buildPhases = (
+				9997DEA118085F0F000FD658 /* Sources */,
+				9997DEA218085F0F000FD658 /* Frameworks */,
+				9997DEA318085F0F000FD658 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9997DEB318085F10000FD658 /* PBXTargetDependency */,
+			);
+			name = WhiteboardTests;
+			productName = WhiteboardTests;
+			productReference = 9997DEA518085F0F000FD658 /* WhiteboardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		99CF79F8180353210095500B /* Whiteboard */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99CF7A1C180353220095500B /* Build configuration list for PBXNativeTarget "Whiteboard" */;
@@ -450,24 +451,6 @@
 			productReference = 99CF79F9180353210095500B /* libWhiteboard.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		99CF7A08180353220095500B /* WhiteboardTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99CF7A1F180353220095500B /* Build configuration list for PBXNativeTarget "WhiteboardTests" */;
-			buildPhases = (
-				99CF7A05180353220095500B /* Sources */,
-				99CF7A06180353220095500B /* Frameworks */,
-				99CF7A07180353220095500B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				99CF7A10180353220095500B /* PBXTargetDependency */,
-			);
-			name = WhiteboardTests;
-			productName = WBFrameworkTests;
-			productReference = 99CF7A09180353220095500B /* WhiteboardTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -476,6 +459,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Fueled;
+				TargetAttributes = {
+					9997DEA418085F0F000FD658 = {
+						TestTargetID = 99CF79F8180353210095500B;
+					};
+				};
 			};
 			buildConfigurationList = 99CF79F4180353210095500B /* Build configuration list for PBXProject "Whiteboard" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -490,18 +478,18 @@
 			projectRoot = "";
 			targets = (
 				99CF79F8180353210095500B /* Whiteboard */,
-				99CF7A08180353220095500B /* WhiteboardTests */,
 				F4B0E56D1804B058000A948B /* Framework */,
+				9997DEA418085F0F000FD658 /* WhiteboardTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		99CF7A07180353220095500B /* Resources */ = {
+		9997DEA318085F0F000FD658 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				999D8EB018074A5700981101 /* WhiteboardTests-Info.plist in Resources */,
+				9997DEAE18085F10000FD658 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +557,15 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9997DEA118085F0F000FD658 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9997DEB818085F35000FD658 /* WBUserTests.m in Sources */,
+				9997DEB91808602E000FD658 /* WBUser.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		99CF79F5180353210095500B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -594,39 +591,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99CF7A05180353220095500B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				991B64091805F418009F7F30 /* WBPhoto.m in Sources */,
-				991B642A1805F418009F7F30 /* WBPhoto+PFObject.m in Sources */,
-				991B64181805F418009F7F30 /* PFUser+WBUser.m in Sources */,
-				991B63FA1805F418009F7F30 /* WBDataSource.m in Sources */,
-				991B64211805F418009F7F30 /* WBParseConstants.m in Sources */,
-				991B641E1805F418009F7F30 /* WBParseAccountManager.m in Sources */,
-				991B640F1805F418009F7F30 /* PFObject+WBActivity.m in Sources */,
-				999D8EAF18074A5700981101 /* WBFrameworkTests.m in Sources */,
-				991B64151805F418009F7F30 /* PFObject+WBPhoto.m in Sources */,
-				991B64271805F418009F7F30 /* WBParsePushNotificationCreator.m in Sources */,
-				991B642D1805F418009F7F30 /* WBUser+PFUser.m in Sources */,
-				991B640C1805F418009F7F30 /* WBUser.m in Sources */,
-				991B64061805F418009F7F30 /* WBComment.m in Sources */,
-				991B64001805F418009F7F30 /* WBManager.m in Sources */,
-				991B64121805F418009F7F30 /* PFObject+WBComment.m in Sources */,
-				991B641B1805F418009F7F30 /* WBComment+PFObject.m in Sources */,
-				991B64241805F418009F7F30 /* WBParseDataSource.m in Sources */,
-				991B63FD1805F418009F7F30 /* WBAccountManager.m in Sources */,
-				991B64031805F418009F7F30 /* WBActivity.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		99CF7A10180353220095500B /* PBXTargetDependency */ = {
+		9997DEB318085F10000FD658 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 99CF79F8180353210095500B /* Whiteboard */;
-			targetProxy = 99CF7A0F180353220095500B /* PBXContainerItemProxy */;
+			targetProxy = 9997DEB218085F10000FD658 /* PBXContainerItemProxy */;
 		};
 		F4B0E5721804B065000A948B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -636,10 +607,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		999D8EA918074A5700981101 /* InfoPlist.strings */ = {
+		9997DEAC18085F10000FD658 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				999D8EAA18074A5700981101 /* en */,
+				9997DEAD18085F10000FD658 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -647,6 +618,44 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		9997DEB518085F10000FD658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhiteboardTests/WhiteboardTests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "WhiteboardTests/WhiteboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		9997DEB618085F10000FD658 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WhiteboardTests/WhiteboardTests-Prefix.pch";
+				INFOPLIST_FILE = "WhiteboardTests/WhiteboardTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 		99CF7A1A180353220095500B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -727,6 +736,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"/Users/sacha/Projects/whiteboard-ios-2",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Whiteboard-Prefix.pch";
@@ -754,6 +764,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)",
+					"/Users/sacha/Projects/whiteboard-ios-2",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Code/Whiteboard-Prefix.pch";
@@ -768,44 +779,6 @@
 				SKIP_INSTALL = YES;
 				STRIP_INSTALLED_PRODUCT = NO;
 				STRIP_STYLE = "non-global";
-			};
-			name = Release;
-		};
-		99CF7A20180353220095500B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Code/WBFramework-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "WBFrameworkTests/WhiteboardTests-Info.plist";
-				PRODUCT_NAME = WhiteboardTests;
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		99CF7A21180353220095500B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Code/WBFramework-Prefix.pch";
-				INFOPLIST_FILE = "WBFrameworkTests/WhiteboardTests-Info.plist";
-				PRODUCT_NAME = WhiteboardTests;
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -833,6 +806,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		9997DEB418085F10000FD658 /* Build configuration list for PBXNativeTarget "WhiteboardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9997DEB518085F10000FD658 /* Debug */,
+				9997DEB618085F10000FD658 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		99CF79F4180353210095500B /* Build configuration list for PBXProject "Whiteboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -847,15 +828,6 @@
 			buildConfigurations = (
 				99CF7A1D180353220095500B /* Debug */,
 				99CF7A1E180353220095500B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		99CF7A1F180353220095500B /* Build configuration list for PBXNativeTarget "WhiteboardTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99CF7A20180353220095500B /* Debug */,
-				99CF7A21180353220095500B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
