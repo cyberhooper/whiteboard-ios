@@ -10,6 +10,12 @@
 #import "MainFeedCell.h"
 #import "Whiteboard.h"
 
+static const float kCellHeight = 296.f;
+static const float kHeaderHeight = 44.0f;
+
+static const float kLoadMoreCellHeight = 44.0f;
+static const float kLoadMoreHeaderHeight = 0.0f;
+
 @implementation MainFeedViewController
 
 - (void)viewDidLoad {
@@ -24,30 +30,16 @@
 
 #pragma mark - UITableView
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-  if (self.loadMore && self.photos.count != 0){
-    // Load more section
-    return self.photos.count + 1;
-  }
-  
-  return self.photos.count;
+  BOOL hasMoreItemsToLoad = self.loadMore && self.photos.count != 0;
+  return hasMoreItemsToLoad ? self.photos.count + 1 : self.photos.count;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-  #warning MAGIC NUMBER. REPLACE ME
-  if ([self isLoadMoreCell:indexPath.section]) {
-    // Load More Section
-    return 44.0f;
-  }
-  return 296.f;
+  return [self isLoadMoreCell:indexPath.section] ? kLoadMoreCellHeight : kCellHeight;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section {
-  #warning MAGIC NUMBER. REPLACE ME
-  if ([self isLoadMoreCell:section]) {
-    // Load More section
-    return 0.0f;
-  }
-  return 44.0f;
+  return [self isLoadMoreCell:section] ? kLoadMoreHeaderHeight : kHeaderHeight;
 }
 
 - (NSString *)tableCellNib {

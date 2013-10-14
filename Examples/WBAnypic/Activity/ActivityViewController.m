@@ -13,6 +13,8 @@
 #import "WBPhotoDetailsViewController.h"
 #import "ProfileViewController.h"
 
+static const float kCellHeight = 66.0f;
+
 @interface ActivityViewController ()
 @property NSArray *activities;
 @end
@@ -48,8 +50,7 @@ static NSString *tableCellIdentifier = @"WBActivityCell";
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-#warning MAGIC NUMBER
-  return 66;
+  return kCellHeight;
 }
 
 - (WBActivityCell *)configureCell:(WBActivityCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
