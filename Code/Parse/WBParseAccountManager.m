@@ -11,6 +11,7 @@
 #import "WBParseDataSource.h"
 #import "WBUser+PFUser.h"
 #import "PFUser+WBUser.h"
+
 @interface WBParseAccountManager () <NSURLConnectionDelegate> {
   NSMutableData *dataProfilePicture;
 }
