@@ -62,6 +62,7 @@
     
     UIImageView *likerImageView = [[UIImageView alloc] initWithFrame:frame];
     likerImageView.clipsToBounds = YES;
+    likerImageView.contentMode = UIViewContentModeScaleAspectFill;
     [likerImageView roundedCornersWithRadius:3.f];
     
     // Get the user from the likers array
