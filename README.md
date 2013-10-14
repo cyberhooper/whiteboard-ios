@@ -43,6 +43,21 @@ Another Problem addressed by Whiteboard is the Interface customization.
 Indeed If you want to change a color or a font in Anypic, you need to go and change it in every single place in code.
 Thanks to Whiteboard, changing a font, a color or an image is as simple as changing an entry in the WBTheme.plist.
 
+## Using default Parse implementation
+
+- First and foremost you are strongly encouraged to check out the [Parse cloud code tutorial](https://www.parse.com/docs/cloud_code_guide).
+
+- Then you can Install parse tools 
+
+        curl -s https://www.parse.com/downloads/cloud_code/installer.sh | sudo /bin/bash
+
+- Navigate to the cloud code folder : whiteboard-ios-2/Examples/WBCloudCode/cloud
+
+- To deploy the Cloud code just run :
+
+        parse deploy
+
+
 
 Enjoy :)
 
