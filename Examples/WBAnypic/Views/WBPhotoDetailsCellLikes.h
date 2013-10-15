@@ -7,10 +7,12 @@
 //
 
 #import "WBPhotoDetailsCell.h"
+#import "WBPhotoTimelineSectionHeaderButton.h"
 
 @protocol WBPhotoDetailsCellLikesDelegate <NSObject>
 
 - (void)likesCellDidSelectAvatarAtIndex:(NSUInteger)index;
+- (void)likesCellDidTapLikeButton;
 
 @end
 
@@ -27,5 +29,7 @@
 @property (nonatomic, assign) NSArray *likers;
 
 @property (nonatomic, weak) id<WBPhotoDetailsCellLikesDelegate> delegate;
+
+@property (nonatomic, weak) IBOutlet WBPhotoTimelineSectionHeaderButton *likeButton;
 
 @end

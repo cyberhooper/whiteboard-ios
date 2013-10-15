@@ -7,7 +7,6 @@
 //
 
 #import "WBPhotoDetailsCellLikes.h"
-#import "WBPhotoTimelineSectionHeaderButton.h"
 #import "UIImageView+WBImageLoader.h"
 #import "UIImageView+RoundedCorners.h"
 #import "Whiteboard.h"
@@ -16,8 +15,7 @@
 #define kLikerImageViewSize 29.f
 #define kLikerSpacing 4.f
 
-@interface WBPhotoDetailsCellLikes()
-@property (nonatomic, weak) IBOutlet WBPhotoTimelineSectionHeaderButton *likeButton;
+@interface WBPhotoDetailsCellLikes() <WBPhotoTimelineSectionHeaderButtonDelegate>
 @property (nonatomic, weak) IBOutlet UIView *likersView;
 @end
 
@@ -37,6 +35,7 @@
   self.likeButton.selectedImage = selectedImage;
   
   self.likeButton.numberLabel.text = [NSString stringWithFormat:@"%i", self.likers.count];
+  self.likeButton.delegate = self;
 }
 
 #pragma mark - Setters
@@ -62,6 +61,7 @@
     
     UIImageView *likerImageView = [[UIImageView alloc] initWithFrame:frame];
     likerImageView.clipsToBounds = YES;
+    likerImageView.contentMode = UIViewContentModeScaleAspectFill;
     [likerImageView roundedCornersWithRadius:3.f];
     
     // Get the user from the likers array
@@ -95,6 +95,16 @@
   }
 }
 
+#pragma mark - Like button
 
+- (void)wbPhotoTimelineSectionHeaderButtonPressed:(WBPhotoTimelineSectionHeaderButton *)button {
+  if ([self.delegate respondsToSelector:@selector(likesCellDidTapLikeButton)]) {
+    [self.delegate likesCellDidTapLikeButton];
+  }
+}
+
+- (void)setIsLiked:(BOOL)isLiked {
+  self.likeButton.button.selected = isLiked;
+}
 
 @end

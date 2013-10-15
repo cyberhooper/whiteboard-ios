@@ -569,6 +569,7 @@
   [query whereKey:kActivityToUserKey equalTo:[PFUser currentUser]];
   [query includeKey:kActivityFromUserKey];
   [query includeKey:kActivityPhotoKey];
+  [query orderByDescending:@"createdAt"];
   [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
     if (!error && success) {
       DDLogInfo(@"get recent activities Succedeed");

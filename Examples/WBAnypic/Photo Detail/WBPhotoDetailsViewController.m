@@ -15,12 +15,14 @@
 #import "WBPhotoDetailsCellLikes.h"
 #import "WBPhotoDetailsCellComment.h"
 #import "WBPhotoDetailsCellAddComment.h"
+#import "WBPhoto+Utils.h"
 
 #import "Whiteboard.h"
 #import "ProfileViewController.h"
 
 @interface WBPhotoDetailsViewController () <UITableViewDataSource, UITableViewDelegate, WBPhotoTimelineSectionHeaderViewDelegate, WBPhotoDetailsCellLikesDelegate, WBPhotoDetailsCellAddCommentDelegate>
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic) BOOL isLiking;
 @end
 
 typedef enum {
@@ -130,7 +132,6 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
   [sectionHeaderView.profilePictureImageView setImageWithPath:self.photo.author.avatar.absoluteString
                                                   placeholder:nil];
   sectionHeaderView.delegate = self;
-  sectionHeaderView.delegate = self;
   sectionHeaderView.sectionIndex = @(section);
   return sectionHeaderView;
 }
@@ -216,6 +217,10 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
       WBPhotoDetailsCellLikes *likesCell = (WBPhotoDetailsCellLikes *)cell;
       likesCell.likers = self.photo.likes;
       likesCell.delegate = self;
+      likesCell.isLiked = [self.photo isLiked];
+      NSLog(@"isLiked = %d", likesCell.isLiked);
+      likesCell.likeButton.button.enabled = !self.isLiking;
+      
       break;
     }
     case DetailsCellTypeComments: {
@@ -270,6 +275,65 @@ static NSString *AddCommentCellIdentifier = @"AddCommentCellIdentifier";
 - (void)likesCellDidSelectAvatarAtIndex:(NSUInteger)index {
   WBUser *user = self.photo.likes[index];
   [self pushProfile:user];
+}
+
+- (void)likesCellDidTapLikeButton {
+  self.isLiking = YES;
+  [self.tableView reloadData];
+  [self toggleLikeOnPhoto:self.photo completion:^{
+    self.isLiking = NO;
+    [self.tableView reloadData];
+  }];
+}
+
+- (void)toggleLikeOnPhoto:(WBPhoto *)photo
+               completion:(void(^)(void))completion {
+  if ([photo isLiked])
+    [self unlikePhoto:photo completion:completion];
+  else
+    [self likePhoto:photo completion:completion];
+}
+
+- (void)likePhoto:(WBPhoto *)photo completion:(void(^)(void))completion {
+  [self addLikeOnPhoto:photo];
+  [[WBDataSource sharedInstance] likePhoto:photo withUser:[WBDataSource currentUser] success:^{
+    completion();
+  } failure:^(NSError *error) {
+    [self removeLikeOnPhoto:photo];
+    [self likeFailedWithError:error];
+    completion();
+  }];
+}
+
+- (void)unlikePhoto:(WBPhoto *)photo completion:(void(^)(void))completion {
+  [self removeLikeOnPhoto:photo];
+  [[WBDataSource sharedInstance] unlikePhoto:photo withUser:[WBDataSource currentUser] success:^{
+    completion();
+  } failure:^(NSError *error) {
+    [self addLikeOnPhoto:photo];
+    [self unLikeFailedWithError:error];
+    completion();
+  }];
+}
+
+- (void)likeFailedWithError:(NSError *)error {
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+  [alert show];
+}
+
+- (void)unLikeFailedWithError:(NSError *)error {
+  UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Un-Like Photo Failed" message:[error description] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+  [alert show];
+}
+
+- (void)addLikeOnPhoto:(WBPhoto *)photo {
+  photo.likes = [photo.likes arrayByAddingObject:[[WBDataSource sharedInstance] currentUser]];
+}
+
+- (void)removeLikeOnPhoto:(WBPhoto *)photo {
+  NSMutableArray *arr = [photo.likes mutableCopy];
+  [arr removeObject:[WBDataSource sharedInstance].currentUser];
+  photo.likes = arr;
 }
 
 #pragma mark - SectionHeaderView Delegate

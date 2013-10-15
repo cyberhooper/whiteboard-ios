@@ -44,7 +44,6 @@
 		9940AE781807502B008881EB /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE231807502B008881EB /* Localizable.strings */; };
 		9940AE791807502B008881EB /* ParseConfiguration.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE241807502B008881EB /* ParseConfiguration.plist */; };
 		9940AE7A1807502B008881EB /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE251807502B008881EB /* Settings.bundle */; };
-		9940AE7B1807502B008881EB /* WBAnypic-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9940AE261807502B008881EB /* WBAnypic-Info.plist */; };
 		9940AE7C1807502B008881EB /* WBTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE291807502B008881EB /* WBTabBarController.m */; };
 		9940AE7D1807502B008881EB /* WBTheme.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE2C1807502B008881EB /* WBTheme.m */; };
 		9940AE7E1807502B008881EB /* MainFeedCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9940AE2F1807502B008881EB /* MainFeedCell.m */; };
@@ -609,7 +608,6 @@
 				9940AE951807502B008881EB /* WBPhotoTimelineSectionHeaderView.xib in Resources */,
 				99BD906C1808A5BB00AFB0B6 /* ProfileViewController.xib in Resources */,
 				9940AE611807502B008881EB /* MainFeedViewController.xib in Resources */,
-				9940AE7B1807502B008881EB /* WBAnypic-Info.plist in Resources */,
 				9940AE831807502B008881EB /* WBFriendCell.xib in Resources */,
 				9940AE731807502B008881EB /* WBPhotoDetailsViewController.xib in Resources */,
 				9997DEE4180882FF000FD658 /* WBLoginViewController.xib in Resources */,
