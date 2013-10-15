@@ -814,7 +814,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = WBAnypic;
-				PROVISIONING_PROFILE = "1E584F4A-723B-4F7B-A99D-9B212CE472A9";
+				PROVISIONING_PROFILE = "BEFAEE8E-7BD1-4FE4-B72B-16E9BD25C772";
 				USER_HEADER_SEARCH_PATHS = "../Code/** ../Pods/Headers ../Pods/Headers/AFNetworking ../Pods/Headers/CocoaLumberjack ../Pods/Headers/FormatterKit";
 				WRAPPER_EXTENSION = app;
 			};
@@ -847,7 +847,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = WBAnypic;
-				PROVISIONING_PROFILE = "1E584F4A-723B-4F7B-A99D-9B212CE472A9";
+				PROVISIONING_PROFILE = "BEFAEE8E-7BD1-4FE4-B72B-16E9BD25C772";
 				USER_HEADER_SEARCH_PATHS = "../Code/** ../Pods/Headers ../Pods/Headers/AFNetworking ../Pods/Headers/CocoaLumberjack ../Pods/Headers/FormatterKit";
 				WRAPPER_EXTENSION = app;
 			};
