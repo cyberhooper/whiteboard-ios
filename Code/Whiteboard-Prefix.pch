@@ -6,4 +6,9 @@
 
 #ifdef __OBJC__
   #import <Foundation/Foundation.h>
+//Log init
+#import "DDLog.h"
+#import "DDTTYLogger.h"
+#import "DDASLLogger.h"
+static const int ddLogLevel = LOG_LEVEL_VERBOSE;
 #endif

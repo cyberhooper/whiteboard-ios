@@ -205,7 +205,6 @@ static NSString *inviteFriendsCellIdentifier = @"WBInviteFriendsCell";
 }
 
 - (void)loadNextPage {
-  DDLogInfo(@"Load next page here");
 }
 
 - (void)inviteFriendsTapped {

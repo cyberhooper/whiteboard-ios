@@ -29,12 +29,12 @@
                                   block:^(PFUser *user, NSError *error) {
                                     if (user) {
                                       [user WBUser];
-                                      //DDLogInfo(@"login with username and pwd succedeed");
+                                      DDLogInfo(@"login with username and pwd succedeed");
                                       success([[WBDataSource sharedInstance] currentUser]);
                                       [self subscribeUserToPrivatePushChannel:user];
                                     }
                                     else {
-                                      //DDLogError(@"login Failed : %@", error);
+                                      DDLogError(@"login Failed : %@", error);
                                       failure (error);
                                     }
                                   }];
@@ -49,7 +49,7 @@
   [self unsubscribeUserFromPrivatePushChannel:[PFUser currentUser]];
   [PFUser logOut];
   // no failure handeling with Parse, because the account is stored locally.
-  //DDLogInfo(@"logout succedeed");
+  DDLogInfo(@"logout succedeed");
   success();
 }
 

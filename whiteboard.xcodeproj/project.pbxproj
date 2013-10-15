@@ -22,6 +22,16 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		21422358180DC03F00B123D9 /* DDAbstractDatabaseLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2142234E180DC03F00B123D9 /* DDAbstractDatabaseLogger.h */; };
+		21422359180DC03F00B123D9 /* DDAbstractDatabaseLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2142234F180DC03F00B123D9 /* DDAbstractDatabaseLogger.m */; };
+		2142235A180DC03F00B123D9 /* DDASLLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 21422350180DC03F00B123D9 /* DDASLLogger.h */; };
+		2142235B180DC03F00B123D9 /* DDASLLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 21422351180DC03F00B123D9 /* DDASLLogger.m */; };
+		2142235C180DC03F00B123D9 /* DDFileLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 21422352180DC03F00B123D9 /* DDFileLogger.h */; };
+		2142235D180DC03F00B123D9 /* DDFileLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 21422353180DC03F00B123D9 /* DDFileLogger.m */; };
+		2142235E180DC03F00B123D9 /* DDLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 21422354180DC03F00B123D9 /* DDLog.h */; };
+		2142235F180DC03F00B123D9 /* DDLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 21422355180DC03F00B123D9 /* DDLog.m */; };
+		21422360180DC03F00B123D9 /* DDTTYLogger.h in Headers */ = {isa = PBXBuildFile; fileRef = 21422356180DC03F00B123D9 /* DDTTYLogger.h */; };
+		21422361180DC03F00B123D9 /* DDTTYLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = 21422357180DC03F00B123D9 /* DDTTYLogger.m */; };
 		64308489BA3D465D932E363A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2267FD231DF54A8C9937DC62 /* libPods.a */; };
 		991B63F81805F418009F7F30 /* WBDataSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 991B63CF1805F418009F7F30 /* WBDataSource.h */; };
 		991B63F91805F418009F7F30 /* WBDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 991B63D01805F418009F7F30 /* WBDataSource.m */; };
@@ -134,6 +144,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2142234E180DC03F00B123D9 /* DDAbstractDatabaseLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDAbstractDatabaseLogger.h; sourceTree = "<group>"; };
+		2142234F180DC03F00B123D9 /* DDAbstractDatabaseLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDAbstractDatabaseLogger.m; sourceTree = "<group>"; };
+		21422350180DC03F00B123D9 /* DDASLLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDASLLogger.h; sourceTree = "<group>"; };
+		21422351180DC03F00B123D9 /* DDASLLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDASLLogger.m; sourceTree = "<group>"; };
+		21422352180DC03F00B123D9 /* DDFileLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDFileLogger.h; sourceTree = "<group>"; };
+		21422353180DC03F00B123D9 /* DDFileLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDFileLogger.m; sourceTree = "<group>"; };
+		21422354180DC03F00B123D9 /* DDLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDLog.h; sourceTree = "<group>"; };
+		21422355180DC03F00B123D9 /* DDLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDLog.m; sourceTree = "<group>"; };
+		21422356180DC03F00B123D9 /* DDTTYLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDTTYLogger.h; sourceTree = "<group>"; };
+		21422357180DC03F00B123D9 /* DDTTYLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DDTTYLogger.m; sourceTree = "<group>"; };
 		2267FD231DF54A8C9937DC62 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		59B29261B8C74611B37A425A /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		991B63CF1805F418009F7F30 /* WBDataSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WBDataSource.h; sourceTree = "<group>"; };
@@ -243,6 +263,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2142234D180DC03F00B123D9 /* Lumberjack */ = {
+			isa = PBXGroup;
+			children = (
+				2142234E180DC03F00B123D9 /* DDAbstractDatabaseLogger.h */,
+				2142234F180DC03F00B123D9 /* DDAbstractDatabaseLogger.m */,
+				21422350180DC03F00B123D9 /* DDASLLogger.h */,
+				21422351180DC03F00B123D9 /* DDASLLogger.m */,
+				21422352180DC03F00B123D9 /* DDFileLogger.h */,
+				21422353180DC03F00B123D9 /* DDFileLogger.m */,
+				21422354180DC03F00B123D9 /* DDLog.h */,
+				21422355180DC03F00B123D9 /* DDLog.m */,
+				21422356180DC03F00B123D9 /* DDTTYLogger.h */,
+				21422357180DC03F00B123D9 /* DDTTYLogger.m */,
+			);
+			path = Lumberjack;
+			sourceTree = "<group>";
+		};
 		991B63CD1805F418009F7F30 /* Code */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +416,7 @@
 		99CF79FB180353210095500B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2142234D180DC03F00B123D9 /* Lumberjack */,
 				9940AEA718085AB1008881EB /* Parse.framework */,
 				99BA2A8D18048D3A00999FBC /* FacebookSDK.framework */,
 				99BA2A881804864A00999FBC /* SystemConfiguration.framework */,
@@ -413,11 +451,14 @@
 				991B642F1805F418009F7F30 /* Whiteboard.h in Headers */,
 				991B64131805F418009F7F30 /* PFObject+WBPhoto.h in Headers */,
 				991B643E1805F6A8009F7F30 /* Datasource.h in Headers */,
+				21422360180DC03F00B123D9 /* DDTTYLogger.h in Headers */,
 				991B64391805F5E4009F7F30 /* Model.h in Headers */,
 				991B64281805F418009F7F30 /* WBPhoto+PFObject.h in Headers */,
+				2142235A180DC03F00B123D9 /* DDASLLogger.h in Headers */,
 				991B64251805F418009F7F30 /* WBParsePushNotificationCreator.h in Headers */,
 				991B641C1805F418009F7F30 /* WBParseAccountManager.h in Headers */,
 				991B64191805F418009F7F30 /* WBComment+PFObject.h in Headers */,
+				2142235E180DC03F00B123D9 /* DDLog.h in Headers */,
 				9997DECC18087E3A000FD658 /* WBPhoto+Utils.h in Headers */,
 				991B640D1805F418009F7F30 /* PFObject+WBActivity.h in Headers */,
 				991B642B1805F418009F7F30 /* WBUser+PFUser.h in Headers */,
@@ -426,10 +467,12 @@
 				991B64101805F418009F7F30 /* PFObject+WBComment.h in Headers */,
 				991B641F1805F418009F7F30 /* WBParseConstants.h in Headers */,
 				991B63F81805F418009F7F30 /* WBDataSource.h in Headers */,
+				2142235C180DC03F00B123D9 /* DDFileLogger.h in Headers */,
 				991B640A1805F418009F7F30 /* WBUser.h in Headers */,
 				991B64161805F418009F7F30 /* PFUser+WBUser.h in Headers */,
 				991B64341805F4C1009F7F30 /* Manager.h in Headers */,
 				991B63FB1805F418009F7F30 /* WBAccountManager.h in Headers */,
+				21422358180DC03F00B123D9 /* DDAbstractDatabaseLogger.h in Headers */,
 				991B64071805F418009F7F30 /* WBPhoto.h in Headers */,
 				991B64041805F418009F7F30 /* WBComment.h in Headers */,
 			);
@@ -492,7 +535,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 99CF79F4180353210095500B /* Build configuration list for PBXProject "Whiteboard" */;
+			buildConfigurationList = 99CF79F4180353210095500B /* Build configuration list for PBXProject "whiteboard" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -604,19 +647,24 @@
 			buildActionMask = 2147483647;
 			files = (
 				991B640B1805F418009F7F30 /* WBUser.m in Sources */,
+				2142235D180DC03F00B123D9 /* DDFileLogger.m in Sources */,
 				991B64111805F418009F7F30 /* PFObject+WBComment.m in Sources */,
 				991B63FF1805F418009F7F30 /* WBManager.m in Sources */,
 				9997DECD18087E3A000FD658 /* WBPhoto+Utils.m in Sources */,
 				991B641D1805F418009F7F30 /* WBParseAccountManager.m in Sources */,
+				2142235B180DC03F00B123D9 /* DDASLLogger.m in Sources */,
 				991B641A1805F418009F7F30 /* WBComment+PFObject.m in Sources */,
 				991B64081805F418009F7F30 /* WBPhoto.m in Sources */,
+				21422361180DC03F00B123D9 /* DDTTYLogger.m in Sources */,
 				991B64231805F418009F7F30 /* WBParseDataSource.m in Sources */,
 				991B64021805F418009F7F30 /* WBActivity.m in Sources */,
 				991B63FC1805F418009F7F30 /* WBAccountManager.m in Sources */,
 				991B64141805F418009F7F30 /* PFObject+WBPhoto.m in Sources */,
 				991B64291805F418009F7F30 /* WBPhoto+PFObject.m in Sources */,
 				991B64171805F418009F7F30 /* PFUser+WBUser.m in Sources */,
+				2142235F180DC03F00B123D9 /* DDLog.m in Sources */,
 				991B64201805F418009F7F30 /* WBParseConstants.m in Sources */,
+				21422359180DC03F00B123D9 /* DDAbstractDatabaseLogger.m in Sources */,
 				991B64261805F418009F7F30 /* WBParsePushNotificationCreator.m in Sources */,
 				991B63F91805F418009F7F30 /* WBDataSource.m in Sources */,
 				991B640E1805F418009F7F30 /* PFObject+WBActivity.m in Sources */,
@@ -764,6 +812,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59B29261B8C74611B37A425A /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/WBFramework.dst;
@@ -792,6 +841,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 59B29261B8C74611B37A425A /* Pods.xcconfig */;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
 				COPY_PHASE_STRIP = NO;
 				DEAD_CODE_STRIPPING = NO;
 				DSTROOT = /tmp/WBFramework.dst;
@@ -849,7 +899,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		99CF79F4180353210095500B /* Build configuration list for PBXProject "Whiteboard" */ = {
+		99CF79F4180353210095500B /* Build configuration list for PBXProject "whiteboard" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				99CF7A1A180353220095500B /* Debug */,

@@ -13,6 +13,10 @@
 @implementation WBManager
 
 + (void)setUpWithLauchOptions:(NSDictionary *)launchOptions {
+  //add
+  [DDLog addLogger:[DDASLLogger sharedInstance]];
+  [DDLog addLogger:[DDTTYLogger sharedInstance]];
+  
   Class dataSourceClass = [self dataSourceSubclass];
   if (!dataSourceClass)
     [NSException raise:@"You should implement a WBDataSource subclass and put its name in the Info.plist under 'DataSourceImplementation' key." format:nil];

@@ -15,13 +15,4 @@
 #import <Foundation/Foundation.h>
 #import "WBTheme.h"
 
-//Log init
-#import "CocoaLumberjack/DDLog.h"
-#import "CocoaLumberjack/DDTTYLogger.h"
-#import "CocoaLumberjack/DDASLLogger.h"
-//#import <CocoaLumberjack/DDLog.h>
-//#import <CocoaLumberjack/DDTTYLogger.h>
-//#import <CocoaLumberjack/DDASLLogger.h>
-static const int ddLogLevel = LOG_LEVEL_VERBOSE;
-
 #endif
